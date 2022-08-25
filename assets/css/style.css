@@ -7748,7 +7748,52 @@ div.input_send_outer {     width: 120px; }
 .gt-gift-enter-message span.select2-selection__arrow {     display: none; }
 .gt-gift-enter-message span.select2 span.select2-selection.select2-selection--single[aria-expanded="true"] {     border: none;     box-shadow: 0px 5px 8px rgb(0 0 0 / 10%);     -webkit-box-shadow: 0px 5px 8px rgb(0 0 0 / 10%);     border-radius: 10px 10px 0 0; }
 .gt-gift-enter-message .select2-container--default .select2-selection--single > span {     font-weight: 400;     letter-spacing: 0.05em; }
-
+.recommendation-header-logo a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.g-finder-one-item .form-check-input:checked[type="radio"] {
+	border: 1px solid #FF385C;
+	background: none;
+}
+.logo_back {
+    margin-right: 15px;
+    width: 24px;
+}
+span.logo_back img {
+    width: 100%;
+}
+.g-finder-one-content.recommendation-content::before {
+    bottom: initial;
+    top: 0;
+    border-radius: 15px 15px 0px 0px;
+    right: 0;
+}
+.g-finder-one-content {
+    padding: 50px 45px 78px;
+}
+.g-finder-one-section {
+    position: relative;
+}
+ .g-finder-help-btn {
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+    width: 150px;
+    height: 62px;
+}
+.g-finder-help-btn a {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    align-items: center;
+    top: 0px;
+    position: relative;
+}
+.recommendation-header-gift {
+    z-index: 2;
+}
 /*new desktop changes starts here*/
 
 
