@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Giftly</title>
+
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body class="gt-site">
+
+
+
+    <!-- Gifts Section Start -->
+    <section class="gifts-section">
+        <div class="gifts-content">
+            <div class="row g-0">
+                <div class="col col-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="gifts-send-navbar">
+                        <nav class="navbar">
+                            <div class="navbar-btn">
+                                <button class="gift-toggler">
+                                <span class="gift-toggler-icons"></span>
+                                <span class="gift-toggler-icons"></span>
+                                <span class="gift-toggler-icons"></span>
+                            </button>
+                                <div class="gifts-collapse-btn d-block d-lg-none">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="gifts-collapse">
+                                <div class="header-logo gift-send-logo">
+                                    <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
+                                </div>
+                                <ul class="gifts-navbar">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#"><img src="assets/images/user.png" alt="" class="img-fluid">Gifts History</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#"><img src="assets/images/pay.png" alt="" class="img-fluid">Pay for Gifts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/send.png" alt="" class="img-fluid">Send a Gift
+                                            <img src="assets/images/nav_arrow.png" alt="Nav_arrow" class="img-fluid gifts-nav-arrow me-0">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item gifts-navbar-underline">
+                                        <a class="nav-link" href="#"><img src="assets/images/giftcard.png" alt="" class="img-fluid">Browse Gifts
+                                            <img src="assets/images/nav_arrow.png" alt="Nav_arrow" class="img-fluid gifts-nav-arrow me-0">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/account_2.png" alt="" class="img-fluid">Account Settings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#"><img src="assets/images/question_2.png" alt="" class="img-fluid">Help</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-12 col-lg-9 col-xl-9">
+                    <div class="gifts-sent-content gt-pay-for-gift-content pay-gift-content">
+                        <div class="dropdown header-dropdown gift-history-drop d-none d-lg-block">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/header-img.png" alt="" class="img-fluid"> 
+                                         <span class="gt-section-description"> Hi,<b>Matthew</b></span>
+                                    </button>
+                            <ul class="dropdown-menu user-profile" aria-labelledby="dropdownMenuButton1">
+
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/question.png" alt="account" class="img-fluid"><span>Help</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/home.png" alt="account" class="img-fluid"><span>Home</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/account.png" alt="account" class="img-fluid"><span>Account Details</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item profile-logout" href="#"><img src="assets/images/logout.png" alt="account" class="img-fluid"><span>Log out</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gifts-list bg-white">
+                            <div class="gifts-items p-0">
+                                <div class="gifts-items-header gt-gifts-header pay-gift-header mb-0">
+                                    <h3 class="mb-0">Pay for Gift</h3>
+                                    <div class="gifts-card-btn gift-card-unpaid-btn">
+                                        <a href="send-dettails.html" class="btn gt-btn-custom gifts-card-view">Pay All Unpaid Gifts
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gifts-card-list">
+                                    <div class="card gifts-card pay-gift-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img1.png" class="card-img-top img-fluid w-100" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#paymentModal" class="btn gt-btn-custom gifts-card-view pay-footer-btn">Pay Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card pay-gift-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img2.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">Anna A's Anniversary</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#paymentModal" class="btn gt-btn-custom gifts-card-view pay-footer-btn">Pay Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card pay-gift-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img3.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">Ronnie Kintanar's Promotion</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#paymentModal" class="btn gt-btn-custom gifts-card-view pay-footer-btn">Pay Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card pay-gift-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img4.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#paymentModal" class="btn gt-btn-custom gifts-card-view pay-footer-btn">Pay Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card pay-gift-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/pay_5.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#paymentModal" class="btn gt-btn-custom gifts-card-view pay-footer-btn">Pay Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gifts Section End -->
+
+    <!-- Payment Modal Start -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl payment-modal-dialog">
+            <div class="modal-content payment-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Finalise your gift</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close-icon.png" alt="close-icon" class="img-fluid">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="gt-payment-content">
+                        <div class="row justify-content-between">
+                            <div class="col col-12 col-md-6 col-lg-6">
+                                <div class="gt-select-payment-content">
+                                    <h2 class="gt-select-payment-title gifts-card-mtitle">Select Payment Method</h2>
+                                    <div class="gt-select-payment-option">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="paymentRadioOptions" id="paymentRadio1" value="payment_visa" checked>
+                                            <label class="form-check-label" for="paymentRadio1">
+                                                <img src="assets/images/visa-icon.png" alt="visa-icon" class="img-fluid">
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="paymentRadioOptions" id="paymentRadio2" value="payment_master">
+                                            <label class="form-check-label" for="paymentRadio2">
+                                                <img src="assets/images/master-card-logo.png" alt="master-card-logo" class="img-fluid">
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="paymentRadioOptions" id="paymentRadio3" value="payment_american">
+                                            <label class="form-check-label" for="paymentRadio3">
+                                                <img src="assets/images/american-express-logo.png" alt="american-express-logo" class="img-fluid">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p class="gt-card-number-edit"> </p>
+
+
+                                        <form class="row g-3">
+                                            <div class="col-md-12">
+                                                <div class="payment-form-input">
+                                                    <label for="inputEmail4" class="form-label payment-card-no"><span>Card Number</span> <img src="assets/images/edit.png" alt="edit" class="img-fluid"></label>
+                                                    <p class="payment-digit-suggest">Enter the 16-digit card number on the card</p>
+                                                    <input type="number" class="form-control visa-card" id="inputEmail4" placeholder="2412751234123456">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="payment-form-input">
+                                                    <label for="inputAddress" class="form-label">Full Name</label>
+                                                    <input type="text" class="form-control" id="inputAddress" placeholder="Enter full name">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="payment-form-input">
+                                                    <label for="inputAddress2" class="form-label">Expiration Date</label>
+                                                    <input type="number" class="form-control" id="inputAddress2" placeholder="12/2021">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="payment-form-input">
+                                                    <label for="inputCity" class="form-label">CVV Number</label>
+                                                    <input type="number" class="form-control cvv-hide-logo" id="inputCity" placeholder="****">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary w-100 gt-btn-custom payment-btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#congratulationsModal">
+                                                    <img src="assets/images/pay-img.png" alt="" class="img-fluid">
+                                                     Pay  $25
+                                                    </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-5 col-xl-5">
+                                <div class="payment-order-summary">
+                                    <h4 class="order-summary-title">Order Summary</h4>
+                                    <div class="order-item">
+                                        <div class="order-item-img">
+                                            <img src="assets/images/order-img.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="order-item-name">
+                                            <h4>DEUX Cookie Dough</h4>
+                                            <h4>$25</h4>
+                                        </div>
+                                        <span class="order-item-delet"><img src="assets/images/order-close.png" alt="" class="img-fluid"></span>
+                                    </div>
+                                    <div class="order-item-pricelist">
+                                        <div class="order-price">
+                                            <span>Sub-total</span>
+                                            <span>$25</span>
+                                        </div>
+                                        <div class="order-price">
+                                            <span>Tax</span>
+                                            <span>$1.25</span>
+                                        </div>
+                                        <div class="order-price">
+                                            <span>Shipping</span>
+                                            <span>$0</span>
+                                        </div>
+                                    </div>
+                                    <div class="order-total-price">
+                                        <span>Total</span>
+                                        <span>$26.25</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Payment Modal End -->
+
+
+
+    <!-- Congratulations Modal Start -->
+    <div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl congratulations-modal">
+            <div class="modal-content congratulations-content">
+                <div class="modal-body">
+                    <div class="congratulations-imgs">
+                        <div class="congratulations-left-img">
+                            <img src="assets/images/congratulations-1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="congratulations-top-img">
+                            <img src="assets/images/congratulations-2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="congratulations-right-img">
+                            <img src="assets/images/congratulations-3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="congratulations-center-img">
+                            <img src="assets/images/gift-box.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="congratulations-modal-title text-center">
+                        <h2>Congratulations!</h2>
+                        <p>You have successfully sent your gift!</p>
+                        <a href="#" class="btn btn-primary gt-btn-custom">Done</a>
+                        <div class="congratulations-bottom-img">
+                            <img src="assets/images/congratulations-4.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Congratulations Modal End -->
+
+    <!-- Site Footer Start -->
+    <footer class="gt-site-footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col col-12 col-md-2 col-lg-2">
+                    <div class="gt-site-footer-logo">
+                        <img src="assets/images/logo-light.png" alt="logo-light" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">About Giftly
+                        </h3>
+                        <ul class="gt-footer-menu-list">
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Gift Emporium</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Contact Us </a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Gift History</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Gift Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">For Business </h3>
+                        <ul class="gt-footer-menu-list">
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Contact Us</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Browse Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2 d-none d-md-block">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">App</h3>
+                        <div class="gt-app-content">
+                            <div class="gt-app-qr-code">
+                                <img src="assets/images/app-qr-code.png" alt="app-qr-code" class="img-fluid">
+                            </div>
+                            <p class="gt-app-qr-description">Scan to download the Goody app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gt-site-info-content">
+                <p class="gt-site-info-description">© 2022 Giftly, Inc.Terms of UsePrivacy Policy </p>
+                <ul class="gt-site-social-list">
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Site Footer End -->
+</body>
+
+</html>

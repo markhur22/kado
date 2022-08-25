@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Giftly</title>
+
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="gt-site">
+
+    <!-- Site Header Start -->
+    <header class="gt-site-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl home-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/kado-logo.svg" alt="Logo" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler home-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icons"></span>
+                        <span class="navbar-toggler-icons"></span>
+                        <span class="navbar-toggler-icons"></span>
+                    </button>
+                    <div class="gifts-collapse-btn d-block d-xl-none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="collapse navbar-collapse home-navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav home-navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="browse-gift.html">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="#414141"/>
+									</svg></span>Browse Gifts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="send-gift.html">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.01 6.03L11.52 9.25L4 8.25L4.01 6.03V6.03ZM11.51 14.75L4 17.97V15.75L11.51 14.75V14.75ZM2.01 3L2 10L17 12L2 14L2.01 21L23 12L2.01 3Z" fill="#414141"/>
+									</svg></span>Send Gift</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="send-gift.html">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.7491 19.4295L20.0876 16.7668C22.079 14.1055 21.536 10.3337 18.8747 8.34223C16.2134 6.35077 12.4416 6.89377 10.4501 9.55507C8.45868 12.2164 9.00168 15.9882 11.663 17.9797C13.8007 19.5794 16.7369 19.5794 18.8747 17.9797L21.5374 20.6423C21.872 20.9769 22.4145 20.9769 22.749 20.6423C23.0837 20.3077 23.0837 19.7652 22.749 19.4306L22.7491 19.4295ZM15.291 17.4657C12.9258 17.4657 11.0084 15.5484 11.0084 13.1831C11.0084 10.8179 12.9258 8.90052 15.291 8.90052C17.6563 8.90052 19.5737 10.8179 19.5737 13.1831C19.5711 15.5473 17.6552 17.4632 15.291 17.4657Z" fill="#414141"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5574 4.30452H16.4256C17.1989 4.30452 17.8477 4.80392 18.0633 5.49709C17.15 5.13825 16.1555 4.94119 15.1149 4.94119C13.3225 4.94119 11.6666 5.52587 10.3276 6.51491L9.56979 5.49315L6.6732 9.39864L5.28489 8.40529L7.06741 6.00256H2.71396V11.0967H7.27673C7.12802 11.7091 7.04919 12.3488 7.04919 13.0069C7.04919 13.2212 7.05756 13.4336 7.07397 13.6437H2.71396V15.3418H7.39232C7.57298 15.9401 7.82127 16.5091 8.12829 17.0398H2.71396C1.76271 17.0398 1 16.2842 1 15.3418L1.00857 6.00256C1.00857 5.06015 1.76271 4.30452 2.71396 4.30452H4.58217C4.4879 4.04133 4.42791 3.75266 4.42791 3.4555C4.42791 2.04613 5.57627 0.908447 6.99885 0.908447C7.89868 0.908447 8.67853 1.36692 9.1413 2.04613L9.56979 2.62347L9.99828 2.05462C10.461 1.36692 11.2409 0.908447 12.1407 0.908447C13.5633 0.908447 14.7117 2.04613 14.7117 3.4555C14.7117 3.75266 14.6517 4.04133 14.5574 4.30452ZM12.9977 3.4555C12.9977 2.98854 12.6121 2.60649 12.1407 2.60649C11.6694 2.60649 11.2837 2.98854 11.2837 3.4555C11.2837 3.92247 11.6694 4.30452 12.1407 4.30452C12.6121 4.30452 12.9977 3.92247 12.9977 3.4555ZM7.85583 3.4555C7.85583 2.98854 7.47019 2.60649 6.99885 2.60649C6.52751 2.60649 6.14187 2.98854 6.14187 3.4555C6.14187 3.92247 6.52751 4.30452 6.99885 4.30452C7.47019 4.30452 7.85583 3.92247 7.85583 3.4555Z" fill="#414141"/>
+									</svg></span>Gift Finder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7ZM20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z" fill="#414141"/>
+									</svg></span>Log In</a>
+                            </li>
+                            <li class="nav-item gt-login-item home-create-btn">
+                                <a class="nav-link btn btn-light gt-login-btn" href="#">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="#414141"/>
+									</svg></span>Create Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary home-header-btn">
+                        <span class="gt-send-gift-icon">
+                            <img src="assets/images/gift-icon.png" alt="">
+                        </span>
+                        <span>Send a Gift</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Site Header End -->
+
+    <!-- Site Content Start -->
+    <main class="gt-site-content">
+
+        <!-- Landing Section Start -->
+        <section class="gt-page-title-section gt-send-gift-title-section toy-top-page">
+            <div class="gt-page-perticels-left">
+                <img src="assets/images/page-title-perticels-left.png" alt="page-title-perticels-left" class="img-fluid">
+            </div>
+            <div class="container">
+                <div class="gt-page-title-content">
+                    <div class="gt-page-title-gift-left">
+                        <img src="assets/images/send-gift-heading-left-gift.png" alt="gift" class="img-fluid">
+                    </div>
+                    <h1 class="gt-section-title">Send A Gift</h1>
+                    <div class="gt-page-title-gift-left">
+                        <img src="assets/images/send-gift-heading-right-gift.png" alt="gift" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="gt-page-perticels-right">
+                <img src="assets/images/page-title-perticels-left.png" alt="page-title-perticels-left" class="img-fluid">
+            </div>
+        </section>
+        <!-- Landing Section End -->
+
+        <!-- Browse Gifts Section Start -->
+        <section class="gt-send-gift-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-12 col-lg-8 col-xl-8">
+                        <div class="gt-send-gift-content">
+                            <div class="gt-send-gift-content__inner active" id="send-gift">
+                                <span class="gt-send-gift-index">01</span>
+                                <h2 class="gt-send-gift-title">Select a gift</h2>
+                                <p class="gt-send-gift-description">No need to select colours, sizes or styles, your recipient can decide!</p>
+                                <div class="gt-selected-gift-content">
+                                    <div class="selected-gift-choise">
+                                        <img src="assets/images/select_gift.png" alt="Gift_Choise" class="img-fluid selected-gift-img">
+                                        <div class="selected-gift-title">
+                                            <small>Hu Kitchen</small>
+                                            <h6>Dark Chocolate Bar 4 Pack, Recipient's Choice</h6>
+                                        </div>
+                                        <div class="selected-gift-transfer">
+                                            <img src="assets/images/gift_trans.png" alt="Gift_Transfer" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gt-send-gift-content__inner active" id="message">
+                                <span class="gt-send-gift-index">02</span>
+                                <h2 class="gt-send-gift-title">Enter a message</h2>
+                                <div class="gt-select-gift-content">
+                                    <div class="row">
+                                        <div class="col col-4 col-md-4 col-lg-3">
+                                            <div class="gt-gift-enter-message">
+                                                <div class="gt-gift-choose-file">
+                                                    <img src="assets/images/gift_message.png" alt="enter-message-img" class="img-fluid">
+                                                    <span class="gt-edit-choose-icon" data-bs-toggle="modal" data-bs-target="#cardsModal">
+                                                        <img src="assets/images/edit-choose-icon.png" alt="edit-choose-icon" class="img-fluid">
+                                                    </span>
+                                                    <!-- <input type="file" class="form-control"> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-8 col-md-8 col-lg-9">
+                                            <div class="gt-gift-enter-message">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" id="inputEmail4" value=" Matthew Vetheca">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control gift-meassage-birthday" value="Birthday">
+                                                    </div>
+                                                    <div class="col-md-12 d-none d-md-block">
+                                                        <input type="text" class="form-control" value="Recipient email or mobile number">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 d-block d-md-none mt-3">
+                                            <input type="text" class="form-control" value="Recipient email or mobile number">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea class="form-control gift-massage-box" rows="3">I mathew, I’ve send you something special for your birthday!!! Hope you like it</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gt-send-gift-content__inner active" id="send">
+                                <span class="gt-send-gift-index">03</span>
+                                <h2 class="gt-send-gift-title">Send gift</h2>
+                                <p class="gt-send-gift-description">No address required, no upfront payment.</p>
+                                <div class="send-gift-btn">
+                                    <div class="send-gift-btn-one text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="send-gift-btn-img">
+                                                <img src="assets/images/send_me.png" alt="" class="img-fluid">
+                                            </div>
+                                            <h5 class="send-gift--btn-title">
+                                                Send gift for me
+                                            </h5>
+                                            <p class="send-gift-btn-discription">
+                                                We’ll email your recipient with a link to view your card and “unwrap” your gift!
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="send-gift-btn-one text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="send-gift-btn-img">
+                                                <img src="assets/images/share_link.png" alt="" class="img-fluid">
+                                            </div>
+                                            <h5 class="send-gift--btn-title">
+                                                Give me a link
+                                            </h5>
+                                            <p class="send-gift-btn-discription">
+                                                We’ll send you a link which you can share with your recipient directly.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gt-send-gift-content__inner active" id="form">
+                                <span class="gt-send-gift-index">04</span>
+                                <h2 class="gt-send-gift-title">From</h2>
+                                <p class="gt-send-gift-description">You’ll only need to fill this out once to create your account.</p>
+                                <div class="gt-select-gift-content">
+                                    <div class="row">
+                                        <div class="col col-12 col-md-12 col-lg-12">
+                                            <div class="gt-gift-from-content">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" value="Your email">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" value="Your full name">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <input type="text" class="form-control gift-form-password" value="Enter password">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gt-send-gift-estimate-content">
+                                <div class="gt-send-estimate-list">
+                                    <div class="gt-send-estimate-item">
+                                        <label class="gt-send-estimate-label">Levian Bakery 8 Pack, Recipient’s Choice</label>
+                                        <span class="gt-send-estimate-price">$49</span>
+                                    </div>
+                                    <div class="gt-send-estimate-item">
+                                        <label class="gt-send-estimate-label">Shipping</label>
+                                        <span class="gt-send-estimate-price">$15</span>
+                                    </div>
+                                    <div class="gt-send-estimate-item">
+                                        <label class="gt-send-estimate-label">Estimated tax (0 -10%)</label>
+                                        <span class="gt-send-estimate-price">$0 - $6.40</span>
+                                    </div>
+                                    <div class="gt-send-estimate-item">
+                                        <label class="gt-send-estimate-label gt-send-estimate-title">Estimated total</label>
+                                        <span class="gt-send-estimate-price gt-send-estimate-total-price">$64- $70.40</span>
+                                    </div>
+                                </div>
+                                <p class="gt-send-gift-note"><label class="gt-send-gift-note-label">Note:</label>We'll confirm the exact amount before you pay.</p>
+                            </div>
+
+                            <div class="gt-send-gift-submit-btn">
+                                <a href="#" class="btn btn-primary">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.9688 6H18.7887C18.8987 5.69 18.9688 5.35 18.9688 5C18.9688 3.34 17.6287 2 15.9688 2C14.9187 2 14.0087 2.54 13.4688 3.35L12.9688 4.02L12.4688 3.34C11.9288 2.54 11.0188 2 9.96875 2C8.30875 2 6.96875 3.34 6.96875 5C6.96875 5.35 7.03875 5.69 7.14875 6H4.96875C3.85875 6 2.97875 6.89 2.97875 8L2.96875 19C2.96875 20.11 3.85875 21 4.96875 21H20.9688C22.0788 21 22.9688 20.11 22.9688 19V8C22.9688 6.89 22.0788 6 20.9688 6ZM15.9688 4C16.5188 4 16.9688 4.45 16.9688 5C16.9688 5.55 16.5188 6 15.9688 6C15.4187 6 14.9688 5.55 14.9688 5C14.9688 4.45 15.4187 4 15.9688 4ZM9.96875 4C10.5188 4 10.9688 4.45 10.9688 5C10.9688 5.55 10.5188 6 9.96875 6C9.41875 6 8.96875 5.55 8.96875 5C8.96875 4.45 9.41875 4 9.96875 4ZM20.9688 19H4.96875V17H20.9688V19ZM20.9688 14H4.96875V8H10.0487L7.96875 10.83L9.58875 12L12.9688 7.4L16.3488 12L17.9688 10.83L15.8888 8H20.9688V14Z" fill="white"/></svg>
+                                    <span>Send Gift!</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="gt-send-gift-list-content first-send-gift-list-content">
+                            <div class="send-gift-content-arrow d-block d-md-none">
+                                <div class="send-gift-left-arrow">
+                                    <img src="assets/images/h_left.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="send-gift-right-arrow">
+                                    <img src="assets/images/h_right.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <ul class="gt-send-gift-list send-gift-sidebar">
+                                <li class="gt-send-gift-item">
+                                    <a href="#select-gift" class="gt-send-gift-link active">
+                                        <span class="gt-nav-link-icon">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.9688 6H18.7887C18.8987 5.69 18.9688 5.35 18.9688 5C18.9688 3.34 17.6287 2 15.9688 2C14.9187 2 14.0087 2.54 13.4688 3.35L12.9688 4.02L12.4688 3.34C11.9288 2.54 11.0188 2 9.96875 2C8.30875 2 6.96875 3.34 6.96875 5C6.96875 5.35 7.03875 5.69 7.14875 6H4.96875C3.85875 6 2.97875 6.89 2.97875 8L2.96875 19C2.96875 20.11 3.85875 21 4.96875 21H20.9688C22.0788 21 22.9688 20.11 22.9688 19V8C22.9688 6.89 22.0788 6 20.9688 6ZM15.9688 4C16.5188 4 16.9688 4.45 16.9688 5C16.9688 5.55 16.5188 6 15.9688 6C15.4187 6 14.9688 5.55 14.9688 5C14.9688 4.45 15.4187 4 15.9688 4ZM9.96875 4C10.5188 4 10.9688 4.45 10.9688 5C10.9688 5.55 10.5188 6 9.96875 6C9.41875 6 8.96875 5.55 8.96875 5C8.96875 4.45 9.41875 4 9.96875 4ZM20.9688 19H4.96875V17H20.9688V19ZM20.9688 14H4.96875V8H10.0487L7.96875 10.83L9.58875 12L12.9688 7.4L16.3488 12L17.9688 10.83L15.8888 8H20.9688V14Z" fill="#414141"/>
+												</svg>
+
+                                        </span>
+                                        <span>Select a gift</span>
+                                    </a>
+                                </li>
+                                <li class="gt-send-gift-item">
+                                    <a href="#meassage" class="gt-send-gift-link">
+                                        <span class="gt-nav-link-icon">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M22.9688 6C22.9688 4.9 22.0688 4 20.9688 4H4.96875C3.86875 4 2.96875 4.9 2.96875 6V18C2.96875 19.1 3.86875 20 4.96875 20H20.9688C22.0688 20 22.9688 19.1 22.9688 18V6ZM20.9688 6L12.9688 11L4.96875 6H20.9688ZM20.9688 18H4.96875V8L12.9688 13L20.9688 8V18Z" fill="#414141"/>
+											</svg>
+
+                                        </span>
+                                        <span>Enter a message</span>
+                                    </a>
+                                </li>
+                                <li class="gt-send-gift-item">
+                                    <a href="#send" class="gt-send-gift-link">
+                                        <span class="gt-nav-link-icon">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M4.97875 6.03L12.4888 9.25L4.96875 8.25L4.97875 6.03ZM12.4788 14.75L4.96875 17.97V15.75L12.4788 14.75ZM2.97875 3L2.96875 10L17.9688 12L2.96875 14L2.97875 21L23.9688 12L2.97875 3Z" fill="#414141"/>
+												</svg>
+
+                                        </span>
+                                        <span>
+                                            Send gift
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="gt-send-gift-item">
+                                    <a href="#form" class="gt-send-gift-link">
+                                        <span class="gt-nav-link-icon">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19.9688 5V19H5.96875V5H19.9688ZM19.9688 3H5.96875C4.86875 3 3.96875 3.9 3.96875 5V19C3.96875 20.1 4.86875 21 5.96875 21H19.9688C21.0688 21 21.9688 20.1 21.9688 19V5C21.9688 3.9 21.0688 3 19.9688 3Z" fill="#414141"/>
+											<path d="M14.9688 17H7.96875V15H14.9688V17ZM17.9688 13H7.96875V11H17.9688V13ZM17.9688 9H7.96875V7H17.9688V9Z" fill="#414141"/>
+											</svg>
+
+                                        </span>
+                                        <span>
+                                            Your details
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Browse Gifts Section End -->
+
+        <!-- Browse Gifts Section Start -->
+        <div class="modal fade gt-card-modal" id="cardsModal" tabindex="-1" aria-labelledby="cardsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content ">
+                    <div class="modal-header border-bottom gift-select-modal-header">
+                        <h5 class="modal-title text-center" id="cardsModalLabel">Cards</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/close-icon.png" alt="close-icon" class="img-fluid">
+                        </button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <div class="gt-card-modal-content-header">
+                        </div>
+                        <div class="gt-card-modal-content">
+                            <div class="row">
+                                <div class="col col-12 col-md-4 col-lg-3 d-none d-lg-block">
+                                    <div class="gt-sidebar">
+                                        <div class="gt-sidebar-header">
+                                            <h3 class="gt-sidebar-title">Browse</h3>
+                                        </div>
+                                        <div class="gt-sidebar-body">
+                                            <ul class="gt-sidebar-filter-list">
+                                                <li class="gt-sidebar-filter-item ">
+                                                    <a href="#" class="gt-sidebar-filter-link active sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Birthday</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Valentine's Day</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Anytime</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Lunar New Year</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Congratulations</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Thank You</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Housewarming</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Wedding</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Love</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Miss You</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Baby</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">My Bad</span>
+                                                    </a>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <a href="#" class="gt-sidebar-filter-link sidebar-filter-link">
+                                                        <span class="gt-sidebar-filter-label">Sympathy</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col col-12 col-md-4 col-lg-12 col-xl-3 d-none d-xl-block">
+                                    <div class="gt-sidebar">
+                                        <div class="gt-sidebar-header">
+                                            <h3 class="gt-sidebar-title">Browse</h3>
+                                        </div>
+                                        <div class="gt-sidebar-body">
+                                            <ul class="gt-sidebar-filter-list">
+                                                <li class="gt-sidebar-filter-item active">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Birthday</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Valentine's Day</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Anytime</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Lunar New Year</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Congratulations</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Thank You</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Housewarming</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Wedding</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Love</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Miss You</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Baby</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">My Bad</span>
+                                                </li>
+                                                <li class="gt-sidebar-filter-item">
+                                                    <span class="gt-sidebar-filter-label slider-filter-link">Sympathy</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col col-12 col-md-12 col-lg-9 col-xl-9">
+                                    <div class="gt-card-modal-content__inner">
+                                        <div class="gt-browse-gift-header flex-xl-row gift-card-modal">
+                                            <div class="gt-card-gift-modal gift-modal-select-header">
+                                                <button class="btn btn-primary card-categari-show d-block d-lg-none" type="button">
+                                                <img src="assets/images/white-search-icon.png" alt="white-search-icon" class="img-fluid">
+                                            </button>
+                                                <div class="gt-search-content">
+                                                    <div class="product-search-input">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </div>
+                                                    <div class="gt-search-product-list">
+                                                        <div class="gt-search-product-item">
+                                                            <div class="gt-search-product-img">
+                                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+                                                            </div>
+                                                            <div class="gt-search-product-details">
+                                                                <h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
+                                                                <p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gt-search-product-item">
+                                                            <div class="gt-search-product-img">
+                                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+                                                            </div>
+                                                            <div class="gt-search-product-details">
+                                                                <h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
+                                                                <p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gt-search-product-item">
+                                                            <div class="gt-search-product-img">
+                                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+                                                            </div>
+                                                            <div class="gt-search-product-details">
+                                                                <h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
+                                                                <p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <select name="menu" id="menu" class="form-select gift-modal-select mb-2 d-block d-lg-none">
+                                                <option>Browse categories</option>
+                                                <option>Featured</option>
+                                                <option>New</option>
+                                                <option>Wellness</option>
+                                                <option>Food</option>
+                                                <option>Home</option>
+                                                <option>Flowers &amp; Plants</option>
+                                                <option>Experiences</option>
+                                                <option>Beauty</option>
+                                                <option>Tech</option>
+                                                <option>Baby</option>
+                                                <option>Beverages</option>
+                                                <option>Pets</option>
+                                                <option>Goody Boxes</option>
+                                            </select>
+                                            </div>
+                                            <h3 class="gt-browse-gift-header-label d-none d-lg-block"><span>8 cards</span> in this Categories</h3>
+                                            <div class="gt-browse-gift-header-seach send-modal-searchbox d-none d-lg-block">
+                                                <span class="gt-search-icon">
+                                                        <img src="assets/images/search-icon.png" alt="search-icon" class="img-fluid">
+                                                    </span>
+                                                <input type="text" class="form-control" placeholder="Search Cards">
+
+                                                <div class="browse-gift-searchbox">
+                                                    <p>Birthday</p>
+                                                    <p>Birthday</p>
+                                                    <p>Birthday</p>
+                                                    <p>Birthday</p>
+                                                    <p>Birthday</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="gt-browse-gift-header-label naine-categori d-block d-lg-none"><span>9 cards </span> in All Categories</h3>
+
+
+                                        <div class="gt-browse-gift-content">
+                                            <div class="row">
+                                                <div class="col col-6 col-md-6 col-lg-6">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img1.png" alt="card-img1" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6 col-md-6 col-lg-6">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img2.png" alt="card-img2" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6 col-md-6 col-lg-6">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img3.png" alt="card-img3" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6 col-md-6 col-lg-6">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img4.png" alt="card-img4" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6 col-md-6 col-lg-6">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img5.png" alt="card-img5" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6 col-md-6 col-lg-6">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img6.png" alt="card-img6" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6 col-md-6 col-lg-6 mb-0">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img7.png" alt="card-img7" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6 col-md-6 col-lg-6 mb-0">
+                                                    <div class="gt-card-img">
+                                                        <img src="assets/images/card-img8.png" alt="card-img8" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Browse Gifts Section End -->
+
+    </main>
+    <!-- Site Content End -->
+
+
+    <!-- Site Footer Start -->
+    <footer class="gt-site-footer ">
+        <div class="container ">
+            <div class="row justify-content-between ">
+                <div class="col col-12 col-md-2 col-lg-2 ">
+                    <div class="gt-site-footer-logo ">
+                        <img src="assets/images/logo-light.svg " alt="logo-light " class="img-fluid ">
+                    </div>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3 ">
+                    <div class="gt-site-footer-menu ">
+                        <h3 class="gt-site-footer-menu-title ">About Kado
+                        </h3>
+                        <ul class="gt-footer-menu-list ">
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Gift Emporium</a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Contact Us </a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Gift History</a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Gift Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2 ">
+                    <div class="gt-site-footer-menu ">
+                        <h3 class="gt-site-footer-menu-title ">For Business </h3>
+                        <ul class="gt-footer-menu-list ">
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Contact Us</a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Browse Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2 d-none d-md-block ">
+                    <div class="gt-site-footer-menu ">
+                        <h3 class="gt-site-footer-menu-title ">App</h3>
+                        <div class="gt-app-content ">
+                            <div class="gt-app-qr-code ">
+                                <img src="assets/images/app-qr-code.png " alt="app-qr-code " class="img-fluid ">
+                            </div>
+                            <p class="gt-app-qr-description ">Scan to download the Goody app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gt-site-info-content ">
+                <p class="gt-site-info-description ">© 2022 Kado, Inc.Terms of UsePrivacy Policy</p>
+                <ul class="gt-site-social-list ">
+                    <li class="gt-site-social-item ">
+                        <a href="# " class="gt-site-social-link ">
+                            <i class="fa-brands fa-instagram "></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item ">
+                        <a href="# " class="gt-site-social-link ">
+                            <i class="fa-brands fa-twitter "></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item ">
+                        <a href="# " class="gt-site-social-link ">
+                            <i class="fa-brands fa-linkedin-in "></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+	<!-- Site Footer End -->
+	 <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+</body>
+
+</html>

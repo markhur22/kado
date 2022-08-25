@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Giftly</title>
+
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body class="gt-site">
+
+
+
+    <!-- Gifts Details Section Start -->
+    <section class="g-details-section">
+        <div class="g-details-content gifts-content">
+            <div class="row g-0">
+                <div class="col col-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="gifts-send-navbar">
+                        <nav class="navbar">
+                            <div class="navbar-btn">
+                                <button class="gift-toggler">
+                                <span class="gift-toggler-icons"></span>
+                                <span class="gift-toggler-icons"></span>
+                                <span class="gift-toggler-icons"></span>
+                            </button>
+                                <div class="gifts-collapse-btn d-block d-lg-none">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="gifts-collapse">
+                                <div class="header-logo gift-send-logo ">
+                                    <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
+                                </div>
+                                <ul class="gifts-navbar">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#"><img src="assets/images/user.png" alt="" class="img-fluid">Gifts History</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/pay.png" alt="" class="img-fluid">Pay for Gifts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/send.png" alt="" class="img-fluid">Send a Gift
+                                            <img src="assets/images/nav_arrow.png" alt="Nav_arrow" class="img-fluid gifts-nav-arrow me-0">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item gifts-navbar-underline">
+                                        <a class="nav-link" href="#"><img src="assets/images/giftcard.png" alt="" class="img-fluid">Browse Gifts
+                                            <img src="assets/images/nav_arrow.png" alt="Nav_arrow" class="img-fluid gifts-nav-arrow me-0">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/account_2.png" alt="" class="img-fluid">Account Settings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/question_2.png" alt="" class="img-fluid">Help</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+                <div class="col col-12 col-md-12 col-lg-9 col-xl-9">
+                    <div class="gifts-sent-content">
+                        <div class="dropdown header-dropdown gift-history-drop d-none d-lg-block">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/header-img.png" alt="" class="img-fluid"> 
+                                         <span class="gt-section-description"> Hi,<b>Matthew</b></span>
+                                    </button>
+                            <ul class="dropdown-menu user-profile" aria-labelledby="dropdownMenuButton1">
+
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/question.png" alt="account" class="img-fluid"><span>Help</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/home.png" alt="account" class="img-fluid"><span>Home</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/account.png" alt="account" class="img-fluid"><span>Account Details</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item profile-logout" href="#"><img src="assets/images/logout.png" alt="account" class="img-fluid"><span>Log out</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gifts-list bg-white">
+                            <nav aria-label="breadcrumb" class="breadcrumb-content">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link"><i class="fa-solid fa-arrow-left"></i> Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page"><a href="#" class="breadcrumb-link">Gifts sent</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Gift Details</li>
+                                </ol>
+                            </nav>
+                            <div class="gifts-items g-details-items">
+                                <div class="gifts-items-header g-details-header">
+                                    <h3 class="mb-0">Gift Details</h3>
+                                </div>
+                                <div class="g-details-birthday">
+                                    <div class="birthday-header">
+                                        <div class="borthday-header-title">
+                                            <h5 class="card-title gifts-card-mtitle mb-0">David Lee's Birthday</h5>
+                                            <h5 class="gifts-card-subtitle mb-0"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                        </div>
+                                        <div class="gifts-card-btn">
+                                            <a href="#" class="btn btn-primary gt-btn-custom">Pay Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-card d-none d-lg-block">
+                                        <div class="row justify-content-around">
+                                            <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
+                                                <div class="birthday-body">
+                                                    <h5 class="birthday-card-title">Your Gift</h5>
+                                                    <div class="birthday-img">
+                                                        <img src="assets/images/d-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="birthday-body-title">
+                                                        <h2>DEUX Cookie Dough</h2>
+                                                        <p class="gifts-card-text mb-0">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free, insanely delicious, and can be eaten by the spoon or baked
+                                                            into cookies.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
+                                                <div class="g-details-aquarius">
+                                                    <h5 class="birthday-card-title">Your Card</h5>
+                                                    <div class="aquarius-img">
+                                                        <img src="assets/images/d-img-1.png" alt="aquarius" class="img-fluid auarius-first-img">
+                                                        <div class="aquarius-share-icon">
+                                                            <a href="#"><img src="assets/images/share.png" alt="" class="img-fluid"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-12 col-md-6 col-lg-6 col-xl-4">
+                                                <h5 class="birthday-card-title">David’s Thank You</h5>
+                                                <div class="birthady-david-img">
+                                                    <img src="assets/images/top_bottom.png" alt="" class="img-fluid birthday-david-mainimg">
+                                                    <div class="birthday-thankyou-img">
+                                                        <img src="assets/images/thank_you.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="birthday-david-body text-center">
+                                                        <h6>Thank you note from David!</h6>
+                                                        <p>Thanks Brother! I aspire to be a person like you.</p>
+                                                        <p>Thank you, brother, for always understanding when no one else could. I feel glad to be your sister.</p>
+                                                        <p class="mb-0">You’re the best brother anyone could ask for. Thank you for everything dear brother.😀</p>
+                                                    </div>
+                                                    <div class="aquarius-share-icon">
+                                                        <a href="#"><img src="assets/images/share.png" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion gift-details-accordion d-lg-none d-lg-block" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    <h5 class="birthday-card-title">Your Gift</h5>
+                                            </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body p-0">
+                                                    <div class="birthday-body">
+                                                        <div class="birthday-img">
+                                                            <img src="assets/images/d-img.png" alt="" class="img-fluid">
+                                                        </div>
+                                                        <div class="birthday-body-title">
+                                                            <h2>DEUX Cookie Dough</h2>
+                                                            <div class="accordion" id="deuxsubmenu">
+                                                                <div class="accordion-item border-bottom-0">
+                                                                    <h2 class="accordion-header" id="deuxheading">
+                                                                        <button class="accordion-button p-0 collapsed show-discription-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneaa" aria-expanded="false" aria-controls="collapseOneaa">
+                                                                            <h5 class="birthday-card-title birthday-discription-show mb-0">Show Discription</h5>
+                                                                    </button>
+                                                                    </h2>
+                                                                    <div id="collapseOneaa" class="accordion-collapse collapse" aria-labelledby="deuxheading" data-bs-parent="#deuxsubmenu">
+                                                                        <div class="accordion-body p-0">
+                                                                            <div class="birthday-body-title">
+                                                                                <p class="gifts-card-text mb-0">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free, insanely delicious, and can be eaten
+                                                                                    by the spoon or baked into cookies.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <h5 class="birthday-card-title">Your Card</h5>
+                                            </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body pb-0">
+                                                    <div class="g-details-aquarius">
+                                                        <div class="aquarius-img">
+                                                            <img src="assets/images/d-img-1.png" alt="aquarius" class="img-fluid auarius-first-img">
+                                                            <div class="aquarius-share-icon">
+                                                                <a href="#"><img src="assets/images/share.png" alt="" class="img-fluid"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item border-bottom-0">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="birthday-card-title">David’s Thank You</h5>
+                                            </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body pb-0">
+                                                    <div class="birthady-david-img">
+                                                        <img src="assets/images/top_bottom.png" alt="" class="img-fluid birthday-david-mainimg">
+                                                        <div class="birthday-thankyou-img">
+                                                            <img src="assets/images/thank_you.png" alt="" class="img-fluid">
+                                                        </div>
+                                                        <div class="birthday-david-body text-center">
+                                                            <h6>Thank you note from David!</h6>
+                                                            <p>Thanks Brother! I aspire to be a person like you.</p>
+                                                            <p>Thank you, brother, for always understanding when no one else could. I feel glad to be your sister.</p>
+                                                            <p class="mb-0">You’re the best brother anyone could ask for. Thank you for everything dear brother.😀</p>
+                                                        </div>
+                                                        <div class="aquarius-share-icon">
+                                                            <a href="#"><img src="assets/images/share.png" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-shipping-content">
+                                        <div class="g-shipping-tabs">
+                                            <div class="g-shipping-header">
+                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link nav-link-btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                                        <h6 class="g-shipping-status">Gift Sent to David!
+                                                        </h6>
+                                                        <span class="g-shipping-conform">1</span>
+                                                    </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link nav-link-btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                                        <h6 class="g-shipping-status">David Opened Your Card
+                                                        </h6>
+                                                        <span class="g-shipping-conform">2</span>
+                                                    </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link nav-link-btn" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                                        <h6 class="g-shipping-status">David Accepted Your Gift
+                                                        </h6>
+                                                        <span class="g-shipping-conform">3</span>
+                                                    </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link nav-link-btn" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                                        <h6 class="g-shipping-status">Gift Payment Completed
+                                                        </h6>
+                                                        <span class="g-shipping-conform">4</span>
+                                                    </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link nav-link-btn" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                                        <h6 class="g-shipping-status">Gift Delivered!</h6>
+                                                        <span class="g-shipping-conform">5</span>
+                                                    </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                                </div>
+                                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Gifts DeTails Section End -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="birthady-david-img">
+                        <img src="assets/images/top_bottom_2.png" alt="" class="img-fluid birthday-david-mainimg">
+                        <div class="birthday-thankyou-img">
+                            <img src="assets/images/thank_you.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="birthday-david-body text-center">
+                            <h6>Thank you note from David!</h6>
+                            <p>Thanks Brother! I aspire to be a person like you.</p>
+                            <p>Thank you, brother, for always understanding when no one else could. I feel glad to be your sister.</p>
+                            <p class="mb-0">You’re the best brother anyone could ask for. Thank you for everything dear brother.😀</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Site Footer Start -->
+    <footer class="gt-site-footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col col-12 col-md-2 col-lg-2">
+                    <div class="gt-site-footer-logo">
+                        <img src="assets/images/logo-light.png" alt="logo-light" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">About Giftly
+                        </h3>
+                        <ul class="gt-footer-menu-list">
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Gift Emporium</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Contact Us </a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Gift History</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Gift Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">For Business </h3>
+                        <ul class="gt-footer-menu-list">
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Contact Us</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Browse Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2 d-none d-md-block">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">App</h3>
+                        <div class="gt-app-content">
+                            <div class="gt-app-qr-code">
+                                <img src="assets/images/app-qr-code.png" alt="app-qr-code" class="img-fluid">
+                            </div>
+                            <p class="gt-app-qr-description">Scan to download the Goody app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gt-site-info-content">
+                <p class="gt-site-info-description">© 2022 Giftly, Inc.Terms of UsePrivacy Policy </p>
+                <ul class="gt-site-social-list">
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Site Footer End -->
+</body>
+
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Kado</title>
+
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+   
+</head>
+
+<body class="gt-site">
+
+    <!-- Site Header Start -->
+    <header class="gt-site-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl home-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/kado-logo.svg" alt="Logo" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler home-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icons"></span>
+                        <span class="navbar-toggler-icons"></span>
+                        <span class="navbar-toggler-icons"></span>
+                    </button>
+                    <div class="gifts-collapse-btn d-block d-xl-none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="collapse navbar-collapse home-navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav home-navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="browse-gift.html">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="#414141"/>
+									</svg></span>Browse Gifts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="send-gift.html">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.01 6.03L11.52 9.25L4 8.25L4.01 6.03V6.03ZM11.51 14.75L4 17.97V15.75L11.51 14.75V14.75ZM2.01 3L2 10L17 12L2 14L2.01 21L23 12L2.01 3Z" fill="#414141"/>
+									</svg></span>Send Gift</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="send-gift.html">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.7491 19.4295L20.0876 16.7668C22.079 14.1055 21.536 10.3337 18.8747 8.34223C16.2134 6.35077 12.4416 6.89377 10.4501 9.55507C8.45868 12.2164 9.00168 15.9882 11.663 17.9797C13.8007 19.5794 16.7369 19.5794 18.8747 17.9797L21.5374 20.6423C21.872 20.9769 22.4145 20.9769 22.749 20.6423C23.0837 20.3077 23.0837 19.7652 22.749 19.4306L22.7491 19.4295ZM15.291 17.4657C12.9258 17.4657 11.0084 15.5484 11.0084 13.1831C11.0084 10.8179 12.9258 8.90052 15.291 8.90052C17.6563 8.90052 19.5737 10.8179 19.5737 13.1831C19.5711 15.5473 17.6552 17.4632 15.291 17.4657Z" fill="#414141"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5574 4.30452H16.4256C17.1989 4.30452 17.8477 4.80392 18.0633 5.49709C17.15 5.13825 16.1555 4.94119 15.1149 4.94119C13.3225 4.94119 11.6666 5.52587 10.3276 6.51491L9.56979 5.49315L6.6732 9.39864L5.28489 8.40529L7.06741 6.00256H2.71396V11.0967H7.27673C7.12802 11.7091 7.04919 12.3488 7.04919 13.0069C7.04919 13.2212 7.05756 13.4336 7.07397 13.6437H2.71396V15.3418H7.39232C7.57298 15.9401 7.82127 16.5091 8.12829 17.0398H2.71396C1.76271 17.0398 1 16.2842 1 15.3418L1.00857 6.00256C1.00857 5.06015 1.76271 4.30452 2.71396 4.30452H4.58217C4.4879 4.04133 4.42791 3.75266 4.42791 3.4555C4.42791 2.04613 5.57627 0.908447 6.99885 0.908447C7.89868 0.908447 8.67853 1.36692 9.1413 2.04613L9.56979 2.62347L9.99828 2.05462C10.461 1.36692 11.2409 0.908447 12.1407 0.908447C13.5633 0.908447 14.7117 2.04613 14.7117 3.4555C14.7117 3.75266 14.6517 4.04133 14.5574 4.30452ZM12.9977 3.4555C12.9977 2.98854 12.6121 2.60649 12.1407 2.60649C11.6694 2.60649 11.2837 2.98854 11.2837 3.4555C11.2837 3.92247 11.6694 4.30452 12.1407 4.30452C12.6121 4.30452 12.9977 3.92247 12.9977 3.4555ZM7.85583 3.4555C7.85583 2.98854 7.47019 2.60649 6.99885 2.60649C6.52751 2.60649 6.14187 2.98854 6.14187 3.4555C6.14187 3.92247 6.52751 4.30452 6.99885 4.30452C7.47019 4.30452 7.85583 3.92247 7.85583 3.4555Z" fill="#414141"/>
+									</svg></span>Gift Finder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7ZM20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z" fill="#414141"/>
+									</svg></span>Log In</a>
+                            </li>
+                            <li class="nav-item gt-login-item home-create-btn">
+                                <a class="nav-link btn btn-light gt-login-btn" href="#">
+								<span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="#414141"/>
+									</svg></span>Create Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary home-header-btn">
+                        <span class="gt-send-gift-icon">
+                            <img src="assets/images/gift-icon.png" alt="">
+                        </span>
+                        <span>Send a Gift</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Site Header End -->
+
+    <!-- Site Content Start -->
+    <main class="gt-site-content">
+        <!-- Landing Section Start -->
+        <section class="gt-landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 col-lg-6 banner_content">
+                        <div class="gt-landing-content">
+                            <span class="gt-landing-label">Kado</span>
+                            <h1 class="gt-landing-section-title home-landing-title">Send the perfect, thoughtful gift - in under 5 minutes.
+                            </h1>
+                            <p class="gt-landing-section-description">Curated gifts to suit every budget, occasion or
+                                <br /> individual. As easy as sending a text.
+                            </p>
+                            <div class="gt-landing-btn-content">
+                                <a href="#" class="btn btn-primary">
+                                    <span class="gt-send-gift-icon">
+                                        <img src="assets/images/gift-icon.png" alt="">
+                                    </span>
+                                    <span>Send a Gift</span>
+                                </a>
+                                <a href="#" class="btn btn-white">Gift Finder</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 col">
+                        <div class="gt-landing-img">
+                            <img src="assets/images/landing-gift.png" alt="landing img" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Landing Section End -->
+
+        <!-- How works Section End -->
+        <section class="gt-how-work-section">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="gt-section-subtitle">Effortless gifting</h3>
+                    <h2 class="gt-section-title how-work-mtitle">How Kado works</h2>
+                </div>
+                <div class="accordion d-block d-md-none gifting-accorddion" id="giftingaccordion">
+                    <div class="accordion-item gifting-item">
+                        <div class="giftly-work ">
+                            <h2 class="accordion-header" id="giftingheadingOne">
+                                <button class="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#giftingcollapseOne" aria-expanded="true" aria-controls="giftingcollapseOne">
+                          <div class="giftly-work-heading">
+                              <h6 class="giftly-work-no">01</h6>
+                              <h6 class="giftly-work-title mb-0">Select from our wide range <br> of curated, thoughtful gifts.</h6>
+                          </div>
+                        </button>
+                            </h2>
+                            <div id="giftingcollapseOne" class="accordion-collapse collapse show" aria-labelledby="giftingheadingOne" data-bs-parent="#giftingaccordion">
+                                <div class="accordion-body">
+                                    <div class="giftly-work-body">
+                                        <p class="giftly-work-discription">
+                                            We have curated the best gifts for any occasion into the one place. Still need a hand? <a href="#"> Try our Gift Finder!</a>
+                                        </p>
+                                        <div class="giftly-work-img">
+                                            <img src="assets/images/work_1.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item gifting-item">
+                        <div class="giftly-work">
+                            <h2 class="accordion-header" id="giftingheadingTwo">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#giftingcollapseTwo" aria-expanded="false" aria-controls="giftingcollapseTwo">
+                                <div class="giftly-work-heading ">
+                                    <h6 class="giftly-work-no ">02</h6>
+                                    <h6 class="giftly-work-title mb-0">Send your gift and e-card <br> via email or SMS.</h6>
+                                </div>
+                        </button>
+                            </h2>
+                            <div id="giftingcollapseTwo" class="accordion-collapse collapse" aria-labelledby="giftingheadingTwo" data-bs-parent="#giftingaccordion">
+                                <div class="accordion-body">
+                                    <div class="giftly-work-body ">
+                                        <p class="giftly-work-discription ">
+                                            No need to worry about addresses, sizes or colours - your recipient will enter this when they confirm your gift.
+                                        </p>
+                                        <div class="giftly-work-img ">
+                                            <img src="assets/images/work_2.png " alt=" " class="img-fluid ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item gifting-item">
+                        <div class="giftly-work ">
+                            <h2 class="accordion-header" id="giftingheadingThree">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#giftingcollapseThree" aria-expanded="false" aria-controls="giftingcollapseThree">
+                                <div class="giftly-work-heading ">
+                                    <h6 class="giftly-work-no ">03</h6>
+                                    <h6 class="giftly-work-title mb-0">A delightful opening <br> experience for your recipient. <br> Smiles guaranteed.</h6>
+                                </div>                               
+                        </button>
+                            </h2>
+                            <div id="giftingcollapseThree" class="accordion-collapse collapse" aria-labelledby="giftingheadingThree" data-bs-parent="#giftingaccordion">
+                                <div class="accordion-body">
+                                    <div class="giftly-work-body ">
+                                        <p class="giftly-work-discription ">
+                                            They'll flip through your e-card, "unwrap " your gift, and swap it out for another item from our collection if they prefer - meaning you get it right every time.
+                                        </p>
+                                        <div class="giftly-work-img ">
+                                            <img src="assets/images/work_3.png " alt=" " class="img-fluid ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item  gifting-item">
+                        <div class="giftly-work ">
+                            <h2 class="accordion-header" id="giftingheadingFour">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#giftingcollapseFour" aria-expanded="false" aria-controls="giftingcollapseFour">
+                                <div class="giftly-work-heading ">
+                                    <h6 class="giftly-work-no ">04</h6>
+                                    <h6 class="giftly-work-title mb-0">Pay only once your recipient has <br> confirmed your gift.</h6>
+                                </div>                               
+                        </button>
+                            </h2>
+                            <div id="giftingcollapseFour" class=" accordion-collapse collapse" aria-labelledby="giftingheadingFour" data-bs-parent="#giftingaccordion">
+                                <div class="accordion-body ">
+                                    <div class="giftly-work-body">
+                                        <p class="giftly-work-discription">
+                                            You'll pay for whatever gift your recipient ends up confirming (equal or lesser in value to your selection). Next up - your gift will be with them in no time!
+                                        </p>
+                                        <div class="giftly-work-img ">
+                                            <img src="assets/images/work_4.png " alt=" " class="img-fluid ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="giftly-work-content d-block ">
+                    <div class="giftly-work ">
+                        <div class="giftly-work-heading ">
+                            <h6 class="giftly-work-no ">01</h6>
+                            <h6 class="giftly-work-title ">Select from our wide range of curated, thoughtful gifts.</h6>
+                        </div>
+                        <div class="giftly-work-body ">
+                            <div>
+                                <p class="giftly-work-discription ">
+                                    We have curated the best gifts for any occasion into the one place. Still need a hand? <a href="# "> Try our Gift Finder!</a>
+                                </p>
+                            </div>
+                            <div class="giftly-work-img ">
+                                <img src="assets/images/work_1.png " alt=" " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giftly-work ">
+                        <div class="giftly-work-heading ">
+                            <h6 class="giftly-work-no ">02</h6>
+                            <h6 class="giftly-work-title ">Send your gift and e-card via email or SMS.</h6>
+                        </div>
+                        <div class="giftly-work-body ">
+                            <div>
+                                <p class="giftly-work-discription ">
+                                    No need to worry about addresses, sizes or colours - your recipient will enter this when they confirm your gift.
+                                </p>
+                            </div>
+                            <div class="giftly-work-img ">
+                                <img src="assets/images/work_2.png " alt=" " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giftly-work ">
+                        <div class="giftly-work-heading ">
+                            <h6 class="giftly-work-no ">03</h6>
+                            <h6 class="giftly-work-title ">A delightful opening experience for your recipient. Smiles guaranteed.</h6>
+                        </div>
+                        <div class="giftly-work-body ">
+                            <div>
+                                <p class="giftly-work-discription ">
+                                    They'll flip through your e-card, "unwrap " your gift, and swap it out for another item from our collection if they prefer - meaning you get it right every time.
+                                </p>
+                            </div>
+                            <div class="giftly-work-img ">
+                                <img src="assets/images/work_3.png " alt=" " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giftly-work ">
+                        <div class="giftly-work-heading ">
+                            <h6 class="giftly-work-no ">04</h6>
+                            <h6 class="giftly-work-title ">Pay only once your recipient has confirmed your gift.</h6>
+                        </div>
+                        <div class="giftly-work-body ">
+                            <div>
+                                <p class="giftly-work-discription ">
+                                    You'll pay for whatever gift your recipient ends up confirming (equal or lesser in value to your selection). Next up - your gift will be with them in no time!
+                                </p>
+                            </div>
+                            <div class="giftly-work-img ">
+                                <img src="assets/images/work_4.png " alt=" " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="gt-how-work-content-area d-none d-md-block ">
+                    <div class="row first_number">
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <div class="gt-how-work-img ">
+                                <img src="assets/images/choose-img.png " alt="choose-img " class="img-fluid ">
+                            </div>
+                            <span class="gt-how-work-number "> 01 </span>
+                        </div>
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <div class="gt-how-work-content ">
+                                <h3 class="gt-how-work-title ">Select from our wide <br /> range of curated,
+                                    <br />thoughtful gifts.
+                                </h3>
+                                <p class="gt-how-work-description ">We have curated the best gifts for any occasion into the one place. Still need a hand? Try our <a href="# ">Gift Finder!</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row second_number">
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <span class="gt-how-work-number "> 02 </span>
+                            <div class="gt-how-work-content ">
+                                <h3 class="gt-how-work-title ">Send your gift and <br />e-card via email or SMS.
+                                </h3>
+                                <p class="gt-how-work-description ">No need to worry about addresses, sizes or colours - your recipient will enter this when they confirm your gift.</p>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <div class="gt-how-work-img ">
+                                <img src="assets/images/phone-number-img.png " alt="phone-number-img " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row third_number">
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <div class="gt-how-work-img ">
+                                <img src="assets/images/recipients-swap-img.png " alt="recipients-swap-img " class="img-fluid ">
+                            </div>
+                            <span class="gt-how-work-number "> 03 </span>
+                        </div>
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <div class="gt-how-work-content ">
+                                <h3 class="gt-how-work-title ">A delightful opening experience. Smiles guaranteed.
+                                </h3>
+                                <p class="gt-how-work-description ">They'll flip through your e-card, "unwrap " your gift, and swap it out for another item from our collection if they prefer - meaning you get it right every time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row fourth_number">
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <span class="gt-how-work-number "> 04 </span>
+                            <div class="gt-how-work-content ">
+                                <h3 class="gt-how-work-title ">Pay only once your recipient has confirmed your gift.
+                                </h3>
+                                <p class="gt-how-work-description ">You'll pay for whatever gift your recipient ends up confirming (equal or lesser in value to your selection). Next up - your gift will be with them in no time!</p>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-12 col-lg-6 ">
+                            <div class="gt-how-work-img ">
+                                <img src="assets/images/pay-only-img.png " alt="pay-only-img " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How works Section End -->
+
+        <!-- Quality gifts Section Start -->
+        <section class="gt-quality-gift-section ">
+            <div class="container ">
+				<div class="row ">
+					<div class="col col-12 col-md-12 col-lg-5 ">
+						<div class="gt-quality-gift-heding ">
+							<label class="gt-section-label ">Our collection</label>
+							<h2 class="gt-section-title ">Curated, thoughtful gifts for all budgets and occasions.
+							</h2>
+						</div>
+					</div>
+					<div class="col col-12 col-md-12 col-lg-7 ">
+						<div class="gt-quality-gift-description ">
+							<p class="gt-section-description ">We're constantly working to curate a perfect, on-trend gift collection that will make everyone smile. We partner with dozens of local businesses and values-driven companies making a difference in the world - from minority
+								and LGBTQ-owned companies to climate sustainability initiatives.</p>
+							<a href="# " class="btn btn-primary gt-btn-custom ">Browse Gifts</a>
+						</div>
+					</div>
+				</div>
+            </div>
+			<div class="gt-quality-gift-slider-main">
+				<div class="container">
+					<div class="row">
+						<div class="gt-quality-gift-slider ">
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/ember-img.png " alt="ember-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/dagin-dover-img.png " alt="ember-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/brightland-img.png " alt="brightland-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/cacke-img.png " alt="cacke-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/bag-img.png " alt="bag-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/brightland-img.png " alt="brightland-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/ember-img.png " alt="ember-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/dagin-dover-img.png " alt="ember-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+							<div class="gt-quality-gift-slide ">
+								<div class="gt-quality-gift-card ">
+									<div class="gt-quality-gift-card-img ">
+										<img src="assets/images/brightland-img.png " alt="brightland-img " class="img-fluid ">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+        <!-- Quality gifts Section End -->
+
+
+        <!-- FAQ Section Start -->
+        <section class="gt-faq-section ">
+            <div class="container ">
+                <div class="gt-faq-heading ">
+                    <h3 class="gt-section-subtitle ">FaQs</h3>
+                    <h2 class="gt-section-title ">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="gt-faq-content">
+                    <div class="accordion faq-accordion" id="FAQaccordion">
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="gt-faq-solved-icon">
+                                        <img src="assets/images/check-mark-icon.png" alt="check-mark-icon"
+                                            class="img-fluid ">
+                                    </span>
+                                    <span>
+                                        How do I send a gift?
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
+                                <div class="accordion-body">
+                                    <p>You can send a gift at our Gift Portal here. You’ll first be prompted to choose a gift from our curated Gift Emporium, before picking an e-card and writing them a message. </p>
+                                    <p>You don’t need your recipient’s address in order to send the gift - you’ll receive a link which you can send to your lucky recipient, or we can send it on your behalf. Within this link, they’ll be able to see your message
+                                        and e-card, confirm your gift (including picking any colours, sizes or types) or swap it for something of equal or lesser value. They’ll also confirm their address and shipping details.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="gt-faq-solved-icon">
+                                        <img src="assets/images/check-mark-icon.png" alt="check-mark-icon"
+                                            class="img-fluid">
+                                    </span>
+                                    <span>
+                                        Do I need my recipient’s address before sending a gift?
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+                                <div class="accordion-body">
+                                    <p>You can send a gift at our Gift Portal here. You’ll first be prompted to choose a gift from our curated Gift Emporium, before picking an e-card and writing them a message. </p>
+                                    <p>You don’t need your recipient’s address in order to send the gift - you’ll receive a link which you can send to your lucky recipient, or we can send it on your behalf. Within this link, they’ll be able to see your message
+                                        and e-card, confirm your gift (including picking any colours, sizes or types) or swap it for something of equal or lesser value. They’ll also confirm their address and shipping details.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="gt-faq-solved-icon">
+                                        <img src="assets/images/check-mark-icon.png" alt="check-mark-icon"
+                                            class="img-fluid">
+                                    </span>
+                                    <span>
+                                        Can you help me pick a gift?
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
+                                <div class="accordion-body">
+                                    <p>You can send a gift at our Gift Portal here. You’ll first be prompted to choose a gift from our curated Gift Emporium, before picking an e-card and writing them a message. </p>
+                                    <p>You don’t need your recipient’s address in order to send the gift - you’ll receive a link which you can send to your lucky recipient, or we can send it on your behalf. Within this link, they’ll be able to see your message
+                                        and e-card, confirm your gift (including picking any colours, sizes or types) or swap it for something of equal or lesser value. They’ll also confirm their address and shipping details.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="gt-faq-solved-icon">
+                                        <img src="assets/images/check-mark-icon.png" alt="check-mark-icon"
+                                            class="img-fluid ">
+                                    </span>
+                                    <span>
+                                        When do I pay for the gift?
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" >
+                                <div class="accordion-body">
+                                    <p>You can send a gift at our Gift Portal here. You’ll first be prompted to choose a gift from our curated Gift Emporium, before picking an e-card and writing them a message. </p>
+                                    <p>You don’t need your recipient’s address in order to send the gift - you’ll receive a link which you can send to your lucky recipient, or we can send it on your behalf. Within this link, they’ll be able to see your message
+                                        and e-card, confirm your gift (including picking any colours, sizes or types) or swap it for something of equal or lesser value. They’ll also confirm their address and shipping details.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span class="gt-faq-solved-icon">
+                                        <img src="assets/images/check-mark-icon.png" alt="check-mark-icon"
+                                            class="img-fluid">
+                                    </span>
+                                    <span>
+                                        What if my recipient wants to swap their gift?
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                                <div class="accordion-body">
+                                    <p>You can send a gift at our Gift Portal here. You’ll first be prompted to choose a gift from our curated Gift Emporium, before picking an e-card and writing them a message. </p>
+                                    <p>You don’t need your recipient’s address in order to send the gift - you’ll receive a link which you can send to your lucky recipient, or we can send it on your behalf. Within this link, they’ll be able to see your message
+                                        and e-card, confirm your gift (including picking any colours, sizes or types) or swap it for something of equal or lesser value. They’ll also confirm their address and shipping details.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section End -->
+    </main>
+    <!-- Site Content End -->
+
+    <!-- Site Footer Start -->
+    <footer class="gt-site-footer ">
+        <div class="container ">
+            <div class="row justify-content-between ">
+                <div class="col col-12 col-md-2 col-lg-2 ">
+                    <div class="gt-site-footer-logo ">
+                        <img src="assets/images/logo-light.svg " alt="logo-light " class="img-fluid ">
+                    </div>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3 ">
+                    <div class="gt-site-footer-menu ">
+                        <h3 class="gt-site-footer-menu-title ">About Kado
+                        </h3>
+                        <ul class="gt-footer-menu-list ">
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Gift Emporium</a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Contact Us </a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Gift History</a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Gift Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2 ">
+                    <div class="gt-site-footer-menu ">
+                        <h3 class="gt-site-footer-menu-title ">For Business </h3>
+                        <ul class="gt-footer-menu-list ">
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Contact Us</a>
+                            </li>
+                            <li class="gt-footer-menu-item ">
+                                <a href="# " class="gt-footer-menu-link ">Browse Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2 d-none d-md-block ">
+                    <div class="gt-site-footer-menu ">
+                        <h3 class="gt-site-footer-menu-title ">App</h3>
+                        <div class="gt-app-content ">
+                            <div class="gt-app-qr-code ">
+                                <img src="assets/images/app-qr-code.png " alt="app-qr-code " class="img-fluid ">
+                            </div>
+                            <p class="gt-app-qr-description ">Scan to download the Goody app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gt-site-info-content ">
+                <p class="gt-site-info-description ">© 2022 Kado, Inc.Terms of UsePrivacy Policy</p>
+                <ul class="gt-site-social-list ">
+                    <li class="gt-site-social-item ">
+                        <a href="# " class="gt-site-social-link ">
+                            <i class="fa-brands fa-instagram "></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item ">
+                        <a href="# " class="gt-site-social-link ">
+                            <i class="fa-brands fa-twitter "></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item ">
+                        <a href="# " class="gt-site-social-link ">
+                            <i class="fa-brands fa-linkedin-in "></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Site Footer End -->
+	 <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+
+</html>

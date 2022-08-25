@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Giftly</title>
+
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body class="gt-site">
+
+
+
+
+    <!-- Gifts Section Start -->
+    <section class="gifts-section">
+        <div class="gifts-content">
+            <div class="row g-0">
+                <div class="col col-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="gifts-send-navbar">
+                        <nav class="navbar">
+                            <div class="navbar-btn">
+                                <button class="gift-toggler">
+                                    <span class="gift-toggler-icons"></span>
+                                    <span class="gift-toggler-icons"></span>
+                                    <span class="gift-toggler-icons"></span>
+                                </button>
+                                <div class="gifts-collapse-btn d-block d-lg-none">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="gifts-collapse">
+                                <div class="header-logo gift-send-logo">
+                                    <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
+                                </div>
+                                <ul class="gifts-navbar">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#"><img src="assets/images/user.png" alt="" class="img-fluid">Gifts History</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/pay.png" alt="" class="img-fluid">Pay for Gifts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/send.png" alt="" class="img-fluid">Send a Gift
+                                            <img src="assets/images/nav_arrow.png" alt="Nav_arrow" class="img-fluid gifts-nav-arrow me-0">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item gifts-navbar-underline">
+                                        <a class="nav-link" href="#"><img src="assets/images/giftcard.png" alt="" class="img-fluid">Browse Gifts
+                                            <img src="assets/images/nav_arrow.png" alt="Nav_arrow" class="img-fluid gifts-nav-arrow me-0">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/account_2.png" alt="" class="img-fluid">Account Settings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/images/question_2.png" alt="" class="img-fluid">Help</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+                <div class="col col-12 col-md-12 col-lg-9 col-xl-9">
+                    <div class="gifts-sent-content">
+                        <div class="dropdown header-dropdown gift-history-drop d-none d-lg-block">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/header-img.png" alt="" class="img-fluid"> 
+                                         <span class="gt-section-description"> Hi,<b>Matthew</b></span>
+                                    </button>
+                            <ul class="dropdown-menu user-profile" aria-labelledby="dropdownMenuButton1">
+
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/question.png" alt="account" class="img-fluid"><span>Help</span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/home.png" alt="account" class="img-fluid"><span>Home</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="assets/images/account.png" alt="account" class="img-fluid"><span>Account Details</span></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item profile-logout" href="#"><img src="assets/images/logout.png" alt="account" class="img-fluid"><span>Log out</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gifts-list gifts-send-list">
+                            <nav aria-label="breadcrumb" class="breadcrumb-content">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link"><i
+                                                class="fa-solid fa-arrow-left"></i> Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Gifts sent</li>
+                                </ol>
+                            </nav>
+                            <div class="gifts-items">
+                                <div class="gifts-items-header gift-send-header">
+                                    <h3 class="mb-0">Gifts History</h3>
+
+                                    <!-- <div class="exchange-search-box gt-browse-gift-header-seach gift-send-select">
+                                        <div class="exchange-search-btn d-block d-lg-none">
+                                            <button class="btn btn-primary" type="button">
+                                        <img src="assets/images/White Search 2.png" alt="white-search-icon" class="img-fluid">
+                                    </button>
+                                        </div>
+                                        <div class="gt-browse-gift-header-seach menu-selector gifts-items-header d-none d-lg-block">
+                                            <span class="gt-search-icon">
+                                        <img src="assets/images/gift-search.png" alt="search-icon" class="img-fluid">
+                                    </span>
+                                            <input type="text" class="form-control" placeholder="Search here...">
+                                            <button class="btn btn-primary" type="button">
+                                        <img src="assets/images/White Search 2.png" alt="white-search-icon" class="img-fluid">
+                                    </button>
+                                        </div>
+                                    </div> -->
+                                    <div class="gift-send-select-time">
+                                        <div class="gt-browse-gift-header-seach gifts-items-header gift-history-search mb-0">
+                                            <span class="gt-search-icon">
+                                                <img src="assets/images/gift-search.png" alt="search-icon"
+                                                    class="img-fluid">
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Search here...">
+                                            <button class="btn btn-primary" type="button">
+                                                <img src="assets/images/White Search 2.png" alt="white-search-icon"
+                                                    class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="gifts-selecter">
+                                            <select class="form-select d-none d-lg-block gift-send-price-select gt-price-select rounded-pill" aria-label="Default select example">
+                                                <option selected="">Last 3 months   </option>
+                                                <option value="1">Last 6 months</option>
+                                                <option value="2">Last 1 Year</option>
+                                            </select>
+                                            <a href="#" class="gift-send-modal-btn d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#lastprice">Last 3 months</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="gifts-card-list gift-send-card-list">
+                                    <div class="card gifts-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img1.png" class="card-img-top img-fluid w-100" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body gift-history-card-body gift-history-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                            <p class="card-text gifts-card-text d-none d-md-block">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                            <div class="accordion gift-history-accordion d-block d-md-none d-block d-md-none" id="deuxone">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="deuxheadingOne">
+                                                        <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deuxcollapseOne" aria-expanded="false" aria-controls="deuxcollapseOne">
+                                                                Show Discription
+                                                      </button>
+                                                    </h2>
+                                                    <div id="deuxcollapseOne" class="accordion-collapse collapse" aria-labelledby="deuxheadingOne" data-bs-parent="#deuxone">
+                                                        <div class="accordion-body">
+                                                            <p class="card-text gifts-card-text">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="send-dettails.html" class="btn gt-btn-custom gifts-card-view">View Details</a>
+                                            </div>
+                                            <div class="gifts-card-btn">
+                                                <a href="#" class="btn btn-primary gt-btn-custom gift-card-pay">Pay
+                                                    Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img2.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body gift-history-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">Anna A's Anniversary</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                            <p class="card-text gifts-card-text d-none d-md-block">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                            <div class="accordion gift-history-accordion d-block d-md-none" id="deuxtwo">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="deuxheadingtwo">
+                                                        <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deuxcollapsetwo" aria-expanded="false" aria-controls="deuxcollapsetwo">
+                                                                Show Discription
+                                                      </button>
+                                                    </h2>
+                                                    <div id="deuxcollapsetwo" class="accordion-collapse collapse" aria-labelledby="deuxheadingtwo" data-bs-parent="#deuxtwo">
+                                                        <div class="accordion-body">
+                                                            <p class="card-text gifts-card-text">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="send-dettails.html" class="btn gt-btn-custom gifts-card-view">View Details</a>
+                                            </div>
+                                            <div class="gifts-card-btn">
+                                                <a href="#" class="btn btn-primary gt-btn-custom gift-card-pay">Pay
+                                                    Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img3.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body gift-history-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">Ronnie Kintanar's Promotion</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                            <p class="card-text gifts-card-text d-none d-md-block">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                            <div class="accordion gift-history-accordion d-block d-md-none" id="deuxthree">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="deuxheadingthree">
+                                                        <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deuxcollapsethree" aria-expanded="false" aria-controls="deuxcollapsethree">
+                                                                Show Discription
+                                                      </button>
+                                                    </h2>
+                                                    <div id="deuxcollapsethree" class="accordion-collapse collapse" aria-labelledby="deuxheadingthree" data-bs-parent="#deuxthree">
+                                                        <div class="accordion-body">
+                                                            <p class="card-text gifts-card-text">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="send-dettails.html" class="btn gt-btn-custom gifts-card-view">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img4.png" class="card-img-top img-fluid" alt="...">
+                                            <h6 class="gift-card-delivered">Gift Delivered</h6>
+                                            <span class="gift-delivered-img"><img src="assets/images/delivered_img.png"
+                                                    alt="" class="img-fluid"></span>
+                                        </div>
+                                        <div class="card-body gifts-card-body gift-history-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                            <p class="card-text gifts-card-text d-none d-md-block">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                            <div class="accordion gift-history-accordion d-block d-md-none" id="deuxfour">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="deuxheadingfour">
+                                                        <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deuxcollapsefour" aria-expanded="false" aria-controls="deuxcollapsefour">
+                                                                Show Discription
+                                                      </button>
+                                                    </h2>
+                                                    <div id="deuxcollapsefour" class="accordion-collapse collapse" aria-labelledby="deuxheadingfour" data-bs-parent="#deuxfour">
+                                                        <div class="accordion-body">
+                                                            <p class="card-text gifts-card-text">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="send-dettails.html" class="btn gt-btn-custom gifts-card-view">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img5.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body gift-history-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">Anna A's Anniversary</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                            <p class="card-text gifts-card-text d-none d-md-block">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                            <div class="accordion gift-history-accordion d-block d-md-none" id="deuxfive">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="deuxheadingfive">
+                                                        <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deuxcollapsefive" aria-expanded="false" aria-controls="deuxcollapsefive">
+                                                                Show Discription
+                                                      </button>
+                                                    </h2>
+                                                    <div id="deuxcollapsefive" class="accordion-collapse collapse" aria-labelledby="deuxheadingfive" data-bs-parent="#deuxfive">
+                                                        <div class="accordion-body">
+                                                            <p class="card-text gifts-card-text">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="send-dettails.html" class="btn gt-btn-custom gifts-card-view">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card gifts-card">
+                                        <div class="card-img gifts-card-img">
+                                            <img src="assets/images/gcard-img6.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body gifts-card-body gift-history-card-body">
+                                            <h5 class="card-title gifts-card-mtitle">Ronnie Kintanar's Promotion</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
+                                            <p class="card-text gifts-card-text d-none d-md-block">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                            <div class="accordion gift-history-accordion d-block d-md-none" id="deuxsix">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="deuxheadingsix">
+                                                        <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deuxcollapsesix" aria-expanded="false" aria-controls="deuxcollapsesix">
+                                                                Show Discription
+                                                      </button>
+                                                    </h2>
+                                                    <div id="deuxcollapsesix" class="accordion-collapse collapse" aria-labelledby="deuxheadingsix" data-bs-parent="#deuxsix">
+                                                        <div class="accordion-body">
+                                                            <p class="card-text gifts-card-text">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough and spreads that are vegan, gluten free...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gifts-card-footer">
+                                            <div class="gifts-card-btn">
+                                                <a href="send-dettails.html" class="btn gt-btn-custom gifts-card-view">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gifts Section End -->
+
+
+    <!-- Modal -->
+    <div class="modal last-month-modal fade" id="lastprice" tabindex="-1" aria-labelledby="lastprice" aria-hidden="true">
+        <div class="modal-dialog mx-auto m-0">
+            <div class="modal-content border-0">
+                <div class="modal-header last-month-modal">
+                    <h5 class="modal-title" id="lastprice">Month</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body last-month-modal-body">
+                    <a href="#" class="last-month-list">Last 1 Months</a>
+                    <a href="#" class="last-month-list">Last 3 Months</a>
+                    <a href="#" class="last-month-list">Last 6 Months</a>
+                    <a href="#" class="last-month-list">Last 1 Year</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Footer Start -->
+    <!-- <footer class="gt-site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-2 col-lg-2">
+                    <div class="gt-site-footer-logo">
+                        <img src="assets/images/logo-light.png" alt="logo-light" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">About Goody </h3>
+                        <ul class="gt-footer-menu-list">
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">We’re Hiring</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Blog    </a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Become a Brand</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Partner</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Contact Us</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">For Business </h3>
+                        <ul class="gt-footer-menu-list">
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Goody for Business  </a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link"> For EAs</a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Browse Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">For Individuals</h3>
+                        <ul class="gt-footer-menu-list">
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">Browse Gifts  </a>
+                            </li>
+                            <li class="gt-footer-menu-item">
+                                <a href="#" class="gt-footer-menu-link">My Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-2 col-lg-2">
+                    <div class="gt-site-footer-menu">
+                        <h3 class="gt-site-footer-menu-title">App</h3>
+                        <div class="gt-app-content">
+                            <div class="gt-app-qr-code">
+                                <img src="assets/images/app-qr-code.png" alt="app-qr-code" class="img-fluid">
+                            </div>
+                            <p class="gt-app-qr-description">Scan to download the Goody app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gt-site-info-content">
+                <p class="gt-site-info-description">© 2022 Giftly, Inc.Terms of UsePrivacy Policy </p>
+                <ul class="gt-site-social-list">
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="gt-site-social-item">
+                        <a href="#" class="gt-site-social-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer> -->
+    <!-- Site Footer End -->
+</body>
+
+</html>

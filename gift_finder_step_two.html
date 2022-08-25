@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/select2.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/select2.min.js"></script> -->
+    <script src="assets/js/custom.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <section class="recommendation-header new-design">
+        <div class="container">
+            <div class="recommendatioin-header-content">
+                <div class="recommendation-header-logo">
+                    <a href="#"><i class="fa-solid fa-arrow-left"></i><img src="assets/images/recomme_logo.png" alt="" class="img-fluid"></a>
+                </div>
+                <div class="recommendation-header-gift">
+                    <img src="assets/images/finder_age.png" alt="" class="img-fluid">
+                </div>
+                <div class="recommendation-header-icon">
+                    <a href="#"><img src="assets/images/reco_home.png" alt="" class="img-fluid"></a>
+                    <a href="#" class="me-0" data-bs-toggle="modal" data-bs-target="#finderModal"><img src="assets/images/reco_message.png" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Finder Second Section Start -->
+    <section class="g-finder-section g-finder-second-section g-finder-one-section new-design section-bg-color">
+        <div class="container">
+            <div class="g-finder-second-content recommendation-content">
+                <h2 class="g-finder-second-title recommendation-title">How old is your recipient?</h2>
+                <div class="g-finder-second-input">
+                    <div class="finder-second-age-input">
+                        <label class="form-label w-100 finder-second-label" for="ageradio">12 - 18
+                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradio" checked>
+                        </label>
+                    </div>
+                    <div class="finder-second-age-input">
+                        <label class="form-label w-100 finder-second-label" for="ageradioone">18 - 30
+                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradioone">
+                        </label>
+                    </div>
+                    <div class="finder-second-age-input">
+                        <label class="form-label w-100 finder-second-label" for="ageradiotwo">30 - 40
+                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradiotwo">
+                        </label>
+                    </div>
+                    <div class="finder-second-age-input">
+                        <label class="form-label w-100 finder-second-label" for="ageradiothree">40 - 50
+                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradiothree">
+                        </label>
+                    </div>
+                    <div class="finder-second-age-input mb-0">
+                        <label class="form-label w-100 finder-second-label" for="ageradiofour">50+
+                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradiofour">
+                        </label>
+                    </div>
+                </div>
+                <div class="g-finder-one-btn g-finder-two-btn mb-0">
+                    <a href="#" class="btn g-finder-skip-btn">Skip Step</a>
+                </div>
+                <div class="g-finder-next-btn">
+                    <a href="#" class="btn p-0"><img src="assets/images/next_btn.png" alt="" class="img-fluid"></a>
+                </div>
+                <div class="g-finder-prev-btn">
+                    <a href="#" class="btn p-0"><img src="assets/images/prev_btn.png" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gift Finder Second Section End -->
+
+    <!-- Finder Modal -->
+    <div class="modal fade finder-modal" id="finderModal" tabindex="-1" aria-labelledby="finderModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header finder-modal-header">
+                    <h5 class="modal-title" id="finderModal">Ask us anything</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body finder-modal-body">
+                    <p class="finder-modal-discription">Fill in your details, write your question, and we will get back to you</p>
+                    <div class="finder-modal-input">
+                        <label class="form-label">Full name</label>
+                        <input type="text" class="form-control" placeholder="Enter full name">
+                    </div>
+                    <div class="finder-modal-input">
+                        <label class="form-label">Email address</label>
+                        <input type="text" class="form-control" placeholder="Enter email address">
+                    </div>
+                    <div class="finder-modal-input">
+                        <label class="form-label">How can I help you</label>
+                        <textarea class="form-control" cols="30" rows="3" placeholder="Enter some text"></textarea>
+                    </div>
+                    <a href="#" class="btn btn-primary finder-modal-btn w-100">Send</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
