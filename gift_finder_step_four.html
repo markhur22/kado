@@ -31,21 +31,27 @@
         <div class="container">
             <div class="recommendatioin-header-content">
                 <div class="recommendation-header-logo">
-                    <a href="#"><i class="fa-solid fa-arrow-left"></i><img src="assets/images/recomme_logo.png" alt="" class="img-fluid"></a>
+                    <a href="#">
+						<span class="logo_back">
+							<img src="assets/images/logo_arow.svg">
+						</span>
+						<img src="assets/images/kado-logo.svg" alt="" class="img-fluid">
+					</a>
                 </div>
                 <div class="recommendation-header-gift">
-                    <img src="assets/images/finder_choose.png" alt="" class="img-fluid">
+                    <img src="assets/images/block_img.svg" alt="" class="img-fluid">
                 </div>
+                
                 <div class="recommendation-header-icon">
-                    <a href="#"><img src="assets/images/reco_home.png" alt="" class="img-fluid"></a>
-                    <a href="#" class="me-0" data-bs-toggle="modal" data-bs-target="#finderModal"><img src="assets/images/reco_message.png" alt="" class="img-fluid"></a>
+                    <a class="home_head_menu" href="#"><img src="assets/images/home_svg.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="me-0 chat_head_menu" data-bs-toggle="modal" data-bs-target="#finderModal"><img src="assets/images/chat_svg.svg" alt="" class="img-fluid"></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gift Finder Four Section Start -->
-    <section class="g-finder-section g-finder-four-section new-design section-bg-color">
+    <section class="interest_checker g-finder-section g-finder-four-section new-design section-bg-color">
         <div class="container">
             <div class="g-finder-four-content recommendation-content">
                 <h2 class="g-finder-four-title recommendation-title">What are your recipient’s interests?</h2>
@@ -53,7 +59,7 @@
                     <div class="row">
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckbox" checked>
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckbox" name="sports">
                                 <label for="interestcheckbox" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_1.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +72,7 @@
                         </div>
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox  text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxone">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxone" name="reading">
                                 <label for="interestcheckboxone" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_2.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +88,7 @@
                         </div>
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox  text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxtwo">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxtwo" name="decor">
                                 <label for="interestcheckboxtwo" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_3.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +101,7 @@
                         </div>
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox  text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxthree">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxthree" name="music">
                                 <label for="interestcheckboxthree" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_4.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +114,7 @@
                         </div>
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox  text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxfour">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxfour" name="audio">
                                 <label for="interestcheckboxfour" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_5.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +127,7 @@
                         </div>
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox  text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxfive">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxfive" name="pets">
                                 <label for="interestcheckboxfive" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_6.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +144,7 @@
                         </div>
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox  text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxsix">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxsix" name="travel">
                                 <label for="interestcheckboxsix" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_7.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +157,7 @@
                         </div>
                         <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
                             <div class="finder-four-checkbox  text-center">
-                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxsaven">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxsaven" name="games">
                                 <label for="interestcheckboxsaven" class="form-check-label finder-four-label">
                                     <!-- <img src="assets/images/interest_8.png" alt="" class="img-fluid"> -->
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,9 +172,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="g-finder-one-btn g-finder-four-btn mb-0">
-                        <a href="#" class="btn g-finder-skip-btn">Skip Step</a>
-                    </div>
+                    
+					<div class="g-finder-one-btn g-finder-two-btn mb-0 action_btn next_btn disable_btn">
+						<a href="#" class="btn g-finder-skip-btn">Next</a>
+					</div>
+					<div class="g-finder-one-btn g-finder-two-btn action_btn mb-20">
+						<a href="#" class="btn g-finder-skip-btn">Skip Step</a>
+					</div>
                     <div class="g-finder-prev-btn">
                         <a data-target-section="g-finder-third-section" class="g-finder-step-btn btn p-0"><img src="assets/images/prev_btn.png" alt="" class="img-fluid"></a>
                     </div>

@@ -1,5 +1,30 @@
 $(document).ready(function() {
-		
+	$('input[type=radio][name=ageradio]').change(function() {
+		$('.g-finder-second-section .next_btn').removeClass('disable_btn');
+	});
+	
+	$('input[type=radio][name=budgetradio]').change(function() {
+		$('.g-finder-third-content .next_btn').removeClass('disable_btn');
+	});
+	$('.interest_checker input[type=checkbox]').change(function() { 
+		var int_check = $('.interest_checker input[type=checkbox]:checked').length;  
+		if(int_check > 0){
+			$('.interest_checker .next_btn').removeClass('disable_btn');
+		}else{
+			$('.interest_checker .next_btn').addClass('disable_btn');
+		}
+	});
+	
+    var size_li = $(".select_gift_for .row .col").length;
+    var x=4;
+    $('.select_gift_for .row .col:lt('+x+')').show();
+    $('.g-finder-one-btn.view_more_refers').click(function () {
+        x= (x+5 <= size_li) ? x+4 : size_li;
+        $('.select_gift_for .row .col:lt('+x+')').show();
+        if(x == size_li){
+            $('.g-finder-one-btn.view_more_refers').hide();
+        }
+    });
 
 	$('.gt-quality-gift-slider').slick({
         dots: false,
