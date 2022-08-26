@@ -7829,6 +7829,17 @@ span.logo_back img {     width: 100%; }
 .finder-four-interests .g-finder-one-btn.action_btn.mb-20 {
 	margin-top: 20px; 
 }
+.finder-modal-header {
+	position: relative;
+}
+.finder-modal-header .btn-close {
+	width: 14px;
+	height: 14px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 29px;
+}
 /*new desktop changes starts here*/
  
 

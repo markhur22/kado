@@ -18,7 +18,7 @@ $(document).ready(function() {
     var size_li = $(".select_gift_for .row .col").length;
     var x=4;
     $('.select_gift_for .row .col:lt('+x+')').show();
-    $('.g-finder-one-btn.view_more_refers').click(function () {
+    $('.g-finder-one-btn.view_more_refers .btn').click(function () {
         x= (x+5 <= size_li) ? x+4 : size_li;
         $('.select_gift_for .row .col:lt('+x+')').show();
         if(x == size_li){
