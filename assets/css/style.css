@@ -8334,6 +8334,14 @@ span.logo_back img {     width: 100%; }
         padding: 50px 20px 42px;
     }
 }
+@media only screen and (max-width: 1080px) {
+	.g-finder-next-btn {
+		position: absolute;
+		top: 50px;
+		right: initial;
+		left: calc(100% - 60px);
+	}
+}
 
 @media (max-width: 991px) {
 	/*new changes*/
@@ -9444,8 +9452,10 @@ span.logo_back img {     width: 100%; }
     }
 
     .g-finder-next-btn {
-        right: -35px;
-    }
+		right: initial;
+		top: 20px;
+		left: calc(100% - 60px);
+	}
 
     .g-finder-prev-btn {
         left: -35px;
@@ -9580,382 +9590,168 @@ span.logo_back img {     width: 100%; }
 	
 	/*New changes*/
 	
-    .gt-site-header .btn {
-        padding: 4px 17px 4px 5px;
-    }
-
-    .gt-site-header .gt-send-gift-icon {
-        width: 33px;
-        height: 33px;
-        margin-right: 10px;
-    }
-
-    .navbar-brand img {
-        width: 76px;
-    }
-
-    .header-dropdown .dropdown-toggle img {
-        margin-right: 0;
-    }
-
-    .user-profile-header {
-        padding: 27px 16px 24px 12px;
-    }
-
-    .g-account-title {
-        margin-bottom: 23px;
-    }
-
-    .g-profile-edit {
-        display: inherit;
-        text-align: start;
-    }
-
-    .g-profile-img {
-        margin-right: 0;
-        margin-bottom: 22px;
-        margin: 0 auto;
-    }
-
-    .g-account-profile h4 {
-        margin-bottom: 19px;
-    }
-
-    .g-profile-name span {
-        display: block;
-        text-align: center;
-    }
-
-    .gt-gift-emporium-content .gt-section-title {
-        font-size: 22px;
-        line-height: 29px;
-    }
-
-    .gt-browse-gift-header-seach .form-control {
-        min-width: 176px;
-        width: 176px;
-        max-width: 100%;
-    }
-
-    .gt-gift-emporium-description {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .gt-gift-emporium-content {
-        padding: 11px 31px 11px 24px;
-        background-position-x: 78%;
-        margin-bottom: 25px;
-    }
-
-    .g-profile-name {
-        margin-bottom: 33px;
-        margin-top: 22px;
-    }
-
-    .g-profile-upload-img .gt-btn-custom {
-        padding: 9px 9px 10px 10px;
-    }
-
-    .g-profile-upload-img {
-        position: absolute;
-        right: 13px;
-        bottom: -9px;
-    }
-
-    .gt-gift-shipping-label {
-        margin-right: 1px;
-        font-size: 10px;
-        color: #414141;
-    }
-
-    .gt-gift-shipping {
-        font-size: 10px;
-        line-height: 12px;    vertical-align: top;
-    }
-
-    .emporium-modal-header {
-        padding: 19px 26px 19px 32px;
-    }
-
-    .emporium-modal-header .btn-close {
-        width: 32px;
-        height: 32px;
-    }
-
-    .pagination {
-        justify-content: center;
-    }
-
-    .gifts-items {
-        padding: 24px 18px;
-    }
-
-    .g-profile-name h6 {
-        margin-bottom: 14px;
-    }
-
-    .g-profile-basic-info {
-        padding: 34px 20px 40px;
-    }
-
-    .g-account-profile {
-        padding: 49px 20px 51px 20px;
-    }
-
-    .gifts-sent-content {
-        padding: 86px 16px 54px 16px;
-    }
-
-    .profile-password {
-        display: inherit;
-    }
-
-    .profile-contact span:first-child {
-        margin-right: 0;
-        display: block;
-    }
-
-    .g-profile-username span:first-child {
-        margin-right: 0;
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .g-profile-contact-info {
-        padding: 34px 20px 45px;
-    }
-
-    .g-profile-password-setting {
-        padding: 34px 20px 82px;
-    }
-
-    .profile-main-title h6 {
-        margin-bottom: 8px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile-password-br {
-        display: none;
-    }
-
-    .profile-contact {
-        margin-bottom: 31px;
-    }
-
-    .profile-info {
-        margin-bottom: 31px;
-        display: inherit;
-    }
-
-    .profile-info>.form-control {
-        width: 100%;
-    }
-
-    .profile-password-suggestion {
-        margin-left: 0;
-    }
-
-    .profile-password {
-        margin-bottom: 10px;
-    }
-
-    .profile-password p:first-child {
-        margin-right: 0;
-        margin-bottom: 14px;
-    }
-
-    .g-account-footer-btn {
-        width: 100%;
-    }
-
-    .gt-landing-section {
-        padding-top: 30px;
-		
-    }
-
-    .gt-landing-section-title {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 14px;
-    }
-
-    .home-landing-title {
-        font-size: 28px;
-    }
-
-    .gt-landing-section-description {
-        margin-bottom: 24px;
-    }
-
-    .gt-landing-img {
-        max-width: 100%;
-		text-align:center;
-    }
-
-    .gt-landing-content {
-        margin-bottom: 47px;
-    }
-
-    .gt-how-work-section {
-        padding: 50px 0;
-    }
-
-    .gt-section-title {
-        font-size: 43px;
-        line-height: 46px;
-    }
-
-    .gt-faq-section {
-        padding: 60px 0 43px;
-    }
-
-    .gt-how-work-section .gt-section-title {
-        margin-bottom: 40px;
-    }
-
-    .how-work-mtitle {
-        font-size: 36px;
-        line-height: 65px;
-    }
-
-    .gt-how-work-img {
-        width: 100%;
-    }
-
-    .gt-how-work-number {
-        margin: -20px auto 24px 0;
-        transform: translateY(0);
-    }
-
-    .gt-how-work-content {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 87px;
-    }
-
-    .gt-how-work-title {
-        line-height: 40px;
-        margin-bottom: 25px;
-    }
-
-    .gt-how-work-description {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .gt-how-work-section .row:nth-child(2) .gt-how-work-content {
-        width: 100%;
-    }
-
-    .gt-quality-gift-section {
-        padding: 64px 0 60px;
-    }
-
-    .gt-quality-gift-section .gt-section-title {
-        font-size: 34px;
-        line-height: 42px;
-    }
-
-    .gt-quality-gift-content {
-        margin: 0 auto 55px;
-    }
-
-    .gt-section-description br {
-        display: none;
-    }
-
-    .gt-quality-gift-slider .slick-list {
-        padding: 0px 150px 0 0 !important;
-    }
-
-    .slick-arrow {
-        left: 10px;
-    }
-
-    .slick-next.slick-arrow {
-        left: unset;
-        right: 10px;
-    }
-
-    .gt-site-footer-menu-title {
-        font-size: 22px;
-        margin-bottom: 43px;
-    }
-
-    .gt-site-footer-logo {
-        text-align: center;
-        margin-bottom: 66px;
-    }
-
-    .gt-site-footer-menu {
-        width: 100%;
-        margin-bottom: 75px;
-    }
-
-    .gt-app-qr-description {
-        padding-right: 40px;
-    }
-
-    .gt-site-info-content {
-        margin-top: 0;
-        padding-top: 15px;
-        flex-direction: column;
-    }
-
-    .gt-site-info-description {
-        margin-bottom: 20px;
-    }
-
-    .exchange-gift-section {
-        padding-top: 52px;
-        padding-bottom: 50px;
-    }
-
-    .exchange-gift-serach {
-        padding: 14px 21px 18px;
-    }
-
-    .gifts-items-header .form-control {
-        min-width: 297px;
-    }
-
-    .gifts-items-header .form-select {
-        padding: 14px 47px 13px 24px;
-    }
-
-    .exchange-gift-header img {
-        width: 24px;
-    }
-
-    .exchange-gift-title p {
-        padding: 0 17px;
-    }
-
-    .exchange-gift-items {
-        padding: 17px 24px 17px 25px;
-    }
-
-    .browse-gift-card .gt-gift-card-body {
-        padding: 19px 8px 14px 4px;
-    }
-
-    .browse-gift-card .gt-gift-card-title {
-        font-size: 16px;
-        line-height: 19px;
-        margin-bottom: 12px;
-    }
-
-    .gt-gift-card-description {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;    
-    }
-.gt-gift-shipping-label {
-    margin-right: 3px;
-    font-size: 10px;
-}
+    .gt-site-header .btn { padding: 4px 17px 4px 5px; }
+
+    .gt-site-header .gt-send-gift-icon { width: 33px; height: 33px; margin-right: 10px; }
+
+    .navbar-brand img { width: 76px; }
+
+    .header-dropdown .dropdown-toggle img { margin-right: 0; }
+
+    .user-profile-header { padding: 27px 16px 24px 12px; }
+
+    .g-account-title { margin-bottom: 23px;}
+
+    .g-profile-edit { display: inherit;         text-align: start;     }
+
+    .g-profile-img {margin-right: 0; margin-bottom: 22px; margin: 0 auto;}
+
+    .g-account-profile h4 { margin-bottom: 19px; }
+
+    .g-profile-name span { display: block; text-align: center; }
+
+    .gt-gift-emporium-content .gt-section-title {         font-size: 22px;         line-height: 29px;     }
+
+    .gt-browse-gift-header-seach .form-control {         min-width: 176px;         width: 176px;         max-width: 100%;     }
+
+    .gt-gift-emporium-description {         font-size: 12px;         line-height: 16px;     }
+
+    .gt-gift-emporium-content {         padding: 11px 31px 11px 24px;         background-position-x: 78%;         margin-bottom: 25px;     }
+
+    .g-profile-name {         margin-bottom: 33px;         margin-top: 22px;     }
+
+    .g-profile-upload-img .gt-btn-custom {         padding: 9px 9px 10px 10px;     }
+
+    .g-profile-upload-img {         position: absolute;         right: 13px;         bottom: -9px;     }
+
+    .gt-gift-shipping-label {         margin-right: 1px;         font-size: 10px;         color: #414141;     }
+
+    .gt-gift-shipping {         font-size: 10px;         line-height: 12px;    vertical-align: top;     }
+
+    .emporium-modal-header {         padding: 19px 26px 19px 32px;     }
+
+    .emporium-modal-header .btn-close {         width: 32px;         height: 32px;     }
+
+    .pagination {         justify-content: center;     }
+
+    .gifts-items {         padding: 24px 18px;     }
+
+    .g-profile-name h6 {         margin-bottom: 14px;     }
+
+    .g-profile-basic-info {         padding: 34px 20px 40px;     }
+
+    .g-account-profile {         padding: 49px 20px 51px 20px;     }
+
+    .gifts-sent-content {         padding: 86px 16px 54px 16px;     }
+
+    .profile-password {         display: inherit;     }
+
+    .profile-contact span:first-child {         margin-right: 0;         display: block;     }
+
+    .g-profile-username span:first-child {         margin-right: 0;         display: block;         margin-bottom: 10px;     }
+
+    .g-profile-contact-info {         padding: 34px 20px 45px;     }
+
+    .g-profile-password-setting {         padding: 34px 20px 82px;     }
+
+    .profile-main-title h6 {         margin-bottom: 8px;         display: flex;         justify-content: center;     }
+
+    .profile-password-br {         display: none;     }
+
+    .profile-contact {         margin-bottom: 31px;     }
+
+    .profile-info {         margin-bottom: 31px;         display: inherit;     }
+
+    .profile-info>.form-control {         width: 100%;     }
+
+    .profile-password-suggestion {         margin-left: 0;     }
+
+    .profile-password {         margin-bottom: 10px;     }
+
+    .profile-password p:first-child {         margin-right: 0;         margin-bottom: 14px;     }
+
+    .g-account-footer-btn {         width: 100%;     }
+
+    .gt-landing-section {         padding-top: 30px; 		     }
+
+    .gt-landing-section-title {         font-size: 30px;         line-height: 36px;         margin-bottom: 14px;     }
+
+    .home-landing-title {         font-size: 28px;     }
+
+    .gt-landing-section-description {         margin-bottom: 24px;     }
+
+    .gt-landing-img {         max-width: 100%; 		text-align:center;     }
+
+    .gt-landing-content {         margin-bottom: 47px;     }
+
+    .gt-how-work-section {         padding: 50px 0;     }
+
+    .gt-section-title {         font-size: 43px;         line-height: 46px;     }
+
+    .gt-faq-section {         padding: 60px 0 43px;     }
+
+    .gt-how-work-section .gt-section-title {         margin-bottom: 40px;     }
+
+    .how-work-mtitle {         font-size: 36px;         line-height: 65px;     }
+
+    .gt-how-work-img {         width: 100%;     }
+
+    .gt-how-work-number {         margin: -20px auto 24px 0;         transform: translateY(0);     }
+
+    .gt-how-work-content {         width: 100%;         text-align: left;         margin-bottom: 87px;     }
+
+    .gt-how-work-title {         line-height: 40px;         margin-bottom: 25px;     }
+
+    .gt-how-work-description {         font-size: 20px;         line-height: 30px;     }
+
+    .gt-how-work-section .row:nth-child(2) .gt-how-work-content {         width: 100%;     }
+
+    .gt-quality-gift-section {         padding: 64px 0 60px;     }
+
+    .gt-quality-gift-section .gt-section-title {         font-size: 34px;         line-height: 42px;     }
+
+    .gt-quality-gift-content {         margin: 0 auto 55px;     }
+
+    .gt-section-description br {         display: none;     }
+
+    .gt-quality-gift-slider .slick-list {         padding: 0px 150px 0 0 !important;     }
+
+    .slick-arrow {         left: 10px;     }
+
+    .slick-next.slick-arrow {         left: unset;         right: 10px;     }
+
+    .gt-site-footer-menu-title {         font-size: 22px;         margin-bottom: 43px;     }
+
+    .gt-site-footer-logo {         text-align: center;         margin-bottom: 66px;     }
+
+    .gt-site-footer-menu {         width: 100%;         margin-bottom: 75px;     }
+
+    .gt-app-qr-description {         padding-right: 40px;     }
+
+    .gt-site-info-content {         margin-top: 0;         padding-top: 15px;         flex-direction: column;     }
+
+    .gt-site-info-description {         margin-bottom: 20px;     }
+
+    .exchange-gift-section {         padding-top: 52px;         padding-bottom: 50px;     }
+
+    .exchange-gift-serach {         padding: 14px 21px 18px;     }
+
+    .gifts-items-header .form-control {         min-width: 297px;     }
+
+    .gifts-items-header .form-select {         padding: 14px 47px 13px 24px;     }
+
+    .exchange-gift-header img {         width: 24px;     }
+
+    .exchange-gift-title p {         padding: 0 17px;     }
+
+    .exchange-gift-items {         padding: 17px 24px 17px 25px;     }
+
+    .browse-gift-card .gt-gift-card-body {         padding: 19px 8px 14px 4px;     }
+
+    .browse-gift-card .gt-gift-card-title {         font-size: 16px;         line-height: 19px;         margin-bottom: 12px;     }
+
+    .gt-gift-card-description {         font-weight: 400;         font-size: 12px;         line-height: 16px;        }
+	.gt-gift-shipping-label { 		margin-right: 3px; 		font-size: 10px; 	}
 
     .gt-gift-card {
         margin-bottom: 0;
@@ -11632,9 +11428,10 @@ span.logo_back img {     width: 100%; }
     }
 
     .g-finder-next-btn {
-        right: 16px;
-        top: 28px;
-    }
+		right: 16px;
+		top: 28px;
+		left: initial;
+	}
 
     .g-finder-next-btn img {
         width: 24px;
@@ -11689,7 +11486,7 @@ span.logo_back img {     width: 100%; }
     .g-finder-second-title,
     .g-finder-third-title,
     .g-finder-four-title {
-        margin-bottom: 25px;
+        margin-bottom: 26px;
     }
 
     .g-finder-second-content,
@@ -12020,6 +11817,9 @@ span.logo_back img {     width: 100%; }
 	.g-finder-help-btn {
 		display: none;
 	}
+	
+	.g-finder-section { 	padding: 51px 0 80px; }
+	.g-finder-section.g-finder-one-section.new-design.section-bg-color .container { 	padding: 0 16px; }
 }
 @media(max-width:575px)
 {
@@ -12055,6 +11855,9 @@ span.logo_back img {     width: 100%; }
 	.gt-landing-btn-content a.btn-primary {     padding-right: 25px; width:196px;}
 	.accordion-item:last-child .giftly-work {     margin: 0; }
 	.accordion-item:last-child {     margin: 0; }
+	.recommendation-header.new-design .container { 	padding: 0; }
+	.g-finder-one-content { 	padding: 26px 18px 72px; }
+	.g-finder-one-content.recommendation-content .row > div { 	padding: 0 8.5px; }
 	
 }
 @media (max-width: 420px) {
@@ -12238,9 +12041,18 @@ span.logo_back img {     width: 100%; }
         padding: 5px 5px 4px 4px;
     }
 	.gt-gift-shipping-label {
-    margin-right: 6px;
-    font-size: 12px;
-}
+		margin-right: 6px;
+		font-size: 12px;
+	}
+	.g-finder-one-img img {
+		width: 90px;
+	}
+	.g-finder-one-item::before {
+		height: 72px;
+	}
+	.recommendation-title {
+		font-size: 20px;
+	}
 }
 @media(max-width:400px)
 {
@@ -12269,6 +12081,8 @@ span.logo_back img {     width: 100%; }
 	.gt-gift-veriation-card .accordion-body span {     font-size: 16px;     line-height: 20px;     margin: 10px 0 10px 0; }
 	.gt-gift-veriation-card .accordion-body ul.gift_sizes li{    margin: 0 8px 8px 0;}
 	.gift_verification_body_inner button.accordion-button {     font-size: 16px; }
+	
+	.g-finder-one-content.recommendation-content .row > div { 	width: 100%; }
 }
 @media (max-width: 991px) and (orientation: landscape) {
 	.emporium-modal-body{    height: calc(100vh - 180px);}
