@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+	<style>
+		html, body{overflow-x:visible;}
+		span.select2-dropdown span.select2-results {     box-shadow: 0px 1px 0 rgb(0 0 0 / 5%);     border-radius: 0 0 10px 10px; }
+		span.select2-dropdown {     border-radius: 0 0 10px 10px !important; }
+	</style>
 </head>
 
 <body class="gt-site">
@@ -98,11 +103,11 @@
             <div class="container">
                 <div class="gt-page-title-content">
                     <div class="gt-page-title-gift-left">
-                        <img src="assets/images/send-gift-heading-left-gift.png" alt="gift" class="img-fluid">
+                        <img src="assets/images/send_left.svg" alt="gift" class="img-fluid">
                     </div>
                     <h1 class="gt-section-title">Send A Gift</h1>
-                    <div class="gt-page-title-gift-left">
-                        <img src="assets/images/send-gift-heading-right-gift.png" alt="gift" class="img-fluid">
+                    <div class="gt-page-title-gift-right">
+                        <img src="assets/images/send_right.svg" alt="gift" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -116,12 +121,12 @@
         <section class="gt-send-gift-section">
             <div class="container">
                 <div class="row">
-                    <div class="col col-12 col-md-12 col-lg-8 col-xl-8">
+                    <div class="col col-12 col-md-12 col-lg-8 col-xl-8 gift_left_content">
                         <div class="gt-send-gift-content">
-                            <div class="gt-send-gift-content__inner active" id="send-gift">
+                            <div class="gt-send-gift-content__inner active send-gift-select-gift" id="send-gift">
                                 <span class="gt-send-gift-index">01</span>
-                                <h2 class="gt-send-gift-title">Select a gift</h2>
-                                <p class="gt-send-gift-description">No need to select colours, sizes or styles, your recipient can decide!</p>
+                                <h2 class="gt-send-gift-title first-send-gift-title">Select a gift</h2>
+                                <p class="gt-send-gift-description first-send-gift-discription">No need to select colours, sizes or styles, your recipient can decide!</p>
                                 <div class="gt-selected-gift-content">
                                     <div class="selected-gift-choise">
                                         <img src="assets/images/select_gift.png" alt="Gift_Choise" class="img-fluid selected-gift-img">
@@ -130,35 +135,41 @@
                                             <h6>Dark Chocolate Bar 4 Pack, Recipient's Choice</h6>
                                         </div>
                                         <div class="selected-gift-transfer">
-                                            <img src="assets/images/gift_trans.png" alt="Gift_Transfer" class="img-fluid">
+                                            <img src="assets/images/gift_trans.svg" alt="Gift_Transfer" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="gt-send-gift-content__inner active" id="message">
+                            <div class="gt-send-gift-content__inner active send-gift-select-gift" id="meassage">
                                 <span class="gt-send-gift-index">02</span>
-                                <h2 class="gt-send-gift-title">Enter a message</h2>
+                                <h2 class="gt-send-gift-title first-send-gift-title">Enter a message</h2>
                                 <div class="gt-select-gift-content">
                                     <div class="row">
-                                        <div class="col col-4 col-md-4 col-lg-3">
+                                        <div class="col col-4 col-md-4 col-lg-3 input_send_outer">
                                             <div class="gt-gift-enter-message">
                                                 <div class="gt-gift-choose-file">
                                                     <img src="assets/images/gift_message.png" alt="enter-message-img" class="img-fluid">
                                                     <span class="gt-edit-choose-icon" data-bs-toggle="modal" data-bs-target="#cardsModal">
-                                                        <img src="assets/images/edit-choose-icon.png" alt="edit-choose-icon" class="img-fluid">
+                                                        <img src="assets/images/edit.svg" alt="edit-choose-icon" class="img-fluid">
                                                     </span>
                                                     <!-- <input type="file" class="form-control"> -->
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col col-8 col-md-8 col-lg-9">
+                                        <div class="col col-8 col-md-8 col-lg-9 gift-message">
                                             <div class="gt-gift-enter-message">
                                                 <form class="row g-3">
                                                     <div class="col-md-6">
                                                         <input type="text" class="form-control" id="inputEmail4" value=" Matthew Vetheca">
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input type="text" class="form-control gift-meassage-birthday" value="Birthday">
+                                                        <select id="inputMessage"
+                                                            class="form-select from-select2 send-gift-occasion">
+                                                            <option selected disabled>Occasion</option>
+                                                            <option>Birthday wishes</option>
+                                                            <option>Birthday party</option>
+                                                            <option>Birthday cake</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-12 d-none d-md-block">
                                                         <input type="text" class="form-control" value="Recipient email or mobile number">
@@ -166,52 +177,65 @@
                                                 </form>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 d-block d-md-none mt-3">
+                                        <div class="col-md-12 d-block d-md-none mt-3 message_fields">
                                             <input type="text" class="form-control" value="Recipient email or mobile number">
                                         </div>
-                                        <div class="col-md-12">
+                                        <div class="col-md-12 message_fields">
                                             <textarea class="form-control gift-massage-box" rows="3">I mathew, I’ve send you something special for your birthday!!! Hope you like it</textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="gt-send-gift-content__inner active" id="send">
+                            <div class="gt-send-gift-content__inner active send-gift-select-gift" id="send">
                                 <span class="gt-send-gift-index">03</span>
-                                <h2 class="gt-send-gift-title">Send gift</h2>
-                                <p class="gt-send-gift-description">No address required, no upfront payment.</p>
+                                <h2 class="gt-send-gift-title first-send-gift-title">Send gift</h2>
+                                <p class="gt-send-gift-description first-send-gift-discription">No address required, no upfront payment.</p>
                                 <div class="send-gift-btn">
-                                    <div class="send-gift-btn-one text-center">
-                                        <a href="#" class="text-decoration-none">
-                                            <div class="send-gift-btn-img">
-                                                <img src="assets/images/send_me.png" alt="" class="img-fluid">
-                                            </div>
-                                            <h5 class="send-gift--btn-title">
-                                                Send gift for me
-                                            </h5>
-                                            <p class="send-gift-btn-discription">
-                                                We’ll email your recipient with a link to view your card and “unwrap” your gift!
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <div class="send-gift-btn-one text-center">
-                                        <a href="#" class="text-decoration-none">
-                                            <div class="send-gift-btn-img">
-                                                <img src="assets/images/share_link.png" alt="" class="img-fluid">
-                                            </div>
-                                            <h5 class="send-gift--btn-title">
-                                                Give me a link
-                                            </h5>
-                                            <p class="send-gift-btn-discription">
-                                                We’ll send you a link which you can share with your recipient directly.
-                                            </p>
-                                        </a>
-                                    </div>
+									<div class="gt-select-gift-content-row">
+										<div class="send-gift-btn-one active text-center gt-select-gift-content__inner">
+											<a href="#" class="text-decoration-none">
+												<div class="send-gift-btn-img">
+													<svg width="45" height="42" viewBox="0 0 45 42" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M7.81977 10.5525L21.5881 16.1875L7.80143 14.4375L7.81977 10.5525ZM21.5698 25.8125L7.80143 31.4475V27.5625L21.5698 25.8125ZM4.1531 5.25L4.13477 17.5L31.6348 21L4.13477 24.5L4.1531 36.75L42.6348 21L4.1531 5.25Z"
+															fill="#CCCCCC" />
+													</svg>
+												</div>
+												<h5 class="send-gift--btn-title">
+													Send gift for me
+												</h5>
+												<p class="send-gift-btn-discription">
+													We’ll email your recipient with a link to view your card and “unwrap” your gift!
+												</p>
+											</a>
+										</div>
+										<span class="gt-or-devider">or</span>
+										<div class="send-gift-btn-one text-center gt-select-gift-content__inner">
+											<a href="#" class="text-decoration-none">
+												<div class="send-gift-btn-img">
+													<svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M30.2188 26.63C28.9837 26.63 27.8788 27.1175 27.0338 27.8812L15.4475 21.1375C15.5287 20.7637 15.5938 20.39 15.5938 20C15.5938 19.61 15.5287 19.2362 15.4475 18.8625L26.9037 12.1837C27.7812 12.9962 28.935 13.5 30.2188 13.5C32.9163 13.5 35.0938 11.3225 35.0938 8.625C35.0938 5.9275 32.9163 3.75 30.2188 3.75C27.5212 3.75 25.3438 5.9275 25.3438 8.625C25.3438 9.015 25.4088 9.38875 25.49 9.7625L14.0337 16.4412C13.1562 15.6287 12.0025 15.125 10.7188 15.125C8.02125 15.125 5.84375 17.3025 5.84375 20C5.84375 22.6975 8.02125 24.875 10.7188 24.875C12.0025 24.875 13.1562 24.3712 14.0337 23.5587L25.6038 30.3187C25.5225 30.66 25.4737 31.0175 25.4737 31.375C25.4737 33.9912 27.6025 36.12 30.2188 36.12C32.835 36.12 34.9638 33.9912 34.9638 31.375C34.9638 28.7587 32.835 26.63 30.2188 26.63ZM30.2188 7C31.1125 7 31.8438 7.73125 31.8438 8.625C31.8438 9.51875 31.1125 10.25 30.2188 10.25C29.325 10.25 28.5938 9.51875 28.5938 8.625C28.5938 7.73125 29.325 7 30.2188 7ZM10.7188 21.625C9.825 21.625 9.09375 20.8937 9.09375 20C9.09375 19.1062 9.825 18.375 10.7188 18.375C11.6125 18.375 12.3438 19.1062 12.3438 20C12.3438 20.8937 11.6125 21.625 10.7188 21.625ZM30.2188 33.0325C29.325 33.0325 28.5938 32.3012 28.5938 31.4075C28.5938 30.5137 29.325 29.7825 30.2188 29.7825C31.1125 29.7825 31.8438 30.5137 31.8438 31.4075C31.8438 32.3012 31.1125 33.0325 30.2188 33.0325Z"
+															fill="#CCCCCC" />
+													</svg>
+												</div>
+												<h5 class="send-gift--btn-title">
+													Give me a link
+												</h5>
+												<p class="send-gift-btn-discription">
+													We’ll send you a link which you can share with your recipient directly.
+												</p>
+											</a>
+										</div>
+									</div>
                                 </div>
                             </div>
-                            <div class="gt-send-gift-content__inner active" id="form">
+                            <div class="gt-send-gift-content__inner active send-gift-select-gift" id="form">
                                 <span class="gt-send-gift-index">04</span>
-                                <h2 class="gt-send-gift-title">From</h2>
-                                <p class="gt-send-gift-description">You’ll only need to fill this out once to create your account.</p>
+                                <h2 class="gt-send-gift-title first-send-gift-title">From</h2>
+                                <p class="gt-send-gift-description first-send-gift-discription">You’ll only need to fill this out once to create your account.</p>
                                 <div class="gt-select-gift-content">
                                     <div class="row">
                                         <div class="col col-12 col-md-12 col-lg-12">
@@ -251,7 +275,7 @@
                                         <span class="gt-send-estimate-price gt-send-estimate-total-price">$64- $70.40</span>
                                     </div>
                                 </div>
-                                <p class="gt-send-gift-note"><label class="gt-send-gift-note-label">Note:</label>We'll confirm the exact amount before you pay.</p>
+                                <p class="gt-send-gift-note"><label class="gt-send-gift-note-label">Note:</label> We'll confirm the exact amount before you pay.</p>
                             </div>
 
                             <div class="gt-send-gift-submit-btn">
