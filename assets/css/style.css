@@ -1104,8 +1104,8 @@ span.gt-faq-solved-icon {
 /* *************** Gift Emporium Page Start  ****************** */
 
 .gt-page-title-section {
-    padding: 179px 0 97px;
-    margin-top: -115px;
+    padding: 58px 0 64px;
+    margin-top: 0;
     position: relative;
     z-index: -1;
 }
@@ -1120,19 +1120,20 @@ span.gt-faq-solved-icon {
     line-height: 40px;
     text-align: center;
     margin-bottom: 30px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 147px;
+    margin-right: 150px;
 }
 
 .gt-page-title-content {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
 .gt-page-perticels-left {
     position: absolute;
     top: 25PX;
+	display:none;
     left: 0;
     z-index: -1;
 }
@@ -1140,6 +1141,7 @@ span.gt-faq-solved-icon {
 .gt-page-perticels-right {
     position: absolute;
     top: -40px;
+	display:none;
     right: 0;
     z-index: -1;
     transform: rotate(180deg);
@@ -1780,7 +1782,7 @@ span.gt-faq-solved-icon {
 /* *************** Send Gift Page Start  ****************** */
 
 .gt-send-gift-section {
-    padding-bottom: 135px;
+    padding-bottom: 35px;
 }
 
 .gt-send-gift-title-section .gt-section-title {
@@ -1792,21 +1794,21 @@ span.gt-faq-solved-icon {
 }
 
 .send-gift-sidebar .gt-send-gift-item {
-    padding: 0 0 0 28px;
+    padding: 0 0 0 23px;position:relative;
 }
-
+.gt-send-gift-link.active{font-weight:700;}
 .gt-send-gift-link {
     padding: 31px 19px;
     display: block;
     width: 100%;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1;
     letter-spacing: -0.01em;
     color: #414141;
     text-align: left;
     text-decoration: none;
-    position: relative;
+    
 }
 
 .gt-send-gift-link.active,
@@ -1843,7 +1845,7 @@ span.gt-faq-solved-icon {
     width: 5px;
     position: absolute;
     top: 0;
-    right: calc(100% + 23px);
+    left:-1px;
     opacity: 0;
     transition: all ease-in-out 0.3s;
 }
@@ -1934,7 +1936,7 @@ span.gt-faq-solved-icon {
     line-height: 30px;
     text-align: center;
     color: #3F3F3F;
-    margin-bottom: 14px;
+    margin-bottom: 5px;
 }
 
 .send-gift-btn-discription {
@@ -2236,7 +2238,7 @@ span.gt-faq-solved-icon {
     box-sizing: border-box;
     border-radius: 20px;
     padding: 20px 55px 25px 40px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .gt-send-estimate-item {
@@ -2473,8 +2475,8 @@ span.gt-faq-solved-icon {
 }
 
 .selected-gift-choise>.selected-gift-img {
-    border-radius: 5px;
-    margin-right: 10px;
+    border-radius: 10px;
+    margin-right: 24px;
 }
 
 .selected-gift-title small {
@@ -2537,7 +2539,7 @@ span.gt-faq-solved-icon {
     font-weight: 400;
     font-size: 16px;
     line-height: 50px;
-    margin-bottom: 0;
+    margin:20px 0 0 0;
     color: #000000;
 }
 
@@ -7594,7 +7596,16 @@ nav {
 /* *************** Footer End  ****************** */
 
 
-
+/*New changes*/
+body.modal-open{ height:100vh !important;}
+.gt-select-gift-content__inner.send-gift-btn-one.active {     background: #FDF4F6;     border: 1px solid #FF385C; }
+.gt-select-gift-content__inner.send-gift-btn-one.active .send-gift-btn-img path {     fill: #ff385c; }
+.gt-select-gift__inner.active {     background: #FDF4F6;     border: 1px solid #FF385C; }
+.gt-select-gift__inner.active path {     fill: #FF385C; }
+div#send.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
+div#form.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
+section.gt-page-title-section:after {     content: '';     position: absolute;     background-image: url(../images/particles_right.svg);     width: 100%;     height: 290px;     background-repeat: no-repeat;     right: 0;     top: -140px;     background-position: right;     z-index: -1; }
+section.gt-page-title-section:before {     content: '';     position: absolute;     background-image: url(../images/particles_left.svg);     width: 100%;     height: 229px;     background-repeat: no-repeat;     left: -700px;     top: -74px;     z-index: -1; }
 
 /*desktop new changes starts here*/
 
@@ -7720,7 +7731,7 @@ ul.gift_desc_inner li:last-child {     margin: 0; }
 .gt-select-gift-content__inner {     width: 271px; float:left;}
 .gt-send-gift-section .container {     padding: 0 110px; }
 span.gt-or-devider {     color: #3F3F3F;     font-weight: 500;     font-size: 18px;     line-height: 30px; }
-div#meassage .gt-send-gift-title {     margin-bottom: 25px; }
+div#meassage .gt-send-gift-title {     margin-bottom: 25px;     line-height: 65px;}
 div.input_send_outer {     width: 120px; }
 .gt-select-gift-content div.gift-message {     width: calc(100% - 120px); }
 .gt-gift-enter-message input {     color: #414141; }
@@ -7728,6 +7739,13 @@ div.input_send_outer {     width: 120px; }
 .gt-gift-enter-message input::-moz-placeholder { /* Firefox 19+ */   color: #414141; }
 .gt-gift-enter-message input:-ms-input-placeholder { /* IE 10+ */   color: #414141; }
 .gt-gift-enter-message input:-moz-placeholder { /* Firefox 18- */   color: #414141; }
+.message_fields input {     color: #414141; }
+.message_fields input::-webkit-input-placeholder { /* Chrome/Opera/Safari */   color: #414141; }
+.message_fields input::-moz-placeholder { /* Firefox 19+ */   color: #414141; }
+.message_fields input:-ms-input-placeholder { /* IE 10+ */   color: #414141; }
+.message_fields input:-moz-placeholder { /* Firefox 18- */   color: #414141; }
+
+
 .gift-massage-box {     color: #414141; }
 .gift-massage-box::-webkit-input-placeholder { /* Chrome/Opera/Safari */   color: #414141; }
 .gift-massage-box::-moz-placeholder { /* Firefox 19+ */   color: #414141; }
@@ -7747,7 +7765,7 @@ div.input_send_outer {     width: 120px; }
 .gt-send-gift-link:hover path {     fill: #FF385C; }
 .gt-gift-enter-message span.select2-selection__arrow {     display: none; }
 .gt-gift-enter-message span.select2 span.select2-selection.select2-selection--single[aria-expanded="true"] {     border: none;     box-shadow: 0px 5px 8px rgb(0 0 0 / 10%);     -webkit-box-shadow: 0px 5px 8px rgb(0 0 0 / 10%);     border-radius: 10px 10px 0 0; }
-.gt-gift-enter-message .select2-container--default .select2-selection--single > span {     font-weight: 400;     letter-spacing: 0.05em; }
+.gt-gift-enter-message .select2-container--default .select2-selection--single > span {     font-weight: 400;     letter-spacing: 0; }
 .recommendation-header-logo a { 	display: flex; 	align-items: center; 	text-decoration: none; }
 .g-finder-one-item .form-check-input:checked[type="radio"] { 	border: 1px solid #FF385C; 	background: none; }
 .logo_back {     margin-right: 15px;     width: 24px; }
@@ -7933,10 +7951,12 @@ span.logo_back img {     width: 100%; }
 
 @media (max-width: 1199px) {
 	/*new changes*/
+	span.gt-or-devider{    padding: 0 20px;}
+	
 	.gt-send-gift-section .container {     padding: 0 50px; }
 	.send-gift-select-gift {     padding: 33px 35px 32px 45px; }
 	.gt-send-gift-link:after{    left: calc(100% + 10px);}
-	.gt-select-gift-content__inner {     width: 228px; }
+	.gt-select-gift-content__inner {     width: auto; }
 	
 	
 	
@@ -8349,8 +8369,8 @@ span.logo_back img {     width: 100%; }
 	.emporium-modal-body-inner{padding:0;}
 	.gt-send-gift-section .container {     padding: 0 25px; }
 	div.gift_left_content {     padding: 0 30px; }
-	.gt-select-gift-content__inner {     width: 268px; }
-	.gt-send-gift-section {     padding-bottom: 65px; }
+	.gt-select-gift-content__inner {     width: auto; }
+	.gt-send-gift-section {     padding-bottom: 35px; }
 	
 	
 	.gt-gift-veriation-card .accordion-item.faq-accordion-item{    padding: 15px;}
@@ -8366,7 +8386,7 @@ span.logo_back img {     width: 100%; }
 	div.gift_content {     width: calc(100% - 300px); }
 	
 	html.search_open {     overflow: hidden; }
-	body.modal-open {     overflow: hidden;     height: 100vh !important; }
+	body.modal-open {     overflow: hidden;     height: 100vh !important;     padding: 0 !important;}
 	.gt-search-product-list::after{display:none;}
 	.gt-search-product-list{    height: calc(100% - 80px);}
 	.gt-search-product-list::after {     content: '';     position: absolute;     right: 2px;     width: 8px;     height: calc(100% - 78px);          top: 78px;     z-index: -9;     border-radius: 50px; }
@@ -9525,6 +9545,11 @@ span.logo_back img {     width: 100%; }
 }
 
 @media (max-width: 767px) {
+	div#meassage .gt-send-gift-title{margin-bottom:0;}
+	.gt-page-title-section .container {     padding: 0 15px; }
+
+	
+	.gt-gift-enter-message .select2-container--default .select2-selection--single {     height: 56px;     padding: 12px 20px; }
 	
 	/*New changes*/
 	.gift_verification_body_inner button.accordion-button a{    text-decoration: none;     color: #ff385c;}
@@ -9847,7 +9872,7 @@ span.logo_back img {     width: 100%; }
     }
 
     .gt-page-title-gift-left {
-        width: 75px;
+        width: 95px;
         max-width: 100%;
     }
 
@@ -9864,7 +9889,7 @@ span.logo_back img {     width: 100%; }
     }
 
     .gt-page-title-gift-right {
-        width: 72px;
+        width: 64px;
         max-width: 100%;
     }
 
@@ -10542,7 +10567,7 @@ span.logo_back img {     width: 100%; }
     }
 
     .selected-gift-transfer {
-        width: 46px;
+        width: 33px;
         height: 33px;
     }
 
@@ -10563,16 +10588,16 @@ span.logo_back img {     width: 100%; }
     }
 
     .gt-page-title-section {
-        padding: 160px 0 47px;
+        padding:60px 0 34px;
     }
 
     .toy-top-page {
-        padding: 65px 0 47px;
+        /* padding: 65px 0 47px; */
     }
 
     .gt-send-gift-title {
         font-size: 26px;
-        line-height: 65px;
+        line-height: 40px;
         margin-bottom: 0;
     }
 
@@ -10607,6 +10632,7 @@ span.logo_back img {     width: 100%; }
 
     .gt-send-gift-description {
         margin-bottom: 20px;
+		
     }
 
     .gt-send-gift-estimate-content {
@@ -10621,7 +10647,7 @@ span.logo_back img {     width: 100%; }
     }
 
     .gt-send-gift-section {
-        padding-bottom: 70px;
+        
     }
 
     .g-select-section .gt-send-gift-section {
@@ -10637,7 +10663,7 @@ span.logo_back img {     width: 100%; }
     }
 
     .gift-massage-box {
-        margin-top: 8px;
+        margin-top: 8px;    line-height: 22px;
     }
 
     .send-gift-btn-one {
@@ -11823,17 +11849,23 @@ span.logo_back img {     width: 100%; }
 }
 @media(max-width:575px)
 {
+	section.gt-page-title-section:before {     background-image: url(../images/part.svg);     left: 0;     top: 0px; }
+	section.gt-page-title-section:after{display:none;}
+	
+	.gt-page-title-content .gt-section-title{    font-size: 26px;}
+	.selected-gift-title {     width: 60%; }
+	.gt-send-estimate-total-price{font-size: 20px;}
 	
 	div.gift_left_content {     padding: 0 19px; }
 	.gt-send-gift-section .container {     padding: 0 20px; }
 	#giftEmporiumModal .modal-dialog.modal-xl {     margin: 20px auto; max-width: 95%;}
-	.gt-send-gift-section .send-gift-select-gift {     padding: 22px 20px 25px 20px; }
+	.gt-send-gift-section .send-gift-select-gift {     padding: 22px 26px 25px 26px; }
 	div.input_send_outer {     width: 105px; }
 	.gt-select-gift-content div.gift-message {     width: calc(100% - 113px); }
 	.gt-gift-from-content form > div {     margin: 9px 0px 0 0; }
 	.gt-send-gift-estimate-content{    padding: 20px 15px 25px 15px;}
 	.gt-send-estimate-label{    line-height: 27px;}
-	
+	.selected-gift-choise>.selected-gift-img{    margin-right: 10px;}
 	
 	
 	.gt-gift-veriation-card .accordion-item.faq-accordion-item{margin: 0 0 15px 0;}
@@ -12053,9 +12085,14 @@ span.logo_back img {     width: 100%; }
 	.recommendation-title {
 		font-size: 20px;
 	}
+	
 }
 @media(max-width:400px)
 {
+	.gt-send-gift-description {font-size: 16px;}
+	
+	
+	
 	div.container {     padding: 0 20px; }
 	.gt-send-gift-icon{    width: 34px;     height: 34px;}
 	.gt-landing-btn-content .btn-white {     padding: 16px 32px; }
@@ -12064,6 +12101,23 @@ span.logo_back img {     width: 100%; }
 }
 @media(max-width:370px)
 {
+	.gt-select-gift-content div.gift-message { margin:5px 0 0 0;    width: 100%;     padding: 0 12px; }
+	div.message_fields {     margin-top: 6px !important; }
+	.gt-select-gift-content .form-control{    margin: 0;}
+	
+	.selected-gift-choise{flex-direction: column;    align-items: flex-start;}
+	.selected-gift-title {     width: 100%; margin:10px 0;}
+	.selected-gift-transfer{margin: 0;}
+	
+	.gt-send-estimate-item label {     font-size: 16px; }
+	.gt-page-title-content .gt-section-title {     font-size: 22px;}
+	.gt-page-title-gift-left {     width: 85px; }
+	.gt-send-estimate-total-price {     font-size: 18px;     line-height: 28px; }
+	.gt-send-gift-note{    margin: 30px 0 0 0;}
+	.gt-send-estimate-item:last-child{padding-top: 15px;}
+	
+	.gt-page-title-gift-right {     width: 44px;     }
+	.gt-page-title-gift-left {     max-width: 100%; }
 	.gt-landing-btn-content .btn-white {     padding: 16px 22px;     font-size: 14px; width:auto;}
 	.gt-landing-btn-content a.btn-primary {     font-size: 14px;     padding: 8px 12px; width:auto;}
 	.gt-site-header .btn{    font-size: 13px;}
@@ -12083,6 +12137,7 @@ span.logo_back img {     width: 100%; }
 	.gift_verification_body_inner button.accordion-button {     font-size: 16px; }
 	
 	.g-finder-one-content.recommendation-content .row > div { 	width: 100%; }
+	
 }
 @media (max-width: 991px) and (orientation: landscape) {
 	.emporium-modal-body{    height: calc(100vh - 180px);}
