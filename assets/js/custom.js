@@ -1,25 +1,5 @@
 $(document).ready(function() {
-		ScrollReveal().reveal('.gt-how-work-section .text-center', { delay: 800, origin: 'top', distance: "100px" });
-		ScrollReveal().reveal('.gt-how-work-section .row .col-lg-6:first-child', { delay: 800, origin: 'left',  distance: "100px" });
-		ScrollReveal().reveal('.gt-how-work-section .row .col-lg-6:last-child', { delay: 800, origin: 'right', distance: "100px" });
-		ScrollReveal().reveal('.gt-quality-gift-section > .container', { delay: 800, origin: 'top', distance: "100px" });
-		ScrollReveal().reveal('.gt-quality-gift-slider-main', { delay: 800, origin: 'top', distance: "100px" });
-		ScrollReveal().reveal('#FAQaccordion .accordion-item.faq-accordion-item', { delay: 800, origin: 'bottom', distance: "100px" });
-		ScrollReveal().reveal('.gifting-item', { delay: 800, origin: 'bottom', distance: "100px" });
-		ScrollReveal().reveal('.gt-landing-btn-content a', { delay: 800, origin: 'top', distance: "100px" });
-		ScrollReveal().reveal('.gt-browse-gift-content .col', { delay: 500, origin: 'bottom', distance: "100px" });
-	
-		ScrollReveal({ reset: true,   easing: "ease-in-out" });	
-
-
-	
-	
-    $('.gt-browse-gift-header .form-select').select2();
-	$('.gt-gift-shipping-charge').click(function(){
-		$('.gt-gift-popup-slider').slick('refresh');
-		//$('.my-slider')[0].slick.refresh()
-	});
-
+		
 
 	$('.gt-quality-gift-slider').slick({
         dots: false,

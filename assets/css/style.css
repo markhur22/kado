@@ -7754,16 +7754,21 @@ div.input_send_outer {     width: 120px; }
 span.logo_back img {     width: 100%; }
 .g-finder-one-content.recommendation-content::before {     bottom: initial;     top: 0;     border-radius: 15px 15px 0px 0px;     right: 0; }
 .g-finder-one-content {     padding: 50px 45px 78px; }
+
 .g-finder-one-section {     position: relative; }
 .g-finder-help-btn {     position: absolute;     right: 60px;     bottom: 50px;     width: 150px;     height: 62px; }
 .g-finder-help-btn a {     width: 100%;     height: 100%;     padding: 0;     align-items: center;     top: 0px;     position: relative; }
 .recommendation-header-gift {     z-index: 2; }
+
+.g-finder-one-section .g-finder-one-item::before {
+	background-color: #FCECED;
+	content: '';
+}
+
 /*new desktop changes starts here*/
  
 
  
-
-/* 25-88888 */
 
 /* *************** Resposive Start  ****************** */
 
@@ -11992,6 +11997,29 @@ span.logo_back img {     width: 100%; }
         bottom: 0;
         transform: translateX(-50%);
     }
+	.g-finder-one-section .g-finder-lightcyan::before {
+		content: '';
+		background-color: #E0F0FF;
+	}
+	.g-finder-one-section .g-finder-aeroblue::before {
+		content: '';
+		background-color: #D5FFEB;
+	}
+	.g-finder-one-section .g-finder-titanwhite::before {
+		background-color: #E2E0FF;
+	}
+	.g-finder-lightcyan {
+		border-color: #E0F0FF;
+	}
+	.g-finder-aeroblue {
+		border-color: #D5FFEB;
+	}
+	.g-finder-titanwhite {
+		border-color: #E2E0FF;
+	}
+	.g-finder-help-btn {
+		display: none;
+	}
 }
 @media(max-width:575px)
 {
