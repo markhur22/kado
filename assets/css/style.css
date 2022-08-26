@@ -6209,19 +6209,6 @@ nav {
     color: #000;
 }
 
-.recommendation-header-gift {
-    display: inline-block;
-    background: #FF385C;
-    border-radius: 100px;
-    padding: 16px;
-    border: 7px solid #fff;
-    box-shadow: 0px 5px 8px rgb(0 0 0 / 8%);
-    position: absolute;
-    left: 50%;
-    top: 53px;
-    transform: translateX(-50%);
-}
-
 .recommendation-header-icon {
     display: flex;
     align-items: center;
@@ -6768,7 +6755,7 @@ nav {
 }
 
 .finder-modal-input {
-    margin-bottom: 15px;
+	margin-bottom: 14px;
 }
 
 .finder-modal-input label {
@@ -6834,7 +6821,7 @@ nav {
 
 .g-finder-second-content {
     width: 730px;
-    padding: 40px 64.5px 68px;
+    padding: 40px 64px 61px;
     position: relative;
     font-family: 'Lato', sans-serif;
 }
@@ -6859,7 +6846,7 @@ nav {
     padding: 15.5px 28px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 21px;
     letter-spacing: 0.05em;
     color: #414141;
     margin-bottom: 0;
@@ -6885,7 +6872,7 @@ nav {
 }
 
 .g-finder-two-btn {
-    margin-top: 36px;
+	margin-top: 39px;
 }
 
 .finder-second-age:checked+.finder-second-label {
@@ -6934,15 +6921,19 @@ nav {
 }
 
 .finder-four-label {
-    background-color: #FFFFFF;
-    border: 1px solid #FF385C;
-    border-radius: 10px;
-    padding: 43px 34px 26px;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    height: 100%;
-    transition: all 0.5s;
+	background-color: #FFFFFF;
+	border: 1px solid #FF385C;
+	border-radius: 10px;
+	padding: 43px 34px 26px;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	height: 100%;
+	transition: all 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .finder-four-check[type="checkbox"] {
@@ -6950,15 +6941,16 @@ nav {
 }
 
 .finder-four-check-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #414141;
-    margin-top: 33px;
-    margin-bottom: 0;
-    transition: all 0.5s;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #414141;
+	margin-top: 33px;
+	margin-bottom: 0;
+	transition: all 0.5s;
+	min-height: 44px;
 }
 
 .finder-four-label svg path {
@@ -7752,19 +7744,73 @@ div.input_send_outer {     width: 120px; }
 .g-finder-one-item .form-check-input:checked[type="radio"] { 	border: 1px solid #FF385C; 	background: none; }
 .logo_back {     margin-right: 15px;     width: 24px; }
 span.logo_back img {     width: 100%; }
-.g-finder-one-content.recommendation-content::before {     bottom: initial;     top: 0;     border-radius: 15px 15px 0px 0px;     right: 0; }
+.recommendation-content::before {     bottom: initial;     top: 0;     border-radius: 15px 15px 0px 0px;     right: 0; }
 .g-finder-one-content {     padding: 50px 45px 78px; }
 
 .g-finder-one-section {     position: relative; }
 .g-finder-help-btn {     position: absolute;     right: 60px;     bottom: 50px;     width: 150px;     height: 62px; }
-.g-finder-help-btn a {     width: 100%;     height: 100%;     padding: 0;     align-items: center;     top: 0px;     position: relative; }
-.recommendation-header-gift {     z-index: 2; }
+.g-finder-help-btn button {     width: 100%;     height: 100%;     padding: 0;     align-items: center;     top: 0px;     position: relative; }
+.recommendation-header-gift {     
+	background: #FF385C;
+	border-radius: 100px;
+	padding: 16px;
+	border: 7px solid #fff;
+	box-shadow: 0px 5px 8px rgb(0 0 0 / 8%);
+	position: absolute;
+	left: 50%;
+	top: 53px;
+	transform: translateX(-50%);
+	width: 74px;
+	height: 74px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	z-index: 2;
+}
 
 .g-finder-one-section .g-finder-one-item::before {
 	background-color: #FCECED;
 	content: '';
 }
-
+.action_btn.next_btn.disable_btn a {
+	pointer-events: none;
+	color: #A7A7A7;
+	background-color: #F6F6F6;
+}
+.action_btn a {
+	width: 181px;
+	padding: 0;
+	height: 62px;
+}
+.action_btn.mb-20 {
+	margin-top: 20px;
+}
+.g-finder-one-btn.action_btn.mb-20 {
+	margin-bottom: 0;
+}
+.action_btn.next_btn a {
+	background-color: #FF385C;
+	color: #fff;
+}
+.select_gift_for .row .col:nth-child(n+5) {
+	display: none;
+}
+.recommendation-header-logo img {
+    width: 126px;
+}
+.finder-modal.show {
+	display: flex !important;
+	margin: auto;
+}
+#finderModal .modal-dialog {
+	margin: auto;
+}
+.finder-four-interests .g-finder-two-btn {
+	margin-top: 12px;
+}
+.finder-four-interests .g-finder-one-btn.action_btn.mb-20 {
+	margin-top: 20px; 
+}
 /*new desktop changes starts here*/
  
 
@@ -8341,6 +8387,21 @@ span.logo_back img {     width: 100%; }
 		right: initial;
 		left: calc(100% - 60px);
 	}
+	.g-finder-prev-btn {
+		right: initial;
+		top: 44px;
+		left: 30px;
+	}
+	.g-finder-help-btn {
+		position: absolute;
+		right: 0;
+		bottom: 33px;
+		width: 150px;
+		height: 62px;
+		left: 0;
+		margin: auto;
+	}
+	
 }
 
 @media (max-width: 991px) {
@@ -9431,8 +9492,9 @@ span.logo_back img {     width: 100%; }
     }
 
     .recommendation-header-gift img {
-        width: 30px;
-    }
+		height: 26px;
+		width: auto;
+	}
 
     .recommendation-header-icon a {
         width: 45px;
@@ -9522,6 +9584,25 @@ span.logo_back img {     width: 100%; }
         top: 15px;
         right: 25px;
     }
+	.g-finder-prev-btn {
+		left: 22px;
+		top: 18px;
+	}
+	.home_head_menu img {
+		height: 20px;
+		width: auto;
+	}
+	.chat_head_menu img {
+		height: 18px;
+		width: auto;
+	}
+	.finder-four-check-title {
+		min-height: initial;
+	}
+	
+	.finder-four-interests .g-finder-two-btn {
+		margin-top: 16px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -11329,8 +11410,9 @@ span.logo_back img {     width: 100%; }
     }
 
     .recommendation-header-gift img {
-        width: 20px;
-    }
+		width: auto;
+		height: 18px;
+	}
 
     .recommendation-slider {
         display: none;
@@ -11434,8 +11516,8 @@ span.logo_back img {     width: 100%; }
 	}
 
     .g-finder-next-btn img {
-        width: 24px;
-    }
+		width: 24px;
+	}
 
     .g-finder-one-item-title {
         margin-top: 15px;
@@ -11479,8 +11561,8 @@ span.logo_back img {     width: 100%; }
     }
 
     .g-finder-prev-btn img {
-        width: 24px;
-    }
+		width: 24px;
+	}
 
     .g-finder-one-title,
     .g-finder-second-title,
@@ -11492,7 +11574,7 @@ span.logo_back img {     width: 100%; }
     .g-finder-second-content,
     .g-finder-third-content,
     .g-finder-four-content {
-        padding: 26px 18px 43px;
+        padding: 26px 20px 55px;
     }
 
     .g-finder-section {
@@ -11820,6 +11902,13 @@ span.logo_back img {     width: 100%; }
 	
 	.g-finder-section { 	padding: 51px 0 80px; }
 	.g-finder-section.g-finder-one-section.new-design.section-bg-color .container { 	padding: 0 16px; }
+	.action_btn a.g-finder-skip-btn { 	width: 150px; 	padding: 0; 	height: 51px; }
+	.home_head_menu img { height: 12px; width: auto;}
+	.chat_head_menu img { height: 11px; width: auto;}
+	.finder-four-label {
+		padding: 37px 17px 17px;
+		display: block;
+	}
 }
 @media(max-width:575px)
 {
@@ -11858,6 +11947,20 @@ span.logo_back img {     width: 100%; }
 	.recommendation-header.new-design .container { 	padding: 0; }
 	.g-finder-one-content { 	padding: 26px 18px 72px; }
 	.g-finder-one-content.recommendation-content .row > div { 	padding: 0 8.5px; }
+	.logo_back { 	width: 12px; 	margin-right: 10px; }
+	.g-finder-prev-btn img {
+		width: 16px;
+	}
+	.g-finder-next-btn img {
+		width: 16px;
+	}
+	.finder-four-interests .row .col {
+		padding: 0 10.5px;
+	}
+	#finderModal .modal-dialog {
+		margin: auto;
+		padding: 0 20px;
+	}
 	
 }
 @media (max-width: 420px) {
@@ -12053,7 +12156,14 @@ span.logo_back img {     width: 100%; }
 	.recommendation-title {
 		font-size: 20px;
 	}
+	
+	.finder-four-interests .row .col {width: 100%; }
+	
+	.finder-four-interests .row .col:last-child .finder-four-checkbox { 	margin: 0; }
+	.finder-four-interests .g-finder-two-btn { 	margin-top: 36px; }
+	.finder-four-interests .g-finder-one-btn.action_btn.mb-20 { 	margin-bottom: 0;margin-top: 19px; }
 }
+
 @media(max-width:400px)
 {
 	div.container {     padding: 0 20px; }
