@@ -354,7 +354,7 @@ $(document).ready(function() {
         });
 	});
 	$("body").on('click', '.toggle-password', function() {
-	  $(this).toggleClass("fa-eye fa-eye-slash");
+	  $(this).toggleClass("fa-eye-slash fa-eye");
 	  var input = $(".gift-form-password");
 	  if (input.attr("type") === "password") {
 		input.attr("type", "text");
