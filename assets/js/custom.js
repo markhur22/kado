@@ -363,10 +363,10 @@ $(document).ready(function() {
 	  }
 	});
 	
-	var a = $(".custom_tab_sec_one.custom_tab_common").offset().top - 50,
-		e = $(".custom_tab_sec_two.custom_tab_common").offset().top - 50,
-		_ = $(".custom_tab_sec_three.custom_tab_common").offset().top - 50,
-		o = $(".custom_tab_sec_four").offset().top - 50;
+	var a = $(".custom_tab_sec_one.custom_tab_common").offset().top - 150,
+		e = $(".custom_tab_sec_two.custom_tab_common").offset().top - 150,
+		_ = $(".custom_tab_sec_three.custom_tab_common").offset().top - 150,
+		o = $(".custom_tab_sec_four").offset().top - 150;
 	$(window).scroll(function () {
 		$(this).scrollTop() > a || $(this).scrollTop() < a
 			? ($(".active").removeClass("active"), $("ul.gt-send-gift-list.send-gift-sidebar li a.anc_one.tab_anchor_block ").addClass("active"),$(".custom_tab_sec_one.custom_tab_common").addClass("active"))
