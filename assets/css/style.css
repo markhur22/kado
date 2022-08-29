@@ -1,4 +1,4 @@
-/* *************** Deafult Start  ****************** */      
+/* *************** Deafult Start  ****************** */          
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -7706,7 +7706,7 @@ div.gift_slider{    padding: 0 30px;}
 .gt-gift-veriation-card .accordion-item.faq-accordion-item:last-child {     margin: 0; }
 .gift_verification_body_inner button.accordion-button {     padding: 0;     width: auto;     border-radius: 0; font-size:22px;} 
 .faq-accordion-item .gt-gift-veriation-card-description {     font-weight: 400;     font-size: 16px;     line-height: 22px;     color: #414141;     margin-bottom: 15px; }
-.gift_verification_body_inner button.accordion-button a {     color: #414144;     display: inline-block;     vertical-align: top; }
+.gift_verification_body_inner button.accordion-button a {     color: #FF385C;     display: inline-block;     vertical-align: top;     text-decoration: none; }
 .gift_verification_body_inner button.accordion-button::after {     background-size: 13px;     background-position: center;     margin: 0 0 0 7px; }
 .gt-gift-veriation-card .accordion-body {     padding: 17px 0 0 0;     border-top: 1px solid rgba(0,0,0,0.1);     margin: 32px 0 0 0; }
 .gt-gift-veriation-card .accordion-body span {     float: left;     width: 100%;     font-size: 18px;     color: #000000;     line-height: 35px; }
