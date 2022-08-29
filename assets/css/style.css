@@ -1794,11 +1794,12 @@ span.gt-faq-solved-icon {
 }
 
 .send-gift-sidebar .gt-send-gift-item {
-    padding: 0 0 0 23px;position:relative;
+    padding: 0 0 0 20px;
+    position: relative;
 }
 .gt-send-gift-link.active{font-weight:700;}
 .gt-send-gift-link {
-    padding: 31px 19px;
+    padding: 28px 19px;
     display: block;
     width: 100%;
     font-weight: 400;
@@ -1808,14 +1809,18 @@ span.gt-faq-solved-icon {
     color: #414141;
     text-align: left;
     text-decoration: none;
-    
 }
 
-.gt-send-gift-link.active,
-.gt-send-gift-link:hover {
+.gt-send-gift-link.active {
     background: #FDF4F6;
     border-radius: 10px;
     color: #FF385C;
+}
+.gt-send-gift-link:hover:before {
+    background: #414141;
+}
+a.gt-send-gift-link:hover svg path {
+    fill: rgb(65, 65, 65);
 }
 
 .gt-nav-link-icon {
@@ -1839,7 +1844,7 @@ span.gt-faq-solved-icon {
 
 .gt-send-gift-link:before {
     content: "";
-    background: #FF385C;
+    background: #414141;
     border-radius: 0px 50px 50px 0px;
     height: 100%;
     width: 5px;
@@ -1857,7 +1862,7 @@ span.gt-faq-solved-icon {
     height: 24px;
     position: absolute;
     top: 0;
-    left: calc(100% + 23px);
+    left: calc(100% + 15px);
     background-image: url(../images/success-tick-icon.svg);
     opacity: 0;
     transition: all ease-in-out 0.3s;
@@ -7839,6 +7844,17 @@ span.logo_back img {     width: 100%; }
 	bottom: 0;
 	margin: auto;
 	right: 29px;
+}
+.gt-select-gift__inner:hover {
+    cursor: pointer;
+}
+a.gt-send-gift-link.active::before {
+    background: #FF385C;
+}
+.gt-send-gift-link:hover {
+    background: #F6F6F6;
+    border-radius: 10px;
+    color: #414141;
 }
 /*new desktop changes starts here*/
  
