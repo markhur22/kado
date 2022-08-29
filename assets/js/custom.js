@@ -397,9 +397,11 @@ $(document).ready(function() {
 	   if (st > lastScrollTop){
 		   $('header').addClass('sticky_hidden');
 		   $('header').removeClass('sticky_add');
+		   $('body').removeClass('sticky_on');
 	   } else {
 		   $('header').addClass('sticky_add');
 		   $('header').removeClass('sticky_hidden');
+		   $('body').addClass('sticky_on');
 	   }
 	   lastScrollTop = st;
 	});
