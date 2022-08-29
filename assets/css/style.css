@@ -83,6 +83,11 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: initial !important;
+    -webkit-scroll-behavior: initial !important;
+}
+
 .gt-site {
     font-family: 'Lato', sans-serif;
     position: relative;
@@ -7600,8 +7605,8 @@ body.modal-open{ height:100vh !important;}
     border: 1px solid #FF385C;
 }
 .gt-select-gift-content__inner.send-gift-btn-one.active .send-gift-btn-img path, .gt-select-gift-content__inner.send-gift-btn-one.send_gift_active path {     fill: #ff385c; }
-.gt-select-gift__inner.select_gift_tab {     background: #FDF4F6;     border: 1px solid #FF385C; }
-.gt-select-gift__inner.select_gift_tab path {     fill: #FF385C; }
+.gt-select-gift__inner.selct_gift_active {     background: #FDF4F6;     border: 1px solid #FF385C; }
+.gt-select-gift__inner.selct_gift_active path {     fill: #FF385C; }
 div#send.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
 div#form.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
 section.gt-page-title-section:after {     content: '';     position: absolute;     background-image: url(../images/particles_right.svg);     width: 100%;     height: 290px;     background-repeat: no-repeat;     right: 0;     top: -140px;     background-position: right;     z-index: -1; }
@@ -7874,6 +7879,25 @@ a.gt-send-gift-link:hover:after {
 }
 a.gt-send-gift-link.active:hover::after {
     display: block;
+}
+header.gt-site-header.sticky {
+    position: sticky;
+    left: 0;
+    right: 0;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+}
+header.gt-site-header.sticky_hidden {
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: all ease .5s;
+}
+header.gt-site-header.sticky.sticky_add {
+    top: 0;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,0,0);
 }
 /*new desktop changes starts here*/
  
