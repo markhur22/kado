@@ -390,5 +390,18 @@ $(document).ready(function() {
 		$('.send_gift_active').removeClass('send_gift_active');
 		$(this).addClass('send_gift_active');
 	});
+	
+	var lastScrollTop = 0;
+	$(window).scroll(function(event){
+	   var st = $(this).scrollTop();
+	   if (st > lastScrollTop){
+		   $('header').addClass('sticky_hidden');
+		   $('header').removeClass('sticky_add');
+	   } else {
+		   $('header').addClass('sticky_add');
+		   $('header').removeClass('sticky_hidden');
+	   }
+	   lastScrollTop = st;
+	});
 
 });
