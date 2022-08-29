@@ -7595,10 +7595,13 @@ nav {
 
 /*New changes*/
 body.modal-open{ height:100vh !important;}
-.gt-select-gift-content__inner.send-gift-btn-one.active {     background: #FDF4F6;     border: 1px solid #FF385C; }
-.gt-select-gift-content__inner.send-gift-btn-one.active .send-gift-btn-img path {     fill: #ff385c; }
-.gt-select-gift__inner.active {     background: #FDF4F6;     border: 1px solid #FF385C; }
-.gt-select-gift__inner.active path {     fill: #FF385C; }
+.gt-select-gift-content__inner.send-gift-btn-one.active, .gt-select-gift-content__inner.send-gift-btn-one.send_gift_active {
+    background: #FDF4F6;
+    border: 1px solid #FF385C;
+}
+.gt-select-gift-content__inner.send-gift-btn-one.active .send-gift-btn-img path, .gt-select-gift-content__inner.send-gift-btn-one.send_gift_active path {     fill: #ff385c; }
+.gt-select-gift__inner.select_gift_tab {     background: #FDF4F6;     border: 1px solid #FF385C; }
+.gt-select-gift__inner.select_gift_tab path {     fill: #FF385C; }
 div#send.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
 div#form.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
 section.gt-page-title-section:after {     content: '';     position: absolute;     background-image: url(../images/particles_right.svg);     width: 100%;     height: 290px;     background-repeat: no-repeat;     right: 0;     top: -140px;     background-position: right;     z-index: -1; }
@@ -7855,6 +7858,22 @@ a.gt-send-gift-link.active::before {
     background: #F6F6F6;
     border-radius: 10px;
     color: #414141;
+}
+a.gt-send-gift-link.active:hover::before {
+    background-color: #FF385C;
+}
+a.gt-send-gift-link.active {
+    background: #FDF4F6;
+    color: #FF385C;
+}
+a.gt-send-gift-link.active:hover .gt-nav-link-icon svg path {
+    fill: #FF385C;
+}
+a.gt-send-gift-link:hover:after {
+	display: none;
+}
+a.gt-send-gift-link.active:hover::after {
+    display: block;
 }
 /*new desktop changes starts here*/
  
