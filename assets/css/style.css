@@ -88,6 +88,14 @@ html {
     -webkit-scroll-behavior: initial !important;
 }
 
+input:focus::placeholder {
+    color: transparent !important;
+}
+textarea:focus::placeholder {
+    color: transparent !important;
+}
+
+
 .gt-site {
     font-family: 'Lato', sans-serif;
     position: relative;
@@ -7898,6 +7906,59 @@ header.gt-site-header.sticky.sticky_add {
     top: 0;
     -webkit-transform: translate3d(0,-100%,0);
     transform: translate3d(0,0,0);
+}
+.select2-container--open .select2-dropdown {
+    left: 0;
+    top: -50px;
+}
+.select2-container--open input {
+    border: 0 !important;
+    outline: none;
+}
+input {
+	outline: none;
+}
+.select2-container--open .select2-results__options::after {
+    position: absolute;
+    content: '';
+    top: 6px;
+    width: 90%;
+    height: 1px;
+    left: 0;
+    background-color: #000;
+    right: 0;
+    margin: auto;
+    opacity: 0.2;
+}
+.select2-container--open .select2-results__options {
+    position: relative;
+    padding-top: 30px !important;
+}
+.sticky_on .gt-send-gift-list-content {
+    top: 110px;
+}
+.gt-send-gift-list-content {
+    transition: all ease .5s;
+}
+.input_pass_ {
+    position: relative;
+}
+.input_pass_ span {
+    position: absolute;
+    right: 18px;
+    height: max-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.input_pass_ input {
+    background-image: none;
+}
+input.form-control:focus {
+    color: #414141;
+}
+textarea.form-control:focus {
+    color: #414141;
 }
 /*new desktop changes starts here*/
  
