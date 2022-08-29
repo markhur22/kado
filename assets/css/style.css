@@ -7907,9 +7907,13 @@ header.gt-site-header.sticky.sticky_add {
     -webkit-transform: translate3d(0,-100%,0);
     transform: translate3d(0,0,0);
 }
-.select2-container--open .select2-dropdown {
+/* .select2-container--open .select2-dropdown {
     left: 0;
     top: -50px;
+} */
+.select2-container--open .select2-search--dropdown {
+    padding-left: 14px;
+    padding-right: 14px;
 }
 .select2-container--open input {
     border: 0 !important;
@@ -7959,6 +7963,9 @@ input.form-control:focus {
 }
 textarea.form-control:focus {
     color: #414141;
+}
+a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
+    cursor: pointer;
 }
 /*new desktop changes starts here*/
  
@@ -9754,6 +9761,42 @@ textarea.form-control:focus {
 	.finder-four-interests .g-finder-two-btn {
 		margin-top: 16px;
 	}
+	a.gt-send-gift-link.active {
+		position: relative;
+	}
+	
+	header.gt-site-header.sticky.sticky_add {
+		top: 0;
+		-webkit-transform: none;
+		transform: none;
+	}
+	.git-site-show header.gt-site-header.sticky {
+		position: fixed;
+		z-index: 999;
+	}
+	.git-site-show header.gt-site-header.sticky {
+		position: fixed;
+		z-index: 999;
+		transform: none;
+		-webkit-transform: none;
+	}
+	.gifts-collapse-btn-show i.fa-solid.fa-xmark {
+		top: 90px;
+		position: relative;
+	}
+	a.gt-send-gift-link.active {
+		background-color: transparent;
+	}
+	/* header.gt-site-header.sticky_hidden {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	header.gt-site-header.sticky.sticky_hidden {
+		top: 0;
+		transform: none;
+		-webkit-transform: none;
+		position: sticky;
+	} */
 }
 
 @media (max-width: 767px) {
