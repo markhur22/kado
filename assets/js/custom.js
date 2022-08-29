@@ -381,5 +381,14 @@ $(document).ready(function() {
 				? ($(".active").removeClass("active"), $("ul.gt-send-gift-list.send-gift-sidebar li a.anc_four.tab_anchor_block ").addClass("active"),$(".custom_tab_sec_four.custom_tab_common").addClass("active"))
 				: $("ul.gt-send-gift-list.send-gift-sidebar li a.anc_four.tab_anchor_block ").removeClass("active");
 	});
+	$('.select_gift_tab .gt-select-gift__inner').click(function(){
+		$('.selct_gift_active').removeClass('selct_gift_active');
+		$(this).addClass('selct_gift_active');
+	});
+
+	$('.send_gift_main').click(function(){
+		$('.send_gift_active').removeClass('send_gift_active');
+		$(this).addClass('send_gift_active');
+	});
 
 });
