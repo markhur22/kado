@@ -2761,7 +2761,7 @@ a.gt-send-gift-link:hover svg path {
 }
 
 .gift-send-logo {
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     padding: 40px 0 0 30px;
 }
 
@@ -8025,6 +8025,12 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
     width: 23px;
     height: 23px;
 }
+.header-logo.gift-send-logo img {
+    width: 126px;
+}
+.user-profile {
+    top: 90px;
+}
 /*new desktop changes starts here*/
  
 
@@ -9532,7 +9538,7 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
     }
     
     #cardsModal .browse-categori-popup {
-        width: 100%;
+        width: calc(100% - 58px);
     }
 
     .browse-categori-popup:hover {
@@ -9899,6 +9905,15 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 	} */
     #cardsModal .form-select.gift-modal-select {
         min-width: calc(100% - 66px);
+    }
+    ul.gt-send-gift-list.send-gift-sidebar .gt-nav-link-icon {
+        margin-right: 17px;
+    }
+    ul.gt-send-gift-list.send-gift-sidebar .gt-send-gift-link {
+        padding: 16px 40px 16px 27px;
+    }
+    .send-gift-sidebar .gt-send-gift-item {
+        padding: 0 0 0 0px;
     }
 
 }
