@@ -1357,7 +1357,7 @@ span.gt-faq-solved-icon {
 
 .gt-card-modal .gt-browse-gift-header-seach.send-modal-searchbox .form-control:focus {
     border-color: transparent;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px 15px 0 0;
 }
 
@@ -7967,6 +7967,64 @@ textarea.form-control:focus {
 a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
     cursor: pointer;
 }
+#cardsModal .gt-card-modal-content__inner {
+    padding: 0 0 0 31px;
+}
+#cardsModal .gt-card-img {
+    margin-bottom: 38px;
+    padding: 0 8px;
+}
+#cardsModal .modal-body {
+    padding: 48px 72px 22px;
+    padding-right: 64px;
+}
+ #cardsModal .gt-browse-gift-header {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+#cardsModal .gt-browse-gift-header-seach {
+    padding: 0 8px;
+}
+#cardsModal .browse-gift-searchbox {
+    width: calc(100% - 16px);
+    right: 0;
+    margin: auto;
+    z-index: 9;
+    padding-bottom: 0;
+}
+#cardsModal .card_cata_head {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#cardsModal .gt-browse-gift-header-seach .form-control {
+    padding: 21px 65px 21px 29px;
+}
+#cardsModal .send-modal-searchbox .gt-search-icon {
+    max-width: 100%;
+    left: initial;
+    right: 20px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #FF385C;
+    border-radius: 100%;
+    z-index: 22;
+    cursor: pointer;
+}
+#cardsModal .send-modal-searchbox .gt-search-icon img {
+    width: 17px;
+}
+#cardsModal .modal-header button.btn-close {
+    width: 23px;
+    height: 23px;
+}
 /*new desktop changes starts here*/
  
 
@@ -8067,7 +8125,9 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 	.left_sidebar{    width: 313px;}
 	.right_content_bar{    width: calc(100% - 313px);}
 	.gt-browse-gift-header-seach .form-control{min-width: 310px;}
-	
+    #cardsModal .gt-browse-gift-header-seach .form-control {
+        min-width: 100%;
+    }
 	
 	.gt-landing-img img{max-width:100%;}
 	
@@ -8133,8 +8193,30 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
     }
 }
 
+@media only screen and (max-width: 1299px) {
+    #cardsModal .modal-xl {
+        max-width: 95%;
+    }
+    #cardsModal .gt-sidebar-header {
+        padding: 15px 15px 15px;
+        border-bottom: 1px solid #E2E2E2;
+    }
+    #cardsModal .gt-sidebar-body {
+        padding: 15px 15px 25px;
+    }
+}
+
 @media (max-width: 1199px) {
 	/*new changes*/
+    #cardsModal .modal-lg, #cardsModal .modal-xl {
+        max-width: 90%;
+    }
+    #cardsModal .gt-card-img {
+        padding: 0 0px;
+    }
+    .gt-browse-gift-content .row > div {
+        padding: 0 8px;
+    }
 	span.gt-or-devider{    padding: 0 20px;}
 	
 	.gt-send-gift-section .container {     padding: 0 50px; }
@@ -8478,6 +8560,14 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
         padding: 20px 30px 10px;
     }
 
+    #cardsModal .modal-body {
+        padding: 20px 30px 10px;
+        padding-right: 30px;
+    }
+    #cardsModal .gt-card-modal-content__inner {
+        padding: 0 0 0 0px;
+    }
+
     .nav-link .g-shipping-conform::after {
         width: 57px;
     }
@@ -8564,7 +8654,10 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 
 @media (max-width: 991px) {
 	/*new changes*/
-
+    #cardsModal .gt-card-img {
+        margin-bottom: 16px;
+        padding: 0 0px;
+    }
 	.emporium-modal-body-inner{padding:0;}
 	.gt-send-gift-section .container {     padding: 0 25px; }
 	div.gift_left_content {     padding: 0 30px; }
@@ -9285,6 +9378,9 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
         background-image: url(../images/select-arrow.png);
         margin-left: auto;
     }
+    #cardsModal .gt-browse-gift-header .gift-modal-select {
+        margin-bottom: 0 !important;
+    }
 
     .gift-select-modal-header .modal-title {
         font-size: 30px;
@@ -9433,6 +9529,10 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
         line-height: 14px;
         letter-spacing: 0.02em;
         color: #414141;
+    }
+    
+    #cardsModal .browse-categori-popup {
+        width: 100%;
     }
 
     .browse-categori-popup:hover {
@@ -9797,6 +9897,10 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 		-webkit-transform: none;
 		position: sticky;
 	} */
+    #cardsModal .form-select.gift-modal-select {
+        min-width: calc(100% - 66px);
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -12109,9 +12213,22 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 		padding: 37px 17px 17px;
 		display: block;
 	}
+    #cardsModal button.btn.btn-primary.card-categari-show {
+        width: 46px;
+    }
+    #cardsModal a.browse-categori-popup {
+        min-width: initial;
+        width: calc(100% - 58px);
+        font-size: 12px;
+        padding: 13px 26px 13px 26px;
+    }
+    
 }
 @media(max-width:575px)
 {
+    #cardsModal .modal-lg, #cardsModal .modal-xl {
+        max-width: initial;
+    }
 	section.gt-page-title-section:before {     background-image: url(../images/part.svg);     left: 0;     top: 0px; }
 	section.gt-page-title-section:after{display:none;}
 	
@@ -12369,6 +12486,10 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 	.finder-four-interests .row .col:last-child .finder-four-checkbox { 	margin: 0; }
 	.finder-four-interests .g-finder-two-btn { 	margin-top: 36px; }
 	.finder-four-interests .g-finder-one-btn.action_btn.mb-20 { 	margin-bottom: 0;margin-top: 19px; }
+    #cardsModal .modal-body {
+        padding: 20px 20px 10px;
+        padding-right: 20px;
+    }
 
 }
 
