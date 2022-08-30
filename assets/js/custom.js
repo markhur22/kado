@@ -411,11 +411,13 @@ $(document).ready(function() {
 });
 
 function autocomplete(inp, arr) {
+	if(arr.length > 0){
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
   var currentFocus;
   /*execute a function when someone writes in the text field:*/
   inp.addEventListener("input", function(e) {
+	  $('.autocomplete').addClass('autocomplete_active');
       var a, b, i, val = this.value;
       /*close any already open lists of autocompleted values*/
       closeAllLists();
@@ -504,7 +506,9 @@ function autocomplete(inp, arr) {
   /*execute a function when someone clicks in the document:*/
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
+	  $('.autocomplete').removeClass('autocomplete_active');
   });
+	}
 }
 
 /*An array containing all the occasions names in the world:*/
