@@ -332,8 +332,9 @@ $(document).ready(function() {
 	$('ul.gt-send-gift-list.send-gift-sidebar li a').click(function(e){
 		//if (e.target !== this)
 		//return;
-		$('.gt-send-gift-section .custom_tab_common .active').removeClass('active');
-		$('ul.gt-send-gift-list.send-gift-sidebar li a.active').removeClass('active');
+		//$('.gt-send-gift-section .custom_tab_common .active').removeClass('active');
+		//$('ul.gt-send-gift-list.send-gift-sidebar li a.active').removeClass('active');
+		$('.active').removeClass('active');
 		$(this).addClass('active');
 		var idFromAnchor = $(this).attr('href');
 		$(idFromAnchor).addClass('active');
