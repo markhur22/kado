@@ -1896,6 +1896,7 @@ a.gt-send-gift-link:hover svg path {
     margin-bottom: 20px;
     border-radius: 20px;
     position: relative;
+    transition: all ease .5s;
 }
 
 .send-gift-select-gift {
@@ -1930,6 +1931,7 @@ a.gt-send-gift-link:hover svg path {
     border-radius: 10px;
     padding: 35px 22px 28px;
     margin-right: 00px;
+    transition: all ease .5s;
 }
 .send-gift-btn-img {
     margin: 0 0 17px 0;
@@ -1982,6 +1984,7 @@ a.gt-send-gift-link:hover svg path {
     height: 100%;
     margin-bottom: 0;
     position: relative;
+    transition: all ease .5s;
 }
 
 .gt-select-gift__inner .form-control {
@@ -2048,6 +2051,8 @@ a.gt-send-gift-link:hover svg path {
     position: absolute;
     top: 35px;
     left: -33px;
+    transition: all ease .5s
+    ;
 }
 
 .gt-send-gift-content__inner.active {
@@ -7863,6 +7868,10 @@ span.logo_back img {     width: 100%; }
 }
 .gt-select-gift__inner:hover {
     cursor: pointer;
+    border: 1px solid #c3c3c3;
+}
+.gt-select-gift__inner.selct_gift_active:hover {
+    border: 1px solid #FF385C;
 }
 a.gt-send-gift-link.active::before {
     background: #FF385C;
@@ -7922,7 +7931,7 @@ header.gt-site-header.sticky.sticky_add {
 input {
 	outline: none;
 }
-.select2-container--open .select2-results__options::after {
+/* .select2-container--open .select2-results__options::after {
     position: absolute;
     content: '';
     top: 6px;
@@ -7933,10 +7942,12 @@ input {
     right: 0;
     margin: auto;
     opacity: 0.2;
-}
+} */
 .select2-container--open .select2-results__options {
     position: relative;
-    padding-top: 30px !important;
+}
+.select2-container--open ul.select2-results__options {
+    padding-top: 14px;
 }
 .sticky_on .gt-send-gift-list-content {
     top: 110px;
@@ -7966,6 +7977,9 @@ textarea.form-control:focus {
 }
 a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
     cursor: pointer;
+}
+.send-gift-btn-one:hover {
+    border: 1px solid #c3c3c3;
 }
 #cardsModal .gt-card-modal-content__inner {
     padding: 0 0 0 31px;
@@ -8030,6 +8044,18 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 }
 .user-profile {
     top: 90px;
+}
+.select2-container--open input.select2-search__field {
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #E2E2E2 !important;
+    padding: 0 20px;
+}
+.gt-gift-enter-message form {
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
 }
 /*new desktop changes starts here*/
  
@@ -9932,7 +9958,13 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 	span.gt-or-devider{display:none;}
 	.gt-select-gift-content-row {     flex-direction: column; }
 	.gt-select-gift-content__inner {     width: 100%; }
-	.gt-select-gift-content div.gift-message {     width: calc(100% - 128px); }
+	.gt-select-gift-content div.gift-message {
+        width: calc(100% - 120px);
+        /* padding: 0; */
+    }
+    .gt-gift-enter-message form {
+        width: 100%;
+    }
 	.gt-gift-enter-message .col-md-6:nth-child(2) {     margin-top: 6px; }
 	
 	
@@ -11340,7 +11372,7 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
     }
 
     .gift-message {
-        padding: 0 4px;
+        /* padding: 0 4px; */
     }
 
     .send-gift-content-arrow {
@@ -12256,7 +12288,10 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 	#giftEmporiumModal .modal-dialog.modal-xl {     margin: 20px auto; max-width: 95%;}
 	.gt-send-gift-section .send-gift-select-gift {     padding: 22px 26px 25px 26px; }
 	div.input_send_outer {     width: 105px; }
-	.gt-select-gift-content div.gift-message {     width: calc(100% - 113px); }
+	.gt-select-gift-content div.gift-message {
+        width: calc(100% - 105px);
+        /* padding: 0 4px; */
+    }
 	.gt-gift-from-content form > div {     margin: 9px 0px 0 0; }
 	.gt-send-gift-estimate-content{    padding: 20px 15px 25px 15px;}
 	.gt-send-estimate-label{    line-height: 27px;}
@@ -12558,6 +12593,9 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 	.gift_verification_body_inner button.accordion-button {     font-size: 16px; }
 	
 	.g-finder-one-content.recommendation-content .row > div { 	width: 100%; }
+    .gt-gift-choose-file {
+        height: 115px;
+    }
 	
 }
 @media (max-width: 991px) and (orientation: landscape) {
