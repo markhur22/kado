@@ -419,6 +419,8 @@ function autocomplete(inp, arr) {
   inp.addEventListener("input", function(e) {
 	  $('.autocomplete').addClass('autocomplete_active');
       var a, b, i, val = this.value;
+	  console.log(arr);
+	  console.log(val);
       /*close any already open lists of autocompleted values*/
       closeAllLists();
       if (!val) { return false;}
@@ -449,7 +451,11 @@ function autocomplete(inp, arr) {
               closeAllLists();
           });
           a.appendChild(b);
-        }
+		  $('.autocomplete').removeClass('autocomplete_blank');
+        }else{
+			console.log('sss');
+			$('.autocomplete').addClass('autocomplete_blank');
+		}
       }
   });
   /*execute a function presses a key on the keyboard:*/
@@ -507,6 +513,7 @@ function autocomplete(inp, arr) {
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
 	  $('.autocomplete').removeClass('autocomplete_active');
+	  $('.autocomplete').removeClass('autocomplete_blank');
   });
 	}
 }
