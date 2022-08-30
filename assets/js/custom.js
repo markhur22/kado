@@ -393,6 +393,11 @@ $(document).ready(function() {
 		$(this).addClass('send_gift_active');
 	});
 	
+	var pathname = window.location.pathname;
+	var a = pathname.split('/');
+	var lastEl = a.pop();
+	console.log(lastEl);
+	if( lastEl == 'send-gift.html'){}else{
 	var lastScrollTop = 0;
 	$(window).scroll(function(event){
 	   var st = $(this).scrollTop();
@@ -407,6 +412,7 @@ $(document).ready(function() {
 	   }
 	   lastScrollTop = st;
 	});
+	}
 
 });
 
