@@ -2082,9 +2082,15 @@ a.gt-send-gift-link:hover svg path {
 .gt-gift-choose-file {
     background-color: #F6F6F6;
     border-radius: 10px;
+    cursor: pointer;
     height: 100%;
     position: relative;
     cursor: pointer;
+    border: 1px solid #F6F6F6;
+    transition: 0.5s ease all;
+}
+.gt-gift-choose-file:hover {
+    border-color: #ff385c;
 }
 
 .gt-gift-choose-file>img {
@@ -8079,6 +8085,12 @@ div#inputMessageautocomplete-list > div strong {
     color: #999999;
     font-weight: 400;
 }
+/* .gt-gift-enter-message form {
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+} */
 /*new desktop changes starts here*/
  
 
