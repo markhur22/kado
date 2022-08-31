@@ -387,7 +387,7 @@
                                         <div class="gt-sidebar-body">
                                             <ul class="gt-sidebar-filter-list">
                                                 <li class="gt-sidebar-filter-item ">
-                                                    <a href="#" class="gt-sidebar-filter-link active sidebar-filter-link">
+                                                    <a href="#" class="gt-sidebar-filter-link active_nav sidebar-filter-link">
                                                         <span class="gt-sidebar-filter-label">Birthday</span>
                                                     </a>
                                                 </li>
@@ -547,7 +547,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="browse-categori-popup mx-auto d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#categoryModal">Browse Gifts <i class="fa-solid fa-angle-down"></i></a>
+                                                <a href="#" class="browse-categori-popup mx-auto d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-dismiss="modal" aria-label="Close">Browse Gifts <i class="fa-solid fa-angle-down"></i></a>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -561,60 +561,60 @@
                                                                 <img src="assets/images/search_svg.svg" alt="search-icon" class="img-fluid">
                                                             </span>
                                                         <input type="text" class="form-control" placeholder="Search Cards">
-
+    
                                                         <div class="browse-gift-searchbox">
-                                                            <p>Birthday</p>
-                                                            <p>Birthday</p>
-                                                            <p>Birthday</p>
-                                                            <p>Birthday</p>
-                                                            <p>Birthday</p>
+                                                            <a href="javascript:void(0)"><p class="search_active">Birthday</p></a>
+                                                            <a href="javascript:void(0)"><p>Birthday</p></a>
+                                                            <a href="javascript:void(0)"><p>Birthday</p></a>
+                                                            <a href="javascript:void(0)"><p>Birthday</p></a>
+                                                            <a href="javascript:void(0)"><p>Birthday</p></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <h3 class="gt-browse-gift-header-label naine-categori d-block d-lg-none"><span>9 cards </span> in All Categories</h3>
-
-
+    
+    
                                         <div class="gt-browse-gift-content">
                                             <div class="row">
                                                 <div class="col-6 col-md-6 col-lg-6">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img1.png" alt="card-img1" class="img-fluid">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6 col-lg-6">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img2.png" alt="card-img2" class="img-fluid">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6 col-lg-6">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img3.png" alt="card-img3" class="img-fluid">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6 col-lg-6">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img4.png" alt="card-img4" class="img-fluid">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6 col-lg-6">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img5.png" alt="card-img5" class="img-fluid">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6 col-lg-6">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img6.png" alt="card-img6" class="img-fluid">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6 col-lg-6 mb-0">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img7.png" alt="card-img7" class="img-fluid">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-6 col-lg-6 mb-0">
-                                                    <div class="gt-card-img">
+                                                    <div class="gt-card-img" data-tilt>
                                                         <img src="assets/images/card-img8.png" alt="card-img8" class="img-fluid">
                                                     </div>
                                                 </div>
@@ -714,11 +714,11 @@
 
 	<!-- Site Footer End -->
     <div class="modal categori-modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-zoom">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="categoryModal">Browse Categories</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#cardsModal"></button>
                 </div>
                 <div class="modal-body categori-modal-body">
                     <div class="gt-sidebar-body">
@@ -887,7 +887,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
-    <script src="assets/js/scrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.js"></script>
     <script src="assets/js/custom.js"></script>
 	
 </body>

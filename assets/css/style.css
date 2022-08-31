@@ -1342,6 +1342,7 @@ span.gt-faq-solved-icon {
     color: #898989;
     padding-bottom: 14px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
 }
 
 .send-modal-searchbox .gt-search-icon {
@@ -8170,8 +8171,19 @@ a.gt-sidebar-filter-link.active_nav.sidebar-filter-link {
     padding: 0;
     margin: 0;
 }
-p.search_active {
+.browse-gift-searchbox.show-searchbox p.search_active {
     background-color: #FFF4F6;
+}
+
+.browse-gift-searchbox.show-searchbox p.search_active:hover {
+    background-color: #FFF4F6;
+}
+.browse-gift-searchbox a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.browse-gift-searchbox.show-searchbox p:hover {
+    background-color: #F6F6F6;
 }
 /*new desktop changes starts here*/
  
