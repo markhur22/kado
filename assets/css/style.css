@@ -8066,6 +8066,8 @@ div#inputMessageautocomplete-list {
     border-radius: 0 0 10px 10px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
     z-index: 9;
+    height: 158px;
+    overflow: auto;
 }
 div#inputMessageautocomplete-list > div {
     font-size: 18px;
@@ -8074,6 +8076,7 @@ div#inputMessageautocomplete-list > div {
     padding: 8px 20px;
     font-weight: 700;
     color: #414141;
+    cursor: pointer;
 }
 .autocomplete {
     position: relative;
@@ -8091,6 +8094,32 @@ div#inputMessageautocomplete-list > div strong {
     max-width: 100%;
     margin-left: 0;
 } */
+.autocomplete.autocomplete_blank > div {
+    opacity: 0;
+}
+.autocomplete.autocomplete_active input {
+    border-color: #fff;
+    box-shadow: 0px 5px 8px rgb(0 0 0 / 10%);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.autocomplete.autocomplete_blank input {
+    box-shadow: initial;
+    border-color: #E2E2E2;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+div#inputMessageautocomplete-list::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 16px);
+    height: 1px;
+    margin: auto;
+    background-color: rgba(0,0,0,.2);
+}
 /*new desktop changes starts here*/
  
 

@@ -26,6 +26,10 @@ $(document).ready(function() {
         }
     });
 
+    jQuery(document).ready(function(){
+        jQuery('.scrollbar-inner').scrollbar();
+    });
+
 	$('.gt-quality-gift-slider').slick({
         dots: false,
         infinite: false,
