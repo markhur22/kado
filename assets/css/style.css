@@ -8185,6 +8185,9 @@ a.gt-sidebar-filter-link.active_nav.sidebar-filter-link {
 .browse-gift-searchbox.show-searchbox p:hover {
     background-color: #F6F6F6;
 }
+.gt-card-img {
+    cursor: pointer;
+}
 /*new desktop changes starts here*/
  
 
