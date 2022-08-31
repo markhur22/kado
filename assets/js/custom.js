@@ -26,10 +26,6 @@ $(document).ready(function() {
         }
     });
 
-    jQuery(document).ready(function(){
-        jQuery('.scrollbar-inner').scrollbar();
-    });
-
 	$('.gt-quality-gift-slider').slick({
         dots: false,
         infinite: false,
@@ -470,6 +466,7 @@ function autocomplete(inp, arr) {
           });
           a.appendChild(b);
 		  $('.autocomplete').removeClass('autocomplete_blank');
+		  $('.autocomplete-items').scrollbar();
         }else{
 			console.log('sss');
 			$('.autocomplete').addClass('autocomplete_blank');
