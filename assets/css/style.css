@@ -1479,8 +1479,8 @@ span.gt-faq-solved-icon {
 .gt-browse-gift-header-seach .form-control:focus {
     background-color: #fff;
     border: none;
-    box-shadow: 0 -11px 15px rgba(0, 0, 0, 0.05);
-    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -11px 15px rgb(0 0 0 / 5%);
+    border-radius: 53.5px;
     z-index: 1;
     padding-left: 29px;
     position: relative;
@@ -8120,6 +8120,27 @@ div#inputMessageautocomplete-list::after {
     margin: auto;
     background-color: rgba(0,0,0,.2);
 }
+.gt-gift-enter-message .gt-gift-choose-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h6.selct_crd_field {
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 12px;
+}
+.gt-gift-enter-message .gt-gift-choose-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.gifts-navbar .nav-link svg {
+    margin-right: 16px;
+}
+
 /*new desktop changes starts here*/
  
 

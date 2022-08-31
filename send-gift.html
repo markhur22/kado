@@ -195,6 +195,7 @@
                                                         <img src="assets/images/edit.svg"
                                                             alt="edit-choose-icon" class="img-fluid">
                                                     </span>
+                                                    <h6 class="selct_crd_field">Pick a card</h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -350,7 +351,7 @@
                             <!-- Flexi Gift Modal -->
                             <div class="modal fade" id="sendgiftsubmit" tabindex="-1" aria-labelledby="sendgiftsubmit"
                                 aria-hidden="true">
-                                <div class="modal-dialog send-flexi-dialog">
+                                <div class="modal-dialog send-flexi-dialog modal-dialog-zoom">
                                     <div class="modal-content">
                                         <div class="modal-header send-flexi-header">
                                             <h5 class="modal-title" id="sendgiftsubmit">Flexi Gift </h5>
@@ -741,7 +742,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" class="browse-categori-popup mx-auto d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#categoryModal">Browse Gifts <i class="fa-solid fa-angle-down"></i></a>
+                                            <a href="#" class="browse-categori-popup mx-auto d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#categoryModal" data-bs-dismiss="modal" aria-label="Close">Browse Gifts <i class="fa-solid fa-angle-down"></i></a>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
@@ -824,11 +825,11 @@
     </div>
 
     <div class="modal categori-modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-zoom">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="categoryModal">Browse Categories</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#cardsModal"></button>
                 </div>
                 <div class="modal-body categori-modal-body">
                     <div class="gt-sidebar-body">
