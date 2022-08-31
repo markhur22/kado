@@ -466,7 +466,7 @@ function autocomplete(inp, arr) {
           });
           a.appendChild(b);
 		  $('.autocomplete').removeClass('autocomplete_blank');
-		  $('.autocomplete-items').scrollbar();
+		  //$('.autocomplete-items').scrollbar();
         }else{
 			console.log('sss');
 			$('.autocomplete').addClass('autocomplete_blank');
