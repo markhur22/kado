@@ -1191,7 +1191,7 @@ span.gt-faq-solved-icon {
 }
 
 .gt-sidebar-body {
-    padding: 15px 40px 25px;
+    padding: 10px 20px 25px;
 }
 
 .gt-sidebar-filter-list {
@@ -1211,7 +1211,7 @@ span.gt-faq-solved-icon {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 16px 20px;
 }
 .gt-sidebar-filter-link.active svg path {
     fill: #ff385c;
@@ -7670,12 +7670,12 @@ div.banner_content {}
 a.nav-link.active {     color: #FF385C; }
 .navbar-nav svg {     display: none; }
 .home-navbar .navbar-brand img {     width: 126px; }
-body, html{overflow-x:hidden;}
+body.home {overflow-x:hidden;}
 .gt-browse-gift-section .container > .row{margin:0; position:relative;     z-index: 9;padding:0 15px;}
 .gt-browse-gift-section{position:relative; }
 section.gt-browse-gift-section:before {     content: '';     position: absolute;     background-image: url('../images/particles_left.svg');     width: 100%;     height: 229px;     background-repeat: no-repeat;     left: -700px;     top: -114px; z-index:-1;}
 section.gt-browse-gift-section:after {     content: '';     position: absolute;     background-image: url('../images/particles_right.svg');     width: 100%;     height: 290px;     background-repeat: no-repeat;     right: 0;     top: -154px;     background-position: right; z-index:-1;}
-.gt-site-header{    z-index: 9;}
+.gt-site-header{    z-index: 999;}
 .gt-gift-emporium-img img{width:165px;}
 .gt-gift-emporium-main {     padding: 0 0 0 43px;     float: left;     width: 100%; }
 .gt-browse-gift-content .col{padding:0;}
@@ -8045,6 +8045,8 @@ a.gt-send-gift-link, .send-gift-btn-one, .input_pass_ span {
 #cardsModal .modal-header button.btn-close {
     width: 23px;
     height: 23px;
+    right: 6px;
+    position: relative;
 }
 .header-logo.gift-send-logo img {
     width: 126px;
@@ -8141,6 +8143,21 @@ h6.selct_crd_field {
     margin-right: 16px;
 }
 
+.modal.fade .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(.5);transform: translate(0,0)scale(.5);}
+.modal.show .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(1);transform: translate(0,0)scale(1);}
+div#cardsModal .modal-header {
+    padding: 25px 36px 25px 73px;
+}
+div#cardsModal .modal-header h5 {
+    font-size: 30px;
+    line-height: 40px;
+}
+a.gt-sidebar-filter-link.active_nav.sidebar-filter-link span {
+    color: #FF385C;
+}
+a.gt-sidebar-filter-link.active_nav.sidebar-filter-link {
+    background-color: #FFF4F6;
+}
 /*new desktop changes starts here*/
  
 
