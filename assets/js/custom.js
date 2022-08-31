@@ -414,6 +414,14 @@ $(document).ready(function() {
 	});
 	}
 
+	$('ul.gt-send-gift-list.send-gift-sidebar li a').click(function(e){
+		e.preventDefault();
+		var ahref = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(ahref).offset().top -20
+		}, 2000);
+	});
+
 });
 
 function autocomplete(inp, arr) {
