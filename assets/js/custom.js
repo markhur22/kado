@@ -397,7 +397,7 @@ $(document).ready(function() {
 	var a = pathname.split('/');
 	var lastEl = a.pop();
 	console.log(lastEl);
-	if( lastEl == 'send-gift.html'){}else{
+	if( lastEl == 'send-gift.html' || lastEl == 'send-gift-selected.html'){}else{
 	var lastScrollTop = 0;
 	$(window).scroll(function(event){
 	   var st = $(this).scrollTop();
@@ -419,7 +419,7 @@ $(document).ready(function() {
 		var ahref = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(ahref).offset().top -20
-		}, 2000);
+		}, 800);
 	});
 
 });
