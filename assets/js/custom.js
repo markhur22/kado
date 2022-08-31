@@ -437,7 +437,7 @@ function autocomplete(inp, arr) {
 	  console.log(val);
       /*close any already open lists of autocompleted values*/
       closeAllLists();
-      if (!val) { return false;}
+      if (!val) { $('.autocomplete').removeClass('autocomplete_active'); return false;}
       currentFocus = -1;
       /*create a DIV element that will contain the items (values):*/
       a = document.createElement("DIV");
