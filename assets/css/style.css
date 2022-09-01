@@ -8332,9 +8332,60 @@ span.select2-dropdown .select2-results__message:hover {
     background: transparent;
     color: #414141 !important;
 }
-/*new desktop changes starts here*/
- 
+.gifts-send-navbar ul.gifts-navbar a.nav-link:hover {
+    background-color: #F6F6F6;
+}
+.gifts-send-navbar ul.gifts-navbar a.nav-link.active:hover {
+    background-color: #FFF4F6;
+}
+.gifts-card-btn .gifts-card-view:hover {
+    box-shadow: 0 0 15px 0px #ff385c70;
+}
+.custom_serach {
+    height: 49px;
+}
+.custom_serach span {
+    height: 100%;
+}
+.custom_serach .select2
+ span.selection span.select2-selection {
+    border-radius: 53px;
+}
+.gifts-items-header .gt-search-icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 10000;
+}
+.select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea {
+    margin: 0 !important;
+    height: 24px;
+    color: #414141;
+    letter-spacing: 0.05em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea::placeholder {
+    color: #414141;
+}
+.custom_serach .select2
+ span.selection span.select2-selection {
+    border-radius: 53px;
+    padding: 16px 0 16px 49px;
+}
+.select2-container{    z-index: 99;}
+.gt-browse-gift-header-seach.gifts-items-header.gift-history-search button {
+    position: absolute;
+    z-index: 100;
+}
+.select_custom_main span.selection span.select2-selection.select2-selection--multiple ul li span {
+    display: flex;
+    align-items: center;
+}
+
 body > .select2-container{    z-index: 9999;}
+ /*new desktop changes starts here*/
+ 
  
 
 /* *************** Resposive Start  ****************** */
