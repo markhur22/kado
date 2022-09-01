@@ -183,7 +183,23 @@ $(document).ready(function() {
 			tags: true,
 			maximumSelectionLength: 1,
         });
-    } 
+	}
+	if ($('#inputSearchCards').length) {
+        $('#inputSearchCards').select2({
+            //minimumResultsForSearch: -1,
+			placeholder: 'Search Cards',
+			tags: true,
+			maximumSelectionLength: 1,
+        });
+	}
+	if ($('.searchgifts').length) {
+        $('.searchgifts').select2({
+            //minimumResultsForSearch: -1,
+			placeholder: 'Search gifts...',
+			tags: true,
+			maximumSelectionLength: 1,
+        });
+	} 
 
 
     $(document).click(function(event) {
