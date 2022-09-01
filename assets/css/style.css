@@ -8338,9 +8338,6 @@ span.select2-dropdown .select2-results__message:hover {
 .gifts-send-navbar ul.gifts-navbar a.nav-link.active:hover {
     background-color: #FFF4F6;
 }
-.gifts-card-btn .gifts-card-view:hover {
-    box-shadow: 0 0 15px 0px #ff385c70;
-}
 .custom_serach {
     height: 49px;
 }
@@ -8358,6 +8355,11 @@ span.select2-dropdown .select2-results__message:hover {
     z-index: 10000;
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea {
+    margin: 0 !important;
+    height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+.select_custom_main .custom_serach span.selection span.select2-selection.select2-selection--multiple textarea {
     margin: 0 !important;
     height: 24px;
     color: #414141;
@@ -8384,6 +8386,43 @@ span.select2-dropdown .select2-results__message:hover {
 }
 
 body > .select2-container{    z-index: 9999;}
+.gt-browse-gift-header .select_custom_main {
+    width: 350px;
+    height: 62px;
+}
+.gt-browse-gift-header .select_custom_main span {
+    width: 100% !important;
+}
+.gt-browse-gift-header  .gt-search-icon {
+    position: absolute;
+    top: 0;
+    left: 26px;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+.gt-browse-gift-header .select_custom_main .custom_serach {
+    height: 100%;
+}
+.gt-browse-gift-header .custom_serach .select2
+ span.selection span.select2-selection {
+    padding: 16px 0 16px 57px;
+}
+.gt-browse-gift-header-seach button.btn.btn-primary {
+    z-index: 99;
+}
+#cardsModal .gt-browse-gift-header .custom_serach .select2 span.selection span.select2-selection {
+    padding: 16px 0 16px 29px;
+}
+#cardsModal .gt-browse-gift-header .select_custom_main span.gt-search-icon {
+    width: 45px !important;
+    right: 10px;
+    top: -8px;
+}
+.selected_option span.selection span.select2-selection.select2-selection--multiple textarea {
+    display: none;
+}
  /*new desktop changes starts here*/
  
  
@@ -8548,6 +8587,10 @@ body > .select2-container{    z-index: 9999;}
 	.gt-select-gift-content__inner{    width: 251px;}
     .help-form-email {
         padding: 24px 26px 24px 29px;
+    }
+    .gt-browse-gift-header .select_custom_main {
+        width: 280px;
+        height: 62px;
     }
 }
 
@@ -12597,6 +12640,9 @@ body > .select2-container{    z-index: 9999;}
         width: calc(100% - 58px);
         font-size: 12px;
         padding: 15px 26px 15px 26px;
+    }
+    .gt-send-gift-section .select_custom_main span.selection span.select2-selection.select2-selection--multiple {
+        padding: 10px 20px;
     }
     
 }

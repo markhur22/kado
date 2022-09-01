@@ -183,6 +183,14 @@ $(document).ready(function() {
 			tags: true,
 			maximumSelectionLength: 1,
         });
+		
+		$('#inputMessage').change(function(){
+			if( $( this ).val() == "" ){
+				$( this ).parent().removeClass( 'selected_option' );
+			}else{
+				$( this ).parent().addClass( 'selected_option' );
+			}
+		});
 	}
 	if ($('#inputSearchCards').length) {
         $('#inputSearchCards').select2({
@@ -191,6 +199,14 @@ $(document).ready(function() {
 			tags: true,
 			maximumSelectionLength: 1,
         });
+		
+		$('#inputSearchCards').change(function(){
+			if( $( this ).val() == "" ){
+				$( this ).parent().removeClass( 'selected_option' );
+			}else{
+				$( this ).parent().addClass( 'selected_option' );
+			}
+		});
 	}
 	if ($('.searchgifts').length) {
         $('.searchgifts').select2({
@@ -199,6 +215,14 @@ $(document).ready(function() {
 			tags: true,
 			maximumSelectionLength: 1,
         });
+		
+		$('#searchgifts').change(function(){
+			if( $( this ).val() == "" ){
+				$( this ).parent().removeClass( 'selected_option' );
+			}else{
+				$( this ).parent().addClass( 'selected_option' );
+			}
+		});
 	} 
 	if ($('.inputGiftSent').length) {
         $('.inputGiftSent').select2({
@@ -207,7 +231,22 @@ $(document).ready(function() {
 			tags: true,
 			maximumSelectionLength: 1,
         });
+		
+		$('#inputGiftSent').change(function(){
+			if( $( this ).val() == "" ){
+				$( this ).parent().removeClass( 'selected_option' );
+			}else{
+				$( this ).parent().addClass( 'selected_option' );
+			}
+		});
 	} 
+	$('#inputSearchgifts').change(function(){
+			if( $( this ).val() == "" ){
+				$( this ).parent().removeClass( 'selected_option' );
+			}else{
+				$( this ).parent().addClass( 'selected_option' );
+			}
+		});
 
 
     $(document).click(function(event) {
@@ -447,6 +486,8 @@ $(document).ready(function() {
 			scrollTop: $(ahref).offset().top -20
 		}, 800);
 	});
+	
+	
 
 
 
