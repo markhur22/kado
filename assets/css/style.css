@@ -349,6 +349,7 @@ a {
 .modal-header {
     padding: 25px 45px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .gift-select-modal-header {
@@ -429,7 +430,7 @@ a {
     border: none;
     top: 3px;
     left: unset;
-    right: 10px;
+    right: 0;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -464,7 +465,7 @@ a {
 span.select2-dropdown .select2-results__option.select2-results__option--disabled{    background: transparent !important; color:#999 !important;}
 .select2-container .select2-selection--single .select2-selection__rendered {
     font-weight: 400;
-    font-size: 16px;    padding: 0 0 0 10px;
+    font-size: 14px;    padding: 0 0 0 10px;
     line-height: 30px;letter-spacing: 0.05em;
     color: #414141;
     font-weight: 700;
@@ -721,8 +722,10 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 24px;
     position: absolute;
     right: 25px;
-    top: 30px;
+    top: 0;
     background-size: 14px;
+    bottom: 0;
+    margin: auto;
 }
 
 .categori-modal-body {
@@ -2662,7 +2665,7 @@ a.gt-send-gift-link:hover svg path {
     display: inline-block;
     margin-left: .255em;
     vertical-align: .255em;
-    content: url('../images/dropdown-arrow.png');
+    content: url('../images/dropdown-arrow.svg');
     border: none;
 }
 
@@ -2697,6 +2700,8 @@ a.gt-send-gift-link:hover svg path {
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     border: none;
+    width: 235px;
+    right: 0;
 }
 
 .user-profile::after li:first-child {
@@ -2720,11 +2725,7 @@ a.gt-send-gift-link:hover svg path {
 }
 
 .user-profile li:first-child .dropdown-item {
-    padding: 23px 32px 24px 26px;
-}
-
-.user-profile li:last-child .dropdown-item {
-    margin-top: 15px;
+    /* padding: 23px 32px 24px 26px; */
 }
 
 .header-dropdown .btn {
@@ -2910,7 +2911,7 @@ a {
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     border-bottom: 1px solid #000000;
     width: 100%;
     opacity: 0.2;
@@ -2939,7 +2940,7 @@ nav {
 }
 
 .gifts-items {
-    padding: 33px 41px 35px;
+    padding: 23px 41px 35px;
 }
 
 .gifts-items-header {
@@ -3074,7 +3075,7 @@ nav {
 }
 
 .gifts-card-img {
-    width: 229px;
+    width: 259px;
     max-width: 100%;
     position: relative;
 }
@@ -3127,6 +3128,7 @@ nav {
     line-height: 29px;
     color: #000000;
     margin-bottom: 8px;
+    transition: all ease .5s;
 }
 
 .borthday-header-title .gifts-card-mtitle {
@@ -3169,7 +3171,7 @@ nav {
 }
 
 .gifts-card-btn .gt-btn-custom {
-    padding: 19.5px 74.7px;
+    padding: 19.5px 73px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -3186,7 +3188,7 @@ nav {
 }
 
 .gifts-card-btn:first-child {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .gifts-card-footer {
@@ -8187,6 +8189,52 @@ a.gt-sidebar-filter-link.active_nav.sidebar-filter-link {
 }
 .gt-card-img {
     cursor: pointer;
+}
+a.browse-categori-popup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gifts-items .gift-send-select-time .gifts-selecter span.selection .select2-selection__rendered {
+    padding: 0;
+    color: #808080;
+}
+.gifts-items .gift-send-select-time .gifts-selecter span.selection span.select2-selection__arrow b {
+    background-image: url('../images/vector_bottomm.svg');
+}
+a.gift-card-pay {
+    margin-top: 15px;
+}
+.gifts-send-navbar ul.gifts-navbar a.nav-link {
+    color: #414141;
+}
+.gifts-send-navbar .gifts-navbar .nav-link.active {
+    color: #FF385C;
+    background-color: #FFF4F6;
+    border-radius: 10px;
+}
+.gifts-card-list.gift-send-card-list .card.gifts-card {
+    cursor: pointer;
+    transition: all ease .5s;
+}
+.gifts-card-list.gift-send-card-list .card.gifts-card:hover {
+    box-shadow: 0 0 0 1px #ff385c;
+    border-color: #ff385c;
+}
+.gifts-card-list.gift-send-card-list .card.gifts-card:hover h5.gifts-card-mtitle {
+    color: #ff385c;
+}
+.user-profile li a.dropdown-item.profile-logout span {
+    line-height: normal;
+}
+.user-profile li a.dropdown-item.profile-logout {
+    padding: 26px 29px;
+}
+ul.dropdown-menu.user-profile li:nth-child(2) {
+    padding-top: 11px;
+}
+ul.dropdown-menu.user-profile li:last-child {
+    padding-bottom: 11px;
 }
 /*new desktop changes starts here*/
  
