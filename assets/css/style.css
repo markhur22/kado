@@ -8334,7 +8334,7 @@ span.select2-dropdown .select2-results__message:hover {
 }
 /*new desktop changes starts here*/
  
-.select2-container{    z-index: 9999;}
+body > .select2-container{    z-index: 9999;}
  
 
 /* *************** Resposive Start  ****************** */
