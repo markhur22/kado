@@ -200,6 +200,14 @@ $(document).ready(function() {
 			maximumSelectionLength: 1,
         });
 	} 
+	if ($('.inputGiftSent').length) {
+        $('.inputGiftSent').select2({
+            //minimumResultsForSearch: -1,
+			placeholder: 'Search here...',
+			tags: true,
+			maximumSelectionLength: 1,
+        });
+	} 
 
 
     $(document).click(function(event) {
