@@ -8382,7 +8382,10 @@ span.select2-dropdown .select2-results__message:hover {
     display: flex;
     align-items: center;
 }
+
+body > .select2-container{    z-index: 9999;}
  /*new desktop changes starts here*/
+ 
  
 
 /* *************** Resposive Start  ****************** */
