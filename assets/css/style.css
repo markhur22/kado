@@ -8549,6 +8549,11 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 p.card-text.gifts-card-text {
     margin: 0;
 }
+.gifts-send-navbar .gifts-collapse {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+}
 /* new desktop changes starts here */
  
  
@@ -9373,7 +9378,7 @@ p.card-text.gifts-card-text {
 
     .gift-toggler {
         display: block;
-        top: 30px;
+        top: 41px;
         right: 30px;
         left: unset;
         z-index: 100;
@@ -10518,6 +10523,39 @@ p.card-text.gifts-card-text {
     .scroll-wrapper.gifts-card-list.gift-send-card-list .scroll-element.scroll-y.scroll-scrolly_visible {
         right: 3px;
     }
+    .gifts-navbar {
+        min-width: 203px;
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+        float: left;
+    }
+    .gifts-send-navbar .gifts-collapse ul.gifts-navbar:last-child li.nav-item a {
+        margin: 0;
+    }
+    .gifts-send-navbar .gifts-collapse ul.gifts-navbar:last-child {
+        padding-top: 37px;
+    }
+    .gifts-send-navbar .gifts-collapse ul.gifts-navbar {
+        margin-bottom: 0;
+        position: relative;
+    }
+    ul.gifts-navbar.upper_nav {
+        padding-bottom: 47px;
+    }
+    ul.gifts-navbar.upper_nav::after {
+        content: '';
+        width: calc(100% + 36px);
+        height: 1px;
+        bottom: 0;
+        position: absolute;
+        right: 0px;
+        left: -18px;
+        background-color: #E2E2E2;
+    }
+    .gifts-selecter .gift-send-modal-btn {
+        color: #414141;
+    }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -10662,7 +10700,7 @@ p.card-text.gifts-card-text {
 
     .g-account-profile {         padding: 49px 20px 51px 20px;     }
 
-    .gifts-sent-content {         padding: 86px 16px 54px 16px;     }
+    .gifts-sent-content {         padding: 76px 16px 54px 16px;     }
 
     .profile-password {         display: inherit;     }
 
@@ -12882,8 +12920,21 @@ p.card-text.gifts-card-text {
         align-items: baseline;
         justify-content: space-between;
     }
-    
+    .gifts-list.gifts-send-list .breadcrumb-content {
+        padding: 33px 18px 0;
+    }
+    .custom_serach .select2 span.selection span.select2-selection {
+        border-radius: 53px;
+        padding: 16px 0 16px 39px;
+    }
+    .gifts-items-header .gt-search-icon {
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 10000;
+    }
 }
+
 @media(max-width:575px)
 {
     #cardsModal .modal-lg, #cardsModal .modal-xl {
@@ -13176,6 +13227,13 @@ p.card-text.gifts-card-text {
         max-width: 100%;
         margin-bottom: 12px !important;
     }
+    
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn:first-child {
+        margin-bottom: 12px;
+    }
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn {
+        width: 47%;
+    }
 
 }
 
@@ -13239,6 +13297,9 @@ p.card-text.gifts-card-text {
     }
     .gt-gift-shipping-charge {
         margin-top: 4px;
+    }
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn {
+        width: 100%;
     }
 	
 }
