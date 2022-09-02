@@ -8464,7 +8464,7 @@ ul.dropdown-menu.user-profile a:active path {
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
-.gifts-list.gifts-send-list nav.breadcrumb-content::after {
+/* .gifts-list.gifts-send-list nav.breadcrumb-content::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -8472,7 +8472,7 @@ ul.dropdown-menu.user-profile a:active path {
     background-color: #FF385C;
     left: 0;
     top: 0px;
-}
+} */
 .gifts-collapse ul.gifts-navbar li.nav-item {
     margin-bottom: 1px;
 }
@@ -8523,6 +8523,10 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 }
 .dropdown.header-dropdown.gift-history-drop button {
     letter-spacing: 0;
+}
+
+p.card-text.gifts-card-text {
+    margin: 0;
 }
 /* new desktop changes starts here */
  
@@ -8664,6 +8668,24 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .nav-tabs .nav-item:nth-child(4) .nav-link .g-shipping-conform::after {
         width: 110px;
     }
+    .gifts-card-footer {
+        width: 199px;
+    }
+    .gifts-card-body {
+        width: calc(100% - 458px);
+    }
+    .gifts-card-footer .gifts-card-btn {
+        width: 80%;
+    }
+    .gifts-card-footer .gifts-card-btn .gt-btn-custom {
+        padding: 0;
+        width: 100%;
+        height: 62px;
+    }
+    .gifts-card-img {
+        align-items: center;
+        display: flex;
+    }
 }
 @media(max-width:1800px)
 {
@@ -8693,6 +8715,52 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .gt-browse-gift-header .select_custom_main {
         width: 280px;
         height: 62px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .gifts-card-list.gift-send-card-list .card.gifts-card {
+        flex-wrap: wrap;
+    }
+    .gifts-card-list .card {
+        padding: 19px 15px 16px 15px;
+    }
+    .gifts-card-list .card {
+        padding: 16px 20px 23px 20px;
+    }
+    .gifts-card-body::after {
+        display: none;
+    }
+    .gifts-card-body {
+        width: calc(100% - 259px);
+        padding-right: 0;
+    }
+    .gifts-card-footer .gifts-card-btn {
+        width: 200px;
+    }
+    .gifts-card-footer .gifts-card-btn .gt-btn-custom {
+        padding: 0;
+        width: 100%;
+        height: 62px;
+        margin: 0;
+    }
+    .gifts-card-footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        position: relative;
+    }
+    .gifts-card-footer::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 0;
+        background-color: #D2D2D2;
     }
 }
 
@@ -8987,10 +9055,6 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         flex-wrap: wrap;
     }
 
-    .gifts-card-body {
-        width: calc(100% - 259px);
-    }
-
     .gifts-card-footer {
         flex-direction: row;
         align-items: baseline;
@@ -9156,6 +9220,12 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 		margin: auto;
 	}
 	
+}
+
+@media only screen and (max-width: 1024px) {
+    .gifts-items-header h3 {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -10415,10 +10485,29 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .send-gift-sidebar .gt-send-gift-item {
         padding: 0 0 0 0px;
     }
+    .custom_serach .select2 span.selection span.select2-selection {
+        border-radius: 53px;
+        padding: 16px 0 16px 43px;
+    }
+    .scroll-wrapper.gifts-card-list.gift-send-card-list .scroll-element.scroll-y.scroll-scrolly_visible {
+        right: 3px;
+    }
 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .gifts-items .select_custom_main .custom_serach span.select2 {
+        width: 250px !important;
+    }
 }
 
 @media (max-width: 767px) {
+    
+    .gifts-card-footer::after {
+        display: none;
+    }
+    .gifts-card-footer {
+        margin: 0;
+    }
 	div#meassage .gt-send-gift-title{margin-bottom:0;}
 	.gt-page-title-section .container {     padding: 0 15px; }
 
@@ -11145,6 +11234,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 
     .gift-send-select-time .gifts-items-header {
         max-width: 203px;
+        margin: 0;
     }
 
     .gift-send-select-time .form-select {
@@ -11161,7 +11251,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     }
 
     .gift-send-card-list .card {
-        padding: 19px 20px 39px;
+        padding: 19px 18px 22px;
     }
 
     .gift-send-card-list .gifts-card-img {
@@ -11194,7 +11284,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     }
 
     .gift-send-card-list .gifts-card-footer .gifts-card-btn {
-        width: 50%;
+        width: 180px;
     }
 
     .gift-send-card-list .gifts-card-view {
@@ -11802,10 +11892,6 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 
     .gift-history-accordion .accordion-item {
         margin-bottom: 0;
-    }
-
-    .gift-send-card-list .gift-history-card-body {
-        padding: 21px 0 19px;
     }
 
     .gifts-card-btn .gt-btn-custom {
@@ -12746,6 +12832,30 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .gt-send-gift-section .select_custom_main span.selection span.select2-selection.select2-selection--multiple {
         padding: 10px 20px;
     }
+    .gifts-card-footer .gifts-card-btn .gt-btn-custom {
+        height: 47px;
+    }
+    .gift-send-card-list .gift-history-card-body {
+        padding: 21px 0 19px;
+        padding-top: 11px;
+    }
+    .gifts-section .gift-send-select-time {
+        align-items: baseline;
+        justify-content: end;
+    }
+    .select_custom_main .custom_serach span.selection span.select2-selection.select2-selection--multiple textarea {
+        font-size: 14px;
+    }
+    .accordion.gift-history-accordion {
+        display: none !important;
+    }
+    .gifts-card-title {
+        margin-bottom: 0;
+    }
+    .gifts-section .gift-send-select-time {
+        align-items: baseline;
+        justify-content: space-between;
+    }
     
 }
 @media(max-width:575px)
@@ -12811,6 +12921,12 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 		margin: auto;
 		padding: 0 20px;
 	}
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn {
+        width: 152px;
+    }
+    .gifts-section .gifts-items-header {
+        margin-bottom: 21px;
+    }
 	
 }
 @media (max-width: 420px) {
@@ -13016,6 +13132,23 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     #cardsModal .modal-body {
         padding: 20px 20px 10px;
         padding-right: 20px;
+    }
+    .gifts-section .gift-send-select-time {
+        flex-wrap: wrap;
+    }
+    .gifts-items .gifts-items-header.gift-send-header .gift-send-select-time .gifts-selecter {
+        width: 100%;
+    }
+    .gifts-items .gifts-items-header.gift-send-header .gift-send-select-time .gifts-selecter a.gift-send-modal-btn {
+        width: 100%;
+    }
+    .gifts-items .gifts-items-header.gift-send-header .gift-send-select-time .gt-browse-gift-header-seach span.select2 {
+        width: 100% !important;
+    }
+    .gifts-items .gift-send-select-time .gt-browse-gift-header-seach.gifts-items-header {
+        width: 100% !important;
+        max-width: 100%;
+        margin-bottom: 12px !important;
     }
 
 }
