@@ -8549,10 +8549,11 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 p.card-text.gifts-card-text {
     margin: 0;
 }
-.gifts-send-navbar .gifts-collapse {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 15px;
+.dsk_sidebar {
+    display: none;
+}
+.mob_nav {
+    display: none;
 }
 /* new desktop changes starts here */
  
@@ -8588,6 +8589,9 @@ p.card-text.gifts-card-text {
 	}
 	.emporium-modal-body > * {     color: #333;     }
 	/* emporium-modal-body scroller ends*/
+    .dsk_sidebar {
+        display: block;
+    }
 }
 @media (min-width: 1000px) {
 	
@@ -8803,6 +8807,14 @@ p.card-text.gifts-card-text {
     }
     #cardsModal .gt-sidebar-body {
         padding: 15px 15px 25px;
+    }
+    
+    .gift-send-logo {
+        margin-bottom: 32px;
+        padding: 40px 0 0 20px;
+    }
+    .gifts-navbar .nav-item {
+        padding: 0 20px 0 20px;
     }
 }
 
@@ -9226,6 +9238,13 @@ p.card-text.gifts-card-text {
     div#cardsModal .modal-header {
         padding: 25px 30px 25px 30px;
     }
+    .gift-send-logo {
+        margin-bottom: 32px;
+        padding: 40px 0 0 14px;
+    }
+    .gifts-navbar .nav-item {
+        padding: 0 14px 0 14px;
+    }
 }
 @media only screen and (max-width: 1080px) {
 	.g-finder-next-btn {
@@ -9320,6 +9339,10 @@ p.card-text.gifts-card-text {
 
     .gt-site-header .btn {
         margin-left: auto;
+    }
+
+    .mob_nav {
+        display: block;
     }
 
     .gift-details-accordion .collapse:not(.show) {
@@ -10555,6 +10578,14 @@ p.card-text.gifts-card-text {
     }
     .gifts-selecter .gift-send-modal-btn {
         color: #414141;
+    }
+    .gifts-send-navbar .gifts-collapse {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 15px;
+    }
+    .gifts-navbar .nav-item {
+        padding: 0;
     }
 
 }
