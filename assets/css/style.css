@@ -3235,7 +3235,7 @@ nav {
 }
 
 .help-form-header {
-    padding: 34px 39px 37px 38px;
+    padding: 55px 38px 37px 38px;
     border-bottom: 1px solid #D2D2D2;
 }
 
@@ -3257,6 +3257,7 @@ nav {
     color: #FF385C;
     margin-bottom: 0;
 }
+.help-form-discription a{color: #FF385C;font-weight: 700;     font-size: 18px;     line-height: 28px;     letter-spacing: 0.05em; text-decoration:none;}
 
 .help-form-email-icon {
     border: 1px solid #D2D2D2;
@@ -3282,7 +3283,7 @@ nav {
 }
 
 .form-check .help-form-discription {
-    color: #828282;
+    color: #414141;
 }
 
 .form-check-input:checked[type=radio] {
@@ -7642,6 +7643,26 @@ div#send.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px
 div#form.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
 section.gt-page-title-section:after {     content: '';     position: absolute;     background-image: url(../images/particles_right.svg);     width: 100%;     height: 290px;     background-repeat: no-repeat;     right: 0;     top: -140px;     background-position: right;     z-index: -1; }
 section.gt-page-title-section:before {     content: '';     position: absolute;     background-image: url(../images/particles_left.svg);     width: 100%;     height: 229px;     background-repeat: no-repeat;     left: -700px;     top: -74px;     z-index: -1; }
+.help-radio-btn .form-check input {     margin-top: 0; }
+.help-radio-btn .form-check {     display: flex;     align-items: center;     float: left; }
+.help-radio-btn{display: inline-block;     width: 100%;}
+.help-form-slip textarea.form-control {     border: 1px solid #D2D2D2;     border-radius: 10px;     letter-spacing: 0.05em;     color: #414141;     padding: 19px 0 0 28px;     font-weight: 700;     font-size: 14px;     line-height: 17px;     min-height: 163px;}
+.help-form-slip textarea.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #414141;
+}
+.help-form-slip textarea.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #414141;
+}
+.help-form-slip textarea.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #414141;
+}
+.help-form-slip textarea.form-control:-moz-placeholder { /* Firefox 18- */
+  color: #414141;
+}
+.gifts-list {     position: relative; }
+.gifts-list:after {      position: absolute;     content: '';     width: 100%;     height: 10px;     background-color: #FF385C;     left: 0;     top: 0px;     border-radius: 20px 20px 0 0; }
+.help-form-btn svg {     margin: 0 10px 0 0;     display: inline-block;     vertical-align: middle; }
+
 
 /*desktop new changes starts here*/
 
@@ -8626,6 +8647,8 @@ p.card-text.gifts-card-text {
 
 @media (max-width: 1499px) {
 	
+	.help-form-discription a{    font-size: 16px;}
+	.help-form-title{font-size: 22px;}
 	.gt-send-gift-section .container {     padding: 0 100px; }
 	.gt-popup-gift-title{    font-size: 32px;}
 	.gt-gift-card-body{    padding: 15px 20px;}
@@ -8721,6 +8744,7 @@ p.card-text.gifts-card-text {
         width: 280px;
         height: 62px;
     }
+	.help-form-email {     padding: 16px 12px; }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -9234,6 +9258,8 @@ p.card-text.gifts-card-text {
 }
 
 @media (max-width: 991px) {
+    
+    header.gt-site-header.sticky {z-index: 99;}
 	/*new changes*/
     #cardsModal .gt-card-img {
         margin-bottom: 16px;
@@ -13224,6 +13250,9 @@ p.card-text.gifts-card-text {
 	.gt-how-work-section .gt-section-title{line-height:65px;}
 }
 @media(max-width:370px) {
+     .gt-gift-shipping-charge {
+        margin-top: 4px;
+    }
 	.gt-select-gift-content div.gift-message { margin:5px 0 0 0;    width: 100%;     padding: 0 12px; }
 	div.message_fields {     margin-top: 6px !important; }
 	.gt-select-gift-content .form-control{    margin: 0;}
