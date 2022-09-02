@@ -2667,6 +2667,8 @@ a.gt-send-gift-link:hover svg path {
     vertical-align: .255em;
     content: url('../images/dropdown-arrow.svg');
     border: none;
+    position: absolute;
+    right: 0;
 }
 
 .header-dropdown .gt-section-description {
@@ -2719,9 +2721,11 @@ a.gt-send-gift-link:hover svg path {
 }
 
 .user-profile .dropdown-item {
-    padding: 11px 32px 11px 26px;
+    padding: 13.5px 23px 13.5px 19px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+    height: 55px;
 }
 
 .user-profile li:first-child .dropdown-item {
@@ -2910,11 +2914,12 @@ a {
 .profile-logout::after {
     content: "";
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -10px;
+    bottom: -7px;
     border-bottom: 1px solid #000000;
-    width: 100%;
     opacity: 0.2;
+    width: calc(100% + 19px);
+    right: 0;
 }
 
 .gifts-send-list {
@@ -8230,11 +8235,8 @@ a.gift-card-pay {
 .user-profile li a.dropdown-item.profile-logout span {
     line-height: normal;
 }
-.user-profile li a.dropdown-item.profile-logout {
-    padding: 26px 29px;
-}
 ul.dropdown-menu.user-profile li:nth-child(2) {
-    padding-top: 11px;
+    padding-top: 6px;
 }
 ul.dropdown-menu.user-profile li:last-child {
     padding-bottom: 11px;
@@ -8472,7 +8474,7 @@ ul.dropdown-menu.user-profile a:active path {
     top: 0px;
 }
 .gifts-collapse ul.gifts-navbar li.nav-item {
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 .scroll-wrapper.gifts-card-list.gift-send-card-list.scrollbar-inner {
     position: initial !important;
@@ -8482,12 +8484,44 @@ ul.dropdown-menu.user-profile a:active path {
 }
 .scroll-wrapper.gifts-card-list.gift-send-card-list.scrollbar-inner .scroll-bar {
     background-color: rgba(0,0,0,.35);
+    width: 10px;
 }
 .scroll-wrapper.gifts-card-list.gift-send-card-list .scroll-element.scroll-y.scroll-scrolly_visible {
     height: calc(100% - 30px);
     top: 0;
     bottom: 0;
     margin: auto;
+}
+.gifts-list.gifts-send-list .breadcrumb-content {
+    padding: 33px 40px 0;
+}
+.gifts-list.gifts-send-list .breadcrumb {
+    margin-bottom: 28px;
+}
+.gifts-card-btn .gifts-card-view:hover {
+    border-color: #cdcdcd;
+    background-color: #f9f9f9;
+}
+a.nav-link.account_set {
+    margin-top: 30px;
+}
+ul.dropdown-menu.user-profile li {
+    margin: 0 8px;
+    margin-bottom: 1px;
+}
+ul.dropdown-menu.user-profile li:first-child {
+    margin-top: 7.5px;
+    margin-bottom: 6px;
+}
+ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop {
+    background-color: #FFF4F6;
+    color: #FF385C;
+}
+ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
+    fill: #FF385C;
+}
+.dropdown.header-dropdown.gift-history-drop button {
+    letter-spacing: 0;
 }
 /* new desktop changes starts here */
  
