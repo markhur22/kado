@@ -525,5 +525,10 @@ $(document).ready(function() {
 	console.log(gs_THeights); */
 	var gs_THeights = parseFloat(gs_total) + parseFloat(gs_psectionheight);
 	$('.gifts-items').css('height',gs_THeights);
-
+	
+	
+	$('.user-profile li').click(function(){
+		$('.active_drop').removeClass('active_drop');
+		$(this).addClass('active_drop');
+	});
 });
