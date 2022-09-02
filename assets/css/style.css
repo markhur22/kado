@@ -2941,6 +2941,7 @@ nav {
 
 .gifts-items {
     padding: 23px 41px 35px;
+    position: relative;
 }
 
 .gifts-items-header {
@@ -2949,7 +2950,7 @@ nav {
 }
 
 .gifts-section .gifts-items-header {
-    align-items: baseline;
+    align-items: center;
 }
 
 .gifts-section .gifts-items-header {
@@ -3147,6 +3148,8 @@ nav {
     line-height: 17px;
     color: #828282;
     margin-bottom: 21px;
+    display: flex;
+    align-items: center;
 }
 
 .gifts-card-subtitle img {
@@ -8219,7 +8222,6 @@ a.gift-card-pay {
     transition: all ease .5s;
 }
 .gifts-card-list.gift-send-card-list .card.gifts-card:hover {
-    box-shadow: 0 0 0 1px #ff385c;
     border-color: #ff385c;
 }
 .gifts-card-list.gift-send-card-list .card.gifts-card:hover h5.gifts-card-mtitle {
@@ -8423,7 +8425,7 @@ body > .select2-container{    z-index: 9999;}
 .selected_option span.selection span.select2-selection.select2-selection--multiple textarea {
     display: none;
 } 
-.gifts-items {
+.gifts-card-list.gift-send-card-list {
     height: 120vh;
     overflow: auto;
 }
@@ -8454,6 +8456,38 @@ ul.dropdown-menu.user-profile a:active path {
     inset: 90px 0 auto auto !important;
     margin: initial !important;
     transform: initial !important;
+}
+.gifts-list.gifts-send-list nav.breadcrumb-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+.gifts-list.gifts-send-list nav.breadcrumb-content::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-color: #FF385C;
+    left: 0;
+    top: 0px;
+}
+.gifts-collapse ul.gifts-navbar li.nav-item {
+    margin-bottom: 4px;
+}
+.scroll-wrapper.gifts-card-list.gift-send-card-list.scrollbar-inner {
+    position: initial !important;
+}
+.gifts-card-list.gift-send-card-list .scroll-element_track {
+    display: none;
+}
+.scroll-wrapper.gifts-card-list.gift-send-card-list.scrollbar-inner .scroll-bar {
+    background-color: rgba(0,0,0,.35);
+}
+.scroll-wrapper.gifts-card-list.gift-send-card-list .scroll-element.scroll-y.scroll-scrolly_visible {
+    height: calc(100% - 30px);
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 /* new desktop changes starts here */
  

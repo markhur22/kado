@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/scrollbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Link All JS -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
@@ -165,12 +167,12 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#" class="breadcrumb-link"><i
                                                 class="fa-solid fa-arrow-left"></i> Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Gifts sent</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Gift History</li>
                                 </ol>
                             </nav>
                             <div class="gifts-items">
                                 <div class="gifts-items-header gift-send-header">
-                                    <h3 class="mb-0">Gifts History</h3>
+                                    <h3 class="mb-0">Gift History</h3>
 
                                     <div class="gift-send-select-time">
                                         <div
@@ -212,7 +214,7 @@
 
                                     </div>
                                 </div>
-                                <div class="gifts-card-list gift-send-card-list">
+                                <div class="gifts-card-list gift-send-card-list scrollbar-inner">
                                     <div class="card gifts-card">
                                         <div class="card-img gifts-card-img">
                                             <img src="assets/images/gcard-img1.png" class="card-img-top img-fluid w-100"
@@ -703,6 +705,11 @@
         </div>
     </footer> -->
     <!-- Site Footer End -->
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
 </body>
 
 </html>
