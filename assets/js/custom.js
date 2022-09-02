@@ -487,24 +487,43 @@ $(document).ready(function() {
 		}, 800);
 	});
 	
+	var gs_psectionheight = $(".gifts-items .gifts-items-header.gift-send-header").outerHeight();
+	var gs_sectionheight = new Array();
+	gs_sectionheight.push(gs_psectionheight);
+    $('.gifts-card-list.gift-send-card-list .card.gifts-card').slice(0, 6).each(function (i,e) {
+        var gs_value = $(this).outerHeight(true);
+        gs_sectionheight.push(gs_value);
+        console.log(gs_sectionheight);
+    });
 	
-
-
+	var gs_sectionheight_aftersix = new Array();
+	$('.gifts-card-list.gift-send-card-list .card.gifts-card').slice(6).each(function (i,e) {
+			var gs_value = $(this).outerHeight(true);
+			gs_sectionheight_aftersix.push(gs_value);
+			console.log(gs_sectionheight_aftersix);
+	});
+	
+	var gs_total_aftersix = 0;
+    for (var i = 0; i < gs_sectionheight_aftersix.length; i++) {
+        gs_total_aftersix += gs_sectionheight_aftersix[i] << 0;
+    }
+	
+	
+    var gs_total = 0;
+    for (var i = 0; i < gs_sectionheight.length; i++) {
+        gs_total += gs_sectionheight[i] << 0;
+    }
+    console.log(gs_total);
+    console.log(gs_total_aftersix);
+	console.log(gs_psectionheight);
+	console.log($('.gifts-items').outerHeight(true));
+	
+	/* var gs_PHeight = $('.gifts-items').outerHeight();
+	var gs_subHeights = parseFloat(gs_total) - parseFloat(gs_PHeight);
+	var gs_addHeights = parseFloat(gs_total) + parseFloat(gs_subHeights);
+	var gs_THeights = parseFloat(gs_addHeights) - parseFloat(gs_total_aftersix);
+	console.log(gs_THeights); */
+	var gs_THeights = parseFloat(gs_total) + parseFloat(gs_psectionheight);
+	$('.gifts-items').css('height',gs_THeights);
 
 });
-
-( function( $ ) {
-
-	"use strict";
-
-  $(".cardTeller").tilt({
-    maxTilt: 15,
-    perspective: 1400,
-    easing: "cubic-bezier(.03,.98,.52,.99)",
-    speed: 1200,
-    glare: true,
-    maxGlare: 0.2,
-    scale: 1.04
-  });
-  
-}( jQuery ) );
