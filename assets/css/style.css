@@ -8491,6 +8491,7 @@ ul.dropdown-menu.user-profile a:active path {
     top: 0;
     bottom: 0;
     margin: auto;
+    right: 8px;
 }
 .gifts-list.gifts-send-list .breadcrumb-content {
     padding: 33px 40px 0;
@@ -13073,6 +13074,9 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     }
     .gt-gift-card.final-gift-card .gt-gift-card-footer-detail {
         display: none;
+    }
+    .gt-gift-shipping-charge {
+        margin-top: 4px;
     }
 	
 }
