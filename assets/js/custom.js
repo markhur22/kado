@@ -523,7 +523,7 @@ $(document).ready(function() {
 	var gs_addHeights = parseFloat(gs_total) + parseFloat(gs_subHeights);
 	var gs_THeights = parseFloat(gs_addHeights) - parseFloat(gs_total_aftersix);
 	console.log(gs_THeights); */
-	var gs_THeights = parseFloat(gs_total) + parseFloat(gs_psectionheight);
-	$('.gifts-items').css('height',gs_THeights);
+	//var gs_THeights = parseFloat(gs_total) + parseFloat(gs_psectionheight);
+	$('.gifts-card-list.gift-send-card-list').css('height',gs_total);
 
 });
