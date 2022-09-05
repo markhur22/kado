@@ -3454,7 +3454,7 @@ nav {
 .auarius-first-img {
     border-radius: 5px;
     width: 100%;
-    height: 408px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -3526,6 +3526,7 @@ nav {
 
 .birthady-david-img {
     position: relative;
+    height: calc(100% - 36px);
 }
 
 .birthday-thankyou-img {
@@ -8602,10 +8603,10 @@ p.card-text.gifts-card-text {
 }
 span.bar_progres {
     position: absolute;
-    width: calc(63% - 140px);
+    width: calc(100% - 124px);
     height: 4px;
     bottom: 21px;
-    background-color: #FF385C;
+    background-color: #DFDFDF;
     left: 75px;
     margin: auto;
 }
@@ -8617,6 +8618,15 @@ span.bar_progres {
     position: relative;
     z-index: 2;
     height: auto;
+}
+.status_process .card_status_main ul button.nav-link-btn.active {
+    background-color: transparent;
+}
+span.bar_filled_progress {
+    background-color: #ff385c;
+    height: 100%;
+    width: 50%;
+    float: left;
 }
 /* new desktop changes starts here */
  
@@ -8711,7 +8721,11 @@ span.bar_progres {
         max-width: 1134px;
     }
 }
-
+@media only screen and (max-width: 1550px) {
+    span.bar_progres {
+        width: calc(100% - 196px);
+    }
+}
 @media (max-width: 1499px) {
 	
 	.help-form-discription a{    font-size: 16px;}
@@ -8730,7 +8744,7 @@ span.bar_progres {
 	.gt-landing-img img{max-width:100%;}
 	
     .g-shipping-header {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .g-shipping-header .nav-tabs {
@@ -8812,6 +8826,9 @@ span.bar_progres {
         height: 62px;
     }
 	.help-form-email {     padding: 16px 12px; }
+    span.bar_progres {
+        width: calc(100% - 154px);
+    }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -9309,6 +9326,12 @@ span.bar_progres {
     }
     .gifts-navbar .nav-item {
         padding: 0 14px 0 14px;
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .gifts-navbar .nav-link {
+        padding: 17px 20px 17px 20px;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 1080px) {
@@ -10651,6 +10674,19 @@ span.bar_progres {
     }
     .gifts-navbar .nav-item {
         padding: 0;
+    }
+    span.bar_progres {
+        height: calc(100% - 90px);
+        width: 4px;
+        left: 30px;
+        top: 0;
+        bottom: initial;
+    }
+    span.bar_filled_progress {
+        background-color: #ff385c;
+        height: 62%;
+        width: 100%;
+        float: left;
     }
 
 }
@@ -13031,8 +13067,7 @@ span.bar_progres {
     }
 }
 
-@media(max-width:575px)
-{
+@media(max-width:575px) {
     #cardsModal .modal-lg, #cardsModal .modal-xl {
         max-width: initial;
     }
@@ -13096,6 +13131,11 @@ span.bar_progres {
     }
     .gifts-section .gifts-items-header {
         margin-bottom: 21px;
+    }
+    .status_process {
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
     }
 }
 @media (max-width: 420px) {
