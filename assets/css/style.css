@@ -8885,6 +8885,8 @@ span.bar_progres {
 }
 
 @media (max-width: 1199px) {
+	.gift_help_section {     padding: 30px 30px 20px 30px; }
+	
 	/*new changes*/
     #cardsModal .modal-lg, #cardsModal .modal-xl {
         max-width: 90%;
