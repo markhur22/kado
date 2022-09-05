@@ -2941,7 +2941,7 @@ nav {
 }
 
 .breadcrumb-content {
-    padding: 27px 40px 0;
+    padding: 32px 40px 0;
 }
 
 .gifts-items {
@@ -3406,7 +3406,7 @@ nav {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .birthday-header .gifts-card-btn .gt-btn-custom {
@@ -3423,7 +3423,7 @@ nav {
 .g-details-birthday {
     border-radius: 15px;
     border: 1px solid #D2D2D2;
-    padding: 19px 40px 57px 37px;
+    padding: 19px 36px 57px 36px;
 }
 
 .g-details-header {
@@ -3623,6 +3623,7 @@ nav {
     line-height: 19px;
     text-align: center;
     color: #BDBDBD;
+    background-color: #ffff;
 }
 
 .nav-link .g-shipping-conform::after {
@@ -3637,6 +3638,7 @@ nav {
     border-radius: 0;
     border-radius: 50px;
     background-color: #DFDFDF;
+    display: none;
 }
 
 .nav-tabs .nav-item:nth-child(2) .nav-link .g-shipping-conform::after {
@@ -3654,7 +3656,7 @@ nav {
 .nav-tabs .nav-link.active .g-shipping-conform {
     color: transparent;
     background-color: #FF385C;
-    border-color: #FF385C;
+    border-color: #ffffff;
 }
 
 .nav-tabs .nav-link.active .g-shipping-date {
@@ -8555,6 +8557,67 @@ p.card-text.gifts-card-text {
 .mob_nav {
     display: none;
 }
+.header-dropdown.gift-history-drop:hover ul.user-profile {
+    display: none;
+}
+.header-dropdown.gift-history-drop ul.user-profile.show {
+    display: block;
+}
+.gifts-sent-content .gifts-list nav.breadcrumb-content {
+    padding: 33px 40px 0;
+}
+.gifts-sent-content .gifts-list nav.breadcrumb-content ol.breadcrumb {
+    margin-bottom: 28px;
+}
+.gifts-sent-content .gifts-list .gifts-items .gifts-items-header {
+    margin-bottom: 24px;
+    min-height: 49px;
+}
+.birthday-body .birthday-body-title {
+    margin-top: 18px;
+}
+.swapped_gift_main {
+    display: flex;
+    align-items: flex-start;
+}
+.swapped_gift_main svg {
+    margin-right: 8px;
+}
+.swapped_gift_main {
+    display: flex;
+    align-items: flex-start;
+    color: #808080;
+    font-family: 'Lato', sans-serif;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+.status_process {
+    display: flex;
+    justify-content: center;
+}
+.card_status_main {
+    width: auto;
+    display: inline-block;
+    position: relative;
+}
+span.bar_progres {
+    position: absolute;
+    width: calc(63% - 140px);
+    height: 4px;
+    bottom: 21px;
+    background-color: #FF385C;
+    left: 75px;
+    margin: auto;
+}
+.status_process .card_status_main ul {
+    position: relative;
+    z-index: 2;
+}
+.status_process .card_status_main ul {
+    position: relative;
+    z-index: 2;
+    height: auto;
+}
 /* new desktop changes starts here */
  
  
@@ -8816,6 +8879,9 @@ p.card-text.gifts-card-text {
     .gifts-navbar .nav-item {
         padding: 0 20px 0 20px;
     }
+    .g-shipping-status {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -8941,10 +9007,6 @@ p.card-text.gifts-card-text {
         border-radius: 8px;
         color: #FF385C;*/
     }
-
-    /* .nav-link.active svg path {
-        fill: #FF385C
-    } */
 
     .gt-site-header .nav-link:hover {
         color: #FF385C;
@@ -9183,6 +9245,7 @@ p.card-text.gifts-card-text {
     .nav-tabs .nav-item:nth-child(2) .nav-link .g-shipping-conform::after {
         width: 63px;
     }
+
 
     .nav-tabs .nav-item:nth-child(3) .nav-link .g-shipping-conform::after {
         width: 63px;
@@ -11563,7 +11626,7 @@ p.card-text.gifts-card-text {
     .birthday-header {
         display: inherit;
         margin-bottom: 0;
-        padding: 28px 18px 27px;
+        padding: 28px 18px 28px;
     }
 
     .borthday-header-title .gifts-card-subtitle {
@@ -12985,14 +13048,11 @@ p.card-text.gifts-card-text {
 	div.input_send_outer {     width: 105px; }
 	.gt-select-gift-content div.gift-message {
         width: calc(100% - 105px);
-        /* padding: 0 4px; */
     }
 	.gt-gift-from-content form > div {     margin: 9px 0px 0 0; }
 	.gt-send-gift-estimate-content{    padding: 20px 15px 25px 15px;}
 	.gt-send-estimate-label{    line-height: 27px;}
 	.selected-gift-choise>.selected-gift-img{    margin-right: 10px;}
-	
-	
 	.gt-gift-veriation-card .accordion-item.faq-accordion-item{margin: 0 0 15px 0;}
 	.gt-quality-gift-slide{opacity:1;}
 	.gt-how-work-section .gt-section-title{margin-bottom:16px;}
@@ -13035,7 +13095,6 @@ p.card-text.gifts-card-text {
     .gifts-section .gifts-items-header {
         margin-bottom: 21px;
     }
-	
 }
 @media (max-width: 420px) {
 	div.gift_slider{padding:0 20px;}
