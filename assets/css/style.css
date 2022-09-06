@@ -3357,12 +3357,18 @@ nav {
 
 .gift-help-dialog {
     max-width: 569px;
+	position: absolute;
+    top: 50%;
+    transform: translate(-50% , -50%) !important;
+    -webkit-transform: translate(-50% , -50%) !important;
+    left: 50%;
 }
 
 .gift-help-modal .btn-close {
     position: absolute;
     top: 25px;
     right: 25px;
+	opacity:1;
 }
 
 .gift-help-modal h2 {
