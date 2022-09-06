@@ -240,14 +240,19 @@ $(document).ready(function() {
 			}
 		});
 	} 
-	$('#inputSearchgifts').change(function(){
+	/* $('#inputSearchgifts').change(function(){
 			if( $( this ).val() == "" ){
 				$( this ).parent().removeClass( 'selected_option' );
 			}else{
 				$( this ).parent().addClass( 'selected_option' );
 			}
+		}); */
+		$(".gt-browse-gift-header-seach input.inputSearchgifts").on("keyup", function() {
+		  var value = $(this).val().toLowerCase();
+		  $(".gt-browse-gift-content.final-browse-card-list .cardlist").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		  });
 		});
-
 
     $(document).click(function(event) {
         var clickover = $(event.target);
@@ -489,7 +494,7 @@ $(document).ready(function() {
 	
 	var gs_psectionheight = $(".gifts-items .gifts-items-header.gift-send-header").outerHeight();
 	var gs_sectionheight = new Array();
-	gs_sectionheight.push(gs_psectionheight);
+	//gs_sectionheight.push(gs_psectionheight);
     $('.gifts-card-list.gift-send-card-list .card.gifts-card').slice(0, 6).each(function (i,e) {
         var gs_value = $(this).outerHeight(true);
         gs_sectionheight.push(gs_value);
