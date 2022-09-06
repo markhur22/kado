@@ -1494,7 +1494,7 @@ span.gt-faq-solved-icon {
     box-shadow: 0 -11px 15px rgb(0 0 0 / 5%);
     border-radius: 53.5px;
     z-index: 1;
-    padding-left: 29px;
+    /* padding-left: 29px; */
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -9428,7 +9428,7 @@ span.bar_filled_progress {
 .g-shipping-header { width: 100%; margin: 50px 0 0 0; float: none; display: inline-block; }		
 .accordion-item:last-of-type .accordion-collapse{border:none;}	
     
-=======
+	.gift-help-modal {     padding: 80px 20px 73px; }
     .gifts-sent-content .gifts-list .gifts-items .gifts-items-header{    margin-bottom: 21px;}
 	.help-form-email {     padding: 14px 10px; }
 	.help-form-title {     font-size: 18px; }
@@ -10787,6 +10787,12 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
+	.gift-help-modal h2{font-size: 50px;     line-height: 70px;}
+	.gift-help-dialog{width: 90%;     margin: 0;    max-width: 100%;}
+	.gift-help-modal h2 {     font-size: 40px;     line-height: 60px; }
+	.gift-help-modal p{font-size: 18px;     line-height: 23px;}
+	.gift-help-modal {     padding: 60px 20px 33px; }
+
 
 button.accordion-button:not(.collapsed), button.accordion-button{padding:15px 0;}
 .gifts-sent-content .gifts-list nav.breadcrumb-content { padding: 33px 21px 0; }
@@ -10804,7 +10810,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
 
     
-=======
+
     .help-radio-btn {     display: flex;         justify-content: space-between; }
 	.help-form-slip textarea.form-control{    min-height: 92px;    padding: 19px 0 0 18px;}
 	
