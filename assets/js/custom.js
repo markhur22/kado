@@ -240,14 +240,19 @@ $(document).ready(function() {
 			}
 		});
 	} 
-	$('#inputSearchgifts').change(function(){
+	/* $('#inputSearchgifts').change(function(){
 			if( $( this ).val() == "" ){
 				$( this ).parent().removeClass( 'selected_option' );
 			}else{
 				$( this ).parent().addClass( 'selected_option' );
 			}
+		}); */
+		$(".gt-browse-gift-header-seach input.inputSearchgifts").on("keyup", function() {
+		  var value = $(this).val().toLowerCase();
+		  $(".gt-browse-gift-content.final-browse-card-list .cardlist").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		  });
 		});
-
 
     $(document).click(function(event) {
         var clickover = $(event.target);
