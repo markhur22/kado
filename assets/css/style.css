@@ -3550,7 +3550,7 @@ nav {
 
 .birthady-david-img {
     position: relative;
-    height: 100%;
+    height: calc(100% - 36px);
 }
 
 .birthday-thankyou-img {
@@ -9410,7 +9410,7 @@ span.bar_filled_progress {
 
 @media (max-width: 991px) {
 .birthday-david-body { max-width: 65%; margin: 0 auto; }
-.birthady-david-img{height:550px;}
+.birthady-david-img{height:450px;}
 .gift-details-accordion .accordion-item { float: left; width: 100%; }
 .accordion-body .aquarius-img { text-align: center; }
 .auarius-first-img { width: auto; }
@@ -10059,7 +10059,7 @@ span.bar_filled_progress {
     .gift-details-accordion .accordion-item {
         border-radius: 0;
         margin-bottom: 0;
-        border-bottom: 1px solid #D2D2D2;
+        border-bottom: 1px solid #D2D2D2 !important;
     }
 	.gift-details-accordion .accordion-header {
     margin-bottom: 0;
