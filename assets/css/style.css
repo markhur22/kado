@@ -1,8 +1,6 @@
 /* *************** Deafult Start  ****************** */          
 
-/* today changes */
-body{/* changes new here */}
-/* changes one too*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -8907,6 +8905,8 @@ span.bar_filled_progress {
 
 @media (max-width: 1199px) {
 	.gift_help_section {     padding: 30px 30px 20px 30px; }
+	.help-form-discription a{font-size: 14px;}
+	
 	
 	/*new changes*/
     #cardsModal .modal-lg, #cardsModal .modal-xl {
@@ -9369,7 +9369,12 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 991px) {
-    
+    .gifts-sent-content .gifts-list .gifts-items .gifts-items-header{    margin-bottom: 21px;}
+	.help-form-email {     padding: 14px 10px; }
+	.help-form-title {     font-size: 18px; }
+	.gifts-sent-content .gifts-list .gifts-items .gifts-items-header h3 i {     margin: 0 10px 0 0; }
+	.gifts-sent-content .gifts-list .gifts-items .gifts-items-header.gifts-help-header {     min-height: inherit; }
+	
     header.gt-site-header.sticky {z-index: 99;}
 	/*new changes*/
     #cardsModal .gt-card-img {
@@ -10701,7 +10706,10 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
-    
+    .help-radio-btn {     display: flex;         justify-content: space-between; }
+	.help-form-slip textarea.form-control{    min-height: 92px;    padding: 19px 0 0 18px;}
+	
+	
     .gifts-card-footer::after {
         display: none;
     }
@@ -10836,7 +10844,7 @@ span.bar_filled_progress {
 
     .g-account-profile {         padding: 49px 20px 51px 20px;     }
 
-    .gifts-sent-content {         padding: 76px 16px 54px 16px;     }
+    .gifts-sent-content {         padding: 86px 16px 54px 16px;     }
 
     .profile-password {         display: inherit;     }
 
@@ -11349,6 +11357,7 @@ span.bar_filled_progress {
 
     .form-check .help-form-discription {
         font-size: 13px;
+		    line-height: 28px;
     }
 
     .help-radio-btn .form-check {
@@ -11358,7 +11367,7 @@ span.bar_filled_progress {
     .help-radio-btn .form-check .form-check-input {
         margin-left: -17px;
         margin-right: 3px;
-        margin-top: 7px;
+        margin-top: 0;
     }
 
     .finalis-section .form-check .form-check-input {
@@ -13143,6 +13152,9 @@ span.bar_filled_progress {
     }
 }
 @media (max-width: 420px) {
+	.help-radio-btn .form-check{float: left;     width: 40%;}
+	.help-radio-btn {     justify-content: flex-start;     flex-wrap: wrap; }
+	
 	div.gift_slider{padding:0 20px;}
 	.modal-header.emporium-modal-header {     padding: 17px 23px; }
 	.emporium-modal-body .gt-popup-gift-title {     font-size: 25px;     margin-bottom: 7px; }
@@ -13195,7 +13207,7 @@ span.bar_filled_progress {
     }
 
     .help-form-email-icon {
-        margin-bottom: 10px;
+        margin-bottom: 0;
         width: 50px;
         max-width: 100%;
     }
@@ -13386,6 +13398,14 @@ span.bar_filled_progress {
 	.gt-how-work-section .gt-section-title{line-height:65px;}
 }
 @media(max-width:370px) {
+	.gift_help_section{    padding: 21px 16px 18px;}
+	.help-form-email{    flex-wrap: wrap;justify-content: center;}
+	.help-form-body-title{    text-align: left;    font-size: 18px;}
+	.help-radio-btn .form-check {     float: left;     width: 100%; }
+	
+	.help-form-emailid {     width: 100%;     margin: 10px 0 0 0;     text-align: center; }
+	
+	
      .gt-gift-shipping-charge {
         margin-top: 4px;
     }
