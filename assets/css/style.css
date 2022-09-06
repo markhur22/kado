@@ -7698,6 +7698,8 @@ section.gt-page-title-section:before {     content: '';     position: absolute; 
 
 
 /*desktop new changes starts here*/
+.noresultfound {     padding: 0; }
+
 
 main.gt-site-content {     display: inline-block;     width: 100%; }
 div.banner_content {}
