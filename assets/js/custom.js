@@ -248,10 +248,17 @@ $(document).ready(function() {
 			}
 		}); */
 		$(".gt-browse-gift-header-seach input.inputSearchgifts").on("keyup", function() {
-		  var value = $(this).val().toLowerCase();
-		  $(".gt-browse-gift-content.final-browse-card-list .cardlist").filter(function() {
-			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-		  });
+			var value = $(this).val().toLowerCase();
+			$(".gt-browse-gift-content.final-browse-card-list .cardlist").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				console.log($(this).text().toLowerCase().indexOf(value));
+			});
+			if ($(".gt-browse-gift-content.final-browse-card-list .cardlist").text().toLowerCase().indexOf(value) > -1){
+				$('.noresultfound').hide();
+			}else{
+				//console.log('cccccc');
+				$('.noresultfound').show();
+			}
 		});
 
     $(document).click(function(event) {
