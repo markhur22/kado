@@ -1,5 +1,9 @@
 /* *************** Deafult Start  ****************** */          
 
+/* today changes */
+body{/* changes new here */}
+/* changes one too*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -2941,7 +2945,7 @@ nav {
 }
 
 .breadcrumb-content {
-    padding: 27px 40px 0;
+    padding: 32px 40px 0;
 }
 
 .gifts-items {
@@ -3235,7 +3239,7 @@ nav {
 }
 
 .help-form-header {
-    padding: 34px 39px 37px 38px;
+    padding: 55px 38px 37px 38px;
     border-bottom: 1px solid #D2D2D2;
 }
 
@@ -3257,6 +3261,7 @@ nav {
     color: #FF385C;
     margin-bottom: 0;
 }
+.help-form-discription a{color: #FF385C;font-weight: 700;     font-size: 18px;     line-height: 28px;     letter-spacing: 0.05em; text-decoration:none;}
 
 .help-form-email-icon {
     border: 1px solid #D2D2D2;
@@ -3282,7 +3287,7 @@ nav {
 }
 
 .form-check .help-form-discription {
-    color: #828282;
+    color: #414141;
 }
 
 .form-check-input:checked[type=radio] {
@@ -3405,7 +3410,7 @@ nav {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .birthday-header .gifts-card-btn .gt-btn-custom {
@@ -3422,7 +3427,7 @@ nav {
 .g-details-birthday {
     border-radius: 15px;
     border: 1px solid #D2D2D2;
-    padding: 19px 40px 57px 37px;
+    padding: 19px 36px 57px 36px;
 }
 
 .g-details-header {
@@ -3453,7 +3458,7 @@ nav {
 .auarius-first-img {
     border-radius: 5px;
     width: 100%;
-    height: 408px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -3525,6 +3530,7 @@ nav {
 
 .birthady-david-img {
     position: relative;
+    height: calc(100% - 36px);
 }
 
 .birthday-thankyou-img {
@@ -3622,6 +3628,7 @@ nav {
     line-height: 19px;
     text-align: center;
     color: #BDBDBD;
+    background-color: #ffff;
 }
 
 .nav-link .g-shipping-conform::after {
@@ -3636,6 +3643,7 @@ nav {
     border-radius: 0;
     border-radius: 50px;
     background-color: #DFDFDF;
+    display: none;
 }
 
 .nav-tabs .nav-item:nth-child(2) .nav-link .g-shipping-conform::after {
@@ -3653,7 +3661,7 @@ nav {
 .nav-tabs .nav-link.active .g-shipping-conform {
     color: transparent;
     background-color: #FF385C;
-    border-color: #FF385C;
+    border-color: #ffffff;
 }
 
 .nav-tabs .nav-link.active .g-shipping-date {
@@ -7642,6 +7650,26 @@ div#send.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px
 div#form.send-gift-select-gift p.gt-send-gift-description {     margin: 0 0 19px 0; }
 section.gt-page-title-section:after {     content: '';     position: absolute;     background-image: url(../images/particles_right.svg);     width: 100%;     height: 290px;     background-repeat: no-repeat;     right: 0;     top: -140px;     background-position: right;     z-index: -1; }
 section.gt-page-title-section:before {     content: '';     position: absolute;     background-image: url(../images/particles_left.svg);     width: 100%;     height: 229px;     background-repeat: no-repeat;     left: -700px;     top: -74px;     z-index: -1; }
+.help-radio-btn .form-check input {     margin-top: 0; }
+.help-radio-btn .form-check {     display: flex;     align-items: center;     float: left; }
+.help-radio-btn{display: inline-block;     width: 100%;}
+.help-form-slip textarea.form-control {     border: 1px solid #D2D2D2;     border-radius: 10px;     letter-spacing: 0.05em;     color: #414141;     padding: 19px 0 0 28px;     font-weight: 700;     font-size: 14px;     line-height: 17px;     min-height: 163px;}
+.help-form-slip textarea.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #414141;
+}
+.help-form-slip textarea.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #414141;
+}
+.help-form-slip textarea.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #414141;
+}
+.help-form-slip textarea.form-control:-moz-placeholder { /* Firefox 18- */
+  color: #414141;
+}
+.gifts-list {     position: relative; }
+.gifts-list:after {      position: absolute;     content: '';     width: 100%;     height: 10px;     background-color: #FF385C;     left: 0;     top: 0px;     border-radius: 20px 20px 0 0; }
+.help-form-btn svg {     margin: 0 10px 0 0;     display: inline-block;     vertical-align: middle; }
+
 
 /*desktop new changes starts here*/
 
@@ -8464,7 +8492,7 @@ ul.dropdown-menu.user-profile a:active path {
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
-.gifts-list.gifts-send-list nav.breadcrumb-content::after {
+/* .gifts-list.gifts-send-list nav.breadcrumb-content::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -8472,7 +8500,7 @@ ul.dropdown-menu.user-profile a:active path {
     background-color: #FF385C;
     left: 0;
     top: 0px;
-}
+} */
 .gifts-collapse ul.gifts-navbar li.nav-item {
     margin-bottom: 1px;
 }
@@ -8491,6 +8519,7 @@ ul.dropdown-menu.user-profile a:active path {
     top: 0;
     bottom: 0;
     margin: auto;
+    right: 8px;
 }
 .gifts-list.gifts-send-list .breadcrumb-content {
     padding: 33px 40px 0;
@@ -8522,6 +8551,86 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 }
 .dropdown.header-dropdown.gift-history-drop button {
     letter-spacing: 0;
+}
+
+p.card-text.gifts-card-text {
+    margin: 0;
+}
+.dsk_sidebar {
+    display: none;
+}
+.mob_nav {
+    display: none;
+}
+.header-dropdown.gift-history-drop:hover ul.user-profile {
+    display: none;
+}
+.header-dropdown.gift-history-drop ul.user-profile.show {
+    display: block;
+}
+.gifts-sent-content .gifts-list nav.breadcrumb-content {
+    padding: 33px 40px 0;
+}
+.gifts-sent-content .gifts-list nav.breadcrumb-content ol.breadcrumb {
+    margin-bottom: 28px;
+}
+.gifts-sent-content .gifts-list .gifts-items .gifts-items-header {
+    margin-bottom: 24px;
+    min-height: 49px;
+}
+.birthday-body .birthday-body-title {
+    margin-top: 18px;
+}
+.swapped_gift_main {
+    display: flex;
+    align-items: flex-start;
+}
+.swapped_gift_main svg {
+    margin-right: 8px;
+}
+.swapped_gift_main {
+    display: flex;
+    align-items: flex-start;
+    color: #808080;
+    font-family: 'Lato', sans-serif;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+.status_process {
+    display: flex;
+    justify-content: center;
+}
+.card_status_main {
+    width: auto;
+    display: inline-block;
+    position: relative;
+}
+span.bar_progres {
+    position: absolute;
+    width: calc(100% - 124px);
+    height: 4px;
+    bottom: 21px;
+    background-color: #DFDFDF;
+    left: 75px;
+    margin: auto;
+}
+.status_process .card_status_main ul {
+    position: relative;
+    z-index: 2;
+}
+.status_process .card_status_main ul {
+    position: relative;
+    z-index: 2;
+    height: auto;
+}
+.status_process .card_status_main ul button.nav-link-btn.active {
+    background-color: transparent;
+}
+span.bar_filled_progress {
+    background-color: #ff385c;
+    height: 100%;
+    width: 50%;
+    float: left;
 }
 /* new desktop changes starts here */
  
@@ -8557,6 +8666,9 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 	}
 	.emporium-modal-body > * {     color: #333;     }
 	/* emporium-modal-body scroller ends*/
+    .dsk_sidebar {
+        display: block;
+    }
 }
 @media (min-width: 1000px) {
 	
@@ -8613,9 +8725,15 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         max-width: 1134px;
     }
 }
-
+@media only screen and (max-width: 1550px) {
+    span.bar_progres {
+        width: calc(100% - 196px);
+    }
+}
 @media (max-width: 1499px) {
 	
+	.help-form-discription a{    font-size: 16px;}
+	.help-form-title{font-size: 22px;}
 	.gt-send-gift-section .container {     padding: 0 100px; }
 	.gt-popup-gift-title{    font-size: 32px;}
 	.gt-gift-card-body{    padding: 15px 20px;}
@@ -8630,7 +8748,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 	.gt-landing-img img{max-width:100%;}
 	
     .g-shipping-header {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .g-shipping-header .nav-tabs {
@@ -8663,6 +8781,24 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .nav-tabs .nav-item:nth-child(4) .nav-link .g-shipping-conform::after {
         width: 110px;
     }
+    .gifts-card-footer {
+        width: 199px;
+    }
+    .gifts-card-body {
+        width: calc(100% - 458px);
+    }
+    .gifts-card-footer .gifts-card-btn {
+        width: 80%;
+    }
+    .gifts-card-footer .gifts-card-btn .gt-btn-custom {
+        padding: 0;
+        width: 100%;
+        height: 62px;
+    }
+    .gifts-card-img {
+        align-items: center;
+        display: flex;
+    }
 }
 @media(max-width:1800px)
 {
@@ -8693,6 +8829,56 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         width: 280px;
         height: 62px;
     }
+	.help-form-email {     padding: 16px 12px; }
+    span.bar_progres {
+        width: calc(100% - 154px);
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .gifts-card-list.gift-send-card-list .card.gifts-card {
+        flex-wrap: wrap;
+    }
+    .gifts-card-list .card {
+        padding: 19px 15px 16px 15px;
+    }
+    .gifts-card-list .card {
+        padding: 16px 20px 23px 20px;
+    }
+    .gifts-card-body::after {
+        display: none;
+    }
+    .gifts-card-body {
+        width: calc(100% - 259px);
+        padding-right: 0;
+    }
+    .gifts-card-footer .gifts-card-btn {
+        width: 200px;
+    }
+    .gifts-card-footer .gifts-card-btn .gt-btn-custom {
+        padding: 0;
+        width: 100%;
+        height: 62px;
+        margin: 0;
+    }
+    .gifts-card-footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        position: relative;
+    }
+    .gifts-card-footer::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 0;
+        background-color: #D2D2D2;
+    }
 }
 
 @media only screen and (max-width: 1299px) {
@@ -8706,9 +8892,22 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     #cardsModal .gt-sidebar-body {
         padding: 15px 15px 25px;
     }
+    
+    .gift-send-logo {
+        margin-bottom: 32px;
+        padding: 40px 0 0 20px;
+    }
+    .gifts-navbar .nav-item {
+        padding: 0 20px 0 20px;
+    }
+    .g-shipping-status {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 1199px) {
+	.gift_help_section {     padding: 30px 30px 20px 30px; }
+	
 	/*new changes*/
     #cardsModal .modal-lg, #cardsModal .modal-xl {
         max-width: 90%;
@@ -8831,10 +9030,6 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         border-radius: 8px;
         color: #FF385C;*/
     }
-
-    /* .nav-link.active svg path {
-        fill: #FF385C
-    } */
 
     .gt-site-header .nav-link:hover {
         color: #FF385C;
@@ -8986,10 +9181,6 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         flex-wrap: wrap;
     }
 
-    .gifts-card-body {
-        width: calc(100% - 259px);
-    }
-
     .gifts-card-footer {
         flex-direction: row;
         align-items: baseline;
@@ -9078,6 +9269,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         width: 63px;
     }
 
+
     .nav-tabs .nav-item:nth-child(3) .nav-link .g-shipping-conform::after {
         width: 63px;
     }
@@ -9132,6 +9324,19 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     div#cardsModal .modal-header {
         padding: 25px 30px 25px 30px;
     }
+    .gift-send-logo {
+        margin-bottom: 32px;
+        padding: 40px 0 0 14px;
+    }
+    .gifts-navbar .nav-item {
+        padding: 0 14px 0 14px;
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .gifts-navbar .nav-link {
+        padding: 17px 20px 17px 20px;
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 1080px) {
 	.g-finder-next-btn {
@@ -9157,7 +9362,15 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 	
 }
 
+@media only screen and (max-width: 1024px) {
+    .gifts-items-header h3 {
+        font-size: 26px;
+    }
+}
+
 @media (max-width: 991px) {
+    
+    header.gt-site-header.sticky {z-index: 99;}
 	/*new changes*/
     #cardsModal .gt-card-img {
         margin-bottom: 16px;
@@ -9220,6 +9433,10 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         margin-left: auto;
     }
 
+    .mob_nav {
+        display: block;
+    }
+
     .gift-details-accordion .collapse:not(.show) {
         display: none;
     }
@@ -9276,7 +9493,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 
     .gift-toggler {
         display: block;
-        top: 30px;
+        top: 41px;
         right: 30px;
         left: unset;
         z-index: 100;
@@ -10414,10 +10631,83 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .send-gift-sidebar .gt-send-gift-item {
         padding: 0 0 0 0px;
     }
+    .custom_serach .select2 span.selection span.select2-selection {
+        border-radius: 53px;
+        padding: 16px 0 16px 43px;
+    }
+    .scroll-wrapper.gifts-card-list.gift-send-card-list .scroll-element.scroll-y.scroll-scrolly_visible {
+        right: 3px;
+    }
+    .gifts-navbar {
+        min-width: 203px;
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+        float: left;
+    }
+    .gifts-send-navbar .gifts-collapse ul.gifts-navbar:last-child li.nav-item a {
+        margin: 0;
+    }
+    .gifts-send-navbar .gifts-collapse ul.gifts-navbar:last-child {
+        padding-top: 37px;
+    }
+    .gifts-send-navbar .gifts-collapse ul.gifts-navbar {
+        margin-bottom: 0;
+        position: relative;
+    }
+    ul.gifts-navbar.upper_nav {
+        padding-bottom: 47px;
+    }
+    ul.gifts-navbar.upper_nav::after {
+        content: '';
+        width: calc(100% + 36px);
+        height: 1px;
+        bottom: 0;
+        position: absolute;
+        right: 0px;
+        left: -18px;
+        background-color: #E2E2E2;
+    }
+    .gifts-selecter .gift-send-modal-btn {
+        color: #414141;
+    }
+    .gifts-send-navbar .gifts-collapse {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 15px;
+    }
+    .gifts-navbar .nav-item {
+        padding: 0;
+    }
+    span.bar_progres {
+        height: calc(100% - 90px);
+        width: 4px;
+        left: 30px;
+        top: 0;
+        bottom: initial;
+    }
+    span.bar_filled_progress {
+        background-color: #ff385c;
+        height: 62%;
+        width: 100%;
+        float: left;
+    }
 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .gifts-items .select_custom_main .custom_serach span.select2 {
+        width: 250px !important;
+    }
 }
 
 @media (max-width: 767px) {
+    
+    .gifts-card-footer::after {
+        display: none;
+    }
+    .gifts-card-footer {
+        margin: 0;
+    }
 	div#meassage .gt-send-gift-title{margin-bottom:0;}
 	.gt-page-title-section .container {     padding: 0 15px; }
 
@@ -10546,7 +10836,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 
     .g-account-profile {         padding: 49px 20px 51px 20px;     }
 
-    .gifts-sent-content {         padding: 86px 16px 54px 16px;     }
+    .gifts-sent-content {         padding: 76px 16px 54px 16px;     }
 
     .profile-password {         display: inherit;     }
 
@@ -11144,6 +11434,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 
     .gift-send-select-time .gifts-items-header {
         max-width: 203px;
+        margin: 0;
     }
 
     .gift-send-select-time .form-select {
@@ -11160,7 +11451,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     }
 
     .gift-send-card-list .card {
-        padding: 19px 20px 39px;
+        padding: 19px 18px 22px;
     }
 
     .gift-send-card-list .gifts-card-img {
@@ -11193,7 +11484,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     }
 
     .gift-send-card-list .gifts-card-footer .gifts-card-btn {
-        width: 50%;
+        width: 180px;
     }
 
     .gift-send-card-list .gifts-card-view {
@@ -11377,7 +11668,7 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .birthday-header {
         display: inherit;
         margin-bottom: 0;
-        padding: 28px 18px 27px;
+        padding: 28px 18px 28px;
     }
 
     .borthday-header-title .gifts-card-subtitle {
@@ -11801,10 +12092,6 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 
     .gift-history-accordion .accordion-item {
         margin-bottom: 0;
-    }
-
-    .gift-send-card-list .gift-history-card-body {
-        padding: 21px 0 19px;
     }
 
     .gifts-card-btn .gt-btn-custom {
@@ -12745,10 +13032,46 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     .gt-send-gift-section .select_custom_main span.selection span.select2-selection.select2-selection--multiple {
         padding: 10px 20px;
     }
-    
+    .gifts-card-footer .gifts-card-btn .gt-btn-custom {
+        height: 47px;
+    }
+    .gift-send-card-list .gift-history-card-body {
+        padding: 21px 0 19px;
+        padding-top: 11px;
+    }
+    .gifts-section .gift-send-select-time {
+        align-items: baseline;
+        justify-content: end;
+    }
+    .select_custom_main .custom_serach span.selection span.select2-selection.select2-selection--multiple textarea {
+        font-size: 14px;
+    }
+    .accordion.gift-history-accordion {
+        display: none !important;
+    }
+    .gifts-card-title {
+        margin-bottom: 0;
+    }
+    .gifts-section .gift-send-select-time {
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .gifts-list.gifts-send-list .breadcrumb-content {
+        padding: 33px 18px 0;
+    }
+    .custom_serach .select2 span.selection span.select2-selection {
+        border-radius: 53px;
+        padding: 16px 0 16px 39px;
+    }
+    .gifts-items-header .gt-search-icon {
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 10000;
+    }
 }
-@media(max-width:575px)
-{
+
+@media(max-width:575px) {
     #cardsModal .modal-lg, #cardsModal .modal-xl {
         max-width: initial;
     }
@@ -12766,14 +13089,11 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 	div.input_send_outer {     width: 105px; }
 	.gt-select-gift-content div.gift-message {
         width: calc(100% - 105px);
-        /* padding: 0 4px; */
     }
 	.gt-gift-from-content form > div {     margin: 9px 0px 0 0; }
 	.gt-send-gift-estimate-content{    padding: 20px 15px 25px 15px;}
 	.gt-send-estimate-label{    line-height: 27px;}
 	.selected-gift-choise>.selected-gift-img{    margin-right: 10px;}
-	
-	
 	.gt-gift-veriation-card .accordion-item.faq-accordion-item{margin: 0 0 15px 0;}
 	.gt-quality-gift-slide{opacity:1;}
 	.gt-how-work-section .gt-section-title{margin-bottom:16px;}
@@ -12810,7 +13130,17 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 		margin: auto;
 		padding: 0 20px;
 	}
-	
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn {
+        width: 152px;
+    }
+    .gifts-section .gifts-items-header {
+        margin-bottom: 21px;
+    }
+    .status_process {
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
+    }
 }
 @media (max-width: 420px) {
 	div.gift_slider{padding:0 20px;}
@@ -13016,6 +13346,30 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
         padding: 20px 20px 10px;
         padding-right: 20px;
     }
+    .gifts-section .gift-send-select-time {
+        flex-wrap: wrap;
+    }
+    .gifts-items .gifts-items-header.gift-send-header .gift-send-select-time .gifts-selecter {
+        width: 100%;
+    }
+    .gifts-items .gifts-items-header.gift-send-header .gift-send-select-time .gifts-selecter a.gift-send-modal-btn {
+        width: 100%;
+    }
+    .gifts-items .gifts-items-header.gift-send-header .gift-send-select-time .gt-browse-gift-header-seach span.select2 {
+        width: 100% !important;
+    }
+    .gifts-items .gift-send-select-time .gt-browse-gift-header-seach.gifts-items-header {
+        width: 100% !important;
+        max-width: 100%;
+        margin-bottom: 12px !important;
+    }
+    
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn:first-child {
+        margin-bottom: 12px;
+    }
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn {
+        width: 47%;
+    }
 
 }
 
@@ -13032,6 +13386,9 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
 	.gt-how-work-section .gt-section-title{line-height:65px;}
 }
 @media(max-width:370px) {
+     .gt-gift-shipping-charge {
+        margin-top: 4px;
+    }
 	.gt-select-gift-content div.gift-message { margin:5px 0 0 0;    width: 100%;     padding: 0 12px; }
 	div.message_fields {     margin-top: 6px !important; }
 	.gt-select-gift-content .form-control{    margin: 0;}
@@ -13073,6 +13430,12 @@ ul.dropdown-menu.user-profile.show a.dropdown-item.active_drop svg path {
     }
     .gt-gift-card.final-gift-card .gt-gift-card-footer-detail {
         display: none;
+    }
+    .gt-gift-shipping-charge {
+        margin-top: 4px;
+    }
+    .gift-send-card-list .gifts-card-footer .gifts-card-btn {
+        width: 100%;
     }
 	
 }
