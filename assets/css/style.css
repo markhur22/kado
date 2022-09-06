@@ -1,5 +1,8 @@
 /* *************** Deafult Start  ****************** */          
 
+/* today changes */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -8902,6 +8905,8 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 1199px) {
+	.gift_help_section {     padding: 30px 30px 20px 30px; }
+	
 	/*new changes*/
     #cardsModal .modal-lg, #cardsModal .modal-xl {
         max-width: 90%;
