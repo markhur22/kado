@@ -10959,7 +10959,7 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
-.pass-btn-sub{margin:20px 0 0 0;}
+.pass-btn-sub{margin:20px 0 0 0; float:left;} 
 .profile_name_inner_section { margin: 0 0 8px 0; justify-content: center; }
 .g-aacount-profile-content .fields-cont { width: 100%; float: left; margin: 0 0 31px 0; }
 	.gift-help-modal h2{font-size: 50px;     line-height: 70px;}
