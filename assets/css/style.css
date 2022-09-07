@@ -3922,12 +3922,6 @@ nav {
     border: 1px solid #D2D2D2;
     border-radius: 15px;
 }
-
-.g-account-profile {
-    padding: 42px 37px;
-    border-bottom: 1px solid #D2D2D2;
-}
-
 .g-account-profile h4 {
     font-style: normal;
     font-weight: 700;
@@ -3940,8 +3934,9 @@ nav {
 .g-profile-edit {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 41px 38px 40px 38px;
 }
-
 .g-profile-img span {
     font-style: normal;
     font-weight: 700;
@@ -3975,11 +3970,25 @@ nav {
     font-size: 24px;
     line-height: 29px;
     color: #000000;
-    margin-bottom: 11px;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
 }
-
+.profile_name_inner_section {
+    display: flex;
+    align-items: center;
+    margin: 0 0 11px 0;
+}
+.profile_name_inner_section input.text-fields {
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+    height: 55px;
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    padding: 0 15px;
+}
 .g-profile-name h6 .form-control {
     padding: 5px 0;
 }
@@ -4111,6 +4120,7 @@ div.g-account-profile .profile-main-title img {
 	text-decoration:none;
 	width:100%;
 	float:left;
+	margin:0;
 }
 .g-profile-change-pass input.text-fields {
     margin: 0 0 10px 0;
@@ -4161,7 +4171,31 @@ div.g-account-profile .profile-main-title img {
 .g-profile-password-setting {
     padding: 42px 38px 69px;
 }
-
+.pass-btn-sub {
+    margin: 30px 0 0 0;
+    text-align: left;
+}
+.pass-btn-sub a {
+    width: auto;
+    float: none;
+    display: inline-block;
+    background: #FF385C;
+    border-radius: 50px;
+    text-decoration: none;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 50px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all ease 0.3s;
+}
+.pass-btn-sub a:hover{    background-color: #e3294b;
+    border-color: #e3294b;
+    box-shadow: none;}
 .g-profile-password {
     margin-bottom: 50px;
 }
@@ -4174,6 +4208,7 @@ div.g-account-profile .profile-main-title img {
     line-height: 20px;
     color: #818181;
     margin-bottom: 0;
+	margin-top:11px;
 }
 .profile-password input.form-control::placeholder {
     font-family: 'Lato';
@@ -9224,10 +9259,10 @@ span.bar_filled_progress {
         padding: 0;
     }
 
-    .g-account-profile {
+   /* .g-account-profile {
         padding: 42px 20px;
         border-bottom: 1px solid #D2D2D2;
-    }
+    }*/
 
     .g-profile-img {
         margin-right: 15px;
@@ -10924,6 +10959,8 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
+.pass-btn-sub{margin:20px 0 0 0;}
+.profile_name_inner_section { margin: 0 0 8px 0; justify-content: center; }
 .g-aacount-profile-content .fields-cont { width: 100%; float: left; margin: 0 0 31px 0; }
 	.gift-help-modal h2{font-size: 50px;     line-height: 70px;}
 	.gift-help-dialog{width: 90%;     margin: 0;    max-width: 100%;}
@@ -11038,7 +11075,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.gt-landing-section .row{    flex-wrap: wrap;}
 	.gt-landing-img img{width:398px;}
 	
-	/*New changes*/
+	/*New changes*/ 
 	
     .gt-site-header .btn { padding: 4px 17px 4px 5px; }
 
@@ -11052,7 +11089,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .g-account-title { margin-bottom: 23px;}
 
-    .g-profile-edit { display: inherit;         text-align: start;     }
+    .g-profile-edit { display: inherit;   padding: 49px 15px 51px 15px;      text-align: start;     }
 
     .g-profile-img {margin-right: 0; margin-bottom: 22px; margin: 0 auto;}
 
@@ -11092,7 +11129,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .g-profile-basic-info {     float: left;
     width: 100%;        padding: 34px 20px 40px;     }
 
-    .g-account-profile {         padding: 49px 20px 51px 20px;}
+    /*.g-account-profile {         padding: 49px 20px 51px 20px;}*/
 	.g-aacount-profile-content{width: 100%; float: left;}
 
 
@@ -11105,8 +11142,12 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .profile-contact span:first-child {         margin-right: 0;         display: block;     }
 
-    .g-profile-username span:first-child {         margin-right: 0;         display: block;         margin-bottom: 10px;     }
+    .g-profile-username span:first-child {  width: 100%;
+    float: left;       margin-right: 0;         display: block;         margin-bottom: 10px;     }
 
+
+	.profile-info .fields-cont span { margin: 0;}
+	
     .g-profile-contact-info {     width: 100%;
     float: left;        padding: 34px 20px 45px;     }
 
@@ -11116,7 +11157,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     margin: 0;
 }
 
-    .profile-main-title h6 {         margin-bottom: 8px;           display: -webkit-box;
+    .profile-main-title h6 {         margin-bottom:0;           display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex; display: flex;          -webkit-box-pack: center;
@@ -11128,7 +11169,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .profile-contact {         margin-bottom: 31px;     }
 
-    .profile-info {         margin-bottom: 31px;         display: inherit;     }
+    .profile-info {         margin-bottom: 0px;         display: inherit;     }
 
     .profile-info>.form-control {         width: 100%;   padding:0;  }
 
