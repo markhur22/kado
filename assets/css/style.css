@@ -7824,7 +7824,7 @@ div.gift_sent_popup img{max-width:400px;}
 .gift_thankyou_popup .birthday-thankyou-img{margin:0 0 10px 0;}
 .gifts-items-header h3 svg {     float: left;     margin: 0px 15px 0 0; }
 .gifts-items-header h3 {     display: flex;     align-items: center; }
-
+.gifts-help-header svg{display:none;}
 
 
 
@@ -10965,7 +10965,8 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
-
+	.gifts-help-header svg {     display: inline-block; }
+	div.gifts_items_details {     padding: 20px 17px; }
 	.birthday-inner {     padding: 110px 0; }
 	.aquarius-share-icon{    height: 32px;    width: 32px;right:10px !important;}
 	.aquarius-share-icon svg {     width: 18px; }
