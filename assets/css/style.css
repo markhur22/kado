@@ -10843,7 +10843,7 @@ span.bar_filled_progress {
 		-webkit-transform: none;
 	}
 	.gifts-collapse-btn-show i.fa-solid.fa-xmark {
-		top: 90px;
+		top: 0;
 		position: relative;
 	}
 	a.gt-send-gift-link.active {
@@ -10965,6 +10965,7 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
+	.swapped_gift_main svg {     float: left;     margin-top: 1px; }
 
 	.gifts-help-header svg {     display: inline-block; }
 	div.gifts_items_details {     padding: 20px 17px; }
