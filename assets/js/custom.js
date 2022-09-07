@@ -294,6 +294,14 @@ $(document).ready(function() {
 		$('.gt-browse-gift-content.final-browse-card-list .gt-site-pagination').show();
 		$('.cardlist').show();
 	});
+	
+	$('a.edit_pro').click(function(){
+		var p_C = $(this).attr('p_c');
+		$('.'+p_C+' h6.profile_name_org').toggle();
+		$('.'+p_C+' input').toggle();
+	});
+	
+	
     $(document).click(function(event) {
         var clickover = $(event.target);
         var _opened = $(".gifts-collapse").hasClass("show");
