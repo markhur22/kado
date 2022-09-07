@@ -7,6 +7,9 @@
 .birthday-inner { width: 100%; float: left; height: 100%; display: flex; align-items: center; flex-direction: column; justify-content: center; }
 
 
+.g-account-title img { margin: 0 12px 0 0; }
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -3893,7 +3896,7 @@ nav {
 }
 
 .gift-account-list {
-    padding: 27px 40px 46px;
+    padding: 27px 41px 46px;
 }
 
 /* .gifts-list::before {
@@ -3981,9 +3984,20 @@ nav {
     padding: 5px 0;
 }
 
-.g-profile-name img {
-    margin-left: 15px;
-    margin-top: -11px;
+.g-aacount-profile-content div.g-profile-name img {
+    margin-left: 18px;
+    margin-top: -4px;
+}
+div.g-account-profile .profile-main-title img {
+    margin-left: 16px;
+}
+.profile-password-suggestion span {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #414141;
 }
 
 .profile-info .form-control::placeholder {
@@ -4043,7 +4057,7 @@ nav {
 .g-profile-username span:first-child {
     min-width: 86px;
     max-width: 100%;
-    margin-right: 253px;
+    margin-right: 240px;
     display: inline-block;
 }
 
@@ -4058,13 +4072,14 @@ nav {
 
 .profile-info {
     margin-bottom: 38px;
-    display: flex;
-    align-items: center;
+   display: flex;
+    align-items: flex-start;
 }
 
 .profile-info>.form-control {
     width: 100%;
-    padding: 5px 0;
+    padding:0;
+	line-height:16px;
 }
 .profile-info>.form-control::placeholder{
 	font-family: 'Lato';
@@ -4080,7 +4095,7 @@ nav {
 }
 
 .profile-password-suggestion {
-    margin-left: 365px;
+    margin-left: 326px;
 }
 
 .g-account-footer-btn {
@@ -4105,7 +4120,7 @@ nav {
 .profile-contact span:first-child {
     min-width: 118px;
     max-width: 100%;
-    margin-right: 225px;
+    margin-right: 211px;
     display: inline-block;
 }
 
@@ -4118,6 +4133,7 @@ nav {
 }
 
 .g-profile-password p {
+   font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -4125,7 +4141,14 @@ nav {
     color: #818181;
     margin-bottom: 0;
 }
-
+.profile-password input.form-control::placeholder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
 .profile-password {
     display: flex;
     align-items: baseline;
@@ -4146,7 +4169,7 @@ nav {
 }
 
 .profile-password p:first-child {
-    margin-right: 288px;
+    margin-right: 247px;
     color: #000000;
     font-weight: 700;
     margin-bottom: 0;
@@ -12211,7 +12234,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .gift-account-list {
-        padding: 27px 22px 25px;
+        padding: 27px 25px 25px;
     }
 
     .card-categari-show {
