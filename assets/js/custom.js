@@ -300,6 +300,21 @@ $(document).ready(function() {
 		$('.'+p_C+' h6.profile_name_org').toggle();
 		$('.'+p_C+' input').toggle();
 	});
+	$('a.edit_basic_profile').click(function(){
+		var p_C = $(this).attr('p_c');
+		$('.'+p_C+' .g-profile-username .fields-cont span').toggle();
+		$('.'+p_C+' input').toggle();
+	});
+	$('a.edit_contact_profile').click(function(){
+		var p_C = $(this).attr('p_c');
+		$('.'+p_C+' .g-profile-username .fields-cont a').toggle();
+		$('.'+p_C+' input').toggle();
+	});
+	$('a.edit_password_profile').click(function(){
+		var p_C = $(this).attr('p_c');
+		$('.'+p_C+' .profile-password.profile-info .fields-cont span').toggle();
+		$('.'+p_C+' input').toggle();
+	});
 	
 	
     $(document).click(function(event) {
