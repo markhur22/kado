@@ -4086,7 +4086,7 @@ div.g-account-profile .profile-main-title img {
     padding: 0;
     line-height: 16px;
 }
-.g-aacount-profile-content .fields-cont input.text-fields {
+.fields-cont input.text-fields {
     background: none;
     border: 2px solid #ddd;
     transition: border-color 0.3s;
@@ -4109,6 +4109,11 @@ div.g-account-profile .profile-main-title img {
 	line-height: 22px;
 	color: #414141;
 	text-decoration:none;
+	width:100%;
+	float:left;
+}
+.g-profile-change-pass input.text-fields {
+    margin: 0 0 10px 0;
 }
 .profile-info>.form-control::placeholder{
 	font-family: 'Lato';
@@ -4293,7 +4298,7 @@ div.g-account-profile .profile-main-title img {
     width: 125px;
     opacity: 0.2;
     right: 24px;
-    top: 14px;
+    top: 12px;
 }
 
 .signup-social-icon {
@@ -4301,14 +4306,17 @@ div.g-account-profile .profile-main-title img {
     align-items: center;
     justify-content: center;
     max-height: 50px;
-    padding-top: 30px;
+    padding-top:0;
+	margin-bottom:33px;
 }
 
 .signup-social-icon img {
-    margin-left: 30px;
-    margin-bottom: 33px;
+    margin-left: 20px;
+    margin-bottom: 0;
 }
-
+.signup-social-icon img:first-child {
+    margin-left: 0;
+}
 .signup-form-input {
     margin-bottom: 20px;
 }
@@ -4327,26 +4335,28 @@ div.g-account-profile .profile-main-title img {
 }
 
 .signup-form-input .signup-email {
-    background-image: url(../images/email_icon.png);
+    background-image: url(../images/email-pink.svg);
     background-repeat: no-repeat;
-    background-position: left 20px center;
+    background-position: left 24px center;
 }
 
 .signup-form-input .signup-name {
-    background-image: url(../images/user_icon.png);
+    background-image: url(../images/user-pink.svg);
     background-repeat: no-repeat;
-    background-position: left 20px center;
+    background-position: left 24px center;
 }
 
 .signup-form-input .signup-password {
-    background-image: url(../images/password.png), url(../images/hide_password_icon.png);
+    background-image: url(../images/lock-pink.svg), url(../images/eye.svg);
     background-repeat: no-repeat;
-    background-position: left 20px center, right 25px center;
+    background-position: left 24px center, right 25px center;
 }
 
 .signup-form-input .form-control {
-    padding: 17px 20px 17px 54px;
+   padding: 0 20px 0 58px;
     border: 1px solid #E9E4DD;
+    height: 66px;
+	line-height:66px;
 }
 
 .signup-form-input .form-control::placeholder {
@@ -4358,7 +4368,7 @@ div.g-account-profile .profile-main-title img {
     opacity: 0.6;
 }
 
-.g-signup-form .gt-btn-custom {
+div.g-signup-form .gt-btn-custom {
     padding: 20px 45px;
     font-style: normal;
     font-weight: 500;
@@ -11435,34 +11445,34 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .signup-form-input {
-        margin-bottom: 23px;
+        margin-bottom: 24px;   
     }
-
-    .signup-social-account::before {
+	.signup-social-account::before, .signup-social-account::after{width:100px;}
+    /*.signup-social-account::before {
         width: 45px;
         left: 10px;
     }
 
     .login-email-account::before {
         left: 40px;
-    }
+    }*/
 
     .login-email-account {
         margin-bottom: 32px;
     }
 
-    .signup-social-account::after {
+    /*.signup-social-account::after {
         width: 49px;
         right: 10px;
-        top: 12px;
-    }
+        top: 12px
+    }*/
 
-    .login-email-account::after {
+    /*.login-email-account::after {
         right: 30px;
-    }
+    }*/
 
     .g-signup-form .gt-btn-custom {
-        margin-top: 25px;
+        margin-top: 24px;
     }
 
     .finalis-section {
@@ -13341,6 +13351,8 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media(max-width:599px) {
+.signup-social-account::before{width:45px;     left: 10px;}
+.signup-social-account::after{width:49px;     right: 10px;}
 .accordion-body .birthday-david-body { width: 100%; }
 .birthday-david-body{max-width:100%;}
 }
@@ -13671,6 +13683,14 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.gt-how-work-section .gt-section-title{line-height:65px;}
 }
 @media(max-width:370px) {
+.signup-social-account::before {
+    width: 20px;
+}	
+.signup-social-account::after {
+    width: 20px;
+}		
+	
+	
 .g-profile-name h6 {font-size: 20px;line-height: 25px;}
 .g-profile-name span{font-size:17px;line-height: 26px;}
 
