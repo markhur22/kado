@@ -3999,8 +3999,8 @@ nav {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 0.05em;
-    color: #828282;
+    letter-spacing: 0.05em;   
+	color: #414141;
 }
 
 .g-profile-upload-img a {
@@ -4063,8 +4063,16 @@ nav {
 }
 
 .profile-info>.form-control {
-    width: auto;
+    width: 100%;
     padding: 5px 0;
+}
+.profile-info>.form-control::placeholder{
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #414141;
 }
 
 .form-control:focus {
@@ -9403,9 +9411,9 @@ span.bar_filled_progress {
 }
 
 @media only screen and (max-width: 1024px) {
-    .gifts-items-header h3 {
+    /*.gifts-items-header h3 {
         font-size: 26px;
-    }
+    }*/ 
 }
 
 @media (max-width: 991px) {
@@ -9427,7 +9435,7 @@ span.bar_filled_progress {
 .accordion-body .aquarius-img { text-align: center; width: auto; float: none; display: inline-block; }
 .accordion-body  .auarius-first-img { width: auto; }
 .g-shipping-header { width: 100%; margin: 50px 0 0 0; float: none; display: inline-block; }		
-.accordion-item:last-of-type .accordion-collapse{border:none;}	
+.accordion-item:last-of-type .accordion-collapse{width: 100%; float: left; border:none;}	
     
 	.gift-help-modal {     padding: 80px 20px 73px; }
     .gifts-sent-content .gifts-list .gifts-items .gifts-items-header{    margin-bottom: 21px;}
@@ -10946,6 +10954,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .gt-gift-emporium-content {         padding: 11px 31px 11px 24px;         background-position-x: 78%;         margin-bottom: 25px;     }
 
     .g-profile-name {         margin-bottom: 33px;         margin-top: 22px;     }
+	.g-account-profile .profile-main-title {margin-bottom: 0;}
 
     .g-profile-upload-img .gt-btn-custom {         padding: 9px 9px 10px 10px;     }
 
@@ -10985,7 +10994,13 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .g-profile-password-setting {         padding: 34px 20px 82px;     }
 
-    .profile-main-title h6 {         margin-bottom: 8px;         display: flex;         justify-content: center;     }
+    .profile-main-title h6 {         margin-bottom: 8px;           display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; display: flex;          -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;justify-content: center;     }
 
     .profile-password-br {         display: none;     }
 
@@ -10993,7 +11008,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .profile-info {         margin-bottom: 31px;         display: inherit;     }
 
-    .profile-info>.form-control {         width: 100%;     }
+    .profile-info>.form-control {         width: 100%;   padding:0;  }
 
     .profile-password-suggestion {         margin-left: 0;     }
 
@@ -13540,6 +13555,10 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.gt-how-work-section .gt-section-title{line-height:65px;}
 }
 @media(max-width:370px) {
+.g-profile-name h6 {font-size: 20px;line-height: 25px;}
+.g-profile-name span{font-size:17px;line-height: 26px;}
+
+
 
 .aquarius-share-icon { width: 50px; height: 50px; }
 .birthday-header { padding: 25px 15px 25px; }
