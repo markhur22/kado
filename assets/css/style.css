@@ -10,7 +10,7 @@
 .g-account-title img { margin: 0 12px 0 0; }
 .login-details { margin: 30px 0 0 0; }
 .login-details span { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 26px; color: #414141; }
-.login-details span a { color: #FF385C; font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 26px; text-decoration: none; }
+.login-details span a { color: #FF385C; font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 26px; text-underline-offset: 4px; }
 section.g-login-section .g-signup-content { padding: 100px 0; }
 section.g-login-section .create-account-content { padding: 50px 50px 69px 50px; }
 section.g-login-section a.g-signup-Logo { margin-bottom: 29px; }
@@ -8197,6 +8197,7 @@ input {
     top: 0;
     bottom: 0;
     margin: auto;
+	width:24px;
 }
 .input_pass_ span::before {
     font-size: 19px;
@@ -10994,6 +10995,7 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) { 
+.g-signup-form .col.col-12 { padding: 0; }
 section.g-recover-gifty .g-signup-form .signup-form-btn { margin-top: 30px; white-space: nowrap; }
 section.g-recover-gifty .create-account-content { padding: 47px 27px 50px 27px; }
 section.g-recover-gifty .create-account-title { margin-bottom: 33px; }
@@ -13546,6 +13548,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media (max-width: 480px) {
+.login-details strong { width: 100%; float: left; }
 	div.gift_sent_popup img {     max-width: 290px; }
 .birthady-david-img { height: auto; }
 .birthday-thankyou-img { top: 24%; }
@@ -13562,7 +13565,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.help-radio-btn .form-check{float: left;     width: 40%;}
 	.help-radio-btn {     justify-content: flex-start;     flex-wrap: wrap; }
 	
-	div.gift_slider{padding:0 20px;}
+	div.gift_slider{padding:0 20px;} 
 	.modal-header.emporium-modal-header {     padding: 17px 23px; }
 	.emporium-modal-body .gt-popup-gift-title {     font-size: 25px;     margin-bottom: 7px; }
 	.emporium-modal-body {     padding: 0 20px 33px 20px;  margin:20px 0 0 0;}
