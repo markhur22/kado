@@ -295,25 +295,91 @@ $(document).ready(function() {
 		$('.cardlist').show();
 	});
 	
+var sub_show = [];
+	
 	$('a.edit_pro').click(function(){
 		var p_C = $(this).attr('p_c');
 		$('.'+p_C+' h6.profile_name_org').toggle();
 		$('.'+p_C+' input').toggle();
+		$('.'+p_C+' input').toggleClass('edit_pro_opened');
+		if($('.'+p_C+' input').hasClass('edit_pro_opened')){
+			sub_show.push(1);
+		}else{
+			var index = sub_show.indexOf(1);
+               if (index > -1) {
+                  sub_show.splice(index, 1);
+                }
+			
+		}
+		console.log(sub_show);
+		if(sub_show.length > 0){
+			$('.pass-btn-sub').show();
+		}else{
+			$('.pass-btn-sub').hide();
+		}
 	});
 	$('a.edit_basic_profile').click(function(){
 		var p_C = $(this).attr('p_c');
 		$('.'+p_C+' .g-profile-username .fields-cont span').toggle();
 		$('.'+p_C+' input').toggle();
+		$('.'+p_C+' input').toggleClass('edit_basic_profile_opened');
+		if($('.'+p_C+' input').hasClass('edit_basic_profile_opened')){
+			sub_show.push(1);
+		}else{
+			var index = sub_show.indexOf(1);
+               if (index > -1) {
+                  sub_show.splice(index, 1);
+                }
+			
+		}
+		console.log(sub_show);
+		if(sub_show.length > 0){
+			$('.pass-btn-sub').show();
+		}else{
+			$('.pass-btn-sub').hide();
+		}
 	});
 	$('a.edit_contact_profile').click(function(){
 		var p_C = $(this).attr('p_c');
 		$('.'+p_C+' .g-profile-username .fields-cont a').toggle();
 		$('.'+p_C+' input').toggle();
+		$('.'+p_C+' input').toggleClass('edit_contact_profile_opened');
+		if($('.'+p_C+' input').hasClass('edit_contact_profile_opened')){
+			sub_show.push(1);
+		}else{
+			var index = sub_show.indexOf(1);
+               if (index > -1) {
+                  sub_show.splice(index, 1);
+                }
+			
+		}
+		console.log(sub_show);
+		if(sub_show.length > 0){
+			$('.pass-btn-sub').show();
+		}else{
+			$('.pass-btn-sub').hide();
+		}
 	});
 	$('a.edit_password_profile').click(function(){
 		var p_C = $(this).attr('p_c');
 		$('.'+p_C+' .profile-password.profile-info .fields-cont span').toggle();
 		$('.'+p_C+' input').toggle();
+		$('.'+p_C+' input').toggleClass('edit_password_profile_opened');
+		if($('.'+p_C+' input').hasClass('edit_password_profile_opened')){
+			sub_show.push(1);
+		}else{
+			var index = sub_show.indexOf(1);
+               if (index > -1) {
+                  sub_show.splice(index, 1);
+                }
+			
+		}
+		console.log(sub_show);
+		if(sub_show.length > 0){
+			$('.pass-btn-sub').show();
+		}else{
+			$('.pass-btn-sub').hide();
+		}
 	});
 	
 	
