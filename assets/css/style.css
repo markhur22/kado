@@ -4081,6 +4081,35 @@ div.g-account-profile .profile-main-title img {
     padding:0;
 	line-height:16px;
 }
+.fields-cont .form-control {
+    width: 100%;
+    padding: 0;
+    line-height: 16px;
+}
+.g-aacount-profile-content .fields-cont input.text-fields {
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+    height: 55px;
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    padding: 0 15px;
+	display:none;
+}
+.g-aacount-profile-content .fields-cont {
+    width: 50%;
+    float: left;
+}
+.g-aacount-profile-content .fields-cont span, .g-aacount-profile-content .fields-cont a{
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #414141;
+	text-decoration:none;
+}
 .profile-info>.form-control::placeholder{
 	font-family: 'Lato';
 	font-style: normal;
@@ -4155,7 +4184,7 @@ div.g-account-profile .profile-main-title img {
     font-style: normal;
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .profile-password p span:first-child {
@@ -4186,7 +4215,7 @@ div.g-account-profile .profile-main-title img {
 }
 
 .g-signup-content {
-    padding-top: 90px;
+    padding-top: 75px;
     padding-bottom: 132px;
     background: #F6F6F6;
 }
@@ -4194,11 +4223,11 @@ div.g-account-profile .profile-main-title img {
 .g-signup-Logo {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 74px;
 }
 
 .g-signup-Logo img {
-    width: 100px;
+    width: 126px;
     height: auto;
     object-fit: cover;
 }
@@ -10839,6 +10868,7 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
+.g-aacount-profile-content .fields-cont { width: 100%; float: left; margin: 0 0 31px 0; }
 	.gift-help-modal h2{font-size: 50px;     line-height: 70px;}
 	.gift-help-dialog{width: 90%;     margin: 0;    max-width: 100%;}
 	.gift-help-modal h2 {     font-size: 40px;     line-height: 60px; }
@@ -10999,14 +11029,16 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .g-profile-name h6 {         margin-bottom: 14px;     }
 
-    .g-profile-basic-info {         padding: 34px 20px 40px;     }
+    .g-profile-basic-info {     float: left;
+    width: 100%;        padding: 34px 20px 40px;     }
 
-    .g-account-profile {         padding: 49px 20px 51px 20px;     }
+    .g-account-profile {         padding: 49px 20px 51px 20px;}
+	.g-aacount-profile-content{width: 100%; float: left;}
 
 
     .gifts-sent-content {         padding: 96px 16px 54px 16px;     }
 
-    .gifts-sent-content {         padding: 86px 16px 54px 16px;     }
+    .gifts-sent-content {      width: 100%; float: left;       padding: 86px 16px 54px 16px;     }
 
 
     .profile-password {         display: inherit;     }
@@ -11015,9 +11047,14 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .g-profile-username span:first-child {         margin-right: 0;         display: block;         margin-bottom: 10px;     }
 
-    .g-profile-contact-info {         padding: 34px 20px 45px;     }
+    .g-profile-contact-info {     width: 100%;
+    float: left;        padding: 34px 20px 45px;     }
 
-    .g-profile-password-setting {         padding: 34px 20px 82px;     }
+    .g-profile-password-setting {        width: 100%;
+    float: left;     padding: 34px 20px 82px;     }
+	.g-profile-password-setting .fields-cont {
+    margin: 0;
+}
 
     .profile-main-title h6 {         margin-bottom: 8px;           display: -webkit-box;
     display: -moz-box;
@@ -11044,7 +11081,9 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .g-account-footer-btn {         width: 100%;     }
 
     .gt-landing-section {         padding-top: 30px; 		     }
-
+	.profile-info.mb-0 .fields-cont {
+    margin: 0;
+}
     .gt-landing-section-title {         font-size: 30px;         line-height: 36px;         margin-bottom: 14px;     }
 
     .home-landing-title {         font-size: 28px;     }
@@ -12237,6 +12276,8 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .gift-account-list {
         padding: 27px 25px 25px;
+		width: 100%;
+		float: left;
     }
 
     .card-categari-show {
