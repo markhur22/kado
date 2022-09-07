@@ -8,6 +8,16 @@
 
 
 .g-account-title img { margin: 0 12px 0 0; }
+.login-details { margin: 30px 0 0 0; }
+.login-details span { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 26px; color: #414141; }
+.login-details span a { color: #FF385C; font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 26px; text-decoration: none; }
+section.g-login-section .g-signup-content { padding: 100px 0; }
+section.g-login-section .create-account-content { padding: 50px 50px 69px 50px; }
+section.g-login-section a.g-signup-Logo { margin-bottom: 29px; }
+section.g-login-section .create-account-title { margin-bottom: 44px; }
+section.g-login-section .login-email-account { margin-bottom: 29px; }
+section.g-login-section .g-signup-form .signup-form-input { margin-bottom: 15px; }
+section.g-login-section div.g-signup-form .gt-btn-custom{margin-top:38px;}
 
 
 
@@ -4148,7 +4158,7 @@ div.g-account-profile .profile-main-title img {
     padding: 10px 40px;
 }
 
-.g-profile-contact-info {
+.g-profile-contact-info { 
     padding: 42px 38px 68px;
     border-bottom: 1px solid #D2D2D2;
 }
@@ -4157,9 +4167,9 @@ div.g-account-profile .profile-main-title img {
     margin-bottom: 54px;
 }
 
-.profile-contact {
+/*.profile-contact {
     margin-bottom: 26px;
-}
+}*/
 
 .profile-contact span:first-child {
     min-width: 118px;
@@ -4220,7 +4230,7 @@ div.g-account-profile .profile-main-title img {
 }
 .profile-password {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     font-style: normal;
     font-size: 18px;
     line-height: 22px;
@@ -10965,7 +10975,11 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 767px) {
-
+section.g-login-section .create-account-content { padding: 47px 27px 78px 27px; }
+section.g-login-section .login-email-account { margin-bottom: 31px; }
+section.g-login-section div.g-signup-form .gt-btn-custom { margin-top: 41px; }
+.login-details { margin: 18px 0 0 0; }
+section.g-login-section .create-account-title { margin-bottom: 34px; }
 .g-aacount-profile-content .fields-cont{width:100%;} 
 
 	.birthday-inner {     padding: 110px 0; }
