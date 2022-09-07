@@ -9565,6 +9565,7 @@ span.bar_filled_progress {
 }
 
 @media (max-width: 991px) {
+	.gift_thankyou_popup .birthady-david-img{margin:0;}
 	div#gift_sent_popup .gift-help-dialog {     width: auto; }
 	div.gift_sent_popup img {     max-width: 350px; }
 	
