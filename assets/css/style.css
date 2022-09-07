@@ -18,6 +18,19 @@ section.g-login-section .create-account-title { margin-bottom: 44px; }
 section.g-login-section .login-email-account { margin-bottom: 29px; }
 section.g-login-section .g-signup-form .signup-form-input { margin-bottom: 15px; }
 section.g-login-section div.g-signup-form .gt-btn-custom{margin-top:38px;}
+section.g-set-new-psw .g-signup-content { padding: 154px 17px; }
+section.g-set-new-psw a.g-signup-Logo img { width: 95px; }
+section.g-set-new-psw a.g-signup-Logo { margin-bottom: 30px; }
+section.g-set-new-psw .create-account-title { margin-bottom: 43px; }
+section.g-set-new-psw .g-signup-form .signup-form-btn { margin-top: 40px; }
+section.g-set-new-psw .create-account-content { padding: 50px 50px 87px 50px; }
+section.g-recover-gifty .g-signup-content { padding: 189px 17px; }
+section.g-recover-gifty a.g-signup-Logo { margin-bottom: 30px; }
+section.g-recover-gifty .create-account-title { margin-bottom: 40px; }
+section.g-recover-gifty .g-signup-form .signup-form-btn { margin-top: 40px; }
+section.g-recover-gifty .create-account-content { padding: 47px 50px 80px 50px; }
+
+
 
 
 
@@ -4268,6 +4281,7 @@ div.g-account-profile .profile-main-title img {
     padding-top: 75px;
     padding-bottom: 132px;
     background: #F6F6F6;
+	height: 100vh;
 }
 
 .g-signup-Logo {
@@ -4355,11 +4369,11 @@ div.g-account-profile .profile-main-title img {
 	margin-bottom:33px;
 }
 
-.signup-social-icon img {
+.signup-social-icon a img  {
     margin-left: 20px;
     margin-bottom: 0;
 }
-.signup-social-icon img:first-child {
+.signup-social-icon a:first-child img {
     margin-left: 0;
 }
 .signup-form-input {
@@ -4392,7 +4406,7 @@ div.g-account-profile .profile-main-title img {
 }
 
 .signup-form-input .signup-password {
-    background-image: url(../images/lock-pink.svg), url(../images/eye.svg);
+    background-image: url(../images/lock-pink.svg);
     background-repeat: no-repeat;
     background-position: left 24px center, right 25px center;
 }
@@ -8178,11 +8192,15 @@ input {
 }
 .input_pass_ span {
     position: absolute;
-    right: 18px;
+    right: 26px;
     height: max-content;
     top: 0;
     bottom: 0;
     margin: auto;
+}
+.input_pass_ span::before {
+    font-size: 19px;
+    color: #414141;
 }
 .input_pass_ input {
     background-image: none;
@@ -10975,8 +10993,14 @@ span.bar_filled_progress {
     bottom: 40px;}
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: 767px) { 
+section.g-recover-gifty .g-signup-form .signup-form-btn { margin-top: 30px; white-space: nowrap; }
+section.g-recover-gifty .create-account-content { padding: 47px 27px 50px 27px; }
+section.g-recover-gifty .create-account-title { margin-bottom: 33px; }
+section.g-set-new-psw .create-account-content { padding: 50px 27px 50px 27px; }
+section.g-set-new-psw .g-signup-form .signup-form-btn { margin-top: 30px; white-space: nowrap;}
+section.g-set-new-psw .create-account-title { margin-bottom: 33px; }
+section.g-login-section .g-signup-content { padding: 47px 17px 204px 17px; }
 section.g-login-section .create-account-content { padding: 47px 27px 78px 27px; }
 section.g-login-section .login-email-account { margin-bottom: 31px; }
 section.g-login-section div.g-signup-form .gt-btn-custom { margin-top: 41px; }
@@ -11513,9 +11537,9 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         padding: 20px 19px 24px;
     }
 
-    .g-signup-content {
-        padding: 24px 17px 67px;
-    }
+   .g-signup-content {
+    padding: 47px 17px 86px;
+}
 
     .create-account-content {
         padding: 47px 26px 71px;
