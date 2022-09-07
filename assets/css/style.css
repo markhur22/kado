@@ -2,8 +2,8 @@
 
 
 /* today changes */
-.birthady-david-img::before { position: absolute; content: ''; width: 100%; height: 113px; top: 0; left: 0; background-image: url(../images/top-leave.png); background-repeat: no-repeat; background-position: top; background-size: contain; }
-.birthady-david-img::after{ position: absolute; content: ''; width: 100%; height: 113px; bottom: 0; left: 0; background-image: url(../images/bottom-leave.png); background-repeat: no-repeat; background-position: bottom; background-size: contain;  }
+.birthady-david-img::before { position: absolute; content: ''; width: 100%; height: 113px; top: 0; left: 0; background-image: url(../images/top-leave.png); background-repeat: no-repeat; background-position: top; background-size: contain; border-radius:10px;}
+.birthady-david-img::after{ position: absolute; content: ''; width: 100%; height: 113px; bottom: 0; left: 0; background-image: url(../images/bottom-leave.png); background-repeat: no-repeat; background-position: bottom; background-size: contain;  border-radius:10px;}
 .birthday-inner { width: 100%; float: left; height: 100%; display: flex; align-items: center; flex-direction: column; justify-content: center; }
 
 
@@ -3623,7 +3623,7 @@ nav {
     color: #000000;
     margin-bottom: 0;
 	letter-spacing:0;
-	text-align:left;
+
 }
 
 .g-shipping-date {
@@ -3648,7 +3648,7 @@ nav {
     position: relative;
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 16px;
     text-align: center;
     color: #BDBDBD;
     background-color: #ffff;
@@ -7705,6 +7705,34 @@ section.gt-page-title-section:before {     content: '';     position: absolute; 
 .help-form-btn svg {     margin: 0 10px 0 0;     display: inline-block;     vertical-align: middle; }
 
 
+
+
+
+
+
+/*s*/
+.birthday-david-body p span {     font-style: normal; }
+div.gift_sent_popup{padding:0;}
+div.gift_thankyou_popup{padding:0;}
+div.gift_sent_popup img{max-width:400px;}
+.gift_sent_popup button.btn-close {     position: absolute;     filter: brightness(0) invert(1);     top: -30px;     right: -20px;     opacity: 1; }
+.gift_thankyou_popup button.btn-close {     position: absolute;     filter: brightness(0) invert(1);     top: -30px;     right: -20px;     opacity: 1; }
+#gift_thankyou_popup .gift-help-dialog {     max-width: 401px; }
+.gift_thankyou_popup .birthday-cont {min-height: 527px;display: flex;align-items: center;flex-direction: column;justify-content: center;}
+.gift_thankyou_popup .birthady-david-img {     width: 100%;     float: left;     height: auto; }
+.gift_thankyou_popup .birthday-david-body h6 {font-size: 22px;}
+.gift_thankyou_popup .birthday-david-body p {     font-size: 16px;     line-height: 23px; }
+.birthday-thankyou-img img {     width: 44px; }
+.gift_thankyou_popup .birthday-thankyou-img img{width:auto;}
+.gift_thankyou_popup .birthday-thankyou-img{margin:0 0 10px 0;}
+
+
+
+
+
+
+
+
 /*desktop new changes starts here*/
 .noresultfound {     padding: 0; }
 
@@ -8648,12 +8676,13 @@ p.card-text.gifts-card-text {
 }
 span.bar_progres {
     position: absolute;
-    width: calc(100% - 124px);
+    width: calc(100% - 184px);
     height: 4px;
     bottom: 21px;
     background-color: #DFDFDF;
-    left: 75px;
+    left: 95px;
     margin: auto;
+    border-radius: 50px;
 }
 .status_process .card_status_main ul {
     position: relative;
@@ -8670,7 +8699,8 @@ span.bar_progres {
 span.bar_filled_progress {
     background-color: #ff385c;
     height: 100%;
-    width: 50%;
+    width: 60%;
+	border-radius:50px;
     float: left;
 }
 /* new desktop changes starts here */
@@ -8768,7 +8798,7 @@ span.bar_filled_progress {
 }
 @media only screen and (max-width: 1550px) {
     span.bar_progres {
-        width: calc(100% - 196px);
+        /* width: calc(100% - 196px); */
     }
 }
 @media (max-width: 1499px) {
@@ -8852,7 +8882,7 @@ span.bar_filled_progress {
 		.gt-quality-gift-slider .slick-next.slick-arrow {     right: 0; }
 }
 @media (max-width: 1540px) {
-.birthady-david-img { width: 100%; float: left; height: 480px; }
+.birthady-david-img { width: 100%; float: left;/*  height: 480px;  */}
 
     .g-shipping-header .nav-item {
         width: 20%;
@@ -8875,7 +8905,7 @@ span.bar_filled_progress {
     }
 	.help-form-email {     padding: 16px 12px; }
     span.bar_progres {
-        width: calc(100% - 154px);
+        /* width: calc(100% - 154px); */
     }
 }
 
@@ -8926,6 +8956,9 @@ span.bar_filled_progress {
 }
 
 @media only screen and (max-width: 1299px) {
+	/*s*/
+	.gifts-items {     padding: 27px 21px 35px;}
+	
     #cardsModal .modal-xl {
         max-width: 95%;
     }
@@ -8945,11 +8978,15 @@ span.bar_filled_progress {
         padding: 0 20px 0 20px;
     }
     .g-shipping-status {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
 @media (max-width: 1199px) {
+	/*s*/
+	.birthday-inner {     padding: 100px 0; }
+	
+	
 .g-details-birthday { padding: 19px 20px 57px 20px; }	
 .birthday-card .col.col-12 + .col.col-12 + .col.col-12 { margin-top: 30px; }	
 	
@@ -9420,7 +9457,9 @@ span.bar_filled_progress {
 
 @media (max-width: 991px) {
 .birthday-david-body { max-width: 65%; margin: 0 auto; }
-.birthady-david-img{height:450px;}
+.birthady-david-img{/* height:450px; */    margin: 0 0 30px 0;}
+.g-shipping-header .nav-link {     padding: 0 20px; }
+.birthday-inner {     padding: 130px 0; }
 .gift-details-accordion .accordion-item { float: left; width: 100%; }
 .accordion-body .aquarius-img { text-align: center; }
 .auarius-first-img { width: auto; }
@@ -9429,9 +9468,9 @@ span.bar_filled_progress {
 .g-shipping-content .g-shipping-header { margin: 11px 0 0 0; }
 .accordion-item:last-of-type .accordion-collapse .aquarius-share-icon { right: 15%; }
 .accordion-body .birthday-david-mainimg { border-radius: 10px; width: 550px; height: auto; object-fit: initial; float: none; }
-.birthday-body .birthday-body-title .swapped_gift_main { margin-bottom: 16px; }
+.birthday-body .birthday-body-title .swapped_gift_main { margin-bottom: 6px; }
 .birthday-body .birthday-body-title { margin-top: 14px; }
-.birthday-body-title h2 { margin-bottom: 6px; }
+.birthday-body-title h2 { margin-bottom: 16px; }
 .accordion-body .birthday-body { margin-bottom: 20px; width: 100%; float: left; }
 .g-details-aquarius { margin-bottom: 40px; width: 100%; float: left; text-align: center; }
 .accordion-body .aquarius-img { text-align: center; width: auto; float: none; display: inline-block; }
@@ -9439,13 +9478,20 @@ span.bar_filled_progress {
 .g-shipping-header { width: 100%; margin: 50px 0 0 0; float: none; display: inline-block; }		
 .accordion-item:last-of-type .accordion-collapse{width: 100%; float: left; border:none;}	
     
+	
+	.birthday-body .birthday-body-title .accordion-header button::after {     top: 5px; }
+	.birthday-body .birthday-body-title .accordion-header button:not(.collapsed)::after{    top: -4px;}
+	.g-details-birthday .auarius-first-img {     height: 360px; }
 	.gift-help-modal {     padding: 80px 20px 73px; }
     .gifts-sent-content .gifts-list .gifts-items .gifts-items-header{    margin-bottom: 21px;}
 	.help-form-email {     padding: 14px 10px; }
 	.help-form-title {     font-size: 18px; }
 	.gifts-sent-content .gifts-list .gifts-items .gifts-items-header h3 i {     margin: 0 10px 0 0; }
 	.gifts-sent-content .gifts-list .gifts-items .gifts-items-header.gifts-help-header {     min-height: inherit; }
-	
+	.gifts-sent-content .gifts-list nav.breadcrumb-content {     padding: 33px 21px 0; }
+	.status_process{justify-content: start;}
+	.gift-details-accordion .accordion-item .accordion-item {     border-bottom: none !important; }
+
 
     header.gt-site-header.sticky {z-index: 99;}
 	/*new changes*/
@@ -9617,7 +9663,7 @@ span.bar_filled_progress {
     }
 
     .gifts-sent-content {
-        padding: 76px 20px 60px 20px;
+        padding: 96px 20px 60px 20px;
     }
 
     .gt-landing-section {
@@ -10149,7 +10195,7 @@ span.bar_filled_progress {
     }
 
     .nav-link .g-shipping-conform {
-        margin: 0 21px 63px 0;
+        margin: 0 21px 40px 0;
     }
 
     .nav-tabs .nav-item:nth-child(2) .nav-link .g-shipping-conform::after {
@@ -10771,9 +10817,9 @@ span.bar_filled_progress {
         padding: 0;
     }
     span.bar_progres {
-        height: calc(100% - 90px);
+        height: calc(100% - 57px);
         width: 4px;
-        left: 30px;
+        left: 40px;
         top: 0;
         bottom: initial;
     }
@@ -10821,15 +10867,19 @@ span.bar_filled_progress {
 	.gift-help-modal h2 {     font-size: 40px;     line-height: 60px; }
 	.gift-help-modal p{font-size: 18px;     line-height: 23px;}
 	.gift-help-modal {     padding: 60px 20px 33px; }
-
-
+	span.bar_progres {     height: calc(100% - 86px);}
+	span.bar_filled_progress{height: 70%;}
+	.g-details-birthday .accordion > .accordion-item:last-child {     border-bottom: none !important; }
+	.g-shipping-content .g-shipping-header {     margin: 5px 0 0 0;     border-top: 1px solid #d2d2d2;     padding: 25px 0 0 0; }
+	
 button.accordion-button:not(.collapsed), button.accordion-button{padding:15px 0;}
 .gifts-sent-content .gifts-list nav.breadcrumb-content { padding: 33px 21px 0; }
 .gift-details-accordion .accordion-item .birthday-img img { height: auto; }
 .gift-details-accordion .accordion-button { padding: 15px 0; }	
 .birthday-body .birthday-body-title{margin-bottom:0;}
 .gift-details-accordion .accordion-button::after{top:24px;}
-.gift-details-accordion .accordion-button:not(.collapsed)::after { top: 12px; }
+.gift-details-accordion .accordion-button:not(.collapsed)::after {     top: 17px;     background-position: left center;     right: 4px; }
+
 div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 .gift-details-accordion .show-discription-btn:not(.collapsed)::after { top: -4px; }
 .accordion-item .birthday-body .birthday-body-title { margin-top: 15px; }
