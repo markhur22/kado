@@ -363,11 +363,9 @@ var sub_show = [];
 	$('a.edit_password_profile').click(function(){
 		var p_C = $(this).attr('p_c');
 		$('.'+p_C+' .profile-password.profile-info .fields-cont span').toggle();
-		$('.'+p_C+' .d_pass').toggle();
-		$('.'+p_C+' .edit_pass_user').toggle();
-		$('.'+p_C+' .edit_pass_user input').toggle();
-		$('.'+p_C+' .edit_pass_user input').toggleClass('edit_password_profile_opened');
-		if($('.'+p_C+' .edit_pass_user input').hasClass('edit_password_profile_opened')){
+		$('.'+p_C+' input').toggle();
+		$('.'+p_C+' input').toggleClass('edit_password_profile_opened');
+		if($('.'+p_C+' input').hasClass('edit_password_profile_opened')){
 			sub_show.push(1);
 		}else{
 			var index = sub_show.indexOf(1);
@@ -675,7 +673,7 @@ $('.card_view_slide_main').slick({
 	  speed: 300,
 	  slidesToShow: 1,
 	  responsive: [
-		{
+		{ 
 		  breakpoint: 480,
 		  settings: {
 			slidesToShow: 1,
