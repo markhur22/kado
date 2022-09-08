@@ -263,9 +263,9 @@
                                         </div>
                                         <div class="g-profile-name profile-main-title profile_name_section">
 										<div class="profile_name_inner_section">
-                                            <h6 p_c="profile_name_section" class="profile_name_org edit_pro">
-											<input placeholder="Matthew Vetheca" type="text" class="text-fields profile_name_edit"></h6>
-											<a href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
+                                            <h6 class="profile_name_org"> Matthew Vetheca </h6>
+											<input placeholder="Matthew Vetheca" style="display:none;" type="text" class="text-fields profile_name_edit">
+											<a p_c="profile_name_section" class="edit_pro" href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
 										</div>
 										<div class="profile_address_inner_section">
 										<span>California, United State</span>
@@ -275,23 +275,22 @@
                                 <div class="g-profile-basic-info profile_basic_info_section">
                                     <div class="g-profile-name g-profile-user mt-0">
                                         <h6 class="mb-0 ">Basic info
-                                            <a href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
+                                            <a p_c="profile_basic_info_section" class="edit_basic_profile" href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
                                         </h6>
                                     </div>
                                     <div class="g-profile-username">
                                         <div class="profile-info">
                                             <span>User name</span>
 											<div class="fields-cont">
-												<!--span>Matthew123</span-->
-												<input p_c="profile_basic_info_section" placeholder="Matthew123" class="edit_basic_profile text-fields form-control" type="text" >
-												
+												<span>Matthew123</span>
+												<input placeholder="Matthew123" class="text-fields" type="text" class="form-control">
 											</div>
                                         </div>
                                         <div class="profile-info mb-0">
                                             <span>Location</span>
 											<div class="fields-cont">
-												<!--span>California, United State</span-->
-												<input placeholder="California, United State" class="text-fields form-control" type="text" >
+												<span>California, United State</span>
+												<input placeholder="California, United State" class="text-fields" type="text" class="form-control">
 											</div>
                                         </div>
                                     </div>
@@ -299,22 +298,22 @@
                                 <div class="g-profile-contact-info profile_contact_info_section">
                                     <div class="g-profile-name g-profile-contact mt-0">
                                         <h6 class="mb-0">Contact info
-                                            <a href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
+                                            <a p_c="profile_contact_info_section" class="edit_contact_profile" href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
                                         </h6>
                                     </div>
                                     <div class="g-profile-username">
                                         <div class="profile-info profile-contact">
                                             <span>Email Address</span>
 											<div class="fields-cont">
-												<!--a href="mailto:name@gmail.com">name@gmail.com</a-->
-												<input placeholder="name@gmail.com" class="text-fields form-control" type="email">
+												<a href="mailto:name@gmail.com">name@gmail.com</a>
+												<input placeholder="name@gmail.com" class="text-fields" type="email" class="form-control">
 											</div>
                                         </div>
                                         <div class="profile-info mb-0 profile-contact">
                                             <span>Phone number</span>
 											<div class="fields-cont">
-												<!--a href="tel:+12356856894">+1 23568 56894</a-->
-												<input placeholder="+1 23568 56894" class="text-fields form-control" type="text">
+												<a href="tel:+12356856894">+1 23568 56894</a>
+												<input placeholder="+1 23568 56894" class="text-fields" type="email" class="form-control">
 											</div>
                                         </div>
                                     </div> 
@@ -322,20 +321,37 @@
                                 <div class="g-profile-password-setting profile_password_info_section">
                                     <div class="g-profile-name g-profile-password mt-0">
                                         <h6>Password Settings
-                                            <!--a p_c="profile_password_info_section" class="edit_password_profile" href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a-->
-											<a href="#" class="btnpass-primary" data-bs-toggle="modal"
-                                    data-bs-target="#passwordreset"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
+                                            <a p_c="profile_password_info_section" class="edit_password_profile" href="javascript:void(0);"><img src="assets/images/pen.svg" alt="edit" class="img-fluid"></a>
                                         </h6>
                                         <!--p>A secure password helps protect <br class="profile-password-br"> your Google Account</p-->
                                     </div> 
                                     <div class="g-profile-change-pass"> 
-											<div class="profile-password profile-info">
+										<div class="profile-password profile-info d_pass">
                                             <p>Password</p>
 											<div class="fields-cont">
 												<span>***************</span>
-												<input placeholder="Enter password" class="text-fields" type="password" class="form-control">
 											</div>
                                         </div>
+										<div style="display:none;" class="edit_pass_user">
+											<div class="profile-password profile-info old_pass">
+												<p>Old Password</p>
+												<div class="fields-cont">
+													<input placeholder="Enter old password" class="text-fields" type="password" class="form-control">
+												</div>
+											</div>
+											<div class="profile-password profile-info new_pass">
+												<p>New Password</p>
+												<div class="fields-cont">
+													<input placeholder="Enter new password" class="text-fields" type="password" class="form-control">
+												</div>
+											</div>
+											<div class="profile-password profile-info con_new_pass">
+												<p>Confirm New Password</p>
+												<div class="fields-cont">
+													<input placeholder="Enter confirm new password" class="text-fields" type="password" class="form-control">
+												</div>
+											</div>
+										</div>
                                         <p class="mb-0 profile-password-suggestion">
                                             <span>Last changed Feb 15, 2021</span>
                                         </p>
@@ -352,53 +368,7 @@
     </section>
     <!-- Account Details Section End -->
 
-<!-- Password Modal -->
-<div class="modal fade" id="passwordreset" tabindex="-1" aria-labelledby="passwordreset"
-	aria-hidden="true">
-	<div class="modal-dialog passwordreset-dialog modal-dialog-zoom">
-		<div class="modal-content">
-			<div class="modal-header passwordreset-header">
-				<h5 class="modal-title" id="passwordreset_title">Password Reset</h5>
-				<button type="button" class="btn-close btn_pass_close" data-bs-dismiss="modal"
-					aria-label="Close"></button>
-			</div>
-			<div class="modal-body passwordreset-body">
-				<p>Reset your password</p>
-				<form>
-				<div class="passwordreset-formfields">
-					<div class="form-check">
-						<div class="profile-password profile-info passreset_old">
-							<p>Old Password</p>
-							<div class="fields-cont-pass">
-								<input placeholder="Enter old password" class="text-fields" type="password" class="form-control">
-							</div>
-						</div>
-					</div>
-					<div class="form-check">
-						<div class="profile-password profile-info passreset_new">
-							<p>New Password</p>
-							<div class="fields-cont-pass">
-								<input placeholder="Enter new password" class="text-fields" type="password" class="form-control">
-							</div>
-						</div>
-					</div>
-					<div class="form-check">
-						<div class="profile-password profile-info passreset_confirm_new">
-							<p>Confirm new Password</p>
-							<div class="fields-cont-pass">
-								<input placeholder="Enter confirm new password" class="text-fields" type="password" class="form-control">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="passwordreset-input">
-					<a href="#" class="btn passwordreset-btn w-100">Submit</a>
-				</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+  
 </body>
 
 </html>
