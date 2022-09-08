@@ -4085,6 +4085,7 @@ nav {
     margin-bottom: 0;
     display: flex;
     align-items: center;
+    min-height: 40px;
 }
 .profile_name_inner_section {
     display: flex;
@@ -4095,7 +4096,7 @@ nav {
     background: none;
     border: 2px solid #ddd;
     transition: border-color 0.3s;
-    height: 55px;
+    min-height: 40px;
     width: 100%;
     float: left;
     border-radius: 10px;
@@ -4176,10 +4177,12 @@ div.g-account-profile .profile-main-title img {
 }
 
 .g-profile-username span:first-child {
-    min-width: 86px;
-    max-width: 100%;
-    margin-right: 240px;
+    width: 325px;
+    margin-right: 0;
     display: inline-block;
+    max-width: 100%;
+    float: left;
+    padding-right: 40px;
 }
 
 .g-profile-username span:last-child {
@@ -4192,10 +4195,10 @@ div.g-account-profile .profile-main-title img {
 }
 
 .profile-info {
-    margin-bottom: 38px;
-   display: flex;
-    align-items: flex-start;
-}
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}  
 
 .profile-info>.form-control {
     width: 100%;
@@ -4211,31 +4214,40 @@ div.g-account-profile .profile-main-title img {
     background: none;
     border: 2px solid #ddd;
     transition: border-color 0.3s;
-    height: 55px;
+    height: 44px;
     width: 100%;
     float: left;
     border-radius: 10px;
     padding: 0 15px;
-	display:none;
+    display: none;
+    max-width: 265px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #D2D2D2;
 }
 .g-aacount-profile-content .fields-cont {
-    width: 350px;
+    width: calc(100% - 325px);
     float: left;
 }
-.g-aacount-profile-content .fields-cont span, .g-aacount-profile-content .fields-cont a{
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 22px;
-	color: #414141;
-	text-decoration:none;
-	width:100%;
-	float:left;
-	margin:0;
-}
-.g-profile-change-pass input.text-fields {
-    margin: 0 0 10px 0;
+.g-aacount-profile-content .fields-cont span, .g-aacount-profile-content .fields-cont a {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #414141;
+    text-decoration: none;
+    width: 100%;
+    float: left;
+    margin: 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
 }
 .profile-info>.form-control::placeholder{
 	font-family: 'Lato';
@@ -4251,7 +4263,9 @@ div.g-account-profile .profile-main-title img {
 }
 
 .profile-password-suggestion {
-    margin-left: 326px;
+    margin-left: 0;
+    width: 100%;
+    float: left;
 }
 
 .g-account-footer-btn {
@@ -4274,10 +4288,9 @@ div.g-account-profile .profile-main-title img {
 }*/
 
 .profile-contact span:first-child {
-    min-width: 118px;
-    max-width: 100%;
-    margin-right: 211px;
     display: inline-block;
+    width: 325px;
+    max-width: 100%;
 }
 
 .g-profile-password-setting {
@@ -4332,11 +4345,11 @@ div.g-account-profile .profile-main-title img {
 }
 .profile-password {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     font-style: normal;
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .profile-password p span:first-child {
@@ -4350,10 +4363,11 @@ div.g-account-profile .profile-main-title img {
 }
 
 .profile-password p:first-child {
-    margin-right: 247px;
     color: #000000;
     font-weight: 700;
     margin-bottom: 0;
+    width: 325px;
+    float: left;
 }
 
 
@@ -9017,10 +9031,34 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 .wrap-modal-slider {
     opacity: 0;
     transition: all 0.3s;
-  }
-  .wrap-modal-slider.open {
+}
+.wrap-modal-slider.open {
     opacity: 1;
-  }
+}
+.define_float {
+    width: 100%;
+    float: left;
+}
+.g-profile-name .profile_name_inner_section input {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #D2D2D2;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 220px;
+    min-height: 44px;
+    padding: 0;
+}
+.status_process .card_status_main ul li {
+    pointer-events: none;
+}
+.g-profile-change-pass .profile-password.profile-info.d_pass {
+    align-items: start;
+}
+.g-profile-change-pass .profile-password.profile-info.d_pass p {
+    margin-top: 7px;
+}
 /* new desktop changes starts here */
  
  
@@ -9735,6 +9773,15 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     }
     .gifts-navbar .nav-item {
         padding: 0 14px 0 14px;
+    }
+    .g-aacount-profile-content .fields-cont {
+        width: calc(100% - 275px);
+    }
+    .g-profile-username span:first-child {
+        width: 275px;
+    }
+    .profile-password p:first-child {
+        width: 275px;
     }
 }
 @media only screen and (max-width: 1130px) {
@@ -11435,7 +11482,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 
     .profile-password {         margin-bottom: 10px;     }
 
-    .profile-password p:first-child {         margin-right: 0;         margin-bottom: 14px;     }
+    .profile-password p:first-child {         margin-right: 0;         margin-bottom: 14px;    margin-top: 0px; }
 
     .g-account-footer-btn {         width: 100%;     }
 
@@ -13650,6 +13697,23 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     div#gift_sent_pop .card_view_slide_main button.slick-prev.slick-arrow {
         left: -20px;
     }
+    .g-aacount-profile-content .fields-cont span, .g-aacount-profile-content .fields-cont a {
+        min-height: initial;
+    }
+    .g-profile-name h6 {
+        min-height: initial;
+    }
+    .fields-cont input.text-fields {
+        max-width: 100%;
+        padding: 0;
+    }
+    /* .profile-password p:first-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    } */
+    .profile-password {
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width:599px) {
@@ -13750,6 +13814,10 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         width: 44px;
         height: 44px;
         border-radius: 10px;
+    }
+    div#gift_sent_pop .modal-dialog.modal-dialog-centered {
+        width: 80%;
+        margin: auto;
     }
 }
 
@@ -14001,6 +14069,10 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
     .gift-send-card-list .gifts-card-footer .gifts-card-btn {
         width: 47%;
+    }
+    div#gift_sent_pop .modal-dialog.modal-dialog-centered {
+        width: 95%;
+        margin: auto;
     }
 
 }
