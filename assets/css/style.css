@@ -34,8 +34,97 @@ section.g-recover-gifty .create-account-content { padding: 47px 50px 80px 50px; 
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.ttf') format('truetype'),
+        url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.eot');
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Light.woff2') format('woff2'),
+        url('../fonts/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato-Light.ttf') format('truetype'),
+        url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Black.eot');
+    src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Black.woff2') format('woff2'),
+        url('../fonts/Lato-Black.woff') format('woff'),
+        url('../fonts/Lato-Black.ttf') format('truetype'),
+        url('../fonts/Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype'),
+        url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('../fonts/Lato-Hairline.eot');
+    src: url('../fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Hairline.woff2') format('woff2'),
+        url('../fonts/Lato-Hairline.woff') format('woff'),
+        url('../fonts/Lato-Hairline.ttf') format('truetype'),
+        url('../fonts/Lato-Hairline.svg#Lato-Hairline') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('../fonts/PTSerif-Bold.eot');
+    src: url('../fonts/PTSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTSerif-Bold.woff2') format('woff2'),
+        url('../fonts/PTSerif-Bold.woff') format('woff'),
+        url('../fonts/PTSerif-Bold.ttf') format('truetype'),
+        url('../fonts/PTSerif-Bold.svg#PTSerif-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('../fonts/PTSerif-Regular.eot');
+    src: url('../fonts/PTSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTSerif-Regular.woff2') format('woff2'),
+        url('../fonts/PTSerif-Regular.woff') format('woff'),
+        url('../fonts/PTSerif-Regular.ttf') format('truetype'),
+        url('../fonts/PTSerif-Regular.svg#PTSerif-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'Circular Std Book';
@@ -274,7 +363,7 @@ a {
     line-height: 65px;
     letter-spacing: -0.01em;
     color: #000000;
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
 }
 
 .gt-btn-custom {
@@ -372,7 +461,7 @@ a {
 }
 
 .modal-title {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -792,7 +881,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .gt-landing-section-title {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     font-weight: 700;
     font-size: 55px;
     line-height: 65px;
@@ -932,7 +1021,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .gt-how-work-number {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     font-weight: 700;
     font-size: 24px;
     line-height: 65px;
@@ -1714,7 +1803,7 @@ span.gt-faq-solved-icon {
 }
 
 .gt-popup-gift-price {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     font-weight: 700;
     font-size: 36px;
     line-height: 48px;
@@ -1948,7 +2037,7 @@ a.gt-send-gift-link:hover svg path {
     letter-spacing: -0.01em;
     color: #000000;
     margin-bottom: 15px;
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
 }
 
 .first-send-gift-title {
@@ -2071,7 +2160,7 @@ a.gt-send-gift-link:hover svg path {
 }
 
 .gt-send-gift-index {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     background-color: #FFFFFF;
     box-shadow: 0px 2px 10px rgba(65, 67, 69, 0.1);
     border-radius: 20px;
@@ -2192,7 +2281,7 @@ a.gt-send-gift-link:hover svg path {
 }
 
 .gt-share-gift-title {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -2905,7 +2994,7 @@ a.gt-send-gift-link:hover svg path {
 }
 
 .gifts-items-header h3 {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -7698,7 +7787,7 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .gt-site-footer-menu-title {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif';
     font-weight: 700;
     font-size: 22px;
     line-height: 29px;
@@ -11400,7 +11489,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         font-size: 20px;
         font-weight: 700;
         line-height: 26px;
-        font-family: 'PT Serif', serif;
+        font-family: 'PT Serif';
         margin-right: 6px;
     }
 
