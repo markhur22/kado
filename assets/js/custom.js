@@ -667,4 +667,27 @@ var sub_show = [];
 		$(this).addClass('active_drop');
 	});
 
+      
+$('.card_view_slide_main').slick({
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  responsive: [
+		{
+		  breakpoint: 480,
+		  settings: {
+			slidesToShow: 1,
+			adaptiveHeight: true
+		  }
+		}
+	  ]
+});
+
+
+
+$('#gift_sent_pop').on('shown.bs.modal', function (e) {
+  $('.card_view_slide_main').slick('setPosition');
+  $('.wrap-modal-slider').addClass('open');
+})
+
 });

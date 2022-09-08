@@ -4216,7 +4216,7 @@ div.g-account-profile .profile-main-title img {
     float: left;
     border-radius: 10px;
     padding: 0 15px;
-	display:none;
+	/* display:none; */
 }
 .g-aacount-profile-content .fields-cont {
     width: 350px;
@@ -7922,10 +7922,10 @@ section.gt-page-title-section:before {     content: '';     position: absolute; 
 
 /*s*/
 .birthday-david-body p span {     font-style: normal; }
-div.gift_sent_popup{padding:0;}
+div.gift_sent_pop{padding:0;}
 div.gift_thankyou_popup{padding:0;}
-div.gift_sent_popup img{max-width:400px;}
-.gift_sent_popup button.btn-close {     position: absolute;     filter: brightness(0) invert(1);     top: -30px;     right: -20px;     opacity: 1; }
+div.gift_sent_pop img{max-width:400px;}
+.gift_sent_pop button.btn-close {     position: absolute;     filter: brightness(0) invert(1);     top: -30px;     right: -20px;     opacity: 1; }
 .gift_thankyou_popup button.btn-close {     position: absolute;     filter: brightness(0) invert(1);     top: -30px;     right: -20px;     opacity: 1; }
 #gift_thankyou_popup .gift-help-dialog {     max-width: 401px; }
 .gift_thankyou_popup .birthday-cont {min-height: 527px;display: flex;align-items: center;flex-direction: column;justify-content: center;}
@@ -8920,6 +8920,82 @@ span.bar_filled_progress {
 	border-radius:50px;
     float: left;
 }
+.card_view_slide_main button {
+    display: none;
+}
+div#gift_sent_pop .card_view_main > img {
+    width: 100%;
+    max-width: initial;
+    /* height: 100%; */
+}
+div#gift_sent_pop .slick-track {
+    display: flex;
+}
+div#gift_sent_pop .slick-initialized .slick-slide {
+    display: block;
+    height: inherit;
+}
+div#gift_sent_pop .card_view_main .birthady-david-img {
+    height: 100%;
+    padding: 0 40px;
+    margin: 0 !important;
+}
+div#gift_sent_pop .card_view_main .birthady-david-img {
+    height: 100%;
+    padding: 0 40px;
+}
+div#gift_sent_pop .card_view_slide_main {
+    width: 100%;
+    float: left;
+    height: 100%;
+    margin: 0;
+}
+div#gift_sent_pop .card_view_main .birthday-thankyou-img img {
+    margin: auto;
+}
+div#gift_sent_pop .card_view_slide_main button.slick-arrow::before {
+    content: '' !important;
+}
+div#gift_sent_pop .card_view_slide_main button.slick-next.slick-arrow:focus, div#gift_sent_pop .card_view_slide_main button.slick-next.slick-arrow:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.000132561 6.02355H8.32321L4.37642 2.08852L6.47346 0L14.0002 7.5L6.47346 15L4.37642 12.9117L8.32321 8.97666H0.000132561V6.02355Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+div#gift_sent_pop .card_view_slide_main button.slick-arrow:focus, div#gift_sent_pop .card_view_slide_main button.slick-arrow:hover {
+    background-color: #FF385C;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+div#gift_sent_pop .card_view_slide_main button.slick-prev.slick-arrow:focus, div#gift_sent_pop .card_view_slide_main button.slick-prev.slick-arrow:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0001 8.97645L5.67703 8.97645L9.62382 12.9115L7.52679 15L0 7.5L7.52679 0L9.62382 2.08832L5.67703 6.02334L14.0001 6.02334L14.0001 8.97645Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+div#gift_sent_pop .card_view_slide_main button.slick-next.slick-arrow {
+    left: initial;
+    right: -20px;
+}
+div#gift_sent_pop .card_view_slide_main ul.slick-dots {
+    bottom: -50px;
+}
+div#gift_sent_pop .card_view_slide_main .slick-dots li.slick-active button:before {
+    font-size: 0;
+}
+div#gift_sent_pop .card_view_slide_main ul.slick-dots li button {
+    background-color: #fff;
+    padding: 0;
+    font-size: 0;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
+    background-color: #FF385C;
+}
+.wrap-modal-slider {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .wrap-modal-slider.open {
+    opacity: 1;
+  }
 /* new desktop changes starts here */
  
  
@@ -9674,8 +9750,8 @@ span.bar_filled_progress {
 
 @media (max-width: 991px) {
 	.gift_thankyou_popup .birthady-david-img{margin:0;}
-	div#gift_sent_popup .gift-help-dialog {     width: auto; }
-	div.gift_sent_popup img {     max-width: 350px; }
+	div#gift_sent_pop .gift-help-dialog {     width: auto; }
+	div.gift_sent_pop img {     max-width: 350px; }
 	
 	
 .birthday-david-body { max-width: 65%; margin: 0 auto; }
@@ -13546,6 +13622,9 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         left: 18px;
         z-index: 10000;
     }
+    div#gift_sent_pop .card_view_slide_main button.slick-prev.slick-arrow {
+        left: -20px;
+    }
 }
 
 @media(max-width:599px) {
@@ -13634,20 +13713,37 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 	.g-details-birthday .auarius-first-img {     max-height: 300px; }
 	.accordion-body .birthday-inner {     padding: 80px 0; }
+    div#gift_sent_pop .card_view_slide_main button.slick-next.slick-arrow {
+        left: initial;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+    }
+    div#gift_sent_pop .card_view_slide_main button.slick-prev.slick-arrow {
+        left: 20px;
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 480px) {
 .login-details strong { width: 100%; float: left; }
-	div.gift_sent_popup img {     max-width: 290px; }
+	div.gift_sent_pop img {     max-width: 290px; }
 .birthady-david-img { height: auto; }
 .birthday-thankyou-img { top: 24%; }
 .g-shipping-status{    text-align: left;}
+div#gift_sent_pop .slick-initialized .slick-slide {
+    display: block;
+    height: 100%;
+}
 }
 
 @media (max-width: 420px) {
 	
 	.g-details-birthday .auarius-first-img {     max-height: inherit;     height: auto; }
-	.gift_sent_popup button.btn-close{right: 0;}
+	.gift_sent_pop button.btn-close{right: 0;}
 	.gift_thankyou_popup button.btn-close{right: 0;}
 	.nav-link .g-shipping-conform {     margin: 0 15px 40px 0; }
 	.birthday-inner {     padding: 90px 20px; }
@@ -13895,6 +13991,14 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.gt-landing-btn-content .btn-white {     padding: 16px 32px; }
 	.gt-section-title {     font-size: 35px;     line-height: 42px; }
 	.gt-how-work-section .gt-section-title{line-height:65px;}
+    div#gift_sent_pop .card_view_slide_main button.slick-next.slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    div#gift_sent_pop .card_view_slide_main button.slick-prev.slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
 }
 @media(max-width:370px) {
 .signup-social-account::before {
@@ -13907,7 +14011,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	
 .g-profile-name h6 {font-size: 20px;line-height: 25px;}
 .g-profile-name span{font-size:17px;line-height: 26px;}
-div.gift_sent_popup img {     max-width: 270px; }
+div.gift_sent_pop img {     max-width: 270px; }
 
 
 
