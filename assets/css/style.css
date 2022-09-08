@@ -4216,7 +4216,7 @@ div.g-account-profile .profile-main-title img {
     float: left;
     border-radius: 10px;
     padding: 0 15px;
-	/* display:none; */
+	display:none;
 }
 .g-aacount-profile-content .fields-cont {
     width: 350px;
