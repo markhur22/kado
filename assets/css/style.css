@@ -5733,7 +5733,7 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .choose-gift-section {
-    border-top: 10px solid #FF385C;
+    
     font-family: 'Lato', sans-serif;
 }
 
@@ -5748,7 +5748,7 @@ div.g-signup-form .gt-btn-custom {
 
 .choose-gift-matt-img {
     position: relative;
-    margin-right: 155px;
+    margin-right: 0;    z-index: 9;
 }
 
 .choose-gift-matt-img img {
@@ -5759,7 +5759,7 @@ div.g-signup-form .gt-btn-custom {
     position: absolute;
     z-index: 1;
     top: 83px;
-    left: 50%;
+    left: 53%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -5785,7 +5785,12 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .choose-gift-logo {
-    margin-top: 65px;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top: 57px;
 }
 
 .choose-gift-body {
@@ -5798,7 +5803,7 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .choose-gift-body-header {
-    padding: 17px 38px 21px 44px;
+    padding: 17px 38px 17px 44px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -5809,7 +5814,8 @@ div.g-signup-form .gt-btn-custom {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 38px;    display: flex;
+    align-items: center;
     color: #000000;
     margin-bottom: 0;
 }
@@ -5880,11 +5886,17 @@ div.g-signup-form .gt-btn-custom {
     line-height: 17px;
     letter-spacing: 0.05em;
     color: #414141;
+    border-radius: 10px;
     text-decoration: none;
-    padding: 13px 14px 14px;
+    padding: 16px 8px 16px 16px;
     width: 100%;
     display: inline-block;
 }
+.choose-gift-categories-link.active:hover {
+    color: #FF385C;
+    background: #FFF4F6;
+}
+
 
 .choose-gift-categories-link.active {
     background: #FFF4F6;
@@ -5897,7 +5909,7 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .choose-gift-categories-link:hover svg path {
-    fill: #FF385C;
+    fill: #414141;
 }
 
 .choose-gift-categories-link.active svg path {
@@ -5906,7 +5918,7 @@ div.g-signup-form .gt-btn-custom {
 
 .choose-gift-filter-icon {
     width: 20px;
-    height: 19px;
+    height: auto;
     margin-right: 8px;
 }
 
@@ -5921,7 +5933,8 @@ div.g-signup-form .gt-btn-custom {
 .card.choose-gift-card.border-0 {
     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);
     border-radius: 15px;
-    margin-bottom: 31px;
+    margin-bottom: 0;
+    height: 100%;
 }
 
 .choose-gift-card-body {
@@ -5940,23 +5953,25 @@ div.g-signup-form .gt-btn-custom {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .choose-gift-card-discription {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #414141;
+    font-size: 12px;
+    line-height: 16px;
+    color: #414141;width:156px;
     margin-bottom: 0;
-    margin-right: 8px;
+    margin-right: 0;
+	padding:0 10px 0 0;
 }
 
 .choose-gift-card-btn {
     background: #F6F6F6;
     border: 2px solid #F6F6F6;
     border-radius: 30px;
+	letter-spacing:0;
     padding: 6px 16px;
     font-style: normal;
     font-weight: 700;
@@ -7938,7 +7953,17 @@ div.gift_sent_pop img{max-width:400px;}
 .gifts-items-header h3 svg {     float: left;     margin: 0px 15px 0 0; }
 .gifts-items-header h3 {     display: flex;     align-items: center; }
 .gifts-help-header svg{display:none;}
-
+.choose-gift-logo img {     width: 126px; }
+.choose-gift-section:after {     content: '';     position: absolute;     top: 0;     left: 0;     width: 100%;     border-top: 10px solid #FF385C; }
+.choose-gift-list {     position: relative;     z-index: 9; }
+.choose-gift-body-title svg{margin:0 25px 0 0;}
+.choose-gift-body-header a{text-decoration:none;letter-spacing:0;}
+.choose-gift-categories-link:hover {     background: #F6F6F6;    color: #414141; }
+.choose-gift-categories-collection .row > .col {     margin: 0 0 30px 0; }
+.choose-gift-item {     height: 100%;     float: left;     width: 100%; }
+.choose-gift-card-btn:hover {     background: #ff385c;     color: #fff; }
+.choose-gift-card-btn:hover svg path{fill: #fff; }
+.choose-gift-card-btn svg {     margin: 0 0 0 5px; }
 
 
 
