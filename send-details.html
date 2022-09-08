@@ -8,12 +8,9 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>Kado</title>
 
-    <!-- Link All CSS -->
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css"/>
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -33,7 +30,7 @@
     <!-- Gifts Details Section Start -->
     <section class="g-details-section">
         <div class="g-details-content gifts-content">
-            <div class="row g-0">
+            <div class="row g-0">  
                 <div class="col col-12 col-md-12 col-lg-3 col-xl-3">
                     
                     <div class="gifts-send-navbar">
@@ -295,7 +292,7 @@
                                                     <div class="aquarius-img">
                                                         <img src="assets/images/d-img-1.png" alt="aquarius" class="img-fluid">
                                                         <div class="aquarius-share-icon">
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#gift_sent_popup">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#gift_sent_pop">
                                                                 <svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M23.0769 23.1666H3.33333V3.42305H13.2051V0.602539H3.33333C1.76795 0.602539 0.512817 1.87177 0.512817 3.42305V23.1666C0.512817 24.7179 1.76795 25.9872 3.33333 25.9872H23.0769C24.6282 25.9872 25.8974 24.7179 25.8974 23.1666V13.2948H23.0769V23.1666ZM16.0256 0.602539V3.42305H21.0885L7.22564 17.2859L9.2141 19.2743L23.0769 5.41151V10.4743H25.8974V0.602539H16.0256Z" fill="#FF385C"/>
                                                                 </svg>
@@ -321,7 +318,7 @@
 														</div>
 													</div>
                                                     <div class="aquarius-share-icon">
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#gift_thankyou_popup"><!--img src="assets/images/share.png" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal"-->
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#gift_sent_pop"><!--img src="assets/images/share.png" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal"-->
 														<svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M23.0769 23.1666H3.33333V3.42305H13.2051V0.602539H3.33333C1.76795 0.602539 0.512817 1.87177 0.512817 3.42305V23.1666C0.512817 24.7179 1.76795 25.9872 3.33333 25.9872H23.0769C24.6282 25.9872 25.8974 24.7179 25.8974 23.1666V13.2948H23.0769V23.1666ZM16.0256 0.602539V3.42305H21.0885L7.22564 17.2859L9.2141 19.2743L23.0769 5.41151V10.4743H25.8974V0.602539H16.0256Z" fill="#FF385C"/>
                                                                 </svg>
@@ -391,7 +388,7 @@
                                                         <div class="aquarius-img">
                                                             <img src="assets/images/d-img-1.png" alt="aquarius" class="img-fluid auarius-first-img">
                                                             <div class="aquarius-share-icon">
-                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#gift_sent_popup">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#gift_sent_pop">
 																	<svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M23.0769 23.1666H3.33333V3.42305H13.2051V0.602539H3.33333C1.76795 0.602539 0.512817 1.87177 0.512817 3.42305V23.1666C0.512817 24.7179 1.76795 25.9872 3.33333 25.9872H23.0769C24.6282 25.9872 25.8974 24.7179 25.8974 23.1666V13.2948H23.0769V23.1666ZM16.0256 0.602539V3.42305H21.0885L7.22564 17.2859L9.2141 19.2743L23.0769 5.41151V10.4743H25.8974V0.602539H16.0256Z" fill="#FF385C"/>
                                                                 </svg>
@@ -540,16 +537,40 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade" id="gift_sent_popup" tabindex="-1" aria-labelledby="gift_sent_popup" aria-hidden="true">
-        <div class="modal-dialog gift-help-dialog">
-            <div class="modal-content ">
-                <div class="modal-body gift_sent_popup text-center">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					<img src="assets/images/d-img-1.png" alt="aquarius" class="img-fluid">
+
+    <div class="modal fade" id="gift_sent_pop" tabindex="-1" aria-labelledby="gift_sent_pop" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body gift_sent_pop text-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="wrap-modal-slider">
+                <div class="card_view_slide_main">
+                    <div class="card_view_main">
+                        <img src="assets/images/d-img-1.png" alt="aquarius" class="img-fluid">
+                    </div>
+                    <div class="card_view_main">
+                        <div class="birthady-david-img">
+                            <div class="birthday-inner">
+                                <div class="birthday-cont">
+                                    <div class="birthday-thankyou-img">
+                                        <img src="assets/images/thank-you.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="birthday-david-body text-center">
+                                        <h6>Thank you note from David!</h6>
+                                        <p>Thanks Brother! I aspire to be a person like you.</p>
+                                        <p>Thank you, brother, for always understanding when no one else could. I feel glad to be your sister.</p>
+                                        <p class="mb-0">You’re the best brother anyone could ask for. Thank you for everything dear brother.<span>😀</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 	
 	<!-- gift_thankyou_popup modal -->
 	<div class="modal fade" id="gift_thankyou_popup" tabindex="-1" aria-labelledby="gift_thankyou_popup" aria-hidden="true">
@@ -576,7 +597,6 @@
             </div>
         </div>
     </div>
-   
 </body>
 
 </html>
