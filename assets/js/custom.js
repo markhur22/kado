@@ -295,7 +295,7 @@ $(document).ready(function() {
 		$('.cardlist').show();
 	});
 	
-var sub_show = [];
+/* var sub_show = [];
 	
 	$('a.edit_pro').click(function(){
 		var p_C = $(this).attr('p_c');
@@ -381,7 +381,7 @@ var sub_show = [];
 			$('.pass-btn-sub').hide();
 		}
 	});
-	
+	 */
 	
     $(document).click(function(event) {
         var clickover = $(event.target);
