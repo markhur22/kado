@@ -3,7 +3,7 @@
 #paymentModal .cvv-hide-logo{background-image:none;}
 #paymentModal .payment-form-input{position:relative;}
 #paymentModal .payment-form-input span.field_icon{ position: absolute; right: 26px; height: max-content; top: 50%; bottom: 0; margin: auto; width: 24px; transform: translateY(-50%); }
-div#paymentModal .order-item{  -webkit-box-align: start; -moz-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
+div#paymentModal .order-item{  -webkit-box-align: center; -moz-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;}
 div#paymentModal .payment-form-input img { margin: -6px 0 0 8px; }
 div#paymentModal .payment-form-input .payment-card-no { margin: 0 0 6px 0; }
 
@@ -4725,7 +4725,7 @@ div.g-signup-form .gt-btn-custom {
     line-height: 19px;
     letter-spacing: 0.05em;
     color: #9B9B9B;
-    padding: 17px 20px;
+    
 }
 
 .payment-form-input .form-control {
@@ -4813,9 +4813,17 @@ div.g-signup-form .gt-btn-custom {
     font-weight: 700;
 	margin:0;
 }
+.gt-btn-custom.payment-btn {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.modal-content.congratulations-content {
+    border: none;
+}
 
 .order-item-pricelist {
-    padding: 19px 23px 29px 27px;
+    padding: 19px 23px 19px 27px;
     border-bottom: 1px solid #D2D2D2;
 }
 
@@ -8004,7 +8012,14 @@ div.gift_sent_pop img{max-width:400px;}
 .choose-gift-card-btn:hover {     background: #ff385c;     color: #fff; }
 .choose-gift-card-btn:hover svg path{fill: #fff; }
 .choose-gift-card-btn svg {     margin: 0 0 0 5px; }
-
+.gt-pay-for-gift-content h5.gifts-card-title {     margin: 0; }
+.gifts-card.pay-gift-card:hover {     border-color: #ff385c; }
+.gifts-card.pay-gift-card {     transition: 0.4s ease all; }
+.gt-select-payment-option img {     height: 20px; }
+.gt-select-payment-option .mastercard img {     height: 26px; }
+.payment-form-input .form-control{    border: 1px solid #d2d2d2;}
+.gt-btn-custom.payment-btn {     margin-top:0; }
+#paymentModal .payment-form-input span.field_icon::before {     color: #818181; }
 
 
 
@@ -11377,6 +11392,10 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 }
 
 @media (max-width: 767px) {
+	.modal-dialog.modal-xl.congratulations-modal {     left: 50%;     margin-left: 0;     transform: translateX(-50%); -webkit-transform: translateX(-50%);     width: 90%; }
+	.congratulations-modal-title {     padding: 0 15px; }
+	
+	
 #paymentModal .order-total-price span:last-child { font-size: 30px; line-height: 36px; }
 #paymentModal .order-total-price { padding: 20px 23px 27px 23px; }
 #paymentModal .order-item-name h4 { font-size: 18px; line-height: 22px; padding: 0; }
@@ -11384,7 +11403,7 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 div#paymentModal .order-item{position: relative;}
 #paymentModal .order-summary-title { padding: 17px 23px 21px; }
 #paymentModal .order-item { padding: 21px 23px 25px 23px; }
-#paymentModal .order-item-pricelist { padding: 25px 23px 33px 23px; }
+#paymentModal .order-item-pricelist { padding: 25px 23px 20px 23px; }
 #paymentModal .payment-btn { margin-top: 5px; }
 #paymentModal .payment-form-input { margin-bottom: 22px; }
 #paymentModal .gt-card-outer > .row > .col { margin-top: 0; }
@@ -12906,7 +12925,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .congratulations-modal-title h2 {
-        font-size: 40px;
+        font-size: 35px;
         line-height: 53px;
     }
 
@@ -13901,7 +13920,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media(max-width:599px) {
-#paymentModal .order-item-delet { right: 10px; }
+#paymentModal .order-item-delet { right: 22px; }
 .choose-gift-body-title { font-size: 20px; }
 .choose-gift-categories-collection .row > .col { padding: 0 10px; }
 .choose-gift-card-discription{width:100%;}
