@@ -9075,7 +9075,10 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 .card.gifts-card.pay-gift-card .gifts-card-btn .pay-footer-btn {
     padding: 19.5px 73px;
 }
-
+.gift-card-unpaid-btn a.btn.gt-btn-custom.gifts-card-view:hover {
+    background-color: #e3294b;
+    border-color: #e3294b;
+}
 /* new desktop changes starts here */
  
  
@@ -9824,6 +9827,34 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     }
     .profile-password p:first-child {
         width: 275px;
+    }
+    .pay-gift-card .gifts-card-img {
+        width: 220px;
+    }
+    .pay-gift-card .card-body.gifts-card-body {
+        width: calc(100% - 220px);
+    }
+    .pay-gift-card .gifts-card-body::after {
+        display: none;
+    }
+    .pay-gift-card .gifts-card-footer {
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
+        align-items: center;
+    }
+    .pay-gift-card .gifts-card-footer::after {
+        display: block;
+    }
+    .pay-gift-card .gifts-card-footer .gifts-card-btn {
+        width: 218px;
+    }
+    .card.gifts-card.pay-gift-card .gifts-card-btn .pay-footer-btn {
+        width: 100%;
+        height: 62px;
+    }
+    .pay-gift-content .pay-gift-card .gifts-card-footer {
+        margin-top: 20px;
     }
 }
 @media only screen and (max-width: 1130px) {
@@ -13767,6 +13798,12 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .gt-pay-for-gift-content.pay-gift-content .pay-gift-header {
         padding: 23px 18px 18px 22px;
     }
+    .pay-gift-card .card-body.gifts-card-body {
+        width: 100%;
+    }
+    .pay-gift-content .pay-gift-card .gifts-card-footer {
+        margin-top: 0px;
+    }
 }
 
 @media(max-width:599px) {
@@ -14244,7 +14281,20 @@ div.gift_sent_pop img {     max-width: 270px; }
     .gift-send-card-list .gifts-card-footer .gifts-card-btn {
         width: 100%;
     }
-	
+	.pay-gift-card .gifts-card-footer .gifts-card-btn {
+        width: 178px;
+    }
+    .card.gifts-card.pay-gift-card .gifts-card-btn .pay-footer-btn {
+        height: 52px;
+        padding: 0;
+    }
+    .gifts-sent-content .gifts-card-btn.gift-card-unpaid-btn .btn {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .pay-gift-content .gifts-items-header h3 {
+        font-size: 18px;
+    }
 }
 @media (max-width: 991px) and (orientation: landscape) {
 	.emporium-modal-body{    height: calc(100vh - 180px);}
