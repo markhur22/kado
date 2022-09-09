@@ -14116,6 +14116,8 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }
 @media(max-width:370px) {
+span.signup-social-account.border-line.login-email-account p { padding: 0 10px; }
+span.signup-social-account.border-line p { padding: 0 10px; } 
 span.signup-social-account.border-line p{font-size:15px;}
 .create-account-content .border-line.login-email-account::before { width: 100%; }	
 .signup-social-account::before {
