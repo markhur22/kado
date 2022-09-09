@@ -9079,6 +9079,22 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     background-color: #e3294b;
     border-color: #e3294b;
 }
+#paymentModal .modal-header {
+    padding: 28px 45px 27px 45px;
+    justify-content: space-between;
+}
+#paymentModal .payment-modal-content .btn-close {
+    width: 23px;
+    height: 23px;
+    right: 0;
+    margin: 0;
+}
+#paymentModal .modal-body {
+    padding: 53px 45px 54px;
+}
+.gt-select-payment-option .form-check.form-check-inline {
+    margin-right: 30px;
+}
 /* new desktop changes starts here */
  
  
@@ -13802,7 +13818,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         width: 100%;
     }
     .pay-gift-content .pay-gift-card .gifts-card-footer {
-        margin-top: 0px;
+        margin-top: s0px;
     }
 }
 
