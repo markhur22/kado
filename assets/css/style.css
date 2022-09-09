@@ -1,6 +1,13 @@
 /* *************** Deafult Start  ****************** */          
 
 
+span.signup-social-account.border-line::before { left: 0; width: 100%; }
+span.signup-social-account.border-line::after { opacity:0; }
+span.signup-social-account.border-line p { background: #fff; position: relative; padding: 0 22px; margin:0;}
+span.signup-social-account.border-line.login-email-account p { padding: 0 48px; }
+
+
+
 /* today changes */
 .birthady-david-img::before { position: absolute; content: ''; width: 100%; height: 113px; top: 0; left: 0; background-image: url(../images/top-leave.png); background-repeat: no-repeat; background-position: top; background-size: contain; border-radius:10px;}
 .birthady-david-img::after{ position: absolute; content: ''; width: 100%; height: 113px; bottom: 0; left: 0; background-image: url(../images/bottom-leave.png); background-repeat: no-repeat; background-position: bottom; background-size: contain;  border-radius:10px;}
@@ -4384,7 +4391,6 @@ div.g-account-profile .profile-main-title img {
     padding-top: 75px;
     padding-bottom: 132px;
     background: #F6F6F6;
-	height: 100vh;
 }
 
 .g-signup-Logo {
@@ -11232,7 +11238,13 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     bottom: 40px;}
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {      
+span.signup-social-account.border-line::before { left: 50%; width: 80%; transform: translateX(-50%); }
+span.signup-social-account.border-line p {padding: 0 22px; }
+span.signup-social-account.border-line.login-email-account p { padding: 0 22px; }
+.create-account-content .border-line.login-email-account::before { width: 65%; }
+
+	
 .g-signup-form .col.col-12 { padding: 0; }
 section.g-recover-gifty .g-signup-form .signup-form-btn { margin-top: 30px; white-space: nowrap; }
 section.g-recover-gifty .create-account-content { padding: 47px 27px 50px 27px; }
@@ -13823,6 +13835,11 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media (max-width: 480px) {
+span.signup-social-account.border-line p { padding: 0 14px; }
+span.signup-social-account.border-line.login-email-account p { padding: 0 14px; }	
+span.signup-social-account.border-line::before { width: 100%; }
+.create-account-content .border-line.login-email-account::before { width: 80%; }
+	
 .login-details strong { width: 100%; float: left; }
 	div.gift_sent_pop img {     max-width: 290px; }
 .birthady-david-img { height: auto; }
@@ -14099,6 +14116,8 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }
 @media(max-width:370px) {
+span.signup-social-account.border-line p{font-size:15px;}
+.create-account-content .border-line.login-email-account::before { width: 100%; }	
 .signup-social-account::before {
     width: 20px;
 }	
