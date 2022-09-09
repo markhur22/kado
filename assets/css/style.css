@@ -1,6 +1,8 @@
 /* *************** Deafult Start  ****************** */          
 
-
+#paymentModal .cvv-hide-logo{background-image:none;}
+#paymentModal .payment-form-input{position:relative;}
+#paymentModal .payment-form-input span.field_icon{ position: absolute; right: 26px; height: max-content; top: 50%; bottom: 0; margin: auto; width: 24px; transform: translateY(-50%); }
 div#paymentModal .order-item{  -webkit-box-align: start; -moz-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
 div#paymentModal .payment-form-input img { margin: -6px 0 0 8px; }
 div#paymentModal .payment-form-input .payment-card-no { margin: 0 0 6px 0; }
@@ -4664,7 +4666,7 @@ div.g-signup-form .gt-btn-custom {
 
 .gt-select-payment-option .form-check-label::after {
     content: "";
-    background-image: url(../images/radio-select-icon.png);
+    background-image: url(../images/yes.svg);
     position: absolute;
     width: 20px;
     height: 20px;
@@ -4744,7 +4746,7 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .visa-card {
-    background-image: url('../images/visa-icon.png');
+    background-image: url('../images/Visa_Inc._logo.svg');
     background-repeat: no-repeat;
     background-position: center right 22px;
 }
@@ -4872,6 +4874,7 @@ div.g-signup-form .gt-btn-custom {
     line-height: 19px;
     letter-spacing: 0.05em;
     color: #9B9B9B;
+	text-align:left;
 }
 
 /* Pay For Gift Final End */
@@ -12395,7 +12398,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .pay-gift-content .gifts-card-img img {
-        height: 230px;
+        height: auto;
     }
 
     .pay-gift-content .gifts-card-img {
@@ -14006,7 +14009,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media (max-width: 480px) {
-.pay-gift-content .gifts-card-img img{height:130px;}
+.pay-gift-content .gifts-card-img img{height:auto;}
 .choose-gift-categories-collection .row > .col { padding: 0 6px; }	
 	
 span.signup-social-account.border-line p { padding: 0 14px; }
