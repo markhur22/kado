@@ -195,27 +195,49 @@
                 </div>
                 <div class="col col-12 col-md-12 col-lg-9 col-xl-9">
                     <div class="gifts-sent-content gt-pay-for-gift-content pay-gift-content">
-                        <div class="dropdown header-dropdown gift-history-drop d-none d-lg-block">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="user_profile_txt">M</span>        
-                                <!-- <img src="assets/images/header-img.png" alt="" class="img-fluid">  -->
+                       <div class="dropdown header-dropdown gift-history-drop d-none d-lg-block">
+                            <button class="btn dropdown-toggle show" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                                    <span class="user_profile_txt">M</span>        
+                                    <!-- <img src="assets/images/header-img.png" alt="" class="img-fluid">  -->
                                          <span class="gt-section-description"> Hi,<b> Matthew</b></span>
                                     </button>
-                            <ul class="dropdown-menu user-profile" aria-labelledby="dropdownMenuButton1">
-
-                                <li>
-                                    <a class="dropdown-item" href="#"><img src="assets/images/question.png" alt="account" class="img-fluid"><span>Help</span> </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"><img src="assets/images/home.png" alt="account" class="img-fluid"><span>Home</span></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"><img src="assets/images/account.png" alt="account" class="img-fluid"><span>Account Details</span></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item profile-logout" href="#"><img src="assets/images/logout.png" alt="account" class="img-fluid"><span>Log out</span> </a>
-                                </li>
-                            </ul>
+                                    <ul class="dropdown-menu user-profile show" aria-labelledby="dropdownMenuButton1" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 82px);" data-popper-placement="bottom-start">
+                                
+                                        <li>
+                                            <a class="dropdown-item profile-logout" href="#">
+                                                <svg width="22" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4 5L5.41 6.41L3.83 8H12V10H3.83L5.41 11.58L4 13L0 9L4 5ZM16 2H9V0H16C17.1 0 18 0.9 18 2V16C18 17.1 17.1 18 16 18H9V16H16V2Z" fill="#414141"></path>
+                                                </svg>
+                                                <span>Log out</span> 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="gift-help.html">
+                                                <svg width="22" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 22.59V18.99C3.99 18.73 0 14.57 0 9.5C0 4.26 4.26 0 9.5 0C14.74 0 19 4.26 19 9.5C19 14.45 15.56 19.43 10.43 21.9L9 22.59ZM9.5 2C5.36 2 2 5.36 2 9.5C2 13.64 5.36 17 9.5 17H11V19.3C14.64 17 17 13.22 17 9.5C17 5.36 13.64 2 9.5 2ZM8.5 13.5H10.5V15.5H8.5V13.5ZM10.5 12H8.5C8.5 8.75 11.5 9 11.5 7C11.5 5.9 10.6 5 9.5 5C8.4 5 7.5 5.9 7.5 7H5.5C5.5 4.79 7.29 3 9.5 3C11.71 3 13.5 4.79 13.5 7C13.5 9.5 10.5 9.75 10.5 12Z" fill="#414141"></path>
+                                                </svg>                                            
+                                                <span>Help</span> 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="index.html">
+                                                <svg width="22" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 2.69L15 7.19V15H13V9H7V15H5V7.19L10 2.69ZM10 0L0 9H3V17H9V11H11V17H17V9H20L10 0Z" fill="#414141"></path>
+                                                </svg>
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="account-details.html">
+                                                <svg width="22" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 14V13.35C2 13.01 2.16 12.69 2.41 12.54C4.1 11.53 6.03 11 8 11C8.03 11 8.05 11 8.08 11.01C8.18 10.31 8.38 9.64 8.67 9.03C8.45 9.01 8.23 9 8 9C5.58 9 3.32 9.67 1.39 10.82C0.51 11.34 0 12.32 0 13.35V16H9.26C8.84 15.4 8.51 14.72 8.29 14H2Z" fill="#414141"></path>
+                                                    <path d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 2C9.1 2 10 2.9 10 4C10 5.1 9.1 6 8 6C6.9 6 6 5.1 6 4C6 2.9 6.9 2 8 2Z" fill="#414141"></path>
+                                                    <path d="M18.7499 12C18.7499 11.78 18.7199 11.58 18.6899 11.37L19.8299 10.36L18.8299 8.63L17.3799 9.12C17.0599 8.85 16.6999 8.64 16.2999 8.49L15.9999 7H13.9999L13.6999 8.49C13.2999 8.64 12.9399 8.85 12.6199 9.12L11.1699 8.63L10.1699 10.36L11.3099 11.37C11.2799 11.58 11.2499 11.78 11.2499 12C11.2499 12.22 11.2799 12.42 11.3099 12.63L10.1699 13.64L11.1699 15.37L12.6199 14.88C12.9399 15.15 13.2999 15.36 13.6999 15.51L13.9999 17H15.9999L16.2999 15.51C16.6999 15.36 17.0599 15.15 17.3799 14.88L18.8299 15.37L19.8299 13.64L18.6899 12.63C18.7199 12.42 18.7499 12.22 18.7499 12ZM14.9999 14C13.8999 14 12.9999 13.1 12.9999 12C12.9999 10.9 13.8999 10 14.9999 10C16.0999 10 16.9999 10.9 16.9999 12C16.9999 13.1 16.0999 14 14.9999 14Z" fill="#414141"></path>
+                                                </svg>
+                                                <span>Account Details</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                         </div>
                         <div class="gifts-list bg-white">
                             <div class="gifts-items p-0">
@@ -229,11 +251,11 @@
                                 <div class="gifts-card-list">
                                     <div class="card gifts-card pay-gift-card">
                                         <div class="card-img gifts-card-img">
-                                            <img src="assets/images/gcard-img1.png" class="card-img-top img-fluid w-100" alt="...">
+                                            <img src="assets/images/david.png" class="card-img-top img-fluid w-100" alt="...">
                                         </div>
                                         <div class="card-body gifts-card-body">
                                             <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
-                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.svg" alt="calendar" class="img-fluid"> 11 January 2021</h5>
                                             <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
                                         </div>
                                         <div class="gifts-card-footer">
@@ -244,11 +266,11 @@
                                     </div>
                                     <div class="card gifts-card pay-gift-card">
                                         <div class="card-img gifts-card-img">
-                                            <img src="assets/images/gcard-img2.png" class="card-img-top img-fluid" alt="...">
+                                            <img src="assets/images/anna.png" class="card-img-top img-fluid" alt="...">
                                         </div>
                                         <div class="card-body gifts-card-body">
                                             <h5 class="card-title gifts-card-mtitle">Anna A's Anniversary</h5>
-                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.svg" alt="calendar" class="img-fluid"> 11 January 2021</h5>
                                             <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
                                         </div>
                                         <div class="gifts-card-footer">
@@ -259,11 +281,11 @@
                                     </div>
                                     <div class="card gifts-card pay-gift-card">
                                         <div class="card-img gifts-card-img">
-                                            <img src="assets/images/gcard-img3.png" class="card-img-top img-fluid" alt="...">
+                                            <img src="assets/images/ronnie.png" class="card-img-top img-fluid" alt="...">
                                         </div>
                                         <div class="card-body gifts-card-body">
                                             <h5 class="card-title gifts-card-mtitle">Ronnie Kintanar's Promotion</h5>
-                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.svg" alt="calendar" class="img-fluid"> 11 January 2021</h5>
                                             <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
                                         </div>
                                         <div class="gifts-card-footer">
@@ -274,11 +296,11 @@
                                     </div>
                                     <div class="card gifts-card pay-gift-card">
                                         <div class="card-img gifts-card-img">
-                                            <img src="assets/images/gcard-img4.png" class="card-img-top img-fluid" alt="...">
+                                            <img src="assets/images/danis-leave.png" class="card-img-top img-fluid" alt="...">
                                         </div>
                                         <div class="card-body gifts-card-body">
                                             <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
-                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.svg" alt="calendar" class="img-fluid"> 11 January 2021</h5>
                                             <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
                                         </div>
                                         <div class="gifts-card-footer">
@@ -289,11 +311,11 @@
                                     </div>
                                     <div class="card gifts-card pay-gift-card">
                                         <div class="card-img gifts-card-img">
-                                            <img src="assets/images/pay_5.png" class="card-img-top img-fluid" alt="...">
+                                            <img src="assets/images/sum.png" class="card-img-top img-fluid" alt="...">
                                         </div>
                                         <div class="card-body gifts-card-body">
                                             <h5 class="card-title gifts-card-mtitle">David Lee's Birthday</h5>
-                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.png" alt="calendar" class="img-fluid"> 11 January 2021</h5>
+                                            <h5 class="card-title gifts-card-subtitle"><img src="assets/images/calendar.svg" alt="calendar" class="img-fluid"> 11 January 2021</h5>
                                             <h5 class="gifts-card-title">DEUX Cookie Dough</h5>
                                         </div>
                                         <div class="gifts-card-footer">
@@ -350,37 +372,37 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="">
+                                    <div class="gt-card-outer">
                                         <p class="gt-card-number-edit"> </p>
 
 
                                         <form class="row g-3">
-                                            <div class="col-md-12">
+                                            <div class="col col-md-12">
                                                 <div class="payment-form-input">
                                                     <label for="inputEmail4" class="form-label payment-card-no"><span>Card Number</span> <img src="assets/images/edit.png" alt="edit" class="img-fluid"></label>
                                                     <p class="payment-digit-suggest">Enter the 16-digit card number on the card</p>
                                                     <input type="number" class="form-control visa-card" id="inputEmail4" placeholder="2412751234123456">
                                                 </div>
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col col-12">
                                                 <div class="payment-form-input">
                                                     <label for="inputAddress" class="form-label">Full Name</label>
                                                     <input type="text" class="form-control" id="inputAddress" placeholder="Enter full name">
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col col-6 wd-full">
                                                 <div class="payment-form-input">
                                                     <label for="inputAddress2" class="form-label">Expiration Date</label>
                                                     <input type="number" class="form-control" id="inputAddress2" placeholder="12/2021">
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col col-6 wd-full">
                                                 <div class="payment-form-input">
                                                     <label for="inputCity" class="form-label">CVV Number</label>
                                                     <input type="number" class="form-control cvv-hide-logo" id="inputCity" placeholder="****">
                                                 </div>
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col col-12">
                                                 <button type="button" class="btn btn-primary w-100 gt-btn-custom payment-btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#congratulationsModal">
                                                     <img src="assets/images/pay-img.png" alt="" class="img-fluid">
                                                      Pay  $25
