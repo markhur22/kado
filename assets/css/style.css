@@ -1,6 +1,11 @@
 /* *************** Deafult Start  ****************** */          
 
 
+div#paymentModal .order-item{  -webkit-box-align: start; -moz-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;}
+div#paymentModal .payment-form-input img { margin: -6px 0 0 8px; }
+div#paymentModal .payment-form-input .payment-card-no { margin: 0 0 6px 0; }
+
+
 span.signup-social-account.border-line::before { left: 0; width: 100%; }
 span.signup-social-account.border-line::after { opacity:0; }
 span.signup-social-account.border-line p { background: #fff; position: relative; padding: 0 22px; margin:0;}
@@ -4700,6 +4705,7 @@ div.g-signup-form .gt-btn-custom {
     font-size: 18px;
     line-height: 22px;
     color: #000000;
+	margin:0 0 10px 0;
 }
 
 .payment-digit-suggest {
@@ -4707,7 +4713,8 @@ div.g-signup-form .gt-btn-custom {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #818181;
+    color: #414141;
+	margin: 0 0 16px 0;
 }
 
 .payment-form-input .form-control::placeholder {
@@ -4802,6 +4809,7 @@ div.g-signup-form .gt-btn-custom {
 
 .order-item-name h4:last-child {
     font-weight: 700;
+	margin:0;
 }
 
 .order-item-pricelist {
@@ -4821,7 +4829,7 @@ div.g-signup-form .gt-btn-custom {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #7E7E7E;
+    color: #414141;
 }
 
 .order-price span:last-child {
@@ -4854,9 +4862,17 @@ div.g-signup-form .gt-btn-custom {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #7E7E7E;
+    color: #414141;
 }
-
+.payment-form-input .form-control::placeholder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #9B9B9B;
+}
 
 /* Pay For Gift Final End */
 
@@ -6017,7 +6033,7 @@ div.g-signup-form .gt-btn-custom {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 101px 0 145px;
+    padding: 101px 0 142px;
 }
 
 .swap-title {
@@ -9080,7 +9096,7 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     border-color: #e3294b;
 }
 #paymentModal .modal-header {
-    padding: 28px 45px 27px 45px;
+    padding: 30px 45px 25px 45px;
     justify-content: space-between;
 }
 #paymentModal .payment-modal-content .btn-close {
@@ -9400,6 +9416,9 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 }
 
 @media (max-width: 1199px) {
+#paymentModal .gt-select-payment-content{width:100%;}
+
+
 .choose-gift-categories-list { padding: 13px 12px 19px; }
 .choose-gift-card-btn{white-space: nowrap;}
 .choose-gift-card-body { padding: 12px 15px 26px 15px; }
@@ -9919,6 +9938,19 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 }
 
 @media (max-width: 991px) {
+#paymentModal .order-item-name h4 { font-size: 16px; line-height: 16px; padding: 0 6px 0 0; }
+#paymentModal .gt-payment-content > .row > .col { margin-top: 0; }
+#paymentModal .payment-btn{margin-top:0;}
+#paymentModal .gt-select-payment-option{margin-bottom:40px;}
+#paymentModal .order-total-price span:last-child { font-size: 26px; line-height: 32px; }
+#paymentModal .order-item-pricelist {padding: 20px 15px 20px 15px;}
+#paymentModal .order-item{padding: 20px 15px 20px 15px;}
+#paymentModal .order-item-img { margin-right: 10px; }
+#paymentModal .order-total-price{ padding: 20px 15px 20px 15px; }
+#paymentModal .order-summary-title { padding: 17px 15px 21px; }
+#paymentModal .modal-header { padding: 24px 20px 17px 20px; }
+#paymentModal .modal-body { padding: 31px 20px 31px; }
+#paymentModal .payment-modal-dialog { max-width: 95%; }
 .choose-gift-body-title svg { margin: 0 15px 0 0; }
 
 	.gift_thankyou_popup .birthady-david-img{margin:0;}
@@ -11342,6 +11374,24 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 }
 
 @media (max-width: 767px) {
+#paymentModal .order-total-price span:last-child { font-size: 30px; line-height: 36px; }
+#paymentModal .order-total-price { padding: 20px 23px 27px 23px; }
+#paymentModal .order-item-name h4 { font-size: 18px; line-height: 22px; padding: 0; }
+#paymentModal .order-item-delet { position: absolute; top: 50%; transform: translateY(-50%); right: 27px; }
+div#paymentModal .order-item{position: relative;}
+#paymentModal .order-summary-title { padding: 17px 23px 21px; }
+#paymentModal .order-item { padding: 21px 23px 25px 23px; }
+#paymentModal .order-item-pricelist { padding: 25px 23px 33px 23px; }
+#paymentModal .payment-btn { margin-top: 5px; }
+#paymentModal .payment-form-input { margin-bottom: 22px; }
+#paymentModal .gt-card-outer > .row > .col { margin-top: 0; }
+#paymentModal .payment-form-input .form-control { padding: 11.5px 18px; }
+#paymentModal .modal-body { padding: 31px 27px 31px; }
+#paymentModal .gt-select-payment-option { margin-bottom: 25px; }
+#paymentModal .gt-select-payment-option { margin-bottom: 27px; }
+#paymentModal .modal-header { padding: 24px 25px 17px 25px; }	
+	
+	
 .choose-gift-card-discription{margin-bottom:15px; padding:0;}
 .choose-gift-categories-collection { 	padding: 0px 24px 0 20px; }
 .choose-gift-card-text { text-align: center; }
@@ -12345,7 +12395,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .pay-gift-content .gifts-card-img img {
-        height: 130px;
+        height: 230px;
     }
 
     .pay-gift-content .gifts-card-img {
@@ -13843,11 +13893,12 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         width: 100%;
     }
     .pay-gift-content .pay-gift-card .gifts-card-footer {
-        margin-top: s0px;
+        margin-top: 0;
     }
 }
 
 @media(max-width:599px) {
+#paymentModal .order-item-delet { right: 10px; }
 .choose-gift-body-title { font-size: 20px; }
 .choose-gift-categories-collection .row > .col { padding: 0 10px; }
 .choose-gift-card-discription{width:100%;}
@@ -13955,6 +14006,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media (max-width: 480px) {
+.pay-gift-content .gifts-card-img img{height:130px;}
 .choose-gift-categories-collection .row > .col { padding: 0 6px; }	
 	
 span.signup-social-account.border-line p { padding: 0 14px; }
@@ -14241,6 +14293,10 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }
 @media(max-width:370px) {
+#paymentModal .gt-card-outer > .row > .wd-full { width: 100%; }	
+#paymentModal .gt-select-payment-option .form-check-label { width: 70px; }
+#paymentModal .gt-select-payment-option .form-check.form-check-inline { margin-right: 10px; }
+
 span.signup-social-account.border-line.login-email-account p { padding: 0 10px; }
 span.signup-social-account.border-line p { padding: 0 10px; } 
 span.signup-social-account.border-line p{font-size:15px;}
