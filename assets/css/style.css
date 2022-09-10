@@ -2455,9 +2455,9 @@ a.gt-send-gift-link:hover svg path {
 
 .send-flexi-header .btn-close {
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
-    position: absolute;
-    top: 35px;
-    right: 53px;
+          position: absolute;
+    top: 25px;
+    right: 40px;
 }
 
 .send-flexi-body {
@@ -8046,6 +8046,14 @@ animation: myAnim 1.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal no
 .gt-open-gift-img img {     display: inline-block; }
 .gt-open-gift-img {     text-align: center; }
 .swap-img .slick-slide{padding:5px;}
+.send-flexi-dialog .modal-content{border-top: 10px solid #FF385C;border-radius: 10px 10px 0px 0px;}
+.draggable div.slick-slide {     cursor: pointer; }
+
+
+
+
+
+
 
 
 
@@ -11456,6 +11464,11 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 }
 
 @media (max-width: 767px) {
+	.modal-header.send-flexi-header {     padding: 25px 25px; }
+	.send-flexi-price label{width: 100%;padding:0 6px;}
+	.send-flexi-price{    width: 100%;     justify-content: space-between;}
+	.send-flexi-header .btn-close{    right: 20px;}
+	
 	
 	.gt-open-gift-btn img{    margin-right: 13px;}
 	
@@ -13090,7 +13103,8 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .send-flexi-dialog {
-        width: auto;
+        width: 90%;
+		    margin: 10px auto;
     }
 
     .send-flexi-body {
@@ -14432,6 +14446,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }
 @media(max-width:370px) {
+	.send-flexi-price label{padding:0;}
 #paymentModal .gt-card-outer > .row > .wd-full { width: 100%; }	
 #paymentModal .gt-select-payment-option .form-check-label { width: 70px; }
 #paymentModal .gt-select-payment-option .form-check.form-check-inline { margin-right: 10px; }
