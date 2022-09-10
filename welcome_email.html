@@ -5,7 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
 
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
@@ -13,28 +13,46 @@
         />
 
         <style>
-            * {margin: 0;padding: 0;box-sizing:border-box;}
-			@media only screen and (max-width:600px)
-			{
-				.email_header{padding:0 20px !Important;}
-				.email_header p{    font-size: 20px !important;line-height: 29px !important;}
-				.email_header h1{    font-size: 30px!important;     line-height: 38px !important;}
-				table.listing_outer {     padding: 32px 20px 0 20px !important; }
-				.email_button{    padding: 12px 22px !important;}
-				.email_outer{    margin: 50px 0 !important;}
-			}
-			
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            @media only screen and (max-width: 600px) {
+				table.footer {     margin: 10px 0 0 0 !important; }
+                .email_header {
+                    padding: 30px 20px !important;
+                }
+                .email_header p {
+                        font-size: 18px !important;
+						line-height: 26px !important;
+                }
+                .email_header h1 {
+                    font-size: 30px !important;
+                    line-height: 38px !important;
+                }
+                table.listing_outer {
+                    padding: 32px 20px 0 20px !important;
+                }
+                .email_button {
+                    padding: 12px 22px !important;
+                }
+                .email_outer {
+                    margin: 50px 0 !important;
+                }
+				table.welcome_logo_main{padding: 35px 0 !important;}
+            }
         </style>
     </head>
     <body>
         <div style="font-family: 'Lato', sans-serif; float: left; width: 100%; background: #fdf4f6;">
-            <div style="margin: 0 auto; width: 719px; max-width: 100%; padding:0 15px;">
+            <div style="margin: 0 auto; width: 719px; max-width: 100%; padding: 0 15px;">
                 <div class="email_outer" style="margin: 81px 0 100px 0; background: #ffffff; border: 1px solid #ebebeb; box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.06); border-radius: 15px; border-top: 10px solid #ff385c;">
                     <table cellpadding="0" cellspacing="0" width="100%;" border="0">
                         <tbody>
                             <tr>
                                 <td>
-                                    <table cellpadding="0" cellspacing="0" border="0" style="text-align: center; padding: 35px 0;" width="100%;">
+                                    <table class="welcome_logo_main" cellpadding="0" cellspacing="0" border="0" style="text-align: center; padding: 35px 0 50px 0;" width="100%;">
                                         <tbody>
                                             <tr>
                                                 <td>
@@ -47,76 +65,85 @@
                             </tr>
                             <tr>
                                 <td>
-									<table class="email_header" cellpadding="0" cellspacing="0" border="0" style="padding: 0 50px 0 51px;" width="100%;">
-										<tr>
-											<td>
-											<h1 style="font-size: 36px; line-height: 48px; font-family: 'PT Serif'; margin: 0 0 17px 0; display: inline-block; width: 100%;">Hi Matt,</h1>
-											<p style="color: #414141; font-size: 24px; line-height: 35px; margin: 0 0 24px 0; display: inline-block; width: 100%;">
-												Dennis Jap has sent you a gift! You can unwrap your gift and find out more below.
-											</p>
-											<a class="email_button" href="javascript:void(0);"
-												style="
-													background: #ff385c;
-													border: 2px solid #ff385c;
-													font-weight: 700;
-													text-align: center;
-													letter-spacing: 0.05em;
-													font-size: 18px;
-													line-height: 25px;
-													padding: 15px 34px;
-													color: #ffffff;
-													border-radius: 50px;
-													text-decoration: none;
-													display: inline-block;
-												"
-											>
-												<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; margin: 5px 10px 0 0; vertical-align: bottom;">
-													<path
-														d="M20.9392 6.09375H18.6706C18.785 5.77891 18.8579 5.43359 18.8579 5.07812C18.8579 3.39219 17.4634 2.03125 15.7359 2.03125C14.6431 2.03125 13.6961 2.57969 13.1342 3.40234L12.6138 4.08281L12.0935 3.39219C11.5315 2.57969 10.5845 2.03125 9.49178 2.03125C7.76425 2.03125 6.36974 3.39219 6.36974 5.07812C6.36974 5.43359 6.44259 5.77891 6.55707 6.09375H4.28839C3.13323 6.09375 2.21744 6.99766 2.21744 8.125L2.20703 19.2969C2.20703 20.4242 3.13323 21.3281 4.28839 21.3281H20.9392C22.0944 21.3281 23.0206 20.4242 23.0206 19.2969V8.125C23.0206 6.99766 22.0944 6.09375 20.9392 6.09375ZM15.7359 4.0625C16.3082 4.0625 16.7765 4.51953 16.7765 5.07812C16.7765 5.63672 16.3082 6.09375 15.7359 6.09375C15.1635 6.09375 14.6952 5.63672 14.6952 5.07812C14.6952 4.51953 15.1635 4.0625 15.7359 4.0625ZM9.49178 4.0625C10.0642 4.0625 10.5325 4.51953 10.5325 5.07812C10.5325 5.63672 10.0642 6.09375 9.49178 6.09375C8.91941 6.09375 8.4511 5.63672 8.4511 5.07812C8.4511 4.51953 8.91941 4.0625 9.49178 4.0625ZM20.9392 19.2969H4.28839V17.2656H20.9392V19.2969ZM20.9392 14.2188H4.28839V8.125H9.57503L7.41042 10.9992L9.09632 12.1875L12.6138 7.51562L16.1313 12.1875L17.8172 10.9992L15.6526 8.125H20.9392V14.2188Z"
-														fill="white"
-													></path>
-												</svg>
-												Unwrap Gift
-											</a>
-											</td>
-										</tr>
-									</table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table class="listing_outer" cellpadding="0" cellspacing="0" border="0" width="100%;" style="padding: 52px 20px 0 51px;">
+                                    <table class="email_header" cellpadding="0" cellspacing="0" border="0" style="padding: 0 50px 43px 51px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);" width="100%;">
                                         <tbody>
-                                            <tr style="">
-                                                <td style="width: 94px;">
-                                                    <img src="assets/images/bright.png" alt="list" class="img-fluid" style="width: 94px;" />
-                                                </td>
-                                                <td style="padding: 0 0 0 23px;">
-                                                    <h5 style="font-size: 14px; line-height: 17px;letter-spacing: 0.1em; color: #ff385c; margin: 0 0 3px 0;">Your Gift</h5>
-                                                    <h4 style="font-weight: 700; font-size: 24px; line-height: 29px; color: #000000; margin: 0 0 9px 0;">Brightland Drink</h4>
-                                                    <p style="font-weight: 700; font-size: 18px; line-height: 22px; color: #414141;">Made by Hu Kitchen</p>
-                                                </td>
-                                            </tr>
-											<tr>
-												<td style="height: 23px;"></td>
-											</tr>
                                             <tr>
-                                                <td style="width: 94px;">
-                                                    <img src="assets/images/card_email.png" alt="list" class="img-fluid" style="width: 94px;" />
-                                                </td>
-                                                <td style="padding: 0 0 0 23px;">
-                                                    <h5 style="font-size: 14px; line-height: 17px;letter-spacing: 0.1em; color: #ff385c; margin: 0 0 3px 0;">Message</h5>
-                                                    <h4 style="font-weight: 700; font-size: 24px; line-height: 29px; color: #000000; margin: 0 0 9px 0;">Birthday</h4>
-                                                    <p style="color: #414141;font-weight: 400;font-size: 16px;line-height: 22px;">Happy 30th Birthday Matt! Hope you have a great day and can enjoy this gift that I bought you, you deserve it! Look forward to seeing you soon.</p>
+                                                <td>
+                                                    <h1 style="font-weight: 400; font-size: 30px; line-height: 40px; margin: 0 0 18px 0; color: #000000; font-family: 'PT Serif', serif;">Welcome Matt!</h1>
+                                                    <p style="color: #414141; margin: 0 0 20px 0; display: inline-block; width: 100%; font-weight: 400; font-size: 20px; line-height: 28px;">
+                                                        Giftly is a simple, seamless way to send a thoughtful gift and card for any occasion! From birthdays to work anniversaries, friends, family or loved ones, our mission is to help you
+                                                        spread joy and generosity far and wide.
+                                                    </p>
+                                                    <p style="color: #414141; margin: 0 0 20px 0; display: inline-block; width: 100%; font-weight: 400; font-size: 20px; line-height: 28px;">
+                                                        We’re excited to see who you’ll delight next. You can even get started with a gift today.
+                                                    </p>
+                                                    <p style="font-size: 24px; line-height: 29px; color: #000000; margin: 0 0 34px 0;">Gift well!</p>
+                                                    <p style="font-weight: 600; font-size: 22px; line-height: 26px; color: #000; margin: 0 0 14px 0;">
+                                                        The Kado Team
+                                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: top; margin: 0 0 0 8px;">
+                                                            <path
+                                                                d="M20.8142 6.71875H18.5456C18.66 6.40391 18.7329 6.05859 18.7329 5.70312C18.7329 4.01719 17.3384 2.65625 15.6109 2.65625C14.5181 2.65625 13.5711 3.20469 13.0092 4.02734L12.4888 4.70781L11.9685 4.01719C11.4065 3.20469 10.4595 2.65625 9.36678 2.65625C7.63925 2.65625 6.24474 4.01719 6.24474 5.70312C6.24474 6.05859 6.31759 6.40391 6.43207 6.71875H4.16339C3.00823 6.71875 2.09244 7.62266 2.09244 8.75L2.08203 19.9219C2.08203 21.0492 3.00823 21.9531 4.16339 21.9531H20.8142C21.9694 21.9531 22.8956 21.0492 22.8956 19.9219V8.75C22.8956 7.62266 21.9694 6.71875 20.8142 6.71875ZM15.6109 4.6875C16.1832 4.6875 16.6515 5.14453 16.6515 5.70312C16.6515 6.26172 16.1832 6.71875 15.6109 6.71875C15.0385 6.71875 14.5702 6.26172 14.5702 5.70312C14.5702 5.14453 15.0385 4.6875 15.6109 4.6875ZM9.36678 4.6875C9.93915 4.6875 10.4075 5.14453 10.4075 5.70312C10.4075 6.26172 9.93915 6.71875 9.36678 6.71875C8.79441 6.71875 8.3261 6.26172 8.3261 5.70312C8.3261 5.14453 8.79441 4.6875 9.36678 4.6875ZM20.8142 19.9219H4.16339V17.8906H20.8142V19.9219ZM20.8142 14.8438H4.16339V8.75H9.45003L7.28542 11.6242L8.97132 12.8125L12.4888 8.14062L16.0063 12.8125L17.6922 11.6242L15.5276 8.75H20.8142V14.8438Z"
+                                                                fill="#FF385C"
+                                                            ></path>
+                                                        </svg>
+                                                    </p>
+                                                    <p style="font-size: 20px; line-height: 28px; color: #414141;">P.S. If it helps we’ve attached some commonly asked questions below!</p>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <table class="email_header" cellpadding="0" cellspacing="0" border="0" style="padding: 51px 50px 0 51px;" width="100%;">
+										<tbody>
+											<tr>
+												<td style="padding: 0 0 30px 0;">
+													<h2 style="font-weight: 600; font-size: 22px; line-height: 26px; margin: 0 0 13px 0; color: #414141;">How do I send a gift?</h2>
+													<p style="color: #414141; font-size: 16px; line-height: 26px; margin: 0 0 15px 0;">
+														You can send a gift at our Gift Portal here. You’ll first be prompted to choose a gift from our curated Gift Emporium, before picking an e-card and writing them a message.
+													</p>
+													<p style="color: #414141; font-size: 16px; line-height: 26px;">
+														You don’t need your recipient’s address in order to send the gift - you’ll receive a link which you can send to your lucky recipient, or we can send it on your behalf. Within this link, they’ll be able to see your
+														message and e-card, confirm your gift (including picking any colours, sizes or types) or swap it for something of equal or lesser value. They’ll also confirm their address and shipping details.
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 0 0 30px 0;">
+													<h2 style="font-weight: 600; font-size: 22px; line-height: 26px; margin: 0 0 13px 0; color: #414141;">What if my recipient wants to swap their gift?</h2>
+													<p style="color: #414141; font-size: 16px; line-height: 26px;">
+														Your recipient is always able to swap their gift out for another gift of equal or lesser value. This means you have the best of both worlds - a thoughtful, hand-selected gift, with the flexibility for the recipient of swapping into our curated collection. 
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 0 0 30px 0;">
+													<h2 style="font-weight: 600; font-size: 22px; line-height: 26px; margin: 0 0 13px 0; color: #414141;">Can you help me pick a gift?</h2>
+													<p style="color: #414141; font-size: 16px; line-height: 26px;">
+														Yes! You can use our Gift Finder to help find the perfect gift for anyone.
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 0 0 0 0;">
+													<h2 style="font-weight: 600; font-size: 22px; line-height: 26px; margin: 0 0 13px 0; color: #414141;">When do I pay for the gift?</h2>
+													<p style="color: #414141; font-size: 16px; line-height: 26px;">
+														You’ll only pay once your recipient has accepted your gift. We’ll email you a link, together with their thank you note.
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 50px 0 0 0; text-align:center;">
+													<a href="javascript:void(0);" style="background: #FF385C;     border: 2px solid #FF385C;     width: 207px;     display: inline-block;     height: 51px;     max-width: 100%;     font-weight: 700;     font-size: 18px;     letter-spacing: 0.05em;     line-height: 48px;     color: #fff;     text-decoration: none;     border-radius: 50px;">Get Started</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
-                                    <table cellpadding="0" cellspacing="0" border="0" width="100%;" style="background: #000; margin: 45px 0 0 0; text-align: center; padding: 49px 0 56px 0; color: #fff; border-radius: 0px 0px 15px 15px;">
+                                    <table class="footer" cellpadding="0" cellspacing="0" border="0" width="100%;" style="background: #000; margin: 45px 0 0 0; text-align: center; padding: 49px 0 56px 0; color: #fff; border-radius: 0px 0px 15px 15px;">
                                         <tbody>
                                             <tr>
                                                 <td style="padding: 0 0 30px 0;">
@@ -125,7 +152,7 @@
                                             </tr>
                                             <tr>
                                                 <td style="padding: 0 0 20px 0;">
-                                                    <a style="margin:0 8px;" href="javascript:void(0);">
+                                                    <a style="margin: 0 8px;" href="javascript:void(0);">
                                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M4.2151 8.5216H5.96895V15.7419C5.96895 15.8845 6.08446 16 6.22702 16H9.20075C9.3433 16 9.45881 15.8845 9.45881 15.7419V8.55561H11.475C11.6061 8.55561 11.7164 8.45724 11.7314 8.32702L12.0376 5.66885C12.046 5.59572 12.0228 5.52248 11.9739 5.46761C11.9249 5.4127 11.8548 5.38126 11.7813 5.38126H9.45892V3.71499C9.45892 3.2127 9.72937 2.95799 10.2628 2.95799C10.3389 2.95799 11.7813 2.95799 11.7813 2.95799C11.9238 2.95799 12.0394 2.84243 12.0394 2.69992V0.259974C12.0394 0.117419 11.9238 0.00190968 11.7813 0.00190968H9.68864C9.67388 0.0011871 9.64111 0 9.5928 0C9.2297 0 7.96761 0.0712774 6.97066 0.988439C5.86604 2.0048 6.01959 3.22173 6.05628 3.43272V5.38121H4.2151C4.07254 5.38121 3.95703 5.49672 3.95703 5.63928V8.26348C3.95703 8.40604 4.07254 8.5216 4.2151 8.5216Z"
@@ -133,7 +160,7 @@
                                                             ></path>
                                                         </svg>
                                                     </a>
-                                                    <a style="margin:0 8px;" href="javascript:void(0);">
+                                                    <a style="margin: 0 8px;" href="javascript:void(0);">
                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <g clip-path="url(#clip0_2206_1627)">
                                                                 <path
@@ -148,7 +175,7 @@
                                                             </defs>
                                                         </svg>
                                                     </a>
-                                                    <a style="margin:0 8px;" href="javascript:void(0);">
+                                                    <a style="margin: 0 8px;" href="javascript:void(0);">
                                                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <g clip-path="url(#clip0_2206_1628)">
                                                                 <path
@@ -163,7 +190,7 @@
                                                             </defs>
                                                         </svg>
                                                     </a>
-                                                    <a style="margin:0 8px;" href="javascript:void(0);">
+                                                    <a style="margin: 0 8px;" href="javascript:void(0);">
                                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M19.2205 15.8293C18.4985 16.6875 17.1656 17.0376 14.6201 17.0376H5.37974C2.77594 17.0376 1.42045 16.665 0.701226 15.7513C0 14.8604 0 13.5479 0 11.7312V8.26869C0 4.74927 0.832 2.96237 5.37974 2.96237H14.6201C16.8276 2.96237 18.0508 3.27127 18.8422 4.02863C19.6537 4.80527 20 6.07334 20 8.26869V11.7312C20 13.647 19.9457 14.9673 19.2205 15.8293ZM12.8401 9.52192L8.64406 7.32895C8.55026 7.27992 8.44768 7.2556 8.34523 7.2556C8.22923 7.2556 8.11348 7.28682 8.01097 7.34889C7.81793 7.46585 7.70006 7.67508 7.70006 7.90076V12.2726C7.70006 12.4979 7.81761 12.707 8.01026 12.824C8.20297 12.941 8.44265 12.949 8.64258 12.8451L12.8386 10.6663C13.0521 10.5555 13.1861 10.3351 13.1865 10.0946C13.1867 9.85398 13.0532 9.63327 12.8401 9.52192Z"
@@ -171,7 +198,7 @@
                                                             ></path>
                                                         </svg>
                                                     </a>
-                                                    <a style="margin:0 8px;" href="javascript:void(0);">
+                                                    <a style="margin: 0 8px;" href="javascript:void(0);">
                                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <g clip-path="url(#clip0_2206_1630)">
                                                                 <path
