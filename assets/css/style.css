@@ -5606,7 +5606,7 @@ div.g-signup-form .gt-btn-custom {
 .congratulations-top-img {
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .congratulations-right-img {
@@ -9129,6 +9129,34 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 .gt-select-payment-option .form-check.form-check-inline {
     margin-right: 30px;
 }
+.congratulations-left-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.congratulations-center-img {
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: none;
+    width: 320px;
+    margin: auto;
+}
+.congratulations-imgs {
+    position: relative;
+    margin-bottom: 6px;
+    padding-top: 139px;
+}
+
+.congratulations-right-img .mob_rib {
+    display: none;
+}
+.congratulations-left-img .mob_rib {
+    display: none;
+}
+.congratulations-top-img .mob_rib {
+    display: none;
+}
 /* new desktop changes starts here */
  
  
@@ -11357,6 +11385,14 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
         width: 100%;
         float: left;
     }
+    .congratulations-left-img {
+        width: 180px;
+        z-index: 9;
+    }
+    .congratulations-right-img {
+        width: 180px;
+        z-index: 9;
+    }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12921,7 +12957,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .congratulations-imgs {
-        margin-bottom: 130px;
+        margin-bottom: 6px;
     }
 
     .congratulations-modal-title h2 {
@@ -12935,14 +12971,14 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         margin-bottom: 35px;
     }
 
-    .congratulations-right-img img,
-    .congratulations-left-img img {
-        width: 157px;
+    .congratulations-right-img img, .congratulations-left-img img {
+        width: 100%;
         max-width: 100%;
     }
 
     .congratulations-center-img {
-        top: 90px;
+        top: 0px;
+        width: 306px;
     }
 
     .first-send-gift-list-content {
@@ -14024,6 +14060,35 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     div#gift_sent_pop .modal-dialog.modal-dialog-centered {
         width: 80%;
         margin: auto;
+    }
+    
+    .congratulations-right-img .mob_rib, .congratulations-left-img .mob_rib, .congratulations-top-img .mob_rib {
+        display: block;
+    }
+    .congratulations-right-img img, .congratulations-left-img img, .congratulations-top-img img  {
+        display: none;
+    }
+    .congratulations-left-img {
+        width: 95px;
+    }
+    .congratulations-right-img {
+        width: 95px;
+    }
+    .congratulations-imgs {
+        padding-top: 128px;
+    }
+    .congratulations-top-img {
+        width: 100%;
+        z-index: 12;
+    }
+    .congratulations-top-img .mob_rib {
+        width: 100%;
+    }
+    .congratulations-left-img {
+        z-index: 11;
+    }
+    .congratulations-right-img {
+        z-index: 11;
     }
 }
 
