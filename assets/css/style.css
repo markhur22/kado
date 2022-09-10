@@ -9157,6 +9157,116 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 .congratulations-top-img .mob_rib {
     display: none;
 }
+.swap_gift_main .choose-gift-body-header {
+    padding: 17px 44px 17px 49px;
+}
+.swap_gift_main .choose-gift-icon img {
+    width: 18px;
+}
+
+.swap_gift_main .choose-gift-matt-img .tag_mobile {
+    display: none;
+}
+.swap_gift_main .choose-gift-matt-img img {
+    display: block;
+}
+div#swapModal .gt-gift-popup-slider.swap-popup-slider button {
+    display: none !important;
+}
+div#swapModal .gt-gift-popup-slider.swap-popup-slider {
+    pointer-events: none;
+}
+div#swapModal .emporium-modal-body.swap-modal-body {
+    margin: 0;
+    padding: 29px 49px 63px 49px;
+}
+div#swapModal .gt-gift-detail-area .row .col {
+    padding: 0;
+}
+div#swapModal .gt-popup-gift-content {
+    margin-left: 70px;
+}
+div#swapModal div#FAQaccordionnew .accordion-item.faq-accordion-item {
+    padding: 23px 33px;
+    box-shadow: none;
+    border: 1px solid #E2E2E2;
+}
+div#swapModal .gift_acc_inner .gt-gift-veriation-img {
+    width: 157px;
+    margin: 0;
+    height: auto;
+}
+div#swapModal .gt-gift-veriation-card-body {
+    width: calc(100% - 397px);
+    padding-left: 28px;
+}
+.gt-gift-swap_btn_mian {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 32px;
+}
+div#swapModal .accordion-button:not(.collapsed) svg {
+    transform: rotate(180deg);
+}
+div#swapModal .gift_verification_body_inner button.accordion-button a svg {
+    margin-left: 6px;
+    transition: all ease .5s;
+}
+div#swapModal .gift_verification_body_inner button.accordion-button::after {
+    display: none;
+}
+div#swapModal .gift_verification_body_inner h3.gt-gift-veriation-card-title svg {
+    margin-left: 14px;
+    transition: all ease .5s;
+}
+div#swapModal .accordion-body ul.gift_sizes {
+    list-style: none;
+    width: 100%;
+    float: left;
+    padding: 6px 0 0 0;
+}
+div#swapModal .accordion-body ul.gift_sizes li {
+    float: left;
+    width: auto;
+    list-style-type: none;
+    margin: 0 15px 0 0;
+}
+div#swapModal .accordion-body ul.gift_sizes li a {
+    float: left;
+    width: 86px;
+    border: 1.5px solid #E2E2E2;
+    border-radius: 10px;
+    height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 54px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.4s ease all;
+}
+div#swapModal .accordion-body ul.gift_sizes li a:hover {
+    background: #ff385c;
+    color: #fff;
+    border-color: #ff385c;
+}
+div#swapModal .accordion-header .accordion-collapse {
+    padding: 17px 0 0 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 32px 0 0 0;
+}
+div#swapModal .accordion-header .accordion-collapse .accordion-body {
+    padding: 0;
+}
+div#swapModal .accordion-header .accordion-collapse .accordion-body span {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    color: #000000;
+    line-height: 35px;
+}
 /* new desktop changes starts here */
  
  
@@ -9946,6 +10056,47 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     .pay-gift-content .pay-gift-card .gifts-card-footer {
         margin-top: 20px;
     }
+    .swap_gift_main .choose-gift-body-header {
+        padding: 17px;
+    }
+    
+    div#swapModal div#FAQaccordionnew .accordion-item.faq-accordion-item .gift_acc_inner {
+        flex-wrap: wrap;
+    }
+    .gt-gift-swap_btn_mian {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 23px;
+    }
+    div#swapModal .gt-gift-veriation-card-body {
+        width: calc(100% - 157px);
+        padding-left: 28px;
+    }
+    div#swapModal div#FAQaccordionnew .accordion-item.faq-accordion-item {
+        padding: 16px 20px 29px;
+        box-shadow: none;
+        border: 1px solid #E2E2E2;
+    }
+    div#swapModal .gift_acc_inner .gt-gift-veriation-img {
+        width: 157px;
+        margin: 0;
+        height: auto;
+    }
+    div#swapModal .gt-gift-veriation-img img {
+        width: calc(100% + 25px);
+        height: auto;
+        border-radius: 10px;
+        object-fit: initial;
+    }
+    div#swapModal .accordion.faq-accordion {
+        width: 100%;
+        float: left;
+    }
+    div#swapModal .accordion-item.faq-accordion-item {
+        width: 100%;
+        float: left;
+    }
 }
 @media only screen and (max-width: 1130px) {
     .gifts-navbar .nav-link {
@@ -10666,11 +10817,11 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
         border-bottom: 1px solid #D2D2D2 !important;
     }
 	.gift-details-accordion .accordion-header {
-    margin-bottom: 0;
-}
-.gift-details-accordion h2#headingThree {
-    border: none;
-}
+        margin-bottom: 0;
+    }
+    .gift-details-accordion h2#headingThree {
+        border: none;
+    }
 	.gift-details-accordion .accordion-item button {
     position: relative;
 	}
@@ -10849,7 +11000,7 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     .emporium-modal-body .gt-popup-gift-title {
             font-size: 28px;
     line-height: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     }
 
     .emporium-modal-body .gt-popup-gift-description {
@@ -10871,10 +11022,10 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
     }
 
     .gt-gift-veriation-img {
-    width: 170px;
-    height: auto;
-    margin-right: 20px;
-}
+        width: 170px;
+        height: auto;
+        margin-right: 20px;
+    }
 
     .swaptwo-card-img {
         width: 86px;
@@ -11055,7 +11206,8 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 		width: auto;
     }
 	.choose-gift-card-btn svg {
-    margin: 3px 0 0 5px;}
+        margin: 3px 0 0 5px;
+    }
     .choose-gift-card-body {
        display: flex;
 		flex-direction: column;
@@ -11393,7 +11545,49 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
         width: 180px;
         z-index: 9;
     }
-
+    .swap_gift_main .choose-gift-body-header {
+        padding: 17px 24px 17px 20px;
+    }
+    .swap_gift_main h2.choose-gift-body-title img {
+        margin-right: 9px;
+    }
+    section.swap_gift_main {
+        padding-top: 35px;
+    }
+    section.choose-gift-section.swap_gift_main::after {
+        border-top: 2px solid #FF385C;
+        top: 35px;
+    }
+    section.swap_gift_main a.browse-categori-popup {
+        display: flex !important;
+        width: 172px;
+    }
+    div#swapModal .gt-popup-gift-content {
+        margin-left: 0;
+    }
+    div#swapModal .gt-gift-detail-area .row {
+        flex-wrap: wrap;
+    }
+    div#swapModal .emporium-modal-body.swap-modal-body {
+        margin: 0;
+        padding: 23px 32px 63px 32px;
+    }
+    div#swapModal .modal-header.emporium-modal-header {
+        padding: 15px 32px 15px 32px;
+    }
+    div#swapModal .modal-header.emporium-modal-header button.btn-close img {
+        width: 16px;
+    }
+    div#swapModal .accordion-body ul.gift_sizes li {
+        margin: 0;
+    }
+    div#swapModal .accordion-body ul.gift_sizes {
+        display: flex;
+        justify-content: space-between;
+    }
+    div#swapModal .accordion-body ul.gift_sizes li a {
+        width: 66px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .gifts-items .select_custom_main .custom_serach span.select2 {
@@ -13953,6 +14147,67 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .pay-gift-content .pay-gift-card .gifts-card-footer {
         margin-top: 0;
     }
+    .swap_gift_main .choose-gift-icon img {
+        width: 14px;
+    }
+    .swap_gift_main .choose-gift-logo img {
+        width: 83px;
+    }
+    section.choose-gift-section.swap_gift_main {
+        border: 0;
+    }
+    .swap_gift_main .choose-gift-matt-img .tag_mobile {
+        display: block;
+    }
+    .swap_gift_main .choose-gift-matt-img img {
+        display: none;
+    }
+    .swap_gift_main .container {
+        padding: 0 16px;
+    }
+    .swap_gift_main .choose-gift-list {
+        padding: 24px 26px 29px 26px;
+    }
+    .swap_gift_main .choose-gift-body-header {
+        padding: 8.5px 24px 8.5px 20px;
+    }
+    div#swapModal .gift_acc_inner .gt-gift-veriation-img {
+        width: 86px;
+    }
+    div#swapModal .gift_variation_price_mobile_show {
+        display: none;
+    }
+    div#swapModal .gt-gift-veriation-card-body {
+        width: 100%;
+        padding-left: 0;
+    }
+    div#swapModal div#FAQaccordionnew .accordion-item.faq-accordion-item {
+        padding: 16px 13px 29px 21px;
+    }
+    .gt-gift-swap_btn_mian {
+        justify-content: start;
+    }
+    div#swapModal .gt-gift-veriation-card-body p.gt-gift-veriation-card-description {
+        display: none;
+    }
+    div#swapModal .gt-gift-popup-slider.swap-popup-slider {
+        pointer-events: none;
+        height: 205px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    div#swapModal .gt-gift-popup-slider.swap-popup-slider .slick-list.draggable {
+        height: 100%;
+    }
+    div#swapModal .gt-popup-gift-content {
+        margin-top: 8px;
+    }
+    div#swapModal .emporium-modal-body .gt-gift-detail-area {
+        margin: 0 0 18px 0;
+    }
+    div#swapModal button.accordion-button:not(.collapsed), div#swapModal button.accordion-button {
+        padding: 0;
+    }
 }
 
 @media(max-width:599px) {
@@ -14089,6 +14344,27 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
     .congratulations-right-img {
         z-index: 11;
+    }
+    section.swap_gift_main a.browse-categori-popup {
+        display: flex !important;
+        width: 132px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    div#swapModal .accordion-body ul.gift_sizes li a {
+        width: 49px;
+        font-size: 12px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div#swapModal .accordion-header .accordion-collapse .accordion-body span {
+        float: left;
+        width: 100%;
+        font-size: 18px;
+        color: #000000;
+        line-height: 28px;
     }
 }
 
@@ -14356,8 +14632,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 
 }
 
-@media(max-width:400px)
-{
+@media(max-width:400px) {
 .choose-gift-logo { top: 45px; right: -30px; left: inherit; }
 .choose-gift-categories-collection .row > .col { width: 100%; padding: 0 10px; }
 
@@ -14377,6 +14652,21 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     div#gift_sent_pop .card_view_slide_main button.slick-prev.slick-arrow {
         width: 30px;
         height: 30px;
+    }
+    .swap_gift_main .choose-gift-logo {
+        right: -30px;
+    }
+    .swap_gift_main .choose-gift-list {
+        padding: 24px 10px 29px 10px;
+    }
+    div#swapModal .accordion-body ul.gift_sizes {
+        margin-bottom: 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div#swapModal .accordion-body ul.gift_sizes li {
+        margin-bottom: 10px;
+        margin-left: 6px;
     }
 }
 @media(max-width:370px) {
@@ -14485,6 +14775,14 @@ div.gift_sent_pop img {     max-width: 270px; }
     }
     .pay-gift-content .gifts-items-header h3 {
         font-size: 18px;
+    }
+    .congratulations-modal-title h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .congratulations-center-img {
+        top: 0px;
+        width: 256px;
     }
 }
 @media (max-width: 991px) and (orientation: landscape) {
