@@ -5775,7 +5775,7 @@ div.g-signup-form .gt-btn-custom {
     content: "";
     background-color: #fff;
     width: 100%;
-    height: 387px;
+    height: 397px;
     left: 0;
     position: absolute;
 }
@@ -6040,7 +6040,9 @@ div.g-signup-form .gt-btn-custom {
 /*********** Swap Open Section Start ************/
 
 .swap-content {
-    width: 400px;
+    width: 517px;
+	    position: relative;
+    z-index: 9;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -6093,7 +6095,7 @@ div.g-signup-form .gt-btn-custom {
 .gt-open-gift-content {
     width: 514px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 20px 0 0 0;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);
@@ -6105,8 +6107,9 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .gt-open-gift-details {
+	font-family: 'Lato';
     margin-top: 40px;
-    padding: 0 64px 50px;
+    padding: 0 60px 50px;
 }
 
 .gt-open-gift-title {
@@ -8020,6 +8023,31 @@ div.gift_sent_pop img{max-width:400px;}
 .payment-form-input .form-control{    border: 1px solid #d2d2d2;}
 .gt-btn-custom.payment-btn {     margin-top:0; }
 #paymentModal .payment-form-input span.field_icon::before {     color: #818181; }
+section.swap-section:after {     content: '';     background-color: #fff;     width: 100%;     height: 397px;     left: 0;     position: absolute;     top: 0; }
+section.swap-section:before {content: '';     position: absolute;     top: 0;     left: 0;     width: 100%;     border-top: 10px solid #FF385C;z-index:9;}
+section.swap-section {     position: relative; }
+.swap_slider button.slick-disabled {     display: none !important; }
+.swap_slider button.slick-prev  {     display: none !important; }
+.swap_slider .slick-next.slick-arrow {     pointer-events: none;     right: -40px;     border-radius: 50px;     width: 81px;     height: 81px;     background-image: url('../images/drag.svg'); 	background-repeat:no-repeat;     padding: 0;     background-size: 38px; 
+animation: myAnim 1.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal none;
+
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(00px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(-60px);
+	}
+}
+.gt-open-gift-img img {     display: inline-block; }
+.gt-open-gift-img {     text-align: center; }
+.swap-img .slick-slide{padding:5px;}
+
+
 
 
 
@@ -11392,6 +11420,25 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 }
 
 @media (max-width: 767px) {
+	
+	.gt-open-gift-btn img{    margin-right: 13px;}
+	
+	.swap-section .container {     padding: 0 46px; }
+	.swap_slider .slick-next.slick-arrow {     height: 60px;     width: 60px;     background-size: 28px; }
+	body.swap_body{overflow-x:hidden;}
+	@keyframes myAnim {
+		0% {
+			opacity: 0;
+			transform: translateX(-30px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateX(-60px);
+		}
+	}
+	
+	
 	.modal-dialog.modal-xl.congratulations-modal {     left: 50%;     margin-left: 0;     transform: translateX(-50%); -webkit-transform: translateX(-50%);     width: 90%; }
 	.congratulations-modal-title {     padding: 0 15px; }
 	
@@ -13092,26 +13139,28 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .gt-open-gift-title {
-        font-size: 25px;
-        line-height: 30px;
-        margin-bottom: 18px;
-    }
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 11px;
+	}
 
     .gt-open-gift-discription {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 20px;
-    }
+		font-size: 14px;
+		line-height: 23px;
+		margin-bottom: 17px;
+	}
 
     .gt-open-gift-name {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+		font-size: 18px;
+    line-height: 21px;
     }
 
     .gt-open-gift-btn {
-        font-size: 18px;
-        line-height: 24px;
-        padding: 5px 32px 5px 13px;
-    }
+		font-size: 16px;
+		line-height: 24px;
+		padding: 5px 21px 5px 7px;
+	}
 
     .version-tabs .version-tab-link {
         font-size: 14px;
@@ -14028,6 +14077,9 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media (max-width: 480px) {
+	.gt-open-gift-img img{    width: 101px;}
+	.swap-section .container {     padding: 0 20px; }
+	
 .pay-gift-content .gifts-card-img img{height:auto;}
 .choose-gift-categories-collection .row > .col { padding: 0 6px; }	
 	
