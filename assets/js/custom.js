@@ -685,7 +685,7 @@ $('.card_view_slide_main').slick({
 	  ]
 });
 
-$('.swap_slider').slick({
+var sliderx = $('.swap_slider').slick({
   dots: false,
   infinite: false,
   speed: 300,
@@ -721,6 +721,15 @@ $('.swap_slider').slick({
     // instead of a settings object
   ]
 });
+
+ $('.swap_slider').on('afterChange', function (event, slick, currentSlide) {
+
+	if(currentSlide === 1) {
+		//slider.slickSetOption("draggable",false,false);
+		sliderx.slick("slickSetOption", "draggable", false, false);
+	} 
+});
+
 
 $('#gift_sent_pop').on('shown.bs.modal', function (e) {
   $('.card_view_slide_main').slick('setPosition');
