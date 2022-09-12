@@ -14,6 +14,22 @@ span.signup-social-account.border-line p { background: #fff; position: relative;
 span.signup-social-account.border-line.login-email-account p { padding: 0 48px; }
 
 
+div.accordion.size-view { width: 100%; float: left; }
+div.accordion.size-view .accordion-item { box-shadow: none; border: none; width: 100%; float: left; margin: 0 0 28px 0; }
+div.accordion.size-view button.accordion-button { padding: 0; font-family: 'Lato'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 19px; letter-spacing: 0.05em; color: #FF385C; width: auto; float: left; position:relative; }
+div.accordion.size-view button.accordion-button::after { position: absolute; content: ''; right: -30px; top: 8px; background-image: url(../images/pink-arrow.svg); background-repeat: no-repeat; width: 12px; height: 12px; background-size: auto; }
+div.accordion.size-view button.accordion-button:not(.collapsed)::after { background-image: url(../images/pink-arrow.svg); top:4px; }
+div.accordion.size-view div.accordion-collapse { width: 100%; float: left; }
+div.accordion.size-view .accordion-body { width: 100%; float: left; padding: 0; }
+div.accordion.size-view .accordion-body label { width: 86px; height: 56px; font-family: 'Lato'; font-style: normal; font-weight: 700; font-size: 14px; line-height: 17px; text-align: center; color: #414141; background: #FFFFFF; border: 1.5px solid #E2E2E2;border-radius: 5px; margin-right:8px;}
+div.accordion.size-view .accordion-body .send-flexi-price .form-check { padding: 0; margin: 0; }
+div.accordion.size-view .accordion-body input:checked~.form-check-label { background: #fff; }
+div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; }
+
+.version-tab-item button.version-tab-link.active{display:flex;}
+.version-tab-item img.color-img { display: none; }
+.version-tab-item button.version-tab-link.active img{display:none;}
+.version-tab-item button.version-tab-link.active img.color-img{display:block;}
 
 /* today changes */
 .birthady-david-img::before { position: absolute; content: ''; width: 100%; height: 113px; top: 0; left: 0; background-image: url(../images/top-leave.png); background-repeat: no-repeat; background-position: top; background-size: contain; border-radius:10px;}
@@ -5819,6 +5835,7 @@ div.g-signup-form .gt-btn-custom {
     line-height: 22px;
     color: #414141;
     margin-bottom: 4px;
+	font-family: 'Lato';
 }
 
 .choose-matt-title {
@@ -5830,6 +5847,7 @@ div.g-signup-form .gt-btn-custom {
     font-size: 16px;
     line-height: 19px;
     color: #414141;
+	font-family: 'Lato';
 }
 
 .choose-gift-logo {
@@ -6160,27 +6178,66 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .gt-open-gift-btn img {
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 7px;
-    margin-right: 22px;
+    padding: 0;
+    margin-right: 0; 
 }
-
-
+.version-details-btn .accpt-gift {
+  background: #fff;
+    border-radius: 50%;
+    margin-right: 29px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.version-tab-swap-btn .accpt-gift {
+    background-color: #FF385C;
+    margin-right: 17px;
+}
+.version-tab-swap-btn .accpt-gift img {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+	border-radius: initial;
+}
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift {
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 37px;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift img {
+    margin: 0;
+    padding: 0;
+}
 /*********** Open Gift Section End ************/
 
 
 /*********** Version Section Start ***********/
 
 .version-section {
-    border-top: 10px solid #FF385C;
-    padding-bottom: 94px;
+	 position:relative;
+    padding-bottom: 91px;
 }
+.version-content {
+    position: relative;
+}
+.version-section::after{content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 10px solid #FF385C;}
 
 .version-tabs-content {
     margin-top: -135px;
     position: relative;
-    z-index: 1;
+    z-index: 9;
     background: #FFFFFF;
     border: 1px solid #E3E3E3;
     border-radius: 15px;
@@ -6189,7 +6246,7 @@ div.g-signup-form .gt-btn-custom {
 
 .version-tabs {
     border-bottom: 1px solid #D2D2D2;
-    padding-top: 28px;
+    padding-top: 32px;
 }
 
 .version-tabs .version-tab-link {
@@ -6200,11 +6257,14 @@ div.g-signup-form .gt-btn-custom {
     text-align: center;
     letter-spacing: 0.1em;
     color: #565656;
-    padding: 0 32px 17px;
+    padding: 0 32px 28px;
 }
 
 .version-tab-link img {
     margin-right: 15px;
+	height: 24px;
+    width: 24px;
+    float: left;
 }
 
 .version-tabs .version-tab-link::before {
@@ -6235,7 +6295,7 @@ div.g-signup-form .gt-btn-custom {
 /*** Version First Tab ***/
 
 .version-tab-body {
-    padding: 63px 65px 61px;
+    padding: 48px 65px 51px;
 }
 
 .version-tab-body-img img {
@@ -6243,7 +6303,7 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .version-tab-details {
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .version-details-subtitle {
@@ -6253,7 +6313,7 @@ div.g-signup-form .gt-btn-custom {
     line-height: 19px;
     letter-spacing: 0.1em;
     color: #414141;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 .version-details-title {
@@ -6262,7 +6322,7 @@ div.g-signup-form .gt-btn-custom {
     font-size: 28px;
     line-height: 34px;
     color: #000000;
-    margin-bottom: 23px;
+    margin-bottom: 14px;
 }
 
 .version-details-descriotion {
@@ -6271,24 +6331,26 @@ div.g-signup-form .gt-btn-custom {
     font-size: 20px;
     line-height: 30px;
     color: #414141;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
 }
 
 .version-details-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
+	width:100%;
 }
 
 .version-accept-btn {
-    padding: 7px 39px 7px 10px;
+    padding: 0 39px 0 10px;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.05em;
+	height:62px;
 }
 
 .version-accept-btn img {
-    margin-right: 26px;
+    margin-right: 0;
 }
 
 .version-tab-swap-btn {
@@ -6300,7 +6362,8 @@ div.g-signup-form .gt-btn-custom {
     line-height: 22px;
     letter-spacing: 0.05em;
     color: #FF385C;
-    padding: 7px 25px 7px 10px;
+    padding: 0 25px 0 10px;
+    height: 62px;
 }
 
 .version-tab-swap-btn:hover {
@@ -6341,7 +6404,7 @@ div.g-signup-form .gt-btn-custom {
     border-radius: 15px;
     text-align: center;
     transition: all 0.5s;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 
@@ -6400,7 +6463,7 @@ div.g-signup-form .gt-btn-custom {
 /*** Version Fourth Tab  ***/
 
 .shipping-tab-body {
-    padding: 45px 65px 44px 68px;
+   padding: 45px 65px 44px 70px;
 }
 
 .shipping-body-content {
@@ -6548,10 +6611,19 @@ div.g-signup-form .gt-btn-custom {
     font-size: 24px;
     letter-spacing: 0.05em;
 }
-
+.shipping-tab-btn .accpt-gift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 33px;
+    width: 62px;
+    height: 62px;
+}
 .shipping-tab-btn img {
-    padding: 16px;
-    margin-right: 30px;
+    padding: 0;
+    margin-right: 0;
 }
 
 
@@ -11686,13 +11758,21 @@ section.recommendation-section .recommendation-slider button {
 }
 
 @media (max-width: 767px) {
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift { margin-right: 26px; width: 40px; height: 40px; }
+.version-tab-body { padding: 21px 28px 36px; }
+
+
 	.modal-header.send-flexi-header {     padding: 25px 25px; }
 	.send-flexi-price label{width: 100%;padding:0 6px;}
 	.send-flexi-price{    width: 100%;     justify-content: space-between;}
 	.send-flexi-header .btn-close{    right: 20px;}
 	
 	
-	.gt-open-gift-btn img{    margin-right: 13px;}
+	.gt-open-gift-btn img{ height: 20px;   margin-right:0;}
+	.version-details-btn .accpt-gift, .version-tab-swap-btn .accpt-gift{height:32px; width:32px;}
+	.version-details-btn .accpt-gift{margin-right:18px;}
+	.version-tab-swap-btn .accpt-gift {margin-right: 9px;}
+	
 	
 	.swap-section .container {     padding: 0 46px; }
 	.swap_slider .slick-next.slick-arrow {     height: 60px;     width: 60px;     background-size: 28px; }
@@ -13450,9 +13530,11 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .version-tab-item {
-        padding: 0 5px;
+       padding: 0 23px 0 0;
     }
-
+	 .version-tab-item:last-child {
+       padding-right:0;
+    }
     .version-tabs-content {
         margin-top: -65px;
     }
@@ -13463,7 +13545,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .version-tab-body-img img {
-        height: 161px;
+        height: auto;
         object-fit: cover;
     }
 
@@ -13478,7 +13560,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .version-details-title {
         font-size: 20px;
         line-height: 24px;
-        width: 290px;
+        width: 100%;
         max-width: 100%;
         margin-bottom: 8px;
     }
@@ -13486,19 +13568,34 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .version-details-descriotion {
         font-size: 16px;
         line-height: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 13px;
     }
-
-    .version-accept-btn img {
+	div.accordion.size-view .accordion-body .send-flexi-price {
+	margin: 10px 0 0 0;
+	justify-content: initial;
+	}
+	div.accordion.size-view .accordion-item{margin-bottom:21px;}
+	div.accordion.size-view .accordion-item:last-of-type .accordion-collapse {
+    margin: 0;
+}
+div.accordion.size-view .accordion-body label {
+    width: 49px;
+    height: 32px;
+	font-size: 12px;
+    line-height: 14px;
+}
+div.accordion.size-view button.accordion-button::after{right:-20px;}
+    /*.version-accept-btn img {
         margin-right: 18px;
         padding: 5px;
         width: 32px;
-    }
+    }*/
 
     .version-accept-btn {
-        font-size: 14px;
-        line-height: 17px;
-        padding: 5px 24px 4px 7px;
+           font-size: 14px;
+		   line-height: 17px;
+		   padding: 0 24px 0 7px;
+		   height: 45px;
     }
 
     .version-tab-swap-btn img {
@@ -13509,7 +13606,8 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .version-tab-swap-btn {
         font-size: 14px;
         line-height: 17px;
-        padding: 5px 15px 4px 7px;
+        padding: 0 15px 0 7px;
+		height:45px;
     }
 
     .option-tab-body .row {
@@ -13521,7 +13619,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .option-tab-body {
-        padding: 24px 0 38px 22px;
+        padding: 24px 15px 41px 15px;
     }
 
     .option-body-title {
@@ -13544,13 +13642,14 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .option-item {
-        margin: 0 10px 10px;
+        margin: 0 13px 20px;
     }
 
     .option-item-btn {
         font-size: 16px;
-        line-height: 19px;
-        padding: 6px 42px 6px 13px;
+		line-height: 19px;
+		padding: 0 42px 0 13px;
+		height: 57px;
     }
 
     .option-item-btn img {
@@ -14478,6 +14577,9 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 }
 
 @media (max-width: 480px) {
+.version-details-title { width: 290px; }	
+	
+
 	.gt-open-gift-img img{    width: 101px;}
 	.swap-section .container {     padding: 0 20px; }
 	
