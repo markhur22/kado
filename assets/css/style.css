@@ -7351,16 +7351,16 @@ div.g-signup-form .gt-btn-custom {
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);
     border-radius: 15px;
-    padding: 47px 141px 44px;
+    padding: 42px 141px 44px;
     position: relative;
     top: -135px;
-    z-index: 1;
+    z-index: 9;
 }
 
 .send-note-body-content {
     border: 1px solid #D2D2D2;
     border-radius: 15px;
-    padding: 29px 115px 45px 123px;
+    padding: 43px 39px;
     margin-bottom: 40px;
 }
 
@@ -7393,7 +7393,7 @@ div.g-signup-form .gt-btn-custom {
 .send-note-thankyou {
     background: #F9F9F9;
     border-radius: 15px;
-    padding: 30px 22px 57px;
+    padding: 30px 41px 57px;
     text-align: center;
 }
 
@@ -9324,6 +9324,52 @@ section.recommendation-section .recommendation-slider button {
 .recommendation-slider .slick-list {
     padding-bottom: 44px;
 }
+.recommendation-slider .reco-footer-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 55px;
+}
+.recommendation-slider .reco-footer-price h5 {
+    width: 100%;
+    float: left;
+}
+.send-note-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 44px;
+}
+section.send-note-section .send-note-content .send-note-body {
+    box-shadow: none;
+    border: 1px solid #E3E3E3;
+}
+.send-note-imgs > div {
+    width: calc(50% - 28px);
+}
+.send-note-first-img > img {
+    width: 100%;
+}
+section.send-note-section .send-note-content .send-note-imgs {
+    align-items: initial;
+}
+.send-note-thankyou textarea {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #414141;
+    border-color: #FF385C;
+}
+.send-note-thankyou textarea::placeholder {
+    color: #414141;
+}
+.send-note-thankyou textarea:focus {
+    border-color: #FF385C;
+}
+
 /* new desktop changes starts here */
  
  
@@ -9625,6 +9671,9 @@ section.recommendation-section .recommendation-slider button {
     }
     .g-shipping-status {
         font-size: 13px;
+    }
+    .send-note-modal .modal-xl {
+        max-width: 1130px;
     }
 }
 
@@ -10153,6 +10202,9 @@ section.recommendation-section .recommendation-slider button {
     div#swapModal .accordion-item.faq-accordion-item {
         width: 100%;
         float: left;
+    }
+    .send-note-modal .modal-xl {
+        max-width: 992px;
     }
 }
 @media only screen and (max-width: 1130px) {
@@ -11651,6 +11703,9 @@ section.recommendation-section .recommendation-slider button {
     }
     .recommendation-slider-img img {
         width: 100%;
+    }
+    .send-note-modal .modal-xl {
+        max-width: 700px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -13721,8 +13776,8 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .reco-body-discription {
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 12px;
+        line-height: 16px;
         margin-bottom: 5px;
     }
 
@@ -13890,7 +13945,10 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
 
     .send-note-body-content {
-        padding: 25px 34px 33px;
+        padding: 25px 20px 33px;
+    }
+    .send-note-thankyou {
+        padding: 30px 22px 57px;
     }
 
     .send-note-title {
@@ -14311,6 +14369,34 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .recommendation-section {
         padding: 51px 0 38px;
     }
+    .send-note-section .send-note-body .send-note-imgs {
+        display: inline-block;
+        width: 70%;
+        margin: auto;
+    }
+    .send-note-section .send-note-body .send-note-first-img {
+        margin: 0;
+    }
+    .send-note-section .send-note-body .send-note-first-img > img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .send-note-section .send-note-body .send-note-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .send-note-imgs > div {
+        width: 100%;
+    }
+    .send-note-section .send-note-body .send-note-first-img {
+        margin-bottom: 15px;
+    }
+    section.send-note-section .send-note-content {
+        text-align: center;
+    }
+    .send-note-modal .modal-xl {
+        max-width: 570px;
+    }
 }
 
 @media(max-width:599px) {
@@ -14474,6 +14560,35 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
     .recommendation-header {
         padding: 8.5px 16px;
+    }
+    .reco-body-discription {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .send-note-section .send-note-body .send-note-imgs {
+        width: 100%;
+    }
+    .send-note-section .send-note-body .send-note-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .send-note-modal-body {
+        padding: 32px 22px 18px;
+    }
+    div#sendnoteModal .send-note-modal-body .row .col {
+        padding: 0 8px;
+    }
+    div#sendnoteModal .send-note-modal-body .row {
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+    .send-note-modal-img {
+        margin-bottom: 18px;
+    }
+    .send-note-pen-img {
+        top: 15px;
+        right: 10px;
     }
 }
 
@@ -14741,7 +14856,6 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         width: 95%;
         margin: auto;
     }
-
 }
 
 @media(max-width:400px) {
@@ -14782,6 +14896,20 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
     .recommendation-item-list .row .col {
         width: 100%;
+    }
+    .reco-footer-btn .btn {
+        padding: 5px 10px 5px 10px;
+    }
+    .reco-body-discription {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    div#sendnoteModal .send-note-modal-body {
+        padding: 22px 16px 18px;
+    }
+    .send-note-modal-header .modal-title {
+        font-size: 20px;
+        line-height: 25px;
     }
 }
 @media(max-width:370px) {
