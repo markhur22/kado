@@ -1205,16 +1205,17 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 65px;
     background-color: #FF385C;
     box-shadow: 0px 15px 40px rgb(11 28 60 / 10%);
+	background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0001 8.97645L5.67703 8.97645L9.62382 12.9115L7.52679 15L0 7.5L7.52679 0L9.62382 2.08832L5.67703 6.02334L14.0001 6.02334L14.0001 8.97645Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 20px;
     border: none;
     color: #fff;
     /* left: 165px; */
 	    left: -20px;
     z-index: 10;
-    background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0001 8.97645L5.67703 8.97645L9.62382 12.9115L7.52679 15L0 7.5L7.52679 0L9.62382 2.08832L5.67703 6.02334L14.0001 6.02334L14.0001 8.97645Z' fill='white'/%3E%3C/svg%3E%0A");
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
+    
     font-size: 0;
     transition: all ease-in-out 0.3s;
 }
@@ -8120,8 +8121,13 @@ animation: myAnim 1.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal no
 .swap-img .slick-slide{padding:5px;}
 .send-flexi-dialog .modal-content{border-top: 10px solid #FF385C;border-radius: 10px 10px 0px 0px;}
 .draggable div.slick-slide {     cursor: pointer; }
-
-
+span.card_right_arrow {     width: 65px;     height: 65px;     background-color: #FF385C;     box-shadow: 0px 15px 40px rgb(11 28 60 / 10%);     background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0001 8.97645L5.67703 8.97645L9.62382 12.9115L7.52679 15L0 7.5L7.52679 0L9.62382 2.08832L5.67703 6.02334L14.0001 6.02334L14.0001 8.97645Z' fill='white'/%3E%3C/svg%3E%0A");     background-size: 15px;     background-repeat: no-repeat;     background-position: center;     border-radius: 20px;     position: absolute;  cursor:pointer;   right: -20px;     transform: rotate(180deg) translateY(-50%); -webkit-transform: rotate(180deg) translateY(-50%);     top: 40%; }
+span.card_left_arrow {     width: 65px;     height: 65px;     background-color: #FF385C;     box-shadow: 0px 15px 40px rgb(11 28 60 / 10%);     background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0001 8.97645L5.67703 8.97645L9.62382 12.9115L7.52679 15L0 7.5L7.52679 0L9.62382 2.08832L5.67703 6.02334L14.0001 6.02334L14.0001 8.97645Z' fill='white'/%3E%3C/svg%3E%0A");     background-size: 15px;     background-repeat: no-repeat;     background-position: center;     border-radius: 20px;     position: absolute;   cursor:pointer;  left: -20px;     transform: translateY(-50%); -webkit-transform: translateY(-50%);     top: 50%; }
+#gift_sent_pop .modal-dialog {
+    width: 430px;
+}
+.card_view_main .birthday-cont{display: flex;     align-items: center;     flex-direction: column;     justify-content: center;     height: 100%;}
+#gift_sent_pop .modal-content{background-color:transparent;}
 
 
 
@@ -9140,6 +9146,7 @@ div#gift_sent_pop .card_view_slide_main {
 }
 div#gift_sent_pop .card_view_main .birthday-thankyou-img img {
     margin: auto;
+	display:inherit;
 }
 div#gift_sent_pop .card_view_slide_main button.slick-arrow::before {
     content: '' !important;
@@ -14840,9 +14847,13 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         width: 47%;
     }
     div#gift_sent_pop .modal-dialog.modal-dialog-centered {
-        width: 95%;
+        width: 80%;
         margin: auto;
     }
+	span.card_right_arrow{    width: 45px;     border-radius: 15px;    height: 45px;}
+	span.card_left_arrow{    width: 45px;     border-radius: 15px;    height: 45px;}
+	div#gift_sent_pop .card_view_main .birthady-david-img{padding:0;}
+	div .back_card{height:auto;}
 
 }
 
