@@ -17,7 +17,7 @@ span.signup-social-account.border-line.login-email-account p { padding: 0 48px; 
 div.accordion.size-view { width: 100%; float: left; }
 div.accordion.size-view .accordion-item { box-shadow: none; border: none; width: 100%; float: left; margin: 0 0 28px 0; }
 div.accordion.size-view button.accordion-button { padding: 0; font-family: 'Lato'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 19px; letter-spacing: 0.05em; color: #FF385C; width: auto; float: left; position:relative; }
-div.accordion.size-view button.accordion-button::after { position: absolute; content: ''; right: -30px; top: 8px; background-image: url(../images/pink-arrow.svg); background-repeat: no-repeat; width: 12px; height: 12px; background-size: auto; }
+div.accordion.size-view button.accordion-button::after { position: absolute; content: ''; right: -20px; top: 8px; background-image: url(../images/pink-arrow.svg); background-repeat: no-repeat; width: 12px; height: 12px; background-size: auto; }
 div.accordion.size-view button.accordion-button:not(.collapsed)::after { background-image: url(../images/pink-arrow.svg); top:4px; }
 div.accordion.size-view div.accordion-collapse { width: 100%; float: left; }
 div.accordion.size-view .accordion-body { width: 100%; float: left; padding: 0; }
@@ -6187,8 +6187,8 @@ div.g-signup-form .gt-btn-custom {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     padding: 7px 32px 7px 13px;
+	transition: all ease 0.3s;
 }
-
 .gt-open-gift-btn:hover {
     color: #fff;
 }
@@ -6485,8 +6485,14 @@ a.version-tab-swap-btn:hover .accpt-gift svg path{
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.05em;
+	transition: all ease 0.3s;
 }
-
+a.gt-open-gift-btn.option-item-btn.btn:hover {
+    background: #fff;
+    color: #FF385C;
+}
+a.gt-open-gift-btn.option-item-btn.btn:hover .accpt-gift{background: #FF385C; }
+a.gt-open-gift-btn.option-item-btn.btn:hover .accpt-gift svg path{fill:#fff;}
 .option-item-btn img {
     padding: 10px 9.5px;
     margin-right: 37px;
@@ -6633,6 +6639,7 @@ padding: 0 19px;
     text-align: right;
     color: #FF385C;	
     margin: 0 0 13px 0;
+	text-underline-position: under;
 }
 
 .shipping-manually-address:hover {
@@ -6655,7 +6662,7 @@ padding: 0 19px;
 	height:86px;
 }
 .shipping-tab-btn .accpt-gift {
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
     background: #fff;
@@ -6663,6 +6670,14 @@ padding: 0 19px;
     margin-right: 33px;
     width: 62px;
     height: 62px;
+}
+.shipping-tab-btn:hover a.gt-open-gift-btn .accpt-gift {
+    background: #FF385C;
+}
+.shipping-tab-btn:hover a.gt-open-gift-btn .accpt-gift svg path{fill:#fff;}
+.shipping-tab-btn:hover a.gt-open-gift-btn {
+    background: #fff;
+    color: #FF385C;
 }
 .shipping-tab-btn img {
     padding: 0;
@@ -11870,12 +11885,13 @@ section.send-note-section .send-note-content .send-note-imgs {
 }
 
 @media (max-width: 767px) {
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift svg{width: 20px;}
 .version-details-btn .accpt-gift svg { width: 20px; }
 .option-tab-body > .row > .col { padding: 0; width: 50%;}
 .shi-manually-address.no-label label { display: none; }
 .shipping-tab-btn .accpt-gift { margin-right: 13px; width: 36px; height: 36px; }
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift { margin-right: 26px; width: 40px; height: 40px; }
-.version-tab-body { padding: 20px 28px 28px; }
+.version-tab-body { padding: 20px 20px 28px; }
 
 
 	.modal-header.send-flexi-header {     padding: 25px 25px; }
@@ -13845,7 +13861,9 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         font-size: 16px;
         line-height: 19px;
 		height:50px;
+		
     }
+	.shipping-tab-btn .btn svg{width:20px;}
 
     .shipping-tab-btn img {
         margin-right: 0; 
@@ -14783,6 +14801,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 
 @media (max-width: 420px) {
 	
+	.version-tabs .version-tab-link{letter-spacing:0;}
+	
+	
 	.g-details-birthday .auarius-first-img {     max-height: inherit;     height: auto; }
 	.gift_sent_pop button.btn-close{right: 0;}
 	.gift_thankyou_popup button.btn-close{right: 0;}
@@ -15029,9 +15050,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 }
 
 @media(max-width:400px) {
-.version-details-btn .accpt-gift {font-size: 12px; line-height: 17px; margin-right: 14px; }
-.version-tab-swap-btn { font-size: 12px; line-height: 17px;}
-.version-accept-btn { font-size: 12px; padding: 0 14px 0 7px; }
+.version-details-btn .accpt-gift {font-size: 12px; line-height: 17px; margin-right: 8px; }
+.version-tab-swap-btn { font-size: 14px; line-height: 17px;}
+.version-accept-btn { font-size: 14px; padding: 0 14px 0 7px; }
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift {margin-right: 15px;}
 .option-item-btn { padding: 0 25px 0 13px; }
 .option-item { margin: 0 8px 20px; }
@@ -15090,10 +15111,10 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }
 @media(max-width:370px) {
-.version-tab-swap-btn, .version-accept-btn { font-size: 14px; line-height: 17px; }
-.version-details-btn{flex-wrap:wrap;}
-.version-accept-btn { width: 100%; margin: 0 0 10px 0; justify-content: flex-start; }
-.version-tab-swap-btn { width: 100%; justify-content: flex-start; }
+	.version-details-btn .accpt-gift{margin-right:5px;}   
+	.version-accept-btn{padding: 0 5px 0 7px;}
+	.version-tab-swap-btn{padding: 0 8px 0 7px;}
+.version-tab-swap-btn, .version-accept-btn { font-size: 12px; line-height: 17px; }
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift{margin-right:10px;}
 .option-item-btn { font-size: 13px; padding: 0 10px 0 10px; }
 .option-tab-body > .row > .col{width:100%;}
