@@ -6476,7 +6476,7 @@ a.version-tab-swap-btn:hover .accpt-gift svg path{
 a.gt-open-gift-btn.option-item-btn.btn:hover {
     background: #fff;
     color: #FF385C;
-}
+}  
 a.gt-open-gift-btn.option-item-btn.btn:hover .accpt-gift{background: #FF385C; }
 a.gt-open-gift-btn.option-item-btn.btn:hover .accpt-gift svg path{fill:#fff;}
 .option-item-btn img {
