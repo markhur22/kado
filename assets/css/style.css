@@ -9538,6 +9538,65 @@ section.payment-gift-section .payment-gift-continue {
     padding: 36px 33px;
 }
 
+/*Changes desk*/
+div#mttsModal .modal-dialog {
+    max-width: 576px;
+}
+span.gif_icon {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 19px;
+}
+.select_card_section h6.send-note-title {
+    margin-bottom: 40px;
+}
+.select_card_main {
+    height: 940px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 43px;
+}
+.select_card_section .send-note-body {
+    padding: 42px 48px 44px;
+}
+.select_card_section .send-note-btn a {
+    background-color: #F6F6F6;
+    border-color: #F6F6F6;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.select_card_section .send-note-modal-img {
+    text-align: center;
+    margin-bottom: 23px;
+}
+.select_card_section .scroll-x.scroll-scrollx_visible {
+    display: none !important;
+}
+.select_card_section .scrollbar-inner>.scroll-element.scroll-y {
+    height: 100%;
+    right: -30px;
+}
+.select_card_section .scroll-wrapper.select_card_main.scrollbar-inner {
+    overflow: visible !important;
+}
+.select_card_section .scroll-y.scroll-scrollx_visible .scroll-bar {
+    background-color: #D9D9D9;
+    opacity: 1;
+}
+.select_card_section .scroll-y.scroll-scrollx_visible .scroll-element_track {
+    background-color: #D9D9D9;
+    opacity: 0.3;
+}
+.select_card_section .scrollbar-inner>.scroll-element.scroll-y {
+    width: 10px;
+}
+
 /* new desktop changes starts here */
  
  
@@ -11890,6 +11949,9 @@ section.payment-gift-section .payment-gift-continue {
     .payment-gift-section .payment-gift-summary {
         width: 100%;
         max-width: 100%;
+    }
+    .select_card_main {
+        height: 780px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -14645,6 +14707,13 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     section.payment-gift-section .payment-form-input.payment-gift-input.full_name_payment {
         margin-bottom: 18px;
     }
+    .select_card_section .send-note-body {
+        padding: 42px 28px 44px;
+    }
+    .select_card_section .scrollbar-inner>.scroll-element.scroll-y {
+        width: 6px;
+        right: -17.5px;
+    }
 }
 
 @media(max-width:599px) {
@@ -14853,6 +14922,9 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     section.payment-gift-section .payment-gift-continue {
         width: 275px;
         padding: 36px 22px;
+    }
+    .select_card_main {
+        height: 684px;
     }
 }
 
@@ -15150,6 +15222,16 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     .payment-gift-section .gt-select-payment-content .col-6 {
         width: 100%;
         margin-bottom: 12px !important;
+    }
+    .select_card_section .send-note-body {
+        padding: 42px 12px 44px;
+    }
+    .select_card_main .row .col {
+        padding: 0 8px;
+    }
+    .select_card_main .row {
+        width: 100%;
+        margin: 0;
     }
 }
 
