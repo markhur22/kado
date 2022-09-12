@@ -9303,6 +9303,27 @@ div#swapModal .accordion-header .accordion-collapse .accordion-body span {
     color: #000000;
     line-height: 35px;
 }
+section.recommendation-section .recommendation-slider button {
+    border-radius: 100%;
+}
+.recommendation-slider .slick-prev {
+    left: -13px;
+    top: calc(50% - 15px);
+}
+.recommendation-slider .slick-next {
+    right: -13px;
+    top: calc(50% - 15px);
+}
+.recommendation-slider-body {
+    padding: 10px 7px 0px 13px;
+    flex: 1 0 auto;
+}
+.recommendation-slider .reco-body-discription {
+    margin-bottom: 6px;
+}
+.recommendation-slider .slick-list {
+    padding-bottom: 44px;
+}
 /* new desktop changes starts here */
  
  
@@ -11623,6 +11644,13 @@ div#swapModal .accordion-header .accordion-collapse .accordion-body span {
     }
     div#swapModal .accordion-body ul.gift_sizes li a {
         width: 66px;
+    }
+    .recommendation-section {
+        padding: 124px 0 124px;
+        font-family: 'Lato', sans-serif;
+    }
+    .recommendation-slider-img img {
+        width: 100%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -14271,6 +14299,12 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     div#swapModal button.accordion-button:not(.collapsed), div#swapModal button.accordion-button {
         padding: 0;
     }
+    .recommendation-section .recommendation-content {
+        padding: 15px 18px 45px;
+    }
+    .recommendation-section .recommendation-section {
+        padding: 50px 0;
+    }
 }
 
 @media(max-width:599px) {
@@ -14428,6 +14462,9 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
         font-size: 18px;
         color: #000000;
         line-height: 28px;
+    }
+    section.recommendation-section .container {
+        padding: 0 16px;
     }
 }
 
@@ -14733,6 +14770,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     div#swapModal .accordion-body ul.gift_sizes li {
         margin-bottom: 10px;
         margin-left: 6px;
+    }
+    .recommendation-item-list .row .col {
+        width: 100%;
     }
 }
 @media(max-width:370px) {
