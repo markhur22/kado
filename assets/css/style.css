@@ -15126,7 +15126,7 @@ div.gift_sent_pop img {     max-width: 270px; }
         font-size: 18px;
     }
     .congratulations-modal-title h2 {
-        font-size: 30px;
+        font-size: 30px;          
         line-height: 40px;
     }
     .congratulations-center-img {
@@ -15146,4 +15146,6 @@ div.gift_sent_pop img {     max-width: 270px; }
 }
 
 
+
 /* *************** Resposive End  ****************** */
+
