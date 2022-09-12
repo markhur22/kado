@@ -9505,35 +9505,7 @@ section.send-note-section .send-note-content .send-note-imgs {
 .send-note-thankyou textarea:focus {
     border-color: #FF385C;
 }
-section.payment-gift-section .payment-gift-heading a.payment-heading-logo {
-    display: inline-block;
-}
-section.payment-gift-section .payment-gift-heading a.payment-heading-logo img {
-    width: 126px;
-    margin-bottom: 22px;
-}
-.payment-gift-tabs-content .payment-nav-link.active svg path {
-    fill: #FF385C;
-}
-section.payment-gift-section .gt-select-payment-title {
-    margin-bottom: 22px;
-}
-section.payment-gift-section .payment-form-input {
-    margin-bottom: 31px;
-}
-section.payment-gift-section .payment-gift-method {
-    margin-bottom: 52px;
-}
-section.payment-gift-section .payment-form-input.payment-gift-input.full_name_payment {
-    margin-bottom: 22px;
-}
-section.payment-gift-section .payment-gift-method {
-    padding: 50px 44px 58px;
-}
-section.payment-gift-section .payment-gift-continue {
-    width: 345px;
-    padding: 36px 33px;
-}
+
 /* new desktop changes starts here */
  
  
@@ -13803,18 +13775,10 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 
     .option-item {
         margin: 0 13px 27px;
-        line-height: 19px;
-        padding: 6px 42px 6px 13px;
-        line-height: 19px;
-		padding: 0 42px 0 13px;
-		height: 57px;
-		margin-top:13px;
     }
 
     .option-item-btn {
         font-size: 16px;
-        line-height: 19px;
-        padding: 6px 42px 6px 13px;
 		line-height: 19px;
 		padding: 0 42px 0 13px;
 		height: 57px;
@@ -14613,34 +14577,6 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .send-note-modal .modal-xl {
         max-width: 570px;
     }
-    .gt-select-payment-option .form-check.form-check-inline {
-        margin-right: 30px;
-    }
-    .gt-select-payment-option {
-        justify-content: initial;
-    }
-    .payment-gift-section .payment-gift-input .form-control {
-        padding: 16px 17px 14px;
-        font-size: 16px;
-        line-height: 18px;
-    }
-    section.payment-gift-section .payment-gift-method {
-        margin-bottom: 0;
-    }
-    section.payment-gift-section .payment-gift-method {
-        padding: 28px 24px;
-    }
-    .payment-gift-btn .gt-btn-custom {
-        width: 310px;
-        max-width: 100%;
-        height: 56px;
-    }
-    section.payment-gift-section .payment-form-input {
-        margin-bottom: 20px;
-    }
-    section.payment-gift-section .payment-form-input.payment-gift-input.full_name_payment {
-        margin-bottom: 18px;
-    }
 }
 
 @media(max-width:599px) {
@@ -14834,28 +14770,12 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         top: 15px;
         right: 10px;
     }
-    section.payment-gift-section .container {
-        padding: 0 16px;
-    }
-    section.payment-gift-section .payment-gift-method {
-        padding: 28px 24px;
-    }
-    section.payment-gift-section .gt-select-payment-title {
-        margin-bottom: 20px;
-    }
-    .payment-gift-input .payment-digit-suggest {
-        margin-bottom: 12px;
-    }
-    section.payment-gift-section .payment-gift-continue {
-        width: 275px;
-        padding: 36px 22px;
-    }
 }
 
 @media (max-width: 480px) {
-    .shipping-manually-address{text-align:center;}
-    .version-details-title { width: 290px; }
-
+.shipping-manually-address{text-align:center;}
+.version-details-title { width: 290px; }	
+	
 
 	.gt-open-gift-img img{    width: 101px;}
 	.swap-section .container {     padding: 0 20px; }
@@ -15123,25 +15043,10 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         width: 80%;
         margin: auto;
     }
-    .gt-select-payment-option .form-check.form-check-inline {
-        margin-right: 0;
-    }
-    .payment-gift-method .gt-select-payment-option {
-        justify-content: space-between;
-    }
-    .payment-gift-section .gt-select-payment-option .form-check-label {
-        width: 64px;
-    }
-    section.payment-gift-section .payment-gift-method {
-        padding: 20px 16px;
-    }
-    section.payment-gift-section .gt-select-payment-option img {
-        height: 17px;
-    }
-    .payment-gift-section .gt-select-payment-content .col-6 {
-        width: 100%;
-        margin-bottom: 12px !important;
-    }
+	span.card_right_arrow{    width: 45px;     border-radius: 15px;    height: 45px;}
+	span.card_left_arrow{    width: 45px;     border-radius: 15px;    height: 45px;}
+	div#gift_sent_pop .card_view_main .birthady-david-img{padding:0;}
+	div .back_card{height:auto;}
 }
 
 @media(max-width:400px) {
@@ -15203,9 +15108,6 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     .send-note-modal-header .modal-title {
         font-size: 20px;
         line-height: 25px;
-    }
-    .payment-gift-section .payment-nav-item {
-        padding: 0 6px;
     }
 }
 @media(max-width:370px) {
