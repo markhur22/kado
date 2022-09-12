@@ -7710,6 +7710,7 @@ padding: 0 19px;
 
 .payment-gift-summary .order-summary-title {
     padding: 16px 25px 17px;
+	margin:0;
 }
 
 .payment-gift-summary .order-item {
@@ -7722,7 +7723,7 @@ padding: 0 19px;
 }
 
 .payment-gift-summary .order-total-price {
-    padding: 11px 22px 21px 25px;
+    padding: 17px 22px 21px 25px;
 }
 
 .payment-gift-summary .order-total-price span:last-child {
@@ -9504,6 +9505,37 @@ section.send-note-section .send-note-content .send-note-imgs {
 }
 .send-note-thankyou textarea:focus {
     border-color: #FF385C;
+}
+
+/**/
+section.payment-gift-section .payment-gift-heading a.payment-heading-logo {
+    display: inline-block;
+}
+section.payment-gift-section .payment-gift-heading a.payment-heading-logo img {
+    width: 126px;
+    margin-bottom: 22px;
+}
+.payment-gift-tabs-content .payment-nav-link.active svg path {
+    fill: #FF385C;
+}
+section.payment-gift-section .gt-select-payment-title {
+    margin-bottom: 22px;
+}
+section.payment-gift-section .payment-form-input {
+    margin-bottom: 31px;
+}
+section.payment-gift-section .payment-gift-method {
+    margin-bottom: 52px;
+}
+section.payment-gift-section .payment-form-input.payment-gift-input.full_name_payment {
+    margin-bottom: 22px;
+}
+section.payment-gift-section .payment-gift-method {
+    padding: 50px 44px 58px;
+}
+section.payment-gift-section .payment-gift-continue {
+    width: 345px;
+    padding: 36px 33px;
 }
 
 /* new desktop changes starts here */
@@ -11850,6 +11882,14 @@ section.send-note-section .send-note-content .send-note-imgs {
     }
     .send-note-modal .modal-xl {
         max-width: 700px;
+    }
+	.payment-gift-section .gt-select-payment-content {
+        width: 100%;
+        max-width: 100%;
+    }
+    .payment-gift-section .payment-gift-summary {
+        width: 100%;
+        max-width: 100%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -14228,7 +14268,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .payment-gift-method .gt-select-payment-option {
-        margin-bottom: 25px;
+        margin-bottom: 34px;
     }
 
     .payment-gift-input .form-control {
@@ -14276,7 +14316,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .payment-gift-btn .gt-btn-custom {
-        padding: 14px 96.5px;
+        padding: 14px 0;
         font-size: 20px;
         line-height: 24px;
     }
@@ -14577,6 +14617,34 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .send-note-modal .modal-xl {
         max-width: 570px;
     }
+	.gt-select-payment-option .form-check.form-check-inline {
+        margin-right: 30px;
+    }
+    .gt-select-payment-option {
+        justify-content: initial;
+    }
+    .payment-gift-section .payment-gift-input .form-control {
+        padding: 16px 17px 14px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    section.payment-gift-section .payment-gift-method {
+        margin-bottom: 0;
+    }
+    section.payment-gift-section .payment-gift-method {
+        padding: 28px 24px;
+    }
+    .payment-gift-btn .gt-btn-custom {
+        width: 310px;
+        max-width: 100%;
+        height: 56px;
+    }
+    section.payment-gift-section .payment-form-input {
+        margin-bottom: 20px;
+    }
+    section.payment-gift-section .payment-form-input.payment-gift-input.full_name_payment {
+        margin-bottom: 18px;
+    }
 }
 
 @media(max-width:599px) {
@@ -14769,6 +14837,22 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .send-note-pen-img {
         top: 15px;
         right: 10px;
+    }
+	section.payment-gift-section .container {
+        padding: 0 16px;
+    }
+    section.payment-gift-section .payment-gift-method {
+        padding: 28px 24px;
+    }
+    section.payment-gift-section .gt-select-payment-title {
+        margin-bottom: 20px;
+    }
+    .payment-gift-input .payment-digit-suggest {
+        margin-bottom: 12px;
+    }
+    section.payment-gift-section .payment-gift-continue {
+        width: 275px;
+        padding: 36px 22px;
     }
 }
 
@@ -15047,6 +15131,26 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 	span.card_left_arrow{    width: 45px;     border-radius: 15px;    height: 45px;}
 	div#gift_sent_pop .card_view_main .birthady-david-img{padding:0;}
 	div .back_card{height:auto;}
+	
+	.gt-select-payment-option .form-check.form-check-inline {
+        margin-right: 0;
+    }
+    .payment-gift-method .gt-select-payment-option {
+        justify-content: space-between;
+    }
+    .payment-gift-section .gt-select-payment-option .form-check-label {
+        width: 64px;
+    }
+    section.payment-gift-section .payment-gift-method {
+        padding: 20px 16px;
+    }
+    section.payment-gift-section .gt-select-payment-option img {
+        height: 17px;
+    }
+    .payment-gift-section .gt-select-payment-content .col-6 {
+        width: 100%;
+        margin-bottom: 12px !important;
+    }
 }
 
 @media(max-width:400px) {
@@ -15108,6 +15212,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     .send-note-modal-header .modal-title {
         font-size: 20px;
         line-height: 25px;
+    }
+	.payment-gift-section .payment-nav-item {
+        padding: 0 6px;
     }
 }
 @media(max-width:370px) {
@@ -15242,6 +15349,10 @@ div.gift_sent_pop img {     max-width: 270px; }
     .congratulations-center-img {
         top: 0px;
         width: 256px;
+    }
+	.payment-continue-btn {
+        padding: 13px 26px;
+        font-size: 16px;
     }
 }
 @media (max-width: 991px) and (orientation: landscape) {
