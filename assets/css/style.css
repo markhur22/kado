@@ -31,6 +31,9 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .version-tab-item button.version-tab-link.active img{display:none;}
 .version-tab-item button.version-tab-link.active img.color-img{display:block;}
 
+.shipping-form-input .form-control.form-select{background-position: calc(100% - 10px) center;;}
+
+
 /* today changes */
 .birthady-david-img::before { position: absolute; content: ''; width: 100%; height: 113px; top: 0; left: 0; background-image: url(../images/top-leave.png); background-repeat: no-repeat; background-position: top; background-size: contain; border-radius:10px;}
 .birthady-david-img::after{ position: absolute; content: ''; width: 100%; height: 113px; bottom: 0; left: 0; background-image: url(../images/bottom-leave.png); background-repeat: no-repeat; background-position: bottom; background-size: contain;  border-radius:10px;}
@@ -434,7 +437,10 @@ a {
     line-height: 17px;
     color: #9B9B9B;
 }
-
+.shipping-body-content .form-select {
+background-image: url(../images/select-arrow.svg);
+background-size: 10px;
+}
 .form-select {
     background-image: url(../images/drop-down-arrow.png);
     background-repeat: no-repeat;
@@ -534,9 +540,18 @@ a {
 }
 
 .shipping-form-input .select2-container--default .select2-selection--single {
-    padding: 22px 19px;
+    padding: 0;
 }
-
+.shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered{padding:0;}
+.shipping-body-form .shi-select-address .shipping-form-input {
+    margin: 0 0 8px 0;
+}
+.shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered span.select2-selection__placeholder {
+    padding: 0 19px 0 19px;
+    float: left;
+    height: 55px;
+    line-height: 55px;
+}
 .shipping-form-input .select2-container {
     width: 100% !important;
 }
@@ -6191,6 +6206,12 @@ div.g-signup-form .gt-btn-custom {
     align-items: center;
     justify-content: center;
 }
+.version-accept-btn:hover .accpt-gift {
+    background: #ff385c;
+}
+.version-accept-btn:hover .accpt-gift svg path {
+    fill: #fff;
+}
 .version-tab-swap-btn .accpt-gift {
     background-color: #FF385C;
     margin-right: 17px;
@@ -6256,7 +6277,7 @@ div.g-signup-form .gt-btn-custom {
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #565656;
+    color: #414141;
     padding: 0 32px 28px;
 }
 
@@ -6347,8 +6368,13 @@ div.g-signup-form .gt-btn-custom {
     line-height: 22px;
     letter-spacing: 0.05em;
 	height:62px;
+	transition:all ease 0.3s;
 }
-
+.version-accept-btn:hover{
+	background: #fff;
+    color: #FF385C;
+	 border: 2px solid #FF385C;
+}
 .version-accept-btn img {
     margin-right: 0;
 }
@@ -6364,8 +6390,18 @@ div.g-signup-form .gt-btn-custom {
     color: #FF385C;
     padding: 0 25px 0 10px;
     height: 62px;
+	transition: all ease 0.3s;
 }
-
+a.version-tab-swap-btn:hover {
+    background: #FF385C;
+    color: #fff;
+}
+a.version-tab-swap-btn:hover .accpt-gift {
+    background: #fff;  
+}
+a.version-tab-swap-btn:hover .accpt-gift svg path{
+	fill: #FF385C;
+}
 .version-tab-swap-btn:hover {
     color: #FF385C;
 }
@@ -6474,7 +6510,7 @@ div.g-signup-form .gt-btn-custom {
 .shipping-body-header {
     padding: 43px 44px 24px;
     border-bottom: 1px solid #E5E5E5;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .shipping-header-style {
@@ -6535,7 +6571,7 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .shipping-body-form {
-    padding: 23px 47px 35px 42px;
+    padding: 23px 47px 22px 42px;
 }
 
 .shipping-form-input label {
@@ -6546,18 +6582,20 @@ div.g-signup-form .gt-btn-custom {
     color: #000000;
     margin-bottom: 7px;
 }
-
+.shipping-form-input label span {
+    color: #FF385C;
+}
 .shipping-form-input .form-control::placeholder {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 55px;
     letter-spacing: 0.05em;
     color: #9B9B9B;
 }
 
 .shipping-form-input .form-control.form-select {
-    padding: 21.5px 19px;
+    padding: 0 15px 0 19px;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -6566,14 +6604,16 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .shipping-form-input {
-    margin-bottom: 13px;
+    margin-bottom: 14px;
 }
 
 .shipping-form-input .form-control {
-    padding: 11.5px 19px;
+padding: 0 19px;
     color: #000;
+    height: 55px;
+	line-height: 55px;
 }
-
+.shipping-form-input span.select2-selection__rendered{padding:0;}
 .img-flag {
     width: 25px;
 }
@@ -6590,7 +6630,8 @@ div.g-signup-form .gt-btn-custom {
     font-size: 16px;
     line-height: 19px;
     text-align: right;
-    color: #FF385C;
+    color: #FF385C;	
+    margin: 0 0 13px 0;
 }
 
 .shipping-manually-address:hover {
@@ -6603,13 +6644,14 @@ div.g-signup-form .gt-btn-custom {
 
 .shipping-tab-btn {
     text-align: center;
-    margin-top: 42px;
+    margin-top: 40px;
 }
 
 .shipping-tab-btn .btn {
-    padding: 10px 52px 10px 14px;
+    padding: 0 52px 0 14px;
     font-size: 24px;
     letter-spacing: 0.05em;
+	height:86px;
 }
 .shipping-tab-btn .accpt-gift {
     display: flex;
@@ -9701,6 +9743,9 @@ section.recommendation-section .recommendation-slider button {
 }
 
 @media (max-width: 1199px) {
+.shipping-tab-btn .accpt-gift { margin-right: 23px; width: 45px; height: 45px; }
+.shipping-tab-btn .btn { height: 65px; }
+
 #paymentModal .gt-select-payment-content{width:100%;}
 
 
@@ -10264,6 +10309,11 @@ section.recommendation-section .recommendation-slider button {
 }
 
 @media (max-width: 991px) {
+.version-tabs { padding-top: 28px; }
+	
+	
+	
+	
 #paymentModal .order-item-name h4 { font-size: 16px; line-height: 16px; padding: 0 6px 0 0; }
 #paymentModal .gt-payment-content > .row > .col { margin-top: 0; }
 #paymentModal .payment-btn{margin-top:0;}
@@ -11422,9 +11472,9 @@ section.recommendation-section .recommendation-slider button {
     }
 
     .shipping-tab-btn img {
-        padding: 7px;
-        width: 35px;
-        margin-right: 20px;
+        padding: 0;
+        width: 25px;
+        margin-right: 0; 
     }
 
     .shipping-tab-btn .btn {
@@ -11758,8 +11808,12 @@ section.recommendation-section .recommendation-slider button {
 }
 
 @media (max-width: 767px) {
+.version-details-btn .accpt-gift svg { width: 20px; }
+.option-tab-body > .row > .col { padding: 0; width: 50%;}
+.shi-manually-address.no-label label { display: none; }
+.shipping-tab-btn .accpt-gift { margin-right: 13px; width: 36px; height: 36px; }
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift { margin-right: 26px; width: 40px; height: 40px; }
-.version-tab-body { padding: 21px 28px 36px; }
+.version-tab-body { padding: 20px 28px 28px; }
 
 
 	.modal-header.send-flexi-header {     padding: 25px 25px; }
@@ -13517,20 +13571,20 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .version-tabs .version-tab-link {
         font-size: 14px;
         line-height: 17px;
-        padding: 0 0 17px;
+        padding: 0 0 14px;
     }
 
     .version-tab-link img {
         margin-right: 5px;
-        width: 24px;
+        width: 20px;
     }
 
     .version-tabs {
-        padding-top: 15px;
+        padding-top: 19px;
     }
 
     .version-tab-item {
-       padding: 0 23px 0 0;
+       padding: 0 14px 0 0;
     }
 	 .version-tab-item:last-child {
        padding-right:0;
@@ -13611,7 +13665,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .option-tab-body .row {
-        display: none;
+        display: flex;
     }
 
     .version-tabs .version-tab-link::before {
@@ -13619,7 +13673,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .option-tab-body {
-        padding: 24px 15px 41px 15px;
+        padding: 24px 30px 41px 30px;
     }
 
     .option-body-title {
@@ -13633,7 +13687,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .option-item-name {
-        padding: 6px 0 8px;
+        padding: 6px 0 12px;
     }
 
     .option-item-title {
@@ -13642,7 +13696,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .option-item {
-        margin: 0 13px 20px;
+        margin: 0 13px 27px;
     }
 
     .option-item-btn {
@@ -13650,6 +13704,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 		line-height: 19px;
 		padding: 0 42px 0 13px;
 		height: 57px;
+		margin-top:13px;
     }
 
     .option-item-btn img {
@@ -13657,7 +13712,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .option-pick-slider {
-        display: block;
+        display: none;
     }
 
     .shipping-body-title {
@@ -13669,9 +13724,9 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .shipping-header-title p {
-        font-size: 12px;
-        line-height: 14px;
-        margin-bottom: 6px;
+       font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 3px;
     }
 
     .shipping-header-img {
@@ -13679,13 +13734,13 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .shipping-body-content {
-        padding: 18px 14px 27px;
+       padding: 16px 17px 12px;
     }
 
     .shipping-body-header {
         border: none;
         padding: 0;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .shipping-body-form {
@@ -13711,7 +13766,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .shipping-header-btn img {
-        width: 17px;
+        width: 20px;
     }
 
     .shipping-header-img img {
@@ -13724,13 +13779,14 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .shipping-tab-btn .btn {
-        padding: 5px 24px 6px 8px;
+        padding: 0 24px 0 8px;
         font-size: 16px;
         line-height: 19px;
+		height:50px;
     }
 
     .shipping-tab-btn img {
-        margin-right: 13px;
+        margin-right: 0; 
     }
 
     .shipping-manually-address {
@@ -13742,7 +13798,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .shipping-tab-body {
-        padding: 22px 14px 27px;
+        padding: 16px 20px 37px;
     }
 
     .version-section {
@@ -13751,7 +13807,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 
     .recommendation-header-logo img {
         width: 65px;
-        height: 21px;
+        height: 21px;  
     }
 
     .recommendation-header-logo i {
@@ -14217,7 +14273,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .shipping-form-input .select2-container--default .select2-selection--single {
-        padding: 11.5px 19px;
+        padding: 0;
     }
 
     .g-finder-help-btn {
@@ -14577,6 +14633,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 }
 
 @media (max-width: 480px) {
+.shipping-manually-address{text-align:center;}
 .version-details-title { width: 290px; }	
 	
 
@@ -14847,6 +14904,13 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 }
 
 @media(max-width:400px) {
+.version-details-btn .accpt-gift {font-size: 12px; line-height: 17px; margin-right: 14px; }
+.version-tab-swap-btn { font-size: 12px; line-height: 17px;}
+.version-accept-btn { font-size: 12px; padding: 0 14px 0 7px; }
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift {margin-right: 15px;}
+.option-item-btn { padding: 0 25px 0 13px; }
+.option-item { margin: 0 8px 20px; }
+
 .choose-gift-logo { top: 45px; right: -30px; left: inherit; }
 .choose-gift-categories-collection .row > .col { width: 100%; padding: 0 10px; }
 
@@ -14887,6 +14951,23 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }
 @media(max-width:370px) {
+.version-tab-swap-btn, .version-accept-btn { font-size: 14px; line-height: 17px; }
+.version-details-btn{flex-wrap:wrap;}
+.version-accept-btn { width: 100%; margin: 0 0 10px 0; justify-content: flex-start; }
+.version-tab-swap-btn { width: 100%; justify-content: flex-start; }
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift{margin-right:10px;}
+.option-item-btn { font-size: 13px; padding: 0 10px 0 10px; }
+.option-tab-body > .row > .col{width:100%;}
+.version-tabs .version-tab-link { font-size: 12px; line-height: 15px; }
+li.version-tab-item { padding: 0 6px 0 0; }
+button.version-tab-link img { width: 16px; }
+.shipping-header-style { flex-wrap: wrap; justify-content: center; }	
+.shipping-header-img { margin-right: 0; margin-bottom: 6px; }
+.shipping-header-title{text-align:center;}
+.shipping-header-btn { margin: 0 auto; margin-top: 6px; }
+
+
+
 	.send-flexi-price label{padding:0;}
 #paymentModal .gt-card-outer > .row > .wd-full { width: 100%; }	
 #paymentModal .gt-select-payment-option .form-check-label { width: 70px; }
@@ -15008,6 +15089,8 @@ div.gift_sent_pop img {     max-width: 270px; }
 }
 @media (max-width: 375px){
 .birthday-thankyou-img { top: 21%; }
+.version-tab-link img { width: 18px; }
+.version-tab-item { padding: 0 10px 0 0; }
 }
 
 
