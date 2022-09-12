@@ -14305,6 +14305,12 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     .recommendation-section .recommendation-section {
         padding: 50px 0;
     }
+    .recommendation-header {
+        padding: 8.5px 0px;
+    }
+    .recommendation-section {
+        padding: 51px 0 38px;
+    }
 }
 
 @media(max-width:599px) {
@@ -14465,6 +14471,9 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
     }
     section.recommendation-section .container {
         padding: 0 16px;
+    }
+    .recommendation-header {
+        padding: 8.5px 16px;
     }
 }
 
