@@ -27,7 +27,8 @@
     <section class="swap-section section-bg-color new-design">
         <div class="container">
             <div class="swap-content">
-			<h5 class="swap-title">Swipe to open card</h5>
+			<h5 class="swap-title swaptitle">Swipe to open card</h5>
+			<h5 class="swap-title swap_close_card" style="display:none;">Close Card!</h5>
                 <div class="swap-img">
 					<div class="swap_slider_new">
 						
@@ -75,8 +76,20 @@
     <script src="assets/js/custom.js"></script>
 	<script>
 	$('.swap_btn').click(function(){
-		$(this).parent().toggleClass('hover_card_swipe');
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
 		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
+	});
+	$('.swap_close_card').click(function(){
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
 	});
 	
 	</script>
