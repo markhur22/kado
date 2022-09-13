@@ -37,7 +37,7 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .finder-modal-input textarea.form-control { resize: none; }
 .g-finder-one-content .g-finder-one-item.active_selector::before { background: #FFEBEF; }
 body .form-control::placeholder{font-weight:500 !important;}
-
+.g-finder-one-btn a { text-decoration: none; color: #000; }
 
 
 
