@@ -6136,7 +6136,7 @@ div.g-signup-form .gt-btn-custom {
 .gt-open-gift-content {
     width: 514px;
     max-width: 100%;
-    margin: 20px 0 0 0;
+    margin: -10px 0 0 0;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);
@@ -6201,8 +6201,12 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .gt-open-gift-btn img {
-    padding: 0;
-    margin-right: 0; 
+    padding: 8px;
+    margin-right: 22px;
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
 }
 .version-details-btn .accpt-gift {
   background: #fff;
@@ -8195,7 +8199,7 @@ section.swap-section {     position: relative; float:left; width:100%; height:10
     color: #fff;
     background-position: center;
     position: absolute;
-    top: 50%;
+    top: 42%;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -8234,10 +8238,10 @@ span.card_left_arrow {     width: 65px;     height: 65px;     background-color: 
 div.hover_card_swipe {     margin-left: 50%; }
 .hover_card_swipe .card_vk.hove .back { 		 transform: perspective(3000px) rotateY(-170deg); 		 box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1); 		 	}
 span.swap_btn { 		float: left; 		margin-top: 0; 		font-size: 30px; 	}
-.card_vk .back { 		 position: absolute; 		 width: 100%; 		 height: 100%; 		 		 margin: -10px 0px 0px -10px; 		 backface-visibility: visible; 		 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5)); 		 transform-style: preserve-3d; 		 transform-origin: 0% 50%; 		 transform: perspective(3000px) rotateY(0deg); 		 transition: all 0.8s ease-in-out; 		 background-color: #e6f0e6; 		 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1); 	}
+.card_vk .back { 		 position: absolute; 		 width: 100%; 		 height: 100%; 		 		 margin: -5px 0px 0px -10px; 		 backface-visibility: visible; 		 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5)); 		 transform-style: preserve-3d; 		 transform-origin: 0% 50%; 		 transform: perspective(3000px) rotateY(0deg); 		 transition: all 0.8s ease-in-out; 		 background-color: #e6f0e6; 		 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1); 	}
 
 .imgset 	{ 	  position: relative; 	  z-index: 1; 	  margin-bottom: -215px; 	}
-.imgset img 	{ 		box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22); 		border-radius: 5px; 	}
+.imgset img 	{ 		box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22); 		border-radius: 15px; 	}
 .swipe_card{height:100%;}
 
 
@@ -9932,6 +9936,12 @@ a.gt-open-gift-btn:hover {
 }
 
 @media (max-width: 1399px) {
+	.swap-content{width: 450px;}
+	.gt-open-gift-name{    margin-bottom: 34px;}
+	.gt-open-gift-details{    padding: 0 30px 40px;    margin-top: 20px;}
+	
+	
+	
 	.gt-send-gift-section .container {     padding: 0 50px; }
 	.gt-select-gift-content__inner{    width: 251px;}
     .help-form-email {
@@ -10615,9 +10625,16 @@ a.gt-open-gift-btn:hover {
 }
 
 @media (max-width: 991px) {
-.version-tabs { padding-top: 28px; }
-	
-	
+	.swap-content {     width: 350px; }
+	.gt-open-gift-title{    font-size: 21px;     line-height: 26px;}
+	.gt-open-gift-discription{font-size: 16px;     line-height: 20px;    margin-bottom: 18px;}
+	.gt-open-gift-img img{    width: 110px;}
+	.gt-open-gift-style-img img{    height: 90px;     width: 100%;}
+		.version-tabs { padding-top: 28px; }
+	@keyframes myAnim { 	0% { 		opacity: 0; 		transform: translateX(-40px); 	}  	100% { 		opacity: 1; 		transform: translateX(-60px); 	} }	
+	.gt-open-gift-btn{font-size: 17px;     line-height: 30px;}
+	.gt-open-gift-btn img {     padding: 8px;     margin-right: 12px;     background: #fff;     height: 40px;     width: 40px;     border-radius: 50px; }
+	.swap_btn{width: 61px;     height: 61px;background-size: 28px;}
 	
 	
 #paymentModal .order-item-name h4 { font-size: 16px; line-height: 16px; padding: 0 6px 0 0; }
