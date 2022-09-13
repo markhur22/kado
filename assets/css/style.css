@@ -7479,11 +7479,11 @@ padding: 0 19px;
 
 
 /********** Send Note Section Start ********/
-
-.send-note-section {
-    border-top: 10px solid #FF385C;
-    font-family: 'Lato', sans-serif;
-}
+    /* 
+    .send-note-section {
+        border-top: 10px solid #FF385C;
+        font-family: 'Lato', sans-serif;
+    } */
 
 .send-note-body {
     background: #FFFFFF;
@@ -7592,11 +7592,15 @@ padding: 0 19px;
 .send-note-modal-img {
     text-align: center;
     margin-bottom: 36px;
+    cursor: pointer;
 }
 
 .send-note-modal-img img {
     border-radius: 15px;
+    width: 100%;
+    transition: all ease .5s;
 }
+
 
 
 /********** Send Note Section End ********/
@@ -9582,6 +9586,7 @@ span.gif_icon {
 .select_card_section .send-note-modal-img {
     text-align: center;
     margin-bottom: 23px;
+    padding: 0 2px;
 }
 .select_card_section .scroll-x.scroll-scrollx_visible {
     display: none !important;
@@ -9608,7 +9613,60 @@ span.gif_icon {
     padding-top: 25.5px;
     position: relative;
 }
-
+.gt-gift-brand-logo {
+    position: absolute;
+    top: -24px;
+    left: 16px;
+}
+section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card {
+    background-color: #FDF4F6;
+}
+section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipping-charge {
+    background-color: #FF385C;
+}
+section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipping-charge span {
+    color: #fff;
+}
+section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipping-charge path {
+    fill: #fff;
+}
+.reco-body-footer .reco-footer-btn a:hover {
+    background-color: #FF385C;
+    color: #fff;
+}
+.reco-body-footer .reco-footer-btn a:hover path {
+    fill: #fff;
+}
+.reco-footer-btn a svg {
+    margin-left: 6px;
+}
+section.recommendation-section .recommendation-slider button:hover {
+    background-color: #FF385C;
+    background-image: none;
+    color: #fff;
+}
+section.recommendation-section .recommendation-slider button:hover::before {
+    color: #fff;
+}
+section.send-note-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 10px solid #FF385C;
+}
+.send-note-modal-img:hover img {
+    box-shadow: 0 0 0px 2px #a7a7a7;
+}
+.send-note-btn a:hover {
+    background-color: #e3294b;
+    border-color: #e3294b;
+}
+.payment-gift-modal-body a.gt-open-gift-btn.payment-gift-modal-btn:hover {
+    background-color: #e3294b;
+    border-color: #e3294b;
+}
 /* new desktop changes starts here */
  
  
@@ -14730,7 +14788,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
     .select_card_section .scrollbar-inner>.scroll-element.scroll-y {
         width: 6px;
-        right: -17.5px;
+        right: -15.5px;
     }
 }
 
@@ -15250,6 +15308,11 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     .select_card_main .row {
         width: 100%;
         margin: 0;
+    }
+    
+    .select_card_section .scrollbar-inner>.scroll-element.scroll-y {
+        width: 6px;
+        right: -4px;
     }
 }
 
