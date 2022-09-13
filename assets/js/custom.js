@@ -2,6 +2,10 @@ $(document).ready(function() {
 	$('input[type=radio][name=ageradio]').change(function() {
 		$('.g-finder-second-section .next_btn').removeClass('disable_btn');
 	});
+	$('.select_gift_for input[type=radio][name=flexRadioDefault]').change(function() {
+		$('.active_selector').removeClass('active_selector');
+		$(this).parent().addClass('active_selector');
+	});
 	
 	$('input[type=radio][name=budgetradio]').change(function() {
 		$('.g-finder-third-content .next_btn').removeClass('disable_btn');
@@ -564,6 +568,15 @@ var sub_show = [];
 	  } else {
 		input.attr("type", "password");
 	  }
+	  
+	  var inputcvv_payment = $(".cvv_payment");
+	  if (inputcvv_payment.attr("type") === "password") {
+		inputcvv_payment.attr("type", "text");
+	  } else {
+		inputcvv_payment.attr("type", "password");
+	  }
+	  
+	  
 	});
 	
 /* 	var a = $(".custom_tab_sec_one.custom_tab_common").offset().top - 150,
