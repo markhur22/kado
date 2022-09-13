@@ -8988,7 +8988,7 @@ span.select2-dropdown .select2-results__message:hover {
     color: #414141;
     letter-spacing: 0.05em;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea::placeholder {
     color: #414141;
