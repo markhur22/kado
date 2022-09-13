@@ -8228,7 +8228,7 @@ span.card_left_arrow {     width: 65px;     height: 65px;     background-color: 
 .swap_slider_new {     width: 100%;     float: left;transition: 0.4s ease all; position:relative;}
 .strikethrough { 		 text-decoration: line-through; 	}
 .card_vk .text-container #head { 		 margin: 60px auto 60px auto; 	}
-.card_vk p { 		 font-size: 1.1em; 		 line-height: 1.4; 		 font-family: 'Nobile'; 		 color: #331717; 		 font-style: italic; 		 text-align: center; 		 margin: 30px auto 0px auto; 	}
+
 .card_vk .front { 		 position: absolute; 		 width: 100%; 		 height: 100%; 		 margin: -10px 0px 0px -10px; 		 		 backface-visibility: hidden; 		 		 		 transform-style: preserve-3d; 		 transform-origin: 0% 50%; 		 transform: perspective(2000px) rotateY(0deg); 		 transition: all 0.8s ease-in-out; 	}
 .hover_card_swipe .card_vk.hove .front { 		 transform: perspective(2000px) rotateY(-170deg); 		 	}
 div.hover_card_swipe {     margin-left: 50%; }
