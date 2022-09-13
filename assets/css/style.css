@@ -6998,6 +6998,7 @@ padding: 0 19px;
 
 .g-finder-section {
     padding: 84px 0 119px;
+	height: calc(100vh - 95px);
 }
 
 .g-finder-one-content {
@@ -7187,8 +7188,8 @@ padding: 0 19px;
     line-height: 19px;
     letter-spacing: 0.05em;
     border-radius: 31px;
+	transition:all ease 0.3s;
 }
-
 .g-finder-one-view-btn {
     background: #FF385C;
     padding: 20.5px 46.5px;
@@ -7350,7 +7351,9 @@ padding: 0 19px;
     color: #414141;
     margin-bottom: 0;
 }
-
+.finder-second-age-input .label-bg {
+    color: #FF385C;
+}
 .finder-second-age:checked[type=radio] {
     background-image: url(../images/finder_dot.png);
     background-size: 12px;
@@ -8399,8 +8402,11 @@ span.logo_back img {     width: 100%; }
 }
 
 .g-finder-one-section .g-finder-one-item::before {
-	background-color: #FCECED;
+	background-color: #FDF4F6;
 	content: '';
+}
+.g-finder-one-item .form-check-input:checked[type="radio"] ~ h6 {
+    color: #FF385C;
 }
 .action_btn.next_btn.disable_btn a {
 	pointer-events: none;
@@ -10543,7 +10549,7 @@ a.gt-open-gift-btn:hover {
 		position: absolute;
 		top: 50px;
 		right: initial;
-		left: calc(100% - 60px);
+		left: calc(100% - 70px);
 	}
 	.g-finder-prev-btn {
 		right: initial;
@@ -11780,7 +11786,7 @@ a.gt-open-gift-btn:hover {
     .g-finder-next-btn {
 		right: initial;
 		top: 20px;
-		left: calc(100% - 60px);
+		left: calc(100% - 50px);
 	}
 
     .g-finder-prev-btn {
