@@ -14,7 +14,9 @@
     <!-- <link rel="stylesheet" href="assets/css/select2.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+   <style>
    
+   </style>
 
 
 </head>
@@ -26,27 +28,35 @@
         <div class="container">
             <div class="swap-content">
                 <div class="swap-img">
-					<div class="swap_slider">
-						<div class="swap_box_image">
-							<h5 class="swap-title">Swipe to open card</h5>
-							<img src="assets/images/swap_img.png" alt="" class="img-fluid">
-						</div>
-						<div>
-							<div class="gt-open-gift-content">
-								<div class="gt-open-gift-style-img">
-									<img src="assets/images/open_gift_style.png" alt="" class="img-fluid">
+					<div class="swap_slider_new">
+						<h5 class="swap-title">Swipe to open card</h5>
+						<div class="card_vk">
+							<div class="swap_box_image">
+								<div class="back"></div>
+								<div class="front">
+									<div class="imgset">
+										<img width="100%" src="assets/images/swap_img.png" alt="" class="img-fluid">
+									</div>
 								</div>
-								<div class="gt-open-gift-img">
-									<img src="assets/images/open_gift_img.svg" alt="" class="img-fluid">
-								</div>
-								<div class="gt-open-gift-details">
-									<h3 class="gt-open-gift-title">Happy 30th Happy Birthday!</h3>
-									<p class="gt-open-gift-discription">Happy 30th Birthday Matt! Hope you have a great day and can enjoy this gift that I bought you, you deserve it! Look forward to seeing you soon.</p>
-									<h5 class="gt-open-gift-name">– Dennis Jap</h5>
-									<a href="javascript:void(0);" class="gt-open-gift-btn btn"><img src="assets/images/gift_new.svg" alt="" class="img-fluid"> Open Gift</a>
+								<div class="text-container">
+									<div class="gt-open-gift-content">
+										<div class="gt-open-gift-style-img">
+											<img src="assets/images/open_gift_style.png" alt="" class="img-fluid">
+										</div>
+										<div class="gt-open-gift-img">
+											<img src="assets/images/open_gift_img.svg" alt="" class="img-fluid">
+										</div>
+										<div class="gt-open-gift-details">
+											<h3 class="gt-open-gift-title">Happy 30th Happy Birthday!</h3>
+											<p class="gt-open-gift-discription">Happy 30th Birthday Matt! Hope you have a great day and can enjoy this gift that I bought you, you deserve it! Look forward to seeing you soon.</p>
+											<h5 class="gt-open-gift-name">– Dennis Jap</h5>
+											<a href="javascript:void(0);" class="gt-open-gift-btn btn"><img src="assets/images/gift_new.svg" alt="" class="img-fluid"> Open Gift</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<span class="swap_btn"></span>
 					</div>
                     
                 </div>
@@ -62,6 +72,13 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- <script src="assets/js/select2.min.js"></script> -->
     <script src="assets/js/custom.js"></script>
+	<script>
+	$('.swap_btn').click(function(){
+		$(this).parent().toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+	});
+	
+	</script>
 </body>
 
 </html>
