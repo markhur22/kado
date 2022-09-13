@@ -8199,7 +8199,7 @@ span.card_left_arrow {     width: 65px;     height: 65px;     background-color: 
 }
 .card_view_main .birthday-cont{display: flex;     align-items: center;     flex-direction: column;     justify-content: center;     height: 100%;}
 #gift_sent_pop .modal-content{background-color:transparent;}
-
+.payment-card-no span{    display: inline-block;     vertical-align: bottom;}
 
 
 
