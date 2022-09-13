@@ -9719,7 +9719,7 @@ div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
 }
 div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
     height: calc(100% - 85px);
-    padding: 0 32px 0 38px;
+    padding: 0px 32px 40px 38px;
     display: flex;
 }
 div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
@@ -9774,6 +9774,7 @@ div#giftEmporiumModal .gt-gift-detail-area {
     font-size: 18px;
     line-height: 22px;
     margin-top: 13px;
+    align-items: start;
 }
 .product_card_detail  p.product_card_para {
     font-weight: 400;
@@ -9798,6 +9799,7 @@ div#giftEmporiumModal .gt-gift-detail-area {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 13px;
 }
 .modal_main_item .modal_selected_item ul.gift_sizes li a {
     float: left;
@@ -9815,6 +9817,34 @@ div#giftEmporiumModal .gt-gift-detail-area {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+.modal_main_item .modal_selected_item .gift_desc_main p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    margin-bottom: 4px;
+}
+.modal_selected_item_inner {
+    padding: 18px 14px 12px 18px;
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+}
+.product_card_detail h3.gt-gift-veriation-card-title button::after {
+    background-size: 13px;
+    background-position: center;
+    transform: rotate(180deg);
+}
+div#giftEmporiumModal .modal-content {
+    border-radius: 10px 0 0 10px;
+}
+header.gt-site-header nav.navbar .gifts-collapse-btn {
+    display: none !important;
+}
+div#FAQaccordionnew .active_accord {
+    background-color: #F4F4F4;
+}
+#giftEmporiumModal .modal_full_item .accordion-item:first-of-type .accordion-button {
+    background-color: transparent;
 }
 /* new desktop changes starts here */
  
@@ -12188,6 +12218,16 @@ div#giftEmporiumModal .gt-gift-detail-area {
     div#giftEmporiumModal.modal.show .modal-dialog {
         transform: none;
         height: initial;
+    }
+    .modal_selected_item_inner {
+        margin-top: 21px;
+    }
+    
+    .modal_main_item .modal_selected_item ul.gift_sizes {
+        justify-content: start;
+    }
+    .modal_main_item .modal_selected_item ul.gift_sizes li {
+        margin-right: 8px;
     }
 
 }
@@ -14962,7 +15002,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         right: -15.5px;
     }
     div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
-        padding: 0 16px 0 16px;
+        padding: 0 16px 20px 16px;
     }
 }
 
