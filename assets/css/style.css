@@ -9596,6 +9596,10 @@ span.gif_icon {
 .select_card_section .scrollbar-inner>.scroll-element.scroll-y {
     width: 10px;
 }
+.gt-browse-gift-section .gt-gift-card-body {
+    padding-top: 25.5px;
+    position: relative;
+}
 
 /* new desktop changes starts here */
  
