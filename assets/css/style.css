@@ -8340,10 +8340,10 @@ p.gt-gift-shipping-charge:hover span path {     fill: #fff; }
 
 
 
-.gt-gift-veriation-card-footer {     width: 100%;     -webkit-display: flex; -moz-display: flex; -ms-display: flex; -o-display: flex; display: -webkit-box; display: -ms-flexbox; /* ie 10 */ display:-webkit-flex; display: flex;    -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; -webkit-box-pack: space-between; -ms-flex-pack: justify; /* ie 10 */ justify-content: space-between;    margin: 20px 0 0 0; }
+.gt-gift-veriation-card-footer {     width: 100%;     -webkit-display: flex; -moz-display: flex; -ms-display: flex; -o-display: flex; display: -webkit-box; display: -ms-flexbox; /* ie 10 */ display:-webkit-flex; display: flex;    -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; -webkit-box-pack: space-between; -ms-flex-pack: justify; /* ie 10 */ justify-content: space-between;    margin: 20px 0 0 0;}
 div.gift_slider{    padding: 0 30px;}
 .gift_acc_inner {     display: flex; }
-.gt-gift-veriation-card .accordion-item.faq-accordion-item {     box-shadow: none;     margin: 0 0 30px 0;     border: 1px solid #E2E2E2;     border-radius: 15px;     padding: 23px 33px; }
+.gt-gift-veriation-card .accordion-item.faq-accordion-item {     box-shadow: none;     margin: 0 0 30px 0;     border: 1px solid #E2E2E2;     border-radius: 15px;     padding: 23px 33px;  cursor: pointer;}
 .gt-gift-veriation-card .accordion-item.faq-accordion-item:last-child {     margin: 0; }
 .gift_verification_body_inner button.accordion-button {     padding: 0;     width: auto;     border-radius: 0; font-size:22px;} 
 .faq-accordion-item .gt-gift-veriation-card-description {     font-weight: 400;     font-size: 16px;     line-height: 22px;     color: #414141;     margin-bottom: 15px; }
@@ -9752,6 +9752,7 @@ div#giftEmporiumModal.modal.show .modal-dialog {
 }
 div#giftEmporiumModal.modal.show .modal-dialog .modal-content {
     height: 100%;
+    border: 0;
 }
 div#giftEmporiumModal .emporium-modal-body-inner {
     height: calc(100% - 95px);
@@ -9882,15 +9883,27 @@ div#giftEmporiumModal .gt-gift-detail-area {
 }
 div#giftEmporiumModal .modal-content {
     border-radius: 10px 0 0 10px;
-}
+}sktop
 header.gt-site-header nav.navbar .gifts-collapse-btn {
     display: none !important;
 }
-div#FAQaccordionnew .active_accord {
+div#FAQaccordionnew .active_choose {
     background-color: #F4F4F4;
 }
-#giftEmporiumModal .modal_full_item .accordion-item:first-of-type .accordion-button {
+#giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
     background-color: transparent;
+}
+.modal_selected_item {
+    display: none;
+}
+.modal_selected_item.active_choose {
+    display: block;
+}
+.modal_selected_item_inner button.accordion-button.collapsed::after {
+    transform: rotate(0deg);
+}
+.gt-gift-veriation-card .accordion-item.faq-accordion-item .accordion-body {
+    display: none;
 }
 /* new desktop changes starts here */
  
@@ -12304,6 +12317,38 @@ div#FAQaccordionnew .active_accord {
     }
     .modal_main_item .modal_selected_item ul.gift_sizes li {
         margin-right: 8px;
+    }
+    div#giftEmporiumModal .modal_full_item .gt-popup-gift-content {
+        width: 100%;
+        margin-left: 0;
+    } 
+    div#giftEmporiumModal .modal_full_item .gt-gift-detail-area {
+        margin-bottom: 20px;
+    }
+    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+        padding-top: 22px;
+    }
+    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+        padding-top: 22px;
+        position: relative;
+    }
+    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: calc(100% + 60px);
+        height: 1px;
+        left: -30px;
+        background-color: #E2E2E2;
+    }
+    .gt-gift-veriation-card .accordion-item.faq-accordion-item .accordion-body {
+        display: block;
     }
 
 }
@@ -15089,6 +15134,53 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
         padding: 0 16px 20px 16px;
     }
+    
+    .close_pop_up {
+        padding: 20px 16px 17px 16px;
+    }
+    .modal_main_inner_item {
+        padding: 0 16px 20px;
+    }
+    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item {
+        padding: 0;
+    }
+    div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
+        padding: 31px 30px 0px;
+    }
+    div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
+        border: 0;
+    }
+    /* .modal_selected_item_inner {
+        padding-left: 30px;
+        padding-right: 30px;
+    } */
+    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item {
+        padding: 0;
+        border: 1px solid #D2D2D2;
+        border-radius: 15px;
+    }
+    .model_select_mob_b {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 26px;
+    }
+    .brands_logo_pop img {
+        width: 79px;
+        margin-bottom: 7px;
+    }
+    #giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
+        background-color: transparent;
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .modal_main_item .gift_verification_body_inner button.accordion-button::after {
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.12 0L9 6.7998L15.88 0L18 2.1001L9 11L0 2.1001L2.12 0Z' fill='black'/%3E%3C/svg%3E%0A");
+    }
+    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item .accordion-item.faq-accordion-item {
+        width: 100%;
+        float: left;
+    }
 }
 
 @media(max-width:599px) {
@@ -15690,6 +15782,23 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 	.payment-gift-section .payment-nav-item {
         padding: 0 6px;
+    }
+    div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
+        padding: 31px 12px 50px;
+        overflow: visible;
+    }
+    section.swap_gift_main a.browse-categori-popup {
+        width: 100%;
+    }
+    .model_select_mob_b {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 26px;
+    }
+    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
+        width: calc(100% + 27px);
+        height: 1px;
+        left: -13px;
     }
 }
 @media(max-width:370px) {
