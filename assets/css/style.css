@@ -33,9 +33,9 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .shipping-form-input .form-control.form-select{background-position: calc(100% - 10px) center;;}
 
 /*  13-sept-2022  */
-.finder-modal-input .form-control::placeholder { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #414141; opacity: 0.6; }
+.finder-modal-input .form-control::placeholder { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #414141; opacity: 0.6; }  
 .finder-modal-input textarea.form-control { resize: none; }
-
+.g-finder-one-content .g-finder-one-item.active_selector::before { background: #FFEBEF; }
 
 
 
@@ -6998,7 +6998,6 @@ padding: 0 19px;
 
 .g-finder-section {
     padding: 84px 0 119px;
-	height: calc(100vh - 95px);
 }
 
 .g-finder-one-content {
@@ -9791,8 +9790,14 @@ a.gt-open-gift-btn:hover {
         max-width: 1255px;
     }
 }
+@media (min-width: 1920px) {
+.g-finder-one-section {
+	height: calc(100vh - 95px);
+}
+}
 
 @media (min-width: 1400px) {
+		
     .gifts-content>.row>.col-xl-3 {
         max-width: 338px;
     }
@@ -14609,7 +14614,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         bottom: 0;
         transform: translateX(-50%);
     }
-	.g-finder-one-section .g-finder-lightcyan::before {
+	/*.g-finder-one-section .g-finder-lightcyan::before {
 		content: '';
 		background-color: #E0F0FF;
 	}
@@ -14628,7 +14633,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 	}
 	.g-finder-titanwhite {
 		border-color: #E2E0FF;
-	}
+	}*/
 	.g-finder-help-btn {
 		display: none;
 	}
