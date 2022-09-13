@@ -8172,9 +8172,12 @@ div.gift_sent_pop img{max-width:400px;}
 #paymentModal .payment-form-input span.field_icon::before {     color: #818181; }
 section.swap-section:after {     content: '';     background-color: #fff;     width: 100%;     height: 397px;     left: 0;     position: absolute;     top: 0; }
 section.swap-section:before {content: '';     position: absolute;     top: 0;     left: 0;     width: 100%;     border-top: 10px solid #FF385C;z-index:9;}
-section.swap-section {     position: relative; }
+section.swap-section {     position: relative; float:left; width:100%; height:100%;}
 .swap_slider button.slick-disabled {     display: none !important; }
 .swap_slider button.slick-prev  {     display: none !important; }
+.payment-form-input .input_pass_ span {     right: 17px; }
+
+.payment-form-input .input_pass_ span::before {     color: #818181; }
 
 
 .swap_btn {
@@ -8236,7 +8239,7 @@ span.swap_btn { 		float: left; 		margin-top: 0; 		font-size: 30px; 	}
 
 .imgset 	{ 	  position: relative; 	  z-index: 1; 	  margin-bottom: -215px; 	}
 .imgset img 	{ 		box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22); 		border-radius: 5px; 	}
-
+.swipe_card{height:100%;}
 
 
 
