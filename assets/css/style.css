@@ -8162,7 +8162,7 @@ div.gift_sent_pop img{max-width:400px;}
 .gt-pay-for-gift-content h5.gifts-card-title {     margin: 0; }
 .gifts-card.pay-gift-card:hover {     border-color: #ff385c; }
 .gifts-card.pay-gift-card {     transition: 0.4s ease all; }
-.gt-select-payment-option img {     height: 20px; }
+.gt-select-payment-option img {     height: auto; }
 .gt-select-payment-option .mastercard img {     height: 26px; }
 .payment-form-input .form-control{    border: 1px solid #d2d2d2;}
 .gt-btn-custom.payment-btn {     margin-top:0; }
