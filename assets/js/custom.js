@@ -755,4 +755,12 @@ $('span.card_right_arrow').click(function(){
 $('span.card_left_arrow').click(function(){
     $('.wrap-modal-slider-card').toggleClass('hover_card_right');
 });
+
+$('#FAQaccordionnew .accordion-item  a.gt-choose-gift-btn').click(function(){
+   var p_C = $(this).attr("p_c");
+    var side_choose = $(this).attr("side_choose");
+    $('.active_choose').removeClass('active_choose');
+    $('.'+p_C).addClass('active_choose');
+    $('.'+side_choose).addClass('active_choose');
+});
 });
