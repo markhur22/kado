@@ -5821,7 +5821,7 @@ div.g-signup-form .gt-btn-custom {
 
 .choose-gift-section {
     
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
 }
 
 .choose-gift-content {
@@ -7577,6 +7577,7 @@ padding: 0 19px;
 .send-note-modal-header .modal-title {
     font-size: 30px;
     line-height: 36px;
+    font-family: 'Lato';
 }
 
 .send-note-modal-header .btn-close {
@@ -9454,6 +9455,7 @@ div#swapModal .accordion-header .accordion-collapse .accordion-body span {
 }
 section.recommendation-section .recommendation-slider button {
     border-radius: 100%;
+    background-image: none;
 }
 .recommendation-slider .slick-prev {
     left: -13px;
@@ -9657,13 +9659,33 @@ section.send-note-section::before {
     border-top: 10px solid #FF385C;
 }
 .send-note-modal-img:hover img {
-    box-shadow: 0 0 0px 2px #a7a7a7;
+    box-shadow: 0 0 0px 1.5px #ff385c;
 }
 .send-note-btn a:hover {
     background-color: #e3294b;
     border-color: #e3294b;
 }
 .payment-gift-modal-body a.gt-open-gift-btn.payment-gift-modal-btn:hover {
+    background-color: #e3294b;
+    border-color: #e3294b;
+}
+.select_card_section .scroll-wrapper>.scroll-content {
+    padding: 2px 0;
+}
+.payment-continue-discription p {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 32px;
+}
+.payment-continue-discription p span.emoji {
+    font-style: initial;
+}
+a.payment-continue-btn:hover {
+    background-color: #e3294b;
+    border-color: #e3294b;
+}
+a.gt-open-gift-btn:hover {
     background-color: #e3294b;
     border-color: #e3294b;
 }
@@ -15001,6 +15023,11 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
     .select_card_main {
         height: 684px;
+    }
+    .payment-continue-discription p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 24px;
     }
 }
 
