@@ -9796,7 +9796,7 @@ a.gt-open-gift-btn:hover {
 }
 @media (min-width: 1920px) {
 .g-finder-one-section {
-	height: calc(100vh - 95px);
+	height: calc(100vh - 75px);
 }
 }
 
@@ -10056,6 +10056,10 @@ a.gt-open-gift-btn:hover {
 }
 
 @media (max-width: 1199px) {
+.g-finder-third-content{padding: 71px 45px 55px;}
+.g-finder-second-content{padding: 40px 45px 61px;}	
+	
+	
 .shipping-tab-btn .accpt-gift { margin-right: 23px; width: 45px; height: 45px; }
 .shipping-tab-btn .btn { height: 65px; }
 
@@ -10594,6 +10598,14 @@ a.gt-open-gift-btn:hover {
         font-size: 16px;
     }
 }
+
+
+@media (min-width: 992px) and (max-width: 1080px){
+	.g-finder-next-btn.fir_arr { top: 60px; }
+	.g-finder-second-content .g-finder-prev-btn, .g-finder-third-section .g-finder-prev-btn, .g-finder-four-section .g-finder-prev-btn {     left: 45px; }
+	.g-finder-third-section .g-finder-next-btn, .g-finder-third-section .g-finder-prev-btn {     top: 80px; }
+}
+
 @media only screen and (max-width: 1080px) {
 	.g-finder-next-btn {
 		position: absolute;
@@ -10603,7 +10615,7 @@ a.gt-open-gift-btn:hover {
 	}
 	.g-finder-prev-btn {
 		right: initial;
-		top: 44px;
+		top: 50px;
 		left: 30px;
 	}
 	.g-finder-help-btn {
@@ -10615,7 +10627,6 @@ a.gt-open-gift-btn:hover {
 		left: 0;
 		margin: auto;
 	}
-	
 }
 
 @media only screen and (max-width: 1024px) {
@@ -11858,7 +11869,7 @@ a.gt-open-gift-btn:hover {
         border-bottom: 0px solid #D2D2D2;
         padding-bottom: 0;
         margin-bottom: 0;
-    }
+    } 
 
     .swaptwo-modal-header {
         padding: 16px 24px;
@@ -11913,8 +11924,8 @@ a.gt-open-gift-btn:hover {
     }
 	.g-finder-prev-btn {
 		left: 22px;
-		top: 18px;
-	}
+		top: 20px;
+	} 
 	.home_head_menu img {
 		height: 20px;
 		width: auto;
