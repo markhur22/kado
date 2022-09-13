@@ -30,8 +30,14 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .version-tab-item img.color-img { display: none; }
 .version-tab-item button.version-tab-link.active img{display:none;}
 .version-tab-item button.version-tab-link.active img.color-img{display:block;}
-
 .shipping-form-input .form-control.form-select{background-position: calc(100% - 10px) center;;}
+
+/*  13-sept-2022  */
+
+
+
+
+
 
 
 /* today changes */
