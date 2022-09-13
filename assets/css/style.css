@@ -12145,6 +12145,13 @@ a.gt-open-gift-btn:hover {
 }
 
 @media (max-width: 767px) {
+	.swap-content {     width: 300px; }
+	.card_vk .back{    margin: 0;}
+	.card_vk .front{  margin: 0;}
+	div.hover_card_swipe{    margin-left: 0;}
+	
+	
+	
 /* 13 sept 2022*/	
 .g-finder-third-content .g-finder-two-btn.disable_btn { margin-top: 29px; }
 .recommendation-header-gift svg { width: 16px; }
@@ -12166,7 +12173,7 @@ a.gt-open-gift-btn:hover {
 	.send-flexi-header .btn-close{    right: 20px;}
 	
 	
-	.gt-open-gift-btn img{ height: 20px;   margin-right:0;}
+	/* .gt-open-gift-btn img{ height: 20px;   margin-right:0;} */
 	.version-details-btn .accpt-gift, .version-tab-swap-btn .accpt-gift{height:32px; width:32px;}
 	.version-details-btn .accpt-gift{margin-right:18px;}
 	.version-tab-swap-btn .accpt-gift {margin-right: 9px;}
