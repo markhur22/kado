@@ -764,3 +764,18 @@ $('#FAQaccordionnew .accordion-item  a.gt-choose-gift-btn').click(function(){
     $('.'+side_choose).addClass('active_choose');
 });
 });
+
+function chooseActive(elem){
+	for(var i=1;i<=3;i++){
+		//alert(elem);
+		if(elem==i){
+			jQuery('.accordian'+elem).addClass('active_choose');
+			jQuery('.choose'+elem).addClass('active_choose');
+		}
+		else
+		{
+			jQuery('.accordian'+i).removeClass('active_choose');
+			jQuery('.choose'+i).removeClass('active_choose');
+		}
+	}
+}
