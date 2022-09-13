@@ -36,7 +36,7 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .finder-modal-input .form-control::placeholder { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #414141; opacity: 0.6; }  
 .finder-modal-input textarea.form-control { resize: none; }
 .g-finder-one-content .g-finder-one-item.active_selector::before { background: #FFEBEF; }
-
+body .form-control::placeholder{font-weight:500 !important;}
 
 
 
@@ -639,11 +639,10 @@ background-size: 10px;
 }
 span.select2-dropdown .select2-results__option.select2-results__option--disabled{    background: transparent !important; color:#999 !important;}
 .select2-container .select2-selection--single .select2-selection__rendered {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;    padding: 0 0 0 10px;
     line-height: 30px;letter-spacing: 0.05em;
     color: #414141;
-    font-weight: 700;
 }
 
 .btn-close:focus {
@@ -6605,7 +6604,7 @@ a.gt-open-gift-btn.option-item-btn.btn:hover .accpt-gift svg path{fill:#fff;}
 }
 .shipping-form-input .form-control::placeholder {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     line-height: 55px;
     letter-spacing: 0.05em;
@@ -8820,6 +8819,7 @@ a.browse-categori-popup {
     display: flex;
     align-items: center;
     justify-content: space-between;
+	text-transform: capitalize;
 }
 .gifts-items .gift-send-select-time .gifts-selecter span.selection .select2-selection__rendered {
     padding: 0;
@@ -15440,6 +15440,8 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 
 .choose-gift-logo { top: 45px; right: -30px; left: inherit; }
 .choose-gift-categories-collection .row > .col { width: 100%; padding: 0 10px; }
+.choose-gift-card-btn {padding: 8px 26px;}
+
 
 	.gt-send-gift-description {font-size: 16px;}
 	
