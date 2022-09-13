@@ -33,11 +33,11 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .shipping-form-input .form-control.form-select{background-position: calc(100% - 10px) center;;}
 
 /*  13-sept-2022  */
-.finder-modal-input .form-control::placeholder { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #414141; opacity: 0.6; }
+.finder-modal-input .form-control::placeholder { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #414141; opacity: 0.6; }  
 .finder-modal-input textarea.form-control { resize: none; }
-
-
-
+.g-finder-one-content .g-finder-one-item.active_selector::before { background: #FFEBEF; }
+body .form-control::placeholder{font-weight:500 !important;}
+.g-finder-one-btn a { text-decoration: none; color: #000; }
 
 
 
@@ -639,11 +639,10 @@ background-size: 10px;
 }
 span.select2-dropdown .select2-results__option.select2-results__option--disabled{    background: transparent !important; color:#999 !important;}
 .select2-container .select2-selection--single .select2-selection__rendered {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;    padding: 0 0 0 10px;
     line-height: 30px;letter-spacing: 0.05em;
     color: #414141;
-    font-weight: 700;
 }
 
 .btn-close:focus {
@@ -6136,7 +6135,7 @@ div.g-signup-form .gt-btn-custom {
 .gt-open-gift-content {
     width: 514px;
     max-width: 100%;
-    margin: 20px 0 0 0;
+    margin: -10px 0 0 0;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);
@@ -6201,8 +6200,12 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .gt-open-gift-btn img {
-    padding: 0;
-    margin-right: 0; 
+    padding: 8px;
+    margin-right: 22px;
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
 }
 .version-details-btn .accpt-gift {
   background: #fff;
@@ -6601,7 +6604,7 @@ a.gt-open-gift-btn.option-item-btn.btn:hover .accpt-gift svg path{fill:#fff;}
 }
 .shipping-form-input .form-control::placeholder {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     line-height: 55px;
     letter-spacing: 0.05em;
@@ -7187,8 +7190,8 @@ padding: 0 19px;
     line-height: 19px;
     letter-spacing: 0.05em;
     border-radius: 31px;
+	transition:all ease 0.3s;
 }
-
 .g-finder-one-view-btn {
     background: #FF385C;
     padding: 20.5px 46.5px;
@@ -7350,7 +7353,9 @@ padding: 0 19px;
     color: #414141;
     margin-bottom: 0;
 }
-
+.finder-second-age-input .label-bg {
+    color: #FF385C;
+}
 .finder-second-age:checked[type=radio] {
     background-image: url(../images/finder_dot.png);
     background-size: 12px;
@@ -8162,19 +8167,40 @@ div.gift_sent_pop img{max-width:400px;}
 .gt-pay-for-gift-content h5.gifts-card-title {     margin: 0; }
 .gifts-card.pay-gift-card:hover {     border-color: #ff385c; }
 .gifts-card.pay-gift-card {     transition: 0.4s ease all; }
-.gt-select-payment-option img {     height: 20px; }
+.gt-select-payment-option img {     height: auto; }
 .gt-select-payment-option .mastercard img {     height: 26px; }
 .payment-form-input .form-control{    border: 1px solid #d2d2d2;}
 .gt-btn-custom.payment-btn {     margin-top:0; }
 #paymentModal .payment-form-input span.field_icon::before {     color: #818181; }
 section.swap-section:after {     content: '';     background-color: #fff;     width: 100%;     height: 397px;     left: 0;     position: absolute;     top: 0; }
 section.swap-section:before {content: '';     position: absolute;     top: 0;     left: 0;     width: 100%;     border-top: 10px solid #FF385C;z-index:9;}
-section.swap-section {     position: relative; }
+section.swap-section {     position: relative; float:left; width:100%; height:100%;}
 .swap_slider button.slick-disabled {     display: none !important; }
 .swap_slider button.slick-prev  {     display: none !important; }
-.swap_slider .slick-next.slick-arrow {     pointer-events: none;     right: -40px;     border-radius: 50px;     width: 81px;     height: 81px;     background-image: url('../images/drag.svg'); 	background-repeat:no-repeat;     padding: 0;     background-size: 38px; 
-animation: myAnim 1.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal none;
+.payment-form-input .input_pass_ span {     right: 17px; }
 
+.payment-form-input .input_pass_ span::before {     color: #818181; }
+
+
+.swap_btn {
+    /* pointer-events: none; */
+    right: -40px;
+    border-radius: 50px;
+    width: 81px;
+    height: 81px;
+    background-image: url('../images/drag.svg');
+    background-repeat: no-repeat;
+    padding: 0;
+    background-size: 38px;
+    animation: myAnim 1.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal none;
+    background-color: #FF385C;
+    box-shadow: 0px 15px 40px rgb(11 28 60 / 10%);
+    color: #fff;
+    background-position: center;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 @keyframes myAnim {
 	0% {
@@ -8199,11 +8225,27 @@ span.card_left_arrow {     width: 65px;     height: 65px;     background-color: 
 }
 .card_view_main .birthday-cont{display: flex;     align-items: center;     flex-direction: column;     justify-content: center;     height: 100%;}
 #gift_sent_pop .modal-content{background-color:transparent;}
+.payment-card-no span{    display: inline-block;     vertical-align: bottom;}
+.card_vk { 	 position: relative; 	 width: 100%; 	 height: auto;transition: 0.4s ease all; 	 float: left; 	 	}
+.card_vk .text-container { 		width: 100%; 		height: auto; 		margin: auto; 		float: left; 	}
+.swap_slider_new {     width: 100%;     float: left;transition: 0.4s ease all; position:relative;}
+.strikethrough { 		 text-decoration: line-through; 	}
+.card_vk .text-container #head { 		 margin: 60px auto 60px auto; 	}
 
+.card_vk .front { 		 position: absolute; 		 width: 100%; 		 height: 100%; 		 margin: -10px 0px 0px -10px; 		 		 backface-visibility: hidden; 		 		 		 transform-style: preserve-3d; 		 transform-origin: 0% 50%; 		 transform: perspective(2000px) rotateY(0deg); 		 transition: all 0.8s ease-in-out; 	}
+.hover_card_swipe .card_vk.hove .front { 		 transform: perspective(2000px) rotateY(-170deg); 		 	}
+div.hover_card_swipe {     margin-left: 50%; }
+.hover_card_swipe .card_vk.hove .back { 		 transform: perspective(3000px) rotateY(-170deg); 		 box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1); 		 	}
+span.swap_btn { 		float: left; 		margin-top: 0; 		font-size: 30px; 	}
+.card_vk .back { 		 position: absolute; 		 width: 100%; 		 height: 100%; 		 		 margin: -5px 0px 0px -10px; 		 backface-visibility: visible; 		 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5)); 		 transform-style: preserve-3d; 		 transform-origin: 0% 50%; 		 transform: perspective(3000px) rotateY(0deg); 		 transition: all 0.8s ease-in-out; 		 background-color: #e6f0e6; 		 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1); 	border-radius:15px;}
 
+.imgset 	{ 	  position: relative; 	  z-index: 1; 	  margin-bottom: -215px; 	}
+.imgset img 	{ 		box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22); 		border-radius: 15px; 	}
+.swipe_card{height:100%;}
 
-
-
+h5.swap-title.swap_close_card {     text-decoration: underline;     color: #ff385c;     cursor: pointer;     text-underline-position: under; }
+h5.swap-title.swap_close_card svg{width:20px;height:20px;}
+h5.swap-title.swap_close_card path {     fill: #ff385c; }
 
 
 
@@ -8399,8 +8441,11 @@ span.logo_back img {     width: 100%; }
 }
 
 .g-finder-one-section .g-finder-one-item::before {
-	background-color: #FCECED;
+	background-color: #FDF4F6;
 	content: '';
+}
+.g-finder-one-item .form-check-input:checked[type="radio"] ~ h6 {
+    color: #FF385C;
 }
 .action_btn.next_btn.disable_btn a {
 	pointer-events: none;
@@ -8776,6 +8821,7 @@ a.browse-categori-popup {
     display: flex;
     align-items: center;
     justify-content: space-between;
+	text-transform: capitalize;
 }
 .gifts-items .gift-send-select-time .gifts-selecter span.selection .select2-selection__rendered {
     padding: 0;
@@ -9904,8 +9950,14 @@ div#FAQaccordionnew .active_accord {
         max-width: 1255px;
     }
 }
+@media (min-width: 1920px) {
+.g-finder-one-section {
+	height: calc(100vh - 75px);
+}
+}
 
 @media (min-width: 1400px) {
+		
     .gifts-content>.row>.col-xl-3 {
         max-width: 338px;
     }
@@ -10040,6 +10092,12 @@ div#FAQaccordionnew .active_accord {
 }
 
 @media (max-width: 1399px) {
+	.swap-content{width: 450px;}
+	.gt-open-gift-name{    margin-bottom: 34px;}
+	.gt-open-gift-details{    padding: 0 30px 40px;    margin-top: 20px;}
+	
+	
+	
 	.gt-send-gift-section .container {     padding: 0 50px; }
 	.gt-select-gift-content__inner{    width: 251px;}
     .help-form-email {
@@ -10157,6 +10215,10 @@ div#FAQaccordionnew .active_accord {
 }
 
 @media (max-width: 1199px) {
+.g-finder-third-content{padding: 71px 45px 55px;}
+.g-finder-second-content{padding: 40px 45px 61px;}	
+	
+	
 .shipping-tab-btn .accpt-gift { margin-right: 23px; width: 45px; height: 45px; }
 .shipping-tab-btn .btn { height: 65px; }
 
@@ -10695,16 +10757,24 @@ div#FAQaccordionnew .active_accord {
         font-size: 16px;
     }
 }
+
+
+@media (min-width: 992px) and (max-width: 1080px){
+	.g-finder-next-btn.fir_arr { top: 60px; }
+	.g-finder-second-content .g-finder-prev-btn, .g-finder-third-section .g-finder-prev-btn, .g-finder-four-section .g-finder-prev-btn {     left: 45px; }
+	.g-finder-third-section .g-finder-next-btn, .g-finder-third-section .g-finder-prev-btn {     top: 80px; }
+}
+
 @media only screen and (max-width: 1080px) {
 	.g-finder-next-btn {
 		position: absolute;
 		top: 50px;
 		right: initial;
-		left: calc(100% - 60px);
+		left: calc(100% - 70px);
 	}
 	.g-finder-prev-btn {
 		right: initial;
-		top: 44px;
+		top: 50px;
 		left: 30px;
 	}
 	.g-finder-help-btn {
@@ -10716,19 +10786,25 @@ div#FAQaccordionnew .active_accord {
 		left: 0;
 		margin: auto;
 	}
-	
 }
 
 @media only screen and (max-width: 1024px) {
     /*.gifts-items-header h3 {
         font-size: 26px;
-    }*/ 
+    }*/    
 }
 
 @media (max-width: 991px) {
-.version-tabs { padding-top: 28px; }
-	
-	
+	.swap-content {     width: 350px; }
+	.gt-open-gift-title{    font-size: 21px;     line-height: 26px;}
+	.gt-open-gift-discription{font-size: 16px;     line-height: 20px;    margin-bottom: 18px;}
+	.gt-open-gift-img img{    width: 110px;}
+	.gt-open-gift-style-img img{    height: 90px;     width: 100%;}
+		.version-tabs { padding-top: 28px; }
+	@keyframes myAnim { 	0% { 		opacity: 0; 		transform: translateX(-40px); 	}  	100% { 		opacity: 1; 		transform: translateX(-60px); 	} }	
+	.gt-open-gift-btn{font-size: 17px;     line-height: 30px;}
+	.gt-open-gift-btn img {     padding: 8px;     margin-right: 12px;     background: #fff;     height: 40px;     width: 40px;     border-radius: 50px; }
+	.swap_btn{width: 61px;     height: 61px;background-size: 28px;}
 	
 	
 #paymentModal .order-item-name h4 { font-size: 16px; line-height: 16px; padding: 0 6px 0 0; }
@@ -11937,7 +12013,7 @@ div#FAQaccordionnew .active_accord {
     .g-finder-next-btn {
 		right: initial;
 		top: 20px;
-		left: calc(100% - 60px);
+		left: calc(100% - 50px);
 	}
 
     .g-finder-prev-btn {
@@ -11952,7 +12028,7 @@ div#FAQaccordionnew .active_accord {
         border-bottom: 0px solid #D2D2D2;
         padding-bottom: 0;
         margin-bottom: 0;
-    }
+    } 
 
     .swaptwo-modal-header {
         padding: 16px 24px;
@@ -12007,8 +12083,8 @@ div#FAQaccordionnew .active_accord {
     }
 	.g-finder-prev-btn {
 		left: 22px;
-		top: 18px;
-	}
+		top: 20px;
+	} 
 	.home_head_menu img {
 		height: 20px;
 		width: auto;
@@ -12264,6 +12340,15 @@ div#FAQaccordionnew .active_accord {
 }
 
 @media (max-width: 767px) {
+	.gt-open-gift-content{    transition: 0.4s ease all;}
+	.gt-open-gift-style-img img{    height: 70px;}
+	.swap-content {     width: 300px; }
+	/* .card_vk .back{    margin: 0;}
+	.card_vk .front{  margin: 0;} */
+	div.hover_card_swipe{    margin-left: 0;}
+	
+	
+	
 /* 13 sept 2022*/	
 .g-finder-third-content .g-finder-two-btn.disable_btn { margin-top: 29px; }
 .recommendation-header-gift svg { width: 16px; }
@@ -12285,7 +12370,7 @@ div#FAQaccordionnew .active_accord {
 	.send-flexi-header .btn-close{    right: 20px;}
 	
 	
-	.gt-open-gift-btn img{ height: 20px;   margin-right:0;}
+	/* .gt-open-gift-btn img{ height: 20px;   margin-right:0;} */
 	.version-details-btn .accpt-gift, .version-tab-swap-btn .accpt-gift{height:32px; width:32px;}
 	.version-details-btn .accpt-gift{margin-right:18px;}
 	.version-tab-swap-btn .accpt-gift {margin-right: 9px;}
@@ -14754,7 +14839,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         bottom: 0;
         transform: translateX(-50%);
     }
-	.g-finder-one-section .g-finder-lightcyan::before {
+	/*.g-finder-one-section .g-finder-lightcyan::before {
 		content: '';
 		background-color: #E0F0FF;
 	}
@@ -14773,7 +14858,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 	}
 	.g-finder-titanwhite {
 		border-color: #E2E0FF;
-	}
+	}*/
 	.g-finder-help-btn {
 		display: none;
 	}
@@ -15551,6 +15636,8 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 
 .choose-gift-logo { top: 45px; right: -30px; left: inherit; }
 .choose-gift-categories-collection .row > .col { width: 100%; padding: 0 10px; }
+.choose-gift-card-btn {padding: 8px 26px;}
+
 
 	.gt-send-gift-description {font-size: 16px;}
 	
@@ -15745,6 +15832,7 @@ div.gift_sent_pop img {     max-width: 270px; }
         padding: 13px 26px;
         font-size: 16px;
     }
+	.gt-open-gift-style-img img {     height: 54px; }
 }
 @media (max-width: 991px) and (orientation: landscape) {
 	.emporium-modal-body{    height: calc(100vh - 180px);}
