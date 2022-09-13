@@ -33,7 +33,8 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .shipping-form-input .form-control.form-select{background-position: calc(100% - 10px) center;;}
 
 /*  13-sept-2022  */
-
+.finder-modal-input .form-control::placeholder { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #414141; opacity: 0.6; }
+.finder-modal-input textarea.form-control { resize: none; }
 
 
 
@@ -7248,7 +7249,7 @@ padding: 0 19px;
     font-size: 18px;
     line-height: 24px;
     color: #414141;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .finder-modal-input {
@@ -7261,12 +7262,12 @@ padding: 0 19px;
     font-size: 18px;
     line-height: 22px;
     color: #000000;
+	margin:0 0 8px 0;
 }
 
 .finder-modal-input .form-control {
     padding: 12px 24px;
 }
-
 .finder-modal-input textarea {
     height: 96px;
 }
@@ -7278,7 +7279,8 @@ padding: 0 19px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    padding: 14px;
+    padding: 0;
+	height: 56px;
     margin-top: 6px;
 }
 
@@ -7369,7 +7371,7 @@ padding: 0 19px;
 }
 
 .g-finder-two-btn {
-	margin-top: 39px;
+	margin-top: 40px;
 }
 
 .finder-second-age:checked+.finder-second-label {
@@ -7387,7 +7389,7 @@ padding: 0 19px;
 .g-finder-third-content {
     width: 730px;
     max-width: 100%;
-    padding: 71px 65px 64px;
+    padding: 71px 65px 55px;
     position: relative;
     font-family: 'Lato', sans-serif;
 }
@@ -7407,7 +7409,7 @@ padding: 0 19px;
 /******** Gift Finder Four Section Start ********/
 
 .g-finder-four-content {
-    padding: 43px 42px 56px;
+    padding: 43px 42px 74px;
     font-family: 'Lato', sans-serif;
     position: relative;
 }
@@ -11993,6 +11995,12 @@ span.gif_icon {
 }
 
 @media (max-width: 767px) {
+/* 13 sept 2022*/	
+.g-finder-third-content .g-finder-two-btn.disable_btn { margin-top: 29px; }
+.recommendation-header-gift svg { width: 16px; }
+.g-finder-next-btn svg, .g-finder-prev-btn svg { width: 16px; }	
+	
+	
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift svg{width: 20px;}
 .version-details-btn .accpt-gift svg { width: 20px; }
 .option-tab-body > .row > .col { padding: 0; width: 50%;}
@@ -15168,7 +15176,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 	}
 	
 
-	.finder-four-interests .row .col {width: 100%; }
+	
 	
 	.finder-four-interests .row .col:last-child .finder-four-checkbox { 	margin: 0; }
 	.finder-four-interests .g-finder-two-btn { 	margin-top: 36px; }
@@ -15242,6 +15250,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 }
 
 @media(max-width:400px) {
+.finder-four-interests .row .col { padding: 0 6.5px; }	
+.finder-four-check-title { margin-top: 15px; }	 
+	
 .version-details-btn .accpt-gift {font-size: 12px; line-height: 17px; margin-right: 8px; }
 .version-tab-swap-btn { font-size: 14px; line-height: 17px;}
 .version-accept-btn { font-size: 14px; padding: 0 14px 0 7px; }
@@ -15306,6 +15317,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }
 @media(max-width:370px) {
+.finder-four-interests .row .col {width: 100%; }
+	
+
 	.version-details-btn .accpt-gift{margin-right:5px;}   
 	.version-accept-btn{padding: 0 5px 0 7px;}
 	.version-tab-swap-btn{padding: 0 8px 0 7px;}
