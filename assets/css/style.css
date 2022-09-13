@@ -9689,6 +9689,9 @@ a.gt-open-gift-btn:hover {
     background-color: #e3294b;
     border-color: #e3294b;
 }
+.select_card_section .send-note-btn a:hover {
+    color: #fff;
+}
 /* new desktop changes starts here */
  
  
