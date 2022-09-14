@@ -9963,8 +9963,10 @@ a.send-note-pen-img img {
     border-color: #FF385C;
     -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(255 56 92 / 60%);
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(255 56 92 / 60%);
-    border-radius: 10px 10px 0 0;
     /* box-shadow: none; */
+}
+.emoji_open .send-note-box.form-control.emojionearea.focused {
+    border-radius: 10px 10px 0 0;
 }
 .send-note-box.form-control.emojionearea {
     border: 1px solid #FF385C;
