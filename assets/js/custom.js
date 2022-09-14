@@ -612,10 +612,13 @@ var sub_show = [];
 	var lastEl = a.pop();
 	console.log(lastEl);
 	if( lastEl == 'send-gift.html' || lastEl == 'send-gift-selected.html'){}else{
-	var lastScrollTop = 0;
+	var lastScrollTop = 100;
 	$(window).scroll(function(event){
 	   var st = $(this).scrollTop();
-	   if (st > lastScrollTop){
+	  
+	   if (st > lastScrollTop){ 
+	   console.log(st);
+	   console.log(lastScrollTop);
 		   $('header').addClass('sticky_hidden');
 		   $('header').removeClass('sticky_add');
 		   $('body').removeClass('sticky_on');
@@ -624,7 +627,7 @@ var sub_show = [];
 		   $('header').removeClass('sticky_hidden');
 		   $('body').addClass('sticky_on');
 	   }
-	   lastScrollTop = st;
+	   //lastScrollTop = st;
 	});
 	}
 
@@ -756,13 +759,13 @@ $('span.card_left_arrow').click(function(){
     $('.wrap-modal-slider-card').toggleClass('hover_card_right');
 });
 
-$('#FAQaccordionnew .accordion-item  a.gt-choose-gift-btn').click(function(){
+/* $('#FAQaccordionnew .accordion-item  a.gt-choose-gift-btn').click(function(){
    var p_C = $(this).attr("p_c");
     var side_choose = $(this).attr("side_choose");
     $('.active_choose').removeClass('active_choose');
     $('.'+p_C).addClass('active_choose');
     $('.'+side_choose).addClass('active_choose');
-});
+}); */
 });
 
 function chooseActive(elem){
