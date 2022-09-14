@@ -10013,6 +10013,9 @@ a.send-note-pen-img img {
 .send-note-box.form-control.emojionearea.focused .emojionearea-tabs {
     border-radius: 0 0 10px 10px;
 }
+.version-details-btn a.gt-open-gift-btn.version-accept-btn.btn:hover {
+    background-color: #fff;
+}
 /* new desktop changes starts here */
  
  
