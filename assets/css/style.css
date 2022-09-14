@@ -12385,6 +12385,12 @@ div#FAQaccordionnew .active_choose {
 }
 
 @media (max-width: 767px) {
+    .browse-categori-popup i{    margin: 2px 0 0 0;}
+    .gift-select-btn{padding: 17px 14px 17px 23px;    font-size: 14px;}
+    .gt-gift-shipping-charge{width: 100%;}
+    .gt-gift-card-footer-detail {display: none;}
+    
+    
 	.gt-open-gift-content{    transition: 0.4s ease all;}
 	.gt-open-gift-style-img img{    height: 70px;}
 	.swap-content {     width: 300px; }
@@ -12611,7 +12617,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.gt-gift-emporium-details{    width: 50%;}
 	.gt-gift-emporium-description a {     font-size: 12px;     display: inline;     line-height: 18px; }
 	.gt-gift-emporium-img img {     width: 116px; }
-	.browse-serach-box .gifts-selecter{    width: 109px;    padding: 0 0 0 10px;}
+	.browse-serach-box .gifts-selecter{    width: 249px;    padding: 0 0 0 10px;}
 	.browse-categori-popup{width:100%;}
 	div#PriceModal .modal-dialog {     height: auto; }
 	.price-modal .modal-content {     border-radius: 20px 20px 0 0; }
