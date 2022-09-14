@@ -7539,7 +7539,6 @@ padding: 0 19px;
     background: #F9F9F9;
     border-radius: 15px;
     padding: 30px 41px 57px;
-    text-align: center;
 }
 
 .send-note-imgs {
@@ -7550,6 +7549,7 @@ padding: 0 19px;
 
 .send-note-thankyou-img {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .send-note-box {
@@ -9930,6 +9930,47 @@ a.send-note-pen-img img {
 .signup-social-icon img {
     width: 30px;
 }
+.send-note-thankyou .emojionearea .emojionearea-filters .emojionearea-filter {
+    background-color: transparent;
+    border-color: transparent;
+    height: 100%;
+    width: 12px;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-bottom: 6px;
+    border: 0 solid transparent;
+    border-left-width: 8px;
+    border-right-width: 8px;
+}
+.send-note-thankyou .emojionearea .emojionearea-filters .emojionearea-filter img.emojione {
+    width: 14px;
+    height: auto;
+}
+.send-note-thankyou div#emoji_area_container .send-note-box .emojionearea-filters {
+    border: 0;
+    background-color: transparent;
+}
+.send-note-thankyou div#emoji_area_container .send-note-box .emojionearea-filters .emojionearea-filters-scroll {
+    background-color: transparent;
+}
+.send-note-box.form-control.emojionearea.focused {
+    border-color: #FF385C;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(255 56 92 / 60%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(255 56 92 / 60%);
+}
+.send-note-box.form-control.emojionearea {
+    border: 1px solid #FF385C;
+    border-radius: 10px;
+    padding: 17px 20px;
+}
+.emojionearea .emojionearea-filters .emojionearea-filter-arrow-left, .emojionearea .emojionearea-filters .emojionearea-filter-arrow-right {
+    display: none;
+}
+.send-note-box.form-control.emojionearea .emojionearea-editor {
+    padding: 0;
+}
+
 /* new desktop changes starts here */
  
  
@@ -9941,6 +9982,25 @@ a.send-note-pen-img img {
     .congratulations-modal {
         max-width: 700px;
         margin: 1.75rem auto;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .version-section .version-tab-body.gift-tab-body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .version-section .version-tab-body.gift-tab-body .version-tab-body-img {
+        width: 40%;
+    }
+    .version-section .version-tab-body.gift-tab-body .version-tab-details {
+        width: 60%;
+        margin: 0;
+        padding-left: 20px;
+    }
+    .version-section .version-tab-body.gift-tab-body .version-tab-body-img img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
 @media(min-width:992px)
@@ -9967,6 +10027,8 @@ a.send-note-pen-img img {
     .dsk_sidebar {
         display: block;
     }
+
+    
 }
 @media (min-width: 1000px) {
 	
@@ -12407,6 +12469,33 @@ a.send-note-pen-img img {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.aquarius-share-icon {
     bottom: 40px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .version-tab-swap-btn .accpt-gift {
+        background-color: #FF385C;
+        margin-right: 10px;
+    }
+    .version-details-btn .accpt-gift {
+        background: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .version-tab-swap-btn .accpt-gift {
+        background-color: #FF385C;
+        margin-right: 10px;
+    }
+    .version-tab-swap-btn {
+        font-size: 16px;
+    }
+    .gt-open-gift-btn {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -15213,6 +15302,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         float: left;
     }
 }
+
 
 @media(max-width:599px) {
 #paymentModal .order-item-delet { right: 22px; }
