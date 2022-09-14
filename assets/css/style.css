@@ -9970,7 +9970,19 @@ a.send-note-pen-img img {
 .send-note-box.form-control.emojionearea .emojionearea-editor {
     padding: 0;
 }
-
+.send-note-thankyou div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-left, .send-note-thankyou div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-right {
+    display: none;
+}
+.send-note-thankyou .send-note-thankyou-img ~ label {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.send-note-thankyou .send-note-thankyou-img ~ label span.lead {
+    font-size: 14px;
+    font-weight: 400;
+}
 /* new desktop changes starts here */
  
  
