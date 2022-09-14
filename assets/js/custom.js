@@ -790,6 +790,12 @@ el[0].emojioneArea.on("emojibtn.click", function(btn) {
     console.log(btn.html());
 	countChar(this);
   });
+  var eventHandler1 = function(button, event) {
+    console.log('event1');
+	$('.thankyou_text_editor').addClass('emoji_open');
+  };
+
+el[0].emojioneArea.on("click", eventHandler1);
 
 });
 
