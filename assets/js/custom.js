@@ -793,7 +793,7 @@ el[0].emojioneArea.on("emojibtn.click", function(btn) {
   
 $(document).on('click','.emojionearea-filters',function(){
 	console.log('event1');
-	$('.thankyou_text_editor').addClass('emoji_open');
+	$('.thankyou_text_editor').toggleClass('emoji_open');
 });
 
 });
