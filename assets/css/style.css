@@ -9978,10 +9978,12 @@ a.send-note-pen-img img {
     font-size: 14px;
     font-weight: bold;
     margin-left: 8px;
+    color: #ff385c;
 }
 .send-note-thankyou .send-note-thankyou-img ~ label span.lead {
     font-size: 14px;
     font-weight: 400;
+    color: #000;
 }
 /* new desktop changes starts here */
  
