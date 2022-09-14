@@ -766,6 +766,13 @@ $('span.card_left_arrow').click(function(){
     $('.'+p_C).addClass('active_choose');
     $('.'+side_choose).addClass('active_choose');
 }); */
+
+    $("#emoji_area").emojioneArea({
+      container: "#emoji_area_container",
+      useSprite: false
+    });
+
+
 });
 
 function chooseActive(elem){

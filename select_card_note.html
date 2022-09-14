@@ -14,14 +14,17 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/select2.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/emojione/1.5.2/assets/sprites/emojione.sprites.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="assets/css/emojionearea.min.css" media="screen">
+	
     <!-- Link All JS -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <!-- <script src="assets/js/select2.min.js"></script> -->
     <script src="assets/js/custom.js"></script>
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/1.5.2/lib/js/emojione.min.js"></script>
+	<script type="text/javascript" src="assets/js/emojionearea.js"></script>
 
 </head>
 
@@ -60,7 +63,8 @@
                                 <div class="send-note-thankyou-img">
                                     <img src="assets/images/send_thankyou.png" alt="" class="img-fluid">
                                 </div>
-                                <textarea class="send-note-box form-control" cols="23" rows="5" placeholder="Type your thank you message here!"></textarea>
+                                <textarea id="emoji_area" class="send-note-box form-control" cols="23" rows="5" placeholder="Type your thank you message here!"></textarea>
+								<div id="emoji_area_container"></div>
                             </div>
                         </div>
                     </div>
