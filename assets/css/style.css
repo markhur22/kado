@@ -12451,6 +12451,12 @@ a.send-note-pen-img img {
     .gt-gift-veriation-card .accordion-item.faq-accordion-item .accordion-body {
         display: block;
     }
+    #giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
+        align-items: flex-start;
+    }
+    div#FAQaccordionnew .active_choose {
+        background-color: initial;
+    }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -15315,6 +15321,15 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         width: 100%;
         float: left;
     }
+    .gt-gift-brand-logo {
+        position: absolute;
+        top: -13px;
+        left: 11px;
+        width: 76px;
+    }
+    .gt-gift-brand-logo img {
+        width: 100%;
+    }
 }
 
 
@@ -15848,6 +15863,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         width: 6px;
         right: -4px;
     }
+    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item div.gift_slider {
+        padding: 0 0px;
+    }
 }
 
 @media(max-width:400px) {
@@ -15934,6 +15952,14 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         width: calc(100% + 27px);
         height: 1px;
         left: -13px;
+    }
+    .gt-gift-popup-slider .slick-arrow {
+        height: 36px;
+        width: 36px;
+        left: -8px;
+    }
+    .gt-gift-popup-slider .slick-next.slick-arrow {
+        right: -8px;
     }
 }
 @media(max-width:370px) {
