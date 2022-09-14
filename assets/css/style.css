@@ -1757,6 +1757,7 @@ span.gt-faq-solved-icon {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    transition: all ease .5s;
     height: 40px;
 }
 
@@ -1766,6 +1767,7 @@ span.gt-faq-solved-icon {
     color: #414141;
     display: inline-block;
     vertical-align: top;
+    transition: all ease .5s;
 }
 
 
@@ -9551,7 +9553,7 @@ section.send-note-section .send-note-content .send-note-imgs {
     align-items: initial;
 }
 .send-note-thankyou textarea {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -9643,6 +9645,7 @@ span.gif_icon {
     height: 100%;
     right: -30px;
 }
+
 .select_card_section .scroll-wrapper.select_card_main.scrollbar-inner {
     overflow: visible !important;
 }
@@ -9666,9 +9669,19 @@ span.gif_icon {
     top: -24px;
     left: 16px;
 }
+section.gt-browse-gift-section .cardlist .gt-gift-card-link .final-gift-card {
+    transition: all ease .5s;
+}
 section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card {
     background-color: #FDF4F6;
 }
+section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card {
+    background-color: #f6f6f6;
+}
+section.gt-browse-gift-section .cardlist .gt-gift-card-link .gt-gift-card-footer p.gt-gift-shipping-charge:hover {
+    background: #ff385c;
+}
+/* 
 section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipping-charge {
     background-color: #FF385C;
 }
@@ -9677,6 +9690,12 @@ section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipp
 }
 section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipping-charge path {
     fill: #fff;
+} */
+section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover p.gt-gift-shipping-charge {
+    background-color: #fff;
+}
+section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card p.gt-gift-shipping-charge:hover {
+    background-color: #FF385C;
 }
 .reco-body-footer .reco-footer-btn a:hover {
     background-color: #FF385C;
@@ -9904,6 +9923,12 @@ div#FAQaccordionnew .active_choose {
 }
 .gt-gift-veriation-card .accordion-item.faq-accordion-item .accordion-body {
     display: none;
+}
+a.send-note-pen-img img {
+    width: 23px;
+}
+.signup-social-icon img {
+    width: 30px;
 }
 /* new desktop changes starts here */
  
