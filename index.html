@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Kado</title>
+    <link rel="shortcut icon" href="assets/images/fav_icon.png" type="image/x-icon" />
+    <title>Homepage</title>
 
     <!-- Link All CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -633,6 +633,24 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/custom.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			ScrollReveal().reveal('.gt-how-work-section .text-center', { delay: 800, origin: 'top', distance: "100px" });
+			ScrollReveal().reveal('.gt-how-work-section .row .col-lg-6:first-child', { delay: 800, origin: 'left',  distance: "100px" });
+			ScrollReveal().reveal('.gt-how-work-section .row .col-lg-6:last-child', { delay: 800, origin: 'right', distance: "100px" });
+			ScrollReveal().reveal('.gt-quality-gift-section > .container', { delay: 800, origin: 'top', distance: "100px" });
+			ScrollReveal().reveal('.gt-quality-gift-slider-main', { delay: 800, origin: 'top', distance: "100px" });
+			ScrollReveal().reveal('#FAQaccordion .accordion-item.faq-accordion-item', { delay: 800, origin: 'bottom', distance: "100px" });
+			ScrollReveal().reveal('.gifting-item', { delay: 800, origin: 'bottom', distance: "100px" });
+			ScrollReveal().reveal('.gt-landing-btn-content a', { delay: 800, origin: 'top', distance: "100px" });
+			ScrollReveal().reveal('.gt-browse-gift-content .col', { delay: 500, origin: 'bottom', distance: "100px" });
+		
+			ScrollReveal({ reset: true,   easing: "ease-in-out" });	
+		});
+
+	
+	</script>
 </body>
 
 
