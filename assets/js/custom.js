@@ -767,11 +767,29 @@ $('span.card_left_arrow').click(function(){
     $('.'+side_choose).addClass('active_choose');
 }); */
 
-    $("#emoji_area").emojioneArea({
+  var el =  $("#emoji_area").emojioneArea({
       container: "#emoji_area_container",
-      useSprite: false
+      useSprite: false,
+	  events: {
+			 keyup: function (editor, event) {
+			   console.log('event:keyup');
+			   // get keycode of current keypress event
+				var code = (event.keyCode || event.which);
+
+				// do nothing if it's an arrow key
+				if(code == 37 || code == 38 || code == 39 || code == 40) {
+					return;
+				}
+
+			   countChar(this);
+			}
+			}
     });
 
+el[0].emojioneArea.on("emojibtn.click", function(btn) {
+    console.log(btn.html());
+	countChar(this);
+  });
 
 });
 
@@ -789,3 +807,27 @@ function chooseActive(elem){
 		}
 	}
 }
+
+ /*Character Counter */
+        function countChar(val) {
+            var len = val.getText().length;
+            if (len >= 160) {
+			
+                  val.value = val.getText().substring(0, 160);
+				  val.setText(val.value);
+				  console.log(val);
+                  $('#chars').text(0);
+            } else {
+                 $('#chars').text(160 - len);
+            }
+        }
+		function maxLength(el) {	
+			if (!('maxLength' in el)) {
+				var max = el.attributes.maxLength.value;
+				el.onkeypress = function () {
+					if (this.value.length >= max) return false;
+				};
+			}
+		}
+
+maxLength(document.getElementById("emoji_area"));
