@@ -793,9 +793,14 @@ el[0].emojioneArea.on("emojibtn.click", function(btn) {
   
 $(document).on('click','.emojionearea-filters',function(){
 	console.log('event1');
-	$('.thankyou_text_editor').toggleClass('emoji_open');
+	
+	$('.emoji_open').removeClass('emoji_open');
+	$('.thankyou_text_editor').addClass('emoji_open');
 });
-
+$(document).on('click','.emoji_open .emojionearea-filters',function(){
+	console.log('event1');
+	if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
+});
 });
 
 function chooseActive(elem){
