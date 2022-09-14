@@ -7538,7 +7538,7 @@ padding: 0 19px;
 .send-note-thankyou {
     background: #F9F9F9;
     border-radius: 15px;
-    padding: 30px 41px 57px;
+    padding: 30px 18px 30px;
 }
 
 .send-note-imgs {
@@ -7550,6 +7550,7 @@ padding: 0 19px;
 .send-note-thankyou-img {
     margin-bottom: 30px;
     text-align: center;
+    width: 100%;
 }
 
 .send-note-box {
@@ -9950,19 +9951,26 @@ a.send-note-pen-img img {
 .send-note-thankyou div#emoji_area_container .send-note-box .emojionearea-filters {
     border: 0;
     background-color: transparent;
+    width: calc(100% - 60px);
+    /* overflow-x: auto; */
 }
 .send-note-thankyou div#emoji_area_container .send-note-box .emojionearea-filters .emojionearea-filters-scroll {
     background-color: transparent;
+    /* width: auto;
+    display: flex; */
 }
 .send-note-box.form-control.emojionearea.focused {
     border-color: #FF385C;
     -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(255 56 92 / 60%);
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(255 56 92 / 60%);
+    border-radius: 10px 10px 0 0;
+    /* box-shadow: none; */
 }
 .send-note-box.form-control.emojionearea {
     border: 1px solid #FF385C;
     border-radius: 10px;
-    padding: 17px 20px;
+    padding: 13px 13px;
+    padding-bottom: 0;
 }
 .emojionearea .emojionearea-filters .emojionearea-filter-arrow-left, .emojionearea .emojionearea-filters .emojionearea-filter-arrow-right {
     display: none;
@@ -9973,17 +9981,35 @@ a.send-note-pen-img img {
 .send-note-thankyou div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-left, .send-note-thankyou div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-right {
     display: none;
 }
-.send-note-thankyou .send-note-thankyou-img ~ label {
-    margin-top: 4px;
-    font-size: 14px;
+.text_area_filed_main .counter_text {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    margin: 0;
+    font-size: 12px;
     font-weight: bold;
-    margin-left: 8px;
     color: #ff385c;
 }
-.send-note-thankyou .send-note-thankyou-img ~ label span.lead {
-    font-size: 14px;
+.text_area_filed_main label.counter_text span.lead {
+    font-size: 12px;
     font-weight: 400;
     color: #000;
+}
+.text_area_filed_main {
+    position: relative;
+    width: 100%;
+}
+.thankyou_text_editor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.send-note-box.form-control.emojionearea.focused .emojionearea-tabs {
+    border-radius: 0 0 10px 10px;
 }
 /* new desktop changes starts here */
  
