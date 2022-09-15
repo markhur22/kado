@@ -767,40 +767,15 @@ $('span.card_left_arrow').click(function(){
     $('.'+side_choose).addClass('active_choose');
 }); */
 
-  var el =  $("#emoji_area").emojioneArea({
-      container: "#emoji_area_container",
-      useSprite: false,
-	  events: {
-			 keyup: function (editor, event) {
-			   console.log('event:keyup');
-			   // get keycode of current keypress event
-				var code = (event.keyCode || event.which);
-
-				// do nothing if it's an arrow key
-				if(code == 37 || code == 38 || code == 39 || code == 40) {
-					return;
-				}
-
-			   countChar(this);
-			}
-			}
-    });
-
-el[0].emojioneArea.on("emojibtn.click", function(btn) {
-    console.log(btn.html());
-	countChar(this);
+$('[data-bs-target="#giftEmporiumModal"]').hover(function() {
+    var modalId = $(this).attr('data-bs-target');
+    $(modalId).modal('show');
   });
   
-$(document).on('click','.emojionearea-filters',function(){
-	console.log('event1');
-	
-	$('.emoji_open').removeClass('emoji_open');
-	$('.thankyou_text_editor').addClass('emoji_open');
-});
-$(document).on('click','.emoji_open .emojionearea-filters',function(){
-	console.log('event1');
-	if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
-});
+$(document).on('hide.bs.modal','#giftEmporiumModal', function () {
+$('.active_choose').removeClass('active_choose');
+});  
+  
 });
 
 function chooseActive(elem){
