@@ -30,7 +30,7 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 .version-tab-item img.color-img { display: none; }
 .version-tab-item button.version-tab-link.active img{display:none;}
 .version-tab-item button.version-tab-link.active img.color-img{display:block;}
-.shipping-form-input .form-control.form-select{background-position: calc(100% - 10px) center;;}
+.shipping-form-input .form-control.form-select{background-position: calc(100% - 10px) center;}
 
 /*  13-sept-2022  */
 .finder-modal-input .form-control::placeholder { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #414141; opacity: 0.6; }  
@@ -41,45 +41,19 @@ body .form-control::placeholder{font-weight:500 !important;}
 
 /* 15-sept-2022 */
 .text_area_filed_main .emojionearea .emojionearea-editor:empty:before { content: attr(placeholder); display: block; color: #414141; opacity: 0.6; }
-.scroll-main .scroll-element.scroll-y {
-    height: 100%;
-    right: -30px;
-    top: 0;
-    width: 10px;
-}
-.scroll-main .scroll-element_outer {
-    overflow: hidden;
-}
-.scroll-main .scroll-element div {
-    display: block;
-    height: 100%;
-    right: 0;
-    top: 0;
-    width: 10px;
-	border: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 10;
-}
+.scroll-main .scroll-element.scroll-y { height: 100%; right: -30px; top: 0; width: 10px; }
+.scroll-main .scroll-element_outer { overflow: hidden; }
+.scroll-main .scroll-element div { display: block; height: 100%; right: 0; top: 0; width: 10px; border: none; margin: 0; padding: 0; position: absolute; z-index: 10; }
 .scroll-main .scroll-bar{border-radius:8px;}
-.scroll-main .scroll-element_track {
-    background-color: #D9D9D9;
-    opacity: 0.3;
-}
-
-.scroll-main .scroll-bar {
-    background-color: #D9D9D9;
-    opacity: 1;
-}
-body.modal-open div#giftEmporiumModal {
-    overflow: hidden;
-}
-.scroll-main .scroll-element_track {
-    top: -14px;
-}
-
+.scroll-main .scroll-element_track { background-color: #D9D9D9; opacity: 0.3; }
+.scroll-main .scroll-bar { background-color: #D9D9D9; opacity: 1; }
+body.modal-open div#giftEmporiumModal { overflow: hidden; }
+.scroll-main .scroll-element_track { top: -14px; }
 .gt-gift-veriation-detail-area { height: 100vh; overflow-y: auto; }
+.gt-gift-veriation-detail-area.scroll-main.d-lg-block.scroll-content {
+    height: calc(100% - 489px) !important;
+    max-height: 100% !important;
+}
 
 
 /* today changes */
@@ -404,7 +378,7 @@ a {
     background-color: #E6E6E6;
 }
 
-.btn-outline-dark {
+.btn-outline-dark { 
     color: #222222;
     border-color: #E5E5E5;
 }
