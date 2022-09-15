@@ -41,6 +41,36 @@ body .form-control::placeholder{font-weight:500 !important;}
 
 /* 15-sept-2022 */
 .text_area_filed_main .emojionearea .emojionearea-editor:empty:before { content: attr(placeholder); display: block; color: #414141; opacity: 0.6; }
+.modal_full_item .scroll-element.scroll-y {
+    height: 100%;
+    right: -30px;
+    top: 0;
+    width: 10px;
+}
+.modal_full_item .scroll-element .scroll-element_outer {
+    overflow: hidden;
+}
+.modal_full_item .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+	border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+.modal_full_item .select_card_section .scroll-y.scroll-scrollx_visible .scroll-element_track {
+    background-color: #D9D9D9;
+    opacity: 0.3;
+}
+.modal_full_item .select_card_section .scroll-y.scroll-scrollx_visible .scroll-bar {
+    background-color: #D9D9D9;
+    opacity: 1;
+}
+
 
 
 /* today changes */
@@ -9776,9 +9806,14 @@ div#giftEmporiumModal.modal.show .modal-dialog .modal-content {
     height: 100%;
     border: 0;
 }
-div#giftEmporiumModal .emporium-modal-body-inner {
+/*div#giftEmporiumModal .emporium-modal-body-inner {
     height: calc(100% - 95px);
     padding: 0;
+}*/
+div#giftEmporiumModal .emporium-modal-body-inner {
+    height: 100vh;
+    padding: 0;
+    overflow: auto;
 }
 div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
     height: 100%;
@@ -9796,6 +9831,7 @@ div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
     border: 1px solid #E2E2E2;
     border-radius: 15px;
     width: calc(100% - 345px);
+	position:relative;
 }
 #giftEmporiumModal  .close_pop_up button {
     background-image: none;
