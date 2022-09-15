@@ -39,6 +39,8 @@ div.accordion.size-view .accordion-body .send-flexi-price { margin: 16px 0 0 0; 
 body .form-control::placeholder{font-weight:500 !important;}
 .g-finder-one-btn a { text-decoration: none; color: #000; }
 
+/* 15-sept-2022 */
+.text_area_filed_main .emojionearea .emojionearea-editor:empty:before { content: attr(placeholder); display: block; color: #414141; opacity: 0.6; }
 
 
 /* today changes */
@@ -9676,9 +9678,9 @@ section.gt-browse-gift-section .cardlist .gt-gift-card-link .final-gift-card {
 section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card {
     background-color: #FDF4F6;
 }
-section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card {
+/*section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card {
     background-color: #f6f6f6;
-}
+}*/
 section.gt-browse-gift-section .cardlist .gt-gift-card-link .gt-gift-card-footer p.gt-gift-shipping-charge:hover {
     background: #ff385c;
 }
@@ -9692,12 +9694,12 @@ section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipp
 section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .gt-gift-shipping-charge path {
     fill: #fff;
 } */
-section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover p.gt-gift-shipping-charge {
+/*section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover p.gt-gift-shipping-charge {
     background-color: #fff;
-}
+}*/
 section.gt-browse-gift-section .cardlist .gt-gift-card-link:hover .final-gift-card p.gt-gift-shipping-charge:hover {
     background-color: #FF385C;
-}
+} 
 .reco-body-footer .reco-footer-btn a:hover {
     background-color: #FF385C;
     color: #fff;
