@@ -767,10 +767,10 @@ $('span.card_left_arrow').click(function(){
     $('.'+side_choose).addClass('active_choose');
 }); */
 
-$('[data-bs-target="#giftEmporiumModal"]').hover(function() {
+/* $('[data-bs-target="#giftEmporiumModal"]').hover(function() {
     var modalId = $(this).attr('data-bs-target');
     $(modalId).modal('show');
-  });
+  }); */
   
 $(document).on('hide.bs.modal','#giftEmporiumModal', function () {
 $('.active_choose').removeClass('active_choose');
