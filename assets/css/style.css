@@ -41,45 +41,21 @@ body .form-control::placeholder{font-weight:500 !important;}
 
 /* 15-sept-2022 */
 .text_area_filed_main .emojionearea .emojionearea-editor:empty:before { content: attr(placeholder); display: block; color: #414141; opacity: 0.6; }
-.scroll-main .scroll-element.scroll-y {
-    height: 100%;
-    right: -30px;
-    top: 0;
-    width: 10px;
-}
-.scroll-main .scroll-element_outer {
-    overflow: hidden;
-}
-.scroll-main .scroll-element div {
-    display: block;
-    height: 100%;
-    right: 0;
-    top: 0;
-    width: 10px;
-	border: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 10;
-}
+.scroll-wrapper.gt-gift-veriation-detail-area.scroll-main {     padding: 0 20px 0 0 !important; }
+.scroll-wrapper.scroll-main .gt-gift-veriation-detail-area.scroll-main {     height: calc(100vh - 500px) !important; }
+.scroll-main .scroll-element.scroll-y {     height: 100%;     right: -30px;     top: 0;     width: 10px; }
+.scroll-main .scroll-element_outer {     overflow: hidden; }
+.scroll-main .scroll-element div {     display: block;     height: 100%;     right: 0;     top: 0;     width: 10px; 	border: none;     margin: 0;     padding: 0;     position: absolute;     z-index: 10; }
 .scroll-main .scroll-bar{border-radius:8px;}
-.scroll-main .scroll-element_track {
-    background-color: #D9D9D9;
-    opacity: 0.3;
-}
+.scroll-main .scroll-element_track {     background-color: #D9D9D9;     opacity: 0.3; }
 
-.scroll-main .scroll-bar {
-    background-color: #D9D9D9;
-    opacity: 1;
-}
-body.modal-open div#giftEmporiumModal {
-    overflow: hidden;
-}
+.scroll-main .scroll-bar {     background-color: #D9D9D9;     opacity: 1; }
+
 .scroll-main .scroll-element_track {
     top: -14px;
 }
 
-.gt-gift-veriation-detail-area { height: 100vh; overflow-y: auto; }
+/*.gt-gift-veriation-detail-area { height: 100vh; overflow-y: auto; }*/
 
 
 /* today changes */
@@ -9823,7 +9799,7 @@ div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
     height: 100%;
     margin: 0;
     padding-top: 31px;
-    padding: 31px 30px 50px;
+    padding: 31px 10px 50px 30px;
 }
 div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
     height: calc(100% - 85px);
@@ -12563,6 +12539,10 @@ a.send-note-pen-img img {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.aquarius-share-icon {
     bottom: 40px;}
+}
+@media(min-width:768px)
+{
+	body.modal-open div#giftEmporiumModal {     overflow: hidden; }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     
