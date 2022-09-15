@@ -1872,8 +1872,15 @@
 	
 	
 	<script>
+		
         jQuery(document).ready(function(){
-            jQuery('.scroll-main').scrollbar();
+			if (jQuery(window).width() > 768) {
+			   jQuery('.scroll-main').scrollbar();
+			}
+			else {
+			   
+			}
+            
         });
     </script>
 
