@@ -48,9 +48,9 @@ body .form-control::placeholder{font-weight:500 !important;}
 .scroll-main .scroll-bar{border-radius:8px;}
 .scroll-main .scroll-element_track { background-color: #D9D9D9; opacity: 0.3; }
 .scroll-main .scroll-bar { background-color: #D9D9D9; opacity: 1; }
-body.modal-open div#giftEmporiumModal { overflow: hidden; }
+
 .scroll-main .scroll-element_track { top: -14px; }
-.gt-gift-veriation-detail-area { height: 100vh; overflow-y: auto; }
+
 .gt-gift-veriation-detail-area.scroll-main.d-lg-block.scroll-content {
     height: calc(100% - 489px) !important;
     max-height: 100% !important;
@@ -8282,7 +8282,7 @@ span.swap_btn { 		float: left; 		margin-top: 0; 		font-size: 30px; 	}
 h5.swap-title.swap_close_card {     text-decoration: underline;     color: #ff385c;     cursor: pointer;     text-underline-position: under; }
 h5.swap-title.swap_close_card svg{width:20px;height:20px;}
 h5.swap-title.swap_close_card path {     fill: #ff385c; }
-
+.modal_main_item .gift_verification_body_inner > button.accordion-button:after{display:none;}
 
 
 
@@ -9848,7 +9848,7 @@ div#giftEmporiumModal .gt-popup-gift-content {
     margin-left: 20px;
 }
 div#giftEmporiumModal .gt-gift-detail-area {
-    margin-bottom: 60px;
+    margin-bottom: 60px;padding-right:30px;
 }
 .modal_selected_item .gt-gift-veriation-img {
     width: 76px;
@@ -9861,7 +9861,9 @@ div#giftEmporiumModal .gt-gift-detail-area {
     padding: 0;
 }
 .modal_main_item .gift_verification_body_inner button.accordion-button::after {
-    background-image: none;
+    /* background-image: none; */
+	transform: rotate(-90deg) !important;
+	-webkit-transform: rotate(-90deg) !important;
 }
 .product_card_detail h3.gt-gift-veriation-card-title button {
     padding: 0;
@@ -10975,6 +10977,7 @@ a.send-note-pen-img img {
 }
 
 @media (max-width: 991px) {
+	div#giftEmporiumModal .gt-gift-detail-area{padding-right:0;}
 	.swap-content {     width: 350px; }
 	.gt-open-gift-title{    font-size: 21px;     line-height: 26px;}
 	.gt-open-gift-discription{font-size: 16px;     line-height: 20px;    margin-bottom: 18px;}
