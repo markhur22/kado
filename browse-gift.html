@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+	<link rel="stylesheet" href="assets/css/scrollbar.css">
    
 </head>
 
@@ -1138,7 +1138,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="gt-gift-veriation-detail-area  d-lg-block">
+										<div class="gt-gift-veriation-detail-area scroll-main  d-lg-block">
 											<div class="gt-gift-veriation-detail-item">
 												<div class="gt-gift-veriation-card">
 												
@@ -1337,10 +1337,7 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								
-								<div class="scroll-element scroll-y scroll-scrollx_visible scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 614px; top: 261.667px;"></div></div></div>
-								
+								</div>							
 							</div>
 							
 							<div class="modal_selected_item choose1">
@@ -1867,6 +1864,7 @@
 	 <!-- Link All JS -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/scrollreveal.js"></script>
+	<script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
@@ -1875,9 +1873,10 @@
 	
 	<script>
         jQuery(document).ready(function(){
-            jQuery('.modal_full_item').scrollbar();
+            jQuery('.scroll-main').scrollbar();
         });
     </script>
+
 	
 	
 </body>
