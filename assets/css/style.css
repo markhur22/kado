@@ -309,7 +309,7 @@ textarea:focus::placeholder {
     background-color: #141414;
     opacity: 0.6;
     transition: all 0.5s;
-    z-index: 3;
+    z-index: 100;
 }
 
 .git-site-show::before {
@@ -9663,7 +9663,7 @@ span.gif_icon {
 }
 .select_card_section h6.send-note-title {
     margin-bottom: 40px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'PT Serif';
 }
 .select_card_main {
     height: 940px;
