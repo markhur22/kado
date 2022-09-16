@@ -10127,6 +10127,13 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     width: 100%;
     float: left;
 }
+.swap_box_image .front .imgset {
+    height: 100%;
+}
+.swap_box_image .front .imgset img.img-fluid {
+    height: 100%;
+    object-fit: cover;
+}
 /* new desktop changes starts here */
  
  
