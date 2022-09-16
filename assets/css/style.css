@@ -9984,7 +9984,7 @@ a.send-note-pen-img img {
 .signup-social-icon img {
     width: 30px;
 }
-.send-note-thankyou .emojionearea .emojionearea-filters .emojionearea-filter {
+.text_area_filed_main .emojionearea .emojionearea-filters .emojionearea-filter {
     background-color: transparent;
     border-color: transparent;
     height: 100%;
@@ -9997,17 +9997,18 @@ a.send-note-pen-img img {
     border-left-width: 8px;
     border-right-width: 8px;
 }
-.send-note-thankyou .emojionearea .emojionearea-filters .emojionearea-filter img.emojione {
+/* emoji Box textarea */
+.text_area_filed_main .emojionearea .emojionearea-filters .emojionearea-filter img.emojione {
     width: 14px;
     height: auto;
 }
-.send-note-thankyou div#emoji_area_container .send-note-box .emojionearea-filters {
+.text_area_filed_main div#emoji_area_container .send-note-box .emojionearea-filters {
     border: 0;
     background-color: transparent;
     width: calc(100% - 60px);
     /* overflow-x: auto; */
 }
-.send-note-thankyou div#emoji_area_container .send-note-box .emojionearea-filters .emojionearea-filters-scroll {
+.text_area_filed_main div#emoji_area_container .send-note-box .emojionearea-filters .emojionearea-filters-scroll {
     background-color: transparent;
     /* width: auto;
     display: flex; */
@@ -10033,8 +10034,9 @@ a.send-note-pen-img img {
 }
 .send-note-box.form-control.emojionearea .emojionearea-editor {
     padding: 0;
+    font-size: 14px;
 }
-.send-note-thankyou div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-left, .send-note-thankyou div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-right {
+.text_area_filed_main div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-left, .text_area_filed_main div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-right {
     display: none;
 }
 .text_area_filed_main .counter_text {
@@ -10067,6 +10069,7 @@ a.send-note-pen-img img {
 .send-note-box.form-control.emojionearea.focused .emojionearea-tabs {
     border-radius: 0 0 10px 10px;
 }
+/* emoji Box textarea */
 .version-details-btn a.gt-open-gift-btn.version-accept-btn.btn:hover {
     background-color: #fff;
 }
@@ -10084,6 +10087,13 @@ a.send-note-pen-img img {
 }
 .recommendation-slider-link:hover {
     background-color: #FDF4F6;
+}
+section.gt-send-gift-section .text_area_filed_main {
+    margin-top: 16px;
+}
+section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionearea-editor {
+    padding: 0;
+    font-size: 16px;
 }
 /* new desktop changes starts here */
  
