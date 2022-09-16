@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/emojione/1.5.2/assets/sprites/emojione.sprites.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="assets/css/emojionearea.min.css" media="screen">
 	<style>
 		html, body{overflow-x:visible;}
 		span.select2-dropdown span.select2-results {     box-shadow: 0px 1px 0 rgb(0 0 0 / 5%);     border-radius: 0 0 10px 10px; }
@@ -230,9 +231,14 @@
                                             <input type="text" class="form-control gift-massage-box"
                                                  placeholder="Recipient email">
                                         </div>
-                                        <div class="col-md-12 message_fields">
-                                            <textarea class="form-control gift-massage-box" placeholder="Add a Message"
-                                                rows="3"></textarea>
+                                        <div class="col-md-12 message_fields thankyou_text_editor">
+											<textarea maxlength="160" id="emoji_area" class="form-control gift-massage-box" placeholder="Add a Message" rows="3"></textarea>
+											<div class="text_area_filed_main">
+												<div id="emoji_area_container"></div>
+												<label class="counter_text"><span id="chars" class="lead">160</span> / 160</label>
+											</div>	
+												
+												
                                         </div>
                                     </div>
                                 </div>
@@ -1012,7 +1018,54 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/1.5.2/lib/js/emojione.min.js"></script>
+	<script type="text/javascript" src="assets/js/emojionearea.js"></script>
     <script src="assets/js/custom.js"></script>
+	
+	
+	
+	<script>
+	  var el =  $("#emoji_area").emojioneArea({
+      container: "#emoji_area_container",
+      useSprite: false,
+	  events: {
+			 keyup: function (editor, event) {
+			   console.log('event:keyup');
+			   // get keycode of current keypress event
+				var code = (event.keyCode || event.which);
+
+				// do nothing if it's an arrow key
+				if(code == 37 || code == 38 || code == 39 || code == 40) {
+					return;
+				}
+
+			   countChar(this);
+			}
+			}
+    });
+
+	el[0].emojioneArea.on("emojibtn.click", function(btn) {
+		console.log(btn.html());
+		countChar(this);
+	  });
+	  
+	$(document).on('click','.emojionearea-editor',function(){
+		console.log('event1');
+		
+		if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
+		
+	});
+	$(document).on('click','.emojionearea-filters',function(){
+		console.log('event1');
+		
+		$('.emoji_open').removeClass('emoji_open');
+		$('.thankyou_text_editor').addClass('emoji_open');
+	});
+	$(document).on('click','.emoji_open .emojionearea-filters',function(){
+		console.log('event1');
+		if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
+	});
+	</script>
 </body>
 
 </html>
