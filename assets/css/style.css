@@ -10095,6 +10095,38 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     padding: 0;
     font-size: 16px;
 }
+
+
+.payment-gift-section .payment-gift-tabs-content {
+    width: 100%;
+    float: left;
+}
+.payment-gift-section .payment-gift-tabs-content .nav.nav-tabs.payment-nav-tabs {
+    width: 100%;
+    float: left;
+}
+.payment-gift-section .payment-gift-tabs-content .tab-content {
+    width: 100%;
+    float: left;
+}
+.payment-gift-section .payment-gift-tabs-content .tab-content .tab-pane {
+    width: 100%;
+    float: left;
+}
+.payment-gift-section .payment-gift-tabs-content .tab-content .payment-gift-tab-body.payment-gift-tab-card {
+    width: 100%;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+.swap-img {
+    position: relative;
+    left: 10px;
+}
+.continue_pay {
+    width: 100%;
+    float: left;
+}
 /* new desktop changes starts here */
  
  
