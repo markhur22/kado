@@ -561,12 +561,13 @@ var sub_show = [];
         }); */
 	});
 	$("body").on('click', '.toggle-password', function() {
-	  $('.toggle-password').toggleClass("fa-eye-slash fa-eye");
-	  var input = $(".gift-form-password");
-	  if (input.attr("type") === "password") {
-		input.attr("type", "text");
+	  $(this).toggleClass("fa-eye-slash fa-eye");
+	  var input = $(this).parent().find("input").attr('type');
+	  //console.log(input);
+	  if (input === "password") {
+		$(this).parent().find("input").attr("type", "text");
 	  } else {
-		input.attr("type", "password");
+		$(this).parent().find("input").attr("type", "password");
 	  }
 	  
 	  var inputcvv_payment = $(".cvv_payment");
