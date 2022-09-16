@@ -82,7 +82,8 @@ body .form-control::placeholder{font-weight:500 !important;}
 
 .g-account-title img { margin: 0 12px 0 0; }
 .login-details { margin: 30px 0 0 0; }
-.login-details span { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 26px; color: #414141; }
+.login-details span { font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 20px; color: #414141; }
+.login-details span strong a {font-size: 16px;}
 .login-details span a { color: #FF385C; font-family: 'Lato'; font-style: normal; font-weight: 500; font-size: 22px; line-height: 26px; text-underline-offset: 4px; }
 section.g-login-section .g-signup-content { padding: 100px 0; }
 section.g-login-section .create-account-content { padding: 50px 50px 69px 50px; }
@@ -6062,6 +6063,7 @@ div.g-signup-form .gt-btn-custom {
 
 .choose-gift-card-body {
     padding: 12px 13px 26px 26px;
+    transition: all ease .5s;
 }
 
 .choose-gift-card-swap {
@@ -7378,7 +7380,7 @@ padding: 0 19px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #FF385C;
+    border: 1px solid #CCCCCC;
     border-radius: 10px;
     padding: 15.5px 28px;
     font-weight: 700;
@@ -7390,6 +7392,7 @@ padding: 0 19px;
 }
 .finder-second-age-input .label-bg {
     color: #FF385C;
+    border-color: #FF385C;
 }
 .finder-second-age:checked[type=radio] {
     background-image: url(../images/finder_dot.png);
@@ -7460,19 +7463,19 @@ padding: 0 19px;
 }
 
 .finder-four-label {
-	background-color: #FFFFFF;
-	border: 1px solid #FF385C;
-	border-radius: 10px;
-	padding: 43px 34px 26px;
-	width: 100%;
-	position: relative;
-	z-index: 2;
-	height: 100%;
-	transition: all 0.5s;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 43px 34px 26px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .finder-four-check[type="checkbox"] {
@@ -7504,6 +7507,9 @@ padding: 0 19px;
 .finder-four-check:checked+.finder-four-label svg path {
     fill: #FF385C;
     transition: all 0.5s;
+}
+.finder-four-check:checked+label {
+    border-color: #FF385C;
 }
 
 .finder-four-check:checked+.finder-four-label .finder-four-check-title {
@@ -8196,15 +8202,22 @@ div.gift_sent_pop img{max-width:400px;}
 .choose-gift-body-header a{text-decoration:none;letter-spacing:0;}
 .choose-gift-categories-link:hover {     background: #F6F6F6;    color: #414141; }
 .choose-gift-categories-collection .row > .col {     margin: 0 0 30px 0; }
-.choose-gift-item {     height: 100%;     float: left;     width: 100%; }
+.choose-gift-item {     height: 100%;     float: left;     width: 100%; cursor: pointer;}
 .choose-gift-card-btn:hover {     background: #ff385c;     color: #fff; }
 .choose-gift-card-btn:hover svg path{fill: #fff; }
 .choose-gift-card-btn svg {     margin: 0 0 0 5px; }
 .gt-pay-for-gift-content h5.gifts-card-title {     margin: 0; }
 .gifts-card.pay-gift-card:hover {     border-color: #ff385c; }
 .gifts-card.pay-gift-card {     transition: 0.4s ease all; }
-.gt-select-payment-option img {     height: auto; }
-.gt-select-payment-option .mastercard img {     height: 26px; }
+.gt-select-payment-option img {
+    height: auto;
+    width: 60px;
+    object-fit: contain;
+}
+.gt-select-payment-option .mastercard img {
+    height: 26px;
+    width: auto;
+}
 .payment-form-input .form-control{    border: 1px solid #d2d2d2;}
 .gt-btn-custom.payment-btn {     margin-top:0; }
 #paymentModal .payment-form-input span.field_icon::before {     color: #818181; }
@@ -9032,7 +9045,7 @@ span.select2-dropdown .select2-results__message:hover {
 .custom_serach .select2
  span.selection span.select2-selection {
     border-radius: 53px;
-    padding: 16px 0 16px 49px;
+    padding: 16px 0 16px 16px;
 }
 .select2-container{    z-index: 99;}
 .gt-browse-gift-header-seach.gifts-items-header.gift-history-search button {
@@ -9650,6 +9663,7 @@ span.gif_icon {
 }
 .select_card_section h6.send-note-title {
     margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
 }
 .select_card_main {
     height: 940px;
@@ -9807,6 +9821,10 @@ div#giftEmporiumModal.modal.show .modal-dialog .modal-content {
     height: 100%;
     border: 0;
 }
+div#giftEmporiumModal.modal.show .modal-dialog .modal-content {
+    height: 100vh;
+    border: 0;
+}
 div#giftEmporiumModal .emporium-modal-body-inner {
     height: calc(100% - 95px);
     padding: 0;
@@ -9817,8 +9835,11 @@ div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
     padding-top: 31px;
     padding: 31px 10px 50px 30px;
 }
-div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+.modal_main_inner_item {
     height: calc(100% - 85px);
+}
+div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+    height: 100%;
     padding: 0px 32px 40px 38px;
     display: flex;
 }
@@ -10048,6 +10069,21 @@ a.send-note-pen-img img {
 }
 .version-details-btn a.gt-open-gift-btn.version-accept-btn.btn:hover {
     background-color: #fff;
+}
+.choose-gift-item:hover .card-body.choose-gift-card-body {
+    background-color: #FDF4F6;
+}
+.payment-gift-tab-body .payment-continue-btn {
+    margin-top: 30px;
+}
+.payment-gift-tab-body section.swap-section {
+    padding-bottom: 40px;
+}
+.recommendation-slider-link {
+    transition: all ease .5s;
+}
+.recommendation-slider-link:hover {
+    background-color: #FDF4F6;
 }
 /* new desktop changes starts here */
  
@@ -10483,9 +10519,9 @@ a.send-note-pen-img img {
         right: 0;
     }
 
-    .home-navbar-collapse:not(.show) {
+    /* .home-navbar-collapse:not(.show) {
         display: block;
-    }
+    } */
 
     .home-navbar-collapse {
         position: fixed;
@@ -10928,6 +10964,12 @@ a.send-note-pen-img img {
     .send-note-modal .modal-xl {
         max-width: 992px;
     }
+	.git-site-show header.gt-site-header.sticky {
+		position: fixed;
+		z-index: 999;
+		transform: none;
+		-webkit-transform: none;
+	}
 }
 @media only screen and (max-width: 1130px) {
     .gifts-navbar .nav-link {
@@ -12295,12 +12337,6 @@ a.send-note-pen-img img {
 		position: fixed;
 		z-index: 999;
 	}
-	.git-site-show header.gt-site-header.sticky {
-		position: fixed;
-		z-index: 999;
-		transform: none;
-		-webkit-transform: none;
-	}
 	.gifts-collapse-btn-show i.fa-solid.fa-xmark {
 		top: 0;
 		position: relative;
@@ -12332,7 +12368,7 @@ a.send-note-pen-img img {
     }
     .custom_serach .select2 span.selection span.select2-selection {
         border-radius: 53px;
-        padding: 16px 0 16px 43px;
+        padding: 16px 0 16px 16px;
     }
     .scroll-wrapper.gifts-card-list.gift-send-card-list .scroll-element.scroll-y.scroll-scrolly_visible {
         right: 3px;
@@ -12557,6 +12593,9 @@ a.send-note-pen-img img {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.aquarius-share-icon {
     bottom: 40px;}
+    div#paymentModal .modal-dialog.modal-xl.payment-modal-dialog {
+        max-width: 90%;
+    }
 }
 @media(min-width:768px)
 {
@@ -15171,7 +15210,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
     .custom_serach .select2 span.selection span.select2-selection {
         border-radius: 53px;
-        padding: 16px 0 16px 39px;
+        padding: 16px 0 16px 16px;
     }
     .gifts-items-header .gt-search-icon {
         position: absolute;
@@ -15938,6 +15977,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
     div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item div.gift_slider {
         padding: 0 0px;
+    }
+    #paymentModal .gt-select-payment-option {
+        justify-content: space-between;
     }
 }
 
