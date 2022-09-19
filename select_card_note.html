@@ -14,18 +14,8 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/select2.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/emojionearea.min.css" media="screen">
     <link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/emojione/1.5.2/assets/sprites/emojione.sprites.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="assets/css/emojionearea.min.css" media="screen">
-	
-    <!-- Link All JS -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <!-- <script src="assets/js/select2.min.js"></script> -->
-    <script src="assets/js/custom.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/1.5.2/lib/js/emojione.min.js"></script>
-	<script type="text/javascript" src="assets/js/emojionearea.js"></script>
 
 </head>
 
@@ -53,24 +43,34 @@
                     <h6 class="send-note-title">Leave your thank you message below!</h6>
                     <div class="send-note-body-content">
                         <div class="send-note-imgs">
-                            <div class="send-note-first-img">
-                                <img src="assets/images/thank_you_post.png" alt="" class="img-fluid">
-                                <a href="#" class="send-note-pen-img">
-                                    <img src="assets/images/send_pen.png" alt="" class="img-fluid d-none d-md-block">
-                                    <img src="assets/images/send_note_btn.svg" alt="" class="img-fluid d-block d-md-none">
-                                </a>
+                            <div>
+                                <div class="send-note-first-img">
+                                    <img src="assets/images/thank_you_post.png" alt="" class="img-fluid">
+                                    <a href="#" class="send-note-pen-img">
+                                        <img src="assets/images/send_pen.png" alt="" class="img-fluid d-none d-md-block">
+                                        <img src="assets/images/send_note_btn.svg" alt="" class="img-fluid d-block d-md-none">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="send-note-thankyou">
-                                <div class="thankyou_text_editor">
+                            <div class="thankyou_text_editor">
+                                <div class="text_editor_main_head">
                                     <div class="send-note-thankyou-img">
                                         <img src="assets/images/send_thankyou.png" alt="" class="img-fluid">
                                     </div>
-                                    <textarea maxlength="160" id="emoji_area" class="send-note-box form-control" cols="23" rows="5" placeholder="Type your thank you message here!"></textarea>
+                                    <textarea maxlength="160" id="emoji_area" class="send-note-box form-control" cols="23" rows="8" placeholder="Type your thank you message here!"></textarea>
                                     <div class="text_area_filed_main">
                                         <div id="emoji_area_container"></div>
                                         <label class="counter_text"><span id="chars" class="lead">160</span> / 160</label>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="send-note-nav">
+                            <div class="send_note_nav">
+                                <img src="assets/images/frame_send.png">
+                            </div>
+                            <div class="send_note_nav">
+                                <img src="assets/images/texteditor.png">
                             </div>
                         </div>
                     </div>
@@ -144,48 +144,79 @@
             </div>
         </div>
     </div>
-	<script>
-	  var el =  $("#emoji_area").emojioneArea({
-      container: "#emoji_area_container",
-      useSprite: false,
-	  events: {
-			 keyup: function (editor, event) {
-			   console.log('event:keyup');
-			   // get keycode of current keypress event
-				var code = (event.keyCode || event.which);
-
-				// do nothing if it's an arrow key
-				if(code == 37 || code == 38 || code == 39 || code == 40) {
-					return;
-				}
-
-			   countChar(this);
-			}
-			}
-    });
-
-	el[0].emojioneArea.on("emojibtn.click", function(btn) {
-		console.log(btn.html());
-		countChar(this);
-	  });
-	  
-	$(document).on('click','.emojionearea-editor',function(){
-		console.log('event1');
-		
-		if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
-		
-	});
-	$(document).on('click','.emojionearea-filters',function(){
-		console.log('event1');
-		
-		$('.emoji_open').removeClass('emoji_open');
-		$('.thankyou_text_editor').addClass('emoji_open');
-	});
-	$(document).on('click','.emoji_open .emojionearea-filters',function(){
-		console.log('event1');
-		if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
-	});
-	</script>
+	
 </body>
+    <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/select2.min.js"></script> -->
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/emojionearea.js"></script>
+    <script>
+        var el =  $("#emoji_area").emojioneArea({
+        container: "#emoji_area_container",
+        useSprite: false,
+        events: {
+               keyup: function (editor, event) {
+                 console.log('event:keyup');
+                 // get keycode of current keypress event
+                  var code = (event.keyCode || event.which);
+  
+                  // do nothing if it's an arrow key
+                  if(code == 37 || code == 38 || code == 39 || code == 40) {
+                      return;
+                  }
+  
+                 countChar(this);
+              }
+              }
+      });
+  
+      el[0].emojioneArea.on("emojibtn.click", function(btn) {
+          console.log(btn.html());
+          countChar(this);
+        });
+        
+      $(document).on('click','.emojionearea-editor',function(){
+          console.log('event1');
+          
+          if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
+          
+      });
+      $(document).on('click','.emojionearea-filters',function(){
+          console.log('event1');
+          
+          $('.emoji_open').removeClass('emoji_open');
+          $('.thankyou_text_editor').addClass('emoji_open');
+      });
+      $(document).on('click','.emoji_open .emojionearea-filters',function(){
+          console.log('event1');
+          if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
+      });
+
+      $('.send-note-imgs').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        // adaptiveHeight: true,
+        asNavFor: '.send-note-nav'
+      });
+        $('.send-note-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.send-note-imgs',
+        dots: false,
+        centerMode: true,
+        arrows: true,
+        focusOnSelect: true
+      });
+      $(document).ready(function(){
+        var height = $('.send-note-first-img').height();
+        $('.text_editor_main_head').css('height',height+'px');
+      })
+      
+</script>
 
 </html>
