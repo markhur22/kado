@@ -9863,7 +9863,9 @@ div#giftEmporiumModal .gt-popup-gift-content {
     margin-left: 20px;
 }
 div#giftEmporiumModal .gt-gift-detail-area {
-    margin-bottom: 60px;padding-right:30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    margin: 0;
 }
 .modal_selected_item .gt-gift-veriation-img {
     width: 76px;
@@ -9940,8 +9942,6 @@ div#giftEmporiumModal .gt-gift-detail-area {
 }
 .modal_selected_item_inner {
     padding: 18px 14px 12px 18px;
-    border: 1px solid #E2E2E2;
-    border-radius: 15px;
 }
 .product_card_detail h3.gt-gift-veriation-card-title button::after {
     background-size: 13px;
@@ -10263,6 +10263,24 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 }
 .emojionearea .emojionearea-picker.emojionearea-picker-position-top {
     right: 0;
+}
+.emporium-modal-body {
+    margin: 0;
+    padding-top: 28px;
+    height: calc(100% - 84px);
+    padding-bottom: 29px;
+}
+.emporium-modal-body {
+    padding-bottom: 0;
+    height: calc(100% - 84px) !important;
+}
+.scroll-wrapper.modal_selected_item.active_choose {
+    position: relative;
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+    padding: initial !important;
+    position: relative;
+    margin-left: 29px !important;
 }
 /* new desktop changes starts here */
  
@@ -11164,6 +11182,12 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     }
     .text_editor_main_head {
         padding: 0px 20px 0px;
+    }
+    .emporium-modal-body {
+        padding: 0 25px 40px 25px;
+    }
+    .emporium-modal-body {
+        padding-top: 28px;
     }
 }
 @media only screen and (max-width: 1130px) {
@@ -12762,6 +12786,36 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     }
     .send-note-imgs button.slick-next.slick-arrow {
         bottom: 40px;
+    }
+    .modal_main_inner_item {
+        height: auto;
+        overflow: auto;
+    }
+    .modal_main_item .scroll-wrapper.modal_selected_item.choose2.active_choose {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 30px;
+    }
+    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+        height: auto;
+    }
+    .modal_main_inner_item .modal_main_item .modal_selected_item {
+        margin: 0px 0 0 0 !important;
+    }
+    .modal_selected_item_inner {
+        margin-top: 0;
+    }
+    div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .modal_main_inner_item .modal_main_item .modal_selected_item {
+        margin: 0px 0 0 0 !important;
+        border: 0;
+    }
+    .emporium-modal-body {
+        padding: 0 26px 33px 26px;
+        overflow-x: hidden;
     }
 
 }
@@ -16198,6 +16252,10 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
     #paymentModal .gt-select-payment-option {
         justify-content: space-between;
+    }
+    .emporium-modal-body {
+        padding: 0 20px 0px 20px;
+        margin: 20px 0 0 0;
     }
 }
 
