@@ -8402,7 +8402,7 @@ div.gift_slider{    padding: 0 30px;}
 ul.gift_desc_inner {     float: left;     width: 100%;     padding: 0 0 0 15px;     margin: 0; }
 ul.gift_desc_inner li {     float: left;     width: 100%;     margin: 0 0 22px 0;     font-weight: 400;     font-size: 16px;     line-height: 24px;     color: #000; }
 ul.gift_desc_inner li:last-child {     margin: 0; }
-#giftEmporiumModal button.btn-close {     width: 27px;     height: 27px; }
+.giftEmporiumModal button.btn-close {     width: 27px;     height: 27px; }
 .modal-header.emporium-modal-header {     padding: 24px 32px 27px 46px; }
 .gift_variation_price span.gt-gift-shipping-label {     margin: 0; }
 .gift_verification_body_inner .gt-gift-veriation-card-title  button.accordion-button::after {     margin: 0 0 0 10px; }
@@ -8951,8 +8951,8 @@ ul.dropdown-menu.user-profile li:last-child {
     height: 34px;
     display: flex;
     align-items: center;
-    background-color: #ff385c;
-    color: #fff;
+    background-color: #f6f6f600;
+    color: #414141;
     border: 0;
     font-family: 'Lato', sans-serif;
 }
@@ -8960,7 +8960,7 @@ ul.dropdown-menu.user-profile li:last-child {
     padding: 0 6px;
     border: 0;
     font-size: 24px;
-    color: #fff;
+    color: #FF385C;
     display: flex;
     align-items: center;
 }
@@ -9444,7 +9444,7 @@ div#gift_sent_pop .card_view_slide_main ul.slick-dots li.slick-active button {
 .swap_gift_main .choose-gift-matt-img img {
     display: block;
 }
-div#swapModal .gt-gift-popup-slider.swap-popup-slider button {
+/* div#swapModal .gt-gift-popup-slider.swap-popup-slider button {
     display: none !important;
 }
 div#swapModal .gt-gift-popup-slider.swap-popup-slider {
@@ -9473,7 +9473,7 @@ div#swapModal .gift_acc_inner .gt-gift-veriation-img {
 div#swapModal .gt-gift-veriation-card-body {
     width: calc(100% - 397px);
     padding-left: 28px;
-}
+} */
 .gt-gift-swap_btn_mian {
     width: 240px;
     display: flex;
@@ -9481,7 +9481,7 @@ div#swapModal .gt-gift-veriation-card-body {
     justify-content: flex-end;
     padding-left: 32px;
 }
-div#swapModal .accordion-button:not(.collapsed) svg {
+/* div#swapModal .accordion-button:not(.collapsed) svg {
     transform: rotate(180deg);
 }
 div#swapModal .gift_verification_body_inner button.accordion-button a svg {
@@ -9540,7 +9540,7 @@ div#swapModal .accordion-header .accordion-collapse .accordion-body span {
     font-size: 18px;
     color: #000000;
     line-height: 35px;
-}
+} */
 section.recommendation-section .recommendation-slider button {
     border-radius: 100%;
     background-image: none;
@@ -9799,7 +9799,7 @@ a.gt-open-gift-btn:hover {
 .select_card_section .send-note-btn a:hover {
     color: #fff;
 }
-div#giftEmporiumModal.modal.fade .modal-dialog {
+div.giftEmporiumModal.modal.fade .modal-dialog {
     transition: transform .3s ease-out;
     transform: translate(230px,0px);
     margin-left: auto;
@@ -9807,23 +9807,23 @@ div#giftEmporiumModal.modal.fade .modal-dialog {
     margin-top: 0;
     margin-bottom: 0;
 }
-div#giftEmporiumModal.modal.show .modal-dialog {
+div.giftEmporiumModal.modal.show .modal-dialog {
     transform: none;
     height: initial;
 }
-div#giftEmporiumModal.modal.show .modal-dialog .modal-content {
+div.giftEmporiumModal.modal.show .modal-dialog .modal-content {
     height: 100%;
     border: 0;
 }
-div#giftEmporiumModal.modal.show .modal-dialog .modal-content {
+div.giftEmporiumModal.modal.show .modal-dialog .modal-content {
     height: 100vh;
     border: 0;
 }
-div#giftEmporiumModal .emporium-modal-body-inner {
+div.giftEmporiumModal .emporium-modal-body-inner {
     height: calc(100% - 95px);
     padding: 0;
 }
-div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
+div.giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
     height: 100%;
     margin: 0;
     padding-top: 31px;
@@ -9832,37 +9832,37 @@ div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
 .modal_main_inner_item {
     height: calc(100% - 85px);
 }
-div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+div.giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
     height: 100%;
-    padding: 0px 32px 40px 38px;
+    padding: 35px 32px 35px 38px;
     display: flex;
 }
-div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
+div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
     height: 100%;
     border: 1px solid #E2E2E2;
     border-radius: 15px;
     width: calc(100% - 345px);
 	position:relative;
 }
-#giftEmporiumModal  .close_pop_up button {
+.giftEmporiumModal  .close_pop_up button {
     background-image: none;
     opacity: 1;
 }
 .close_pop_up {
     padding: 28px 32px 22px 38px;
 }
-div#giftEmporiumModal .modal-dialog.modal-xl {
+div.giftEmporiumModal .modal-dialog.modal-xl {
     max-width: 1305px;
 }
 .modal_selected_item {
     width: 345px;
     padding-left: 29px;
 }
-div#giftEmporiumModal .gt-popup-gift-content {
+div.giftEmporiumModal .gt-popup-gift-content {
     width: 100%;
     margin-left: 20px;
 }
-div#giftEmporiumModal .gt-gift-detail-area {
+div.giftEmporiumModal .gt-gift-detail-area {
     padding-bottom: 30px;
     padding-right: 30px;
     margin: 0;
@@ -9948,7 +9948,7 @@ div#giftEmporiumModal .gt-gift-detail-area {
     background-position: center;
     transform: rotate(180deg);
 }
-div#giftEmporiumModal .modal-content {
+div.giftEmporiumModal .modal-content {
     border-radius: 10px 0 0 10px;
 }sktop
 header.gt-site-header nav.navbar .gifts-collapse-btn {
@@ -9957,7 +9957,7 @@ header.gt-site-header nav.navbar .gifts-collapse-btn {
 div#FAQaccordionnew .active_choose {
     background-color: #F4F4F4;
 }
-#giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
+.giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
     background-color: transparent;
 }
 .modal_selected_item {
@@ -10129,18 +10129,23 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     object-fit: cover;
 }
 .send-note-first-img {
-    width: 546px;
-    margin: auto;
-    max-width: 100%;
+	width: 546px;
+	margin: auto;
+	max-width: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.send-note-first-img {
+    width: 400px;
 }
 .text_editor_main_head {
-    width: 546px;
+    width: 400px;
     margin: auto;
     max-width: 100%;
     background: #F9F9F9;
     border-radius: 15px;
     padding: 30px 41px 120px;
-    min-height: 762px;
+    /* min-height: 762px; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -10282,6 +10287,16 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     position: relative;
     margin-left: 29px !important;
 }
+.emporium-modal-header button.btn-close {
+    margin: 0 21px 0 0;
+}  
+.modal-header.emporium-modal-header {
+    padding: 24px 32px 27px 46px;
+    justify-content: flex-start;
+}
+.modal_main_inner_item {
+    height: 100%;
+}
 /* new desktop changes starts here */
  
  
@@ -10309,7 +10324,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
         padding-left: 20px;
     }
     .version-section .version-tab-body.gift-tab-body .version-tab-body-img img {
-        height: 100%;
+        height: auto;
         object-fit: cover;
         object-position: center;
     }
@@ -10528,7 +10543,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     span.bar_progres {
         /* width: calc(100% - 154px); */
     }
-    div#giftEmporiumModal .modal-dialog.modal-xl {
+    div.giftEmporiumModal .modal-dialog.modal-xl {
         max-width: 94%;
     }
 }
@@ -10704,7 +10719,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 	.gt-how-work-content-area:after{height: calc(100% - 226px);}
 	
 	.gt-quality-gift-section .gt-section-title {     font-size: 35px;     line-height: 47px; }
-	#giftEmporiumModal .modal-dialog.modal-xl {     max-width: 90%; }
+	.giftEmporiumModal .modal-dialog.modal-xl {     max-width: 90%; }
 	
 	
 	/*new changes*/
@@ -11237,7 +11252,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 	.modal_main_item .gift_verification_body_inner button.accordion-button::after {     /* background-image: none; */ 	transform: rotate(-90deg) !important; 	-webkit-transform: rotate(-90deg) !important; }
 }
 @media (max-width: 991px) {
-	div#giftEmporiumModal .gt-gift-detail-area{padding-right:0;}
+	div.giftEmporiumModal .gt-gift-detail-area{padding-right:0;}
 	.swap-content {     width: 350px; }
 	.gt-open-gift-title{    font-size: 21px;     line-height: 26px;}
 	.gt-open-gift-discription{font-size: 16px;     line-height: 20px;    margin-bottom: 18px;}
@@ -12722,13 +12737,13 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
         width: 100%;
         padding-left: 0;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
         display: block;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
         width: 100%;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog {
+    div.giftEmporiumModal.modal.show .modal-dialog {
         transform: none;
         height: initial;
     }
@@ -12742,27 +12757,27 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     .modal_main_item .modal_selected_item ul.gift_sizes li {
         margin-right: 8px;
     }
-    div#giftEmporiumModal .modal_full_item .gt-popup-gift-content {
+    div.giftEmporiumModal .modal_full_item .gt-popup-gift-content {
         width: 100%;
         margin-left: 0;
     } 
-    div#giftEmporiumModal .modal_full_item .gt-gift-detail-area {
+    div.giftEmporiumModal .modal_full_item .gt-gift-detail-area {
         margin-bottom: 20px;
     }
-    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
         padding-top: 22px;
     }
-    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
         padding-top: 22px;
         position: relative;
     }
-    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
     }
-    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
         content: '';
         position: absolute;
         top: 0;
@@ -12774,7 +12789,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     .gt-gift-veriation-card .accordion-item.faq-accordion-item .accordion-body {
         display: block;
     }
-    #giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
+    .giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
         align-items: flex-start;
     }
     div#FAQaccordionnew .active_choose {
@@ -12796,7 +12811,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
         margin-left: 0 !important;
         margin-top: 30px;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
         height: auto;
     }
     .modal_main_inner_item .modal_main_item .modal_selected_item {
@@ -12805,7 +12820,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     .modal_selected_item_inner {
         margin-top: 0;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
         width: 100%;
         margin-bottom: 30px;
     }
@@ -12856,7 +12871,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 @media(min-width:768px)
 {
 	
-	body.modal-open div#giftEmporiumModal {     overflow: hidden; }
+	body.modal-open div.giftEmporiumModal {     overflow: hidden; }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     
@@ -15639,7 +15654,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         width: 6px;
         right: -15.5px;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
         padding: 0 16px 20px 16px;
     }
     
@@ -15649,20 +15664,20 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .modal_main_inner_item {
         padding: 0 16px 20px;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item {
         padding: 0;
     }
-    div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
+    div.giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
         padding: 31px 30px 0px;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
         border: 0;
     }
     /* .modal_selected_item_inner {
         padding-left: 30px;
         padding-right: 30px;
     } */
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item {
         padding: 0;
         border: 1px solid #D2D2D2;
         border-radius: 15px;
@@ -15676,7 +15691,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         width: 79px;
         margin-bottom: 7px;
     }
-    #giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
+    .giftEmporiumModal .modal_full_item .accordion-item .accordion-button {
         background-color: transparent;
         padding: 0;
         width: 100%;
@@ -15685,7 +15700,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .modal_main_item .gift_verification_body_inner button.accordion-button::after {
         background-image: url("data:image/svg+xml,%3Csvg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.12 0L9 6.7998L15.88 0L18 2.1001L9 11L0 2.1001L2.12 0Z' fill='black'/%3E%3C/svg%3E%0A");
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item .accordion-item.faq-accordion-item {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item .accordion-item.faq-accordion-item {
         width: 100%;
         float: left;
     }
@@ -15738,7 +15753,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 	
 	div.gift_left_content {     padding: 0 19px; }
 	.gt-send-gift-section .container {     padding: 0 20px; }
-	#giftEmporiumModal .modal-dialog.modal-xl {     margin: 20px auto; max-width: 95%;}
+	.giftEmporiumModal .modal-dialog.modal-xl {     margin: 20px auto; max-width: 95%;}
 	.gt-send-gift-section .send-gift-select-gift {     padding: 22px 26px 25px 26px; }
 	div.input_send_outer {     width: 105px; }
 	.gt-select-gift-content div.gift-message {
@@ -15923,7 +15938,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         line-height: 23px;
         margin-bottom: 24px;
     }
-    div#giftEmporiumModal .modal-dialog.modal-xl {
+    div.giftEmporiumModal .modal-dialog.modal-xl {
         max-width: 100%;
     }
 }
@@ -16247,7 +16262,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         width: 6px;
         right: -4px;
     }
-    div#giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item div.gift_slider {
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item div.gift_slider {
         padding: 0 0px;
     }
     #paymentModal .gt-select-payment-option {
@@ -16327,7 +16342,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 	.payment-gift-section .payment-nav-item {
         padding: 0 6px;
     }
-    div#giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
+    div.giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
         padding: 31px 12px 50px;
         overflow: visible;
     }
@@ -16339,7 +16354,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         padding-right: 12px;
         padding-bottom: 26px;
     }
-    div#giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
         width: calc(100% + 27px);
         height: 1px;
         left: -13px;
