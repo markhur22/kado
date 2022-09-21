@@ -62,6 +62,14 @@
                                         <div id="emoji_area_container"></div>
                                         <label class="counter_text"><span id="chars" class="lead">160</span> / 160</label>
                                     </div>
+									<div class="your-selector-with-unicode-emojis">
+									  <div class="selector_unify uniy_la">😂</div>
+									  <div class="selector_unify uniy_stud">😍</div>
+									  <div class="selector_unify uniy_o">😮</div>
+									  <div class="selector_unify uniy_n">🙌</div>
+									  <div class="selector_unify uniy_up">👍</div>
+									  <div class="selector_unify uniy_down">👎</div>
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +223,20 @@
       $(document).ready(function(){
         var height = $('.send-note-first-img').height();
         $('.text_editor_main_head').css('height',height+'px');
-      })
+		
+		$(document).on('click','.selector_unify',function(){
+			var textArea_val = $(this).find('img').attr('alt');
+			var emojiArea_val = $(this).find('img').attr('src');
+			
+			$('.emojionearea-editor').append('<img alt="'+textArea_val+'" class="emojioneemoji" src="'+emojiArea_val+'">');
+			
+			var textAreabox = $("#emoji_area");
+			textAreabox.val(textAreabox.val() + textArea_val);
+			$('.send-note-box.form-control.emojionearea').removeClass('focused');
+			$('.send-note-box.form-control.emojionearea').addClass('focused');
+
+		});
+      });
       
 </script>
 
