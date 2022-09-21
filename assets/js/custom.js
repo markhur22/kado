@@ -768,19 +768,8 @@ $('span.card_left_arrow').click(function(){
 }); */
 
   var el =  $("#emoji_area").emojioneArea({
-      container: "#emoji_area_container",
-      useSprite: false,
-	  searchPlaceholder: "Search",
-	//   pickerPosition: "top",
-	  
-      filtersPosition: "bottom",
-    tones: false,
-    autocomplete: false,
-    inline: true,
-    hidePickerOnBlur: false,
-
-
-	  events: {
+		container: "#emoji_area_container",
+		events: {
 			 keyup: function (editor, event) {
 			   console.log('event:keyup');
 			   // get keycode of current keypress event
@@ -796,27 +785,43 @@ $('span.card_left_arrow').click(function(){
 			}
     });
 
-el[0].emojioneArea.on("emojibtn.click", function(btn) {
-    console.log(btn.html());
-	countChar(this);
-  });
-  
-$(document).on('click','.emojionearea-editor',function(){
-	console.log('event1');
-	
-	if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
-	
-});
-$(document).on('click','.emojionearea-filters',function(){
-	console.log('event1');
-	
-	$('.emoji_open').removeClass('emoji_open');
-	$('.thankyou_text_editor').addClass('emoji_open');
-});
-$(document).on('click','.emoji_open .emojionearea-filters',function(){
-	console.log('event1');
-	if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
-});
+	el[0].emojioneArea.on("emojibtn.click", function(btn) {
+		console.log(btn.html());
+		countChar(this);
+	  });
+	  
+	$(document).on('click','.emojionearea-editor',function(){
+		console.log('event1');
+		
+		if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
+		
+	});
+	$(document).on('click','.emojionearea-filters',function(){
+		console.log('event1');
+		
+		$('.emoji_open').removeClass('emoji_open');
+		$('.thankyou_text_editor').addClass('emoji_open');
+	});
+	$(document).on('click','.emoji_open .emojionearea-filters',function(){
+		console.log('event1');
+		if($('.emojionearea-tabs').hasClass('ea-hidden')){$('.thankyou_text_editor').removeClass('emoji_open');}
+	});
+	$(document).on('click','.selector_unify',function(){
+		var textArea_val = $(this).find('img').attr('alt');
+		var emojiArea_val = $(this).find('img').attr('src');
+		
+		$('.emojionearea-editor').append('<img alt="'+textArea_val+'" class="emojioneemoji" src="'+emojiArea_val+'">');
+		
+		var textAreabox = $("#emoji_area");
+		textAreabox.val(textAreabox.val() + textArea_val);
+		$('.send-note-box.form-control.emojionearea').addClass('focused');
+		$('.send-note-box.form-control.emojionearea').removeClass('focused');
+		countChar(el[0].emojioneArea);
+
+	});
+	$(document).on('click','#selector_outemoji a' ,function() {
+		$('.emojionearea-button').click();
+	});
 });
 
 function chooseActive(elem){
