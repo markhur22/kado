@@ -8302,7 +8302,19 @@ section.payment-gift-section {     border-top: 10px solid #FF385C;     display: 
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift svg {     width: 32px; }
 .gift_version span.select2-dropdown .select2-results__option{font-weight:600;}
 .git-site-show .navbar-btn .gifts-collapse-btn {     z-index: 999; }
+.your-selector-with-unicode-emojis {
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* background: hsla(242,21%,28%,0.04); */
+    padding: 0;
+    margin: 12px 0 0 0;
+    /* border: 1px solid rgba(108,108,127,.2); */
+    border-radius: 100px;
+}
 
+.your-selector-with-unicode-emojis .selector_unify {     margin: 0 5px; }
 
 
 
