@@ -9657,7 +9657,7 @@ span.gif_icon {
 }
 .select_card_section h6.send-note-title {
     margin-bottom: 40px;
-    font-family: 'PT Serif';
+    /* font-family: 'PT Serif'; */
 }
 .select_card_main {
     height: 940px;
