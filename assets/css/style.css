@@ -582,8 +582,10 @@ background-size: 10px;
 
 .shipping-form-input .select2-container--default .select2-selection--single {
     padding: 0;
+	    display: inline-block;
+    width: 100%;
 }
-.shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered{padding:0;}
+.shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered, .shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered > span {     padding: 0 19px 0 19px;     float: left;     height: 55px;     line-height: 55px; }
 .shipping-body-form .shi-select-address .shipping-form-input {
     margin: 0 0 8px 0;
 }
@@ -6273,9 +6275,9 @@ div.g-signup-form .gt-btn-custom {
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift {
     background: #fff;
     border-radius: 50%;
-    margin-right: 37px;
-    width: 62px;
-    height: 62px;
+    margin-right: 20px;
+    width: 55px;
+    height: 55px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -6527,9 +6529,9 @@ a.version-tab-swap-btn:hover .accpt-gift svg path{
 }
 
 .option-item-btn {
-    padding: 10px 64px 9px 13px;
+    padding: 6px 24px 6px 6px;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     letter-spacing: 0.05em;
 	transition: all ease 0.3s;
@@ -6703,10 +6705,10 @@ padding: 0 19px;
 }
 
 .shipping-tab-btn .btn {
-    padding: 0 52px 0 14px;
-    font-size: 24px;
+    padding: 5px 30px 5px 5px;
+    font-size: 20px;
     letter-spacing: 0.05em;
-	height:86px;
+	height:auto;
 }
 .shipping-tab-btn .accpt-gift {
     display: flex; 
@@ -6714,9 +6716,9 @@ padding: 0 19px;
     justify-content: center;
     background: #fff;
     border-radius: 50%;
-    margin-right: 33px;
-    width: 62px;
-    height: 62px;
+    margin-right: 20px;
+    width: 55px;
+    height: 55px;
 }
 .shipping-tab-btn:hover a.gt-open-gift-btn .accpt-gift {
     background: #FF385C;
@@ -8293,6 +8295,15 @@ h5.swap-title.swap_close_card path {     fill: #ff385c; }
 .modal_main_item .gift_verification_body_inner > button.accordion-button:after{display:none;}
 body.swap_body.swipe_card {     -webkit-user-select: none;     -webkit-touch-callout: none;     -moz-user-select: none;     -ms-user-select: none;     user-select: none; }
 section.payment-gift-section {     border-top: 10px solid #FF385C;     display: inline-block;     width: 100%;     padding: 0 0 50px 0; }
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift svg {     width: 32px; }
+.gift_version span.select2-dropdown .select2-results__option{font-weight:600;}
+
+
+
+
+
+
+
 
 
 /*desktop new changes starts here*/
@@ -8954,7 +8965,7 @@ ul.dropdown-menu.user-profile li:last-child {
     display: flex;
     align-items: center;
     background-color: #f6f6f600;
-    color: #414141;
+    color: #4f4f4f;
     border: 0;
     font-family: 'Lato', sans-serif;
 }
@@ -12930,7 +12941,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 .option-tab-body > .row > .col { padding: 0; width: 50%;}
 .shi-manually-address.no-label label { display: none; }
 .shipping-tab-btn .accpt-gift { margin-right: 13px; width: 36px; height: 36px; }
-.gt-open-gift-btn.option-item-btn.btn .accpt-gift { margin-right: 26px; width: 40px; height: 40px; }
+.gt-open-gift-btn.option-item-btn.btn .accpt-gift { margin-right: 10px; width: 40px; height: 40px; }
 .version-tab-body { padding: 20px 20px 28px; }
 
 
@@ -14824,7 +14835,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .option-item-btn {
         font-size: 16px;
 		line-height: 19px;
-		padding: 0 42px 0 13px;
+		
 		height: 57px;
 		margin-top:13px;
     }
@@ -14901,10 +14912,11 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .shipping-tab-btn .btn {
-        padding: 0 24px 0 8px;
+        
         font-size: 16px;
         line-height: 19px;
-		height:50px;
+		height:auto;
+		padding:7px 30px 7px 5px;
 		
     }
 	.shipping-tab-btn .btn svg{width:20px;}
