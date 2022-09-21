@@ -585,12 +585,16 @@ background-size: 10px;
 	    display: inline-block;
     width: 100%;
 }
-.shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered, .shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered > span {     padding: 0 19px 0 19px;     float: left;     height: 55px;     line-height: 55px; }
+.shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered{float: left;     height: 55px;   padding: 0 19px 0 19px;    line-height: 55px; width:100%;}
+
+
+
+.shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered > span {     padding: 0;     float: left;     height: 55px;     line-height: 55px; }
 .shipping-body-form .shi-select-address .shipping-form-input {
     margin: 0 0 8px 0;
 }
 .shipping-form-input .select2-container .select2-selection--single .select2-selection__rendered span.select2-selection__placeholder {
-    padding: 0 19px 0 19px;
+    
     float: left;
     height: 55px;
     line-height: 55px;
@@ -7547,7 +7551,7 @@ padding: 0 19px;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color: #000000;font-family: 'Lato';
     margin-bottom: 33px;
     text-align: center;
 }
@@ -7562,8 +7566,8 @@ padding: 0 19px;
     right: 12px;
     background-color: #FF385C;
     border-radius: 50%;
-    width: 42px;
-    height: 42px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8282,7 +8286,7 @@ div.hover_card_swipe {     margin-left: 50%; }
 .hover_card_swipe .card_vk.hove .back { 		 transform: perspective(3000px) rotateY(-170deg); 		 box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1); 		 	}
 span.swap_btn { 		float: left; 		margin-top: 0; 		font-size: 30px; 	}
 .card_vk .back { 		 position: absolute; 		 width: 100%; 		 height: 100%; 		 		 margin: -5px 0px 0px -10px; 		 backface-visibility: visible; 		 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5)); 		 transform-style: preserve-3d; 		 transform-origin: 0% 50%; 		 transform: perspective(3000px) rotateY(0deg); 		 transition: all 0.8s ease-in-out; 		 background-color: #e6f0e6; 		 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1); 	border-radius:15px;cursor:pointer;}
-.send_note_nav img {     border: 1px solid transparent;     border-radius: 3px; }
+.send_note_nav img {     border: 1px solid transparent;     border-radius: 3px;    width: 65px; }
 .send_note_nav.slick-current img {     border: 1px solid #FF385C; }
 
 .imgset 	{ 	  position: relative; 	  z-index: 1; 	  margin-bottom: -215px; 	}
@@ -8297,7 +8301,7 @@ body.swap_body.swipe_card {     -webkit-user-select: none;     -webkit-touch-cal
 section.payment-gift-section {     border-top: 10px solid #FF385C;     display: inline-block;     width: 100%;     padding: 0 0 50px 0; }
 .gt-open-gift-btn.option-item-btn.btn .accpt-gift svg {     width: 32px; }
 .gift_version span.select2-dropdown .select2-results__option{font-weight:600;}
-
+.git-site-show .navbar-btn .gifts-collapse-btn {     z-index: 999; }
 
 
 
@@ -9986,7 +9990,7 @@ div#FAQaccordionnew .active_choose {
     display: none;
 }
 a.send-note-pen-img img {
-    width: 23px;
+    width: 37px;
 }
 .signup-social-icon img {
     width: 30px;
@@ -10142,17 +10146,15 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     object-fit: cover;
 }
 .send-note-first-img {
-	width: 546px;
+	width: 450px;
 	margin: auto;
 	max-width: 100%;
 	border-radius: 15px;
 	overflow: hidden;
 }
-.send-note-first-img {
-    width: 400px;
-}
+
 .text_editor_main_head {
-    width: 400px;
+    width: 450px;
     margin: auto;
     max-width: 100%;
     background: #F9F9F9;
@@ -11469,7 +11471,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
         } */
     .gifts-collapse.show {
         display: block;
-        right: 0;
+        right: 0;transition: all 1s;
     }
 
     .gifts-content .navbar {
@@ -11481,7 +11483,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
         top: 0;
         right: -300px;
         background: #fbfbfb;
-        transition: all 1s;
+        
         z-index: 101;
         width: 300px;
         height: 100%;
@@ -12915,6 +12917,8 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 }
 
 @media (max-width: 767px) {
+	.send-note-pen-img{width: 60px;     height: 60px;}
+	a.send-note-pen-img img {     width: 26px; }
     .browse-categori-popup i{    margin: 2px 0 0 0;}
     .gift-select-btn{padding: 17px 14px 17px 23px;    font-size: 14px;}
     .gt-gift-shipping-charge{width: 100%;}
@@ -15625,7 +15629,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         width: 100%;
     }
     .send-note-section .send-note-body .send-note-first-img {
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
     section.send-note-section .send-note-content {
         text-align: center;
