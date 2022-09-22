@@ -820,7 +820,12 @@ $('span.card_left_arrow').click(function(){
 
 	});
 	$(document).on('click','#selector_outemoji a' ,function() {
+		$('.send-note-box.form-control.emojionearea').addClass('focused');
 		$('.emojionearea-button').click();
+		$('.emojionearea-editor').click();
+		$('.emojionearea-editor').trigger("focus");
+		$('textarea#emoji_area').click();
+		
 	});
 });
 
