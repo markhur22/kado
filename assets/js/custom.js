@@ -815,7 +815,10 @@ $('span.card_left_arrow').click(function(){
 		var textAreabox = $("#emoji_area");
 		textAreabox.val(textAreabox.val() + textArea_val);
 		$('.send-note-box.form-control.emojionearea').addClass('focused');
-		$('.send-note-box.form-control.emojionearea').removeClass('focused');
+		$('.emojionearea-editor').click();
+		$('.emojionearea-editor').trigger("focus");
+		$('textarea#emoji_area').click();
+		//$('.send-note-box.form-control.emojionearea').removeClass('focused');
 		countChar(el[0].emojioneArea);
 
 	});
