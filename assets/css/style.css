@@ -8315,7 +8315,7 @@ section.payment-gift-section {     border-top: 10px solid #FF385C;     display: 
 }
 
 .your-selector-with-unicode-emojis .selector_unify {     margin: 0 5px; }
-
+.your-selector-with-unicode-emojis svg {     width: 34px;     display: inline-block;     vertical-align: middle; }
 
 
 
@@ -10244,9 +10244,11 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     margin-top: 40px;
 }
 .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
-    margin-top: -230px;
+    margin-top: -40px;
     height: 236px;
+    right: 17px;
 }
+.emojionearea .emojionearea-button{display:none;}
 .emojionearea .emojionearea-picker .emojionearea-wrapper {
     position: relative;
     height: 236px;
@@ -10294,8 +10296,9 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     border: 1px solid #cccc;
 }
 .emojionearea .emojionearea-picker.emojionearea-picker-position-top {
-    right: 0;
+    right: 17px;
 }
+.emojionearea .emojionearea-picker.emojionearea-picker-position-top{    margin-top: -60px;}
 .emporium-modal-body {
     margin: 0;
     padding-top: 28px;
