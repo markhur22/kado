@@ -53,24 +53,26 @@
                             </div>
                             <div class="thankyou_text_editor">
                                 <div class="text_editor_main_head">
-                                    <div class="send-note-thankyou-img">
-                                        <img src="assets/images/send_thankyou.png" alt="" class="img-fluid">
-                                    </div>
-                                    <textarea maxlength="160" id="emoji_area" class="send-note-box form-control" cols="23" rows="8" placeholder="Type your thank you message here!"></textarea>
-                                    <div class="text_area_filed_main">
-                                        <div id="emoji_area_container"></div>
-                                        <label class="counter_text"><span id="chars" class="lead">160</span> / 160</label>
-                                    </div>
-									<div class="your-selector-with-unicode-emojis">
-									  <div class="selector_unify uniy_la">👍</div>
-									  <div class="selector_unify uniy_stud">😃</div>
-									  <div class="selector_unify uniy_o">😍</div>
-									  <div class="selector_unify uniy_n">❤️</div>
-									  <div class="selector_unify uniy_up">👏</div>
-									  <div class="selector_unify uniy_down">🙏</div>
-									  <div id="selector_outemoji" class="selector_outemoji">
-										<a href="javascript:void(0);" class="btn_out_emo"><svg viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C6.13401 5 3 8.13401 3 12C3 15.866 6.13401 19 10 19C12.774 19 15.1711 17.3864 16.304 15.0466L17.7818 16.5244C16.2222 19.2011 13.3212 21 10 21C5.02944 21 1 16.9706 1 12C1 7.02944 5.02944 3 10 3C13.8688 3 17.1675 5.44115 18.4397 8.86717C17.7299 8.47856 16.8961 8.39843 16.1351 8.62677C14.9438 6.46475 12.643 5 10 5ZM16.8416 10.5126C16.6407 10.5446 16.4477 10.638 16.2929 10.7929C15.9024 11.1834 15.9024 11.8166 16.2929 12.2071L16.9475 12.8617L18.6341 14.5483L19.2929 15.2071C19.6834 15.5976 20.3166 15.5976 20.7071 15.2071L21.4142 14.5L23.7071 12.2071C24.0976 11.8166 24.0976 11.1834 23.7071 10.7929C23.3166 10.4024 22.6834 10.4024 22.2929 10.7929L20 13.0858L18.9996 12.0854L17.7071 10.7929C17.4714 10.5572 17.1474 10.4638 16.8416 10.5126ZM5.98716 13.0175C6.17497 12.7554 6.47758 12.6 6.79998 12.6H13.2C13.5224 12.6 13.825 12.7554 14.0128 13.0175C14.2006 13.2795 14.2505 13.616 14.1469 13.9213C13.5401 15.7097 11.9263 17 9.99998 17C8.07369 17 6.45983 15.7097 5.85301 13.9213C5.74941 13.616 5.79936 13.2795 5.98716 13.0175ZM7.59995 8.60001C7.04767 8.60001 6.59995 9.04773 6.59995 9.60001C6.59995 10.1523 7.04767 10.6 7.59995 10.6H7.60995C8.16224 10.6 8.60995 10.1523 8.60995 9.60001C8.60995 9.04773 8.16224 8.60001 7.60995 8.60001H7.59995ZM11.4 9.60001C11.4 9.04773 11.8478 8.60001 12.4 8.60001H12.41C12.9623 8.60001 13.41 9.04773 13.41 9.60001C13.41 10.1523 12.9623 10.6 12.41 10.6H12.4C11.8478 10.6 11.4 10.1523 11.4 9.60001Z" fill="currentColor"></path></svg></a>
-									  </div>
+									<div class="text_editor_main_head_inner">
+										<div class="send-note-thankyou-img">
+											<img src="assets/images/send_thankyou.png" alt="" class="img-fluid">
+										</div>
+										<textarea maxlength="160" id="emoji_area" class="send-note-box form-control" cols="23" rows="8" placeholder="Type your thank you message here!"></textarea>
+										<div class="text_area_filed_main">
+											<div id="emoji_area_container"></div>
+											<label class="counter_text"><span id="chars" class="lead">160</span> / 160</label>
+										</div>
+										<div class="your-selector-with-unicode-emojis">
+										  <div class="selector_unify uniy_la">👍</div>
+										  <div class="selector_unify uniy_stud">😃</div>
+										  <div class="selector_unify uniy_o">😍</div>
+										  <div class="selector_unify uniy_n">❤️</div>
+										  <div class="selector_unify uniy_up">👏</div>
+										  <div class="selector_unify uniy_down">🙏</div>
+										  <div id="selector_outemoji" class="selector_outemoji">
+											<a href="javascript:void(0);" class="btn_out_emo"><svg viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C6.13401 5 3 8.13401 3 12C3 15.866 6.13401 19 10 19C12.774 19 15.1711 17.3864 16.304 15.0466L17.7818 16.5244C16.2222 19.2011 13.3212 21 10 21C5.02944 21 1 16.9706 1 12C1 7.02944 5.02944 3 10 3C13.8688 3 17.1675 5.44115 18.4397 8.86717C17.7299 8.47856 16.8961 8.39843 16.1351 8.62677C14.9438 6.46475 12.643 5 10 5ZM16.8416 10.5126C16.6407 10.5446 16.4477 10.638 16.2929 10.7929C15.9024 11.1834 15.9024 11.8166 16.2929 12.2071L16.9475 12.8617L18.6341 14.5483L19.2929 15.2071C19.6834 15.5976 20.3166 15.5976 20.7071 15.2071L21.4142 14.5L23.7071 12.2071C24.0976 11.8166 24.0976 11.1834 23.7071 10.7929C23.3166 10.4024 22.6834 10.4024 22.2929 10.7929L20 13.0858L18.9996 12.0854L17.7071 10.7929C17.4714 10.5572 17.1474 10.4638 16.8416 10.5126ZM5.98716 13.0175C6.17497 12.7554 6.47758 12.6 6.79998 12.6H13.2C13.5224 12.6 13.825 12.7554 14.0128 13.0175C14.2006 13.2795 14.2505 13.616 14.1469 13.9213C13.5401 15.7097 11.9263 17 9.99998 17C8.07369 17 6.45983 15.7097 5.85301 13.9213C5.74941 13.616 5.79936 13.2795 5.98716 13.0175ZM7.59995 8.60001C7.04767 8.60001 6.59995 9.04773 6.59995 9.60001C6.59995 10.1523 7.04767 10.6 7.59995 10.6H7.60995C8.16224 10.6 8.60995 10.1523 8.60995 9.60001C8.60995 9.04773 8.16224 8.60001 7.60995 8.60001H7.59995ZM11.4 9.60001C11.4 9.04773 11.8478 8.60001 12.4 8.60001H12.41C12.9623 8.60001 13.41 9.04773 13.41 9.60001C13.41 10.1523 12.9623 10.6 12.41 10.6H12.4C11.8478 10.6 11.4 10.1523 11.4 9.60001Z" fill="currentColor"></path></svg></a>
+										  </div>
+										</div>
 									</div>
                                 </div>
                             </div>

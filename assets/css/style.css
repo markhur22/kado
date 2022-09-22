@@ -8309,15 +8309,19 @@ section.payment-gift-section {     border-top: 10px solid #FF385C;     display: 
     justify-content: center;
     /* background: hsla(242,21%,28%,0.04); */
     padding: 0;
-    margin: 12px 0 0 0;
+    margin: 0;
     /* border: 1px solid rgba(108,108,127,.2); */
     border-radius: 100px;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
 }
 
 .your-selector-with-unicode-emojis .selector_unify {     margin: 0 5px; }
-.your-selector-with-unicode-emojis svg {     width: 34px;     display: inline-block;     vertical-align: middle; }
-
-
+.your-selector-with-unicode-emojis svg {     width: 29px;     display: inline-block;     vertical-align: middle; }
+div#selector_outemoji {     margin: 0 0 0 5px; }
+.text_editor_main_head_inner{    width: 100%;     float: left;     position: relative;}
+.your-selector-with-unicode-emojis img.emojione {     height: 25px; }
 
 
 
@@ -9878,7 +9882,7 @@ div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
     opacity: 1;
 }
 .close_pop_up {
-    padding: 28px 32px 22px 38px;
+    padding: 0;
 }
 div.giftEmporiumModal .modal-dialog.modal-xl {
     max-width: 1305px;
@@ -10244,9 +10248,9 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     margin-top: 40px;
 }
 .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
-    margin-top: -40px;
+    margin-top: -90px;
     height: 236px;
-    right: 17px;
+    right: 50px;
 }
 .emojionearea .emojionearea-button{display:none;}
 .emojionearea .emojionearea-picker .emojionearea-wrapper {
@@ -10296,9 +10300,9 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     border: 1px solid #cccc;
 }
 .emojionearea .emojionearea-picker.emojionearea-picker-position-top {
-    right: 17px;
+    right: 50px;
 }
-.emojionearea .emojionearea-picker.emojionearea-picker-position-top{    margin-top: -60px;}
+.emojionearea .emojionearea-picker.emojionearea-picker-position-top{    margin-top: -130px;}
 .payment_thankyou_tab section.swap-section:before{display:none;}
 .payment_thankyou_tab .swap-content {
     padding-top: 0;
@@ -10325,7 +10329,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     margin: 0 21px 0 0;
 }  
 .modal-header.emporium-modal-header {
-    padding: 24px 32px 27px 46px;
+    padding: 24px 32px 27px 26px;
     justify-content: flex-start;
 }
 .modal_main_inner_item {
@@ -15696,10 +15700,10 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
     
     .close_pop_up {
-        padding: 20px 16px 17px 16px;
+        padding: 0;
     }
     .modal_main_inner_item {
-        padding: 0 16px 20px;
+        padding: 10px 16px 20px;
     }
     div.giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item {
         padding: 0;
