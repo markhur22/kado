@@ -10073,6 +10073,10 @@ a.send-note-pen-img img {
     padding: 0;
     font-size: 14px;
 }
+.send-note-section .send-note-box.form-control.emojionearea .emojionearea-editor {
+    padding: 0;
+    font-size: 18px;
+}
 .text_area_filed_main div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-left, .text_area_filed_main div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-right {
     display: none;
 }
@@ -10185,7 +10189,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     max-width: 100%;
     background: #F9F9F9;
     border-radius: 15px;
-    padding: 30px 41px 120px;
+    padding: 30px 20px 120px;
     /* min-height: 762px; */
     display: flex;
     flex-wrap: wrap;
