@@ -1,5 +1,5 @@
 /* *************** Deafult Start  ****************** */          
-
+  
 #paymentModal .cvv-hide-logo{background-image:none;}
 #paymentModal .payment-form-input{position:relative;}
 #paymentModal .payment-form-input span.field_icon{ position: absolute; right: 26px; height: max-content; top: 50%; bottom: 0; margin: auto; width: 24px; transform: translateY(-50%); }
