@@ -1,5 +1,5 @@
 /* *************** Deafult Start  ****************** */          
-  
+
 #paymentModal .cvv-hide-logo{background-image:none;}
 #paymentModal .payment-form-input{position:relative;}
 #paymentModal .payment-form-input span.field_icon{ position: absolute; right: 26px; height: max-content; top: 50%; bottom: 0; margin: auto; width: 24px; transform: translateY(-50%); }
@@ -4704,6 +4704,10 @@ div.g-signup-form .gt-btn-custom {
     object-fit: cover;
 }
 
+.gifts-section .gt-pay-for-gift-content .gifts-card-img img {
+    height: 180px;
+}
+
 .gt-pay-for-gift-content .gifts-card-btn:first-child {
     margin-bottom: 0;
 }
@@ -6070,6 +6074,21 @@ div.g-signup-form .gt-btn-custom {
 .choose-gift-card-body {
     padding: 12px 13px 26px 26px;
     transition: all ease .5s;
+}
+
+.choose-gift-section .choose-gift-card-body {
+    padding: 20px 20px 20px;
+    transition: all ease .5s;
+}
+
+.choose-gift-section .choose-gift-card-swap {
+    justify-content: flex-end;
+}
+
+.choose-gift-section .card-body.choose-gift-card-body p.card-text.choose-gift-card-discription {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .choose-gift-card-swap {
@@ -7566,8 +7585,8 @@ padding: 0 19px;
     right: 12px;
     background-color: #FF385C;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9983,7 +10002,7 @@ div.giftEmporiumModal .gt-gift-detail-area {
 }
 div.giftEmporiumModal .modal-content {
     border-radius: 10px 0 0 10px;
-}sktop
+}
 header.gt-site-header nav.navbar .gifts-collapse-btn {
     display: none !important;
 }
@@ -10006,7 +10025,7 @@ div#FAQaccordionnew .active_choose {
     display: none;
 }
 a.send-note-pen-img img {
-    width: 37px;
+    width: 22px;
 }
 .signup-social-icon img {
     width: 30px;
@@ -10250,7 +10269,8 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
     margin-top: -90px;
     height: 236px;
-    right: 50px;
+    right: initial;
+    left: 0;
 }
 .emojionearea .emojionearea-button{display:none;}
 .emojionearea .emojionearea-picker .emojionearea-wrapper {
@@ -10335,9 +10355,39 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 .modal_main_inner_item {
     height: 100%;
 }
+.choose-gift-all-categories .choose-gift-item .card.choose-gift-card .card-body.choose-gift-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_body_head_title {
+    width: 100%;
+    float: left;
+}
+.your-selector-with-unicode-emojis img.emojione {
+    height: 18px;
+}
+.message_fields.thankyou_text_editor {
+    position: relative;
+}
+.your-selector-with-unicode-emojis svg {
+    width: 20px;
+}
+.selector_outemoji {
+    display: flex;
+    align-items: center;
+}
+.selector_unify {
+    display: flex;
+    align-items: center;
+}
+section.gt-send-gift-section .message_fields.thankyou_text_editor .your-selector-with-unicode-emojis {
+    left: 20px;
+}
 /* new desktop changes starts here */
  
- 
+    
 
  
 /**************** Resposive Start  *******************/
