@@ -6081,20 +6081,12 @@ div.g-signup-form .gt-btn-custom {
     transition: all ease .5s;
 }
 
-.choose-gift-section .choose-gift-card-swap {
-    justify-content: flex-end;
-}
-
-.choose-gift-section .card-body.choose-gift-card-body p.card-text.choose-gift-card-discription {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 10px;
-}
-
 .choose-gift-card-swap {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    float: left;
 }
 
 .choose-gift-card-title {
@@ -10352,12 +10344,6 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 .modal_main_inner_item {
     height: 100%;
 }
-.choose-gift-all-categories .choose-gift-item .card.choose-gift-card .card-body.choose-gift-card-body {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .card_body_head_title {
     width: 100%;
     float: left;
@@ -10384,6 +10370,13 @@ section.gt-send-gift-section .message_fields.thankyou_text_editor .your-selector
 }
 .signup-social-icon img {
     width: 40px;
+}
+.emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
+    z-index: 999;
+}
+body.gt-site.home section {
+    width: 100%;
+    float: left;
 }
 /* new desktop changes starts here */
  
@@ -15811,6 +15804,17 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .send-note-imgs button.slick-next.slick-arrow {
         bottom: 40px;
     }
+    .send-note-pen-img {
+        width: 40px;
+        height: 40px;
+    }
+    .send-note-pen-img {
+        top: 15px;
+        right: 15px;
+    }
+    a.send-note-pen-img img {
+        width: 20px;
+    }
 }
 
 
@@ -16069,6 +16073,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     width: 100%;
 }
 }
+
 
 @media (max-width: 420px) {
 	
@@ -16362,6 +16367,12 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     .emporium-modal-body {
         padding: 0 20px 0px 20px;
         margin: 20px 0 0 0;
+    }
+    .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
+        margin-top: -190px;
+        height: 196px;
+        z-index: 999;
+        width: 100%;
     }
 }
 
