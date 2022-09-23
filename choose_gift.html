@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/select2.min.css"> -->
+    <link rel="stylesheet" href="assets/css/scrollbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Link All JS -->
@@ -20,6 +21,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <!-- <script src="assets/js/select2.min.js"></script> -->
+	<script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/custom.js"></script>
 
 
@@ -979,6 +981,27 @@
         </div>
     </div>
     <!-- Gift Emporium Modal End -->
+    <script>
+		
+        jQuery(document).ready(function(){
+            if (jQuery(window).width() > 768) {
+               jQuery('.scroll-main').scrollbar();
+            }
+            else {
+               
+            }
+            
+        });
+    
+        jQuery(document).ready(function(){
+            if (jQuery(window).width() > 768) {
+               jQuery('.modal_selected_item').scrollbar();
+            }
+            else {
+               
+            }
+        });
+    </script>
 
 </body>
 
