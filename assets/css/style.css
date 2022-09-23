@@ -8988,6 +8988,7 @@ ul.dropdown-menu.user-profile li:last-child {
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple ul {
     margin: 0 10px 0 0;
+    display: none;
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple ul li {
     margin: 0;
@@ -10062,7 +10063,8 @@ a.send-note-pen-img img {
     border-radius: 10px;
     padding: 13px 13px;
     padding-bottom: 0;
-	box-shadow:none;
+    box-shadow: none;
+    padding-bottom: 30px;
 }
 .emojionearea .emojionearea-filters .emojionearea-filter-arrow-left, .emojionearea .emojionearea-filters .emojionearea-filter-arrow-right {
     display: none;
@@ -10071,13 +10073,17 @@ a.send-note-pen-img img {
     padding: 0;
     font-size: 14px;
 }
+.send-note-section .send-note-box.form-control.emojionearea .emojionearea-editor {
+    padding: 0;
+    font-size: 18px;
+}
 .text_area_filed_main div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-left, .text_area_filed_main div#emoji_area_container .send-note-box i.emojionearea-filter-arrow-right {
     display: none;
 }
 .text_area_filed_main .counter_text {
     position: absolute;
     right: 10px;
-    bottom: 14px;
+    bottom: 6px;
     margin: 0;
     font-size: 12px;
     font-weight: bold;
@@ -10183,7 +10189,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     max-width: 100%;
     background: #F9F9F9;
     border-radius: 15px;
-    padding: 30px 41px 120px;
+    padding: 30px 20px 120px;
     /* min-height: 762px; */
     display: flex;
     flex-wrap: wrap;
@@ -16468,6 +16474,15 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
     .gt-gift-popup-slider .slick-next.slick-arrow {
         right: -8px;
+    }
+    .your-selector-with-unicode-emojis img.emojione {
+        height: 12px;
+    }
+    .your-selector-with-unicode-emojis svg {
+        width: 15px;
+    }
+    .text_area_filed_main .counter_text {
+        bottom: 7px;
     }
 }
 @media(max-width:370px) {
