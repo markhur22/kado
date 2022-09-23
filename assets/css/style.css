@@ -671,7 +671,7 @@ background-size: 10px;
 
 .select2-results__option {
     padding: 10px 25px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.05em;
@@ -10027,9 +10027,6 @@ div#FAQaccordionnew .active_choose {
 a.send-note-pen-img img {
     width: 22px;
 }
-.signup-social-icon img {
-    width: 30px;
-}
 .text_area_filed_main .emojionearea .emojionearea-filters .emojionearea-filter {
     background-color: transparent;
     border-color: transparent;
@@ -10384,6 +10381,9 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 }
 section.gt-send-gift-section .message_fields.thankyou_text_editor .your-selector-with-unicode-emojis {
     left: 20px;
+}
+.signup-social-icon img {
+    width: 40px;
 }
 /* new desktop changes starts here */
  
