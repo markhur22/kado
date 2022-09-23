@@ -20,9 +20,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-
-
+	<script src="assets/js/custom.js"></script>
 </head>
 
 <body class="gift_version" style="min-height: 100vh;">
@@ -304,8 +302,11 @@
                                             </div>
                                             <div class="col col-12 col-md-6 col-lg-12 col-xl-12 shi-select-address">
                                                 <div class="shipping-form-input">
-                                                    <label class="form-label">Address<span>*</span></label>
-                                                    <select class="form-control shipping-select-address">
+												<label class="form-label">Address<span>*</span></label>
+												<input type="text" class="form-control autocomplete" placeholder="Enter Your Address">
+												
+                                                    
+                                                    <!--select class="form-control shipping-select-address">
                                                         <option></option>
                                                         <option value="location" data-image="assets/images/shipping_location.png">Festival</option>
                                                         <option value="location" data-image="assets/images/shipping_location.png">Festival of Dangerous Ideas Castlereagh Street Sy...</option>
@@ -314,7 +315,7 @@
                                                         <option value="location" data-image="assets/images/shipping_location.png">Festival Hire Highgate Street. Auburn NSW, Australia</option>
                                                         <option value="location" data-image="assets/images/shipping_location.png">Festival Hire Highgate Street. Auburn NSW, Australia</option>
 
-                                                      </select>
+                                                      </select-->
                                                 </div>
                                                 <a href="javascript:void(0);" class="shipping-manually-address">Can't see your address? Enter it manually</a>
                                             </div>
@@ -370,7 +371,61 @@
             </div>
     </section>
     <!-- Version Section End -->
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0TurW5dDXsrxJB04LlDULwLWbJsYtZew&libraries=places&callback=initAutocomplete"
+        async defer></script>
+	<script> //country: "aus"
+		var placeSearch, autocomplete;
+		var componentForm = {
+		  street_number: 'short_name',
+		  route: 'long_name',
+		  locality: 'long_name',
+		  administrative_area_level_1: 'short_name',
+		  country: 'long_name',
+		  postal_code: 'short_name'
+		};
+			  function initAutocomplete() {
+				var y = document.getElementsByClassName('autocomplete');
+				var i;
+				for (i = 0; i < y.length; i++) {
+					 var aNode = y[i];
+					 autocomplete = new google.maps.places.Autocomplete(
+						/** @type {!HTMLInputElement} */(aNode),
+						{types: ['geocode'],componentRestrictions: {}});
+					autocomplete.addListener('place_changed', fillInAddress);
+				}
+			  }
+		function fillInAddress() {
+		  var place = autocomplete.getPlace();
+		  console.log(place);
+		  for (var component in componentForm) {
+			document.getElementsByClassName(component).value = '';
+			document.getElementsByClassName(component).disabled = false;
+		  }
+		  var uu = [];
+		  for (var i = 0; i < place.address_components.length; i++) {
+			var addressType = place.address_components[i].types[0];
+			if (componentForm[addressType]) {
+			  var val = place.address_components[i][componentForm[addressType]];
+			  document.getElementsByClassName(addressType).value = val;
+			  uu.push(val);
+			}
+		  }
+		  //$('h5#addrs_book_user').text(uu);
+		}
+		function geolocate() {
+		  if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function(position) {
+			  var geolocation = {
+				lat: position.coords.latitude,
+				lng: position.coords.longitude
+			  };
+			  var circle = new google.maps.Circle(
+				  {center: geolocation, radius: position.coords.accuracy});
+			  autocomplete.setBounds(circle.getBounds());
+			});
+		  }
+		}
+	</script>
 </body>
 
 </html>
