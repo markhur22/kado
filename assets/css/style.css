@@ -1698,7 +1698,7 @@ span.gt-faq-solved-icon {
 .gt-browse-gift-header-seach .form-control:focus {
     background-color: #fff;
     border: none;
-    box-shadow: 0 -11px 15px rgb(0 0 0 / 5%);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
     border-radius: 53.5px;
     z-index: 1;
     /* padding-left: 29px; */
@@ -3197,7 +3197,7 @@ nav {
 .gifts-items-header .form-control {
     min-width: 351px;
     padding: 14px 65px 15px 20px;
-    box-shadow: 0 0 2px 0px rgb(0 0 0 / 20%);
+    
 }
 
 .gifts-items-header .gt-search-icon {
@@ -7098,7 +7098,7 @@ input[type=number] {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;    cursor: pointer;
     height: 100%;
     border-radius: 15px;
     border: none;
@@ -7414,7 +7414,7 @@ input[type=number] {
     border: 1px solid #CCCCCC;
     border-radius: 10px;
     padding: 15.5px 28px;
-    font-weight: 700;
+    font-weight: 700;cursor:pointer;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.05em;
@@ -7496,6 +7496,7 @@ input[type=number] {
 .finder-four-label {
     background-color: #FFFFFF;
     border: 1px solid #ccc;
+	cursor:pointer;
     border-radius: 10px;
     padding: 43px 34px 26px;
     width: 100%;
@@ -8234,7 +8235,7 @@ div.gift_sent_pop img{max-width:400px;}
 .gifts-card.pay-gift-card:hover {     border-color: #ff385c; }
 .gifts-card.pay-gift-card {     transition: 0.4s ease all; }
 .gt-select-payment-option img {
-    height: auto;
+    height: 20px;
     /* width: 60px; */
     object-fit: contain;
 }
