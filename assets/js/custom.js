@@ -562,7 +562,7 @@ var sub_show = [];
         }); */
 	});
 	$("body").on('click', '.toggle-password', function() {
-	  $(this).toggleClass("fa-eye-slash fa-eye");
+	  $('.toggle-password').toggleClass("fa-eye-slash fa-eye");
 	  var input = $(".gift-form-password");
 	  if (input.attr("type") === "password") {
 		input.attr("type", "text");
@@ -831,6 +831,15 @@ $('span.card_left_arrow').click(function(){
 		$('.emojionearea-editor').trigger("focus");
 		$('textarea#emoji_area').click();
 		
+	});
+	
+	$(document).on("keyup change","textarea.select2-search__field", function(e) {
+    
+		console.log($('ul#select2-inputMessage-results li').length);
+		if($('ul#select2-inputMessage-results li').length == 1){
+			$('.add_icon').addClass('add_icon');
+			$('ul#select2-inputMessage-results li').addClass('add_icon');
+		}
 	});
 });
 

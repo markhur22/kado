@@ -20,6 +20,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <!-- <script src="assets/js/select2.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"> </script>
     <script src="assets/js/custom.js"></script>
 
 
@@ -62,50 +63,51 @@
                         <div class="tab-pane fade " id="thankyou" role="tabpanel" aria-labelledby="thankyou-tab">
                             <div class="payment-gift-tab-body text-center payment-gift-tab-card payment_thankyou_tab">
                                 <!-- Swap Open Section Start -->
-								<section class="swap-section section-bg-color new-design">
-									<div class="container">
-										<div class="swap-content">
-										
-											<div class="swap-img">
-												<div class="swap_slider_new">
-													
-													<div class="card_vk">
-														<div class="swap_box_image">
-															<div class="back"></div>
-															<div class="front">
-																<div class="imgset">
-																	<img width="100%" src="assets/images/swap_img.png" alt="" class="img-fluid">
+									<section class="swap-section section-bg-color new-design">
+										<div class="container">
+											<div class="swap-content">
+											<h5 class="swap-title swaptitle">Swipe or tap to open card</h5>
+											<h5 class="swap-title swap_close_card" style="display:none;">
+											Swipe or tap to close card</h5>
+												<div class="swap-img">
+													<div class="boombox3">
+														<div class="swap_slider_new">
+															
+															<div class="card_vk">
+																<div class="swap_box_image">
+																	<div class="back"></div>
+																	<div class="front">
+																		<div class="imgset">
+																			<img width="100%" src="assets/images/swap_img.png" alt="" class="img-fluid">
+																		</div>
+																	</div>
+																	<div class="text-container">
+																		<div class="gt-open-gift-content">
+																			<div class="gt-open-gift-style-img">
+																				<img src="assets/images/open_gift_style.png" alt="" class="img-fluid">
+																			</div>
+																			<div class="gt-open-gift-img">
+																				<img src="assets/images/open_gift_img.svg" alt="" class="img-fluid">
+																			</div>
+																			<div class="gt-open-gift-details">
+																				<h3 class="gt-open-gift-title">Happy 30th Happy Birthday!</h3>
+																				<p class="gt-open-gift-discription">Happy 30th Birthday Matt! Hope you have a great day and can enjoy this gift that I bought you, you deserve it! Look forward to seeing you soon.</p>
+																				<h5 class="gt-open-gift-name">– Dennis Jap</h5>
+																				<a href="javascript:void(0);" class="gt-open-gift-btn btn"><img src="assets/images/gift_new.svg" alt="" class="img-fluid"> Open Gift</a>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															</div>
-															<div class="text-container">
-																<div class="gt-open-gift-content">
-																	<div class="gt-open-gift-style-img">
-																		<img src="assets/images/open_gift_style.png" alt="" class="img-fluid">
-																	</div>
-																	<div class="gt-open-gift-img">
-																		<img src="assets/images/open_gift_img.svg" alt="" class="img-fluid">
-																	</div>
-																	<div class="gt-open-gift-details">
-																		<h3 class="gt-open-gift-title">Happy 30th Happy Birthday!</h3>
-																		<p class="gt-open-gift-discription">Happy 30th Birthday Matt! Hope you have a great day and can enjoy this gift that I bought you, you deserve it! Look forward to seeing you soon.</p>
-																		<h5 class="gt-open-gift-name">– Dennis Jap</h5>
-																		<a href="javascript:void(0);" class="gt-open-gift-btn btn"><img src="assets/images/gift_new.svg" alt="" class="img-fluid"> Open Gift</a>
-																	</div>
-																</div>
-															</div>
+															<span class="swap_btn"></span>
 														</div>
 													</div>
-													<span class="swap_btn"></span>
+													
 												</div>
-												
 											</div>
 										</div>
-                                        <div class="continue_pay">
-										    <a href="#" class="btn payment-continue-btn">Continue to Payment</a>
-                                        </div>
-									</div>
-								</section>
-								<!-- Swap Open Section End -->
+									</section>
+									<!-- Swap Open Section End -->
                             </div>
                         </div>
                         <div class="tab-pane fade show active" id="payment" role="tabpanel" aria-labelledby="payment-tab">
@@ -252,6 +254,33 @@
         </div>
         <!-- Payment Congratulations Modal End -->
 <script>
+	
+	// swipe right
+
+	$('.boombox3').bind('swiperight', handler3);
+	function handler3(event) { 
+		$('.boombox3') .removeClass("beatsUP");
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
+	}  
+
+	// swipe left
+
+	$('.boombox3').bind('swipeleft', handler4);
+	function handler4(event) { 
+	  $('.boombox3') .addClass("beatsUP");
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
+	  
+	}  
 	$('.swap_btn').click(function(){
 		$('.swap_slider_new').toggleClass('hover_card_swipe');
 		$('.card_vk').toggleClass('hove');
@@ -259,8 +288,8 @@
 		$('.swap_btn').toggle();
 		$('.swap_close_card').toggle();
 		$('.swaptitle').toggle();
-	});
-	$('.swap_close_card').click(function(){
+	}); 
+	$('.back').click(function(){
 		$('.swap_slider_new').toggleClass('hover_card_swipe');
 		$('.card_vk').toggleClass('hove');
 		$('.swap-content').toggleClass('super_card_hove');
