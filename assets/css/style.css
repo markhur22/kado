@@ -7820,12 +7820,12 @@ input[type=number] {
     background-color: #fff;
     border-radius: 50%;
     padding: 16px;
-    margin-right: 45px;
+    margin-right: 25px;
 }
 
 .payment-gift-btn .gt-btn-custom {
-    padding: 10px 83px 10px 14px;
-    font-size: 24px;
+    padding: 5px 43px 5px 11px;
+    font-size: 22px;
     line-height: 29px;
     border-radius: 50px;
 }
@@ -8350,8 +8350,12 @@ div#selector_outemoji {     margin: 0 0 0 5px; }
 .your-selector-with-unicode-emojis img.emojione {     height: 25px; }
 span.select2-dropdown .select2-results__option.add_icon:after {     content: '+';     position: relative;     margin: 0 0 0 5px;     font-size: 15px; }
 span.select2-dropdown .select2-results__option.add_icon {     position: relative; }
+.payment-gift-tabs-content .section-bg-color {     background: transparent; }
+.payment-gift-tabs-content .swap-title {     margin: 20px 0 40px 0; }
+.payment-gift-tabs-content .swap-img{transform: scale(0.8);-webkit-transform: scale(0.8);}
 
 
+  
 
 /*desktop new changes starts here*/
 .noresultfound {     padding: 0; }
