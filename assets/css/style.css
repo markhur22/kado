@@ -6083,9 +6083,9 @@ div.g-signup-form .gt-btn-custom {
 }
 
 .choose-gift-card-swap {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     width: 100%;
     float: left;
 }
@@ -6104,7 +6104,7 @@ div.g-signup-form .gt-btn-custom {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #414141;width:156px;
+    color: #414141;width:100%;
     margin-bottom: 0;
     margin-right: 0;
 	padding:0 10px 0 0;
@@ -6114,7 +6114,7 @@ div.g-signup-form .gt-btn-custom {
     background: #F6F6F6;
     border: 2px solid #F6F6F6;
     border-radius: 30px;
-	letter-spacing:0;
+    letter-spacing: 0;
     padding: 6px 16px;
     font-style: normal;
     font-weight: 700;
@@ -6122,6 +6122,8 @@ div.g-signup-form .gt-btn-custom {
     line-height: 22px;
     color: #000000;
     margin-left: 0;
+    float: right;
+    margin-top: 10px;
 }
 
 .choose-gift-card-btn img {
@@ -9228,8 +9230,9 @@ ul.dropdown-menu.user-profile a:active path {
     margin-bottom: 28px;
 }
 .gifts-card-btn .gifts-card-view:hover {
-    border-color: #cdcdcd;
-    background-color: #f9f9f9;
+    border-color: #ff385c;
+    background-color: #ff385c;
+    color: #fff;
 }
 a.nav-link.account_set {
     margin-top: 30px;
@@ -12449,8 +12452,8 @@ body.gt-site.home section {
 		line-height: 18px;
 		margin-bottom: 0;
 		margin-right: 0;
-		width: 65%;
-		padding: 0 10px 0 0;
+		width: 100%;
+		
     }
 
     .choose-gift-card-btn {
@@ -13112,8 +13115,8 @@ div#paymentModal .order-item{position: relative;}
 .choose-gift-card-discription{margin-bottom:15px; padding:0;}
 .choose-gift-categories-collection { 	padding: 0px 24px 0 20px; }
 .choose-gift-card-text { text-align: center; }
-.choose-gift-card-swap { flex-direction: column; } 
-.choose-gift-card-discription{width:85%; display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-align:center;}  
+.choose-gift-card-swap { flex-direction: column; display: flex;} 
+.choose-gift-card-discription{width:100%; display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-align:center;}  
 span.signup-social-account.border-line::before { left: 50%; width: 80%; transform: translateX(-50%); }
 span.signup-social-account.border-line p {padding: 0 22px; }
 span.signup-social-account.border-line.login-email-account p { padding: 0 22px; }
@@ -16017,7 +16020,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
     section.swap_gift_main a.browse-categori-popup {
         display: flex !important;
-        width: 132px;
+        width: 100%;
         font-size: 12px;
         line-height: 14px;
     }
@@ -16101,6 +16104,8 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 }
 
 @media (max-width: 480px) {
+	.choose-gift-categories-collection .row > .col{width:100%;}
+	.choose-gift-card-btn svg {     margin: 1px 0 0 5px; }
 .shipping-manually-address{text-align:center;}
 .version-details-title { width: 290px; }	
 	
