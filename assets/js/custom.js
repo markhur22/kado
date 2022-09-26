@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$('.select_gift_for input[type=radio][name=flexRadioDefault]').change(function() {
 		$('.active_selector').removeClass('active_selector');
 		$(this).parent().addClass('active_selector');
+		$('.g-finder-one-content .next_btn').removeClass('disable_btn');
 	});
 	
 	$('input[type=radio][name=budgetradio]').change(function() {
