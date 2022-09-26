@@ -10381,6 +10381,10 @@ body.gt-site.home section {
 .text_area_filed_main .emojionearea .emojionearea-editor:empty:before {
     color: #999;
 }
+.card-body.gifts-card-body {
+    display: flex;
+    align-items: center;
+}
 /* new desktop changes starts here */
  
     
