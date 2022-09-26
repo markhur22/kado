@@ -843,6 +843,43 @@ $('span.card_left_arrow').click(function(){
 	});
 });
 
+let ausPhoneExpression = /^\({0,1}\){0,1}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{1}(\ |-){0,1}[0-9]{4}$/,
+    emailExpression = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    nameExpression = /^[A-Za-z]+$/;
+
+function checkNumberInput(elementId, errSpanId = 'num-invalid-err-msg') {
+  try {
+    let errMsg = document.getElementById(errSpanId),
+        errStr = `You can only enter digits or '+' (only as first character)`,
+        contact = document.getElementById(elementId).value,
+        invalidChars = /[^0-9+ ]/gi,
+        plus = /[+]/;
+
+    if (contact.length > 1 && plus.test(contact.slice(1))) {
+      document.getElementById(elementId).value = contact.replace(plus, "");
+      errMsg.innerText = errStr;
+      errMsg.classList.remove("hide-text");
+    } else {
+      if (!invalidChars.test(contact)) {
+        if(contact[0] === '0') { contact = contact.toString().slice(1,contact.length) }
+        if (!contact.match(ausPhoneExpression)) {
+          errMsg.innerText = `Please enter a valid Australian phone number.`;
+          errMsg.classList.remove("hide-text");
+        } else {
+          errMsg.classList.add("hide-text");
+          return contact;
+        }
+      } else {
+        document.getElementById(elementId).value = contact.replace(invalidChars, "");
+        errMsg.innerText = errStr;
+        errMsg.classList.remove("hide-text");
+      }
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 function chooseActive(elem){
 	for(var i=1;i<=3;i++){
 		//alert(elem);
