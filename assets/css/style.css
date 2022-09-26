@@ -10354,14 +10354,8 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     width: 100%;
     float: left;
 }
-.your-selector-with-unicode-emojis img.emojione {
-    height: 18px;
-}
 .message_fields.thankyou_text_editor {
     position: relative;
-}
-.your-selector-with-unicode-emojis svg {
-    width: 20px;
 }
 .selector_outemoji {
     display: flex;
@@ -10383,6 +10377,9 @@ section.gt-send-gift-section .message_fields.thankyou_text_editor .your-selector
 body.gt-site.home section {
     width: 100%;
     float: left;
+}
+.text_area_filed_main .emojionearea .emojionearea-editor:empty:before {
+    color: #999;
 }
 /* new desktop changes starts here */
  
@@ -15821,6 +15818,9 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     a.send-note-pen-img img {
         width: 20px;
     }
+    .your-selector-with-unicode-emojis .selector_unify {
+        margin: 0 3px;
+    }
 }
 
 
@@ -16077,6 +16077,13 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     position: relative;
     height: 196px;
     width: 100%;
+}
+
+.your-selector-with-unicode-emojis img.emojione {
+    height: 18px;
+}
+.your-selector-with-unicode-emojis svg {
+    width: 20px;
 }
 }
 
