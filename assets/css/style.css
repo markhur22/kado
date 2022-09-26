@@ -10389,6 +10389,9 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
 .your-selector-with-unicode-emojis img.emojione {
     cursor: pointer;
 }
+.gt-send-gift-icon img {
+    width: 18px;
+}
 .message_fields.thankyou_text_editor {
     position: relative;
 }
