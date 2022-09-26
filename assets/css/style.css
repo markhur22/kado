@@ -8345,7 +8345,8 @@ section.payment-gift-section {     border-top: 10px solid #FF385C;     display: 
 div#selector_outemoji {     margin: 0 0 0 5px; }
 .text_editor_main_head_inner{    width: 100%;     float: left;     position: relative;}
 .your-selector-with-unicode-emojis img.emojione {     height: 25px; }
-
+span.select2-dropdown .select2-results__option.add_icon:after {     content: '+';     position: relative;     margin: 0 0 0 5px;     font-size: 15px; }
+span.select2-dropdown .select2-results__option.add_icon {     position: relative; }
 
 
 
@@ -8984,7 +8985,7 @@ ul.dropdown-menu.user-profile li:last-child {
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea {
     margin: 0 !important;
     height: 24px;
-    color: #414141;
+    color: #414141;font-weight:600;
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple .select2-search--inline {
     width: 100%;
@@ -9090,7 +9091,7 @@ span.select2-dropdown .select2-results__message:hover {
     font-weight: 400;
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea::placeholder {
-    color: #9b9b9b;
+    color: #9b9b9b;font-weight:normal;
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea::-webkit-input-placeholder { /* Edge */
   color: #9b9b9b;
@@ -9141,6 +9142,7 @@ body > .select2-container{    z-index: 9999;}
 }
 .gt-browse-gift-header-seach button.btn.btn-primary {
     z-index: 99;
+	top: 6px;
 }
 #cardsModal .gt-browse-gift-header .custom_serach .select2 span.selection span.select2-selection {
     padding: 16px 0 16px 29px;
