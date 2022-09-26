@@ -21,6 +21,33 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<style>
+	.ph-number {
+		display: flex;
+		align-items: center;
+		display: -webkit-flex;
+	}
+	.ph-number .cn_code {
+		background: #fff;
+		height: 52px;
+		display: flex;
+		border-radius: 3px 0px 0px 3px;
+		margin-top: 10px;
+		line-height: 52px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-right: 2px solid #00a399;
+	}
+	.hide-text {
+		display: none;
+	}
+	.num-invalid-err-msg {
+		font-size: 12px;
+		line-height: 27px;
+		letter-spacing: -0.015em;
+		color: #ff1900;
+	}
+	</style>
 </head>
 
 <body class="gift_version" style="min-height: 100vh;">
@@ -297,7 +324,11 @@
                                             <div class="col col-12 col-md-6 col-lg-12 col-xl-12 phone_no">
                                                 <div class="shipping-form-input">
                                                     <label class="form-label">Phone number<span>*</span></label>
-                                                    <input type="number" class="form-control" placeholder="Enter phone no.">
+													<div class="ph-number">
+														<span class="cn_code">+61</span>
+														<input class="form-control focus-required" id="findNumber" type="text" placeholder="Enter phone no." required="" onblur="checkNumberInput('findNumber')">
+													</div>
+													<span id="num-invalid-err-msg" class="num-invalid-err-msg hide-text">Please enter a valid Australian phone number.</span>
                                                 </div>
                                             </div>
                                             <div class="col col-12 col-md-6 col-lg-12 col-xl-12 shi-select-address">
