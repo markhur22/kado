@@ -10335,6 +10335,17 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     border-radius: 8px;
     border: 1px solid #cccc;
 }
+.emojionearea .emojionearea-picker .emojionearea-search>input::-webkit-input-placeholder { /* Edge */
+  color: #9b9b9b;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #9b9b9b;
+}
+
+::placeholder {
+ color: #9b9b9b;
+}
 .emojionearea .emojionearea-picker.emojionearea-picker-position-top {
     left: 10px;
 }
@@ -10376,7 +10387,7 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     float: left;
 }
 .your-selector-with-unicode-emojis img.emojione {
-    
+    cursor: pointer;
 }
 .message_fields.thankyou_text_editor {
     position: relative;
