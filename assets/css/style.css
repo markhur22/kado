@@ -8353,7 +8353,26 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 .payment-gift-tabs-content .section-bg-color {     background: transparent; }
 .payment-gift-tabs-content .swap-title {     margin: 20px 0 40px 0; }
 .payment-gift-tabs-content .swap-img{transform: scale(0.8);-webkit-transform: scale(0.8);}
-
+.ph-number { 		display: flex; 		align-items: center; 		display: -webkit-flex; 	}
+.ph-number .cn_code {
+    background: #fff;
+    height: 55px;
+    display: flex;
+    margin-top: 0;
+    line-height: 55px;font-size:16px;
+	color:#9b9b9b;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+.phone_no .shipping-form-input .form-control {
+    border-radius: 0 10px 10px 0;
+}
+.hide-text { 		display: none; 	}
+.num-invalid-err-msg { 		font-size: 12px; 		line-height: 27px; 		letter-spacing: -0.015em; 		color: #ff1900; 	}
 
   
 
@@ -13034,6 +13053,7 @@ body.gt-site.home section {
 }
 
 @media (max-width: 767px) {
+	.payment-gift-tabs-content .swap-img {     transform: scale(0.9);     -webkit-transform: scale(0.9); }
 	.gt-faq-content .accordion-button:not(.collapsed), .gt-faq-content .accordion-button {    padding: 19px;}
 	.send-note-pen-img{width: 60px;     height: 60px;}
 	a.send-note-pen-img img {     width: 26px; }
