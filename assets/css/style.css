@@ -8373,7 +8373,7 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 }
 .hide-text { 		display: none; 	}
 .num-invalid-err-msg { 		font-size: 12px; 		line-height: 27px; 		letter-spacing: -0.015em; 		color: #ff1900; 	}
-
+.g-finder-one-content .next_btn {     margin: 0 0 15px 0; }
   
 
 /*desktop new changes starts here*/
