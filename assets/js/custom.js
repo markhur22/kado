@@ -539,7 +539,8 @@ var sub_show = [];
 		//return;
 		//$('.gt-send-gift-section .custom_tab_common .active').removeClass('active');
 		//$('ul.gt-send-gift-list.send-gift-sidebar li a.active').removeClass('active');
-		$('.active').removeClass('active');
+		$('ul.gt-send-gift-list.send-gift-sidebar li a').removeClass('active');
+		$('section.gt-send-gift-section .send-gift-select-gift').removeClass('active');
 		$(this).addClass('active');
 		var idFromAnchor = $(this).attr('href');
 		$(idFromAnchor).addClass('active');
@@ -550,8 +551,8 @@ var sub_show = [];
 		//if (e.target !== this)
 		//return;
 		var currentId = $(this).attr('id');
-		
-			$('.active').removeClass('active');
+			$('ul.gt-send-gift-list.send-gift-sidebar li a').removeClass('active');
+			$('section.gt-send-gift-section .send-gift-select-gift').removeClass('active');
     		$("#"+currentId).addClass('active');
     		$('a[href^="#'+currentId+'"]').addClass('active');
 		/* $('html, body').animate({
@@ -769,6 +770,7 @@ $('span.card_left_arrow').click(function(){
 
   var el =  $("#emoji_area").emojioneArea({
 		container: "#emoji_area_container",
+		searchPlaceholder: "Search Emoji",
 		events: {
 			 keyup: function (editor, event) {
 			   console.log('event:keyup');
