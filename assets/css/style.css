@@ -3196,7 +3196,8 @@ nav {
 
 .gifts-items-header .form-control {
     min-width: 351px;
-    padding: 14px 65px 15px 55px;
+    padding: 14px 65px 15px 20px;
+    box-shadow: 0 0 2px 0px rgb(0 0 0 / 20%);
 }
 
 .gifts-items-header .gt-search-icon {
@@ -8520,7 +8521,7 @@ span.logo_back img {     width: 100%; }
 .g-finder-help-btn {     position: absolute;     right: 60px;     bottom: 50px;     width: 150px;     height: 62px; }
 .g-finder-help-btn button {     width: 100%;     height: 100%;     padding: 0;     align-items: center;     top: 0px;     position: relative; }
 .recommendation-header-gift {     
-	background: #FF385C;
+	background: #222;
 	border-radius: 100px;
 	padding: 16px;
 	border: 7px solid #fff;
@@ -11189,7 +11190,7 @@ body.gt-site.home section {
         color: #fff;
         font-size: 24px;
         opacity: 0;
-        top: 80px;
+        top: 10px;
         z-index: 8;
     }
 
