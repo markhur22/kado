@@ -8374,6 +8374,12 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 .hide-text { 		display: none; 	}
 .num-invalid-err-msg { 		font-size: 12px; 		line-height: 27px; 		letter-spacing: -0.015em; 		color: #ff1900; 	}
 .g-finder-one-content .next_btn {     margin: 0 0 15px 0; }
+.gift_occasion_new .row {     display: grid;     display: -ms-grid;     /* grid-template: 1fr 1fr/ 1fr 1fr; */     grid-column-gap: 24px;     row-gap: 21px;     grid-template-columns: repeat(5, 1fr); margin-bottom: 50px;}
+.gift_occasion_new .row > div {     width:148px;     padding: 0; }
+.gift_occasion_new .row > div .finder-four-checkbox {     margin: 0;     height: 157px; }  
+.gift_occasion_new .row > div label {     padding: 0;     justify-content: center;     display: flex;}
+.gift_occasion_new .row > div h6 {     font-size: 16px;     min-height: inherit;     margin: 25px 0 0 0; }
+  
   
 
 /*desktop new changes starts here*/
@@ -11403,6 +11409,10 @@ body.gt-site.home section {
 	.modal_main_item .gift_verification_body_inner button.accordion-button::after {     /* background-image: none; */ 	transform: rotate(-90deg) !important; 	-webkit-transform: rotate(-90deg) !important; }
 }
 @media (max-width: 991px) {
+	.gift_occasion_new .row > div{    width: 100%;}
+	
+	.gift_occasion_new .row{grid-column-gap: 10px;     row-gap: 10px;grid-template-columns: repeat(4, 1fr);}
+	.gift_occasion_new .row > div h6{    letter-spacing: 0;}
 	div.giftEmporiumModal .gt-gift-detail-area{padding-right:0;}
 	.swap-content {     width: 350px; }
 	.gt-open-gift-title{    font-size: 21px;     line-height: 26px;}
@@ -13053,6 +13063,8 @@ body.gt-site.home section {
 }
 
 @media (max-width: 767px) {
+	
+	.gift_occasion_new .row{grid-template-columns: repeat(3, 1fr);}
 	.payment-gift-tabs-content .swap-img {     transform: scale(0.9);     -webkit-transform: scale(0.9); }
 	.gt-faq-content .accordion-button:not(.collapsed), .gt-faq-content .accordion-button {    padding: 19px;}
 	.send-note-pen-img{width: 60px;     height: 60px;}
@@ -15921,6 +15933,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 
 
 @media(max-width:575px) {
+	.gift_occasion_new .row {     grid-template-columns: repeat(2, 1fr);     padding: 0 10px;     grid-column-gap: 12px;     row-gap: 15px; margin-bottom:30px;}
 	.your-selector-with-unicode-emojis img.emojione{    height: 18px;}
 	.send-note-section .send-note-box.form-control.emojionearea .emojionearea-editor {     font-size: 16px; }
 	.your-selector-with-unicode-emojis svg{    width: 23px;}
@@ -16126,6 +16139,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     div.giftEmporiumModal .modal-dialog.modal-xl {
         max-width: 100%;
     }
+	.gift_occasion_new .row > div {padding: 0 !Important;}
 }
 
 @media (max-width: 480px) {
@@ -16574,6 +16588,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 	.emojionearea .emojionearea-picker .emojionearea-wrapper{    width: 100%;}
 }
 @media(max-width:370px) {
+	.gift_occasion_new .row{    grid-template-columns: repeat(1, 1fr);}
 .finder-four-interests .row .col {width: 100%; }
 .text_area_filed_main .counter_text {     bottom: -18px;     right: 0; }	
 

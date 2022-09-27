@@ -30,7 +30,7 @@
 
     <section class="recommendation-header new-design">
         <div class="container">
-			<div class="recommendatioin-header-content">
+            <div class="recommendatioin-header-content">
                 <div class="recommendation-header-logo">
                     <a href="index.html">
 						<!--span class="logo_back">
@@ -40,9 +40,7 @@
 					</a>
                 </div>
                 <div class="recommendation-header-gift">
-                   <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M28.25 4H26.5V0.5H23V4H9V0.5H5.5V4H3.75C1.8075 4 0.2675 5.575 0.2675 7.5L0.25 32C0.25 33.925 1.8075 35.5 3.75 35.5H28.25C30.175 35.5 31.75 33.925 31.75 32V7.5C31.75 5.575 30.175 4 28.25 4ZM28.25 32H3.75V14.5H28.25V32ZM28.25 11H3.75V7.5H28.25V11ZM10.75 21.5H7.25V18H10.75V21.5ZM17.75 21.5H14.25V18H17.75V21.5ZM24.75 21.5H21.25V18H24.75V21.5ZM10.75 28.5H7.25V25H10.75V28.5ZM17.75 28.5H14.25V25H17.75V28.5ZM24.75 28.5H21.25V25H24.75V28.5Z" fill="white"/>
-					</svg>
+                    <img src="assets/images/doller_svg.svg" alt="" class="img-fluid">
                 </div>
                 <div class="recommendation-header-icon">
                     <a class="home_head_menu" href="#"><img src="assets/images/home_svg.svg" alt="" class="img-fluid"></a>
@@ -52,35 +50,30 @@
         </div>
     </section>
 
-    <!-- Gift Finder Second Section Start -->
-    <section class="g-finder-section g-finder-second-section g-finder-one-section new-design section-bg-color">
+    <!-- Gift Finder Third Section Start -->
+    <section class="g-finder-section g-finder-third-section g-finder-one-section new-design section-bg-color">
         <div class="container">
-            <div class="g-finder-second-content recommendation-content">
-                <h2 class="g-finder-second-title recommendation-title">How old is your recipient?</h2>
+            <div class="g-finder-third-content recommendation-content">
+                <h2 class="g-finder-third-title recommendation-title">What is your budget?</h2>
                 <div class="g-finder-second-input">
                     <div class="finder-second-age-input">
-                        <label class="form-label w-100 finder-second-label" for="ageradio">12 - 18
-                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradio">
+                        <label class="form-label w-100 finder-second-label" for="budget">$10 - $20
+                            <input type="radio" class="form-check-input finder-second-age" name="budgetradio" id="budget">
                         </label>
                     </div>
                     <div class="finder-second-age-input">
-                        <label class="form-label w-100 finder-second-label" for="ageradioone">18 - 30
-                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradioone">
+                        <label class="form-label w-100 finder-second-label" for="budgetone">$20 - $50
+                            <input type="radio" class="form-check-input finder-second-age" name="budgetradio" id="budgetone">
                         </label>
                     </div>
                     <div class="finder-second-age-input">
-                        <label class="form-label w-100 finder-second-label" for="ageradiotwo">30 - 40
-                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradiotwo">
+                        <label class="form-label w-100 finder-second-label" for="budgettwo">$50 - $100 
+                            <input type="radio" class="form-check-input finder-second-age" name="budgetradio" id="budgettwo">
                         </label>
                     </div>
                     <div class="finder-second-age-input">
-                        <label class="form-label w-100 finder-second-label" for="ageradiothree">40 - 50
-                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradiothree">
-                        </label>
-                    </div>
-                    <div class="finder-second-age-input mb-0">
-                        <label class="form-label w-100 finder-second-label" for="ageradiofour">50+
-                            <input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradiofour">
+                        <label class="form-label w-100 finder-second-label" for="budgetthree">$100 +
+                            <input type="radio" class="form-check-input finder-second-age" name="budgetradio" id="budgetthree">
                         </label>
                     </div>
                 </div>
@@ -90,8 +83,7 @@
                 <div class="g-finder-one-btn g-finder-two-btn action_btn mb-20">
                     <a href="gift_finder_step_four.html" class="btn g-finder-skip-btn">Skip Step</a>
                 </div>
-				
-                <div class="g-finder-next-btn">
+                 <div class="g-finder-next-btn">
 					<a href="gift_finder_step_four.html">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M12 0L9.885 2.115L18.255 10.5H0V13.5H18.255L9.885 21.885L12 24L24 12L12 0Z" fill="black"/>
@@ -108,7 +100,8 @@
             </div>
         </div>
     </section>
-    <!-- Gift Finder Second Section End -->
+    <!-- Gift Finder Third Section End -->
+
 
     <!-- Finder Modal -->
     <div class="modal fade finder-modal" id="finderModal" tabindex="-1" aria-labelledby="finderModal" aria-hidden="true">
@@ -132,7 +125,7 @@
                         <label class="form-label">How can I help you</label>
                         <textarea class="form-control" cols="30" rows="3" placeholder="Enter some text"></textarea>
                     </div>
-                    <a href="javascript:void(0)" class="btn btn-primary finder-modal-btn w-100">Send</a>
+                    <a href="#" class="btn btn-primary finder-modal-btn w-100">Send</a>
                 </div>
             </div>
         </div>
