@@ -8348,7 +8348,7 @@ section.payment-gift-section {     border-top: 10px solid #FF385C;     display: 
 div#selector_outemoji {     margin: 0 0 0 5px; }
 .text_editor_main_head_inner{    width: 100%;     float: left;     position: relative;}
 .your-selector-with-unicode-emojis img.emojione {     height: 25px; }
-span.select2-dropdown .select2-results__option.add_icon:after {     content: '+';     position: relative;     margin: 0 0 0 5px;     font-size: 15px; }
+/* span.select2-dropdown .select2-results__option.add_icon:after {     content: '+';     position: relative;     margin: 0 0 0 5px;     font-size: 15px; } */
 span.select2-dropdown .select2-results__option.add_icon {     position: relative; }
 .payment-gift-tabs-content .section-bg-color {     background: transparent; }
 .payment-gift-tabs-content .swap-title {     margin: 20px 0 40px 0; }
