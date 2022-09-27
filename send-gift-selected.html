@@ -20,6 +20,10 @@
 		html, body{overflow-x:visible;}
 		span.select2-dropdown span.select2-results {     box-shadow: 0px 1px 0 rgb(0 0 0 / 5%);     border-radius: 0 0 10px 10px; }
 		span.select2-dropdown {     border-radius: 0 0 10px 10px !important; }
+		
+		.select2-rendered__match {
+		  font-weight:bold;
+		}
 	</style>
 </head>
 
@@ -196,10 +200,10 @@
                                         </div>
                                         <div class="col-md-12 message_fields thankyou_text_editor">
 										<div class="text_editor_main_head_inner">
-											<textarea maxlength="160" id="emoji_area" class="send-note-box form-control" cols="23" rows="5" placeholder="Type your thank you message here!"></textarea>
+											<textarea maxlength="250" id="emoji_area" class="send-note-box form-control" cols="23" rows="5" placeholder="Type your thank you message here!"></textarea>
                                             <div class="text_area_filed_main">
                                                 <div id="emoji_area_container"></div>
-                                                <label class="counter_text"><span id="chars" class="lead">160</span> / 160</label>
+                                                <label class="counter_text"><span id="chars" class="lead">250</span> / 250</label>
                                             </div>
 											<div class="your-selector-with-unicode-emojis">
 											  <div class="selector_unify uniy_la">👍</div>

@@ -21,7 +21,6 @@
 		html, body{overflow-x:visible;}
 		span.select2-dropdown span.select2-results {     box-shadow: 0px 1px 0 rgb(0 0 0 / 5%);     border-radius: 0 0 10px 10px; }
 		span.select2-dropdown {     border-radius: 0 0 10px 10px !important; }
-		
 		.select2-rendered__match {
 		  font-weight:bold;
 		}
