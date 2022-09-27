@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <title>Kado</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/select2.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/select2.min.js"></script> -->
+    <script src="assets/js/custom.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <section class="recommendation-header new-design">
+        <div class="container">
+            <div class="recommendatioin-header-content">
+                <div class="recommendation-header-logo">
+                    <a href="index.html">
+						<!--span class="logo_back">
+							<img src="assets/images/logo_arow.svg">
+						</span-->
+						<img src="assets/images/kado-logo.svg" alt="" class="img-fluid">
+					</a>
+                </div>
+                <div class="recommendation-header-gift">
+                    <img src="assets/images/block_img.svg" alt="" class="img-fluid">
+                </div>
+                
+                <div class="recommendation-header-icon">
+                    <a class="home_head_menu" href="#"><img src="assets/images/home_svg.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="me-0 chat_head_menu" data-bs-toggle="modal" data-bs-target="#finderModal"><img src="assets/images/chat_svg.svg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Finder Four Section Start -->
+    <section class="interest_checker g-finder-section g-finder-four-section new-design section-bg-color">
+        <div class="container">
+            <div class="g-finder-four-content recommendation-content">
+                <h2 class="g-finder-four-title recommendation-title">What are your recipient’s interests?</h2>
+                <div class="finder-four-interests">
+                    <div class="row">
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckbox" name="sports">
+                                <label for="interestcheckbox" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_1.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M46.1987 4.66634L27.0653 20.2997L24.242 17.873L32.642 13.0197L21.9553 2.33301L18.6653 5.62301L25.0587 12.0163L11.6653 19.7397L8.88867 29.7497L14.6287 39.6663L18.6653 37.333L13.9287 29.1197L14.7453 26.0863L22.1653 30.333L23.332 51.333H27.9987L29.1653 27.9997L48.9987 7.93301L46.1987 4.66634Z" fill="#414141"/>
+                                        <path d="M11.6667 16.3333C14.244 16.3333 16.3333 14.244 16.3333 11.6667C16.3333 9.08934 14.244 7 11.6667 7C9.08934 7 7 9.08934 7 11.6667C7 14.244 9.08934 16.3333 11.6667 16.3333Z" fill="#414141"/>
+                                        </svg>
+                                    <h6 class="finder-four-check-title">Sports and outdoors</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox  text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxone" name="reading">
+                                <label for="interestcheckboxone" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_2.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M49.0007 11.6667C46.4107 10.85 43.564 10.5 40.834 10.5C36.284 10.5 31.384 11.4333 28.0007 14C24.6173 11.4333 19.7173 10.5 15.1673 10.5C10.6173 10.5 5.71732 11.4333 2.33398 14V48.1833C2.33398 48.7667 2.91732 49.35 3.50065 49.35C3.73398 49.35 3.85065 49.2333 4.08398 49.2333C7.23398 47.7167 11.784 46.6667 15.1673 46.6667C19.7173 46.6667 24.6173 47.6 28.0007 50.1667C31.1507 48.1833 36.8673 46.6667 40.834 46.6667C44.684 46.6667 48.6507 47.3667 51.9173 49.1167C52.1507 49.2333 52.2673 49.2333 52.5007 49.2333C53.084 49.2333 53.6673 48.65 53.6673 48.0667V14C52.2673 12.95 50.7507 12.25 49.0007 11.6667ZM49.0007 43.1667C46.434 42.35 43.634 42 40.834 42C36.8673 42 31.1507 43.5167 28.0007 45.5V18.6667C31.1507 16.6833 36.8673 15.1667 40.834 15.1667C43.634 15.1667 46.434 15.5167 49.0007 16.3333V43.1667Z" fill="#414141"/>
+                                        <path d="M40.834 24.5C42.8873 24.5 44.8707 24.71 46.6673 25.1067V21.56C44.824 21.21 42.8407 21 40.834 21C36.8673 21 33.274 21.6767 30.334 22.9367V26.81C32.9707 25.3167 36.634 24.5 40.834 24.5Z" fill="#414141"/>
+                                        <path d="M30.334 29.1437V33.017C32.9707 31.5237 36.634 30.707 40.834 30.707C42.8873 30.707 44.8707 30.917 46.6673 31.3137V27.767C44.824 27.417 42.8407 27.207 40.834 27.207C36.8673 27.207 33.274 27.907 30.334 29.1437Z" fill="#414141"/>
+                                        <path d="M40.834 33.4365C36.8673 33.4365 33.274 34.1132 30.334 35.3732V39.2465C32.9707 37.7532 36.634 36.9365 40.834 36.9365C42.8873 36.9365 44.8707 37.1465 46.6673 37.5432V33.9965C44.824 33.6232 42.8407 33.4365 40.834 33.4365Z" fill="#414141"/>
+                                        </svg>
+                                        
+                                    <h6 class="finder-four-check-title">Reading and writing </h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox  text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxtwo" name="decor">
+                                <label for="interestcheckboxtwo" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_3.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.3333 23.3337V28.0003H18.6667V23.3337H23.3333ZM37.3333 28.0003V23.3337H32.6667V28.0003H37.3333ZM49 32.667V51.3337H7V32.667H9.33333V23.3337C9.33333 13.0203 17.6867 4.66699 28 4.66699C38.3133 4.66699 46.6667 13.0203 46.6667 23.3337V32.667H49ZM16.3333 37.3337H11.6667V46.667H16.3333V37.3337ZM25.6667 37.3337H21V46.667H25.6667V37.3337ZM25.6667 9.52033C19.04 10.6403 14 16.4037 14 23.3337V32.667H25.6667V9.52033ZM30.3333 32.667H42V23.3337C42 16.4037 36.96 10.6403 30.3333 9.52033V32.667ZM35 37.3337H30.3333V46.667H35V37.3337ZM44.3333 37.3337H39.6667V46.667H44.3333V37.3337Z" fill="#414141"/>
+                                        </svg>
+                                        
+                                    <h6 class="finder-four-check-title">Creative and home decor </h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox  text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxthree" name="music">
+                                <label for="interestcheckboxthree" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_4.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M44.3333 32.6663V39.6663C44.3333 40.9497 43.2833 41.9997 42 41.9997H39.6667V32.6663H44.3333ZM16.3333 32.6663V41.9997H14C12.7167 41.9997 11.6667 40.9497 11.6667 39.6663V32.6663H16.3333ZM28 2.33301C16.4033 2.33301 7 11.7363 7 23.333V39.6663C7 43.5397 10.1267 46.6663 14 46.6663H21V27.9997H11.6667V23.333C11.6667 14.303 18.97 6.99967 28 6.99967C37.03 6.99967 44.3333 14.303 44.3333 23.333V27.9997H35V46.6663H42C45.8733 46.6663 49 43.5397 49 39.6663V23.333C49 11.7363 39.5967 2.33301 28 2.33301Z" fill="#414141"/>
+                                        </svg>
+                                        
+                                    <h6 class="finder-four-check-title">Music and the arts</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox  text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxfour" name="audio">
+                                <label for="interestcheckboxfour" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_5.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.3333 42.0003H21V14.0003H16.3333V42.0003ZM25.6667 51.3337H30.3333V4.66699H25.6667V51.3337ZM7 32.667H11.6667V23.3337H7V32.667ZM35 42.0003H39.6667V14.0003H35V42.0003ZM44.3333 23.3337V32.667H49V23.3337H44.3333Z" fill="#414141"/>
+                                        </svg>
+                                        
+                                    <h6 class="finder-four-check-title">Audio and tech</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox  text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxfive" name="pets">
+                                <label for="interestcheckboxfive" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_6.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.4993 27.9997C13.721 27.9997 16.3327 25.388 16.3327 22.1663C16.3327 18.9447 13.721 16.333 10.4993 16.333C7.27769 16.333 4.66602 18.9447 4.66602 22.1663C4.66602 25.388 7.27769 27.9997 10.4993 27.9997Z" fill="#414141"/>
+                                        <path d="M20.9993 18.6667C24.221 18.6667 26.8327 16.055 26.8327 12.8333C26.8327 9.61167 24.221 7 20.9993 7C17.7777 7 15.166 9.61167 15.166 12.8333C15.166 16.055 17.7777 18.6667 20.9993 18.6667Z" fill="#414141"/>
+                                        <path d="M34.9993 18.6667C38.221 18.6667 40.8327 16.055 40.8327 12.8333C40.8327 9.61167 38.221 7 34.9993 7C31.7777 7 29.166 9.61167 29.166 12.8333C29.166 16.055 31.7777 18.6667 34.9993 18.6667Z" fill="#414141"/>
+                                        <path d="M45.4993 27.9997C48.721 27.9997 51.3327 25.388 51.3327 22.1663C51.3327 18.9447 48.721 16.333 45.4993 16.333C42.2777 16.333 39.666 18.9447 39.666 22.1663C39.666 25.388 42.2777 27.9997 45.4993 27.9997Z" fill="#414141"/>
+                                        <path d="M40.4602 34.6733C38.4302 32.2933 36.7268 30.2633 34.6735 27.8833C33.6002 26.6233 32.2235 25.3633 30.5902 24.8033C30.3335 24.71 30.0768 24.64 29.8202 24.5933C29.2368 24.5 28.6068 24.5 28.0002 24.5C27.3935 24.5 26.7635 24.5 26.1568 24.6167C25.9002 24.6633 25.6435 24.7333 25.3868 24.8267C23.7535 25.3867 22.4002 26.6467 21.3035 27.9067C19.2735 30.2867 17.5702 32.3167 15.5168 34.6967C12.4602 37.7533 8.70351 41.1367 9.40351 45.8733C10.0802 48.2533 11.7835 50.61 14.8402 51.2867C16.5435 51.6367 21.9802 50.26 27.7668 50.26H28.1868C33.9735 50.26 39.4102 51.6133 41.1135 51.2867C44.1702 50.61 45.8735 48.23 46.5502 45.8733C47.2735 41.1133 43.5168 37.73 40.4602 34.6733Z" fill="#414141"/>
+                                        </svg>
+                                        
+                                    <h6 class="finder-four-check-title">Pets</h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox  text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxsix" name="travel">
+                                <label for="interestcheckboxsix" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_7.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.166 42.0003H18.666V21.0003H22.166V42.0003ZM29.7493 42.0003H26.2493V21.0003H29.7493V42.0003ZM37.3327 42.0003H33.8327V21.0003H37.3327V42.0003ZM39.666 14.0003H34.9993V7.00033C34.9993 5.71699 33.9493 4.66699 32.666 4.66699H23.3327C22.0493 4.66699 20.9993 5.71699 20.9993 7.00033V14.0003H16.3327C13.766 14.0003 11.666 16.1003 11.666 18.667V44.3337C11.666 46.9003 13.766 49.0003 16.3327 49.0003C16.3327 50.2837 17.3827 51.3337 18.666 51.3337C19.9493 51.3337 20.9993 50.2837 20.9993 49.0003H34.9993C34.9993 50.2837 36.0493 51.3337 37.3327 51.3337C38.616 51.3337 39.666 50.2837 39.666 49.0003C42.2327 49.0003 44.3327 46.9003 44.3327 44.3337V18.667C44.3327 16.1003 42.2327 14.0003 39.666 14.0003ZM24.4993 8.16699H31.4993V14.0003H24.4993V8.16699ZM39.666 44.3337H16.3327V18.667H39.666V44.3337Z" fill="#414141"/>
+                                        </svg>
+                                        
+                                    <h6 class="finder-four-check-title">Travel and languages </h6>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-6 col-lg-3 col-xl-3">
+                            <div class="finder-four-checkbox  text-center">
+                                <input type="checkbox" class="form-check-input finder-four-check" id="interestcheckboxsaven" name="games">
+                                <label for="interestcheckboxsaven" class="form-check-label finder-four-label">
+                                    <!-- <img src="assets/images/interest_8.png" alt="" class="img-fluid"> -->
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3539 37.5437L47.8106 19.6703C47.1572 15.0737 43.2139 11.667 38.5706 11.667H17.4306C12.7872 11.667 8.84389 15.0737 8.19056 19.6703L5.64723 37.5437C5.13389 41.137 7.91056 44.3337 11.5272 44.3337C13.1139 44.3337 14.6072 43.7037 15.7272 42.5837L21.0006 37.3337H35.0006L40.2506 42.5837C41.3706 43.7037 42.8872 44.3337 44.4506 44.3337C48.0906 44.3337 50.8672 41.137 50.3539 37.5437ZM45.4539 39.2237C45.2672 39.4337 44.9639 39.667 44.4739 39.667C44.1239 39.667 43.7972 39.527 43.5639 39.2937L36.9372 32.667H19.0639L12.4372 39.2937C12.2039 39.527 11.8772 39.667 11.5272 39.667C11.0372 39.667 10.7339 39.4337 10.5472 39.2237C10.3606 39.0137 10.1739 38.687 10.2439 38.197L12.7872 20.3237C13.1372 18.0603 15.1206 16.3337 17.4306 16.3337H38.5706C40.8806 16.3337 42.8639 18.0603 43.1906 20.347L45.7339 38.2203C45.8039 38.687 45.6172 39.0137 45.4539 39.2237Z" fill="#414141"/>
+                                        <path d="M21 18.667H18.6667V23.3337H14V25.667H18.6667V30.3337H21V25.667H25.6667V23.3337H21V18.667Z" fill="#414141"/>
+                                        <path d="M39.6673 30.3337C40.956 30.3337 42.0007 29.289 42.0007 28.0003C42.0007 26.7117 40.956 25.667 39.6673 25.667C38.3787 25.667 37.334 26.7117 37.334 28.0003C37.334 29.289 38.3787 30.3337 39.6673 30.3337Z" fill="#414141"/>
+                                        <path d="M34.9993 23.3337C36.288 23.3337 37.3327 22.289 37.3327 21.0003C37.3327 19.7117 36.288 18.667 34.9993 18.667C33.7107 18.667 32.666 19.7117 32.666 21.0003C32.666 22.289 33.7107 23.3337 34.9993 23.3337Z" fill="#414141"/>
+                                        </svg>
+                                        
+                                    <h6 class="finder-four-check-title">Games and puzzles</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+					<div class="g-finder-one-btn g-finder-two-btn mb-0 action_btn next_btn disable_btn">
+						<a href="javascript:void(0)" class="btn g-finder-skip-btn">Next</a>
+					</div>
+					<div class="g-finder-one-btn g-finder-two-btn action_btn mb-20">
+						<a href="javascript:void(0)" class="btn g-finder-skip-btn">Skip Step</a>
+					</div>
+                    <div class="g-finder-prev-btn">
+                       <a href="gift_finder_step_three.html">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 0L14.115 2.115L5.745 10.5H24V13.5H5.745L14.115 21.885L12 24L0 12L12 0Z" fill="black"/>
+						</svg>
+					</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gift Finder Four Section End -->
+
+    <!-- Finder Modal -->
+    <div class="modal fade finder-modal" id="finderModal" tabindex="-1" aria-labelledby="finderModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header finder-modal-header">
+                    <h5 class="modal-title" id="finderModal">Ask us anything</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body finder-modal-body">
+                    <p class="finder-modal-discription">Fill in your details, write your question, and we will get back to you</p>
+                    <div class="finder-modal-input">
+                        <label class="form-label">Full name</label>
+                        <input type="text" class="form-control" placeholder="Enter full name">
+                    </div>
+                    <div class="finder-modal-input">
+                        <label class="form-label">Email address</label>
+                        <input type="text" class="form-control" placeholder="Enter email address">
+                    </div>
+                    <div class="finder-modal-input">
+                        <label class="form-label">How can I help you</label>
+                        <textarea class="form-control" cols="30" rows="3" placeholder="Enter some text"></textarea>
+                    </div>
+                    <a href="#" class="btn btn-primary finder-modal-btn w-100">Send</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
