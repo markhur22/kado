@@ -9011,7 +9011,7 @@ ul.dropdown-menu.user-profile li:last-child {
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple textarea {
     margin: 0 !important;
     height: 24px;
-    color: #414141;font-weight:600;
+    color: #414141;
 }
 .select_custom_main span.selection span.select2-selection.select2-selection--multiple .select2-search--inline {
     width: 100%;
