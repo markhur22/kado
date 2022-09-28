@@ -315,6 +315,47 @@ $(document).ready(function() {
 			}
 		});
 		
+		$("ul.choose-gift-categories-list li a").on("click", function() {
+			$('ul.choose-gift-categories-list li a').removeClass('active');
+			$(this).addClass('active');
+           var value = $(this).data('cardname').toLowerCase();
+			$(".choose-gift-categories-collection .gt_choose_gft_item").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				console.log($(this).text().toLowerCase().indexOf(value));
+			});
+			if ($(".choose-gift-categories-collection .gt_choose_gft_item").text().toLowerCase().indexOf(value) > -1){
+				$('.noresultfound').hide();
+				//$('.gt-browse-gift-content.final-browse-card-list .gt-site-pagination').show();
+				
+				if(value != ''){
+					$('.searchicon').hide();
+					$('.crossicon').show();
+					$('.cross_clear').removeClass('cross_clear');
+					$('.gt-brwse-gft-search button.btn.btn-primary').addClass('cross_clear');
+				}else{
+					$('.cross_clear').removeClass('cross_clear');
+					$('.searchicon').show();
+					$('.crossicon').hide();
+				}
+				
+				
+			}else{
+				//console.log('cccccc');
+				$('.noresultfound').show();
+				//$('.gt-browse-gift-content.final-browse-card-list .gt-site-pagination').hide();
+				if(value != ''){
+					$('.searchicon').hide();
+					$('.crossicon').show();
+					$('.cross_clear').removeClass('cross_clear');
+					$('.gt-brwse-gft-search button.btn.btn-primary').addClass('cross_clear');
+				}else{
+					$('.cross_clear').removeClass('cross_clear');
+					$('.searchicon').show();
+					$('.crossicon').hide();
+				}
+			}
+		});
+		
 		
 		$("ul.gt_send_gift_list_filter li a").on("click", function() {
 			$('.active_nav').removeClass('active_nav');
