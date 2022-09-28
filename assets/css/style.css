@@ -2,6 +2,9 @@ html.search_open .browse-gift-header { display: none; }
 .forget-psw { width: 100%; float: left; margin: 4px 0 0 0; }
 .forget-psw a {     text-underline-offset: 4px; font-style: normal; font-weight: 400; font-size: 16px; line-height: 19px; letter-spacing: 0.02em; color: #414141; transition: all ease 0.3s; }
 .forget-psw a:hover{color:#FF385C;}
+.recommendation-slider-body .gt-gift-brand-logo { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); }
+.recommendation-slider-body .gt-gift-brand-logo img { width: 70px; float: left; }
+
 
 /* *************** Deafult Start  ****************** */          
 
@@ -6856,6 +6859,7 @@ input[type=number] {
 .recommendation-slider-body {
     padding: 10px 15px 10px 13px;
     flex: 1 0 auto;
+	position: relative;
 }
 
 .reco-body-title {
@@ -9379,13 +9383,13 @@ span.bar_progres {
 .status_process .card_status_main ul button.nav-link-btn.active {
     background-color: transparent;
 }
-span.bar_filled_progress {
+/*span.bar_filled_progress {
     background-color: #ff385c;
     height: 100%;
     width: 60%;
 	border-radius:50px;
     float: left;
-}
+}*/
 .card_view_slide_main button {
     display: none;
 }
