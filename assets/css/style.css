@@ -1,3 +1,8 @@
+html.search_open .browse-gift-header { display: none; }
+.forget-psw { width: 100%; float: left; margin: 4px 0 0 0; }
+.forget-psw a {     text-underline-offset: 4px; font-style: normal; font-weight: 400; font-size: 16px; line-height: 19px; letter-spacing: 0.02em; color: #414141; transition: all ease 0.3s; }
+.forget-psw a:hover{color:#FF385C;}
+
 /* *************** Deafult Start  ****************** */          
 
 #paymentModal .cvv-hide-logo{background-image:none;}
@@ -98,7 +103,7 @@ section.g-set-new-psw a.g-signup-Logo { margin-bottom: 30px; }
 section.g-set-new-psw .create-account-title { margin-bottom: 43px; }
 section.g-set-new-psw .g-signup-form .signup-form-btn { margin-top: 40px; }
 section.g-set-new-psw .create-account-content { padding: 50px 50px 87px 50px; }
-section.g-recover-gifty .g-signup-content { padding: 189px 17px; }
+section.g-recover-gifty .g-signup-content { padding: 189px 17px; min-height: calc(100vh - -60px);}
 section.g-recover-gifty a.g-signup-Logo { margin-bottom: 30px; }
 section.g-recover-gifty .create-account-title { margin-bottom: 40px; }
 section.g-recover-gifty .g-signup-form .signup-form-btn { margin-top: 40px; }
@@ -6192,12 +6197,12 @@ div.g-signup-form .gt-btn-custom {
 .gt-open-gift-content {
     width: 514px;
     max-width: 100%;
-    margin: -10px 0 0 0;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);
     border-radius: 10px;
-}
+	margin:0 auto;
+}  
 
 .gt-open-gift-style-img {
     filter: blur(5px);
