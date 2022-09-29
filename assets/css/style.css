@@ -17,7 +17,7 @@ body.loggined-user .navbar-expand-xl .navbar-nav .gt-login-btn { padding: 21px 2
 body.loggined-user .gt-login-item { margin: 0 10px 0 10px; }
 body.loggined-user .home-navbar-collapse { flex-grow: initial; }
 body.loggined-user .gift-history-drop { margin: 0 0 0 15px; padding:0;}
-
+body.loggined-user ul.gifts-navbar.mob_nav.loggined a.nav-link { line-height: 36px; }
 
 
 
