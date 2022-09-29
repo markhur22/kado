@@ -6,6 +6,10 @@ html.search_open .browse-gift-header { display: none; }
 .recommendation-slider-body .gt-gift-brand-logo img { width: 70px; float: left; }
 .gt-search-content.active { display: none; }
 .gt-search-gift-content-inner { display: flex; align-items: center; border: 1px solid #E2E2E2; border-radius: 20px; padding: 18px 22px; }
+.gt-search-gift-content-inner input { display: flex; align-items: center; justify-content: space-between; text-transform: capitalize; border: 1px solid #E2E2E2; border-radius: 31px; text-decoration: none; font-style: normal; font-weight: 700; line-height: 20px; letter-spacing: 0.02em; color: #414141; min-width: initial; width: calc(100% - 58px); font-size: 16px; padding: 15px 26px 15px 26px; }
+.gt-search-gift-content-inner input::placeholder{color: #414141;}
+.gt-search-gift-content { width: 100%; float: left; display: none; }
+
 
 
 /* *************** Deafult Start  ****************** */          
@@ -11428,7 +11432,8 @@ body.gt-site.home section {
 	.modal_main_item .gift_verification_body_inner button.accordion-button::after {     /* background-image: none; */ 	transform: rotate(-90deg) !important; 	-webkit-transform: rotate(-90deg) !important; }
 }
 @media (max-width: 991px) {
- .gt-search-content.active { display: block; }
+.gt-search-gift-content {display: block; }
+.gt-search-content.active { display: block; }
 
 	.gift_occasion_new .row > div{    width: 100%;}
 	
@@ -13084,6 +13089,8 @@ body.gt-site.home section {
 }
 
 @media (max-width: 767px) {
+.gt-search-gift-content-inner input{font-size:12px;}
+
 	
 	.gift_occasion_new .row{grid-template-columns: repeat(3, 1fr);}
 	.payment-gift-tabs-content .swap-img {     transform: scale(0.9);     -webkit-transform: scale(0.9); }
