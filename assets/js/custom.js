@@ -1027,6 +1027,14 @@ $('span.card_left_arrow').click(function(){
 			$('ul#select2-inputMessage-results li').addClass('add_icon');
 		}
 	});
+	$(document).on("click",".show_search_filter button", function(e) {
+		$('.showed_search_filter').removeClass('hide_search_filter');
+		$('.show_search_filter').addClass('hide_search_filter');
+	});
+	$(document).on("click",".showed_search_filter button", function(e) {
+		$('.showed_search_filter').addClass('hide_search_filter');
+		$('.show_search_filter').removeClass('hide_search_filter');
+	});
 });
 
 let ausPhoneExpression = /^\({0,1}\){0,1}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{1}(\ |-){0,1}[0-9]{4}$/,
