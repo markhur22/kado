@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	
+	$(document).on("click",".show_search_filter button", function(e) { console.log('gg');
+		$('.showed_search_filter').removeClass('hide_search_filter');
+		$('.show_search_filter').addClass('hide_search_filter');
+	});
+	$(document).on("click",".showed_search_filter button", function(e) {
+		$('.showed_search_filter').addClass('hide_search_filter');
+		$('.show_search_filter').removeClass('hide_search_filter');
+	});
+	
 	$('input[type=radio][name=ageradio]').change(function() {
 		$('.g-finder-second-section .next_btn').removeClass('disable_btn');
 	});
@@ -150,14 +160,14 @@ $(document).ready(function() {
         $('.gt-site').toggleClass('git-site-show');
     });
 
-    $('.exchange-search-btn').click(function() {
+    /* $('.exchange-search-btn').click(function() {
         $('.gt-search-content').addClass('active');
         $('html').addClass('search_open');
     });
     $('.product-search-input i').click(function() {
         $('.gt-search-content').removeClass('active');
 		$('html').removeClass('search_open');
-    });
+    }); */
 
 
 
@@ -1027,14 +1037,7 @@ $('span.card_left_arrow').click(function(){
 			$('ul#select2-inputMessage-results li').addClass('add_icon');
 		}
 	});
-	$(document).on("click",".show_search_filter button", function(e) {
-		$('.showed_search_filter').removeClass('hide_search_filter');
-		$('.show_search_filter').addClass('hide_search_filter');
-	});
-	$(document).on("click",".showed_search_filter button", function(e) {
-		$('.showed_search_filter').addClass('hide_search_filter');
-		$('.show_search_filter').removeClass('hide_search_filter');
-	});
+	
 });
 
 let ausPhoneExpression = /^\({0,1}\){0,1}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{1}(\ |-){0,1}[0-9]{4}$/,
