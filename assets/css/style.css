@@ -12,6 +12,15 @@ html.search_open .browse-gift-header { display: none; }
 .hide_search_filter { display: none !important; }
 div.browse-gift-space { margin: 0 0 33px 0; }
 
+
+body.loggined-user .navbar-expand-xl .navbar-nav .gt-login-btn { padding: 21px 29px; }
+body.loggined-user .gt-login-item { margin: 0 10px 0 10px; }
+body.loggined-user .home-navbar-collapse { flex-grow: initial; }
+body.loggined-user .gift-history-drop { margin: 0 0 0 15px; padding:0;}
+
+
+
+
 /* *************** Deafult Start  ****************** */          
 
 #paymentModal .cvv-hide-logo{background-image:none;}
@@ -10829,7 +10838,9 @@ body.gt-site.home section {
 .send-note-section .send-note-box.form-control.emojionearea .emojionearea-editor{    font-size: 18px;}
 .g-finder-third-content{padding: 71px 45px 55px;}
 .g-finder-second-content{padding: 40px 45px 61px;}	
-	
+body.loggined-user .gift-history-drop { display: none !important; }	
+body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
+
 	
 .shipping-tab-btn .accpt-gift { margin-right: 23px; width: 45px; height: 45px; }
 .shipping-tab-btn .btn { height: 65px; }
@@ -13094,6 +13105,8 @@ body.gt-site.home section {
 @media (max-width: 767px) {
 .gt-search-gift-content-inner input{font-size:12px;}
 .gt-search-gift-content-inner .card-categari-show { width: 46px; }
+body.loggined-user .home-header-btn { padding: 4px 17px 4px 5px; }
+
 	
 	.gift_occasion_new .row{grid-template-columns: repeat(3, 1fr);}
 	.payment-gift-tabs-content .swap-img {     transform: scale(0.9);     -webkit-transform: scale(0.9); }
@@ -16631,7 +16644,9 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 @media(max-width:370px) {
 	.gift_occasion_new .row{    grid-template-columns: repeat(1, 1fr);}
 .finder-four-interests .row .col {width: 100%; }
-.text_area_filed_main .counter_text {     bottom: -18px;     right: 0; }	
+.text_area_filed_main .counter_text {     bottom: -18px;     right: 0; }
+body.loggined-user .home-header-btn{font-size:13px;}
+	
 
 	.version-details-btn .accpt-gift{margin-right:5px;}   
 	.version-accept-btn{padding: 0 5px 0 7px;}
