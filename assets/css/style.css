@@ -5,7 +5,7 @@ html.search_open .browse-gift-header { display: none; }
 .recommendation-slider-body .gt-gift-brand-logo { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); }
 .recommendation-slider-body .gt-gift-brand-logo img { width: 70px; float: left; }
 .gt-search-content.active { display: none; }
-
+.gt-search-gift-content-inner { display: flex; align-items: center; border: 1px solid #E2E2E2; border-radius: 20px; padding: 18px 22px; }
 
 
 /* *************** Deafult Start  ****************** */          
