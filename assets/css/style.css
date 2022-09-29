@@ -9,7 +9,7 @@ html.search_open .browse-gift-header { display: none; }
 .gt-search-gift-content-inner input { display: flex; align-items: center; justify-content: space-between; text-transform: capitalize; border: 1px solid #E2E2E2; border-radius: 31px; text-decoration: none; font-style: normal; font-weight: 700; line-height: 20px; letter-spacing: 0.02em; color: #414141; min-width: initial; width: calc(100% - 58px); font-size: 16px; padding: 15px 26px 15px 26px; }
 .gt-search-gift-content-inner input::placeholder{color: #414141;}
 .gt-search-gift-content { width: 100%; float: left; display: none; }
-
+.hide_search_filter { display: none; }
 
 
 /* *************** Deafult Start  ****************** */          
@@ -11434,6 +11434,9 @@ body.gt-site.home section {
 @media (max-width: 991px) {
 .gt-search-gift-content {display: block; }
 .gt-search-content.active { display: block; }
+.gift-select-btn { padding: 17px 12px 17px 14px; }
+.browse-categori-popup{margin:0 10px !important;}
+
 
 	.gift_occasion_new .row > div{    width: 100%;}
 	
@@ -13090,7 +13093,7 @@ body.gt-site.home section {
 
 @media (max-width: 767px) {
 .gt-search-gift-content-inner input{font-size:12px;}
-
+.gt-search-gift-content-inner .card-categari-show { width: 46px; }
 	
 	.gift_occasion_new .row{grid-template-columns: repeat(3, 1fr);}
 	.payment-gift-tabs-content .swap-img {     transform: scale(0.9);     -webkit-transform: scale(0.9); }
@@ -13330,7 +13333,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.gt-gift-emporium-description a {     font-size: 12px;     display: inline;     line-height: 18px; }
 	.gt-gift-emporium-img img {     width: 116px; }
 	.browse-serach-box .gifts-selecter{    width: 249px;    padding: 0 0 0 10px;}
-	.browse-categori-popup{width:100%;}
+	.browse-categori-popup{width:100%; margin:0 !important;}
 	div#PriceModal .modal-dialog {     height: auto; }
 	.price-modal .modal-content {     border-radius: 20px 20px 0 0; }
 	
@@ -16171,6 +16174,10 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 }
 
 @media (max-width: 480px) {
+.browse-one-search-box .browse-serach-box{padding: 18px 15px;}
+.browse-categori-popup{font-size: 14px; padding: 15px 15px 15px 15px;}	
+.gift-select-btn { padding: 17px 14px 17px 14px; }	
+
 	.choose-gift-categories-collection .row > .col{width:100%;}
 	.choose-gift-card-btn svg {     margin: 1px 0 0 5px; }
 .shipping-manually-address{text-align:center;}
@@ -16210,6 +16217,12 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 
 
 @media (max-width: 420px) {
+.browse-categori-popup { width: 100%; }	
+.browse-serach-box .gifts-selecter { width: 100%; padding: 10px 0 0 0; }
+.browse-one-search-box .browse-serach-box{display:block;}
+.exchange-search-btn { margin-right: 0; margin-bottom: 10px; }
+
+
 	.text_area_filed_main .counter_text{    font-size: 13px;}
 	.text_area_filed_main label.counter_text span.lead{font-size: 13px;}
 	.text_area_filed_main .counter_text{    bottom: 11px;}
