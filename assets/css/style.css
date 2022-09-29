@@ -4,6 +4,8 @@ html.search_open .browse-gift-header { display: none; }
 .forget-psw a:hover{color:#FF385C;}
 .recommendation-slider-body .gt-gift-brand-logo { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); }
 .recommendation-slider-body .gt-gift-brand-logo img { width: 70px; float: left; }
+.gt-search-content.active { display: none; }
+
 
 
 /* *************** Deafult Start  ****************** */          
@@ -11426,6 +11428,8 @@ body.gt-site.home section {
 	.modal_main_item .gift_verification_body_inner button.accordion-button::after {     /* background-image: none; */ 	transform: rotate(-90deg) !important; 	-webkit-transform: rotate(-90deg) !important; }
 }
 @media (max-width: 991px) {
+ .gt-search-content.active { display: block; }
+
 	.gift_occasion_new .row > div{    width: 100%;}
 	
 	.gift_occasion_new .row{grid-column-gap: 10px;     row-gap: 10px;grid-template-columns: repeat(4, 1fr);}
