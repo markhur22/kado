@@ -10,7 +10,7 @@ html.search_open .browse-gift-header { display: none; }
 .gt-search-gift-content-inner input::placeholder{color: #414141;}
 .gt-search-gift-content { width: 100%; float: left; display: none; }
 .hide_search_filter { display: none !important; }
-
+div.browse-gift-space { margin: 0 0 33px 0; }
 
 /* *************** Deafult Start  ****************** */          
 
