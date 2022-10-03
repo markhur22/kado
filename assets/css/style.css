@@ -934,6 +934,12 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+    background: #FF385C;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
 }
 
 .gt-login-user-dropdown-profile img {
@@ -8403,6 +8409,19 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 .gift_occasion_new .row > div .finder-four-checkbox {     margin: 0;     height: 157px; }  
 .gift_occasion_new .row > div label {     padding: 0;     justify-content: center;     display: flex;}
 .gift_occasion_new .row > div h6 {     font-size: 16px;     min-height: inherit;     margin: 25px 0 0 0; }
+.breadcrumb_main {     float: left;     width: 100%;     margin: 0 0 0 0; }
+.breadcrumb_main ul {     float: left;     width: 100%;     padding: 0;     margin: 0; }
+.breadcrumb_main ul li {     display: inline-block;     width: auto;     list-style-type: none;     font-size: 18px;     vertical-align: middle;}
+.breadcrumb_main ul li a {     text-decoration: none;     color: #FF385C;     font-weight: 700;     font-size: 18px;     float: left; }
+.breadcrumb_main ul li span {     float: left;     width: auto;     margin: 0 10px;     color: #FF385C;     font-size: 18px; }
+.breadcrumb_main ul li a svg {     float: left;     width: auto;     margin: 0 14px 0 0; }
+.discover_outer {     width: 100%;     background: #FFBEC2;     margin: 28px 0 33px 0;     border-radius: 15px;     display: inline-block; }
+.discover_inner{display: flex;     align-items: center;width:100%;}
+.discover_content {     float: left;     width: 50%;     padding: 0 0 0 32px; }
+.discover_content h2 {     float: left;     width: 100%;     color: #000000;     font-weight: 700;     font-size: 30px;     font-family: 'PT Serif';     letter-spacing: -1px;     margin: 0 0 14px 0; }
+.discover_content p {     float: left;     width: 100%;     font-size: 18px; }
+.discover_image {     float: left;     width: 50%; }
+.discover_image img {     float: left;     width: 100%;     border-radius: 15px 0 0 15px; }
   
   
 
