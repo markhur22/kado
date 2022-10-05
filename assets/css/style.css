@@ -8423,13 +8423,15 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 .discover_image {     float: left;     width: 50%; }
 .discover_image img {     float: left;     width: 100%;     border-radius: 15px 0 0 15px; }
 .or_tag p {     float: left;     width: 100%;     text-align: center;     font-weight: 500;     font-size: 18px;     line-height: 30px;     color: #3F3F3F;     margin: 0 0 20px 0; }
-.send_social_button {     display: grid;     display: -ms-grid;     /* grid-template: 1fr 1fr/ 1fr 1fr; */     grid-column-gap: 16px;     row-gap: 0;     grid-template-columns: repeat(2, 1fr); }
+.send_social_button {     display: grid;     display: -ms-grid;     /* grid-template: 1fr 1fr/ 1fr 1fr; */     grid-column-gap: 16px;     row-gap: 0;     grid-template-columns: repeat(2, 1fr); margin:0 !important;}
 .send_social_button_inner {     float: left;     width: 100%; }
 .send_social_button_inner a {  transition:0.4s ease all;   border: 1px solid #E2E2E2;     border-radius: 10px;     float: left;     width: 100%;     padding: 16px 20px;     text-decoration: none;     font-size: 18px;     line-height: 30px;     color: #414141;     display: flex;     align-items: center; }
 .send_social_button_inner a:hover svg{transform:scale(1.08); -webkit-transform:scale(1.08);} 
-/* .send_social_button_inner.fb_social_button a:hover{background:#1877F2; color:#fff; border-color:#1877F2;}
+.send_social_button_inner a:hover{background:#E34133; color:#fff;} 
+.send_social_button_inner a:hover svg path{fill: #fff;} 
+ .send_social_button_inner.fb_social_button a:hover{background:#1877F2; color:#fff; border-color:#1877F2;}
 .send_social_button_inner.fb_social_button a:hover svg path{fill:#fff;}
- */.send_social_button_inner a svg {   transition:0.4s ease all;   margin: 0 12px 0 0; }  
+.send_social_button_inner a svg {   transition:0.4s ease all;   margin: 0 12px 0 0; }  
 .send_social_button_inner.fb_social_button a {     background: #F4F4F4; }  
   
   
@@ -10745,6 +10747,7 @@ body.gt-site.home section {
 }
 
 @media (max-width: 1399px) {
+	.send_social_button_inner a{font-size: 16px;}
 	.swap-content{width: 450px;}
 	.gt-open-gift-name{    margin-bottom: 34px;}
 	.gt-open-gift-details{    padding: 0 30px 40px;    margin-top: 20px;}
@@ -10868,6 +10871,8 @@ body.gt-site.home section {
 }
 
 @media (max-width: 1199px) {
+.send_social_button_inner a{    padding: 16px 10px;}
+.send_social_button_inner a svg{    margin: 0 7px 0 0;}
 .send-note-section .send-note-box.form-control.emojionearea .emojionearea-editor{    font-size: 18px;}
 .g-finder-third-content{padding: 71px 45px 55px;}
 .g-finder-second-content{padding: 40px 45px 61px;}	
@@ -11472,10 +11477,13 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
     }*/    
 }
 @media(min-width:991px)
+
 {
 	.modal_main_item .gift_verification_body_inner button.accordion-button::after {     /* background-image: none; */ 	transform: rotate(-90deg) !important; 	-webkit-transform: rotate(-90deg) !important; }
 }
 @media (max-width: 991px) {
+	.send_social_button_inner a {     padding: 16px 20px; }
+	.send_social_button_inner a svg {     margin: 0 12px 0 0; }
 .gt-search-gift-content {display: block; }
 .gt-search-content.active { display: block; }
 .gift-select-btn { padding: 17px 12px 17px 14px; }
@@ -13136,6 +13144,7 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
 }
 
 @media (max-width: 767px) {
+.send_social_button{    grid-template-columns: repeat(1, 1fr);    row-gap: 10px;}	
 .gt-search-gift-content-inner input{font-size:12px;}
 .gt-search-gift-content-inner .card-categari-show { width: 46px; }
 body.loggined-user .home-header-btn { padding: 4px 17px 4px 5px; }
@@ -16675,6 +16684,8 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 	.emojionearea .emojionearea-picker .emojionearea-wrapper{    width: 100%;}
 }
 @media(max-width:370px) {
+	.send_social_button_inner a {     padding: 12px 10px; }
+	.send_social_button_inner a {     font-size: 13px; }
 	.gift_occasion_new .row{    grid-template-columns: repeat(1, 1fr);}
 .finder-four-interests .row .col {width: 100%; }
 .text_area_filed_main .counter_text {     bottom: -18px;     right: 0; }
