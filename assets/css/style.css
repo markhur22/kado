@@ -16060,6 +16060,8 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 
 
 @media(max-width:575px) {
+	a.btn.gift-select-btn {     position: relative;     background-image: none; }
+	a.btn.gift-select-btn:after {content: "\f107";font-family: "Font Awesome 6 Free";font-weight: 900;float: right;}
 	.discover_image img{height: 135px;     object-fit: cover;}
 	.discover_content h2 {     font-size: 18px;     margin: 0 0 10px 0; }
 	.discover_content p {     font-size: 13px; }
@@ -16730,6 +16732,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 	.emojionearea .emojionearea-picker .emojionearea-wrapper{    width: 100%;}
 }
 @media(max-width:370px) {
+	.discover_content h2 br{display:none;}
 	.final-brands-card-list .row {     grid-template-columns: repeat(1, 1fr); }
 	.send_social_button_inner a {     padding: 12px 10px; }
 	.send_social_button_inner a {     font-size: 13px; }
