@@ -325,6 +325,48 @@ $(document).ready(function() {
 			}
 		});
 		
+		$("ul.gt_brands_gift_list_filter li a").on("click", function() {
+			$('ul.gt_brands_gift_list_filter li a').removeClass('active');
+			$(this).addClass('active');
+			var value = $(this).data('cardname').toLowerCase();
+			$(".gt-browse-gift-content.final-brands-card-list .cardlist").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				console.log($(this).text().toLowerCase().indexOf(value));
+			});
+			if ($(".gt-browse-gift-content.final-brands-card-list .cardlist").text().toLowerCase().indexOf(value) > -1){
+				$('.noresultfound').hide();
+				$('.gt-browse-gift-content.final-brands-card-list .gt-site-pagination').show();
+				
+				if(value != ''){
+					$('.searchicon').hide();
+					$('.crossicon').show();
+					$('.cross_clear').removeClass('cross_clear');
+					$('.gt-browse-gift-header-seach button.btn.btn-primary').addClass('cross_clear');
+				}else{
+					$('.cross_clear').removeClass('cross_clear');
+					$('.searchicon').show();
+					$('.crossicon').hide();
+				}
+				
+				
+			}else{
+				//console.log('cccccc');
+				$('.noresultfound').show();
+				$('.gt-browse-gift-content.final-brands-card-list .gt-site-pagination').hide();
+				if(value != ''){
+					$('.searchicon').hide();
+					$('.crossicon').show();
+					$('.cross_clear').removeClass('cross_clear');
+					$('.gt-browse-gift-header-seach button.btn.btn-primary').addClass('cross_clear');
+				}else{
+					$('.cross_clear').removeClass('cross_clear');
+					$('.searchicon').show();
+					$('.crossicon').hide();
+				}
+			}
+		});
+		
+		
 		$("ul.choose-gift-categories-list li a").on("click", function() {
 			$('ul.choose-gift-categories-list li a').removeClass('active');
 			$(this).addClass('active');
@@ -575,6 +617,46 @@ $(document).ready(function() {
 				}
 			}
 		});
+		
+		$(".gt-browse-gift-header-seach input.inputSearchgiftsbrands").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$(".gt-browse-gift-content.final-brands-card-list .brands_list_outer").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				console.log($(this).text().toLowerCase().indexOf(value));
+			});
+			if ($(".gt-browse-gift-content.final-brands-card-list .brands_list_outer").text().toLowerCase().indexOf(value) > -1){
+				$('.noresultfound').hide();
+				$('.gt-browse-gift-content.final-brands-card-list .gt-site-pagination').show();
+				
+				if(value != ''){
+					$('.searchicon').hide();
+					$('.crossicon').show();
+					$('.cross_clear').removeClass('cross_clear');
+					$('.gt-browse-gift-header-seach button.btn.btn-primary').addClass('cross_clear');
+				}else{
+					$('.cross_clear').removeClass('cross_clear');
+					$('.searchicon').show();
+					$('.crossicon').hide();
+				}
+				
+				
+			}else{
+				//console.log('cccccc');
+				$('.noresultfound').show();
+				$('.gt-browse-gift-content.final-brands-card-list .gt-site-pagination').hide();
+				if(value != ''){
+					$('.searchicon').hide();
+					$('.crossicon').show();
+					$('.cross_clear').removeClass('cross_clear');
+					$('.gt-browse-gift-header-seach button.btn.btn-primary').addClass('cross_clear');
+				}else{
+					$('.cross_clear').removeClass('cross_clear');
+					$('.searchicon').show();
+					$('.crossicon').hide();
+				}
+			}
+		});
+		
 		$(".gt-browse-gift-header-seach input.inputSearchgifts").on("keyup", function() {
 			var value = $(this).val().toLowerCase();
 			$(".gt-browse-gift-content.final-browse-card-list .cardlist").filter(function() {
@@ -659,9 +741,9 @@ $(document).ready(function() {
 		$('.searchicon').show();
 		$('.crossicon').hide();
 		$('.cross_clear').removeClass('cross_clear');
-		$('input.form-control.inputSearchgifts').val('');
+		$('input.form-control').val('');
 		$('.noresultfound').hide();
-		$('.gt-browse-gift-content.final-browse-card-list .gt-site-pagination').show();
+		$('.gt-browse-gift-content .gt-site-pagination').show();
 		$('.cardlist').show();
 	});
 	
