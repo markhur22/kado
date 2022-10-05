@@ -8422,6 +8422,16 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 .discover_content p {     float: left;     width: 100%;     font-size: 18px; }
 .discover_image {     float: left;     width: 50%; }
 .discover_image img {     float: left;     width: 100%;     border-radius: 15px 0 0 15px; }
+.or_tag p {     float: left;     width: 100%;     text-align: center;     font-weight: 500;     font-size: 18px;     line-height: 30px;     color: #3F3F3F;     margin: 0 0 20px 0; }
+.send_social_button {     display: grid;     display: -ms-grid;     /* grid-template: 1fr 1fr/ 1fr 1fr; */     grid-column-gap: 16px;     row-gap: 0;     grid-template-columns: repeat(2, 1fr); }
+.send_social_button_inner {     float: left;     width: 100%; }
+.send_social_button_inner a {  transition:0.4s ease all;   border: 1px solid #E2E2E2;     border-radius: 10px;     float: left;     width: 100%;     padding: 16px 20px;     text-decoration: none;     font-size: 18px;     line-height: 30px;     color: #414141;     display: flex;     align-items: center; }
+.send_social_button_inner a:hover svg{transform:scale(1.08); -webkit-transform:scale(1.08);} 
+/* .send_social_button_inner.fb_social_button a:hover{background:#1877F2; color:#fff; border-color:#1877F2;}
+.send_social_button_inner.fb_social_button a:hover svg path{fill:#fff;}
+ */.send_social_button_inner a svg {   transition:0.4s ease all;   margin: 0 12px 0 0; }  
+.send_social_button_inner.fb_social_button a {     background: #F4F4F4; }  
+  
   
   
 
