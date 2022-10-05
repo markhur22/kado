@@ -8433,8 +8433,16 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 .send_social_button_inner.fb_social_button a:hover svg path{fill:#fff;}
 .send_social_button_inner a svg {   transition:0.4s ease all;   margin: 0 12px 0 0; }  
 .send_social_button_inner.fb_social_button a {     background: #F4F4F4; }  
-  
-  
+.final-brands-card-list .row {     display: grid;     display: -ms-grid;     grid-column-gap: 47px;     row-gap: 37px;     grid-template-columns: repeat(3, 1fr);     margin: 0; }  
+.brands_list_main {     float: left;     width: 100%;     background: #FFFFFF;     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);     -webkit-box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);     border-radius: 15px; }
+.brands_list_image {     float: left;     width: 100%;     position: relative; }
+.brands_list_image > img {     float: left;     width: 100%;     border-radius: 15px 15px 0 0; }
+.brand_logo {     position: absolute;     bottom: -13px;     background: #fff;     padding: 5px;     left: 50%;     transform: translateX(-50%);     -webkit-transform: translateX(-50%);     border-radius: 8px; }
+.brands_list_desc {     float: left;     width: 100%;     padding: 26px 0;     text-align: center; }
+.brands_list_desc h2 {     float: left;     margin: 0 0 20px 0;     width: 100%;     font-weight: 700;     font-size: 18px;     color: #000000;     line-height: 22px; }
+.brands_list_desc p {     float: left;     width: 100%;     margin: 0; }
+.brands_list_desc p a {     background: #FFF4F6;     border-radius: 50px;     width: 127px;     letter-spacing: 0.05em;     display: inline-block;     color: #FF385C;     height: 42px;     font-weight: 700;     font-size: 15px;     line-height: 18px;     padding: 12px 0;     text-decoration: none; }
+.brand_logo img {     width: 86px; }
   
 
 /*desktop new changes starts here*/
