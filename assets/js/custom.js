@@ -1,13 +1,18 @@
 $(document).ready(function() {
 	
-	
-	$('.gt-gift-veriation-card-title button').click(function(){
+	if ($(window).width() < 991) {
+	  $('.gt-gift-veriation-card-title button').click(function(){
 		$(this).parent().next().slideToggle();
-	});
+		});
+		
+		$('.gift_verification_body_inner > button').click(function(){
+			$(this).parent().children('.gt-gift-veriation-card-description').slideToggle();
+		});
+	}
+	else {
+	   
+	}
 	
-	$('.gift_verification_body_inner > button').click(function(){
-		$(this).parent().children('.gt-gift-veriation-card-description').slideToggle();
-	});
 		
 	
 	
