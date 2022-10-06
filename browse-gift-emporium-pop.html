@@ -1,0 +1,309 @@
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+		<title>Kado</title>
+
+		<!-- Link All CSS -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/slick.css">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/select2.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/scrollbar.css">
+	
+	</head>
+
+	<body class="gt-site">
+		<!-- Site Header Start -->
+		<header class="gt-site-header sticky browse-gift-header">
+			<div class="container">
+				<nav class="navbar navbar-expand-xl home-navbar">
+					<div class="container-fluid">
+						<div class="categori-popup d-none">
+							<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#categoriModal"><i class="fa-solid fa-bars"></i></a>
+
+						</div>
+						<a class="navbar-brand" href="index.html">
+							<img src="assets/images/kado-logo.svg" alt="Logo" class="img-fluid">
+						</a>
+						<button class="navbar-toggler home-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icons"></span>
+							<span class="navbar-toggler-icons"></span>
+							<span class="navbar-toggler-icons"></span>
+						</button>
+						<div class="gifts-collapse-btn d-block d-xl-none">
+							<i class="fa-solid fa-xmark"></i>
+						</div>
+						<div class="collapse navbar-collapse home-navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav home-navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="browse-gift.html">
+										<img src="assets/images/giftcard.png" alt="" class="img-fluid me-3 d-inline-block d-xl-none"> Browse Gifts
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="send-gift.html">
+										<img src="assets/images/send.png" alt="" class="img-fluid me-3 d-inline-block d-xl-none"> Send Gift</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="send-gift.html">
+										<img src="assets/images/find_gift.png" alt="" class="img-fluid me-3 d-inline-block d-xl-none"> Gift Finder</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="javascript:void(0);">
+										<img src="assets/images/logout.png" alt="" class="img-fluid me-3 d-inline-block d-xl-none"> Log In</a>
+								</li>
+								<li class="nav-item gt-login-item home-create-btn">
+									<a class="nav-link btn btn-light gt-login-btn" href="javascript:void(0);">
+										<img src="assets/images/create_account.png" alt="" class="img-fluid me-3  d-inline-block d-xl-none"> Create Account</a>
+								</li>
+							</ul>
+						</div>
+						<li class="nav-item list-unstyled ms-auto">
+							<a href="javascript:void(0);" class="btn btn-primary">
+								<span class="gt-send-gift-icon">
+									<img src="assets/images/gift-icon.png" alt="">
+								</span>
+								<span>Send a Gift</span>
+							</a>
+						</li>
+
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- Site Header End -->
+
+		<!-- Site Content Start -->
+		<main class="gt-site-content">
+
+			<!--section class="gt-page-title-section page-title-style">
+				<div class="gt-page-perticels-left">
+					<img src="assets/images/page-title-perticels-left.png" alt="page-title-perticels-left" class="img-fluid">
+				</div>
+				<div class="gt-page-perticels-right">
+					<img src="assets/images/page-title-perticels-left.png" alt="page-title-perticels-left" class="img-fluid">
+				</div>
+			</section-->
+
+			<!-- Browse Gifts Section Start -->
+			<section class="gt-browse-gift-section browse_empo_pop">
+				<div class="container">
+					<div class="browse-one-search-box d-none">
+						<div class="browse-serach-box">
+							<div class="exchange-search-box">
+								<div class="exchange-search-btn d-block d-lg-none">
+									<button class="btn btn-primary" type="button">
+										<img src="assets/images/search_icon_new.svg" alt="white-search-icon"
+											class="img-fluid">
+									</button>
+								</div>
+								<div class="gt-browse-gift-header-seach menu-selector gifts-items-header d-none d-lg-block">
+									<span class="gt-search-icon">
+										<img src="assets/images/gift-search.png" alt="search-icon" class="img-fluid">
+									</span>
+									<input type="text" class="form-control" placeholder="Search here...">
+									<button class="btn btn-primary" type="button">
+										<img src="assets/images/search_icon_new.svg" alt="white-search-icon"
+											class="img-fluid">
+									</button>
+								</div>
+							</div>
+
+							<div class="exchange-menu-selector browse-menu-selector d-lg-none">
+								<select name="menu" id="menu" class="form-select">
+									<option>Browse categories</option>
+									<option>Featured</option>
+									<option>New</option>
+									<option>Wellness</option>
+									<option>Food</option>
+									<option>Home</option>
+									<option>Flowers & Plants</option>
+									<option>Experiences</option>
+									<option>Beauty</option>
+									<option>Tech</option>
+									<option>Baby</option>
+									<option>Beverages</option>
+									<option>Pets</option>
+									<option>Goody Boxes</option>
+								</select>
+							</div>
+							<div class="gifts-selecter">
+								<select class="form-select" aria-label="Default select example">
+									<option selected="">Price</option>
+									<option value="1">Last 6 months</option>
+									<option value="2">Last 1 Year</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="emporium_pop_view_main define_float">
+						<div class="backTopage">
+							<a href="javascript:void(0)">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+									<path d="M8.99996 0.5L10.5275 2.08625L4.48246 8.375H17.6666V10.625H4.48246L10.5275 16.9137L8.99996 18.5L0.333294 9.5L8.99996 0.5Z" fill="#FF385C"/>
+								</svg>
+								<span class="previous_page_name">All Brands</span>
+							</a>
+						</div>
+						<div class="product_hightlight">
+							<div class="gt-gift-detail-area">
+								<div class="row">
+									<div class="col col-12 col-md-12 col-lg-6 col-xl-6 gift_slider">
+										<div class="pop_page_slide">
+											<div class="gt-gift-popup-slide">
+												<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+											</div>
+											<div class="gt-gift-popup-slide">
+												<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+											</div>
+											<div class="gt-gift-popup-slide">
+												<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+											</div>
+											<div class="gt-gift-popup-slide">
+												<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-6 col-xl-6 gift_content">
+										<div class="gt-popup-gift-content">
+											<div class="brands_logo_pop">
+												<img src="assets/images/brand_pop.png">
+											</div>
+											<h2 class="gt-popup-gift-title">Levain Bakery</h2>
+											<p class="gt-popup-gift-description">Set the precise temperature of your hot beverage, so you can enjoy your drink from the first sip to the last drop.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Browse Gifts Section End -->
+
+		</main>
+		<footer class="gt-site-footer ">
+			<div class="container ">
+				<div class="row justify-content-between ">
+					<div class="col col-12 col-md-2 col-lg-2 ">
+						<div class="gt-site-footer-logo ">
+							<img src="assets/images/logo-light.svg " alt="logo-light " class="img-fluid ">
+						</div>
+					</div>
+					<div class="col col-6 col-md-3 col-lg-3 ">
+						<div class="gt-site-footer-menu ">
+							<h3 class="gt-site-footer-menu-title ">About Kado
+							</h3>
+							<ul class="gt-footer-menu-list ">
+								<li class="gt-footer-menu-item ">
+									<a href="# " class="gt-footer-menu-link ">Gift Emporium</a>
+								</li>
+								<li class="gt-footer-menu-item ">
+									<a href="# " class="gt-footer-menu-link ">Contact Us </a>
+								</li>
+								<li class="gt-footer-menu-item ">
+									<a href="# " class="gt-footer-menu-link ">Gift History</a>
+								</li>
+								<li class="gt-footer-menu-item ">
+									<a href="# " class="gt-footer-menu-link ">Gift Finder</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-6 col-md-2 col-lg-2 ">
+						<div class="gt-site-footer-menu ">
+							<h3 class="gt-site-footer-menu-title ">For Business </h3>
+							<ul class="gt-footer-menu-list ">
+								<li class="gt-footer-menu-item ">
+									<a href="# " class="gt-footer-menu-link ">Contact Us</a>
+								</li>
+								<li class="gt-footer-menu-item ">
+									<a href="# " class="gt-footer-menu-link ">Browse Gifts</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-6 col-md-2 col-lg-2 d-none d-md-block ">
+						<div class="gt-site-footer-menu ">
+							<h3 class="gt-site-footer-menu-title ">App</h3>
+							<div class="gt-app-content ">
+								<div class="gt-app-qr-code ">
+									<img src="assets/images/app-qr-code.png " alt="app-qr-code " class="img-fluid ">
+								</div>
+								<p class="gt-app-qr-description ">Scan to download the Goody app</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="gt-site-info-content ">
+					<p class="gt-site-info-description ">© 2022 Kado, Inc.Terms of UsePrivacy Policy</p>
+					<ul class="gt-site-social-list ">
+						<li class="gt-site-social-item ">
+							<a href="# " class="gt-site-social-link ">
+								<i class="fa-brands fa-instagram "></i>
+							</a>
+						</li>
+						<li class="gt-site-social-item ">
+							<a href="# " class="gt-site-social-link ">
+								<i class="fa-brands fa-twitter "></i>
+							</a>
+						</li>
+						<li class="gt-site-social-item ">
+							<a href="# " class="gt-site-social-link ">
+								<i class="fa-brands fa-linkedin-in "></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- Site Footer End -->
+		
+		<!-- Link All JS -->
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/scrollreveal.js"></script>
+		<script src="assets/js/scrollbar.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/select2.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+		
+		
+		<script>
+			
+			jQuery(document).ready(function(){
+				if (jQuery(window).width() > 768) {
+				jQuery('.scroll-main').scrollbar();
+				}
+				else {
+				
+				}
+				
+			});
+
+			jQuery(document).ready(function(){
+				if (jQuery(window).width() > 768) {
+				jQuery('.modal_selected_item').scrollbar();
+				}
+				else {
+				
+				}
+				
+			});
+		</script>
+
+		
+		
+	</body>
+
+	</html>
