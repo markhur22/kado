@@ -9259,8 +9259,10 @@ body > .select2-container{    z-index: 9999;}
     width: 45px !important;
     right: 10px;
     top: -8px;
-	display:none;
+	display:none;         
 }
+
+
 /* #cardsModal .gt-browse-gift-header .select_custom_main button {
     top: 8px;
 } */
