@@ -9261,9 +9261,9 @@ body > .select2-container{    z-index: 9999;}
     top: -8px;
 	display:none;
 }
-#cardsModal .gt-browse-gift-header .select_custom_main button {
+/* #cardsModal .gt-browse-gift-header .select_custom_main button {
     top: 8px;
-}
+} */
 #cardsModal .gt-browse-gift-header .select_custom_main input:focus {
     box-shadow: 0 0 2px 1px rgb(0 0 0 / 10%) !important;
     border-radius: 50px;
