@@ -1,3 +1,12 @@
+/*--  CSS OF browse-gift-emporium-pop.html page  --*/
+
+.emporium_pop_view_main {      padding: 0 76px;  }
+.emporium_pop_view_main .backTopage a {      font-family: 'Lato', sans-serif;      font-style: normal;      font-weight: 700;      font-size: 20px;      line-height: 24px;      letter-spacing: 0.02em;      color: #FF385C;      text-decoration: none;  }
+.emporium_pop_view_main .backTopage svg {      margin-right: 14px;  }
+.emporium_pop_view_main .backTopage {      width: 100%;      float: left;      margin-bottom: 37px;  }
+.product_hightlight .gt-gift-detail-area {      width: 100%;      float: left;  }
+.product_hightlight .gt-gift-detail-area .gift_slider {      padding: 0;  }
+.product_hightlight .gt-gift-detail-area .gift_slider button {      display: none;  }
 html.search_open .browse-gift-header { display: none; }
 .forget-psw { width: 100%; float: left; margin: 4px 0 0 0; }
 .forget-psw a {     text-underline-offset: 4px; font-style: normal; font-weight: 400; font-size: 16px; line-height: 19px; letter-spacing: 0.02em; color: #414141; transition: all ease 0.3s; }
@@ -9259,8 +9268,10 @@ body > .select2-container{    z-index: 9999;}
     width: 45px !important;
     right: 10px;
     top: -8px;
-	display:none;
+	display:none;         
 }
+
+
 /* #cardsModal .gt-browse-gift-header .select_custom_main button {
     top: 8px;
 } */
