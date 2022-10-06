@@ -1,5 +1,16 @@
 $(document).ready(function() {
 	
+	
+	$('.gt-gift-veriation-card-title button').click(function(){
+		$(this).parent().next().slideToggle();
+	});
+	
+	$('.gift_verification_body_inner > button').click(function(){
+		$(this).parent().children('.gt-gift-veriation-card-description').slideToggle();
+	});
+		
+	
+	
 	$(document).on("click",".show_search_filter button", function(e) { console.log('gg');
 		$('.showed_search_filter').removeClass('hide_search_filter');
 		$('.show_search_filter').addClass('hide_search_filter');
