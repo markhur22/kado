@@ -366,21 +366,23 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal_main_inner_item">
-                    <div class="modal_main_item">
+                    <div class="pop-previous_close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M21.6672 9.66634H5.44053L12.8939 2.21301L11.0005 0.333008L0.333862 10.9997L11.0005 21.6663L12.8805 19.7863L5.44053 12.333H21.6672V9.66634Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal_main_item swap_pop_main_item choose_pop_main_item">
                         <div class="modal_full_item">
                             <div class="modal-header emporium-modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                        <path d="M21.6672 9.66634H5.44053L12.8939 2.21301L11.0005 0.333008L0.333862 10.9997L11.0005 21.6663L12.8805 19.7863L5.44053 12.333H21.6672V9.66634Z" fill="black"/>
-                                    </svg>
-                                </button>
                                 <h5 class="modal-title" id="giftEmporiumModalLabel">Browse Gifts</h5>
                             </div>
                             <div class="emporium-modal-body">
                                 <div class="gt-gift-detail-area">
                                     <div class="row">
                                         <div class="col col-12 col-md-12 col-lg-6 col-xl-6 gift_slider">
-                                            <div class="gt-gift-popup-slider">
+                                            <div class="gt-gift-popup-slider pop_page_slide">
                                                 <div class="gt-gift-popup-slide">
                                                     <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
                                                 </div>
@@ -444,10 +446,10 @@
                                                                             </svg>
                                                                         </span>
                                                                     </a>
-                                                                    <div class="gift_variation_price gift_variation_price_desktop_show">
+                                                                    <!-- <div class="gift_variation_price gift_variation_price_desktop_show">
                                                                         <h2 class="gt-gift-veriation-price">$100</h2>
-                                                                        <!--span class="gt-gift-shipping-label">$5 postage</span-->
-                                                                    </div>
+                                                                        <span class="gt-gift-shipping-label">$5 postage</span>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -506,10 +508,10 @@
                                                                             </svg>
                                                                         </span>
                                                                     </a>
-                                                                    <div class="gift_variation_price gift_variation_price_desktop_show">
+                                                                    <!-- <div class="gift_variation_price gift_variation_price_desktop_show">
                                                                         <h2 class="gt-gift-veriation-price">$100</h2>
-                                                                        <!--span class="gt-gift-shipping-label">$5 postage</span-->
-                                                                    </div>
+                                                                        <span class="gt-gift-shipping-label">$5 postage</span>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -551,7 +553,7 @@
                                                             <div class="gt-gift-veriation-card-body">
                                                                 <div class="gift_verification_body_inner">
                                                                     <h3 class="gt-gift-veriation-card-title">
-                                                                        <button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#ollapsethirc" aria-expanded="false" aria-controls="collapsethirc">
+                                                                        <button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapsethirc" aria-expanded="false" aria-controls="collapsethirc">
                                                                             Soma Glass Straw with Travel Case
                                                                         </button>
                                                                     </h3>
@@ -569,14 +571,14 @@
                                                                             </svg>
                                                                         </span>
                                                                     </a>
-                                                                    <div class="gift_variation_price gift_variation_price_desktop_show">
+                                                                    <!-- <div class="gift_variation_price gift_variation_price_desktop_show">
                                                                         <h2 class="gt-gift-veriation-price">$100</h2>
-                                                                        <!--span class="gt-gift-shipping-label">$5 postage</span-->
-                                                                    </div>
+                                                                        <span class="gt-gift-shipping-label">$5 postage</span>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="ollapsethirc" class="accordion-collapse collapse" aria-labelledby="headingOne" style="">
+                                                        <div id="collapsethirc" class="accordion-collapse collapse" aria-labelledby="headingOne" style="">
                                                             <div class="accordion-body">
                                                                 <span>Your recipient can select from:</span>
                                                                 <ul class="gift_sizes">
@@ -630,7 +632,7 @@
                                     </div>
                                 </div>
                                 <div class="product_card_detail">
-                                    <h3 class="gt-gift-veriation-card-title">
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">
                                         <button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
                                             Soma Glass Straw with Travel <br>Case
                                         </button>
@@ -692,7 +694,7 @@
                                     </div>
                                 </div>
                                 <div class="product_card_detail">
-                                    <h3 class="gt-gift-veriation-card-title">
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">
                                         <button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
                                             Soma Glass Straw with Travel <br>Case
                                         </button>
@@ -754,7 +756,7 @@
                                     </div>
                                 </div>
                                 <div class="product_card_detail">
-                                    <h3 class="gt-gift-veriation-card-title">
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">
                                         <button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
                                             Soma Glass Straw with Travel <br>Case
                                         </button>

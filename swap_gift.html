@@ -14,16 +14,6 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/scrollbar.css">
-
-    <!-- Link All JS -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/scrollreveal.js"></script>
-	<script src="assets/js/scrollbar.js"></script>
-    <script src="assets/js/custom.js"></script>
-
-
 </head>
 
 <body class="gt-site">
@@ -366,41 +356,31 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal_main_inner_item">
-                    <div class="modal_main_item">
+                    <div class="pop-previous_close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M21.6672 9.66634H5.44053L12.8939 2.21301L11.0005 0.333008L0.333862 10.9997L11.0005 21.6663L12.8805 19.7863L5.44053 12.333H21.6672V9.66634Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal_main_item swap_pop_main_item">
                         <div class="modal_full_item">
                             <div class="modal-header emporium-modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                        <path d="M21.6672 9.66634H5.44053L12.8939 2.21301L11.0005 0.333008L0.333862 10.9997L11.0005 21.6663L12.8805 19.7863L5.44053 12.333H21.6672V9.66634Z" fill="black"/>
-                                    </svg>
-                                </button>
-                                <h5 class="modal-title" id="giftEmporiumModalLabel">Browse Gifts</h5>
+                                <h5 class="modal-title" id="giftEmporiumModalLabel">Swap Gift</h5>
                             </div>
                             <div class="emporium-modal-body">
                                 <div class="gt-gift-detail-area">
                                     <div class="row">
                                         <div class="col col-12 col-md-12 col-lg-6 col-xl-6 gift_slider">
-                                            <div class="gt-gift-popup-slider">
+                                            <div class="pop_page_slide">
                                                 <div class="gt-gift-popup-slide">
-                                                    <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
-                                                </div>
-                                                <div class="gt-gift-popup-slide">
-                                                    <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
-                                                </div>
-                                                <div class="gt-gift-popup-slide">
-                                                    <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
-                                                </div>
-                                                <div class="gt-gift-popup-slide">
-                                                    <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+                                                    <img src="assets/images/pop_swap_slide.png" alt="levain-bakery-popup-img" class="img-fluid">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col col-12 col-md-12 col-lg-6 col-xl-6 gift_content">
                                             <div class="gt-popup-gift-content">
-                                                <div class="brands_logo_pop">
-                                                    <img src="assets/images/brand_pop.png">
-                                                </div>
-                                                <h2 class="gt-popup-gift-title">Levain Bakery</h2>
+                                                <h2 class="gt-popup-gift-title">Soma</h2>
                                                 <p class="gt-popup-gift-description">Set the precise temperature of your hot beverage, so you can enjoy your drink from the first sip to the last drop.
                                                 </p>
                                             </div>
@@ -417,7 +397,7 @@
                                                     <div class="accordion-header" id="headingOne">
                                                         <div class="gift_acc_inner">
                                                             <div class="gt-gift-veriation-img">
-                                                                <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+                                                                <img src="assets/images/swap_list_image.png" alt="veriation-ember-img" class="img-fluid">
                                                                 <div class="gift_variation_price gift_variation_price_mobile_show">
                                                                     <h2 class="gt-gift-veriation-price">$100</h2>
                                                                     <!--span class="gt-gift-shipping-label">$5 postage</span-->
@@ -430,7 +410,7 @@
                                                                             Soma Glass Straw with Travel Case
                                                                         </button>
                                                                     </h3>
-                                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
+                                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning...</p>
                                                                     <button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                                         <a href="javscript:void(0);">View more details</a>
                                                                     </button>
@@ -444,10 +424,10 @@
                                                                             </svg>
                                                                         </span>
                                                                     </a>
-                                                                    <div class="gift_variation_price gift_variation_price_desktop_show">
+                                                                    <!-- <div class="gift_variation_price gift_variation_price_desktop_show">
                                                                         <h2 class="gt-gift-veriation-price">$100</h2>
-                                                                        <!--span class="gt-gift-shipping-label">$5 postage</span-->
-                                                                    </div>
+                                                                        <span class="gt-gift-shipping-label">$5 postage</span>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -479,7 +459,7 @@
                                                     <div class="accordion-header" id="headingOne">
                                                         <div class="gift_acc_inner">
                                                             <div class="gt-gift-veriation-img">
-                                                                <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+                                                                <img src="assets/images/swap_list_image.png" alt="veriation-ember-img" class="img-fluid">
                                                                 <div class="gift_variation_price gift_variation_price_mobile_show">
                                                                     <h2 class="gt-gift-veriation-price">$100</h2>
                                                                     <!--span class="gt-gift-shipping-label">$5 postage</span-->
@@ -492,7 +472,7 @@
                                                                             Soma Glass Straw with Travel Case
                                                                         </button>
                                                                     </h3>
-                                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
+                                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning...</p>
                                                                     <button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapsesec" aria-expanded="false" aria-controls="collapsesec">
                                                                         <a href="javscript:void(0);">View more details</a>
                                                                     </button>
@@ -506,10 +486,10 @@
                                                                             </svg>
                                                                         </span>
                                                                     </a>
-                                                                    <div class="gift_variation_price gift_variation_price_desktop_show">
+                                                                    <!-- <div class="gift_variation_price gift_variation_price_desktop_show">
                                                                         <h2 class="gt-gift-veriation-price">$100</h2>
-                                                                        <!--span class="gt-gift-shipping-label">$5 postage</span-->
-                                                                    </div>
+                                                                        <span class="gt-gift-shipping-label">$5 postage</span>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -542,7 +522,7 @@
                                                     <div class="accordion-header" id="headingOne">
                                                         <div class="gift_acc_inner">
                                                             <div class="gt-gift-veriation-img">
-                                                                <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+                                                                <img src="assets/images/swap_list_image.png" alt="veriation-ember-img" class="img-fluid">
                                                                 <div class="gift_variation_price gift_variation_price_mobile_show">
                                                                     <h2 class="gt-gift-veriation-price">$100</h2>
                                                                     <!--span class="gt-gift-shipping-label">$5 postage</span-->
@@ -555,7 +535,7 @@
                                                                             Soma Glass Straw with Travel Case
                                                                         </button>
                                                                     </h3>
-                                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
+                                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning...</p>
                                                                     <button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapsethirc" aria-expanded="false" aria-controls="collapsethirc">
                                                                         <a href="javscript:void(0);">View more details</a>
                                                                     </button>
@@ -569,10 +549,10 @@
                                                                             </svg>
                                                                         </span>
                                                                     </a>
-                                                                    <div class="gift_variation_price gift_variation_price_desktop_show">
+                                                                    <!-- <div class="gift_variation_price gift_variation_price_desktop_show">
                                                                         <h2 class="gt-gift-veriation-price">$100</h2>
-                                                                        <!--span class="gt-gift-shipping-label">$5 postage</span-->
-                                                                    </div>
+                                                                        <span class="gt-gift-shipping-label">$5 postage</span>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -614,23 +594,23 @@
                             <div class="modal_selected_item_inner">
                                 <div class="gift_acc_inner">
                                     <div class="gt-gift-veriation-img">
-                                        <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+                                        <img src="assets/images/selected_item_pop.png" alt="veriation-ember-img" class="img-fluid">
                                         <div class="gift_variation_price gift_variation_price_mobile_show">
                                             <h2 class="gt-gift-veriation-price">$200</h2>
                                             <!--span class="gt-gift-shipping-label">$5 postage</span-->
                                         </div>
                                     </div>
-                                    <div class="gt-gift-veriation-card-body">
+                                    <!-- <div class="gt-gift-veriation-card-body">
                                         <div class="gt-gift-veriation-card-footer">
                                             <div class="gift_variation_price gift_variation_price_desktop_show">
                                                 <h2 class="gt-gift-veriation-price">$100</h2>
-                                                <!--span class="gt-gift-shipping-label">$5 postage</span-->
+                                                <span class="gt-gift-shipping-label">$5 postage</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product_card_detail">
-                                    <h3 class="gt-gift-veriation-card-title">
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">
                                         <button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
                                             Soma Glass Straw with Travel <br>Case
                                         </button>
@@ -676,23 +656,23 @@
                             <div class="modal_selected_item_inner">
                                 <div class="gift_acc_inner">
                                     <div class="gt-gift-veriation-img">
-                                        <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+                                        <img src="assets/images/selected_item_pop.png" alt="veriation-ember-img" class="img-fluid">
                                         <div class="gift_variation_price gift_variation_price_mobile_show">
                                             <h2 class="gt-gift-veriation-price">$200</h2>
                                             <!--span class="gt-gift-shipping-label">$5 postage</span-->
                                         </div>
                                     </div>
-                                    <div class="gt-gift-veriation-card-body">
+                                    <!-- <div class="gt-gift-veriation-card-body">
                                         <div class="gt-gift-veriation-card-footer">
                                             <div class="gift_variation_price gift_variation_price_desktop_show">
                                                 <h2 class="gt-gift-veriation-price">$100</h2>
-                                                <!--span class="gt-gift-shipping-label">$5 postage</span-->
+                                                <span class="gt-gift-shipping-label">$5 postage</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product_card_detail">
-                                    <h3 class="gt-gift-veriation-card-title">
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">
                                         <button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
                                             Soma Glass Straw with Travel <br>Case
                                         </button>
@@ -738,23 +718,23 @@
                             <div class="modal_selected_item_inner">
                                 <div class="gift_acc_inner">
                                     <div class="gt-gift-veriation-img">
-                                        <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+                                        <img src="assets/images/selected_item_pop.png" alt="veriation-ember-img" class="img-fluid">
                                         <div class="gift_variation_price gift_variation_price_mobile_show">
                                             <h2 class="gt-gift-veriation-price">$200</h2>
                                             <!--span class="gt-gift-shipping-label">$5 postage</span-->
                                         </div>
                                     </div>
-                                    <div class="gt-gift-veriation-card-body">
+                                    <!-- <div class="gt-gift-veriation-card-body">
                                         <div class="gt-gift-veriation-card-footer">
                                             <div class="gift_variation_price gift_variation_price_desktop_show">
                                                 <h2 class="gt-gift-veriation-price">$100</h2>
-                                                <!--span class="gt-gift-shipping-label">$5 postage</span-->
+                                                <span class="gt-gift-shipping-label">$5 postage</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product_card_detail">
-                                    <h3 class="gt-gift-veriation-card-title">
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">
                                         <button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
                                             Soma Glass Straw with Travel <br>Case
                                         </button>
@@ -846,7 +826,7 @@
                                     <img src="assets/images/soma.png" alt="veriation-ember-img" class="img-fluid">
                                 </div>
                                 <div class="gt-gift-veriation-card-body swaptwo-modal-card-body">
-                                    <h3 class="gt-gift-veriation-card-title">Soma Glass Straw with Travel Case</h3>
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">Soma Glass Straw with Travel Case</h3>
                                     <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
                                 </div>
                                 <div class="gt-gift-veriation-card-footer swaptwo-modal-footer">
@@ -860,7 +840,7 @@
                                     <img src="assets/images/soma.png" alt="veriation-ember-img" class="img-fluid">
                                 </div>
                                 <div class="gt-gift-veriation-card-body swaptwo-modal-card-body">
-                                    <h3 class="gt-gift-veriation-card-title">Soma Glass Straw with Travel Case</h3>
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">Soma Glass Straw with Travel Case</h3>
                                     <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
                                 </div>
                                 <div class="gt-gift-veriation-card-footer swaptwo-modal-footer">
@@ -874,7 +854,7 @@
                                     <img src="assets/images/soma.png" alt="veriation-ember-img" class="img-fluid">
                                 </div>
                                 <div class="gt-gift-veriation-card-body swaptwo-modal-card-body">
-                                    <h3 class="gt-gift-veriation-card-title">Soma Glass Straw with Travel Case</h3>
+                                    <h3 class="gt-gift-veriation-card-title swap_veri_card">Soma Glass Straw with Travel Case</h3>
                                     <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
                                 </div>
                                 <div class="gt-gift-veriation-card-footer swaptwo-modal-footer">
@@ -1161,6 +1141,13 @@
         </div>
     </div>
 </body>
+    <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/scrollreveal.js"></script>
+	<script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/custom.js"></script>
 <script>
 		
     jQuery(document).ready(function(){
