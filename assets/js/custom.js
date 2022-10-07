@@ -109,6 +109,14 @@ $(document).ready(function() {
         slidesToScroll: 1,
     });
 
+	$('.pop_page_slide').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
     $('.recommendation-slider').slick({
         dots: false,
         infinite: true,
