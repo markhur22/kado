@@ -88,7 +88,9 @@ body .form-control::placeholder{font-weight:500 !important;}
 }
 
 .scroll-wrapper.gt-gift-veriation-detail-area.scroll-main {     padding: 0 20px 0 0 !important; }
-.scroll-wrapper.scroll-main .gt-gift-veriation-detail-area.scroll-main {     height: calc(100vh - 430px) !important; }
+.scroll-wrapper.scroll-main .gt-gift-veriation-detail-area.scroll-main {
+    height: calc(100vh - 515px) !important;
+}
 .scroll-main .scroll-element.scroll-y {     height: 100%;     right: -30px;     top: 0;     width: 10px; }
 .scroll-main .scroll-element_outer {     overflow: hidden; }
 .scroll-main .scroll-element div {     display: block;     height: 100%;     right: 0;     top: 0;     width: 10px; 	border: none;     margin: 0;     padding: 0;     position: absolute;     z-index: 10; }
@@ -1918,13 +1920,13 @@ span.gt-faq-solved-icon {
     line-height: 43px;
     letter-spacing: -0.01em;
     color: #000000;
-    margin-bottom: 27px;
+    margin-bottom: 17px;
 }
 
 .gt-popup-gift-description {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 30px;
     color: #414141;
     margin-bottom: 0;
 }
@@ -8571,7 +8573,15 @@ div.gift_slider{    padding: 0 30px;}
 .gift_desc_main {     display: inline-block;     width: 100%;     vertical-align: top; }
 .faq-accordion-item .gift_desc_main p {     font-weight: 400;     font-size: 18px;     line-height: 35px;     color: #000;     float: left;     width: 100%;     margin: 0 0 6px 0; }
 ul.gift_desc_inner {     float: left;     width: 100%;     padding: 0 0 0 15px;     margin: 0; }
-ul.gift_desc_inner li {     float: left;     width: 100%;     margin: 0 0 22px 0;     font-weight: 400;     font-size: 16px;     line-height: 24px;     color: #000; }
+ul.gift_desc_inner li {
+    float: left;
+    width: 100%;
+    margin: 0 0 22px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+}
 ul.gift_desc_inner li:last-child {     margin: 0; }
 .giftEmporiumModal button.btn-close {     width: 27px;     height: 27px; }
 .modal-header.emporium-modal-header {     padding: 24px 32px 27px 46px; }
@@ -10026,10 +10036,11 @@ div.giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
 .modal_main_inner_item {
     height: calc(100% - 85px);
 }
-div.giftEmporiumModal.modal .modal-dialog .modal_main_item{padding: 35px 32px 35px 38px;}
+div.giftEmporiumModal.modal .modal-dialog .modal_main_item {
+    padding: 0px 32px 75px 38px;
+}
 div.giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
-    height: 100%;
-    
+    height: calc(100% - 85px);
     display: flex;
 }
 div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
@@ -10058,7 +10069,7 @@ div.giftEmporiumModal .gt-popup-gift-content {
     margin-left: 20px;
 }
 div.giftEmporiumModal .gt-gift-detail-area {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     padding-right: 30px;
     margin: 0;
 }
@@ -10501,6 +10512,8 @@ section.gt-send-gift-section .send-note-box.form-control.emojionearea .emojionea
     padding: initial !important;
     position: relative;
     margin-left: 29px !important;
+    height: fit-content;
+    max-height: 100%;
 }
 .emporium-modal-header button.btn-close {
     margin: 0 21px 0 0;
@@ -10551,6 +10564,33 @@ body.gt-site.home section {
     text-align: right;
 }
 
+.pop-previous_close{
+    width: 100%;
+    float: left;
+    padding: 0px 32px 0px 38px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-wrapper.gt-gift-veriation-detail-area.scroll-main.d-lg-block {
+    height: calc(100% - 336px);
+}
+.pop-previous_close button.btn-close {
+    background-image: none;
+    opacity: 1;
+}
+.modal_main_item.swap_pop_main_item .gift_slider {
+    padding: 0 7px;
+}
+.modal_main_item.swap_pop_main_item .gift_slider button {
+    display: none;
+}
+.modal_main_item.swap_pop_main_item .modal_selected_item_inner .gift_acc_inner .gt-gift-veriation-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
 /* new desktop changes starts here */
  
     
