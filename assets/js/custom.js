@@ -115,7 +115,7 @@ $(document).ready(function() {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-    });
+    }); 
 
     $('.recommendation-slider').slick({
         dots: false,
