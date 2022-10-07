@@ -10669,6 +10669,43 @@ div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_ite
 .browse_gift_pop .gt-gift-veriation-card-footer .gt-choose-gift-btn span {
     margin-left: 3px;
 }
+.link_ember img {
+    margin-left: 14px;
+}
+.browse_gift_pop h3.gt-gift-veriation-card-title {
+    pointer-events: none;
+}
+.browse_gift_pop .product_card_detail h3.gt-gift-veriation-card-title button::after {
+    display: none;
+}
+.sidebar_pro-sel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+.sidebar_pro-sel h3.gt-gift-veriation-card-title button {
+    margin: 0;
+}
+.sidebar_pro-sel .gt-gift-veriation-card-body h2.gt-gift-veriation-price {
+    font-size: 18px;
+    line-height: 28px;
+}
+.sidebar_pro-sel h3.gt-gift-veriation-card-title {
+    width: 80%;
+}
+.sidebar_pro-sel .gt-gift-veriation-card-body .gift_variation_price {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.browse_gift_pop .modal_selected_item .gt-gift-veriation-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.gt-gift-veriation-card div#FAQaccordionnew .sidebar_pro-sel {
+    margin: 0;
+}
 /* new desktop changes starts here */
  
     
@@ -13344,6 +13381,62 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
     .browse_gift_pop .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
         width: 100% !important;
         box-sizing: border-box !important;
+    }
+    .link_ember img {
+        display: none;
+    }
+    .browse_gift_pop .gift_variation_price.gift_variation_price_desktop_show {
+        display: none;
+    }
+    .browse_listbar .sidebar_pro-sel .gt-gift-veriation-card-body.d-none {
+        display: block !important;
+        margin: 0;
+        width: auto;
+    }
+    .browse_listbar .sidebar_pro-sel .gt-gift-veriation-card-body.d-none .gt-gift-veriation-card-footer {
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .browse_listbar .sidebar_pro-sel .gt-gift-veriation-card-body.d-none .gt-gift-veriation-card-footer .gift_variation_price {
+        display: block;
+        text-align: right;
+    }
+    .browse_listbar .sidebar_pro-sel h3.gt-gift-veriation-card-title {
+        width: 188px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .browse_listbar .sidebar_pro-sel .gt-gift-veriation-card-body.d-none .gt-gift-veriation-card-footer {
+        margin: 0;
+        justify-content: flex-end;
+        width: auto;
+    }
+    .gift_verification_body_inner .sidebar_pro-sel {
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .sidebar_pro-sel .gt-gift-veriation-card-body span.gt-gift-shipping-label {
+        padding: 0;
+    }
+    .browse_gift_pop .gift_variation_price.gift_variation_price_mobile_show {
+        display: none;
+    }
+    .model_select_mob_b .modal_selected_item_inner .product_card_detail a.btn.btn-primary.gt-choose-gift-btn {
+        padding: 12px 22px;
+    }
+    .gift_verification_body_inner .sidebar_pro-sel .gift_variation_price.gift_variation_price_desktop_show {
+        display: block;
+    }
+    .gt-gift-veriation-card-body.browse_listbar {
+        width: calc(100% - 171px);
+    }
+    .gift_verification_body_inner .sidebar_pro-sel .gt-gift-veriation-card-body {
+        width: auto;
+        margin: 0;
+    }
+    .gift_verification_body_inner .sidebar_pro-sel .gt-gift-veriation-card-body .gt-gift-veriation-card-footer {
+        margin: 0;
     }
 
 }
@@ -16303,6 +16396,18 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     div#swapModal.swap_modal_parent div#FAQaccordionnew .accordion-item.faq-accordion-item {
         padding: 20px;
     }
+    .gt-gift-veriation-card-body.browse_listbar {
+        width: 100%;
+    }
+    .link_ember a.btn.btn-primary.gt-choose-gift-btn {
+        width: 181px;
+        padding: 13px 19px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .browse_listbar .sidebar_pro-sel h3.gt-gift-veriation-card-title button.accordion-button {
+        font-size: 18px;
+    }
 }
 
 
@@ -16553,10 +16658,10 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         height: auto;
         margin: 0;
     }
-    .gt-gift-veriation-img img {
+    .swap_modal_paren .gt-gift-veriation-img img {
         display: none;
     }
-    .gt-gift-veriation-img img.swap_mob_view {
+    .swap_modal_paren .gt-gift-veriation-img img.swap_mob_view {
         display: block;
         margin: 0;
     }
@@ -16567,6 +16672,14 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
     .swap_modal_parent .gt-gift-veriation-card-footer {
         margin-top: 16px;
+    }
+    .gt-gift-veriation-img img {
+        display: none;
+    }
+    .browse_gift_pop .gt-gift-veriation-img img.swap_mob_view {
+        display: block;
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -17017,7 +17130,15 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 	.text_area_filed_main .counter_text {     bottom: 10px; }
     .emojionearea .emojionearea-picker{width:100%;}
 	.emojionearea .emojionearea-picker .emojionearea-wrapper{    width: 100%;}
-}
+    .browse_listbar .sidebar_pro-sel h3.gt-gift-veriation-card-title button.accordion-button {
+        font-size: 16px;
+    }
+    .browse_listbar .sidebar_pro-sel h3.gt-gift-veriation-card-title {
+        width: 130px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}  
 @media(max-width:370px) {
 	.discover_content h2 br{display:none;}
 	.final-brands-card-list .row {     grid-template-columns: repeat(1, 1fr); }
@@ -17174,6 +17295,7 @@ div.gift_sent_pop img {     max-width: 270px; }
 .birthday-thankyou-img { top: 21%; }
 .version-tab-link img { width: 18px; }
 .version-tab-item { padding: 0 10px 0 0; }
+
 }
 @media (max-width: 370px) {
     div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
