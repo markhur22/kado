@@ -9,28 +9,29 @@
     <title>Kado</title>
 
     <!-- Link All CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Link All JS -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/select2.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+	<link rel="stylesheet" href="assets/css/scrollbar.css">
+   
 </head>
 
 <body class="gt-site">
-    <!-- Site Header Start -->
+     <!-- Site Header Start -->
     <header class="gt-site-header sticky browse-gift-header">
         <div class="container">
             <nav class="navbar navbar-expand-xl home-navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/kado-logo.png" alt="Logo" class="img-fluid">
+                    <div class="categori-popup d-none">
+                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#categoriModal"><i class="fa-solid fa-bars"></i></a>
+
+                    </div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/kado-logo.svg" alt="Logo" class="img-fluid">
                     </a>
                     <button class="navbar-toggler home-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icons"></span>
@@ -55,52 +56,85 @@
                                 <a class="nav-link" href="send-gift.html">
                                     <img src="assets/images/find_gift.png" alt="" class="img-fluid me-3 d-inline-block d-xl-none"> Gift Finder</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="assets/images/logout.png" alt="" class="img-fluid me-3 d-inline-block d-xl-none"> Log In</a>
+							
+							<li class="nav-item mobile_show_logout">
+                                <a class="nav-link" href="index.html">
+                                    <img src="assets/images/logout.png" alt="" class="img-fluid me-3 d-inline-block d-xl-none"> Log Out</a>
                             </li>
-
+                            
                         </ul>
-
                     </div>
                     <li class="nav-item list-unstyled ms-auto">
-                        <a href="#" class="btn btn-primary">
+                        <a href="javascript:void(0);" class="btn btn-primary">
                             <span class="gt-send-gift-icon">
                                 <img src="assets/images/gift-icon.png" alt="">
                             </span>
                             <span>Send a Gift</span>
                         </a>
                     </li>
-                    <div class="btn-group gt-login-user-dropdown d-none d-xl-block">
+					<div class="btn-group gt-login-user-dropdown d-none d-xl-block">
                         <span class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                             <span class="gt-login-user-dropdown-profile">
-                                <img src="assets/images/profile_img.png" alt="user-img" class="img-fluid">
+                                M
                             </span>
                         <span></span> Hi Matthew
                         </span>
-                        <ul class="dropdown-menu dropdown-menu-lg-end">
-                            <li><button class="dropdown-item" type="button">Action</button></li>
-                            <li><button class="dropdown-item" type="button">Another action</button></li>
-                            <li><button class="dropdown-item" type="button">Something else here</button></li>
-                        </ul>
+                        <ul class="dropdown-menu user-profile" aria-labelledby="dropdownMenuButton1" style="">
+							<li>
+								<a class="dropdown-item profile-logout" href="index.html">
+									<svg width="22" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 5L5.41 6.41L3.83 8H12V10H3.83L5.41 11.58L4 13L0 9L4 5ZM16 2H9V0H16C17.1 0 18 0.9 18 2V16C18 17.1 17.1 18 16 18H9V16H16V2Z" fill="#414141"></path>
+									</svg>
+									<span>Log out</span> 
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="gift-help.html">
+									<svg width="22" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 22.59V18.99C3.99 18.73 0 14.57 0 9.5C0 4.26 4.26 0 9.5 0C14.74 0 19 4.26 19 9.5C19 14.45 15.56 19.43 10.43 21.9L9 22.59ZM9.5 2C5.36 2 2 5.36 2 9.5C2 13.64 5.36 17 9.5 17H11V19.3C14.64 17 17 13.22 17 9.5C17 5.36 13.64 2 9.5 2ZM8.5 13.5H10.5V15.5H8.5V13.5ZM10.5 12H8.5C8.5 8.75 11.5 9 11.5 7C11.5 5.9 10.6 5 9.5 5C8.4 5 7.5 5.9 7.5 7H5.5C5.5 4.79 7.29 3 9.5 3C11.71 3 13.5 4.79 13.5 7C13.5 9.5 10.5 9.75 10.5 12Z" fill="#414141"></path>
+									</svg>                                            
+									<span>Help</span> 
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="index.html">
+									<svg width="22" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 2.69L15 7.19V15H13V9H7V15H5V7.19L10 2.69ZM10 0L0 9H3V17H9V11H11V17H17V9H20L10 0Z" fill="#414141"></path>
+									</svg>
+									<span>Home</span>
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="account-details.html">
+									<svg width="22" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 14V13.35C2 13.01 2.16 12.69 2.41 12.54C4.1 11.53 6.03 11 8 11C8.03 11 8.05 11 8.08 11.01C8.18 10.31 8.38 9.64 8.67 9.03C8.45 9.01 8.23 9 8 9C5.58 9 3.32 9.67 1.39 10.82C0.51 11.34 0 12.32 0 13.35V16H9.26C8.84 15.4 8.51 14.72 8.29 14H2Z" fill="#414141"></path>
+										<path d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 2C9.1 2 10 2.9 10 4C10 5.1 9.1 6 8 6C6.9 6 6 5.1 6 4C6 2.9 6.9 2 8 2Z" fill="#414141"></path>
+										<path d="M18.7499 12C18.7499 11.78 18.7199 11.58 18.6899 11.37L19.8299 10.36L18.8299 8.63L17.3799 9.12C17.0599 8.85 16.6999 8.64 16.2999 8.49L15.9999 7H13.9999L13.6999 8.49C13.2999 8.64 12.9399 8.85 12.6199 9.12L11.1699 8.63L10.1699 10.36L11.3099 11.37C11.2799 11.58 11.2499 11.78 11.2499 12C11.2499 12.22 11.2799 12.42 11.3099 12.63L10.1699 13.64L11.1699 15.37L12.6199 14.88C12.9399 15.15 13.2999 15.36 13.6999 15.51L13.9999 17H15.9999L16.2999 15.51C16.6999 15.36 17.0599 15.15 17.3799 14.88L18.8299 15.37L19.8299 13.64L18.6899 12.63C18.7199 12.42 18.7499 12.22 18.7499 12ZM14.9999 14C13.8999 14 12.9999 13.1 12.9999 12C12.9999 10.9 13.8999 10 14.9999 10C16.0999 10 16.9999 10.9 16.9999 12C16.9999 13.1 16.0999 14 14.9999 14Z" fill="#414141"></path>
+									</svg>
+									<span>Account Details</span>
+								</a>
+							</li>
+						</ul>
                     </div>
+
                 </div>
             </nav>
         </div>
     </header>
     <!-- Site Header End -->
 
+
     <!-- Site Content Start -->
     <main class="gt-site-content">
 
-        <section class="gt-page-title-section page-title-style">
+        <!--section class="gt-page-title-section page-title-style">
             <div class="gt-page-perticels-left">
                 <img src="assets/images/page-title-perticels-left.png" alt="page-title-perticels-left" class="img-fluid">
             </div>
             <div class="gt-page-perticels-right">
                 <img src="assets/images/page-title-perticels-left.png" alt="page-title-perticels-left" class="img-fluid">
             </div>
-        </section>
+        </section-->
 
         <!-- Browse Gifts Section Start -->
         <section class="gt-browse-gift-section">
@@ -110,7 +144,7 @@
                         <div class="exchange-search-box">
                             <div class="exchange-search-btn d-block d-lg-none">
                                 <button class="btn btn-primary" type="button">
-                                    <img src="assets/images/White Search 2.png" alt="white-search-icon"
+                                    <img src="assets/images/search_icon_new.svg" alt="white-search-icon"
                                         class="img-fluid">
                                 </button>
                             </div>
@@ -120,7 +154,7 @@
                                 </span>
                                 <input type="text" class="form-control" placeholder="Search here...">
                                 <button class="btn btn-primary" type="button">
-                                    <img src="assets/images/White Search 2.png" alt="white-search-icon"
+                                    <img src="assets/images/search_icon_new.svg" alt="white-search-icon"
                                         class="img-fluid">
                                 </button>
                             </div>
@@ -153,17 +187,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col col-12 col-md-4 col-lg-3 d-none d-lg-block">
+                    <div class="col col-12 col-md-4 col-lg-3 d-none d-lg-block left_sidebar">
                         <div class="gt-sidebar">
                             <div class="gt-sidebar-header">
                                 <h3 class="gt-sidebar-title">Categories</h3>
                             </div>
                             <div class="gt-sidebar-body">
-                                <ul class="gt-sidebar-filter-list">
+                                <ul class="gt-sidebar-filter-list gt_browse_gift_list_filter">
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link active">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link active" data-cardname="">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -176,7 +209,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item ">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Featured">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +231,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="New">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +244,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Wellness">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +257,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Food">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -237,7 +270,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Home">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +285,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Flowers & Plants">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +298,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Experiences">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +311,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Beauty">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +324,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Tech">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -304,7 +337,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Baby">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +350,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Beverages">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -330,7 +363,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Pets">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -355,7 +388,7 @@
                                         </a>
                                     </li>
                                     <li class="gt-sidebar-filter-item">
-                                        <a href="#" class="gt-sidebar-filter-link">
+                                        <a href="javascript:void(0);" class="gt-sidebar-filter-link" data-cardname="Goody Boxes">
                                             <span class="gt-sidebar-filter-icon">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -373,671 +406,723 @@
                         </div>
                     </div>
                     <div class="col col-12 col-md-12 col-lg-9 right_content_bar">
-                        <div class="gt-gift-emporium-content login-gift-emporium">
-                            <div class="gt-gift-emporium-details">
-                                <h3 class="gt-section-title">Gift Emporium</h3>
-                                <p class="gt-gift-emporium-description">Smiles guaranteed with our hand-curated gift collection!
-                                    <br /> Spoilt for choice? <a href="#">Try our Gift Finder </a> to find the perfect gift.</p>
-                            </div>
-                            <div class="gt-gift-emporium-img">
-                                <img src="assets/images/gift-emporium-img.png" alt="gift-emporium-img" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="browse-one-search-box d-lg-none show_search_filter">
-                            <div class="browse-serach-box">
-                                <div class="exchange-search-box">
-                                    <div class="exchange-search-btn d-block d-lg-none">
-                                        <button class="btn btn-primary" type="button">
-                                            <img src="assets/images/search_icon_new.svg" alt="white-search-icon"
-                                                class="img-fluid">
-                                        </button>
-                                    </div>
-                                    <div class="gt-browse-gift-header-seach menu-selector gifts-items-header d-none d-lg-block">
-                                        <span class="gt-search-icon">
-                                            <img src="assets/images/search_icon_new.svg" alt="search-icon" class="img-fluid">
-                                        </span>
-                                        <input type="text" class="form-control" placeholder="Search here...">
-                                        <button class="btn btn-primary" type="button">
-                                            <img src="assets/images/White Search 2.png" alt="white-search-icon"
-                                                class="img-fluid">
-                                        </button>
-                                    </div>
-                                </div>
-                                <!--div class="gt-search-content">
-                                    <div class="product-search-input">
-                                        <input type="text" class="form-control w-100" placeholder="Search">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </div>
-                                    <div class="gt-search-product-list">
-                                        <div class="gt-search-product-item">
-                                            <div class="gt-search-product-img">
-                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-search-product-details">
-                                                <h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
-                                                <p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
-                                            </div>
-                                        </div>
-                                        <div class="gt-search-product-item">
-                                            <div class="gt-search-product-img">
-                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-search-product-details">
-                                                <h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
-                                                <p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
-                                            </div>
-                                        </div>
-                                        <div class="gt-search-product-item">
-                                            <div class="gt-search-product-img">
-                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-search-product-details">
-                                                <h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
-                                                <p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div-->
+						<div class="gt-gift-emporium-main">
+							<div class="gt-gift-emporium-content">
+								<div class="gt-gift-emporium-details">
+									<h3 class="gt-section-title">Gift Emporium</h3>
+									<p class="gt-gift-emporium-description">Smiles guaranteed with our hand-curated gift collection! Spoilt for <br/ > choice? <a href="javascript:void(0);">Try our Gift Finder </a> to find the perfect gift.</p>
+								</div>
+								<div class="gt-gift-emporium-img">
+									<img src="assets/images/gift-emporium-img.png" alt="gift-emporium-img" class="img-fluid">
+								</div>
+							</div>
+							<div class="browse-one-search-box d-lg-none show_search_filter">
+								<div class="browse-serach-box">
+									<div class="exchange-search-box">
+										<div class="exchange-search-btn d-block d-lg-none">
+											<button class="btn btn-primary" type="button">
+												<img src="assets/images/search_icon_new.svg" alt="white-search-icon"
+													class="img-fluid">
+											</button>
+										</div>
+										<div class="gt-browse-gift-header-seach menu-selector gifts-items-header d-none d-lg-block">
+											<span class="gt-search-icon">
+												<img src="assets/images/gift-search.png" alt="search-icon" class="img-fluid">
+											</span>
+											<input type="text" class="form-control inputSearchgifts" placeholder="Search gifts...">
+											<!--select id="inputSearchgiftsm"
+												class="form-select from-select2-Searchgifts searchgifts" multiple="multiple">
+												<option>Birthday wishes</option>
+												<option>Birthday party</option>
+												<option>Birthday cake</option>
+												<option>Birthday kids</option>
+												<option>Birthday jokers</option>
+											</select-->
+											<button class="btn btn-primary" type="button">
+												<img src="assets/images/White Search 2.png" alt="white-search-icon"
+													class="img-fluid">
+											</button>
+										</div>
+									</div>
+									<!--div class="gt-search-content">
+										<div class="product-search-input">
+											<input type="text" class="form-control" placeholder="Search">
+											<i class="fa-solid fa-xmark"></i>
+										</div>
+										<div class="gt-search-product-list">
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
+													<p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
+												</div>
+											</div>
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
+													<p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
+												</div>
+											</div>
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">DUEX Cookie Dough</h3>
+													<p class="gt-search-product-description">DEUX takes nostalgic treats and enhances them vitamins, collagen & protein. Think cookie dough...</p>
+												</div>
+											</div>
+										</div>
+									</div-->
+									<a href="javascript:void(0);" class="browse-categori-popup mx-auto d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#categoriModal">Browse Categories <i class="fa-solid fa-angle-down"></i></a>
+									<!-- <select name="menu" id="menu" class="form-select gift-modal-select w-50 d-block d-lg-none mx-auto" >
+										<option>Browse categories</option>
+										<option>Featured</option>
+										<option>New</option>
+										<option>Wellness</option>
+										<option>Food</option>
+										<option>Home</option>
+										<option>Flowers &amp; Plants</option>
+										<option>Experiences</option>
+										<option>Beauty</option>
+										<option>Tech</option>
+										<option>Baby</option>
+										<option>Beverages</option>
+										<option>Pets</option>
+										<option>Goody Boxes</option>
+									</select> -->
+									<div class="gifts-selecter">
+										<!-- <select class="form-select" aria-label="Default select example">
+											<option selected="">Price</option> -->
+										<!-- <option value="1">Last 6 months</option> -->
+										<!-- <option value="2">Last 1 Year</option> -->
+										<!-- </select> -->
+										<a href="javascript:void(0);" class="btn gift-select-btn" data-bs-toggle="modal" data-bs-target="#PriceModal">Price</a>
+									</div>
 
-                                <a href="#" class="browse-categori-popup mx-auto d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#categoriModal">Browse categories <i class="fa-solid fa-angle-down"></i></a>
-                                <!-- <select name="menu" id="menu" class="form-select gift-modal-select w-50 d-block d-lg-none mx-auto">
-                                    <option>Browse categories</option>
-                                    <option>Featured</option>
-                                    <option>New</option>
-                                    <option>Wellness</option>
-                                    <option>Food</option>
-                                    <option>Home</option>
-                                    <option>Flowers &amp; Plants</option>
-                                    <option>Experiences</option>
-                                    <option>Beauty</option>
-                                    <option>Tech</option>
-                                    <option>Baby</option>
-                                    <option>Beverages</option>
-                                    <option>Pets</option>
-                                    <option>Goody Boxes</option>
-                                </select> -->
-                                <div class="gifts-selecter">
+								</div>
+							</div>
+							<div class="gt-search-gift-content showed_search_filter browse-gift-space hide_search_filter">
+								<div class="gt-search-gift-content-inner">
+									<button class="btn btn-primary card-categari-show d-block d-lg-none" type="button">
+										<img src="assets/images/close-btn.svg" alt="white-search-icon" class="img-fluid">
+									</button>
+									<input class="searchgiftmobilebrowse" type="text" placeholder="Search gifts...">
+								</div>
+							</div>
+							<div class="gt-browse-gift-header">
+								<h3 class="gt-browse-gift-header-label"><span>29 gifts</span> in All Categories</h3>
+								<div class="gt-browse-gift-header-seach">
+									<span class="gt-search-icon">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+												fill="#414141" />
+										</svg>
+									</span>
+									<input value="" type="text" class="form-control inputSearchgifts" placeholder="Search categories...">
+									<!--div class="select_custom_main">
+										<div class="custom_serach">
+											<select id="inputSearchgifts"
+												class="form-select from-select2-Searchgifts searchgifts" multiple="multiple">
+												<option>Birthday wishes</option>
+												<option>Birthday party</option>
+												<option>Birthday cake</option>
+												<option>Birthday kids</option>
+												<option>Birthday jokers</option>
+											</select>
+										</div>
+									</div-->	
+									<button class="btn btn-primary" type="button">
+										<img src="assets/images/search_icon_new.svg" alt="white-search-icon"
+											class="img-fluid searchicon">
+										<img style="display:none;" src="assets/images/close-btn.svg" alt="white-close-icon"
+											class="img-fluid crossicon">
+									</button>
+									<!-- <div class="gt-search-content">
+										<div class="gt-search-product-list">
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">Devoción</h3>
+													<p class="gt-search-product-description">Nam cursus nunc nulla, at gravida arcu imperdiet id ut vestibul</p>
+												</div>
+											</div>
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">Devoción</h3>
+													<p class="gt-search-product-description">Nam cursus nunc nulla, at gravida arcu imperdiet id ut vestibul</p>
+												</div>
+											</div>
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">Devoción</h3>
+													<p class="gt-search-product-description">Nam cursus nunc nulla, at gravida arcu imperdiet id ut vestibul</p>
+												</div>
+											</div>
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">Devoción</h3>
+													<p class="gt-search-product-description">Nam cursus nunc nulla, at gravida arcu imperdiet id ut vestibul</p>
+												</div>
+											</div>
+											<div class="gt-search-product-item">
+												<div class="gt-search-product-img">
+													<img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
+												</div>
+												<div class="gt-search-product-details">
+													<h3 class="gt-search-product-title">Devoción</h3>
+													<p class="gt-search-product-description">Nam cursus nunc nulla, at gravida arcu imperdiet id ut vestibul</p>
+												</div>
+											</div>
+										</div>
+									</div> -->
+								</div>
+								<select class="form-select gt-price-select" aria-label="Default select example">
+									<option disabled selected>Price </option>
+									<option value="0">All </option>
+									<option value="1">< $25 </option>
+									<option value="2">$25 - $50</option>
+									<option value="3">$50 - $75</option>
+									<option value="4">$75 - $100</option>
+									<option value="5">$100 - $200</option>
+									<option value="6">$200 +</option>
+								</select>
+							</div>
+							
+							<h3 class="gt-browse-gift-header-label all-categori-title d-block d-lg-none"><span>29 gifts</span> in All Categories</h3>
+							<div class="gt-browse-gift-content final-browse-card-list">
+								<div class="row">
+									<div class="Store___StyledDiv12-cjtqn9-16 kMkeZn noresultfound" style="display: none;"><div class="Store___StyledDiv13-cjtqn9-17 gTpBLq">No luck this time!</div><div class="Store___StyledDiv14-cjtqn9-18 hlbHzO">Try searching for something else.</div></div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/levain-bakery-img.png" alt="levain-bakery" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Levain Bakery</h3>
+													<p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
+													<div class="gt-gift-brand-logo">
+														<img src="assets/images/brand.png">
+													</div>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Birthday</span>
+										<span style="display:none;" class="gt-filter-label-filter">Baby</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/homage-img.png" alt="homage-img" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">HOMAGE</h3>
+													<p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Thank you</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/devocion-img.png" alt="devocion-img" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Devoción</h3>
+													<p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Tech</span>
+										<span style="display:none;" class="gt-filter-label-filter">Beauty</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/featured-books-img.png" alt="featured-books-img" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Featured Books by Black Authors</h3>
+													<p class="gt-gift-card-description">These books by famous black authors each capture and celebrate ....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Flowers & Plants</span>
+										<span style="display:none;" class="gt-filter-label-filter">Food</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/levain-bakery-img2.png" alt="levain-bakery" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Levain Bakery</h3>
+													<p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Flowers & Plants</span>
+										<span style="display:none;" class="gt-filter-label-filter">Food</span>
+										<span style="display:none;" class="gt-filter-label-filter">Home</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/homage-img2.png" alt="homage-img2" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">HOMAGE</h3>
+													<p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Flowers & Plants</span>
+										<span style="display:none;" class="gt-filter-label-filter">Food</span>
+										<span style="display:none;" class="gt-filter-label-filter">Home</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/devocion-img2.png" alt="devocion-img2" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Devoción</h3>
+													<p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path fill-rule="evenodd" clip-rule="evenodd"
+																	d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
+																	fill="black" />
+															</svg>
 
-                                    <!-- <select class="form-select" aria-label="Default select example">
-                                        <option selected="">Price</option> -->
-                                    <!-- <option value="1">Last 6 months</option> -->
-                                    <!-- <option value="2">Last 1 Year</option> -->
-                                    <!-- </select> -->
-                                    <a href="#" class="btn gift-select-btn" data-bs-toggle="modal" data-bs-target="#PriceModal">Price</a>
-                                </div>
-
-                            </div>
-                        </div>
-						<div class="gt-search-gift-content showed_search_filter hide_search_filter">
-							<div class="gt-search-gift-content-inner">
-								<button class="btn btn-primary card-categari-show d-block d-lg-none" type="button">
-									<img src="assets/images/close-btn.svg" alt="white-search-icon" class="img-fluid">
-								</button>
-								<input type="text" placeholder="Search gifts...">
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Goody Boxes</span>
+										<span style="display:none;" class="gt-filter-label-filter">Pets</span>
+										<span style="display:none;" class="gt-filter-label-filter">Home</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/featured-books-img2.png" alt="featured-books-img2" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Featured Books by Black Authors</h3>
+													<p class="gt-gift-card-description">These books by famous black authors each capture and celebrate ....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/levain-bakery-img3.png" alt="levain-bakery-img3" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Levain Bakery</h3>
+													<p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+										<span style="display:none;" class="gt-filter-label-filter">Goody Boxes</span>
+										<span style="display:none;" class="gt-filter-label-filter">Pets</span>
+										<span style="display:none;" class="gt-filter-label-filter">Home</span>
+										<span style="display:none;" class="gt-filter-label-filter">New</span>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/homage-img3.png" alt="homage-img3" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">HOMAGE KADO</h3>
+													<p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/devocion-img3.png" alt="devocion-img3" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Devoción</h3>
+													<p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/featured-books-img3.png" alt="featured-books-img3" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Featured Books by Black Authors</h3>
+													<p class="gt-gift-card-description">These books by famous black authors each capture and celebrate ....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/levain-bakery-img4.png" alt="levain-bakery-img4" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Levain Bakery</h3>
+													<p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/homage-img4.png" alt="homage-img4" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">HOMAGE</h3>
+													<p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/devocion-img4.png" alt="devocion-img4" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title">Devoción</h3>
+													<p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col col-12 col-md-12 col-lg-12 cardlist" >
+										<a href="javascript:void(0);" class="text-decoration-none gt-gift-card-link">
+											<div class="gt-gift-card final-gift-card">
+												<div class="gt-gift-card-img">
+													<img src="assets/images/featured-books-img4.png" alt="featured-books-img4" class="img-fluid">
+												</div>
+												<div class="gt-gift-card-body">
+													<h3 class="gt-gift-card-title
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													">Featured Books by Black Authors</h3>
+													<p class="gt-gift-card-description">These books by famous black authors each capture and celebrate Harry Potter....</p>
+												</div>
+												<div class="gt-gift-card-footer">
+													<div class="gt-gift-card-footer-detail">
+														<h3 class="gt-gift-price">$27+</h3>
+														<!--label class="gt-gift-shipping">$15 postage</label-->
+													</div>
+													<p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
+														<span class="gt-gift-shipping-label">View Collection</span>
+														<span>
+															<svg width="10" height="10" viewBox="0 0 492.432 492.432">
+																<g id="XMLID_134_">
+																	<path id="XMLID_135_" d="M142.238,492.432c-9.79,0-19.588-3.736-27.05-11.209c-14.945-14.934-14.945-39.162,0-54.098l180.9-180.909   l-180.9-180.91c-14.945-14.935-14.945-39.163,0-54.098c14.926-14.944,39.172-14.944,54.098,0l207.96,207.958   c14.943,14.935,14.943,39.164,0,54.1l-207.96,207.957C161.824,488.697,152.026,492.432,142.238,492.432z"></path>
+																</g>
+															</svg>
+														</span>
+													</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="gt-site-pagination">
+									<ul class="pagination">
+										<li class="page-item active" aria-current="page">
+											<span class="page-link">01</span>
+										</li>
+										<li class="page-item"><a class="page-link" href="javascript:void(0);">02</a></li>
+										<li class="page-item"><a class="page-link" href="javascript:void(0);">03</a></li>
+										<li class="page-item"><a class="page-link" href="javascript:void(0);">04</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
-                        <div class="gt-browse-gift-header">
-                            <h3 class="gt-browse-gift-header-label"><span>29 gifts</span> in All Categories</h3>
-                            <div class="gt-browse-gift-header-seach">
-                                <span class="gt-search-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
-                                            fill="#414141" />
-                                    </svg>
-                                </span>
-                                <input type="text" class="form-control " placeholder="Search here...">
-                                <button class="btn btn-primary" type="button">
-                                    <img src="assets/images/white-search-icon.png" alt="white-search-icon"
-                                        class="img-fluid">
-                                </button>
-                                <div class="gt-search-content">
-                                    <div class="gt-search-product-list">
-                                        <div class="gt-search-product-item">
-                                            <div class="gt-search-product-img">
-                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-search-product-details">
-                                                <h3 class="gt-search-product-title">Devoción</h3>
-                                                <p class="gt-search-product-description">Nam cursus nunc nulla, at gravida arcu imperdiet id ut vestibul</p>
-                                            </div>
-                                        </div>
-                                        <div class="gt-search-product-item">
-                                            <div class="gt-search-product-img">
-                                                <img src="assets/images/search-product-img.png" alt="search-product-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-search-product-details">
-                                                <h3 class="gt-search-product-title">Devoción</h3>
-                                                <p class="gt-search-product-description">Nam cursus nunc nulla, at gravida arcu imperdiet id ut vestibul</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <select class="form-select gt-price-select" aria-label="Default select example">
-                                <option disabled selected>Price </option>
-                                <option value="0">All </option>
-                                <option value="1"> < $25 </option>
-                                <option value="2">$25 - $50</option>
-                                <option value="3">$50 - $75</option>
-                                <option value="4">$75 - $100</option>
-                                <option value="5">$100 - $200</option>
-                                <option value="6">$200 +</option>
-                            </select>
-                        </div>
-
-                        <h3 class="gt-browse-gift-header-label all-categori-title d-block d-lg-none"><span>29 gifts</span> in All Categories</h3>
-                        <div class="gt-browse-gift-content final-browse-card-list">
-                            <div class="row">
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/levain-bakery-img.png" alt="levain-bakery" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Levain Bakery</h3>
-                                                <p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/homage-img.png" alt="homage-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">HOMAGE</h3>
-                                                <p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/devocion-img.png" alt="devocion-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Devoción</h3>
-                                                <p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/featured-books-img.png" alt="featured-books-img" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Featured Books by Black Authors</h3>
-                                                <p class="gt-gift-card-description">These books by famous black authors each capture and celebrate ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/levain-bakery-img2.png" alt="levain-bakery" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Levain Bakery</h3>
-                                                <p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/homage-img2.png" alt="homage-img2" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">HOMAGE</h3>
-                                                <p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/devocion-img2.png" alt="devocion-img2" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Devoción</h3>
-                                                <p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/featured-books-img2.png" alt="featured-books-img2" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Featured Books by Black Authors</h3>
-                                                <p class="gt-gift-card-description">These books by famous black authors each capture and celebrate ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/levain-bakery-img3.png" alt="levain-bakery-img3" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Levain Bakery</h3>
-                                                <p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/homage-img3.png" alt="homage-img3" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">HOMAGE</h3>
-                                                <p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/devocion-img3.png" alt="devocion-img3" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Devoción</h3>
-                                                <p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/featured-books-img3.png" alt="featured-books-img3" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Featured Books by Black Authors</h3>
-                                                <p class="gt-gift-card-description">These books by famous black authors each capture and celebrate ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/levain-bakery-img4.png" alt="levain-bakery-img4" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Levain Bakery</h3>
-                                                <p class="gt-gift-card-description">NYC’s legendary cookies are baked to order and beautifully packaged.... </p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/homage-img4.png" alt="homage-img4" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">HOMAGE</h3>
-                                                <p class="gt-gift-card-description">HOMAGE turns back the clock with shout-outs to eclectic ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/devocion-img4.png" alt="devocion-img4" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Devoción</h3>
-                                                <p class="gt-gift-card-description">The freshest coffee imaginable. Hand selected in Colombia and....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col col-6 col-md-6 col-lg-6">
-                                    <a href="#" class="text-decoration-none gt-gift-card-link">
-                                        <div class="gt-gift-card final-gift-card">
-                                            <div class="gt-gift-card-img">
-                                                <img src="assets/images/featured-books-img4.png" alt="featured-books-img4" class="img-fluid">
-                                            </div>
-                                            <div class="gt-gift-card-body">
-                                                <h3 class="gt-gift-card-title">Featured Books by Black Authors</h3>
-                                                <p class="gt-gift-card-description">These books by famous black authors each capture and celebrate ....</p>
-                                            </div>
-                                            <div class="gt-gift-card-footer">
-                                                <div class="gt-gift-card-footer-detail">
-                                                    <h3 class="gt-gift-price">$27</h3>
-                                                    <label class="gt-gift-shipping">$15 postage</label>
-                                                </div>
-                                                <p class="gt-gift-shipping-charge btn btn-light" data-bs-toggle="modal" data-bs-target="#giftEmporiumModal">
-                                                    <span class="gt-gift-shipping-label">Select Gift</span>
-                                                    <span>
-                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0 4.41727H6.53951L3.43849 1.53158L5.08614 0L11 5.5L5.08614 11L3.43849 9.46857L6.53951 6.58288H0V4.41727Z"
-                                                                fill="black" />
-                                                        </svg>
-
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="gt-site-pagination">
-                                <ul class="pagination">
-                                    <li class="page-item active" aria-current="page">
-                                        <span class="page-link">01</span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">04</a></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1046,268 +1131,444 @@
 
 
         <!-- Gift Emporium Modal Start -->
-        <div class="modal fade" id="giftEmporiumModal" tabindex="-1" aria-labelledby="giftEmporiumModalLabel" aria-hidden="true">
+        <div class="modal fade giftEmporiumModal" id="giftEmporiumModal" tabindex="-1" aria-labelledby="giftEmporiumModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header emporium-modal-header">
-                        <h5 class="modal-title" id="giftEmporiumModalLabel">Gift Emporium</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            <img src="assets/images/close-icon.png" alt="close-icon" class="img-fluid">
-                        </button>
-                    </div>
-                    <div class="emporium-modal-body">
-                        <div class="gt-gift-detail-area">
-                            <div class="row">
-                                <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
-                                    <div class="gt-gift-popup-slider">
-                                        <div class="gt-gift-popup-slide">
-                                            <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
-                                        </div>
-                                        <div class="gt-gift-popup-slide">
-                                            <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
-                                        </div>
-                                        <div class="gt-gift-popup-slide">
-                                            <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
-                                        </div>
-                                        <div class="gt-gift-popup-slide">
-                                            <img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
-                                    <div class="gt-popup-gift-content">
-                                        <h2 class="gt-popup-gift-title">Levain Bakery</h2>
-                                        <p class="gt-popup-gift-description">Set the precise temperature of your hot beverage, so you can enjoy your drink from the first sip to the last drop.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gt-gift-veriation-detail-area d-none d-lg-block">
-                            <div class="gt-gift-veriation-detail-item">
-                                <div class="gt-gift-veriation-card">
-                                    <div class="gt-gift-veriation-img">
-                                        <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
-                                    </div>
-                                    <div class="gt-gift-veriation-card-body">
-                                        <h3 class="gt-gift-veriation-card-title">Soma Glass Straw with Travel Case</h3>
-                                        <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
-                                        <h2 class="gt-gift-veriation-price">$100</h2>
-                                        <span class="gt-gift-shipping-label">$5 postage</span>
-                                    </div>
-                                    <div class="gt-gift-veriation-card-footer">
-                                        <a href="#" class="btn btn-primary gt-choose-gift-btn">
-                                            <span>Choose Gift</span>
-                                            <span class="gt-choose-gift-icon">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z"
-                                                        fill="white" />
-                                                </svg>
+					
+					
+					<div class="modal_main_inner_item">
+						<div class="modal_main_item">
+							<div class="modal_full_item">
+								<div class="modal-header emporium-modal-header">
+									<div class="close_pop_up">
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+											<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+												<path d="M21.6672 9.66634H5.44053L12.8939 2.21301L11.0005 0.333008L0.333862 10.9997L11.0005 21.6663L12.8805 19.7863L5.44053 12.333H21.6672V9.66634Z" fill="black"/>
+											</svg>
+										</button>
+									</div>
+									<h5 class="modal-title" id="giftEmporiumModalLabel">Gift Emporium</h5>
+								</div>
+								<div class="emporium-modal-body">
+									<div class="gt-gift-detail-area">
+										<div class="row">
+											<div class="col col-12 col-md-12 col-lg-6 col-xl-6 gift_slider">
+												<div class="gt-gift-popup-slider">
+													<div class="gt-gift-popup-slide">
+														<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+													</div>
+													<div class="gt-gift-popup-slide">
+														<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+													</div>
+													<div class="gt-gift-popup-slide">
+														<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+													</div>
+													<div class="gt-gift-popup-slide">
+														<img src="assets/images/levain-bakery-popup-img.png" alt="levain-bakery-popup-img" class="img-fluid">
+													</div>
+												</div>
+											</div>
+											<div class="col col-12 col-md-12 col-lg-6 col-xl-6 gift_content">
+												<div class="gt-popup-gift-content">
+													<div class="brands_logo_pop">
+														<img src="assets/images/brand_pop.png">
+													</div>
+													<h2 class="gt-popup-gift-title">Levain Bakery</h2>
+													<p class="gt-popup-gift-description">Set the precise temperature of your hot beverage, so you can enjoy your drink from the first sip to the last drop.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="gt-gift-veriation-detail-area scroll-main  d-lg-block">
+										<div class="gt-gift-veriation-detail-item">
+											<div class="gt-gift-veriation-card">
+											
+												<div class="accordion faq-accordion" id="FAQaccordionnew">
 
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gt-gift-veriation-detail-item">
-                                <div class="gt-gift-veriation-card">
-                                    <div class="gt-gift-veriation-img">
-                                        <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
-                                    </div>
-                                    <div class="gt-gift-veriation-card-body">
-                                        <h3 class="gt-gift-veriation-card-title">Soma Glass Straw with Travel Case</h3>
-                                        <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
-                                        <h2 class="gt-gift-veriation-price">$100</h2>
-                                        <span class="gt-gift-shipping-label">$5 postage</span>
-                                    </div>
-                                    <div class="gt-gift-veriation-card-footer">
-                                        <a href="#" class="btn btn-primary gt-choose-gift-btn">
-                                            <span>Choose Gift</span>
-                                            <span class="gt-choose-gift-icon">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z"
-                                                        fill="white" />
-                                                </svg>
+													<div class="accordian1 accordion-item faq-accordion-item" onclick="chooseActive(1)">
+														<div class="accordion-header" id="headingOne">
+															<div class="gift_acc_inner">
+																<div class="gt-gift-veriation-img">
+																	<img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+																	<div class="gift_variation_price gift_variation_price_mobile_show">
+																		<h2 class="gt-gift-veriation-price">$100</h2>
+																		<!--span class="gt-gift-shipping-label">$5 postage</span-->
+																	</div>
+																</div>
+																<div class="gt-gift-veriation-card-body">
+																	<div class="gift_verification_body_inner">
+																		<h3 class="gt-gift-veriation-card-title">
+																			<button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+																				Soma Glass Straw with Travel Case
+																			</button>
+																		</h3>
+																		<p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
+																		<button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+																			<a href="javscript:void(0);">View more details</a>
+																		</button>
+																	</div>
+																	<div class="gt-gift-veriation-card-footer">
+																		<a href="javascript:void(0);" class="btn btn-primary gt-choose-gift-btn">
+																			<span>Choose Gift</span>
+																			<span class="gt-choose-gift-icon">
+																				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																					<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="white"></path>
+																				</svg>
+																			</span>
+																		</a>
+																		<div class="gift_variation_price gift_variation_price_desktop_show">
+																			<h2 class="gt-gift-veriation-price">$100</h2>
+																			<!--span class="gt-gift-shipping-label">$5 postage</span-->
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" style="">
+																<div class="accordion-body">
+																	<span>Your recipient can select from:</span>
+																	<ul class="gift_sizes">
+																		<li><a href="javascript:void(0);">S</a></li>
+																		<li><a href="javascript:void(0);">M</a></li>
+																		<li><a href="javascript:void(0);">L</a></li>
+																		<li><a href="javascript:void(0);">XL</a></li>
+																		<li><a href="javascript:void(0);">XXl</a></li>
+																	</ul>
+																	<div class="gift_desc_main">
+																		<p>Description:</p>
+																		<ul class="gift_desc_inner">
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="accordian2 accordion-item faq-accordion-item" onclick="chooseActive(2)">
+														<div class="accordion-header" id="headingOne">
+															<div class="gift_acc_inner">
+																<div class="gt-gift-veriation-img">
+																	<img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+																	<div class="gift_variation_price gift_variation_price_mobile_show">
+																		<h2 class="gt-gift-veriation-price">$100</h2>
+																		<!--span class="gt-gift-shipping-label">$5 postage</span-->
+																	</div>
+																</div>
+																<div class="gt-gift-veriation-card-body">
+																	<div class="gift_verification_body_inner">
+																		<h3 class="gt-gift-veriation-card-title">
+																			<button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapsesec" aria-expanded="false" aria-controls="collapsesec">
+																				Soma Glass Straw with Travel Case
+																			</button>
+																		</h3>
+																		<p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
+																		<button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapsesec" aria-expanded="false" aria-controls="collapsesec">
+																			<a href="javscript:void(0);">View more details</a>
+																		</button>
+																	</div>
+																	<div class="gt-gift-veriation-card-footer">
+																		<a href="javascript:void(0);" class="btn btn-primary gt-choose-gift-btn">
+																			<span>Choose Gift</span>
+																			<span class="gt-choose-gift-icon">
+																				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																					<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="white"></path>
+																				</svg>
+																			</span>
+																		</a>
+																		<div class="gift_variation_price gift_variation_price_desktop_show">
+																			<h2 class="gt-gift-veriation-price">$100</h2>
+																			<!--span class="gt-gift-shipping-label">$5 postage</span-->
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div id="collapsesec" class="accordion-collapse collapse" aria-labelledby="headingOne" style="">
+																<div class="accordion-body">
+																	<span>Your recipient can select from:</span>
+																	<ul class="gift_sizes">
+																		<li><a href="javascript:void(0);">S</a></li>
+																		<li><a href="javascript:void(0);">M</a></li>
+																		<li><a href="javascript:void(0);">L</a></li>
+																		<li><a href="javascript:void(0);">XL</a></li>
+																		<li><a href="javascript:void(0);">XXl</a></li>
+																	</ul>
+																	<div class="gift_desc_main">
+																		<p>Description:</p>
+																		<ul class="gift_desc_inner">
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
 
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gt-gift-veriation-detail-item">
-                                <div class="gt-gift-veriation-card">
-                                    <div class="gt-gift-veriation-img">
-                                        <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
-                                    </div>
-                                    <div class="gt-gift-veriation-card-body">
-                                        <h3 class="gt-gift-veriation-card-title">Soma Glass Straw with Travel Case</h3>
-                                        <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
-                                        <h2 class="gt-gift-veriation-price">$100</h2>
-                                        <span class="gt-gift-shipping-label">$5 postage</span>
-                                    </div>
-                                    <div class="gt-gift-veriation-card-footer">
-                                        <a href="#" class="btn btn-primary gt-choose-gift-btn">
-                                            <span>Choose Gift</span>
-                                            <span class="gt-choose-gift-icon">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z"
-                                                        fill="white" />
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion d-block d-lg-none" id="accordionverition">
-                            <div class="accordion-item gt-gift-veriation-card">
-                                <h2 class="accordion-header" id="veriationheadingOne">
-                                    <div class="gift-veriation-header">
-                                        <div class="gt-gift-veriation-img">
-                                            <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
-                                        </div>
-                                        <div class="gift-veriation-price">
-                                            <h2 class="gt-gift-veriation-price">$100</h2>
-                                            <span class="gt-gift-shipping-label me-0">$5 postage</span>
-                                        </div>
-                                    </div>
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#veriationcollapseOne" aria-expanded="false" aria-controls="veriationcollapseOne">
-                                    <h3 class="gt-gift-veriation-card-title mb-0">Soma Glass Straw with Travel Case</h3>
-                                  </button>
-                                </h2>
-                                <div id="veriationcollapseOne" class="accordion-collapse collapse" aria-labelledby="veriationheadingOne" data-bs-parent="#accordionverition">
-                                    <div class="accordion" id="accordionvsrsubOne">
-                                        <div class="accordion-item verition-accordion-submenu">
-                                            <h2 class="accordion-header" id="versubheadingOne">
-                                                <button class="accordion-button collapsed py-0" type="button" data-bs-toggle="collapse" data-bs-target="#versubcollapseOne" aria-expanded="false" aria-controls="versubcollapseOne">
-                                               <h6>Show Description</h6> 
-                                      </button>
-                                            </h2>
-                                            <div id="versubcollapseOne" class="accordion-collapse collapse" aria-labelledby="versubheadingOne" data-bs-parent="#accordionvsrsubOne">
-                                                <div class="accordion-body px-0">
-                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce
-                                                        plastic waste.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gt-gift-veriation-card-footer">
-                                    <a href="#" class="btn btn-primary gt-choose-gift-btn">
-                                        <span>Choose Gift</span>
-                                        <span class="gt-choose-gift-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z"
-                                                    fill="white" />
-                                            </svg>
 
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="accordion-item gt-gift-veriation-card">
-                                <h2 class="accordion-header" id="veriationheadingTwo">
-                                    <div class="gift-veriation-header">
-                                        <div class="gt-gift-veriation-img">
-                                            <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
-                                        </div>
-                                        <div class="gift-veriation-price">
-                                            <h2 class="gt-gift-veriation-price">$100</h2>
-                                            <span class="gt-gift-shipping-label me-0">$5 postage</span>
-                                        </div>
-                                    </div>
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#veriationcollapseTwo" aria-expanded="false" aria-controls="veriationcollapseTwo">
-                                    <h3 class="gt-gift-veriation-card-title mb-0">Soma Glass Straw with Travel Case</h3>
-                                  </button>
-                                </h2>
-                                <div id="veriationcollapseTwo" class="accordion-collapse collapse" aria-labelledby="veriationheadingTwo" data-bs-parent="#accordionverition">
-                                    <div class="accordion" id="accordionvsrsubTwo">
-                                        <div class="accordion-item verition-accordion-submenu">
-                                            <h2 class="accordion-header" id="versubheadingTwo">
-                                                <button class="accordion-button collapsed py-0" type="button" data-bs-toggle="collapse" data-bs-target="#versubcollapseTwo" aria-expanded="false" aria-controls="versubcollapseTwo">
-                                               <h6>Show Description</h6> 
-                                      </button>
-                                            </h2>
-                                            <div id="versubcollapseTwo" class="accordion-collapse collapse" aria-labelledby="versubheadingTwo" data-bs-parent="#accordionvsrsubTwo">
-                                                <div class="accordion-body px-0">
-                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce
-                                                        plastic waste.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gt-gift-veriation-card-footer">
-                                    <a href="#" class="btn btn-primary gt-choose-gift-btn">
-                                        <span>Choose Gift</span>
-                                        <span class="gt-choose-gift-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z"
-                                                    fill="white" />
-                                            </svg>
+													<div class="accordian3 accordion-item faq-accordion-item" onclick="chooseActive(3)">
+														<div class="accordion-header" id="headingOne">
+															<div class="gift_acc_inner">
+																<div class="gt-gift-veriation-img">
+																	<img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+																	<div class="gift_variation_price gift_variation_price_mobile_show">
+																		<h2 class="gt-gift-veriation-price">$100</h2>
+																		<!--span class="gt-gift-shipping-label">$5 postage</span-->
+																	</div>
+																</div>
+																<div class="gt-gift-veriation-card-body">
+																	<div class="gift_verification_body_inner">
+																		<h3 class="gt-gift-veriation-card-title">
+																			<button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapsethirc" aria-expanded="false" aria-controls="collapsethirc">
+																				Soma Glass Straw with Travel Case
+																			</button>
+																		</h3>
+																		<p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</p>
+																		<button class="accordion-button collapsed" type="button " data-bs-toggle="collapse" data-bs-target="#collapsethirc" aria-expanded="false" aria-controls="collapsethirc">
+																			<a href="javscript:void(0);">View more details</a>
+																		</button>
+																	</div>
+																	<div class="gt-gift-veriation-card-footer">
+																		<a href="javascript:void(0);" class="btn btn-primary gt-choose-gift-btn">
+																			<span>Choose Gift</span>
+																			<span class="gt-choose-gift-icon">
+																				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																					<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="white"></path>
+																				</svg>
+																			</span>
+																		</a>
+																		<div class="gift_variation_price gift_variation_price_desktop_show">
+																			<h2 class="gt-gift-veriation-price">$100</h2>
+																			<!--span class="gt-gift-shipping-label">$5 postage</span-->
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div id="collapsethirc" class="accordion-collapse collapse" aria-labelledby="headingOne" style="">
+																<div class="accordion-body">
+																	<span>Your recipient can select from:</span>
+																	<ul class="gift_sizes">
+																		<li><a href="javascript:void(0);">S</a></li>
+																		<li><a href="javascript:void(0);">M</a></li>
+																		<li><a href="javascript:void(0);">L</a></li>
+																		<li><a href="javascript:void(0);">XL</a></li>
+																		<li><a href="javascript:void(0);">XXl</a></li>
+																	</ul>
+																	<div class="gift_desc_main">
+																		<p>Description:</p>
+																		<ul class="gift_desc_inner">
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																			<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
 
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="accordion-item gt-gift-veriation-card mb-0">
-                                <h2 class="accordion-header" id="veriationheadingThree">
-                                    <div class="gift-veriation-header">
-                                        <div class="gt-gift-veriation-img">
-                                            <img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
-                                        </div>
-                                        <div class="gift-veriation-price">
-                                            <h2 class="gt-gift-veriation-price">$100</h2>
-                                            <span class="gt-gift-shipping-label me-0">$5 postage</span>
-                                        </div>
-                                    </div>
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#veriationcollapseThree" aria-expanded="false" aria-controls="veriationcollapseThree">
-                                    <h3 class="gt-gift-veriation-card-title mb-0">Soma Glass Straw with Travel Case</h3>
-                                  </button>
-                                </h2>
-                                <div id="veriationcollapseThree" class="accordion-collapse collapse" aria-labelledby="veriationheadingThree" data-bs-parent="#accordionverition">
-                                    <div class="accordion" id="accordionvsrsubThree">
-                                        <div class="accordion-item verition-accordion-submenu">
-                                            <h2 class="accordion-header" id="versubheadingThree">
-                                                <button class="accordion-button collapsed py-0" type="button" data-bs-toggle="collapse" data-bs-target="#versubcollapseThree" aria-expanded="false" aria-controls="versubcollapseThree">
-                                               <h6>Show Description</h6> 
-                                      </button>
-                                            </h2>
-                                            <div id="versubcollapseThree" class="accordion-collapse collapse" aria-labelledby="versubheadingThree" data-bs-parent="#accordionvsrsubThree">
-                                                <div class="accordion-body px-0">
-                                                    <p class="gt-gift-veriation-card-description">This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce
-                                                        plastic waste.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gt-gift-veriation-card-footer">
-                                    <a href="#" class="btn btn-primary gt-choose-gift-btn">
-                                        <span>Choose Gift</span>
-                                        <span class="gt-choose-gift-icon">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="emporium-modal-body-inner"></div> -->
+							</div>
+							
+							<div class="modal_selected_item choose1">
+								<div class="model_select_mob_b">
+								<div class="modal_selected_item_inner">
+									<div class="gift_acc_inner">
+										<div class="gt-gift-veriation-img">
+											<img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+											<div class="gift_variation_price gift_variation_price_mobile_show">
+												<h2 class="gt-gift-veriation-price">$200</h2>
+												<!--span class="gt-gift-shipping-label">$5 postage</span-->
+											</div>
+										</div>
+										<div class="gt-gift-veriation-card-body">
+											<div class="gt-gift-veriation-card-footer">
+												<div class="gift_variation_price gift_variation_price_desktop_show">
+													<h2 class="gt-gift-veriation-price">$100</h2>
+													<!--span class="gt-gift-shipping-label">$5 postage</span-->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product_card_detail">
+										<h3 class="gt-gift-veriation-card-title">
+											<button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
+												Soma Glass Straw with Travel <br>Case
+											</button>
+										</h3>
+										<p class="product_card_para">
+											This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.
+										</p>
+										<a href="javascript:void(0);" class="btn btn-primary gt-choose-gift-btn">
+											<span>Choose Gift</span>
+											<span class="gt-choose-gift-icon">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="white"></path>
+												</svg>
+											</span>
+										</a>
+									</div>
+									<div id="collapse_side_a" class="accordion-collapse collapse show" aria-labelledby="headingOne" style="">
+										<div class="accordion-body">
+											<span class="recpt_title">Your recipient can select from:</span>
+											<ul class="gift_sizes">
+												<li><a href="javascript:void(0);">S</a></li>
+												<li><a href="javascript:void(0);">M</a></li>
+												<li><a href="javascript:void(0);">L</a></li>
+												<li><a href="javascript:void(0);">XL</a></li>
+												<li><a href="javascript:void(0);">XXl</a></li>
+											</ul>
+											<div class="gift_desc_main">
+												<p>Description:</p>
+												<ul class="gift_desc_inner">
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage.</li>
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping.</li>
+												</ul>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="modal_selected_item choose2">
+								<div class="model_select_mob_b">
+								<div class="modal_selected_item_inner">
+									<div class="gift_acc_inner">
+										<div class="gt-gift-veriation-img">
+											<img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+											<div class="gift_variation_price gift_variation_price_mobile_show">
+												<h2 class="gt-gift-veriation-price">$200</h2>
+												<!--span class="gt-gift-shipping-label">$5 postage</span-->
+											</div>
+										</div>
+										<div class="gt-gift-veriation-card-body">
+											<div class="gt-gift-veriation-card-footer">
+												<div class="gift_variation_price gift_variation_price_desktop_show">
+													<h2 class="gt-gift-veriation-price">$100</h2>
+													<!--span class="gt-gift-shipping-label">$5 postage</span-->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product_card_detail">
+										<h3 class="gt-gift-veriation-card-title">
+											<button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
+												Soma Glass Straw with Travel <br>Case
+											</button>
+										</h3>
+										<p class="product_card_para">
+											This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.
+										</p>
+										<a href="javascript:void(0);" class="btn btn-primary gt-choose-gift-btn">
+											<span>Choose Gift</span>
+											<span class="gt-choose-gift-icon">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="white"></path>
+												</svg>
+											</span>
+										</a>
+									</div>
+									<div id="collapse_side_a" class="accordion-collapse collapse show" aria-labelledby="headingOne" style="">
+										<div class="accordion-body">
+											<span class="recpt_title">Your recipient can select from:</span>
+											<ul class="gift_sizes">
+												<li><a href="javascript:void(0);">S</a></li>
+												<li><a href="javascript:void(0);">M</a></li>
+												<li><a href="javascript:void(0);">L</a></li>
+												<li><a href="javascript:void(0);">XL</a></li>
+												<li><a href="javascript:void(0);">XXl</a></li>
+											</ul>
+											<div class="gift_desc_main">
+												<p>Description:</p>
+												<ul class="gift_desc_inner">
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping .</li>
+												</ul>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="modal_selected_item choose3">
+								<div class="model_select_mob_b">
+								<div class="modal_selected_item_inner">
+									<div class="gift_acc_inner">
+										<div class="gt-gift-veriation-img">
+											<img src="assets/images/veriation-ember-img.png" alt="veriation-ember-img" class="img-fluid">
+											<div class="gift_variation_price gift_variation_price_mobile_show">
+												<h2 class="gt-gift-veriation-price">$200</h2>
+												<!--span class="gt-gift-shipping-label">$5 postage</span-->
+											</div>
+										</div>
+										<div class="gt-gift-veriation-card-body">
+											<div class="gt-gift-veriation-card-footer">
+												<div class="gift_variation_price gift_variation_price_desktop_show">
+													<h2 class="gt-gift-veriation-price">$100</h2>
+													<!--span class="gt-gift-shipping-label">$5 postage</span-->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product_card_detail">
+										<h3 class="gt-gift-veriation-card-title">
+											<button class="accordion-button" type="button " data-bs-toggle="collapse" data-bs-target="#collapse_side_a" aria-expanded="false" aria-controls="collapseOne">
+												Soma Glass Straw with Travel <br>Case
+											</button>
+										</h3>
+										<p class="product_card_para">
+											This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.
+										</p>
+										<a href="javascript:void(0);" class="btn btn-primary gt-choose-gift-btn">
+											<span>Choose Gift</span>
+											<span class="gt-choose-gift-icon">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM20 19H4V17H20V19ZM20 14H4V8H9.08L7 10.83L8.62 12L12 7.4L15.38 12L17 10.83L14.92 8H20V14Z" fill="white"></path>
+												</svg>
+											</span>
+										</a>
+									</div>
+									<div id="collapse_side_a" class="accordion-collapse collapse show" aria-labelledby="headingOne" style="">
+										<div class="accordion-body">
+											<span class="recpt_title">Your recipient can select from:</span>
+											<ul class="gift_sizes">
+												<li><a href="javascript:void(0);">S</a></li>
+												<li><a href="javascript:void(0);">M</a></li>
+												<li><a href="javascript:void(0);">L</a></li>
+												<li><a href="javascript:void(0);">XL</a></li>
+												<li><a href="javascript:void(0);">XXl</a></li>
+											</ul>
+											<div class="gift_desc_main">
+												<p>Description:</p>
+												<ul class="gift_desc_inner">
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+													<li>This 8 inch glass straw comes with a silicone-lined protective case that fits neatly in your bag and a custom-fit squeegee tool for cleaning. Enjoy the clean taste of your beverage while helping reduce plastic waste.</li>
+												</ul>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
                     </div>
                 </div>
             </div>
@@ -1345,16 +1606,17 @@
                                 </div>
                                 <div class="col col-12 col-md-6 col-lg-6 col-xl-7">
                                     <div class="gt-popup-gift-content">
+										
                                         <h2 class="gt-popup-gift-title">Levain Bakery</h2>
                                         <p class="gt-popup-gift-description">Set the precise temperature of your hot beverage, so you can enjoy your drink from the first sip to the last drop.
                                         </p>
 
-                                        <a href="#" class="gt-gift-shipping-charge">
+                                        <a href="javascript:void(0);" class="gt-gift-shipping-charge">
                                             <img src="assets/images/shipping-icon.png" alt="shipping-icon" class="img-fluid">
                                             <span class="gt-gift-shipping-label">$15 Shipping</span>
                                         </a>
-                                        <h3 class="gt-popup-gift-price">$27</h3>
-                                        <a href="#" class="btn btn-primary gt-choose-gift-btn">
+                                        <h3 class="gt-popup-gift-price">$27+</h3>
+                                        <a href="javascript:void(0);" class="btn btn-primary gt-choose-gift-btn">
                                             <span>Choose Gift</span>
                                             <span class="gt-choose-gift-icon">
                                                 <img src="assets/images/choose-gift-icon.png" alt="">
@@ -1552,12 +1814,12 @@
                 </div>
                 <div class="modal-body price-modal-body">
                     <h6 class="price-body-title">All</h6>
-                    <a href="#" class="price-body-list">Under $25</a>
-                    <a href="#" class="price-body-list">$25 - $50</a>
-                    <a href="#" class="price-body-list">$50 - $75</a>
-                    <a href="#" class="price-body-list">$75 - $100</a>
-                    <a href="#" class="price-body-list">$100 - $200</a>
-                    <a href="#" class="price-body-list">$200 +</a>
+                    <a href="javascript:void(0);" class="price-body-list">Under $25</a>
+                    <a href="javascript:void(0);" class="price-body-list">$25 - $50</a>
+                    <a href="javascript:void(0);" class="price-body-list">$50 - $75</a>
+                    <a href="javascript:void(0);" class="price-body-list">$75 - $100</a>
+                    <a href="javascript:void(0);" class="price-body-list">$100 - $200</a>
+                    <a href="javascript:void(0);" class="price-body-list">$200 +</a>
                 </div>
             </div>
         </div>
@@ -1568,12 +1830,12 @@
             <div class="row justify-content-between ">
                 <div class="col col-12 col-md-2 col-lg-2 ">
                     <div class="gt-site-footer-logo ">
-                        <img src="assets/images/logo-light.png " alt="logo-light " class="img-fluid ">
+                        <img src="assets/images/logo-light.svg " alt="logo-light " class="img-fluid ">
                     </div>
                 </div>
                 <div class="col col-6 col-md-3 col-lg-3 ">
                     <div class="gt-site-footer-menu ">
-                        <h3 class="gt-site-footer-menu-title ">About Giftly
+                        <h3 class="gt-site-footer-menu-title ">About Kado
                         </h3>
                         <ul class="gt-footer-menu-list ">
                             <li class="gt-footer-menu-item ">
@@ -1618,7 +1880,7 @@
             </div>
 
             <div class="gt-site-info-content ">
-                <p class="gt-site-info-description ">© 2022 Giftly, Inc.Terms of UsePrivacy Policy </p>
+                <p class="gt-site-info-description ">© 2022 Kado, Inc.Terms of UsePrivacy Policy</p>
                 <ul class="gt-site-social-list ">
                     <li class="gt-site-social-item ">
                         <a href="# " class="gt-site-social-link ">
@@ -1640,7 +1902,42 @@
         </div>
     </footer>
     <!-- Site Footer End -->
+	
+	 <!-- Link All JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/scrollreveal.js"></script>
+	<script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	
+	<script>
+		
+        jQuery(document).ready(function(){
+			if (jQuery(window).width() > 768) {
+			   jQuery('.scroll-main').scrollbar();
+			}
+			else {
+			   
+			}
+            
+        });
 
+		jQuery(document).ready(function(){
+			if (jQuery(window).width() > 768) {
+			   jQuery('.modal_selected_item').scrollbar();
+			}
+			else {
+			   
+			}
+            
+        });
+    </script>
+
+	
+	
 </body>
 
 </html>
