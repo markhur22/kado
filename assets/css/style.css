@@ -10591,6 +10591,17 @@ body.gt-site.home section {
     height: auto;
     margin: 0;
 }
+.modal_main_item.swap_pop_main_item.choose_pop_main_item .modal_selected_item_inner .gift_acc_inner .gt-gift-veriation-img {
+    width: 76px;
+    height: 70px;
+    margin-right: 27px;
+}
+h3.gt-gift-veriation-card-title.swap_veri_card button.accordion-button::after {
+    display: none;
+}
+.modal_main_item .modal_selected_item ul.gift_sizes li a:hover {
+    color: #ff385c;
+}
 /* new desktop changes starts here */
  
     

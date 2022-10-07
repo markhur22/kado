@@ -109,15 +109,6 @@ $(document).ready(function() {
         slidesToScroll: 1,
     });
 
-	$('.gt-gift-popup-slider.pop_page_slide').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-		arrows: false,
-    }); 
-
     $('.recommendation-slider').slick({
         dots: false,
         infinite: true,
