@@ -23,7 +23,7 @@ div.browse-gift-space { margin: 0 0 33px 0; }
 
 body.loggined-user .navbar-expand-xl .navbar-nav .gt-login-btn { padding: 21px 29px; }
 body.loggined-user .gt-login-item { margin: 0 10px 0 10px; }
-body.loggined-user .home-navbar-collapse { flex-grow: initial; }
+body.loggined-user .home-navbar-collapse {/*  flex-grow: initial;  */}
 body.loggined-user .gift-history-drop { margin: 0 0 0 15px; padding:0;}
 body.loggined-user ul.gifts-navbar.mob_nav.loggined a.nav-link { line-height: 36px; }
 
@@ -8459,7 +8459,7 @@ span.select2-dropdown .select2-results__option.add_icon {     position: relative
 .brands_gift_header .gt-browse-gift-header-seach button.btn.btn-primary {     top: 50%;     transform: translateY(-50%);     -webkit-transform: translateY(-50%); }
 .brands_cat_leftsidebar .gt-sidebar-body {     padding: 20px 40px; }
 section.brands_gift_section {     padding: 96px 0 40px 0; }
-
+.mobile_show_logout{display:none;}
 
 
 
@@ -10954,6 +10954,7 @@ h3.gt-gift-veriation-card-title.swap_veri_card button.accordion-button::after {
 }
 
 @media (max-width: 1199px) {
+	.mobile_show_logout{display:inline-block;}
 	.final-brands-card-list .row{    grid-column-gap: 15px;     row-gap: 15px;}
 	div.brands_list_outer.cardlist {     padding: 0 !important; }
 	.breadcrumb_main ul li a svg {     width: 16px; }
