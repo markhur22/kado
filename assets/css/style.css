@@ -8562,7 +8562,7 @@ div.gift_slider{    padding: 0 30px;}
 .gt-gift-veriation-card .accordion-item.faq-accordion-item:last-child {     margin: 0; }
 .gift_verification_body_inner button.accordion-button {     padding: 0;     width: auto;     border-radius: 0; font-size:22px;} 
 .faq-accordion-item .gt-gift-veriation-card-description {     font-weight: 400;     font-size: 16px;     line-height: 22px;     color: #414141;     margin-bottom: 15px; }
-.gift_verification_body_inner button.accordion-button a {     color: #FF385C;     display: inline-block;     vertical-align: top;     text-decoration: none; }
+.gift_verification_body_inner button.accordion-button span {     color: #FF385C;     display: inline-block;     vertical-align: top;     text-decoration: none; font-weight: 500}
 .gift_verification_body_inner button.accordion-button::after {     background-size: 13px;     background-position: center;     margin: 0 0 0 7px; }
 .gt-gift-veriation-card .accordion-body {     padding: 17px 0 0 0;     border-top: 1px solid rgba(0,0,0,0.1);     margin: 32px 0 0 0; }
 .gt-gift-veriation-card .accordion-body span {     float: left;     width: 100%;     font-size: 18px;     color: #000000;     line-height: 35px; }
@@ -10037,10 +10037,10 @@ div.giftEmporiumModal .emporium-modal-body-inner .emporium-modal-body {
     height: calc(100% - 85px);
 }
 div.giftEmporiumModal.modal .modal-dialog .modal_main_item {
-    padding: 0px 32px 75px 38px;
+    padding: 38px 32px 75px 38px;
 }
 div.giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
-    height: calc(100% - 85px);
+    height: 100%;
     display: flex;
 }
 div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item {
@@ -10601,6 +10601,73 @@ h3.gt-gift-veriation-card-title.swap_veri_card button.accordion-button::after {
 }
 .modal_main_item .modal_selected_item ul.gift_sizes li a:hover {
     color: #ff385c;
+}
+
+.gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn span.gt-choose-gift-icon {
+    margin: 0;
+}
+.swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
+    justify-content: flex-start;
+    width: 208px;
+    padding: 6px;
+}
+.swap_modal_parent a.btn.btn-primary.gt-choose-gift-btn span.gt-choose-gift-icon {
+    margin: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 27px;
+}
+.swap_modal_parent a.btn.btn-primary.gt-choose-gift-btn {
+    justify-content: flex-start;
+    width: 208px;
+    padding: 6px;
+    font-size: 18px;
+    line-height: 21px;
+}
+h3.gt-gift-veriation-card-title.swap_veri_card {
+    pointer-events: none;
+}
+.gt-gift-veriation-card-body .gift_verification_body_inner button.accordion-button span {
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    width: auto;
+}
+.gt-gift-veriation-card-body .gift_verification_body_inner button.accordion-button a {
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    width: auto;
+}
+.sidebar_accordian_main {
+    width: 373px;
+    padding-left: 29px;
+}
+div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_item {
+    width: calc(100% - 373px);
+}
+.swap_modal_parent .scroll-wrapper.modal_selected_item {
+    margin: 0 !important;
+}
+.gt-gift-veriation-img img.swap_mob_view {
+    display: none;
+}
+.gt-gift-veriation-card-body .gift_verification_body_inner button.accordion-button span {
+    padding: 0;
+}
+
+.browse_gift_pop .gt-gift-veriation-card-footer .gt-choose-gift-btn {
+    width: 194px;
+    justify-content: space-between;
+    padding: 17px 25px;
+}
+.browse_gift_pop .gt-gift-veriation-card-footer .gt-choose-gift-btn span {
+    margin-left: 3px;
 }
 /* new desktop changes starts here */
  
@@ -13173,6 +13240,110 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
         padding: 20px 26px 33px 26px;
         overflow-x: hidden;
     }
+    
+    .modal_main_item.swap_pop_main_item {
+        width: 100%;
+        float: left;
+    }
+    div.giftEmporiumModal .modal_full_item .gt-gift-detail-area {
+        margin-bottom: 26px;
+        padding: 0;
+    }
+    .scroll-wrapper.scroll-main .gt-gift-veriation-detail-area.scroll-main {
+        height: auto;
+    }
+    .scroll-wrapper.gt-gift-veriation-detail-area.scroll-main.d-lg-block {
+        height: auto;
+    }
+    .scroll-wrapper.scroll-main .gt-gift-veriation-detail-area.scroll-main {
+        height: 100% !important;
+    }
+    div.giftEmporiumModal.modal .modal-dialog .modal_main_item {
+        padding: 0px 32px 0px 38px;
+    }
+    .emporium-modal-body {
+        padding: 20px 0px 33px 0px;
+        overflow-x: hidden;
+    }
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+        padding-top: 22px;
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+    div.giftEmporiumModal .modal_full_item .gt-gift-detail-area {
+        padding: 0 33px;
+    }
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+        padding: 22px 33px 0 33px;
+    }
+    div#swapModal .gt-popup-gift-content {
+        margin-top: 14px;
+    }
+    div#swapModal .gt-popup-gift-content {
+        margin-top: 14px;
+        padding: 0 5px;
+    }
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+        padding: 22px 33px 0 33px;
+        border-top: 1px solid rgb(0 0 0 / 10%);
+    }
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area::after {
+        display: none;
+    }
+    .swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
+        justify-content: flex-start;
+        width: 181px;
+        border-radius: 200px;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .modal_full_item > .emporium-modal-body > .scroll-wrapper.gt-gift-veriation-detail-area.scroll-main.d-lg-block {
+        padding-right: 0 !important;
+    }
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_item {
+        height: auto;
+        padding-top: 33px;
+    }
+    .gt-gift-veriation-card-body .gift_verification_body_inner button.accordion-button span::after {
+        content: '';
+        width: 21px;
+        height: 10px;
+        display: block;
+        top: 4px;
+        bottom: 0;
+        right: -26px;
+        position: absolute;
+        margin: auto;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10' fill='none'%3E%3Cpath d='M1.645 0.671874L7 6.01521L12.355 0.671875L14 2.31687L7 9.31687L1.76354e-06 2.31687L1.645 0.671874Z' fill='%23FF385C'/%3E%3C/svg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all ease .5s;
+    }
+    .gift_verification_body_inner .gt-gift-veriation-card-title button.accordion-button::after {
+        display: none;
+    }
+    div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_item {
+        width: 100%;
+    }
+    .gt-gift-veriation-card-body .gift_verification_body_inner button.accordion-button[aria-expanded="false"] span::after {
+        transform: rotate(0deg);
+    }
+    .gt-gift-veriation-card-body .gift_verification_body_inner button.accordion-button[aria-expanded="true"] span::after {
+        transform: rotate(180deg);
+    }
+    div#swapModal.swap_modal_parent .gt-gift-veriation-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: initial;
+    }
+    .browse_gift_pop .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -13243,6 +13414,23 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
 }
 
 @media (max-width: 767px) {
+    .swap_modal_parent .modal_main_inner_item {
+        padding: 16px 16px 20px;
+    }
+    .pop-previous_close {
+        width: 100%;
+        float: left;
+        padding: 0;
+        height: 55px;
+        display: flex;
+        align-items: center;
+    }
+    .pop-previous_close svg {
+        width: 18px;
+    }
+    .pop-previous_close button.btn-close {
+        padding: 0;
+    }
 	.gift_verification_body_inner .gt-gift-veriation-card-title  button.accordion-button::after {     margin: 2px 0 0 7px; }
 	.discover_content{    padding: 0 20px 0 22px;width:60%;}
 	.discover_image{width:40%;}
@@ -15947,7 +16135,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         height: 100%;
     }
     div#swapModal .gt-popup-gift-content {
-        margin-top: 8px;
+        /* margin-top: 0px; */
     }
     div#swapModal .emporium-modal-body .gt-gift-detail-area {
         margin: 0 0 18px 0;
@@ -16107,6 +16295,13 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     a.send-note-pen-img img {
         width: 20px;
     }
+    
+    .emporium-modal-body {
+        padding: 20px 0px 33px 0px;
+    }
+    div#swapModal.swap_modal_parent div#FAQaccordionnew .accordion-item.faq-accordion-item {
+        padding: 20px;
+    }
 }
 
 
@@ -16128,6 +16323,10 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 
 
 @media(max-width:575px) {
+    .swap_modal_parent a.btn.btn-primary.gt-choose-gift-btn span.gt-choose-gift-icon {
+        margin: 0;
+        width: 57px;
+    }
 	.gt-gift-popup-slider .slick-arrow {         height: 36px;         width: 36px;         left: -8px;     }
     .gt-gift-popup-slider .slick-next.slick-arrow {         right: -8px;     }
 	a.btn.gift-select-btn {     position: relative;     background-image: none; }
@@ -16344,6 +16543,30 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         max-width: 100%;
     }
 	.gift_occasion_new .row > div {padding: 0 !Important;}
+    div#swapModal.swap_modal_parent .gt-gift-veriation-img {
+        width: 100%;
+    }
+    div#swapModal.swap_modal_parent .gt-gift-veriation-img img.img-fluid {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .gt-gift-veriation-img img {
+        display: none;
+    }
+    .gt-gift-veriation-img img.swap_mob_view {
+        display: block;
+        margin: 0;
+    }
+    .swap_modal_parent a.btn.btn-primary.gt-choose-gift-btn span.gt-choose-gift-icon {
+        margin: 0;
+        width: 47px;
+        height: 39px;
+    }
+    .swap_modal_parent .gt-gift-veriation-card-footer {
+        margin-top: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -16687,7 +16910,7 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         justify-content: space-between;
     }
     .emporium-modal-body {
-        padding: 0 20px 0px 20px;
+        padding: 0 0px 0px 0px;
         margin: 20px 0 0 0;
     }
     /* .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
@@ -16950,6 +17173,11 @@ div.gift_sent_pop img {     max-width: 270px; }
 .birthday-thankyou-img { top: 21%; }
 .version-tab-link img { width: 18px; }
 .version-tab-item { padding: 0 10px 0 0; }
+}
+@media (max-width: 370px) {
+    div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {
+        padding: 22px 23px 0 23px;
+    }
 }
 
 
