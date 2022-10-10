@@ -26,7 +26,7 @@ body.loggined-user .gt-login-item { margin: 0 10px 0 10px; }
 body.loggined-user .home-navbar-collapse {/*  flex-grow: initial;  */}
 body.loggined-user .gift-history-drop { margin: 0 0 0 15px; padding:0;}
 body.loggined-user ul.gifts-navbar.mob_nav.loggined a.nav-link { line-height: 36px; }
-
+.picanoption.opt_active .option-item {     border-color: red; }
 
 
 /* *************** Deafult Start  ****************** */          
@@ -10796,7 +10796,7 @@ div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_ite
 }
 @media (min-width: 1920px) {
 .g-finder-one-section {
-	height: calc(100vh - 75px);
+	/* height: calc(100vh - 75px); */
 }
 }
 
@@ -13528,6 +13528,9 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
 }
 
 @media (max-width: 767px) {
+	.open_gift_html{height:100%;}
+	.open_gift_body{height:100%;}
+	.open_gift_body .gt-open-gift-section{height:100%;display:flex; align-items:center;}
 	div#swapModal.swap_modal_parent .gt-gift-detail-area .row {     flex-wrap: inherit;     flex-direction: row; }
 
 	div#swapModal.swap_modal_parent .gt-gift-detail-area .row > .col-lg-6 {     width: 50%; }
