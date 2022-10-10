@@ -2,7 +2,7 @@ $(document).ready(function() {
 	
 	if ($(window).width() < 991) {
 	  $('.gt-gift-veriation-card-title button').click(function(){
-		$(this).parent().next().slideToggle();
+		$(this).parent().next().next().slideToggle();
 		});
 		
 		$('.gift_verification_body_inner > button').click(function(){
