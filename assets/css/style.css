@@ -1925,8 +1925,8 @@ span.gt-faq-solved-icon {
 
 .gt-popup-gift-description {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 26px;
     color: #414141;
     margin-bottom: 0;
 }
@@ -8564,7 +8564,7 @@ div.gift_slider{    padding: 0 30px;}
 .faq-accordion-item .gt-gift-veriation-card-description {     font-weight: 400;     font-size: 16px;     line-height: 22px;     color: #414141;     margin-bottom: 15px; }
 .gift_verification_body_inner button.accordion-button span {     color: #FF385C;     display: inline-block;     vertical-align: top;     text-decoration: none; font-weight: 500}
 .gift_verification_body_inner button.accordion-button::after {     background-size: 13px;     background-position: center;     margin: 0 0 0 7px; }
-.gt-gift-veriation-card .accordion-body {     padding: 17px 0 0 0;     border-top: 1px solid rgba(0,0,0,0.1);     margin: 32px 0 0 0; }
+.gt-gift-veriation-card .accordion-body {     padding: 17px 0 0 0;     border-top: none;     margin: 0px 0 0 0; }
 .gt-gift-veriation-card .accordion-body span {     float: left;     width: 100%;     font-size: 18px;     color: #000000;     line-height: 35px; }
 .gt-gift-veriation-card .accordion-body ul.gift_sizes {     width: 100%;     float: left;     padding: 6px 0 0 0; }
 .gt-gift-veriation-card .accordion-body ul.gift_sizes li {     float: left;     width: auto;     list-style-type: none;     margin: 0 15px 0 0; }
@@ -10127,7 +10127,7 @@ div.giftEmporiumModal .gt-gift-detail-area {
     float: left;
     width: 47px;
     border: 1.5px solid #E2E2E2;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 31px;
     text-align: center;
     text-transform: uppercase;
@@ -10688,10 +10688,13 @@ div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_ite
 }
 .sidebar_pro-sel .gt-gift-veriation-card-body h2.gt-gift-veriation-price {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 20px;
+}
+.modal_selected_item .sidebar_pro-sel h3.gt-gift-veriation-card-title {
+    width: 80%;
 }
 .sidebar_pro-sel h3.gt-gift-veriation-card-title {
-    width: 80%;
+    width: auto;
 }
 .sidebar_pro-sel .gt-gift-veriation-card-body .gift_variation_price {
     display: flex;
@@ -10933,6 +10936,8 @@ div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_ite
 }
 
 @media (max-width: 1399px) {
+	.browse_gift_pop .gt-gift-veriation-card-footer .gt-choose-gift-btn{    padding: 17px 15px;width:auto;}
+	.browse_gift_pop .gt-gift-veriation-card-footer .gt-choose-gift-btn svg {     margin: 0 0 0 8px; }
 	.discover_content h2{    font-size: 25px;}
 	.send_social_button_inner a{font-size: 16px;}
 	.swap-content{width: 450px;}
@@ -11058,6 +11063,17 @@ div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_ite
 }
 
 @media (max-width: 1199px) {
+	
+	div.giftEmporiumModal.modal.show .modal-dialog .modal_full_item{width: calc(100% - 280px);}
+	.scroll-wrapper.modal_selected_item{    margin-left: 10px !important;}
+	.modal_main_item .modal_selected_item ul.gift_sizes li a{width: 37px;}
+	.modal_selected_item .sidebar_pro-sel .gt-gift-veriation-card-body {     width: auto; }
+	.browse_gift_pop .gt-gift-veriation-card-footer .gt-choose-gift-btn {     padding: 15px 7px;     width: auto;     font-size: 14px; }
+	.gt-gift-veriation-card .accordion-item.faq-accordion-item{    padding: 23px 15px;}
+	.browse_gift_pop .gt-gift-veriation-card-footer .link_ember img {     margin: 0 0 0 0;     width: 60px;}
+	
+	
+	
 	.mobile_show_logout{display:inline-block;}
 	.final-brands-card-list .row{    grid-column-gap: 15px;     row-gap: 15px;}
 	div.brands_list_outer.cardlist {     padding: 0 !important; }
@@ -11595,7 +11611,7 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
         height: auto;
     }
     div#swapModal .gt-gift-veriation-img img {
-        width: calc(100% + 25px);
+        width: 100%;
         height: auto;
         border-radius: 10px;
         object-fit: initial;
@@ -11633,6 +11649,7 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
     .emporium-modal-body {
         padding-top: 28px;
     }
+	div#swapModal .sidebar_accordian_main .gt-gift-veriation-img {     width: 100%; }
 }
 @media only screen and (max-width: 1130px) {
     .gifts-navbar .nav-link {
@@ -11682,6 +11699,9 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
 	.modal_main_item .gift_verification_body_inner button.accordion-button::after {     /* background-image: none; */ 	transform: rotate(-90deg) !important; 	-webkit-transform: rotate(-90deg) !important; }
 }
 @media (max-width: 991px) {
+	.browse_gift_pop .gt-gift-veriation-card-footer .gt-choose-gift-btn {     padding: 10px 17px;     width: auto;     font-size: 15px; }
+	
+	
 	.gift_verification_body_inner .gt-gift-veriation-card-title button.accordion-button::after{    margin: 4px 0 0 10px;}
 	div#swapModal .accordion-body ul.gift_sizes li{margin: 0 8px 0 0;}
 	.gift_verification_body_inner.accordion_toggle p.gt-gift-veriation-card-description {     display: block; }
@@ -11781,7 +11801,7 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
 	
 	
 	.gt-gift-veriation-card .accordion-item.faq-accordion-item{    padding: 15px;}
-	.gt-gift-veriation-card .accordion-body ul.gift_sizes li a{width:76px;}
+	.gt-gift-veriation-card .accordion-body ul.gift_sizes li a{width: 46px;     height: 46px;     line-height: 44px;}
 	.gt-gift-veriation-card-body {     width: calc(100% - 170px); }
 	.gt-gift-veriation-img img{height:auto;}
 	.gift_verification_body_inner button.accordion-button{font-size:18px;}
@@ -13508,6 +13528,10 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
 }
 
 @media (max-width: 767px) {
+	div#swapModal.swap_modal_parent .gt-gift-detail-area .row {     flex-wrap: inherit;     flex-direction: row; }
+
+	div#swapModal.swap_modal_parent .gt-gift-detail-area .row > .col-lg-6 {     width: 50%; }
+	.swap_modal_parent .gt-gift-popup-slide img {     width: 280px; }
     .swap_modal_parent .modal_main_inner_item {
         padding: 16px 16px 20px;
     }
@@ -13760,7 +13784,7 @@ div.gift-details-accordion .show-discription-btn::after { top: 6px; }
 	.gt-gift-veriation-card-footer .gt-choose-gift-btn span.gt-choose-gift-icon {     width: auto; }
 	.gt-gift-veriation-card .accordion-item.faq-accordion-item{padding: 20px;}
 	div.gift_content{padding:0;}
-	.gt-gift-veriation-card .accordion-body{margin: 19px 0 0 0;    padding: 5px 0 0 0;}
+	.gt-gift-veriation-card .accordion-body{margin: 10px 0 0 0;    padding: 5px 0 0 0;}
 	.gt-gift-veriation-card .accordion-body ul.gift_sizes li a {     width: 49px;     height: 32px;     line-height: 27px;     font-size: 12px;     border-radius: 5px; }
 	.gt-gift-veriation-card .accordion-body ul.gift_sizes li{margin:0 8px 0 0;}
 	.gt-gift-veriation-card .accordion-body span{font-size: 16px;}
@@ -16201,7 +16225,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         padding: 8.5px 24px 8.5px 20px;
     }
     div#swapModal .gift_acc_inner .gt-gift-veriation-img {
-        width: 86px;
+        width: 200px;
     }
     div#swapModal .gift_variation_price_mobile_show {
         display: none;
@@ -16400,11 +16424,11 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         width: 100%;
     }
     .link_ember a.btn.btn-primary.gt-choose-gift-btn {
-        width: 181px;
-        padding: 13px 19px;
-        font-size: 17px;
-        font-weight: 500;
-    }
+		/* width: 181px; */
+		padding: 13px 19px;
+		font-size: 16px;
+		font-weight: 500;
+	}
     .browse_listbar .sidebar_pro-sel h3.gt-gift-veriation-card-title button.accordion-button {
         font-size: 18px;
     }
@@ -16429,6 +16453,11 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 
 
 @media(max-width:575px) {
+	div#swapModal.swap_modal_parent .gt-gift-detail-area .row {     flex-wrap: wrap;     flex-direction: column; }
+
+	div#swapModal.swap_modal_parent .gt-gift-detail-area .row > .col-lg-6 {     width: 100%; }
+	.swap_modal_parent .gt-gift-popup-slide img {     width: 100%; }
+	.gt-gift-veriation-img img.swap_mob_view {     display: block; }
     .swap_modal_parent a.btn.btn-primary.gt-choose-gift-btn span.gt-choose-gift-icon {
         margin: 0;
         width: 57px;
@@ -16727,6 +16756,8 @@ div#gift_sent_pop .slick-initialized .slick-slide {
 
 
 @media (max-width: 420px) {
+	div.giftEmporiumModal .modal_full_item .gt-gift-detail-area {     padding: 0 25px; }
+	div.giftEmporiumModal .modal_full_item .emporium-modal-body .gt-gift-veriation-detail-area {padding: 22px 20px 0 20px; }
 .browse-categori-popup { width: 100%; text-align:left;}	
 .browse-serach-box .gifts-selecter { width: 100%; padding: 10px 0 0 0; }
 .browse-one-search-box .browse-serach-box{display:block;    text-align: center;}
@@ -17140,6 +17171,8 @@ div#gift_sent_pop .slick-initialized .slick-slide {
     }
 }  
 @media(max-width:370px) {
+	div#swapModal .accordion-body ul.gift_sizes li a{    width: 36px;}
+	div#swapModal .accordion-body ul.gift_sizes li {     margin: 0 3px 0 0; }
 	.discover_content h2 br{display:none;}
 	.final-brands-card-list .row {     grid-template-columns: repeat(1, 1fr); }
 	.send_social_button_inner a {     padding: 12px 10px; }
