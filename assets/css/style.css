@@ -16093,6 +16093,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 22px;
+        font-weight: 500;
     }
 
     .matts-body-btn {
@@ -16463,6 +16464,22 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     a.matts-heading-logo img {
         width: 83px;
     }
+    
+    .swap_pop_main_item .modal_full_item .emporium-modal-body {
+        padding: 20px 0px 33px 0px;
+        height: calc(100% - 108px) !important;
+    }
+    div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .swap_pop_main_item .modal_full_item {
+        width: 100%;
+        height: 100%;
+    }
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .swap_pop_main_item .modal_main_item {
+        height: 100%;
+    }
+    div.giftEmporiumModal.modal.show .modal-dialog .modal_main_inner_item .modal_main_item.swap_pop_main_item {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 
@@ -16480,7 +16497,24 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 .accordion-body .birthday-david-body { width: 100%; }
 .birthday-david-body{max-width:100%;}
 .matts_body_inner {
-    padding: 0 30px;
+    padding: 0 42px;
+}
+.matts-body {
+    width: 100%;
+    margin: 40px auto 0;
+    padding: 30px 0px 130px;
+    background-image: none;
+}
+.matts-top-style img {
+    max-width: calc(100% + 208px);
+    object-position: center;
+    object-fit: contain;
+    position: relative;
+    left: -109px;
+    height: 115px;
+}
+.matts-top-style {
+    overflow: hidden;
 }
 }
 
@@ -16743,6 +16777,9 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         display: block;
         width: 100%;
         margin: 0;
+    }
+    section.matts-section .container {
+        padding: 0 16px;
     }
 }
 
@@ -17098,6 +17135,40 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         z-index: 999;
         width: 100%;
     } */
+    section.gt-browse-gift-section .gt-gift-emporium-main .browse-one-search-box .browse-serach-box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    section.gt-browse-gift-section .gt-gift-emporium-main .browse-one-search-box .browse-serach-box .exchange-search-btn.d-block.d-lg-none {
+        margin: 0;
+    }
+    section.gt-browse-gift-section .gt-gift-emporium-main .browse-one-search-box .browse-serach-box .exchange-search-btn.d-block.d-lg-none button.btn.btn-primary {
+        width: 40px;
+        height: 40px;
+    }
+    section.gt-browse-gift-section .gt-gift-emporium-main .browse-one-search-box .browse-serach-box a.browse-categori-popup {
+        padding: 10px;
+        width: 44%;
+        margin-left: 5px !important;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+    section.gt-browse-gift-section .gt-gift-emporium-main .browse-one-search-box .browse-serach-box a.browse-categori-popup i {
+        margin: 5px 0 0 0;
+    }
+    section.gt-browse-gift-section .gt-gift-emporium-main .browse-one-search-box .browse-serach-box .gifts-selecter {
+        width: 40%;
+        padding: 0;
+    }
+    section.gt-browse-gift-section .gt-gift-emporium-main .browse-one-search-box .browse-serach-box .gifts-selecter a.btn.gift-select-btn {
+        padding: 10px;
+        height: 42px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
 }
 
 @media(max-width:400px) {
