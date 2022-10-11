@@ -8038,7 +8038,7 @@ input[type=number] {
 
 .matts-top-style {
     position: absolute;
-    top: 0;
+    top: 34px;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -8052,36 +8052,38 @@ input[type=number] {
     border: 1px solid #F4F4F4;
     box-shadow: 0px 4px 8px rgba(4, 33, 71, 0.1);
     border-radius: 15px;
-    width: 750px;
+    width: 727px;
     max-width: 100%;
-    margin: 57px auto 0;
-    padding: 76px 130px 150px;
+    margin: 66px auto 0;
+    padding: 100px 0px 271px;
     background-image: url('../images/matts_bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 233px;
+    background-position: center bottom;
 }
 
 .matts-body-title {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #414141;
+    margin-bottom: 30px;
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #414141;
-    margin-bottom: 30px;
 }
 
 .matts-body-discription {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #414141;
+    margin-bottom: 39px;
+    font-family: 'Lato';
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #414141;
-    margin-bottom: 40px;
 }
 
 .matts-body-btn {
@@ -10708,6 +10710,17 @@ div.giftEmporiumModal.modal.swap_modal_parent.show .modal-dialog .modal_full_ite
 }
 .gt-gift-veriation-card div#FAQaccordionnew .sidebar_pro-sel {
     margin: 0;
+}
+.matts_body_inner {
+    width: 464px;
+    margin: auto;
+    max-width: 100%;
+}
+section.matts-section.section-bg-color.section-half-color.new-design {
+    min-height: 100vh;
+}
+a.matts-heading-logo img {
+    width: 126px;
 }
 /* new desktop changes starts here */
  
@@ -16043,7 +16056,7 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .matts-top-style {
-        display: none;
+        /* display: none; */
     }
 
     .matts-section {
@@ -16055,19 +16068,25 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     }
 
     .matts-content {
-        padding: 25px 0 104px;
+        padding: 33px 0 104px;
     }
 
     .matts-body {
         width: 100%;
-        margin: 20px auto 0;
-        padding: 30px 50px 130px;
+        margin: 40px auto 0;
+        padding: 30px 0px 190px;
         background-position-x: 10%;
+        background-size: 100% 170px;
+    }
+    .matts-top-style {
+        top: 20px;
     }
 
     .matts-body-title {
         font-size: 24px;
         margin-bottom: 14px;
+        line-height: 42px;
+        font-weight: 700;
     }
 
     .matts-body-discription {
@@ -16435,6 +16454,15 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .browse_listbar .sidebar_pro-sel h3.gt-gift-veriation-card-title button.accordion-button {
         font-size: 18px;
     }
+    .matts-section::before {
+        height: 195px;
+    }
+    .matts-top-style {
+        top: 16px;
+    }
+    a.matts-heading-logo img {
+        width: 83px;
+    }
 }
 
 
@@ -16451,6 +16479,9 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 
 .accordion-body .birthday-david-body { width: 100%; }
 .birthday-david-body{max-width:100%;}
+.matts_body_inner {
+    padding: 0 30px;
+}
 }
 
 
