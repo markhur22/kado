@@ -13504,6 +13504,10 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
         font-weight: 600;
         font-size: 16px;
     }
+    .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn.choose_gift_main {
+        padding: 12px 0;
+        justify-content: center;
+    }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -16532,9 +16536,10 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn.choose_gift_main {
         padding: 13px 19px;
     }
-    .swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
-        justify-content: flex-start;
-        padding: 5px;
+    
+    .choose_gift_modal .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn.choose_gift_main {
+        justify-content: center;
+        padding: 12px 0;
     }
 }
 
