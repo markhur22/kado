@@ -16798,9 +16798,13 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         padding: 0 16px;
     }
     div.giftEmporiumModal.modal.show .modal-dialog .modal-content {
-        height: 100vh;
+        height: calc(100vh - 40px);
         border: 0;
-        border-radius: 0;
+        width: calc(100% - 20px);
+        margin-left: auto;
+    }
+    div.giftEmporiumModal.modal.show .modal-dialog {
+        transform: translateY(20px);
     }
 }
 
