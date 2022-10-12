@@ -10781,8 +10781,7 @@ a.matts-heading-logo img {
         object-position: center;
     }
 }
-@media(min-width:992px)
-{
+@media(min-width:992px) {
 	/*emporium-modal-body scroller starts*/
 	.emporium-modal-body {         -webkit-scrollbar-color: #D9D9D9 transparent;         -moz-scrollbar-color: #D9D9D9 transparent;         -ms-scrollbar-color: #D9D9D9 transparent;           scrollbar-color: #D9D9D9 transparent;         border-radius:10px; 		height:760px; 		overflow:auto;     }
 	.emporium-modal-body {     overflow-x: auto;     border-radius:10px;     -webkit-overflow-scrolling: touch;     -webkit-scroll-snap-type: x mandatory;     -moz-scroll-snap-type: x mandatory;     -ms-scroll-snap-type: x mandatory;     scroll-snap-type: x mandatory;    }
@@ -13497,6 +13496,16 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
     }
     .gift_verification_body_inner .sidebar_pro-sel .gt-gift-veriation-card-body .gt-gift-veriation-card-footer {
         margin: 0;
+    }
+    
+    .swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
+        justify-content: center;
+        width: 181px;
+        border-radius: 200px;
+        padding: 12px 0;
+        font-size: 18px;
+        font-weight: 600;
+        font-size: 16px;
     }
 
 }
