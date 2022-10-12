@@ -10744,6 +10744,7 @@ a.matts-heading-logo img {
     height: auto;
     width: auto;
     margin-left: 15px;
+    padding: 0;
 }
 
 /* new desktop changes starts here */
@@ -13495,10 +13496,10 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
         margin: 0;
     }
     .swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
-        justify-content: center;
+        justify-content: flex-start;
         width: 181px;
         border-radius: 200px;
-        padding: 12px 0;
+        /* padding: 12px 0; */
         font-size: 18px;
         font-weight: 600;
         font-size: 16px;
@@ -16481,11 +16482,11 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         width: 100%;
     }
     .link_ember a.btn.btn-primary.gt-choose-gift-btn {
-		/* width: 181px; */
-		padding: 13px 19px;
-		font-size: 16px;
-		font-weight: 500;
-	}
+        /* width: 181px; */
+        padding: 13px 19px;
+        font-size: 16px;
+        font-weight: 600;
+    }
     .browse_listbar .sidebar_pro-sel h3.gt-gift-veriation-card-title button.accordion-button {
         font-size: 18px;
     }
@@ -16527,6 +16528,13 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
         border: 1px solid #D2D2D2;
         border-radius: 15px;
         height: 100%;
+    }
+    .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn.choose_gift_main {
+        padding: 13px 19px;
+    }
+    .swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
+        justify-content: flex-start;
+        padding: 5px;
     }
 }
 
