@@ -10608,9 +10608,6 @@ h3.gt-gift-veriation-card-title.swap_veri_card button.accordion-button::after {
     color: #ff385c;
 }
 
-.gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn span.gt-choose-gift-icon {
-    margin: 0;
-}
 .swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
     justify-content: flex-start;
     width: 208px;
@@ -13497,7 +13494,6 @@ body.loggined-user .home-header-btn { padding: 9px 35px 9px 10px; }
     .gift_verification_body_inner .sidebar_pro-sel .gt-gift-veriation-card-body .gt-gift-veriation-card-footer {
         margin: 0;
     }
-    
     .swap_modal_parent .gt-gift-veriation-card-footer a.btn.btn-primary.gt-choose-gift-btn {
         justify-content: center;
         width: 181px;
