@@ -16800,8 +16800,8 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
     div.giftEmporiumModal.modal.show .modal-dialog .modal-content {
         height: calc(100vh - 40px);
         border: 0;
-        width: calc(100% - 20px);
-        margin-left: auto;
+        width: 100%;
+        border-radius: 0;
     }
     div.giftEmporiumModal.modal.show .modal-dialog {
         transform: translateY(20px);
