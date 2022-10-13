@@ -16578,6 +16578,10 @@ div.accordion.size-view button.accordion-button::after{right:-20px;}
 .matts-top-style {
     overflow: hidden;
 }
+.final-gift-card .gt-gift-card-img img {
+    height: auto;
+    aspect-ratio: 4/3;
+}
 }
 
 
@@ -17240,6 +17244,10 @@ div#gift_sent_pop .slick-initialized .slick-slide {
         display: flex;
         justify-content: space-between;
         font-size: 12px;
+    }
+    .final-gift-card .gt-gift-card-img img {
+        height: auto;
+        aspect-ratio: 4/3;
     }
 }
 
