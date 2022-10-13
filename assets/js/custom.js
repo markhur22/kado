@@ -1278,28 +1278,26 @@ var sub_show = [];
 	$(window).scroll(function(event){
 	   var st = $(this).scrollTop();
 	  
-	   if (st >= lastScrollTop){ 
+	   if (st > lastScrollTop){ 
 	   console.log(st);
 	   console.log(lastScrollTop);
 		   $('header').addClass('sticky_hidden');
 		   $('header').removeClass('sticky_add');
 		   $('body').removeClass('sticky_on');
-		    lastScrollTop = st;
-	   } else {
+	   } else if (st < 100){ 
+	   console.log(st);
+	   console.log(lastScrollTop);
+		   $('header').removeClass('sticky_hidden');
+		   $('header').removeClass('sticky_add');
+		   $('body').removeClass('sticky_on');
+	   }else {
+		   console.log(st);
+	   console.log(lastScrollTop);
 		   $('header').addClass('sticky_add');
 		   $('header').removeClass('sticky_hidden');
 		   $('body').addClass('sticky_on');
-			console.log(st);
-			console.log(lastScrollTop);
-			if(st < 100){
-				//lastScrollTop = 100;
-				//st = 0;
-				$('header').removeClass('sticky_add');
-				$('body').removeClass('sticky_on');
-			}
-			
 	   }
-	   
+	   lastScrollTop = st;
 	});
 	}
 
