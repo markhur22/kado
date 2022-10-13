@@ -2135,7 +2135,7 @@ a.gt-send-gift-link:hover svg path {
     height: 24px;
     position: absolute;
     top: 0;
-    left: calc(100% + 15px);
+    left: calc(100% - 40px);
     background-image: url(../images/success-tick-icon.svg);
     opacity: 0;
     transition: all ease-in-out 0.3s;
